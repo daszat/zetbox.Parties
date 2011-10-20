@@ -42,7 +42,6 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
                 if (_amount == null)
                 {
                     _amountMdl = new NullableStructValueModel<decimal>("Amount", "", false, false);
-                    _amountMdl.PropertyChanged += (s, e) => OnPropertyChanged("Amount");
                     _amount = ViewModelFactory.CreateViewModel<NullableStructValueViewModel<decimal>.Factory>().Invoke(DataContext, this, _amountMdl);
                 }
                 return _amount;
@@ -59,7 +58,6 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
                 {
                     _quantityMdl = new NullableStructValueModel<decimal>("Quantity", "", false, false);
                     _quantityMdl.Value = 1;
-                    _quantityMdl.PropertyChanged += (s, e) => OnPropertyChanged("Quantity");
                     _quantity = ViewModelFactory.CreateViewModel<NullableStructValueViewModel<decimal>.Factory>().Invoke(DataContext, this, _quantityMdl);
                 }
                 return _quantity;
@@ -75,7 +73,6 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
                 if (_description == null)
                 {
                     _descriptionMdl = new ClassValueModel<string>("Description", "", false, false);
-                    _descriptionMdl.PropertyChanged += (s, e) => OnPropertyChanged("Description");
                     _description = ViewModelFactory.CreateViewModel<ClassValueViewModel<string>.Factory>().Invoke(DataContext, this, _descriptionMdl);
                 }
                 return _description;
@@ -94,7 +91,6 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
                     _taxableMdl.TrueLabel = "Yes";
                     _taxableMdl.FalseLabel = "Tax";
                     _taxableMdl.Value = true;
-                    _taxableMdl.PropertyChanged += (s, e) => OnPropertyChanged("Taxable");
                     _taxable = ViewModelFactory.CreateViewModel<NullableBoolPropertyViewModel.Factory>().Invoke(DataContext, this, _taxableMdl);
                 }
                 return _taxable;
@@ -110,7 +106,7 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
                 if (_adjustmentType == null)
                 {
                     _adjustmentTypeMdl = new ObjectReferenceValueModel("AdjustmentType", "", false, false, FrozenContext.FindPersistenceObject<ControlKind>(NamedObjects.ControlKind_Kistl_App_GUI_ObjectRefDropdownKind), typeof(AdjustmentType).GetObjectClass(FrozenContext));
-                    _adjustmentTypeMdl.PropertyChanged += (s, e) => { UpdateAdjustmentAmount(); OnPropertyChanged("AdjustmentType"); };
+                    _adjustmentTypeMdl.PropertyChanged += (s, e) => UpdateAdjustmentAmount();
                     _adjustmentType = ViewModelFactory.CreateViewModel<ObjectReferenceViewModel.Factory>().Invoke(DataContext, this, _adjustmentTypeMdl);
                 }
                 return _adjustmentType;
@@ -126,7 +122,6 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
                 if (_adjustmentAmount == null)
                 {
                     _adjustmentAmountMdl = new NullableStructValueModel<decimal>("Adjustment amount", "", false, false);
-                    _adjustmentAmountMdl.PropertyChanged += (s, e) => OnPropertyChanged("AdjustmentAmount");
                     _adjustmentAmount = ViewModelFactory.CreateViewModel<NullableStructValueViewModel<decimal>.Factory>().Invoke(DataContext, this, _adjustmentAmountMdl);
                 }
                 return _adjustmentAmount;
