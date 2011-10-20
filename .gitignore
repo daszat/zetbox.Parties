@@ -1,0 +1,13 @@
+
+/bin
+/DocumentStore
+/Kistl.Parties.Client/obj
+/Kistl.Parties.Client/bin
+/Kistl.Parties.Client/Kistl.Parties.Client.csproj.user
+/Kistl.Parties.Common/Kistl.Parties.Common.csproj.user
+/Kistl.Parties.Common/bin
+/Kistl.Parties.Common/obj
+/Kistl.Parties.Server/Kistl.Parties.Server.csproj.user
+/Kistl.Parties.Server/bin
+/Kistl.Parties.Server/obj
+/Kistl.Parties.suo
