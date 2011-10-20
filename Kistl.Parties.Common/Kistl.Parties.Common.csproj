@@ -61,6 +61,8 @@
   <ItemGroup>
     <Compile Include="CustomCommonActionsModule.cs" />
     <Compile Include="Invoicing\AdjustmentTypeActions.cs" />
+    <Compile Include="Invoicing\SalesInvoiceActions.cs" />
+    <Compile Include="Invoicing\PurchaseInvoiceActions.cs" />
     <Compile Include="Invoicing\InvoiceActions.cs" />
     <Compile Include="Invoicing\InvoiceItemActions.cs" />
     <Compile Include="Parties\CustomerActions.cs" />

@@ -51,6 +51,10 @@
       <HintPath>..\Libs\Kistl\Client\Core\Kistl.Client.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Kistl.Client.WPF.Toolkit">
+      <HintPath>..\Libs\Kistl\Client\WPF\Kistl.Client.WPF.Toolkit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Kistl.Objects">
       <HintPath>..\bin\Debug\Common\Core.Generated\Kistl.Objects.dll</HintPath>
       <Private>False</Private>
@@ -59,20 +63,36 @@
       <HintPath>..\Libs\Kistl\Common\Core\log4net.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomClientActionsModule.cs" />
     <Compile Include="Invoicing\InvoiceAdjustmentActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\Parties\OrganizationViewModel.cs" />
-    <Compile Include="ViewModels\Parties\PartyViewModel.cs" />
-    <Compile Include="ViewModels\Parties\PersonViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\SalesInvoiceViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\PurchaseInvoiceViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\InvoiceViewModel.cs" />
+    <Compile Include="ViewModel\Parties\OrganizationViewModel.cs" />
+    <Compile Include="ViewModel\Parties\PartyViewModel.cs" />
+    <Compile Include="ViewModel\Parties\PersonViewModel.cs" />
+    <Compile Include="View\Invoicing\InvoiceEditor.xaml.cs">
+      <DependentUpon>InvoiceEditor.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Page Include="View\Invoicing\InvoiceEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
