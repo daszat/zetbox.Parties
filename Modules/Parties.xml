@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2011-10-20T18:03:25Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2011-10-20T18:52:39Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="73b3078c-d541-4015-b27e-7820408052e9">
     <KistlBase:ChangedOn>2011-08-05T10:30:47.656235Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-07-26T17:22:37Z</KistlBase:CreatedOn>
@@ -761,7 +761,7 @@
   </KistlBase:DecimalProperty>
   <KistlBase:BoolProperty ExportGuid="3438fe49-63b7-41a5-a990-b4fc30558845">
     <KistlBase:CategoryTags>Main, Summary</KistlBase:CategoryTags>
-    <KistlBase:ChangedOn>2011-10-20T16:47:59.904004Z</KistlBase:ChangedOn>
+    <KistlBase:ChangedOn>2011-10-20T18:52:39.499992Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-07-26T18:13:22Z</KistlBase:CreatedOn>
     <KistlBase:DefaultValue>57f6477d-a975-4996-87b9-c4fea64baf65</KistlBase:DefaultValue>
     <KistlBase:Description>True, if the item is to be taxed</KistlBase:Description>
@@ -773,8 +773,7 @@
     <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
     <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
     <KistlBase:IsList>false</KistlBase:IsList>
-    <KistlBase:FalseLabel>Tax</KistlBase:FalseLabel>
-    <KistlBase:TrueLabel>Yes</KistlBase:TrueLabel>
+    <KistlBase:TrueLabel>Taxable</KistlBase:TrueLabel>
   </KistlBase:BoolProperty>
   <KistlBase:ObjectReferenceProperty ExportGuid="7d43750f-5d15-41c1-a471-1f27e8f2b468">
     <KistlBase:CategoryTags>Main, Summary</KistlBase:CategoryTags>

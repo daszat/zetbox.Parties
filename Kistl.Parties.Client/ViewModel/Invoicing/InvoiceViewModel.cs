@@ -88,8 +88,6 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
                 if (_taxable == null)
                 {
                     _taxableMdl = new BoolValueModel("Taxable", "", false, false);
-                    _taxableMdl.TrueLabel = "Yes";
-                    _taxableMdl.FalseLabel = "Tax";
                     _taxableMdl.Value = true;
                     _taxable = ViewModelFactory.CreateViewModel<NullableBoolPropertyViewModel.Factory>().Invoke(DataContext, this, _taxableMdl);
                 }
