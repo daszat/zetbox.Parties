@@ -2,10 +2,16 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kistl.Parties.Client", "Kistl.Parties.Client\Kistl.Parties.Client.csproj", "{CA39A333-205A-4C14-BD33-C76A708D067A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A3080370-A3AD-4810-AF93-CD9AB94A4385} = {A3080370-A3AD-4810-AF93-CD9AB94A4385}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kistl.Parties.Common", "Kistl.Parties.Common\Kistl.Parties.Common.csproj", "{A3080370-A3AD-4810-AF93-CD9AB94A4385}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kistl.Parties.Server", "Kistl.Parties.Server\Kistl.Parties.Server.csproj", "{6757D30D-F9CC-40E8-9889-6421F4581875}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A3080370-A3AD-4810-AF93-CD9AB94A4385} = {A3080370-A3AD-4810-AF93-CD9AB94A4385}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

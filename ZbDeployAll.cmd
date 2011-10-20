@@ -19,9 +19,10 @@ IF ERRORLEVEL 1 GOTO FAIL
 Libs\Kistl\Kistl.Server.Service.exe %config% -generate
 IF ERRORLEVEL 1 GOTO FAIL
 
-rem TODO: compile projects now
-
 Libs\Kistl\Kistl.Server.Service.exe %config% -syncidentities
+IF ERRORLEVEL 1 GOTO FAIL
+
+Libs\Kistl\Kistl.Server.Service.exe %config% -import Data\Parties.xml
 IF ERRORLEVEL 1 GOTO FAIL
 
 echo ********************************************************************************

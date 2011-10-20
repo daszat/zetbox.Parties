@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KistlPackaging xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2011-10-20T16:47:59Z" xmlns="http://dasz.at/Kistl">
+  <Invoicing:AdjustmentType ExportGuid="748d018e-ca1c-443f-bcdf-9d604352d960">
+    <Invoicing:ChangedOn>2011-10-20T16:36:11.007043Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:19:24.170132Z</Invoicing:CreatedOn>
+    <Invoicing:Description>20% Ust</Invoicing:Description>
+    <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
+    <Invoicing:Percentage>20.00</Invoicing:Percentage>
+  </Invoicing:AdjustmentType>
+  <Invoicing:InvoiceAdjustment ExportGuid="4e02ca69-f789-489d-b562-fc868203ed72">
+    <Invoicing:Amount>85.93</Invoicing:Amount>
+    <Invoicing:ChangedOn>2011-10-20T16:19:24.170132Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:19:24.170132Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Ust</Invoicing:Description>
+    <Invoicing:Invoice>d329c032-0eaa-4255-9c6a-7f41e7e33929</Invoicing:Invoice>
+    <Invoicing:Items_pos>2</Invoicing:Items_pos>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:Taxable>false</Invoicing:Taxable>
+    <Invoicing:Percentage>20.00</Invoicing:Percentage>
+    <Invoicing:Type>748d018e-ca1c-443f-bcdf-9d604352d960</Invoicing:Type>
+  </Invoicing:InvoiceAdjustment>
+  <Invoicing:InvoiceAdjustment ExportGuid="f6801010-a6bd-4558-8658-b9d2aaed3754">
+    <Invoicing:Amount>85.93</Invoicing:Amount>
+    <Invoicing:ChangedOn>2011-10-20T16:50:33.241004Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:50:33.241004Z</Invoicing:CreatedOn>
+    <Invoicing:Description>20% Ust</Invoicing:Description>
+    <Invoicing:Invoice>3d0cfd8c-6a40-4529-a7f5-0fb4401abf58</Invoicing:Invoice>
+    <Invoicing:Items_pos>2</Invoicing:Items_pos>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:Taxable>false</Invoicing:Taxable>
+    <Invoicing:Percentage>20.00</Invoicing:Percentage>
+    <Invoicing:Type>748d018e-ca1c-443f-bcdf-9d604352d960</Invoicing:Type>
+  </Invoicing:InvoiceAdjustment>
+  <Invoicing:InvoiceAdjustment ExportGuid="fcac0ddc-7e55-4dd5-9579-665f36d47c4b">
+    <Invoicing:Amount>85.93</Invoicing:Amount>
+    <Invoicing:ChangedOn>2011-10-20T16:46:20.046004Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:46:20.046004Z</Invoicing:CreatedOn>
+    <Invoicing:Description>20% Ust</Invoicing:Description>
+    <Invoicing:Invoice>5876ab33-f4ac-439b-b8d6-510045c909d4</Invoicing:Invoice>
+    <Invoicing:Items_pos>2</Invoicing:Items_pos>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:Taxable>false</Invoicing:Taxable>
+    <Invoicing:Percentage>20.00</Invoicing:Percentage>
+    <Invoicing:Type>748d018e-ca1c-443f-bcdf-9d604352d960</Invoicing:Type>
+  </Invoicing:InvoiceAdjustment>
+  <Invoicing:PurchaseInvoice ExportGuid="3d0cfd8c-6a40-4529-a7f5-0fb4401abf58">
+    <Invoicing:ChangedOn>2011-10-20T16:50:33.241004Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:50:33.241004Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2011-12-01T16:49:14.534004Z</Invoicing:Date>
+    <Invoicing:InvoiceID>AR-2011</Invoicing:InvoiceID>
+    <Invoicing:InternalOrganization>1b7aa5f5-6fb2-489a-a0fb-8c969a37fd53</Invoicing:InternalOrganization>
+    <Invoicing:Supplier>b1ffe419-eae2-488b-9920-e7556c7aec1d</Invoicing:Supplier>
+  </Invoicing:PurchaseInvoice>
+  <Invoicing:PurchaseInvoice ExportGuid="d329c032-0eaa-4255-9c6a-7f41e7e33929">
+    <Invoicing:ChangedOn>2011-10-20T16:17:34.634229Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:16:14.195145Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2011-11-01T16:15:18.992854Z</Invoicing:Date>
+    <Invoicing:Description>Miete Büro</Invoicing:Description>
+    <Invoicing:InvoiceID>AR-2011-0265</Invoicing:InvoiceID>
+    <Invoicing:InternalOrganization>1b7aa5f5-6fb2-489a-a0fb-8c969a37fd53</Invoicing:InternalOrganization>
+    <Invoicing:Supplier>b1ffe419-eae2-488b-9920-e7556c7aec1d</Invoicing:Supplier>
+  </Invoicing:PurchaseInvoice>
+  <Invoicing:PurchaseInvoiceItem ExportGuid="06fb7187-8d97-4214-a220-99892dab00fd">
+    <Invoicing:Amount>339.00</Invoicing:Amount>
+    <Invoicing:ChangedOn>2011-10-20T16:46:20.046004Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:46:20.046004Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Miete</Invoicing:Description>
+    <Invoicing:Invoice>5876ab33-f4ac-439b-b8d6-510045c909d4</Invoicing:Invoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:Taxable>true</Invoicing:Taxable>
+  </Invoicing:PurchaseInvoiceItem>
+  <Invoicing:PurchaseInvoiceItem ExportGuid="1b31e863-4b2d-4785-abdb-84abba8b4fd1">
+    <Invoicing:Amount>339.00</Invoicing:Amount>
+    <Invoicing:ChangedOn>2011-10-20T16:17:56.162534Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:17:34.634229Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Miete</Invoicing:Description>
+    <Invoicing:Invoice>d329c032-0eaa-4255-9c6a-7f41e7e33929</Invoicing:Invoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:Taxable>true</Invoicing:Taxable>
+  </Invoicing:PurchaseInvoiceItem>
+  <Invoicing:PurchaseInvoiceItem ExportGuid="66f2602f-a566-4db6-ba5a-ad013cbd63d8">
+    <Invoicing:Amount>339.00</Invoicing:Amount>
+    <Invoicing:ChangedOn>2011-10-20T16:50:33.241004Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:50:33.241004Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Miete</Invoicing:Description>
+    <Invoicing:Invoice>3d0cfd8c-6a40-4529-a7f5-0fb4401abf58</Invoicing:Invoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:Taxable>true</Invoicing:Taxable>
+  </Invoicing:PurchaseInvoiceItem>
+  <Invoicing:PurchaseInvoiceItem ExportGuid="b575de52-df77-450a-9a92-aad6f638a57c">
+    <Invoicing:Amount>90.66</Invoicing:Amount>
+    <Invoicing:ChangedOn>2011-10-20T16:46:20.046004Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:46:20.046004Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Betriebskosten</Invoicing:Description>
+    <Invoicing:Invoice>5876ab33-f4ac-439b-b8d6-510045c909d4</Invoicing:Invoice>
+    <Invoicing:Items_pos>1</Invoicing:Items_pos>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:Taxable>true</Invoicing:Taxable>
+  </Invoicing:PurchaseInvoiceItem>
+  <Invoicing:PurchaseInvoiceItem ExportGuid="d86ef30e-2b77-4d0a-9545-72da408259d1">
+    <Invoicing:Amount>90.66</Invoicing:Amount>
+    <Invoicing:ChangedOn>2011-10-20T16:18:29.643229Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:18:29.643229Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Betriebskosten</Invoicing:Description>
+    <Invoicing:Invoice>d329c032-0eaa-4255-9c6a-7f41e7e33929</Invoicing:Invoice>
+    <Invoicing:Items_pos>1</Invoicing:Items_pos>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:Taxable>true</Invoicing:Taxable>
+  </Invoicing:PurchaseInvoiceItem>
+  <Invoicing:PurchaseInvoiceItem ExportGuid="efac82ab-6504-4856-9a45-8fccf3eff212">
+    <Invoicing:Amount>90.66</Invoicing:Amount>
+    <Invoicing:ChangedOn>2011-10-20T16:50:33.241004Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:50:33.241004Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Betriebskosten</Invoicing:Description>
+    <Invoicing:Invoice>3d0cfd8c-6a40-4529-a7f5-0fb4401abf58</Invoicing:Invoice>
+    <Invoicing:Items_pos>1</Invoicing:Items_pos>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:Taxable>true</Invoicing:Taxable>
+  </Invoicing:PurchaseInvoiceItem>
+  <Parties:Customer ExportGuid="22255012-9bc5-441c-a525-5b701f9a8742">
+    <Parties:ChangedOn>2011-10-20T16:05:23.543622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:05:23.543622Z</Parties:CreatedOn>
+    <Parties:Party>4af8c7cc-2b71-4d72-ba46-499f5d342c48</Parties:Party>
+  </Parties:Customer>
+  <Parties:Customer ExportGuid="d9fb6df0-fed2-4b56-b43a-b27b72e795e8">
+    <Parties:ChangedOn>2011-10-20T16:05:04.668622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:05:04.668622Z</Parties:CreatedOn>
+    <Parties:Party>6ec2fd83-c348-4cd5-a6ee-b80fe178fdf2</Parties:Party>
+  </Parties:Customer>
+  <Parties:Employee ExportGuid="1292a659-4024-4cdb-97af-2c21078d5886">
+    <Parties:ChangedOn>2011-10-20T16:06:56.597622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:06:56.597622Z</Parties:CreatedOn>
+    <Parties:Party>5c30e47e-726f-4ed5-89b6-bf38d4259598</Parties:Party>
+  </Parties:Employee>
+  <Parties:Employment ExportGuid="416cb97f-5c30-4381-82ec-a55514487be4">
+    <Parties:ChangedOn>2011-10-20T16:07:15.190622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:07:15.190622Z</Parties:CreatedOn>
+    <Parties:From>2011-02-01T00:00:00Z</Parties:From>
+    <Parties:Thru>2011-09-01T00:00:00Z</Parties:Thru>
+    <Parties:Employee>1292a659-4024-4cdb-97af-2c21078d5886</Parties:Employee>
+    <Parties:InternalOrganization>1b7aa5f5-6fb2-489a-a0fb-8c969a37fd53</Parties:InternalOrganization>
+  </Parties:Employment>
+  <Parties:InternalOrganization ExportGuid="1b7aa5f5-6fb2-489a-a0fb-8c969a37fd53">
+    <Parties:ChangedOn>2011-10-20T15:28:43.406622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T15:28:43.406622Z</Parties:CreatedOn>
+    <Parties:Party>821006b0-dd64-4573-acf8-098945c895ab</Parties:Party>
+  </Parties:InternalOrganization>
+  <Parties:Organization ExportGuid="4af8c7cc-2b71-4d72-ba46-499f5d342c48">
+    <Parties:ChangedOn>2011-10-20T16:05:23.543622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:05:23.543622Z</Parties:CreatedOn>
+    <Parties:Name>Technikum-Wien</Parties:Name>
+  </Parties:Organization>
+  <Parties:Organization ExportGuid="6ec2fd83-c348-4cd5-a6ee-b80fe178fdf2">
+    <Parties:ChangedOn>2011-10-20T16:05:04.668622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:05:04.668622Z</Parties:CreatedOn>
+    <Parties:Name>Steinhauser</Parties:Name>
+  </Parties:Organization>
+  <Parties:Organization ExportGuid="821006b0-dd64-4573-acf8-098945c895ab">
+    <Parties:ChangedOn>2011-10-20T15:28:30.556622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T15:28:30.556622Z</Parties:CreatedOn>
+    <Parties:Name>dasz.at OG</Parties:Name>
+  </Parties:Organization>
+  <Parties:Organization ExportGuid="9d9dcc35-af02-4d1e-b3ce-29090bfe99f9">
+    <Parties:ChangedOn>2011-10-20T16:04:48.372622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:04:48.372622Z</Parties:CreatedOn>
+    <Parties:Name>A1</Parties:Name>
+  </Parties:Organization>
+  <Parties:Organization ExportGuid="c6313449-48db-4bce-9c4e-605a5fbdeb77">
+    <Parties:ChangedOn>2011-10-20T16:05:38.317622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:05:38.317622Z</Parties:CreatedOn>
+    <Parties:Name>Dell</Parties:Name>
+  </Parties:Organization>
+  <Parties:Organization ExportGuid="ec1098f8-2c62-4bbd-9e08-73e9b2d81da9">
+    <Parties:ChangedOn>2011-10-20T16:16:14.195145Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:16:14.195145Z</Parties:CreatedOn>
+    <Parties:Name>Consio</Parties:Name>
+  </Parties:Organization>
+  <Parties:Person ExportGuid="211bf29e-9088-4ac9-ba2b-87b096c91548">
+    <Parties:ChangedOn>2011-10-20T16:06:25.025622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:06:25.025622Z</Parties:CreatedOn>
+    <Parties:BirthDate>1978-03-20T00:00:00Z</Parties:BirthDate>
+    <Parties:FirstName>Arthur</Parties:FirstName>
+    <Parties:Gender>1</Parties:Gender>
+    <Parties:LastName>Zaczek</Parties:LastName>
+  </Parties:Person>
+  <Parties:Person ExportGuid="5c30e47e-726f-4ed5-89b6-bf38d4259598">
+    <Parties:ChangedOn>2011-10-20T16:06:56.597622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:06:56.597622Z</Parties:CreatedOn>
+    <Parties:FirstName>Christine</Parties:FirstName>
+    <Parties:Gender>2</Parties:Gender>
+    <Parties:LastName>Schmitt</Parties:LastName>
+  </Parties:Person>
+  <Parties:Person ExportGuid="dcbe53f9-a1d7-46db-be9e-99172c1cc2c7">
+    <Parties:ChangedOn>2011-10-20T16:06:36.855622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:06:36.855622Z</Parties:CreatedOn>
+    <Parties:FirstName>David</Parties:FirstName>
+    <Parties:Gender>1</Parties:Gender>
+    <Parties:LastName>Schmitt</Parties:LastName>
+  </Parties:Person>
+  <Parties:Supplier ExportGuid="b1ffe419-eae2-488b-9920-e7556c7aec1d">
+    <Parties:ChangedOn>2011-10-20T16:16:14.195145Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:16:14.195145Z</Parties:CreatedOn>
+    <Parties:Party>ec1098f8-2c62-4bbd-9e08-73e9b2d81da9</Parties:Party>
+  </Parties:Supplier>
+  <Parties:Supplier ExportGuid="b329ca1b-51c1-4f16-847c-b98d29206623">
+    <Parties:ChangedOn>2011-10-20T16:05:38.317622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:05:38.317622Z</Parties:CreatedOn>
+    <Parties:Party>c6313449-48db-4bce-9c4e-605a5fbdeb77</Parties:Party>
+  </Parties:Supplier>
+  <Parties:Supplier ExportGuid="c0476192-17c4-4c9c-bc8e-a0674ccb8e4b">
+    <Parties:ChangedOn>2011-10-20T16:04:48.372622Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-20T16:04:48.372622Z</Parties:CreatedOn>
+    <Parties:Party>9d9dcc35-af02-4d1e-b3ce-29090bfe99f9</Parties:Party>
+  </Parties:Supplier>
+</KistlPackaging>

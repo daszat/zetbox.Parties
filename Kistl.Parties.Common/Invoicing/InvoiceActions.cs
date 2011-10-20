@@ -16,15 +16,22 @@ namespace ZBox.Basic.Invoicing
         }
 
         [Invocation]
-        public static void postSet_Items(ZBox.Basic.Invoicing.Invoice obj, PropertyPostSetterEventArgs<IList<InvoiceItem>> e)
+        public static void postSet_Items(ZBox.Basic.Invoicing.Invoice obj)
         {
             obj.NotifyPropertyChanged("Total", (decimal)0, (decimal)0);
+            obj.NotifyPropertyChanged("TotalNet", (decimal)0, (decimal)0);
         }
 
         [Invocation]
         public static void get_Total(ZBox.Basic.Invoicing.Invoice obj, PropertyGetterEventArgs<decimal> e)
         {
             e.Result = obj.Items.Sum(i => i.Amount);
+        }
+
+        [Invocation]
+        public static void get_TotalNet(ZBox.Basic.Invoicing.Invoice obj, PropertyGetterEventArgs<decimal> e)
+        {
+            e.Result = obj.Items.Where(i=> i.Taxable).Sum(i => i.Amount);
         }
     }
 }

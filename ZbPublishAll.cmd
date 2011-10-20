@@ -16,9 +16,14 @@ set config=%1
 Libs\Kistl\Kistl.Server.Service.exe %config% -generate -updatedeployedschema -repairschema
 IF ERRORLEVEL 1 GOTO FAIL
 
-rem publish schema data for Ini50 project
+rem publish schema data for parties project
 Libs\Kistl\Kistl.Server.Service.exe %config% -publish Modules\Parties.xml -ownermodules Parties;Invoicing
 IF ERRORLEVEL 1 GOTO FAIL
+
+rem export data
+Libs\Kistl\Kistl.Server.Service.exe %config% -export Data\Parties.xml -schemamodules Parties;Invoicing
+IF ERRORLEVEL 1 GOTO FAIL
+
 
 echo ********************************************************************************
 echo ************************************ Success ***********************************
