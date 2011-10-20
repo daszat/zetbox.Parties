@@ -19,7 +19,7 @@ namespace ZBox.Basic.Invoicing
                 obj.Percentage = e.NewValue.Percentage.Value;
                 if(obj.Quantity == 0) obj.Quantity = 1;
                 if(obj.Invoice != null && obj.Amount == 0)
-                    obj.Amount = obj.Invoice.TotalNet * obj.Percentage.Value / (decimal)100.0;
+                    obj.Amount = Math.Round(obj.Invoice.TotalNet * obj.Percentage.Value / (decimal)100.0, 2);
             }
             else if (obj.Amount == 0 && e.NewValue.Absolute.HasValue)
             {

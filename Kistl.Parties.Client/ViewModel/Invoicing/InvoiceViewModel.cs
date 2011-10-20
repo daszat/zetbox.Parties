@@ -30,7 +30,7 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
 
         public Invoice Invoice { get; private set; }
 
-        public abstract ViewModel Party {get;}
+        public abstract ViewModel Party { get; }
 
         #region new item properties
         private NullableStructValueViewModel<decimal> _amount = null;
@@ -138,9 +138,9 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
                 var type = (AdjustmentType)_adjustmentTypeMdl.Value;
                 if (type.Percentage.HasValue)
                 {
-                    _adjustmentAmountMdl.Value = Invoice.TotalNet * type.Percentage.Value / (decimal)100.0;
+                    _adjustmentAmountMdl.Value = Math.Round(Invoice.TotalNet * type.Percentage.Value / (decimal)100.0, 2);
                 }
-                else if(type.Absolute.HasValue)
+                else if (type.Absolute.HasValue)
                 {
                     _adjustmentAmountMdl.Value = type.Absolute.Value;
                 }
