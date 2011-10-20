@@ -11,3 +11,11 @@
 /Kistl.Parties.Server/bin
 /Kistl.Parties.Server/obj
 /Kistl.Parties.suo
+/Libs/Kistl/Kistl.Client.WPF.PerfCounter.Objects.csv
+/Libs/Kistl/Kistl.Client.WPF.PerfCounter.Main.csv
+/Libs/Kistl/Kistl.Client.WPF.PerfCounter.Methods.csv
+/Libs/Kistl/Kistl.Server.Service.PerfCounter.Objects.csv
+/Libs/Kistl/Kistl.Server.Service.PerfCounter.Main.csv
+/Libs/Kistl/Kistl.Server.Service.PerfCounter.Methods.csv
+/Libs/Kistl/Kistl.Client.WPF.log
+/Libs/Kistl/Kistl.Server.Service.log
