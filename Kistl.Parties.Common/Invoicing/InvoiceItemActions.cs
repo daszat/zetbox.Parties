@@ -26,7 +26,7 @@ namespace ZBox.Basic.Invoicing
         }
 
         [Invocation]
-        public static void postSet_Taxable(InvoiceItem obj, PropertyPostSetterEventArgs<decimal> e)
+        public static void postSet_Taxable(InvoiceItem obj, PropertyPostSetterEventArgs<bool> e)
         {
             if (obj.Invoice != null)
             {

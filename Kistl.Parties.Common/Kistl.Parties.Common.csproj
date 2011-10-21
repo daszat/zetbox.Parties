@@ -65,6 +65,7 @@
     <Compile Include="Invoicing\PurchaseInvoiceActions.cs" />
     <Compile Include="Invoicing\InvoiceActions.cs" />
     <Compile Include="Invoicing\InvoiceItemActions.cs" />
+    <Compile Include="PartiesNamedObjects.cs" />
     <Compile Include="Parties\CustomerActions.cs" />
     <Compile Include="Parties\CustomerRelationshipActions.cs" />
     <Compile Include="Parties\EmployeeActions.cs" />

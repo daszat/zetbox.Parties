@@ -20,8 +20,12 @@ rem publish schema data for parties project
 Libs\Kistl\Kistl.Server.Service.exe %config% -publish Modules\Parties.xml -ownermodules Parties;Invoicing
 IF ERRORLEVEL 1 GOTO FAIL
 
-rem export data
-Libs\Kistl\Kistl.Server.Service.exe %config% -export Data\Parties.xml -schemamodules Parties;Invoicing
+rem export Invoicing Module data
+Libs\Kistl\Kistl.Server.Service.exe %config% -export Modules\Invoicing.Data.xml -schemamodules Invoicing -ownermodules Invoicing
+IF ERRORLEVEL 1 GOTO FAIL
+
+rem export test data
+Libs\Kistl\Kistl.Server.Service.exe %config% -export Data\Parties.xml -schemamodules Parties;Invoicing;DocumentManagement
 IF ERRORLEVEL 1 GOTO FAIL
 
 

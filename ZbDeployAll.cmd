@@ -22,7 +22,7 @@ IF ERRORLEVEL 1 GOTO FAIL
 Libs\Kistl\Kistl.Server.Service.exe %config% -syncidentities
 IF ERRORLEVEL 1 GOTO FAIL
 
-Libs\Kistl\Kistl.Server.Service.exe %config% -import Data\Parties.xml
+Libs\Kistl\Kistl.Server.Service.exe %config% -import Modules\Invoicing.Data.xml -import Data\Parties.xml
 IF ERRORLEVEL 1 GOTO FAIL
 
 echo ********************************************************************************

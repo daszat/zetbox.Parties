@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KistlPackaging xmlns:Invoicing="ZBox.Basic.Invoicing" date="2011-10-21T10:39:16Z" xmlns="http://dasz.at/Kistl">
+  <Invoicing:AdjustmentType ExportGuid="748d018e-ca1c-443f-bcdf-9d604352d960">
+    <Invoicing:ChangedOn>2011-10-20T16:36:11.007043Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T16:19:24.170132Z</Invoicing:CreatedOn>
+    <Invoicing:Description>20% Ust</Invoicing:Description>
+    <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
+    <Invoicing:Percentage>20.00</Invoicing:Percentage>
+  </Invoicing:AdjustmentType>
+  <Invoicing:AdjustmentType ExportGuid="d997794d-dd27-4ee4-a8db-f54b2fed380b">
+    <Invoicing:ChangedOn>2011-10-20T19:07:56.941992Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-20T19:07:56.941992Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Umstatzsteuerfrei</Invoicing:Description>
+    <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
+  </Invoicing:AdjustmentType>
+  <Invoicing:StatisticActions ExportGuid="9fc4a50f-7bf6-4470-84fc-c32404fac51f">
+    <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
+  </Invoicing:StatisticActions>
+</KistlPackaging>
