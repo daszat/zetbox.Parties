@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:DocumentManagement="at.dasz.DocumentManagement" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2011-10-21T10:39:16Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2011-10-21T14:32:49Z" xmlns="http://dasz.at/Kistl">
   <Invoicing:AdjustmentType ExportGuid="748d018e-ca1c-443f-bcdf-9d604352d960">
     <Invoicing:ChangedOn>2011-10-20T16:36:11.007043Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-10-20T16:19:24.170132Z</Invoicing:CreatedOn>
@@ -13,6 +13,18 @@
     <Invoicing:Description>Umstatzsteuerfrei</Invoicing:Description>
     <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
   </Invoicing:AdjustmentType>
+  <Invoicing:InvoiceAdjustment ExportGuid="0248dce9-8428-49c6-86b1-3de812431caf">
+    <Invoicing:Amount>85.93</Invoicing:Amount>
+    <Invoicing:ChangedOn>2011-10-21T17:44:35.055805Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-21T17:44:35.055805Z</Invoicing:CreatedOn>
+    <Invoicing:Description>20% Ust</Invoicing:Description>
+    <Invoicing:Invoice>66f5c348-762d-42f9-bff5-210e3dc4383c</Invoicing:Invoice>
+    <Invoicing:Items_pos>2</Invoicing:Items_pos>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:Taxable>false</Invoicing:Taxable>
+    <Invoicing:Percentage>20.00</Invoicing:Percentage>
+    <Invoicing:Type>748d018e-ca1c-443f-bcdf-9d604352d960</Invoicing:Type>
+  </Invoicing:InvoiceAdjustment>
   <Invoicing:InvoiceAdjustment ExportGuid="18218467-4b67-4807-a5b8-db826dbe8ad3">
     <Invoicing:Amount>0.00</Invoicing:Amount>
     <Invoicing:ChangedOn>2011-10-20T19:07:56.941992Z</Invoicing:ChangedOn>
@@ -60,18 +72,6 @@
     <Invoicing:Percentage>20.00</Invoicing:Percentage>
     <Invoicing:Type>748d018e-ca1c-443f-bcdf-9d604352d960</Invoicing:Type>
   </Invoicing:InvoiceAdjustment>
-  <Invoicing:InvoiceAdjustment ExportGuid="fcac0ddc-7e55-4dd5-9579-665f36d47c4b">
-    <Invoicing:Amount>85.93</Invoicing:Amount>
-    <Invoicing:ChangedOn>2011-10-20T16:46:20.046004Z</Invoicing:ChangedOn>
-    <Invoicing:CreatedOn>2011-10-20T16:46:20.046004Z</Invoicing:CreatedOn>
-    <Invoicing:Description>20% Ust</Invoicing:Description>
-    <Invoicing:Invoice>5876ab33-f4ac-439b-b8d6-510045c909d4</Invoicing:Invoice>
-    <Invoicing:Items_pos>2</Invoicing:Items_pos>
-    <Invoicing:Quantity>1.00</Invoicing:Quantity>
-    <Invoicing:Taxable>false</Invoicing:Taxable>
-    <Invoicing:Percentage>20.00</Invoicing:Percentage>
-    <Invoicing:Type>748d018e-ca1c-443f-bcdf-9d604352d960</Invoicing:Type>
-  </Invoicing:InvoiceAdjustment>
   <Invoicing:PurchaseInvoice ExportGuid="3d0cfd8c-6a40-4529-a7f5-0fb4401abf58">
     <Invoicing:ChangedOn>2011-10-20T16:50:33.241004Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-10-20T16:50:33.241004Z</Invoicing:CreatedOn>
@@ -80,6 +80,16 @@
     <Invoicing:InvoiceID>AR-2011</Invoicing:InvoiceID>
     <Invoicing:InternalOrganization>1b7aa5f5-6fb2-489a-a0fb-8c969a37fd53</Invoicing:InternalOrganization>
     <Invoicing:Supplier>b1ffe419-eae2-488b-9920-e7556c7aec1d</Invoicing:Supplier>
+  </Invoicing:PurchaseInvoice>
+  <Invoicing:PurchaseInvoice ExportGuid="66f5c348-762d-42f9-bff5-210e3dc4383c">
+    <Invoicing:ChangedOn>2011-10-21T17:44:35.055805Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-21T17:43:53.123612Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2011-10-21T17:42:03.527653Z</Invoicing:Date>
+    <Invoicing:Document>cddf5949-28e0-4870-ba66-aa0f8adddfef</Invoicing:Document>
+    <Invoicing:DueDate>0001-01-01T00:00:00Z</Invoicing:DueDate>
+    <Invoicing:InvoiceID>12224</Invoicing:InvoiceID>
+    <Invoicing:InternalOrganization>7bc19314-837f-4a1b-aae8-d92d561f51f9</Invoicing:InternalOrganization>
+    <Invoicing:Supplier>ed2739f2-96b0-4f5c-b2b1-844a249e45c6</Invoicing:Supplier>
   </Invoicing:PurchaseInvoice>
   <Invoicing:PurchaseInvoice ExportGuid="c2573950-b5f7-4fd1-886c-d510c110d294">
     <Invoicing:ChangedOn>2011-10-20T18:19:08.600782Z</Invoicing:ChangedOn>
@@ -101,16 +111,6 @@
     <Invoicing:InternalOrganization>1b7aa5f5-6fb2-489a-a0fb-8c969a37fd53</Invoicing:InternalOrganization>
     <Invoicing:Supplier>b1ffe419-eae2-488b-9920-e7556c7aec1d</Invoicing:Supplier>
   </Invoicing:PurchaseInvoice>
-  <Invoicing:PurchaseInvoiceItem ExportGuid="06fb7187-8d97-4214-a220-99892dab00fd">
-    <Invoicing:Amount>339.00</Invoicing:Amount>
-    <Invoicing:ChangedOn>2011-10-20T16:46:20.046004Z</Invoicing:ChangedOn>
-    <Invoicing:CreatedOn>2011-10-20T16:46:20.046004Z</Invoicing:CreatedOn>
-    <Invoicing:Description>Miete</Invoicing:Description>
-    <Invoicing:Invoice>5876ab33-f4ac-439b-b8d6-510045c909d4</Invoicing:Invoice>
-    <Invoicing:Items_pos>0</Invoicing:Items_pos>
-    <Invoicing:Quantity>1.00</Invoicing:Quantity>
-    <Invoicing:Taxable>true</Invoicing:Taxable>
-  </Invoicing:PurchaseInvoiceItem>
   <Invoicing:PurchaseInvoiceItem ExportGuid="15e1dba6-76dc-45de-a10f-99b7844e8bbe">
     <Invoicing:Amount>339.00</Invoicing:Amount>
     <Invoicing:ChangedOn>2011-10-20T18:19:08.600782Z</Invoicing:ChangedOn>
@@ -131,6 +131,16 @@
     <Invoicing:Quantity>1.00</Invoicing:Quantity>
     <Invoicing:Taxable>true</Invoicing:Taxable>
   </Invoicing:PurchaseInvoiceItem>
+  <Invoicing:PurchaseInvoiceItem ExportGuid="30b6dec6-ebc5-4959-8cb5-93d58219733b">
+    <Invoicing:Amount>90.66</Invoicing:Amount>
+    <Invoicing:ChangedOn>2011-10-21T17:44:35.055805Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-21T17:44:35.055805Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Betriebskosten</Invoicing:Description>
+    <Invoicing:Invoice>66f5c348-762d-42f9-bff5-210e3dc4383c</Invoicing:Invoice>
+    <Invoicing:Items_pos>1</Invoicing:Items_pos>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:Taxable>true</Invoicing:Taxable>
+  </Invoicing:PurchaseInvoiceItem>
   <Invoicing:PurchaseInvoiceItem ExportGuid="455dce94-63bc-4d3d-9271-6e08b9b5808c">
     <Invoicing:Amount>90.66</Invoicing:Amount>
     <Invoicing:ChangedOn>2011-10-20T18:19:08.600782Z</Invoicing:ChangedOn>
@@ -141,6 +151,16 @@
     <Invoicing:Quantity>1.00</Invoicing:Quantity>
     <Invoicing:Taxable>true</Invoicing:Taxable>
   </Invoicing:PurchaseInvoiceItem>
+  <Invoicing:PurchaseInvoiceItem ExportGuid="5e4ac22e-ee48-4c13-adbe-3091e47723c0">
+    <Invoicing:Amount>339.00</Invoicing:Amount>
+    <Invoicing:ChangedOn>2011-10-21T17:44:35.055805Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-10-21T17:44:35.055805Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Miete</Invoicing:Description>
+    <Invoicing:Invoice>66f5c348-762d-42f9-bff5-210e3dc4383c</Invoicing:Invoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:Taxable>true</Invoicing:Taxable>
+  </Invoicing:PurchaseInvoiceItem>
   <Invoicing:PurchaseInvoiceItem ExportGuid="66f2602f-a566-4db6-ba5a-ad013cbd63d8">
     <Invoicing:Amount>339.00</Invoicing:Amount>
     <Invoicing:ChangedOn>2011-10-20T16:50:33.241004Z</Invoicing:ChangedOn>
@@ -148,16 +168,6 @@
     <Invoicing:Description>Miete</Invoicing:Description>
     <Invoicing:Invoice>3d0cfd8c-6a40-4529-a7f5-0fb4401abf58</Invoicing:Invoice>
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
-    <Invoicing:Quantity>1.00</Invoicing:Quantity>
-    <Invoicing:Taxable>true</Invoicing:Taxable>
-  </Invoicing:PurchaseInvoiceItem>
-  <Invoicing:PurchaseInvoiceItem ExportGuid="b575de52-df77-450a-9a92-aad6f638a57c">
-    <Invoicing:Amount>90.66</Invoicing:Amount>
-    <Invoicing:ChangedOn>2011-10-20T16:46:20.046004Z</Invoicing:ChangedOn>
-    <Invoicing:CreatedOn>2011-10-20T16:46:20.046004Z</Invoicing:CreatedOn>
-    <Invoicing:Description>Betriebskosten</Invoicing:Description>
-    <Invoicing:Invoice>5876ab33-f4ac-439b-b8d6-510045c909d4</Invoicing:Invoice>
-    <Invoicing:Items_pos>1</Invoicing:Items_pos>
     <Invoicing:Quantity>1.00</Invoicing:Quantity>
     <Invoicing:Taxable>true</Invoicing:Taxable>
   </Invoicing:PurchaseInvoiceItem>
@@ -202,13 +212,13 @@
     <Invoicing:Taxable>false</Invoicing:Taxable>
   </Invoicing:SalesInvoiceItem>
   <Invoicing:SalesQuote ExportGuid="ef6bfcac-f9b2-400f-9754-2357d67a3d84">
-    <Invoicing:ChangedOn>2011-10-21T09:58:30.754794Z</Invoicing:ChangedOn>
+    <Invoicing:ChangedOn>2011-10-21T12:55:05.396908Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-10-21T09:58:30.754794Z</Invoicing:CreatedOn>
     <Invoicing:Description>Angebot Software</Invoicing:Description>
     <Invoicing:IssueDate>2011-10-21T09:57:40.486767Z</Invoicing:IssueDate>
     <Invoicing:QuoteID>1</Invoicing:QuoteID>
     <Invoicing:ValidFrom>2011-10-21T09:57:40.453764Z</Invoicing:ValidFrom>
-    <Invoicing:ValidThru>0001-01-01T00:00:00Z</Invoicing:ValidThru>
+    <Invoicing:ValidThru>2011-12-01T00:00:00Z</Invoicing:ValidThru>
   </Invoicing:SalesQuote>
   <Invoicing:SalesQuoteItem ExportGuid="196aa413-2f76-479e-8b9e-8ea0981f52f1">
     <Invoicing:ChangedOn>2011-10-21T09:58:30.754794Z</Invoicing:ChangedOn>
@@ -249,6 +259,16 @@
     <Parties:CreatedOn>2011-10-20T15:28:43.406622Z</Parties:CreatedOn>
     <Parties:Party>821006b0-dd64-4573-acf8-098945c895ab</Parties:Party>
   </Parties:InternalOrganization>
+  <Parties:InternalOrganization ExportGuid="7bc19314-837f-4a1b-aae8-d92d561f51f9">
+    <Parties:ChangedOn>2011-10-21T17:43:53.123612Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-21T17:43:53.123612Z</Parties:CreatedOn>
+    <Parties:Party>e9aa2442-ddb5-4e1f-8e1d-552a602d6701</Parties:Party>
+  </Parties:InternalOrganization>
+  <Parties:Organization ExportGuid="14641b52-66a6-4f4a-afc7-e4b69c554c32">
+    <Parties:ChangedOn>2011-10-21T17:43:53.123612Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-21T17:43:53.123612Z</Parties:CreatedOn>
+    <Parties:Name>Consio</Parties:Name>
+  </Parties:Organization>
   <Parties:Organization ExportGuid="4af8c7cc-2b71-4d72-ba46-499f5d342c48">
     <Parties:ChangedOn>2011-10-20T16:05:23.543622Z</Parties:ChangedOn>
     <Parties:CreatedOn>2011-10-20T16:05:23.543622Z</Parties:CreatedOn>
@@ -273,6 +293,11 @@
     <Parties:ChangedOn>2011-10-20T16:05:38.317622Z</Parties:ChangedOn>
     <Parties:CreatedOn>2011-10-20T16:05:38.317622Z</Parties:CreatedOn>
     <Parties:Name>Dell</Parties:Name>
+  </Parties:Organization>
+  <Parties:Organization ExportGuid="e9aa2442-ddb5-4e1f-8e1d-552a602d6701">
+    <Parties:ChangedOn>2011-10-21T17:43:53.123612Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-21T17:43:53.123612Z</Parties:CreatedOn>
+    <Parties:Name>dasz.at OG</Parties:Name>
   </Parties:Organization>
   <Parties:Organization ExportGuid="ec1098f8-2c62-4bbd-9e08-73e9b2d81da9">
     <Parties:ChangedOn>2011-10-20T16:16:14.195145Z</Parties:ChangedOn>
@@ -316,4 +341,16 @@
     <Parties:CreatedOn>2011-10-20T16:04:48.372622Z</Parties:CreatedOn>
     <Parties:Party>9d9dcc35-af02-4d1e-b3ce-29090bfe99f9</Parties:Party>
   </Parties:Supplier>
+  <Parties:Supplier ExportGuid="ed2739f2-96b0-4f5c-b2b1-844a249e45c6">
+    <Parties:ChangedOn>2011-10-21T17:43:53.123612Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-21T17:43:53.123612Z</Parties:CreatedOn>
+    <Parties:Party>14641b52-66a6-4f4a-afc7-e4b69c554c32</Parties:Party>
+  </Parties:Supplier>
+  <Parties:SupplierRelationship ExportGuid="f84e0657-d025-4d7e-a7ab-bcc2981670df">
+    <Parties:ChangedOn>2011-10-21T12:40:21.211457Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-10-21T12:40:06.253961Z</Parties:CreatedOn>
+    <Parties:From>2011-01-01T00:00:00Z</Parties:From>
+    <Parties:InternalOrganization>1b7aa5f5-6fb2-489a-a0fb-8c969a37fd53</Parties:InternalOrganization>
+    <Parties:Supplier>b1ffe419-eae2-488b-9920-e7556c7aec1d</Parties:Supplier>
+  </Parties:SupplierRelationship>
 </KistlPackaging>

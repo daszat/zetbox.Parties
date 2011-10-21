@@ -21,11 +21,11 @@ Libs\Kistl\Kistl.Server.Service.exe %config% -publish Modules\Parties.xml -owner
 IF ERRORLEVEL 1 GOTO FAIL
 
 rem export Invoicing Module data
-Libs\Kistl\Kistl.Server.Service.exe %config% -export Modules\Invoicing.Data.xml -schemamodules Invoicing -ownermodules Invoicing
+Libs\Kistl\Kistl.Server.Service.exe %config% -export Data\Invoicing.Data.xml -schemamodules Invoicing -ownermodules Invoicing
 IF ERRORLEVEL 1 GOTO FAIL
 
 rem export test data
-Libs\Kistl\Kistl.Server.Service.exe %config% -export Data\Parties.xml -schemamodules Parties;Invoicing;DocumentManagement
+Libs\Kistl\Kistl.Server.Service.exe %config% -export Data\Parties.xml -schemamodules Parties;Invoicing
 IF ERRORLEVEL 1 GOTO FAIL
 
 
