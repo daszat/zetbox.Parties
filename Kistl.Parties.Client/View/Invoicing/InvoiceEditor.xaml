@@ -60,7 +60,8 @@
             </ItemsPanelTemplate>
           </ItemsControl.ItemsPanel>
         </ItemsControl>
-        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Items]}" />
+        <ContentPresenter Content="{Binding PropertyModelsByName[Items]}"
+                          ContentTemplateSelector="{StaticResource defaultTemplateSelector}" />
       </DockPanel>
     </ScrollViewer>
   </Grid>
