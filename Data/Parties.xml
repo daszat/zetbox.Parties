@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2011-10-21T14:32:49Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2011-10-28T15:53:27Z" xmlns="http://dasz.at/Kistl">
   <Invoicing:AdjustmentType ExportGuid="748d018e-ca1c-443f-bcdf-9d604352d960">
     <Invoicing:ChangedOn>2011-10-20T16:36:11.007043Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-10-20T16:19:24.170132Z</Invoicing:CreatedOn>
@@ -85,7 +85,6 @@
     <Invoicing:ChangedOn>2011-10-21T17:44:35.055805Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-10-21T17:43:53.123612Z</Invoicing:CreatedOn>
     <Invoicing:Date>2011-10-21T17:42:03.527653Z</Invoicing:Date>
-    <Invoicing:Document>cddf5949-28e0-4870-ba66-aa0f8adddfef</Invoicing:Document>
     <Invoicing:DueDate>0001-01-01T00:00:00Z</Invoicing:DueDate>
     <Invoicing:InvoiceID>12224</Invoicing:InvoiceID>
     <Invoicing:InternalOrganization>7bc19314-837f-4a1b-aae8-d92d561f51f9</Invoicing:InternalOrganization>
