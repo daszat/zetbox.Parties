@@ -17,36 +17,51 @@
       <ContentPresenter Content="{Binding PropertyModelsByName[Document].Value}"
                         ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
     </DockPanel>
-    <DockPanel Grid.Column="0">
-      <StackPanel DockPanel.Dock="Top">
-      <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Date]}" />
-      <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[InvoiceID]}" />
-      <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Description]}" />
-      <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Message]}" />
-      <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[InternalOrganization]}" />
-      <ctrls:LabeledView DataContext="{Binding Party}" />
-      <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
-      <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
-    </StackPanel>
-    <GroupBox DockPanel.Dock="Top"
-              Header="New Item">
-      <StackPanel>
-        <ctrls:LabeledView DataContext="{Binding Quantity}" />
-        <ctrls:LabeledView DataContext="{Binding Amount}" />
-        <ctrls:LabeledView DataContext="{Binding Description}" />
-        <ctrls:LabeledView DataContext="{Binding Taxable}" />
-        <ctrls:CommandButton CommandViewModel="{Binding NewItemCommand}" />
-      </StackPanel>
-    </GroupBox>
-    <GroupBox DockPanel.Dock="Top"
-              Header="New Adjustment">
-      <StackPanel>
-        <ctrls:LabeledView DataContext="{Binding AdjustmentType}" />
-        <ctrls:LabeledView DataContext="{Binding AdjustmentAmount}" />
-        <ctrls:CommandButton CommandViewModel="{Binding NewAdjustmentCommand}" />
-      </StackPanel>
-    </GroupBox>
-    <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Items]}" />
-  </DockPanel>
+    <ScrollViewer Grid.Column="0">
+      <DockPanel>
+        <StackPanel DockPanel.Dock="Top">
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Date]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[DueDate]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[InvoiceID]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Description]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Period]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Message]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[InternalOrganization]}" />
+          <ctrls:LabeledView DataContext="{Binding Party}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
+        </StackPanel>
+        <GroupBox DockPanel.Dock="Top"
+                  Header="New Item">
+          <StackPanel>
+            <ctrls:LabeledView DataContext="{Binding Quantity}" />
+            <ctrls:LabeledView DataContext="{Binding AmountPerUnit}" />
+            <ctrls:LabeledView DataContext="{Binding Amount}" />
+            <ctrls:LabeledView DataContext="{Binding Description}" />
+            <ctrls:LabeledView DataContext="{Binding Taxable}" />
+            <ctrls:CommandButton CommandViewModel="{Binding NewItemCommand}" />
+          </StackPanel>
+        </GroupBox>
+        <GroupBox DockPanel.Dock="Top"
+                  Header="New Adjustment">
+          <StackPanel>
+            <ctrls:LabeledView DataContext="{Binding AdjustmentType}" />
+            <ctrls:LabeledView DataContext="{Binding AdjustmentAmount}" />
+            <ctrls:CommandButton CommandViewModel="{Binding NewAdjustmentCommand}" />
+          </StackPanel>
+        </GroupBox>
+        <ItemsControl DockPanel.Dock="Bottom"
+                      ItemsSource="{Binding Actions}"
+                      ItemTemplateSelector="{StaticResource defaultTemplateSelector}">
+          <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+              <UniformGrid IsItemsHost="True"
+                           Rows="1"/>
+            </ItemsPanelTemplate>
+          </ItemsControl.ItemsPanel>
+        </ItemsControl>
+        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Items]}" />
+      </DockPanel>
+    </ScrollViewer>
   </Grid>
 </UserControl>

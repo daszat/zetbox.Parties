@@ -48,6 +48,34 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
             }
         }
 
+        private NullableStructValueViewModel<decimal> _amountPerUnit = null;
+        private NullableStructValueModel<decimal> _amountPerUnitMdl = null;
+        public ViewModel AmountPerUnit
+        {
+            get
+            {
+                if (_amountPerUnit == null)
+                {
+                    _amountPerUnitMdl = new NullableStructValueModel<decimal>("Amount / unit", "", true, false);
+                    _amountPerUnit = ViewModelFactory.CreateViewModel<NullableStructValueViewModel<decimal>.Factory>().Invoke(DataContext, this, _amountPerUnitMdl);
+                    _amountPerUnitMdl.PropertyChanged += new PropertyChangedEventHandler(_amountPerUnitMdl_PropertyChanged);
+                }
+                return _amountPerUnit;
+            }
+        }
+
+        void _amountPerUnitMdl_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == "Value" 
+                && _amountMdl != null 
+                && _quantityMdl != null 
+                && _amountPerUnitMdl.Value.HasValue 
+                && _quantityMdl.Value.HasValue)
+            {
+                _amountMdl.Value = _quantityMdl.Value.Value * _amountPerUnitMdl.Value.Value;
+            }
+        }
+
         private NullableStructValueViewModel<decimal> _quantity = null;
         private NullableStructValueModel<decimal> _quantityMdl = null;
         public ViewModel Quantity
@@ -173,7 +201,11 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
         {
             if (CanNewItem())
             {
-                Invoice.CreateItem(_quantityMdl.Value.Value, _amountMdl.Value.Value, _descriptionMdl.Value, _taxableMdl.Value.Value);
+                var item = Invoice.CreateItem(_quantityMdl.Value.Value, _amountMdl.Value.Value, _descriptionMdl.Value, _taxableMdl.Value.Value);
+                if (_amountPerUnitMdl != null && _amountPerUnitMdl.Value.HasValue)
+                {
+                    item.AmountPerUnit = _amountPerUnitMdl.Value;
+                }
             }
         }
 

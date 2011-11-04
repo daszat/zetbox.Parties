@@ -12,6 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Kistl.Client.GUI;
+using Kistl.Parties.Client.ViewModel.Invoicing;
 
 namespace Kistl.Parties.Client.View.Invoicing
 {
@@ -19,11 +20,16 @@ namespace Kistl.Parties.Client.View.Invoicing
     /// Interaction logic for InvoiceEditor.xaml
     /// </summary>
     [ViewDescriptor(App.GUI.Toolkit.WPF)]
-    public partial class InvoiceEditor : UserControl
+    public partial class InvoiceEditor : UserControl, IHasViewModel<InvoiceViewModel>
     {
         public InvoiceEditor()
         {
             InitializeComponent();
+        }
+
+        public InvoiceViewModel ViewModel
+        {
+            get { return (InvoiceViewModel)DataContext; }
         }
     }
 }
