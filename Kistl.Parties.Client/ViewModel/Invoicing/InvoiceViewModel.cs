@@ -48,19 +48,19 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
             }
         }
 
-        private NullableStructValueViewModel<decimal> _amountPerUnit = null;
-        private NullableStructValueModel<decimal> _amountPerUnitMdl = null;
-        public ViewModel AmountPerUnit
+        private NullableStructValueViewModel<decimal> _unitPrice = null;
+        private NullableStructValueModel<decimal> _UnitPriceMdl = null;
+        public ViewModel UnitPrice
         {
             get
             {
-                if (_amountPerUnit == null)
+                if (_unitPrice == null)
                 {
-                    _amountPerUnitMdl = new NullableStructValueModel<decimal>("Amount / unit", "", true, false);
-                    _amountPerUnit = ViewModelFactory.CreateViewModel<NullableStructValueViewModel<decimal>.Factory>().Invoke(DataContext, this, _amountPerUnitMdl);
-                    _amountPerUnitMdl.PropertyChanged += new PropertyChangedEventHandler(_amountPerUnitMdl_PropertyChanged);
+                    _UnitPriceMdl = new NullableStructValueModel<decimal>("Unit price", "", true, false);
+                    _unitPrice = ViewModelFactory.CreateViewModel<NullableStructValueViewModel<decimal>.Factory>().Invoke(DataContext, this, _UnitPriceMdl);
+                    _UnitPriceMdl.PropertyChanged += new PropertyChangedEventHandler(_amountPerUnitMdl_PropertyChanged);
                 }
-                return _amountPerUnit;
+                return _unitPrice;
             }
         }
 
@@ -69,10 +69,10 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
             if (e.PropertyName == "Value" 
                 && _amountMdl != null 
                 && _quantityMdl != null 
-                && _amountPerUnitMdl.Value.HasValue 
+                && _UnitPriceMdl.Value.HasValue 
                 && _quantityMdl.Value.HasValue)
             {
-                _amountMdl.Value = _quantityMdl.Value.Value * _amountPerUnitMdl.Value.Value;
+                _amountMdl.Value = _quantityMdl.Value.Value * _UnitPriceMdl.Value.Value;
             }
         }
 
@@ -202,9 +202,9 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
             if (CanNewItem())
             {
                 var item = Invoice.CreateItem(_quantityMdl.Value.Value, _amountMdl.Value.Value, _descriptionMdl.Value, _taxableMdl.Value.Value);
-                if (_amountPerUnitMdl != null && _amountPerUnitMdl.Value.HasValue)
+                if (_UnitPriceMdl != null && _UnitPriceMdl.Value.HasValue)
                 {
-                    item.AmountPerUnit = _amountPerUnitMdl.Value;
+                    item.UnitPrice = _UnitPriceMdl.Value;
                 }
             }
         }

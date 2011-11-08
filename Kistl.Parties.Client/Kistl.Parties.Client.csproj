@@ -76,9 +76,13 @@
   <ItemGroup>
     <Compile Include="CustomClientActionsModule.cs" />
     <Compile Include="DocumentManagement\ImportedFileActions.cs" />
+    <Compile Include="Invoicing\QuoteItemActions.cs" />
     <Compile Include="Invoicing\InvoiceAdjustmentActions.cs" />
     <Compile Include="Invoicing\SalesInvoiceActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\Invoicing\PurchaseQuoteViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\SalesQuoteViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\QuoteViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\Reports\SalesQuoteReportScreenViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\Reports\SalesInvoiceReportScreenViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\Reports\PurchaseInvoiceReportScreenViewModel.cs" />
@@ -89,6 +93,12 @@
     <Compile Include="ViewModel\Parties\PartyViewModel.cs" />
     <Compile Include="ViewModel\Parties\PersonViewModel.cs" />
     <Compile Include="ViewModel\ReportScreenViewModel.cs" />
+    <Compile Include="View\Invoicing\PurchaseQuoteEditor.xaml.cs">
+      <DependentUpon>PurchaseQuoteEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Invoicing\SalesQuoteEditor.xaml.cs">
+      <DependentUpon>SalesQuoteEditor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Invoicing\InvoiceEditor.xaml.cs">
       <DependentUpon>InvoiceEditor.xaml</DependentUpon>
     </Compile>
@@ -98,6 +108,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Page Include="View\Invoicing\PurchaseQuoteEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Invoicing\SalesQuoteEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\Invoicing\InvoiceEditor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
