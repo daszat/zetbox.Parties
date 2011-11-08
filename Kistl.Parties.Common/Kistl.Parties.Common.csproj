@@ -59,6 +59,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accounting\AccountActions.cs" />
+    <Compile Include="Accounting\CategoryActions.cs" />
+    <Compile Include="Accounting\CategoryGroupActions.cs" />
+    <Compile Include="Accounting\TransactionActions.cs" />
     <Compile Include="CustomCommonActionsModule.cs" />
     <Compile Include="Invoicing\AdjustmentTypeActions.cs" />
     <Compile Include="Invoicing\SalesInvoiceActions.cs" />
@@ -77,9 +81,7 @@
     <Compile Include="Parties\SupplierRelationshipActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Accounting\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
