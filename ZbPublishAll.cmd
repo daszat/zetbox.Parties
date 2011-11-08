@@ -17,15 +17,19 @@ Libs\Kistl\Kistl.Server.Service.exe %config% -generate -updatedeployedschema -re
 IF ERRORLEVEL 1 GOTO FAIL
 
 rem publish schema data for parties project
-Libs\Kistl\Kistl.Server.Service.exe %config% -publish Modules\Parties.xml -ownermodules Parties;Invoicing
+Libs\Kistl\Kistl.Server.Service.exe %config% -publish Modules\Parties.xml -ownermodules Parties;Invoicing;Accounting
 IF ERRORLEVEL 1 GOTO FAIL
 
 rem export Invoicing Module data
 Libs\Kistl\Kistl.Server.Service.exe %config% -export Data\Invoicing.Data.xml -schemamodules Invoicing -ownermodules Invoicing
 IF ERRORLEVEL 1 GOTO FAIL
 
+rem export Accounting Module data
+Libs\Kistl\Kistl.Server.Service.exe %config% -export Data\Accounting.Data.xml -schemamodules Accounting -ownermodules Accounting
+IF ERRORLEVEL 1 GOTO FAIL
+
 rem export test data
-Libs\Kistl\Kistl.Server.Service.exe %config% -export Data\Parties.xml -schemamodules Parties;Invoicing
+Libs\Kistl\Kistl.Server.Service.exe %config% -export Data\Parties.xml -schemamodules Parties;Invoicing;Accounting
 IF ERRORLEVEL 1 GOTO FAIL
 
 
