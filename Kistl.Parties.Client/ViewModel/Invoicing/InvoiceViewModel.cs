@@ -123,19 +123,19 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
             }
         }
 
-        private ObjectReferenceViewModel _adjustmentType = null;
-        private ObjectReferenceValueModel _adjustmentTypeMdl = null;
-        public ViewModel AdjustmentType
+        private ObjectReferenceViewModel _vatType = null;
+        private ObjectReferenceValueModel _vatTypeMdl = null;
+        public ViewModel VATType
         {
             get
             {
-                if (_adjustmentType == null)
+                if (_vatType == null)
                 {
-                    _adjustmentTypeMdl = new ObjectReferenceValueModel("AdjustmentType", "", false, false, FrozenContext.FindPersistenceObject<ControlKind>(NamedObjects.ControlKind_Kistl_App_GUI_ObjectRefDropdownKind), typeof(AdjustmentType).GetObjectClass(FrozenContext));
-                    _adjustmentTypeMdl.PropertyChanged += (s, e) => UpdateAdjustmentAmount();
-                    _adjustmentType = ViewModelFactory.CreateViewModel<ObjectReferenceViewModel.Factory>().Invoke(DataContext, this, _adjustmentTypeMdl);
+                    _vatTypeMdl = new ObjectReferenceValueModel("Vat type", "", false, false, FrozenContext.FindPersistenceObject<ControlKind>(NamedObjects.ControlKind_Kistl_App_GUI_ObjectRefDropdownKind), typeof(VATType).GetObjectClass(FrozenContext));
+                    _vatTypeMdl.PropertyChanged += (s, e) => UpdateAdjustmentAmount();
+                    _vatType = ViewModelFactory.CreateViewModel<ObjectReferenceViewModel.Factory>().Invoke(DataContext, this, _vatTypeMdl);
                 }
-                return _adjustmentType;
+                return _vatType;
             }
         }
 
@@ -159,9 +159,9 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
         #region Helper
         protected void UpdateAdjustmentAmount()
         {
-            if (_adjustmentTypeMdl != null && _adjustmentTypeMdl.Value != null && _adjustmentAmountMdl != null)
+            if (_vatTypeMdl != null && _vatTypeMdl.Value != null && _adjustmentAmountMdl != null)
             {
-                var type = (AdjustmentType)_adjustmentTypeMdl.Value;
+                var type = (VATType)_vatTypeMdl.Value;
                 if (type.Percentage.HasValue)
                 {
                     _adjustmentAmountMdl.Value = Math.Round(Invoice.TotalNet * type.Percentage.Value / (decimal)100.0, 2);
@@ -214,34 +214,6 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
             return _amountMdl != null && _amountMdl.Value != null
                 && _quantityMdl != null && _quantityMdl != null
                 && _descriptionMdl != null && !string.IsNullOrEmpty(_descriptionMdl.Value);
-        }
-
-        private ICommandViewModel _NewAdjustmentCommand = null;
-        public ICommandViewModel NewAdjustmentCommand
-        {
-            get
-            {
-                if (_NewAdjustmentCommand == null)
-                {
-                    _NewAdjustmentCommand = ViewModelFactory.CreateViewModel<SimpleCommandViewModel.Factory>().Invoke(DataContext, this, "New", "Creates a new adjustment item", NewAdjustment, CanNewAdjustment, null);
-                }
-                return _NewAdjustmentCommand;
-            }
-        }
-
-        public void NewAdjustment()
-        {
-            if (CanNewAdjustment())
-            {
-                var item = DataContext.Create<InvoiceAdjustment>();
-                Invoice.Items.Add(item);
-                item.Type = (AdjustmentType)_adjustmentTypeMdl.Value;
-            }
-        }
-
-        public bool CanNewAdjustment()
-        {
-            return _adjustmentTypeMdl != null && _adjustmentTypeMdl.Value != null;
         }
         #endregion
     }

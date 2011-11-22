@@ -18,20 +18,13 @@ namespace ZBox.Basic.Invoicing
         [Invocation]
         public static void postSet_Amount(InvoiceItem obj, PropertyPostSetterEventArgs<decimal> e)
         {
-            if (obj.Invoice != null)
-            {
-                obj.Invoice.NotifyPropertyChanged("Total", (decimal)0, (decimal)0);
-                obj.Invoice.NotifyPropertyChanged("TotalNet", (decimal)0, (decimal)0);
-            }
+            // Done in base class
         }
 
         [Invocation]
-        public static void postSet_Taxable(InvoiceItem obj, PropertyPostSetterEventArgs<bool> e)
+        public static void postSet_AmountNet(InvoiceItem obj, PropertyPostSetterEventArgs<decimal> e)
         {
-            if (obj.Invoice != null)
-            {
-                obj.Invoice.NotifyPropertyChanged("TotalNet", (decimal)0, (decimal)0);
-            }
+            // Done in base class
         }
     }
 }

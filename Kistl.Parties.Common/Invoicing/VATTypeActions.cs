@@ -7,10 +7,10 @@ using Kistl.API;
 namespace ZBox.Basic.Invoicing
 {
     [Implementor]
-    public static class AdjustmentTypeActions
+    public static class VATTypeActions
     {
         [Invocation]
-        public static void ToString(ZBox.Basic.Invoicing.AdjustmentType obj, MethodReturnEventArgs<System.String> e)
+        public static void ToString(ZBox.Basic.Invoicing.VATType obj, MethodReturnEventArgs<System.String> e)
         {
             e.Result = obj.Description;
         }

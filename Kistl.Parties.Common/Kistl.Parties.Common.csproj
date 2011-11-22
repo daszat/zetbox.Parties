@@ -64,7 +64,9 @@
     <Compile Include="Accounting\CategoryGroupActions.cs" />
     <Compile Include="Accounting\TransactionActions.cs" />
     <Compile Include="CustomCommonActionsModule.cs" />
-    <Compile Include="Invoicing\AdjustmentTypeActions.cs" />
+    <Compile Include="Invoicing\PurchaseInvoiceItemActions.cs" />
+    <Compile Include="Invoicing\SalesInvoiceItemActions.cs" />
+    <Compile Include="Invoicing\VATTypeActions.cs" />
     <Compile Include="Invoicing\SalesInvoiceActions.cs" />
     <Compile Include="Invoicing\PurchaseInvoiceActions.cs" />
     <Compile Include="Invoicing\InvoiceActions.cs" />

@@ -17,10 +17,21 @@ namespace ZBox.Basic.Invoicing
             item.Quantity = quantity;
             item.Amount = amount;
             item.Description = description;
-            item.Taxable = taxable;
 
             obj.Items.Add(item);
             e.Result = item;
+        }
+
+        [Invocation]
+        public static void get_Total(ZBox.Basic.Invoicing.PurchaseInvoice obj, PropertyGetterEventArgs<decimal> e)
+        {
+            e.Result = obj.Items.Sum(i => i.Amount);
+        }
+
+        [Invocation]
+        public static void get_TotalNet(ZBox.Basic.Invoicing.PurchaseInvoice obj, PropertyGetterEventArgs<decimal> e)
+        {
+            e.Result = obj.Items.Sum(i => i.AmountNet);
         }
     }
 }
