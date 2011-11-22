@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2011-11-22T18:02:47Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2011-11-22T18:24:17Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T17:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T17:47:04.534407Z</KistlBase:CreatedOn>
@@ -576,7 +576,7 @@
   </KistlBase:DateTimeProperty>
   <KistlBase:DateTimeProperty ExportGuid="97fde3c3-a2e7-4d46-b771-8fd42321cca0">
     <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
-    <KistlBase:ChangedOn>2011-11-08T18:22:59.738678Z</KistlBase:ChangedOn>
+    <KistlBase:ChangedOn>2011-11-22T18:24:17.540763Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T17:52:29.966021Z</KistlBase:CreatedOn>
     <KistlBase:Description>Value date, not booking date</KistlBase:Description>
     <GUI:FilterConfiguration>f812153c-70de-4b41-8cef-c5fc9853c381</GUI:FilterConfiguration>
@@ -588,7 +588,7 @@
     <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
     <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
     <KistlBase:IsList>false</KistlBase:IsList>
-    <KistlBase:DateTimeStyle>1</KistlBase:DateTimeStyle>
+    <KistlBase:DateTimeStyle>2</KistlBase:DateTimeStyle>
   </KistlBase:DateTimeProperty>
   <KistlBase:GuidProperty ExportGuid="eaf641da-40ef-4e00-8b33-377098f943de">
     <KistlBase:CategoryTags>Export</KistlBase:CategoryTags>
@@ -1665,7 +1665,6 @@
     <GUI:ChangedOn>2011-11-22T17:38:06.903757Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-11-22T17:38:06.903757Z</GUI:CreatedOn>
     <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
-    <GUI:RequestedKind>2279b0a6-36b8-4c97-b1fd-9eb1710e74f3</GUI:RequestedKind>
     <GUI:Required>false</GUI:Required>
     <GUI:ViewModelDescriptor>4ff2b6ec-a47f-431b-aa6d-d10b39f8d628</GUI:ViewModelDescriptor>
     <GUI:Property>ac269782-9289-47b4-9f1e-f395f2749b97</GUI:Property>

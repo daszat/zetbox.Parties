@@ -9,6 +9,8 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
     using Kistl.API;
     using ZBox.Basic.Accounting;
     using Kistl.Client.Presentables.KistlBase;
+    using Kistl.App.GUI;
+    using Kistl.Client;
 
     [ViewModelDescriptor]
     public class AccountViewModel : DataObjectViewModel
@@ -36,10 +38,36 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
                 typeof(Transaction).GetObjectClass(FrozenContext), 
                 () => DataContext.GetQuery<Transaction>().Where(i => i.Account == this.Account));
             lst.AllowAddNew = true;
+            lst.IsEditable = true;
             lst.ViewMethod = App.GUI.InstanceListViewMethod.Details;
+            lst.RequestedKind = FrozenContext.FindPersistenceObject<ControlKind>(NamedObjects.ControlKind_Kistl_App_GUI_InstanceGridKind);
+            lst.DisplayedColumnsCreated += new InstanceListViewModel.DisplayedColumnsCreatedHandler(lst_DisplayedColumnsCreated);
+            lst.ObjectCreated += (obj) =>
+            {
+                var t = (Transaction)obj;
+                t.Account = Account;
+                t.Date = DateTime.Today;
+            };
+
             var grp = ViewModelFactory.CreateViewModel<SinglePropertyGroupViewModel.Factory>().Invoke(DataContext, this, "Transactions", new[] { lst });
             result.Add(grp);
             return result;
+        }
+
+        void lst_DisplayedColumnsCreated(Kistl.Client.Models.GridDisplayConfiguration cols)
+        {
+            var col = cols.Columns.SingleOrDefault(i => i.Property.Name == "Category");
+            if (col != null)
+            {
+                var kind = FrozenContext.FindPersistenceObject<ControlKind>(NamedObjects.ControlKind_Kistl_App_GUI_ObjectRefDropdownKind);
+                col.GridPreEditKind = kind;
+                col.ControlKind = kind;
+            }
+            col = cols.Columns.SingleOrDefault(i => i.Property.Name == "Invoices");
+            if (col != null)
+            {
+                col.GridPreEditKind = FrozenContext.FindPersistenceObject<ControlKind>(NamedObjects.ControlKind_Kistl_App_GUI_TextKind);
+            }
         }
     }
 }

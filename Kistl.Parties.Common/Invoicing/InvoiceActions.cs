@@ -12,7 +12,7 @@ namespace ZBox.Basic.Invoicing
         [Invocation]
         public static void ToString(ZBox.Basic.Invoicing.Invoice obj, MethodReturnEventArgs<System.String> e)
         {
-            e.Result = string.Format("{0}, {1}", obj.InvoiceID, obj.Description);
+            e.Result = string.Format("{0}, {1}, Total {2}/{3}", obj.InvoiceID, obj.Description, obj.TotalNet, obj.Total);
         }
 
         [Invocation]

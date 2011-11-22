@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2011-11-22T18:02:47Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2011-11-22T18:24:17Z" xmlns="http://dasz.at/Kistl">
   <Accounting:Account ExportGuid="6e88530b-3bc7-431f-b098-ace12824e3bb">
     <Accounting:ChangedOn>2011-11-22T18:03:18.554757Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2011-11-22T18:03:18.554757Z</Accounting:CreatedOn>
@@ -17,6 +17,22 @@
     <Accounting:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</Accounting:Module>
     <Accounting:Name>Expenses</Accounting:Name>
   </Accounting:CategoryGroup>
+  <Accounting:Transaction ExportGuid="05f88ace-6fd2-4dbc-9da0-edc5a26e36c8">
+    <Accounting:Account>6e88530b-3bc7-431f-b098-ace12824e3bb</Accounting:Account>
+    <Accounting:Amount>78987.00</Accounting:Amount>
+    <Accounting:ChangedOn>2011-11-22T18:23:50.056787Z</Accounting:ChangedOn>
+    <Accounting:Comment>	asdfasdfasdf</Accounting:Comment>
+    <Accounting:CreatedOn>2011-11-22T18:23:50.056787Z</Accounting:CreatedOn>
+    <Accounting:Date>2011-11-22T00:00:00Z</Accounting:Date>
+  </Accounting:Transaction>
+  <Accounting:Transaction ExportGuid="e0124427-a015-4a89-8759-f9452de08549">
+    <Accounting:Account>6e88530b-3bc7-431f-b098-ace12824e3bb</Accounting:Account>
+    <Accounting:Amount>2544.00</Accounting:Amount>
+    <Accounting:ChangedOn>2011-11-22T18:23:34.174437Z</Accounting:ChangedOn>
+    <Accounting:Comment>asdf</Accounting:Comment>
+    <Accounting:CreatedOn>2011-11-22T18:23:34.174437Z</Accounting:CreatedOn>
+    <Accounting:Date>2011-11-22T00:00:00Z</Accounting:Date>
+  </Accounting:Transaction>
   <Invoicing:VATType ExportGuid="39ce5d95-4e86-45b0-b431-a898ecb3f6a8">
     <Invoicing:ChangedOn>2011-11-22T16:32:59.869005Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-11-22T16:32:59.869005Z</Invoicing:CreatedOn>
