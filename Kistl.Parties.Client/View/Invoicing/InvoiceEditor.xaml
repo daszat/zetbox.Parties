@@ -31,25 +31,6 @@
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
         </StackPanel>
-        <GroupBox DockPanel.Dock="Top"
-                  Header="New Item">
-          <StackPanel>
-            <ctrls:LabeledView DataContext="{Binding Quantity}" />
-            <ctrls:LabeledView DataContext="{Binding UnitPrice}" />
-            <ctrls:LabeledView DataContext="{Binding Amount}" />
-            <ctrls:LabeledView DataContext="{Binding Description}" />
-            <ctrls:LabeledView DataContext="{Binding Taxable}" />
-            <ctrls:CommandButton CommandViewModel="{Binding NewItemCommand}" />
-          </StackPanel>
-        </GroupBox>
-        <GroupBox DockPanel.Dock="Top"
-                  Header="New Adjustment">
-          <StackPanel>
-            <ctrls:LabeledView DataContext="{Binding AdjustmentType}" />
-            <ctrls:LabeledView DataContext="{Binding AdjustmentAmount}" />
-            <ctrls:CommandButton CommandViewModel="{Binding NewAdjustmentCommand}" />
-          </StackPanel>
-        </GroupBox>
         <ItemsControl DockPanel.Dock="Bottom"
                       ItemsSource="{Binding Actions}"
                       ItemTemplateSelector="{StaticResource defaultTemplateSelector}">

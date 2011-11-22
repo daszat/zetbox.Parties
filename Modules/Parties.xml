@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2011-11-22T15:38:34Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2011-11-22T16:56:14Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T17:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T17:47:04.534407Z</KistlBase:CreatedOn>
@@ -1504,7 +1504,7 @@
     <GUI:ShowIdInLists>false</GUI:ShowIdInLists>
     <GUI:ShowNameInLists>false</GUI:ShowNameInLists>
     <KistlBase:BaseObjectClass>592df488-dfe5-4832-b5c8-41f9dcaf694d</KistlBase:BaseObjectClass>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>496c1a58-d48d-44bd-b7b2-32a5f593f7c2</GUI:DefaultViewModelDescriptor>
     <KistlBase:IsAbstract>false</KistlBase:IsAbstract>
     <KistlBase:IsFrozenObject>false</KistlBase:IsFrozenObject>
     <GUI:IsSimpleObject>true</GUI:IsSimpleObject>
@@ -1599,7 +1599,7 @@
     <GUI:ShowIdInLists>false</GUI:ShowIdInLists>
     <GUI:ShowNameInLists>false</GUI:ShowNameInLists>
     <KistlBase:BaseObjectClass>592df488-dfe5-4832-b5c8-41f9dcaf694d</KistlBase:BaseObjectClass>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>d0803ad9-c968-4c08-aac1-15ee31987b31</GUI:DefaultViewModelDescriptor>
     <KistlBase:IsAbstract>false</KistlBase:IsAbstract>
     <KistlBase:IsFrozenObject>false</KistlBase:IsFrozenObject>
     <GUI:IsSimpleObject>true</GUI:IsSimpleObject>
@@ -2137,6 +2137,7 @@
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>Items</KistlBase:Name>
     <KistlBase:ObjectClass>c437c896-cfca-4800-8495-5538b025201a</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>0</KistlBase:Properties_pos>
     <GUI:RequestedKind>3e933ba6-a890-4114-97f8-595ef0560aee</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>9fce01fe-fd6d-4e21-8b55-08d5e38aea36</GUI:ValueModelDescriptor>
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
@@ -2161,6 +2162,7 @@
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>PurchaseInvoice</KistlBase:Name>
     <KistlBase:ObjectClass>2ce76872-c394-49ec-83e5-42ce29d7df19</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>0</KistlBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
     <KistlBase:RelationEnd>a0a8ecdb-872c-4e5f-b0b5-feb6bdf0aa11</KistlBase:RelationEnd>
@@ -2593,6 +2595,7 @@
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>Items</KistlBase:Name>
     <KistlBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>0</KistlBase:Properties_pos>
     <GUI:RequestedKind>3e933ba6-a890-4114-97f8-595ef0560aee</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>9fce01fe-fd6d-4e21-8b55-08d5e38aea36</GUI:ValueModelDescriptor>
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
@@ -2605,6 +2608,7 @@
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>SalesInvoice</KistlBase:Name>
     <KistlBase:ObjectClass>6d955a41-a25b-4c22-9d4d-eabaf3ec1c2f</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>0</KistlBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
     <KistlBase:RelationEnd>a6cee6f5-981e-44ee-85a0-eff10ea1d638</KistlBase:RelationEnd>
@@ -2926,8 +2930,8 @@
   <KistlBase:Relation ExportGuid="ee353395-2f2c-469f-9873-bd167035516c">
     <KistlBase:A>e522a008-9289-4854-9fcc-9cfa1e7a88e3</KistlBase:A>
     <KistlBase:B>a0a8ecdb-872c-4e5f-b0b5-feb6bdf0aa11</KistlBase:B>
-    <KistlBase:ChangedOn>2011-11-22T15:32:57.377357Z</KistlBase:ChangedOn>
-    <KistlBase:Containment>0</KistlBase:Containment>
+    <KistlBase:ChangedOn>2011-11-22T16:56:02.377757Z</KistlBase:ChangedOn>
+    <KistlBase:Containment>1</KistlBase:Containment>
     <KistlBase:CreatedOn>2011-11-22T15:32:57.377357Z</KistlBase:CreatedOn>
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Storage>2</KistlBase:Storage>
@@ -3046,8 +3050,8 @@
   <KistlBase:Relation ExportGuid="8d9ea631-dd81-4043-bfd9-cb30622dfbd8">
     <KistlBase:A>f4651e79-5015-42d2-ab51-8d800a592872</KistlBase:A>
     <KistlBase:B>a6cee6f5-981e-44ee-85a0-eff10ea1d638</KistlBase:B>
-    <KistlBase:ChangedOn>2011-11-22T15:30:43.69299Z</KistlBase:ChangedOn>
-    <KistlBase:Containment>0</KistlBase:Containment>
+    <KistlBase:ChangedOn>2011-11-22T16:56:14.583757Z</KistlBase:ChangedOn>
+    <KistlBase:Containment>1</KistlBase:Containment>
     <KistlBase:CreatedOn>2011-11-22T15:30:43.69299Z</KistlBase:CreatedOn>
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Storage>2</KistlBase:Storage>
@@ -4808,6 +4812,11 @@
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:ViewModelRef>9b78e99f-cd2c-4280-8506-1df08b57a1b7</GUI:ViewModelRef>
   </GUI:ViewModelDescriptor>
+  <GUI:ViewModelDescriptor ExportGuid="496c1a58-d48d-44bd-b7b2-32a5f593f7c2">
+    <GUI:Description>ViewModel for Purchase Invoice Items</GUI:Description>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:ViewModelRef>965ff549-7b67-4913-8cb5-bda515a98719</GUI:ViewModelRef>
+  </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="4c10c8c1-8108-4d21-9f91-69f3ae8db405">
     <GUI:DefaultEditorKind>651ba328-b23a-4c1d-ad41-1e70a5f8ca97</GUI:DefaultEditorKind>
     <GUI:Description>ViewModel for Purchase Invoices</GUI:Description>
@@ -4834,6 +4843,11 @@
     <GUI:Description>ScreenViewModel for Sales Quote Reports</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:ViewModelRef>9fc69633-6a7d-4ed2-ac2b-6bf4be5777d9</GUI:ViewModelRef>
+  </GUI:ViewModelDescriptor>
+  <GUI:ViewModelDescriptor ExportGuid="d0803ad9-c968-4c08-aac1-15ee31987b31">
+    <GUI:Description>ViewModel for Sales Invoice Items</GUI:Description>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:ViewModelRef>8572fc1b-0591-4235-8120-4fdc2e09b044</GUI:ViewModelRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="e3a061b7-1f12-4fa0-a968-eacd299e752e">
     <GUI:DefaultEditorKind>651ba328-b23a-4c1d-ad41-1e70a5f8ca97</GUI:DefaultEditorKind>
@@ -4886,7 +4900,7 @@
     <GUI:CreatedOn>2011-10-20T15:56:30.640622Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Parent>916544de-0c04-4d6f-9ae1-d481e40361a0</GUI:Parent>
-    <GUI:Children_pos>0</GUI:Children_pos>
+    <GUI:Children_pos>100</GUI:Children_pos>
     <GUI:Title>Purchase</GUI:Title>
     <GUI:AllowAddNew>true</GUI:AllowAddNew>
     <GUI:Type>c437c896-cfca-4800-8495-5538b025201a</GUI:Type>
@@ -4916,7 +4930,7 @@
     <GUI:CreatedOn>2011-10-21T10:14:15.943524Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Parent>916544de-0c04-4d6f-9ae1-d481e40361a0</GUI:Parent>
-    <GUI:Children_pos>2</GUI:Children_pos>
+    <GUI:Children_pos>400</GUI:Children_pos>
     <GUI:Title>Reports</GUI:Title>
   </GUI:NavigationScreen>
   <GUI:NavigationScreen ExportGuid="12361d6d-dc7b-44d8-9b71-2a3373e7a1de">
@@ -4932,7 +4946,7 @@
     <GUI:CreatedOn>2011-10-20T15:56:59.540622Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Parent>916544de-0c04-4d6f-9ae1-d481e40361a0</GUI:Parent>
-    <GUI:Children_pos>1</GUI:Children_pos>
+    <GUI:Children_pos>300</GUI:Children_pos>
     <GUI:Title>Sales</GUI:Title>
     <GUI:AllowAddNew>true</GUI:AllowAddNew>
     <GUI:Type>84c9fa60-87dd-4715-9c14-38302a7936fd</GUI:Type>
@@ -4965,6 +4979,17 @@
     <GUI:Children_pos>0</GUI:Children_pos>
     <GUI:Title>Sales</GUI:Title>
   </GUI:NavigationScreen>
+  <GUI:NavigationSearchScreen ExportGuid="8c839de7-f94f-48e0-b67b-575e698eebd4">
+    <GUI:ChangedOn>2011-11-22T17:04:28.610757Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2011-11-22T16:32:15.904609Z</GUI:CreatedOn>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:Parent>916544de-0c04-4d6f-9ae1-d481e40361a0</GUI:Parent>
+    <GUI:Children_pos>401</GUI:Children_pos>
+    <GUI:Title>VAT Types</GUI:Title>
+    <GUI:AllowAddNew>true</GUI:AllowAddNew>
+    <GUI:Type>7caf90cf-f27b-4e7b-936e-3858b50e8e0a</GUI:Type>
+    <GUI:ViewMethod>2</GUI:ViewMethod>
+  </GUI:NavigationSearchScreen>
   <GUI:ControlKind ExportGuid="2f53471c-6a08-4c1b-ad89-b9206c147ed8">
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Name>ZBox.Basic.Invoicing.PurchaseQuoteEditor</GUI:Name>
@@ -7238,6 +7263,20 @@
     <KistlBase:FullName>Kistl.Parties.Client.View.ReportScreenDisplay</KistlBase:FullName>
     <KistlBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</KistlBase:Parent>
   </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="16c66c02-4846-4be2-bf10-0839a0a95ec9">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2011-11-22T16:47:51.413757Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2011-11-22T16:47:51.413757Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.InvoiceItemViewModel</KistlBase:FullName>
+    <KistlBase:Parent>a07f30a6-b920-4fef-98ac-53155791e804</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="5c500a20-38f8-4509-b79e-7d41107d4ca2">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2011-11-22T16:47:51.413757Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2011-11-22T16:47:51.413757Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.InvoiceItemViewModel+Factory</KistlBase:FullName>
+    <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
+  </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="9b78e99f-cd2c-4280-8506-1df08b57a1b7">
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
     <KistlBase:ChangedOn>2011-10-20T17:38:22.032Z</KistlBase:ChangedOn>
@@ -7250,6 +7289,20 @@
     <KistlBase:ChangedOn>2011-10-20T17:38:22.032Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-10-20T17:38:22.032Z</KistlBase:CreatedOn>
     <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.InvoiceViewModel+Factory</KistlBase:FullName>
+    <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="965ff549-7b67-4913-8cb5-bda515a98719">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2011-11-22T16:47:51.413757Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2011-11-22T16:47:51.413757Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.PurchaseInvoiceItemViewModel</KistlBase:FullName>
+    <KistlBase:Parent>16c66c02-4846-4be2-bf10-0839a0a95ec9</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="132a6d38-6e8f-4c16-87c4-061ed71f1ea1">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2011-11-22T16:47:51.413757Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2011-11-22T16:47:51.413757Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.PurchaseInvoiceItemViewModel+Factory</KistlBase:FullName>
     <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
   </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="78146cfd-f957-4a13-af62-d57ba611d657">
@@ -7336,6 +7389,20 @@
     <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.Reports.SalesQuoteReportScreenViewModel+Factory</KistlBase:FullName>
     <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
   </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="8572fc1b-0591-4235-8120-4fdc2e09b044">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2011-11-22T16:47:51.413757Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2011-11-22T16:47:51.413757Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.SalesInvoiceItemViewModel</KistlBase:FullName>
+    <KistlBase:Parent>16c66c02-4846-4be2-bf10-0839a0a95ec9</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="3b1654b9-7234-455e-93ea-7fb9000b84a4">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2011-11-22T16:47:51.413757Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2011-11-22T16:47:51.413757Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.SalesInvoiceItemViewModel+Factory</KistlBase:FullName>
+    <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
+  </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="fb5db0f6-17ed-46af-abb4-76275d21912d">
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
     <KistlBase:ChangedOn>2011-10-20T17:48:58.637Z</KistlBase:ChangedOn>
@@ -7380,9 +7447,24 @@
   </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="9685b23c-d831-4457-a504-a6851a4ca21c">
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
-    <KistlBase:ChangedOn>2011-10-20T17:38:22.032Z</KistlBase:ChangedOn>
+    <KistlBase:ChangedOn>2011-11-22T16:47:51.413757Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-10-20T17:38:22.032Z</KistlBase:CreatedOn>
+    <KistlBase:Deleted>true</KistlBase:Deleted>
     <KistlBase:FullName>ZBox.Basic.Invoicing.InvoiceAdjustmentActions</KistlBase:FullName>
+    <KistlBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="0ec1cc38-42bc-40c4-8713-cce771c05e20">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2011-11-22T16:47:51.413757Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2011-11-22T16:47:51.413757Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>ZBox.Basic.Invoicing.InvoiceItemActions</KistlBase:FullName>
+    <KistlBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="9ff92784-636f-4e44-a591-64d2c5ceb586">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2011-11-22T16:47:51.413757Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2011-11-22T16:47:51.413757Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>ZBox.Basic.Invoicing.QuoteItemActions</KistlBase:FullName>
     <KistlBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</KistlBase:Parent>
   </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="8455d2ae-e48c-4cba-9d80-1e05cd5f7ebd">

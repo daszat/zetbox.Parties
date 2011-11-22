@@ -76,9 +76,13 @@
   <ItemGroup>
     <Compile Include="CustomClientActionsModule.cs" />
     <Compile Include="DocumentManagement\ImportedFileActions.cs" />
+    <Compile Include="Invoicing\InvoiceItemActions.cs" />
     <Compile Include="Invoicing\QuoteItemActions.cs" />
     <Compile Include="Invoicing\SalesInvoiceActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\Invoicing\PurchaseInvoiceItemViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\SalesInvoiceItemViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\InvoiceItemViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\PurchaseQuoteViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\SalesQuoteViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\QuoteViewModel.cs" />

@@ -15,7 +15,7 @@ namespace ZBox.Basic.Invoicing
         {
             if (obj.UnitPrice.HasValue && obj.Amount == 0)
             {
-                obj.Amount = obj.Quantity * obj.UnitPrice.Value;
+                obj.AmountNet = obj.Quantity * obj.UnitPrice.Value;
             }
         }
     }

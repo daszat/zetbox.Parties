@@ -18,13 +18,25 @@ namespace ZBox.Basic.Invoicing
         [Invocation]
         public static void postSet_Amount(InvoiceItem obj, PropertyPostSetterEventArgs<decimal> e)
         {
-            // Done in base class
+            NotifyInvoiceChanged(obj);
         }
 
         [Invocation]
         public static void postSet_AmountNet(InvoiceItem obj, PropertyPostSetterEventArgs<decimal> e)
         {
-            // Done in base class
+            NotifyInvoiceChanged(obj);
+        }
+
+        private static void NotifyInvoiceChanged(InvoiceItem obj)
+        {
+            Invoice invoice = null;
+            if (obj is PurchaseInvoiceItem) invoice = ((PurchaseInvoiceItem)obj).PurchaseInvoice;
+            if (obj is SalesInvoiceItem) invoice = ((SalesInvoiceItem)obj).SalesInvoice;
+            if (invoice != null)
+            {
+                invoice.NotifyPropertyChanged("Total", (decimal)0, (decimal)0);
+                invoice.NotifyPropertyChanged("TotalNet", (decimal)0, (decimal)0);
+            }
         }
     }
 }

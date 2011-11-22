@@ -25,13 +25,27 @@ namespace ZBox.Basic.Invoicing
         [Invocation]
         public static void get_Total(ZBox.Basic.Invoicing.Invoice obj, PropertyGetterEventArgs<decimal> e)
         {
-            // Done in sub classes
+            if (obj is PurchaseInvoice)
+            {
+                e.Result = ((PurchaseInvoice)obj).Items.Sum(i => i.Amount);
+            }
+            else if (obj is SalesInvoice)
+            {
+                e.Result = ((SalesInvoice)obj).Items.Sum(i => i.Amount);
+            }
         }
 
         [Invocation]
         public static void get_TotalNet(ZBox.Basic.Invoicing.Invoice obj, PropertyGetterEventArgs<decimal> e)
         {
-            // Done in sub classes
+            if (obj is PurchaseInvoice)
+            {
+                e.Result = ((PurchaseInvoice)obj).Items.Sum(i => i.AmountNet);
+            }
+            else if (obj is SalesInvoice)
+            {
+                e.Result = ((SalesInvoice)obj).Items.Sum(i => i.AmountNet);
+            }
         }
     }
 }
