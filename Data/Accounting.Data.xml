@@ -1,2 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" date="2011-11-22T16:56:14Z" xmlns="http://dasz.at/Kistl" />
+<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" date="2011-11-22T17:38:59Z" xmlns="http://dasz.at/Kistl">
+  <Accounting:CategoryGroup ExportGuid="32d24c19-425d-4707-8106-92d7ec655ba6">
+    <Accounting:ChangedOn>2011-11-22T17:26:42.691757Z</Accounting:ChangedOn>
+    <Accounting:CreatedOn>2011-11-22T17:26:42.691757Z</Accounting:CreatedOn>
+    <Accounting:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</Accounting:Module>
+    <Accounting:Name>Other incomes</Accounting:Name>
+  </Accounting:CategoryGroup>
+  <Accounting:CategoryGroup ExportGuid="631a683d-4daa-4b1e-b464-01f924e29527">
+    <Accounting:ChangedOn>2011-11-22T17:26:11.155757Z</Accounting:ChangedOn>
+    <Accounting:CreatedOn>2011-11-22T17:26:11.155757Z</Accounting:CreatedOn>
+    <Accounting:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</Accounting:Module>
+    <Accounting:Name>Expenses</Accounting:Name>
+  </Accounting:CategoryGroup>
+</KistlPackaging>
