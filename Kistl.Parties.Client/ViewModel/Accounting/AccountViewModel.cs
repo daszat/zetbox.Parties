@@ -36,6 +36,7 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
                 typeof(Transaction).GetObjectClass(FrozenContext), 
                 () => DataContext.GetQuery<Transaction>().Where(i => i.Account == this.Account));
             lst.AllowAddNew = true;
+            lst.ViewMethod = App.GUI.InstanceListViewMethod.Details;
             var grp = ViewModelFactory.CreateViewModel<SinglePropertyGroupViewModel.Factory>().Invoke(DataContext, this, "Transactions", new[] { lst });
             result.Add(grp);
             return result;

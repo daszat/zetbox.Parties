@@ -16,13 +16,6 @@ namespace ZBox.Basic.Invoicing
         }
 
         [Invocation]
-        public static void postSet_Items(ZBox.Basic.Invoicing.Invoice obj)
-        {
-            obj.NotifyPropertyChanged("Total", (decimal)0, (decimal)0);
-            obj.NotifyPropertyChanged("TotalNet", (decimal)0, (decimal)0);
-        }
-
-        [Invocation]
         public static void get_Total(ZBox.Basic.Invoicing.Invoice obj, PropertyGetterEventArgs<decimal> e)
         {
             if (obj is PurchaseInvoice)

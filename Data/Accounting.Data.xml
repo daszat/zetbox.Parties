@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" date="2011-11-22T17:38:59Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" date="2011-11-22T18:02:47Z" xmlns="http://dasz.at/Kistl">
   <Accounting:CategoryGroup ExportGuid="32d24c19-425d-4707-8106-92d7ec655ba6">
     <Accounting:ChangedOn>2011-11-22T17:26:42.691757Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2011-11-22T17:26:42.691757Z</Accounting:CreatedOn>
