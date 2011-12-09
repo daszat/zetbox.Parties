@@ -63,6 +63,7 @@
     <Compile Include="Accounting\AccountImporter.cs" />
     <Compile Include="Accounting\CategoryActions.cs" />
     <Compile Include="Accounting\CategoryGroupActions.cs" />
+    <Compile Include="Accounting\AccountImporterDescriptorActions.cs" />
     <Compile Include="Accounting\TransactionActions.cs" />
     <Compile Include="CustomCommonActionsModule.cs" />
     <Compile Include="Invoicing\PurchaseInvoiceItemActions.cs" />

@@ -14,5 +14,26 @@ namespace ZBox.Basic.Accounting
         {
             e.Result = string.Format("{0:d}, {1:n2} - {2}", obj.Date, obj.Amount, "no category");
         }
+
+        [Invocation]
+        public static void Transfer(Transaction obj, MethodReturnEventArgs<Transaction> e, Account account)
+        {
+            var newTx = obj.Context.Create<Transaction>();
+            newTx.Account = account;
+            newTx.Amount = -obj.Amount;
+            newTx.Comment = obj.Comment;
+            newTx.Date = obj.Date;
+
+            obj.TranferedTo = newTx;
+
+            e.Result = newTx;
+            obj.NotifyPropertyChanged("Tranfered", null, null);
+        }
+
+        [Invocation]
+        public static void get_Tranfered(Transaction obj, PropertyGetterEventArgs<Account> e)
+        {
+            e.Result = (obj.TranferedFrom != null ? obj.TranferedFrom.Account : null) ?? (obj.TranferedTo != null ? obj.TranferedTo.Account : null);
+        }
     }
 }

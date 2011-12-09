@@ -56,14 +56,14 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
 
         void lst_DisplayedColumnsCreated(Kistl.Client.Models.GridDisplayConfiguration cols)
         {
-            var col = cols.Columns.SingleOrDefault(i => i.Property.Name == "Category");
+            var col = cols.Columns.SingleOrDefault(i => i.Property != null && i.Property.Name == "Category");
             if (col != null)
             {
                 var kind = NamedObjects.Gui.ControlKinds.Kistl_App_GUI_ObjectRefDropdownKind.Find(FrozenContext);
                 col.GridPreEditKind = kind;
                 col.ControlKind = kind;
             }
-            col = cols.Columns.SingleOrDefault(i => i.Property.Name == "Invoices");
+            col = cols.Columns.SingleOrDefault(i => i.Property != null && i.Property.Name == "Invoices");
             if (col != null)
             {
                 col.GridPreEditKind = NamedObjects.Gui.ControlKinds.Kistl_App_GUI_TextKind.Find(FrozenContext);

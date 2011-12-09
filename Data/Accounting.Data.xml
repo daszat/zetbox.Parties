@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" date="2011-12-09T11:01:07Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" date="2011-12-09T13:29:50Z" xmlns="http://dasz.at/Kistl">
+  <Accounting:AccountImporterDescriptor ExportGuid="331e8ca3-db67-4159-b6f0-8b7d571e874c">
+    <Accounting:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</Accounting:Module>
+    <Accounting:Name>BA-CA</Accounting:Name>
+    <Accounting:TypeRef>a5498ede-ea93-433c-8464-c2af0a506b8b</Accounting:TypeRef>
+  </Accounting:AccountImporterDescriptor>
   <Accounting:CategoryGroup ExportGuid="32d24c19-425d-4707-8106-92d7ec655ba6">
     <Accounting:ChangedOn>2011-11-22T17:26:42.691757Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2011-11-22T17:26:42.691757Z</Accounting:CreatedOn>
