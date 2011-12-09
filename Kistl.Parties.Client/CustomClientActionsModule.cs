@@ -19,6 +19,8 @@ namespace Kistl.Parties.Client
             moduleBuilder.RegisterViewModels(typeof(CustomClientActionsModule).Assembly);
 
             // Register explicit overrides here
+            moduleBuilder.RegisterType<Kistl.Parties.Common.Accounting.BACA_AccountImporter>()
+                .InstancePerDependency();
         }
     }
 }

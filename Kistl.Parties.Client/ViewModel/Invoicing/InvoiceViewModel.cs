@@ -38,7 +38,7 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
                 var col = vmdl.DisplayedColumns.Columns.SingleOrDefault(c => c.Property.Name == "VATType");
                 if (col != null)
                 {
-                    var kind = FrozenContext.FindPersistenceObject<ControlKind>(NamedObjects.ControlKind_Kistl_App_GUI_ObjectRefDropdownKind);
+                    var kind = Kistl.NamedObjects.Gui.ControlKinds.Kistl_App_GUI_ObjectRefDropdownKind.Find(FrozenContext);
                     col.GridPreEditKind = kind;
                     col.ControlKind = kind;
                 }

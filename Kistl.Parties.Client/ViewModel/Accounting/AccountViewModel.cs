@@ -40,7 +40,7 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
             lst.AllowAddNew = true;
             lst.IsEditable = true;
             lst.ViewMethod = App.GUI.InstanceListViewMethod.Details;
-            lst.RequestedKind = FrozenContext.FindPersistenceObject<ControlKind>(NamedObjects.ControlKind_Kistl_App_GUI_InstanceGridKind);
+            lst.RequestedKind = Kistl.NamedObjects.Gui.ControlKinds.Kistl_App_GUI_InstanceGridKind.Find(FrozenContext);
             lst.DisplayedColumnsCreated += new InstanceListViewModel.DisplayedColumnsCreatedHandler(lst_DisplayedColumnsCreated);
             lst.ObjectCreated += (obj) =>
             {
@@ -59,14 +59,14 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
             var col = cols.Columns.SingleOrDefault(i => i.Property.Name == "Category");
             if (col != null)
             {
-                var kind = FrozenContext.FindPersistenceObject<ControlKind>(NamedObjects.ControlKind_Kistl_App_GUI_ObjectRefDropdownKind);
+                var kind = NamedObjects.Gui.ControlKinds.Kistl_App_GUI_ObjectRefDropdownKind.Find(FrozenContext);
                 col.GridPreEditKind = kind;
                 col.ControlKind = kind;
             }
             col = cols.Columns.SingleOrDefault(i => i.Property.Name == "Invoices");
             if (col != null)
             {
-                col.GridPreEditKind = FrozenContext.FindPersistenceObject<ControlKind>(NamedObjects.ControlKind_Kistl_App_GUI_TextKind);
+                col.GridPreEditKind = NamedObjects.Gui.ControlKinds.Kistl_App_GUI_TextKind.Find(FrozenContext);
             }
         }
     }
