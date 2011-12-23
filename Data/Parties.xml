@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2011-12-09T13:29:50Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2011-12-23T16:05:15Z" xmlns="http://dasz.at/Kistl">
   <Accounting:Account ExportGuid="6825c872-b152-48b4-b82d-2c1ef924c3bb">
     <Accounting:ChangedOn>2011-12-09T13:24:58.206148Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2011-12-09T13:24:58.206148Z</Accounting:CreatedOn>
@@ -21,18 +21,6 @@
     <Accounting:Name>BA-CA</Accounting:Name>
     <Accounting:TypeRef>a5498ede-ea93-433c-8464-c2af0a506b8b</Accounting:TypeRef>
   </Accounting:AccountImporterDescriptor>
-  <Accounting:CategoryGroup ExportGuid="32d24c19-425d-4707-8106-92d7ec655ba6">
-    <Accounting:ChangedOn>2011-11-22T17:26:42.691757Z</Accounting:ChangedOn>
-    <Accounting:CreatedOn>2011-11-22T17:26:42.691757Z</Accounting:CreatedOn>
-    <Accounting:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</Accounting:Module>
-    <Accounting:Name>Other incomes</Accounting:Name>
-  </Accounting:CategoryGroup>
-  <Accounting:CategoryGroup ExportGuid="631a683d-4daa-4b1e-b464-01f924e29527">
-    <Accounting:ChangedOn>2011-11-22T17:26:11.155757Z</Accounting:ChangedOn>
-    <Accounting:CreatedOn>2011-11-22T17:26:11.155757Z</Accounting:CreatedOn>
-    <Accounting:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</Accounting:Module>
-    <Accounting:Name>Expenses</Accounting:Name>
-  </Accounting:CategoryGroup>
   <Accounting:Transaction ExportGuid="01996b39-291d-4156-99df-6c1e9cc6b59a">
     <Accounting:Account>6e88530b-3bc7-431f-b098-ace12824e3bb</Accounting:Account>
     <Accounting:Amount>-3297.00</Accounting:Amount>
@@ -315,6 +303,31 @@
     <Accounting:CreatedOn>2011-12-09T12:07:00.142035Z</Accounting:CreatedOn>
     <Accounting:Date>2011-11-17T00:00:00Z</Accounting:Date>
   </Accounting:Transaction>
+  <Accounting:Transaction_for_Invoice_RelationEntry ExportGuid="43195b8b-adad-4c19-af77-1d413ca586b5">
+    <Accounting:A>94916406-de84-45bd-870f-c636cf6952f5</Accounting:A>
+    <Accounting:B>9d02c602-bd75-4d97-95c0-d209a6e1ac3a</Accounting:B>
+  </Accounting:Transaction_for_Invoice_RelationEntry>
+  <Invoicing:PurchaseInvoice ExportGuid="9d02c602-bd75-4d97-95c0-d209a6e1ac3a">
+    <Invoicing:ChangedOn>2011-12-23T11:26:43.612552Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-12-23T11:25:05.160921Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2011-12-23T11:23:59.907189Z</Invoicing:Date>
+    <Invoicing:Description>Bena</Invoicing:Description>
+    <Invoicing:DueDate>0001-01-01T00:00:00Z</Invoicing:DueDate>
+    <Invoicing:InvoiceID>213412341234</Invoicing:InvoiceID>
+    <Invoicing:InternalOrganization>9ed4ac9a-c3dd-42cf-8bc6-994ceba3e937</Invoicing:InternalOrganization>
+    <Invoicing:Supplier>3c37cbfa-cf00-4910-945e-5f9b2ba96757</Invoicing:Supplier>
+  </Invoicing:PurchaseInvoice>
+  <Invoicing:PurchaseInvoiceItem ExportGuid="3cb0615b-89e2-456f-ae58-3124716f10de">
+    <Invoicing:Amount>10.46</Invoicing:Amount>
+    <Invoicing:AmountNet>8.72</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2011-12-23T11:26:43.612552Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-12-23T11:26:43.612552Z</Invoicing:CreatedOn>
+    <Invoicing:Description>asdfasdf</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:VATType>d396ffcd-dfb4-4999-8327-02c5d99d8bf6</Invoicing:VATType>
+    <Invoicing:PurchaseInvoice>9d02c602-bd75-4d97-95c0-d209a6e1ac3a</Invoicing:PurchaseInvoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:PurchaseInvoiceItem>
   <Invoicing:VATType ExportGuid="39ce5d95-4e86-45b0-b431-a898ecb3f6a8">
     <Invoicing:ChangedOn>2011-11-22T16:32:59.869005Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-11-22T16:32:59.869005Z</Invoicing:CreatedOn>
@@ -336,4 +349,24 @@
     <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
     <Invoicing:Percentage>0.00</Invoicing:Percentage>
   </Invoicing:VATType>
+  <Parties:InternalOrganization ExportGuid="9ed4ac9a-c3dd-42cf-8bc6-994ceba3e937">
+    <Parties:ChangedOn>2011-12-23T11:25:05.160921Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-12-23T11:25:05.160921Z</Parties:CreatedOn>
+    <Parties:Party>018b491c-72c5-4a0b-88fd-cf892329a10a</Parties:Party>
+  </Parties:InternalOrganization>
+  <Parties:Organization ExportGuid="018b491c-72c5-4a0b-88fd-cf892329a10a">
+    <Parties:ChangedOn>2011-12-23T11:25:05.160921Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-12-23T11:25:05.160921Z</Parties:CreatedOn>
+    <Parties:Name>dasz.at OG</Parties:Name>
+  </Parties:Organization>
+  <Parties:Organization ExportGuid="84b3f7ac-8f80-42b6-b2b8-9ad84d6e384b">
+    <Parties:ChangedOn>2011-12-23T11:25:05.160921Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-12-23T11:25:05.160921Z</Parties:CreatedOn>
+    <Parties:Name>Bena</Parties:Name>
+  </Parties:Organization>
+  <Parties:Supplier ExportGuid="3c37cbfa-cf00-4910-945e-5f9b2ba96757">
+    <Parties:ChangedOn>2011-12-23T11:25:05.160921Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-12-23T11:25:05.160921Z</Parties:CreatedOn>
+    <Parties:Party>84b3f7ac-8f80-42b6-b2b8-9ad84d6e384b</Parties:Party>
+  </Parties:Supplier>
 </KistlPackaging>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:Invoicing="ZBox.Basic.Invoicing" date="2011-12-09T13:29:50Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:Invoicing="ZBox.Basic.Invoicing" date="2011-12-23T16:05:15Z" xmlns="http://dasz.at/Kistl">
   <Invoicing:VATType ExportGuid="39ce5d95-4e86-45b0-b431-a898ecb3f6a8">
     <Invoicing:ChangedOn>2011-11-22T16:32:59.869005Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-11-22T16:32:59.869005Z</Invoicing:CreatedOn>

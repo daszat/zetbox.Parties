@@ -42,6 +42,7 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
             lst.ViewMethod = App.GUI.InstanceListViewMethod.Details;
             lst.RequestedKind = Kistl.NamedObjects.Gui.ControlKinds.Kistl_App_GUI_InstanceGridKind.Find(FrozenContext);
             lst.DisplayedColumnsCreated += new InstanceListViewModel.DisplayedColumnsCreatedHandler(lst_DisplayedColumnsCreated);
+            lst.SetInitialSort("Date");
             lst.ObjectCreated += (obj) =>
             {
                 var t = (Transaction)obj;
@@ -56,7 +57,7 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
 
         void lst_DisplayedColumnsCreated(Kistl.Client.Models.GridDisplayConfiguration cols)
         {
-            var col = cols.Columns.SingleOrDefault(i => i.Property != null && i.Property.Name == "Category");
+            var col = cols.Columns.SingleOrDefault(i => i.Property != null && i.Property.Name == "Party");
             if (col != null)
             {
                 var kind = NamedObjects.Gui.ControlKinds.Kistl_App_GUI_ObjectRefDropdownKind.Find(FrozenContext);
@@ -64,6 +65,11 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
                 col.ControlKind = kind;
             }
             col = cols.Columns.SingleOrDefault(i => i.Property != null && i.Property.Name == "Invoices");
+            if (col != null)
+            {
+                col.GridPreEditKind = NamedObjects.Gui.ControlKinds.Kistl_App_GUI_TextKind.Find(FrozenContext);
+            }
+            col = cols.Columns.SingleOrDefault(i => i.Property != null && i.Property.Name == "Documents");
             if (col != null)
             {
                 col.GridPreEditKind = NamedObjects.Gui.ControlKinds.Kistl_App_GUI_TextKind.Find(FrozenContext);
