@@ -51,4 +51,4 @@ SELECT @logfile = filename FROM dasz_rel_test.sys.sysfiles where filename like '
 RESTORE DATABASE dasz_rel_test FROM DISK = 'c:\temp\dasz_prod.bak' 
 	WITH RECOVERY, REPLACE, 
 	MOVE 'dasz_prod' to @dbfile,
-	MOVE 'dasz_prod' to @logfile
+	MOVE 'dasz_prod_log' to @logfile
