@@ -5,6 +5,32 @@
     <Accounting:Name>BA-CA</Accounting:Name>
     <Accounting:TypeRef>a5498ede-ea93-433c-8464-c2af0a506b8b</Accounting:TypeRef>
   </Accounting:AccountImporterDescriptor>
+  <Invoicing:SalesInvoice ExportGuid="028220be-8c24-4552-9cd3-7364192ca35c">
+    <Invoicing:ChangedOn>2011-12-28T14:55:17.1724815Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-12-28T14:55:17.1724815Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2011-12-28T14:52:25.0792418Z</Invoicing:Date>
+    <Invoicing:Description>Software Consulting</Invoicing:Description>
+    <Invoicing:DueDate>0001-01-01T00:00:00Z</Invoicing:DueDate>
+    <Invoicing:Message>Thank you</Invoicing:Message>
+    <Invoicing:Period>2011</Invoicing:Period>
+    <Invoicing:Total>4680.00</Invoicing:Total>
+    <Invoicing:TotalNet>3900.00</Invoicing:TotalNet>
+    <Invoicing:InvoiceID>2011/17</Invoicing:InvoiceID>
+    <Invoicing:Customer>e3706731-bb31-4c96-b157-1ffbb89658af</Invoicing:Customer>
+    <Invoicing:InternalOrganization>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:InternalOrganization>
+  </Invoicing:SalesInvoice>
+  <Invoicing:SalesInvoiceItem ExportGuid="c23aec9f-bd72-4fdb-874c-d24942cc894f">
+    <Invoicing:Amount>4680.00</Invoicing:Amount>
+    <Invoicing:AmountNet>3900.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2011-12-28T14:55:17.1724815Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-12-28T14:55:17.1724815Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Consulting</Invoicing:Description>
+    <Invoicing:Quantity>65.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>60.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>d396ffcd-dfb4-4999-8327-02c5d99d8bf6</Invoicing:VATType>
+    <Invoicing:SalesInvoice>028220be-8c24-4552-9cd3-7364192ca35c</Invoicing:SalesInvoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItem>
   <Invoicing:VATType ExportGuid="39ce5d95-4e86-45b0-b431-a898ecb3f6a8">
     <Invoicing:ChangedOn>2011-11-22T16:32:59.869005Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-11-22T16:32:59.869005Z</Invoicing:CreatedOn>
@@ -26,4 +52,34 @@
     <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
     <Invoicing:Percentage>0.00</Invoicing:Percentage>
   </Invoicing:VATType>
+  <Parties:Customer ExportGuid="e3706731-bb31-4c96-b157-1ffbb89658af">
+    <Parties:ChangedOn>2011-12-28T14:54:28.0476717Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-12-28T14:54:28.0476717Z</Parties:CreatedOn>
+    <Parties:Party>436b27ad-89fb-4a10-bc83-e44dab21b4bd</Parties:Party>
+  </Parties:Customer>
+  <Parties:InternalOrganization ExportGuid="2e67b9e5-3dba-4a88-a317-1bf89c7d3095">
+    <Parties:ChangedOn>2011-12-28T14:53:21.089842Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-12-28T14:53:21.089842Z</Parties:CreatedOn>
+    <Parties:Party>c3a9b6ce-1687-49c7-95bb-7c4fe0c2cc44</Parties:Party>
+  </Parties:InternalOrganization>
+  <Parties:Organization ExportGuid="436b27ad-89fb-4a10-bc83-e44dab21b4bd">
+    <Parties:ChangedOn>2011-12-28T14:54:28.0476717Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-12-28T14:54:28.0476717Z</Parties:CreatedOn>
+    <Parties:Name>Realestate Business Services</Parties:Name>
+  </Parties:Organization>
+  <Parties:Organization ExportGuid="814f3a46-97b0-46e1-aeeb-2529bbaba738">
+    <Parties:ChangedOn>2011-12-28T14:54:08.2215377Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-12-28T14:54:08.2215377Z</Parties:CreatedOn>
+    <Parties:Name>Facility Management</Parties:Name>
+  </Parties:Organization>
+  <Parties:Organization ExportGuid="c3a9b6ce-1687-49c7-95bb-7c4fe0c2cc44">
+    <Parties:ChangedOn>2011-12-28T14:53:21.089842Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-12-28T14:53:21.089842Z</Parties:CreatedOn>
+    <Parties:Name>dasz.at OG</Parties:Name>
+  </Parties:Organization>
+  <Parties:Supplier ExportGuid="7784b08a-fbc0-48d1-b615-fc6fa5ff525a">
+    <Parties:ChangedOn>2011-12-28T14:54:08.2215377Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2011-12-28T14:54:08.2215377Z</Parties:CreatedOn>
+    <Parties:Party>814f3a46-97b0-46e1-aeeb-2529bbaba738</Parties:Party>
+  </Parties:Supplier>
 </KistlPackaging>
