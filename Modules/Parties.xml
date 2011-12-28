@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2011-12-28T14:24:32.7085556Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2011-12-28T14:40:53.6638379Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T17:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T17:47:04.534407Z</KistlBase:CreatedOn>
@@ -3757,6 +3757,14 @@
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>ToString</KistlBase:Name>
+    <KistlBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</KistlBase:ObjectClass>
+  </KistlBase:Method>
+  <KistlBase:Method ExportGuid="aaf9fa95-5830-4c45-92a5-9d476c64e30d">
+    <KistlBase:ChangedOn>2011-12-28T14:40:53.6638379Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2011-12-28T14:40:53.6638379Z</KistlBase:CreatedOn>
+    <GUI:IsDisplayable>false</GUI:IsDisplayable>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>UpdateTotal</KistlBase:Name>
     <KistlBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</KistlBase:ObjectClass>
   </KistlBase:Method>
   <KistlBase:Method ExportGuid="215886d7-d9b9-46f8-9ff4-f9a098d819c5">
