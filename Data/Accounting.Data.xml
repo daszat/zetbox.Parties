@@ -5,8 +5,4 @@
     <Accounting:Name>BA-CA</Accounting:Name>
     <Accounting:TypeRef>a5498ede-ea93-433c-8464-c2af0a506b8b</Accounting:TypeRef>
   </Accounting:AccountImporterDescriptor>
-  <Accounting:Transaction_for_Invoice_RelationEntry ExportGuid="43195b8b-adad-4c19-af77-1d413ca586b5">
-    <Accounting:A>94916406-de84-45bd-870f-c636cf6952f5</Accounting:A>
-    <Accounting:B>9d02c602-bd75-4d97-95c0-d209a6e1ac3a</Accounting:B>
-  </Accounting:Transaction_for_Invoice_RelationEntry>
 </KistlPackaging>
