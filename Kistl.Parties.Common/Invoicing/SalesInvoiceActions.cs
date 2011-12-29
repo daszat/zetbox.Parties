@@ -10,10 +10,9 @@ namespace ZBox.Basic.Invoicing
     public static class SalesInvoiceActions
     {
         [Invocation]
-        public static void postSet_Items(ZBox.Basic.Invoicing.Invoice obj)
+        public static void postSet_Items(SalesInvoice obj)
         {
-            obj.NotifyPropertyChanged("Total", (decimal)0, (decimal)0);
-            obj.NotifyPropertyChanged("TotalNet", (decimal)0, (decimal)0);
+            obj.UpdateTotal();
         }
 
         [Invocation]
@@ -27,6 +26,14 @@ namespace ZBox.Basic.Invoicing
 
             obj.Items.Add(item);
             e.Result = item;
+        }
+
+
+        [Invocation]
+        public static void UpdateTotal(ZBox.Basic.Invoicing.SalesInvoice obj)
+        {
+            obj.Total = obj.Items.Sum(i => i.Amount);
+            obj.TotalNet = obj.Items.Sum(i => i.AmountNet);
         }
     }
 }

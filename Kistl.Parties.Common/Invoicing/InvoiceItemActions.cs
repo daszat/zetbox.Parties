@@ -34,8 +34,7 @@ namespace ZBox.Basic.Invoicing
             if (obj is SalesInvoiceItem) invoice = ((SalesInvoiceItem)obj).SalesInvoice;
             if (invoice != null)
             {
-                invoice.NotifyPropertyChanged("Total", (decimal)0, (decimal)0);
-                invoice.NotifyPropertyChanged("TotalNet", (decimal)0, (decimal)0);
+                invoice.UpdateTotal();
             }
         }
     }

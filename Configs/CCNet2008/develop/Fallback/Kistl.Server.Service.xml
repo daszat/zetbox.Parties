@@ -3,7 +3,7 @@
   <ConfigName>Default Server Configuration</ConfigName>
   <Server StartServer="true">
     <ConnectionStrings>
-      <Database Name="Kistl" Schema="POSTGRESQL" Provider="NHibernate.Dialect.PostgreSQL82Dialect">Server=localhost;Port=5432;Database=parties;User Id=zbox;Password=b-cXqMyXEYea2kkjUhkS</Database>
+      <Database Name="Kistl" Schema="MSSQL" Provider="System.Data.SqlClient">Data Source=.\SQLEXPRESS;Initial Catalog=dasz_dev_test;Integrated Security=True;MultipleActiveResultSets=true;</Database>
     </ConnectionStrings>
     <DocumentStore>DocumentStore\Server\</DocumentStore>
     <CodeGenWorkingPath>bin\CodeGenNext</CodeGenWorkingPath>
@@ -18,9 +18,9 @@
       <Module>Kistl.API.Common.ApiCommonModule, Kistl.API.Common</Module>
       <Module>Kistl.Server.ServerModule, Kistl.Server</Module>
       <Module>Kistl.Objects.InterfaceModule, Kistl.Objects</Module>
-      <Module>Kistl.Objects.NHibernateModule, Kistl.Objects.NHibernateImpl</Module>
+      <Module>Kistl.Objects.EfModule, Kistl.Objects.EfImpl</Module>
       <Module>Kistl.Objects.MemoryModule, Kistl.Objects.MemoryImpl</Module>
-      <Module>Kistl.DalProvider.NHibernate.NHibernateProvider, Kistl.DalProvider.NHibernate</Module>
+      <Module>Kistl.DalProvider.Ef.EfProvider, Kistl.DalProvider.Ef</Module>
       <Module>Kistl.DalProvider.Memory.MemoryProvider, Kistl.DalProvider.Memory</Module>
       <Module>Kistl.App.Projekte.Server.CustomServerActionsModule, Kistl.App.Projekte.Server</Module>
       <Module>Kistl.App.Projekte.Common.CustomCommonActionsModule, Kistl.App.Projekte.Common</Module>
@@ -32,10 +32,12 @@
       <!-- Development/Master Server modules -->
       <Module>Kistl.Generator.GeneratorModule, Kistl.Generator</Module>
       <Module>Kistl.DalProvider.Memory.Generator.MemoryGeneratorProvider, Kistl.DalProvider.Memory.Generator</Module>
-      <Module>Kistl.DalProvider.NHibernate.Generator.NhGeneratorProvider, Kistl.DalProvider.NHibernate.Generator</Module>
+      <Module>Kistl.DalProvider.Ef.Generator.EfGeneratorProvider, Kistl.DalProvider.Ef.Generator</Module>
       <Module>Kistl.DalProvider.Client.Generator.ClientGeneratorProvider, Kistl.DalProvider.Client.Generator</Module>
 	  
       <!-- application specific modules -->
+
+
     </Modules>
   </Server>
   <AssemblySearchPaths>
@@ -43,10 +45,12 @@
     <string>..\..\bin\Debug\Common\Core.Generated</string>
     <string>Common\Core.Fallback</string>
     <string>Server\Core</string>
-    <string>Server\NH</string>
-    <string>..\..\bin\Debug\Server\NH.Generated</string>
-    <string>Server\NH.Fallback</string>
+    <string>Server\EF</string>
+    <string>..\..\bin\Debug\Server\EF.Generated</string>
+    <string>Server\EF.Fallback</string>
     <string>Common\App.ZBox</string>
     <string>Server\App.ZBox</string>
+
+
   </AssemblySearchPaths>
 </KistlConfig>
