@@ -307,6 +307,31 @@
     <Invoicing:Total>200.00</Invoicing:Total>
     <Invoicing:TotalNet>200.00</Invoicing:TotalNet>
   </Invoicing:OtherExpenseReceipt>
+  <Invoicing:PurchaseInvoice ExportGuid="411b44ac-dae6-4003-b79d-20c6de95ba58">
+    <Invoicing:ChangedOn>2011-12-29T11:56:04.0187058Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-12-29T11:56:04.0187058Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2011-12-29T11:54:55.0287598Z</Invoicing:Date>
+    <Invoicing:Description>Miete</Invoicing:Description>
+    <Invoicing:Document>e28ce770-80ad-451d-8feb-13e35e0fecec</Invoicing:Document>
+    <Invoicing:DueDate>0001-01-01T00:00:00Z</Invoicing:DueDate>
+    <Invoicing:Total>515.59</Invoicing:Total>
+    <Invoicing:TotalNet>515.59</Invoicing:TotalNet>
+    <Invoicing:InvoiceID>AR-2011-11</Invoicing:InvoiceID>
+    <Invoicing:InternalOrganization>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:InternalOrganization>
+    <Invoicing:Supplier>7784b08a-fbc0-48d1-b615-fc6fa5ff525a</Invoicing:Supplier>
+  </Invoicing:PurchaseInvoice>
+  <Invoicing:PurchaseInvoiceItem ExportGuid="78c92383-e806-437f-b08e-4a547c783842">
+    <Invoicing:Amount>515.59</Invoicing:Amount>
+    <Invoicing:AmountNet>515.59</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2011-12-29T11:56:04.0187058Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-12-29T11:56:04.0187058Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Miete</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>515.59</Invoicing:UnitPrice>
+    <Invoicing:VATType>ddd3d4e5-8e54-410d-bd55-b5fb6e3c2218</Invoicing:VATType>
+    <Invoicing:PurchaseInvoice>411b44ac-dae6-4003-b79d-20c6de95ba58</Invoicing:PurchaseInvoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:PurchaseInvoiceItem>
   <Invoicing:SalesInvoice ExportGuid="028220be-8c24-4552-9cd3-7364192ca35c">
     <Invoicing:ChangedOn>2011-12-28T14:55:17.1724815Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-12-28T14:55:17.1724815Z</Invoicing:CreatedOn>
@@ -321,6 +346,32 @@
     <Invoicing:Customer>e3706731-bb31-4c96-b157-1ffbb89658af</Invoicing:Customer>
     <Invoicing:InternalOrganization>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:InternalOrganization>
   </Invoicing:SalesInvoice>
+  <Invoicing:SalesInvoice ExportGuid="760c1bbd-b80a-4f1d-aa0f-6a677c9d1716">
+    <Invoicing:ChangedOn>2011-12-29T11:25:56.7341413Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-12-29T11:25:56.7341413Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2011-12-29T11:24:21.1306731Z</Invoicing:Date>
+    <Invoicing:Description>Consulting</Invoicing:Description>
+    <Invoicing:Document>0d301c34-c194-4d05-875e-0e3ff809646e</Invoicing:Document>
+    <Invoicing:DueDate>0001-01-01T00:00:00Z</Invoicing:DueDate>
+    <Invoicing:Period>12/2011</Invoicing:Period>
+    <Invoicing:Total>4698.00</Invoicing:Total>
+    <Invoicing:TotalNet>3915.00</Invoicing:TotalNet>
+    <Invoicing:InvoiceID>2011/12</Invoicing:InvoiceID>
+    <Invoicing:Customer>e3706731-bb31-4c96-b157-1ffbb89658af</Invoicing:Customer>
+    <Invoicing:InternalOrganization>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:InternalOrganization>
+  </Invoicing:SalesInvoice>
+  <Invoicing:SalesInvoiceItem ExportGuid="51f45edc-85c0-4d25-adb7-bef2d7532828">
+    <Invoicing:Amount>4698.00</Invoicing:Amount>
+    <Invoicing:AmountNet>3915.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2011-12-29T11:25:56.7341413Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2011-12-29T11:25:56.7341413Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Consulting</Invoicing:Description>
+    <Invoicing:Quantity>65.25</Invoicing:Quantity>
+    <Invoicing:UnitPrice>60.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>d396ffcd-dfb4-4999-8327-02c5d99d8bf6</Invoicing:VATType>
+    <Invoicing:SalesInvoice>760c1bbd-b80a-4f1d-aa0f-6a677c9d1716</Invoicing:SalesInvoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItem>
   <Invoicing:SalesInvoiceItem ExportGuid="c23aec9f-bd72-4fdb-874c-d24942cc894f">
     <Invoicing:Amount>4680.00</Invoicing:Amount>
     <Invoicing:AmountNet>3900.00</Invoicing:AmountNet>
