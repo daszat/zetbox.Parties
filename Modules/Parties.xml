@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2011-12-29T09:56:49.54853Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2011-12-29T10:38:41.9804123Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T17:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T17:47:04.534407Z</KistlBase:CreatedOn>
@@ -2358,8 +2358,8 @@
     <KistlBase:DateTimeStyle>2</KistlBase:DateTimeStyle>
   </KistlBase:DateTimeProperty>
   <KistlBase:StringProperty ExportGuid="88fa1f14-66d6-4149-af9f-dd450b6d1c45">
-    <KistlBase:CategoryTags>Main</KistlBase:CategoryTags>
-    <KistlBase:ChangedOn>2011-11-08T18:23:54.767825Z</KistlBase:ChangedOn>
+    <KistlBase:CategoryTags>Summary, Main</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2011-12-29T10:38:41.9804123Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-07-26T17:26:58Z</KistlBase:CreatedOn>
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>Description</KistlBase:Name>
@@ -2413,8 +2413,8 @@
     <KistlBase:IsList>false</KistlBase:IsList>
   </KistlBase:GuidProperty>
   <KistlBase:DateTimeProperty ExportGuid="6c8f61d2-6a12-4fa0-b08c-fdd511c33307">
-    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
-    <KistlBase:ChangedOn>2011-12-28T14:23:27.763841Z</KistlBase:ChangedOn>
+    <KistlBase:CategoryTags>Summary, Main</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2011-12-29T10:38:41.9804123Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-12-28T14:23:27.763841Z</KistlBase:CreatedOn>
     <KistlBase:Label>Fulfillment Date</KistlBase:Label>
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
@@ -2441,8 +2441,8 @@
     <KistlBase:IsList>false</KistlBase:IsList>
   </KistlBase:StringProperty>
   <KistlBase:StringProperty ExportGuid="d468c2fa-28de-4c51-b809-0195f7d99905">
-    <KistlBase:CategoryTags>Main</KistlBase:CategoryTags>
-    <KistlBase:ChangedOn>2011-11-08T18:23:54.767825Z</KistlBase:ChangedOn>
+    <KistlBase:CategoryTags>Summary, Main</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2011-12-29T10:38:41.9804123Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-04T13:47:25.101634Z</KistlBase:CreatedOn>
     <KistlBase:Description>optional period of services</KistlBase:Description>
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
