@@ -11,17 +11,26 @@
       <ColumnDefinition Width="*" />
       <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
-    <DockPanel Grid.Column="1">
-      <ctrls:LabeledView DockPanel.Dock="Top"
-                         DataContext="{Binding PropertyModelsByName[Document]}" />
-      <ContentPresenter Content="{Binding PropertyModelsByName[Document].Value}"
-                        ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
-    </DockPanel>
+    <TabControl Grid.Column="1">
+      <TabItem Header="Document">
+        <DockPanel>
+          <ctrls:LabeledView DockPanel.Dock="Top"
+                             DataContext="{Binding PropertyModelsByName[Document]}" />
+          <ContentPresenter Content="{Binding PropertyModelsByName[Document].Value}"
+                            ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
+        </DockPanel>
+      </TabItem>
+      <TabItem Header="Transactions">
+        <ContentPresenter Content="{Binding PropertyModelsByName[Transactions]}"
+                          ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
+      </TabItem>
+    </TabControl>
     <ScrollViewer Grid.Column="0">
       <DockPanel>
         <StackPanel DockPanel.Dock="Top">
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Date]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[DueDate]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />          
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[InvoiceID]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Description]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Period]}" />
