@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Kistl.API;
 using ZBox.Basic.Accounting;
+using System.Globalization;
 
 namespace Kistl.Parties.Common.Accounting
 {
@@ -17,6 +18,21 @@ namespace Kistl.Parties.Common.Accounting
         public DateTime Date {get;set;}
         public decimal Ammount {get;set;}
         public string Text {get;set;}
+        public string ImportHash
+        {
+            get
+            {
+                var sb = new StringBuilder();
+                sb.Append(Date.ToString("u"));
+                sb.Append("|");
+                sb.Append(Ammount.ToString("n", CultureInfo.InvariantCulture));
+                sb.Append("|");
+                sb.Append(Text.Replace(" ", ""));
+                if (sb.Length > 500)
+                    sb.Remove(500, sb.Length - 500);
+                return sb.ToString();
+            }
+        }
     }
 
     public abstract class AccountImporter : IAccountImporter
@@ -29,17 +45,19 @@ namespace Kistl.Parties.Common.Accounting
 
             var transactions = ctx.GetQuery<Transaction>()
                 .Where(i => i.Account == account)
-                .Where(i => i.Date >= min && i.Date <= max).ToList();
+                .Where(i => i.Date >= min && i.Date <= max)
+                .ToLookup(k => k.ImportHash);
 
             foreach (var impTx in importedTransactions)
             {
-                if (transactions.Any(i => i.Date == impTx.Date && i.Amount == impTx.Ammount && i.Comment == impTx.Text) == false)
+                if (!transactions.Contains(impTx.ImportHash))
                 {
                     var newTx = ctx.Create<Transaction>();
                     newTx.Account = account;
                     newTx.Date = impTx.Date;
                     newTx.Amount = impTx.Ammount;
                     newTx.Comment = impTx.Text;
+                    newTx.ImportHash = impTx.ImportHash;
                 }
             }
         }

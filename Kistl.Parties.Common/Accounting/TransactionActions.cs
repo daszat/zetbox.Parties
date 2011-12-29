@@ -23,6 +23,7 @@ namespace ZBox.Basic.Accounting
             newTx.Amount = -obj.Amount;
             newTx.Comment = obj.Comment;
             newTx.Date = obj.Date;
+            newTx.ImportHash = obj.ImportHash;
 
             obj.TranferedTo = newTx;
 
