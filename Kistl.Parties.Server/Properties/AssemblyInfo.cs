@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Kistl.Parties.Server")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Server functionality for Kistl.Parties")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyCompany("dasz.at OG")]
 [assembly: AssemblyProduct("Kistl.Parties.Server")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2011")]
+[assembly: AssemblyCopyright("Copyright © dasz.at OG 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
