@@ -47,6 +47,9 @@
       <HintPath>..\Libs\Kistl\Server\Core\Kistl.API.Server.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Kistl.Objects">
+      <HintPath>..\bin\CodeGen\bin\Debug\Common\Core.Generated\Kistl.Objects.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\Libs\Kistl\Common\Core\log4net.dll</HintPath>
       <Private>False</Private>
@@ -60,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomServerActionsModule.cs" />
+    <Compile Include="Invoicing\StatisticActionsActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

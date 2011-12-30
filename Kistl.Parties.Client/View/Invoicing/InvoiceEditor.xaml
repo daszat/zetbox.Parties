@@ -21,6 +21,11 @@
         </DockPanel>
       </TabItem>
       <TabItem Header="Transactions">
+        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
+        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
+        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
+        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentAmount]}" />
+        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentAmountNet]}" />
         <ContentPresenter Content="{Binding PropertyModelsByName[Transactions]}"
                           ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
       </TabItem>
@@ -30,7 +35,6 @@
         <StackPanel DockPanel.Dock="Top">
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Date]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[DueDate]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />          
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[InvoiceID]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Description]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Period]}" />
@@ -39,6 +43,9 @@
           <ctrls:LabeledView DataContext="{Binding Party}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentAmount]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentAmountNet]}" />
         </StackPanel>
         <ItemsControl DockPanel.Dock="Bottom"
                       ItemsSource="{Binding Actions}"
