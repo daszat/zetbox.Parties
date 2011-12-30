@@ -79,21 +79,21 @@ foreach($component in "Client", "Server") {
 "Fetching Bootstapper" | Out-Host
 save-rm $DESTDIR\bin\Bootstrapper, $DESTDIR\inetpub\Bootstrapper
 save-mkdir $DESTDIR\bin\Bootstrapper, $DESTDIR\inetpub\Bootstrapper
-cp $SOURCEDIR\Bootstrapper\* $DESTDIR\bin\Bootstrapper -Recurse
-cp $SOURCEDIR\Bootstrapper\*.exe $DESTDIR\inetpub\Bootstrapper -Recurse
+cp $SOURCEDIR\Bootstrapper\* $DESTDIR\bin\Bootstrapper -Recurse -Force
+cp $SOURCEDIR\Bootstrapper\*.exe $DESTDIR\inetpub\Bootstrapper -Recurse -Force
 
 # fetch http service
 "Fetching HTTP Service" | Out-Host
 rm $DESTDIR\inetpub\* -include bin,Site.Master*,Global.asax*,*.aspx*,*.svc*,App_* -Recurse -Force
 save-mkdir $DESTDIR\inetpub\bin
-cp $SOURCEHTTPDIR\* $DESTDIR\inetpub\bin -Recurse
-cp $SOURCEHTTPFILESDIR\* $DESTDIR\inetpub\ -Include Site.Master,Global.asax,*.aspx,*.svc,App_* -Recurse
-cp $SOURCEHTTPFILESDIR\Web.config $DESTDIR\inetpub\Web.config.install
+cp $SOURCEHTTPDIR\* $DESTDIR\inetpub\bin -Recurse -Force
+cp $SOURCEHTTPFILESDIR\* $DESTDIR\inetpub\ -Include Site.Master,Global.asax,*.aspx,*.svc,App_* -Recurse -Force
+cp $SOURCEHTTPFILESDIR\Web.config $DESTDIR\inetpub\Web.config.install -Force
 
 # splice in our app-configs
 foreach($appconfig in get-childitem $CCNET_REPO\Configs\$Env:zenv\AppConfigs -filter *.config) {
         $basename=[System.IO.Path]::GetFilenameWithoutExtension($appconfig);
         foreach($f in get-childitem $DESTDIR $basename -recurse) {
-			cp $appconfig.FullName ($f.Directory.FullName + "\" + $basename + ".config")
+			cp $appconfig.FullName ($f.Directory.FullName + "\" + $basename + ".config") -Force
 		}
 }
