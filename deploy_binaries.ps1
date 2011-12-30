@@ -22,7 +22,7 @@ if ($args.Length -ne 1) {
 
 $DESTDIR = $args[0]
 
-if (![Directory]::Exists($DESTDIR)) {
+if (![System.IO.Directory]::Exists($DESTDIR)) {
 	die("Destination folder ("+$DESTDIR+") does not exist")
 }
 
