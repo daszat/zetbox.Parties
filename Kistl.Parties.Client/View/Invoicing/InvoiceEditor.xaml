@@ -21,13 +21,15 @@
         </DockPanel>
       </TabItem>
       <TabItem Header="Transactions">
-        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
-        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
-        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
-        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentAmount]}" />
-        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentAmountNet]}" />
-        <ContentPresenter Content="{Binding PropertyModelsByName[Transactions]}"
-                          ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
+        <StackPanel>
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentAmount]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentAmountNet]}" />
+          <ContentPresenter Content="{Binding PropertyModelsByName[Transactions]}"
+                            ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
+        </StackPanel>
       </TabItem>
     </TabControl>
     <ScrollViewer Grid.Column="0">
