@@ -1,3 +1,4 @@
+$ErrorActionPreference='Stop'
 
 function save-rm($path) {
 	foreach($p in $path) {
