@@ -63,12 +63,12 @@ foreach($component in "Client", "Server") {
 			$src = "$SOURCEDIR\$m\$i"
 			if(Test-Path $src) {
 				save-mkdir $DESTDIR\bin\$component\$m\$i
-				cp $src\* $DESTDIR\bin\$component\$m\$i -Recurse | Out-Null
+				cp  -force -recurse $src\* $DESTDIR\bin\$component\$m\$i | Out-Null
 				
 				if($component -eq "Server") {
 					# only deploy server to inetpub
                     save-mkdir $DESTDIR\inetpub\$m\$i
-                    cp $src\* $DESTDIR\inetpub\$m\$i | Out-Null
+                    cp -force -recurse $src\* $DESTDIR\inetpub\$m\$i | Out-Null
 				}
 			}
 		}
