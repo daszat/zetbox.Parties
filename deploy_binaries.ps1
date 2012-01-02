@@ -37,7 +37,7 @@ $SOURCEDIR="$CCNET_REPO-artifacts\Latest\bin\Debug"
 $SOURCEHTTPDIR="$CCNET_REPO-artifacts\Latest\bin\Debug\HttpService"
 $SOURCEHTTPFILESDIR="$CCNET_REPO\Libs\Kistl\HttpService"
 
-$MODULES="App.ZBox", "Core", "Core.Generated", "EF", "EF.Generated", "WPF", "Microsoft"
+$MODULES="App.Parties", "App.ZBox", "Core", "Core.Generated", "EF", "EF.Generated", "WPF", "Microsoft"
 $EXE = @{"Server"="Kistl.Server.Service.exe"; "Client" = "Kistl.Client.WPF.exe" }
 
 # Create path structure
