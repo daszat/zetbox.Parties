@@ -34,15 +34,15 @@
     </Modules>
   </Client>
   <AssemblySearchPaths>
-    <string>..\..\bin\Debug\Client\Core.Generated</string>
-    <string>..\..\bin\Debug\Common\Core.Generated</string>
+    <string>Client\Core.Generated</string>
+    <string>Common\Core.Generated</string>
     <string>Common\Core</string>
     <string>Client\Core</string>
     <string>Client\WPF</string>
+    <string>Common\Microsoft</string>
     <string>Common\App.ZBox</string>
     <string>Client\App.ZBox</string>
-    <string>Common\Microsoft</string>
-    <string>..\..\bin\Debug\Client\App.Parties</string>
-    <string>..\..\bin\Debug\Common\App.Parties</string>
+    <string>Client\App.Parties</string>
+    <string>Common\App.Parties</string>
   </AssemblySearchPaths>
 </KistlConfig>
