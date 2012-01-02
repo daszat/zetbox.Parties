@@ -13,15 +13,17 @@ function save-mkdir($path) {
 }
 
 function die($msg) {
-	Write-Host "Please pass the destination folder as argument"
+	Write-Host $msg
 	exit 1
 }
 
-if ($args.Length -ne 1) {
-	die("Please pass the destination folder as argument")
+if ($args.Length -ne 3) {
+	die("Usage: deploy_binaries.ps1 AppConfigSourceFolder ConfigSourceFolder BinarySourceFolder")
 }
 
-$DESTDIR = $args[0]
+$APPCONFSRCDIR = $args[0]
+$CONFSRCDIR = $args[1]
+$DESTDIR = $args[2]
 
 if (![System.IO.Directory]::Exists($DESTDIR)) {
 	die("Destination folder ("+$DESTDIR+") does not exist")
@@ -53,11 +55,6 @@ foreach($component in "Client", "Server") {
 	$e = $EXE.get_Item($component)
 	cp $SOURCEDIR\$e $DESTDIR\bin\$component
 
-	# Copy template config
-	cp $SOURCEDIR\$e.config $DESTDIR\AppConfigs\$e.config.install
-	# if not exist - rename
-	if(!(Test-Path $DESTDIR\AppConfigs\$e.config)) { cp $DESTDIR\AppConfigs\$e.config.install $DESTDIR\AppConfigs\$e.config } 
-	
 	foreach($m in "Common", $component) {
 		foreach($i in $MODULES) {
 			$src = "$SOURCEDIR\$m\$i"
@@ -88,10 +85,11 @@ rm $DESTDIR\inetpub\* -include bin,Site.Master*,Global.asax*,*.aspx*,*.svc*,App_
 save-mkdir $DESTDIR\inetpub\bin
 cp $SOURCEHTTPDIR\* $DESTDIR\inetpub\bin -Recurse -Force
 cp $SOURCEHTTPFILESDIR\* $DESTDIR\inetpub\ -Include Site.Master,Global.asax,*.aspx,*.svc,App_* -Recurse -Force
-cp $SOURCEHTTPFILESDIR\Web.config $DESTDIR\inetpub\Web.config.install -Force
 
-# splice in our app-configs
-foreach($appconfig in get-childitem $CCNET_REPO\Configs\$Env:zenv\AppConfigs -filter *.config) {
+# splice in our configs
+cp -Force -Recurse $CONFSRCDIR $DESTDIR\Configs | Out-Null
+cp $APPCONFSRCDIR\Web.config $DESTDIR\inetpub\Web.config -Force
+foreach($appconfig in get-childitem $APPCONFSRCDIR -filter *.config) {
         $basename=[System.IO.Path]::GetFilenameWithoutExtension($appconfig);
         foreach($f in get-childitem $DESTDIR $basename -recurse) {
 			cp $appconfig.FullName ($f.Directory.FullName + "\" + $basename + ".config") -Force
