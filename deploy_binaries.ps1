@@ -82,8 +82,7 @@ cp $SOURCEDIR\Bootstrapper\*.exe $DESTDIR\inetpub\Bootstrapper -Recurse -Force
 # fetch http service
 "Fetching HTTP Service" | Out-Host
 rm $DESTDIR\inetpub\* -include bin,Site.Master*,Global.asax*,*.aspx*,*.svc*,App_* -Recurse -Force
-save-mkdir $DESTDIR\inetpub\bin
-cp $SOURCEHTTPDIR\* $DESTDIR\inetpub\bin -Recurse -Force
+cp $SOURCEHTTPDIR\* $DESTDIR\inetpub\ -Recurse -Force
 cp $SOURCEHTTPFILESDIR\* $DESTDIR\inetpub\ -Include Site.Master,Global.asax,*.aspx,*.svc,App_* -Recurse -Force
 
 # splice in our configs
