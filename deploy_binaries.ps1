@@ -81,12 +81,14 @@ cp $SOURCEDIR\Bootstrapper\*.exe $DESTDIR\inetpub\Bootstrapper -Recurse -Force
 
 # fetch http service
 "Fetching HTTP Service" | Out-Host
+save-mkdir $DESTDIR\inetpub\
 rm $DESTDIR\inetpub\* -include bin,Site.Master*,Global.asax*,*.aspx*,*.svc*,App_* -Recurse -Force
 cp $SOURCEHTTPDIR\* $DESTDIR\inetpub\ -Recurse -Force
 cp $SOURCEHTTPFILESDIR\* $DESTDIR\inetpub\ -Include Site.Master,Global.asax,*.aspx,*.svc,App_* -Recurse -Force
 
 # splice in our configs
-cp -Force -Recurse $CONFSRCDIR $DESTDIR\Configs | Out-Null
+save-mkdir $DESTDIR\Configs
+cp -Force -Recurse $CONFSRCDIR\* $DESTDIR\Configs | Out-Null
 cp $APPCONFSRCDIR\Web.config $DESTDIR\inetpub\Web.config -Force
 foreach($appconfig in get-childitem $APPCONFSRCDIR -filter *.config) {
         $basename=[System.IO.Path]::GetFilenameWithoutExtension($appconfig);
