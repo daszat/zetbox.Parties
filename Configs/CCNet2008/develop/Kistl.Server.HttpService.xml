@@ -37,10 +37,10 @@
       <Module>Kistl.Parties.Server.CustomServerActionsModule, Kistl.Parties.Server</Module>
     </Modules>
     <ClientFilesLocations>
-      <Location Name="Exe">..\bin\Client\Kistl.Client.WPF.exe</Location>
-      <Location Name="Configs">..\Configs\Examples\Kistl.Client.WPF.xml</Location>
-      <Location Name="Common">..\bin\Client\Common</Location>
-      <Location Name="Client">..\bin\Client\Client</Location>
+      <Location Name="Exe">C:\Develop\dasz\bin\Client\Kistl.Client.WPF.exe</Location>
+      <Location Name="Configs">C:\Develop\dasz\Configs\Kistl.Client.WPF.xml</Location>
+      <Location Name="Common">C:\Develop\dasz\bin\Client\Common</Location>
+      <Location Name="Client">C:\Develop\dasz\bin\Client\Client</Location>
     </ClientFilesLocations>
   </Server>
   <AssemblySearchPaths>
