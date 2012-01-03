@@ -1,16 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <KistlConfig xmlns="http://dasz.at/Kistl/">
-  <ConfigName>Kistl.Parties Fallback Configuration - release</ConfigName>
+  <ConfigName>Kistl.Parties Webserver Configuration - release</ConfigName>
   <Server StartServer="true">
     <ConnectionStrings>
       <Database Name="Kistl" Schema="MSSQL" Provider="System.Data.SqlClient">Data Source=.\SQLEXPRESS;Initial Catalog=dasz_rel_test;Integrated Security=True;MultipleActiveResultSets=true;</Database>
     </ConnectionStrings>
-    <DocumentStore>DocumentStore\Server\</DocumentStore>
+    <DocumentStore>E:\DocumentStore\Release\dasz</DocumentStore>
     <CodeGenWorkingPath>bin\CodeGenNext</CodeGenWorkingPath>
     <CodeGenOutputPath>bin\CodeGen</CodeGenOutputPath>
-    <CodeGenBinaryOutputPath>
-      <string>bin\Debug\</string>
-    </CodeGenBinaryOutputPath>
     <CodeGenArchivePath>Backup</CodeGenArchivePath>
     <Modules>
       <Module>Kistl.API.ApiModule, Kistl.API</Module>
@@ -36,21 +33,27 @@
       <Module>Kistl.DalProvider.Client.Generator.ClientGeneratorProvider, Kistl.DalProvider.Client.Generator</Module>
 	  
       <!-- application specific modules -->
-
-
+      <Module>Kistl.Parties.Common.CustomCommonActionsModule, Kistl.Parties.Common</Module>
+      <Module>Kistl.Parties.Server.CustomServerActionsModule, Kistl.Parties.Server</Module>
     </Modules>
+    <ClientFilesLocations>
+      <Location Name="Exe">C:\Develop\dasz\bin\Client\Kistl.Client.WPF.exe</Location>
+      <Location Name="Configs">C:\Develop\dasz\Configs\Kistl.Client.WPF.xml</Location>
+      <Location Name="Common">C:\Develop\dasz\bin\Client\Common</Location>
+      <Location Name="Client">C:\Develop\dasz\bin\Client\Client</Location>
+    </ClientFilesLocations>
   </Server>
   <AssemblySearchPaths>
     <string>Common\Core</string>
-    <string>..\..\bin\Debug\Common\Core.Generated</string>
+    <string>Common\Core.Generated</string>
     <string>Common\Core.Fallback</string>
     <string>Server\Core</string>
     <string>Server\EF</string>
-    <string>..\..\bin\Debug\Server\EF.Generated</string>
+    <string>Server\EF.Generated</string>
     <string>Server\EF.Fallback</string>
     <string>Common\App.ZBox</string>
     <string>Server\App.ZBox</string>
-
-
+    <string>Server\App.Parties</string>
+    <string>Common\App.Parties</string>
   </AssemblySearchPaths>
 </KistlConfig>
