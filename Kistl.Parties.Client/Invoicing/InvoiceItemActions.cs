@@ -11,6 +11,15 @@ namespace ZBox.Basic.Invoicing
     public static class InvoiceItemActions
     {
         [Invocation]
+        public static void postSet_Quantity(InvoiceItem obj, PropertyPostSetterEventArgs<decimal> e)
+        {
+            if (obj.UnitPrice.HasValue)
+            {
+                obj.AmountNet = obj.Quantity * obj.UnitPrice.Value;
+            }
+        }
+
+        [Invocation]
         public static void postSet_UnitPrice(InvoiceItem obj, PropertyPostSetterEventArgs<decimal?> e)
         {
             if (obj.UnitPrice.HasValue)

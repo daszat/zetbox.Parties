@@ -64,7 +64,7 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
                 col.GridPreEditKind = kind;
                 col.ControlKind = kind;
             }
-            col = cols.Columns.SingleOrDefault(i => i.Property != null && i.Property.Name == "Invoices");
+            col = cols.Columns.SingleOrDefault(i => i.Property != null && i.Property.Name == "Receipts");
             if (col != null)
             {
                 col.GridPreEditKind = NamedObjects.Gui.ControlKinds.Kistl_App_GUI_TextKind.Find(FrozenContext);

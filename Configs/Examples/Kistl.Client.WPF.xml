@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <KistlConfig xmlns="http://dasz.at/Kistl/">
-  <ConfigName>Default Client Configuration</ConfigName>
+  <ConfigName>Kistl.Parties Client Configuration</ConfigName>
   <Client StartClient="false" ThrowErrors="false">
     <!--<Application>d80b20cf-8a8e-4300-83cd-129eb28f7d9b</Application>-->
     <Culture>de-AT</Culture>
@@ -24,6 +24,7 @@
       <Module>Kistl.API.MailProblemReporter+Module, Kistl.API</Module>
       <Module>Kistl.App.Projekte.Client.CustomClientActionsModule, Kistl.App.Projekte.Client</Module>
       <Module>Kistl.App.Projekte.Common.CustomCommonActionsModule, Kistl.App.Projekte.Common</Module>
+      <Module>Kistl.App.Projekte.DocumentManagement.FileImportService+Module, Kistl.App.Projekte.Common</Module>
 
       <!-- 
       <Module>Kistl.Client.BasicAuthCredentialsResolver+Module, Kistl.Client</Module>

@@ -67,6 +67,7 @@
     <Compile Include="Invoicing\ReceiptActions.cs" />
     <Compile Include="Invoicing\PurchaseInvoiceItemActions.cs" />
     <Compile Include="Invoicing\SalesInvoiceItemActions.cs" />
+    <Compile Include="Invoicing\StatisticActionsActions.cs" />
     <Compile Include="Invoicing\VATTypeActions.cs" />
     <Compile Include="Invoicing\SalesInvoiceActions.cs" />
     <Compile Include="Invoicing\PurchaseInvoiceActions.cs" />

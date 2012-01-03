@@ -1,3 +1,4 @@
-== Version 0.1 ==
+== Version 0.2 ==
 
+2012-01-03: Update release with new configs.
 2011-12-29: First release to local "production".

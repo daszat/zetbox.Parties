@@ -11,12 +11,27 @@
       <ColumnDefinition Width="*" />
       <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
-    <DockPanel Grid.Column="1">
-      <ctrls:LabeledView DockPanel.Dock="Top"
-                         DataContext="{Binding PropertyModelsByName[Document]}" />
-      <ContentPresenter Content="{Binding PropertyModelsByName[Document].Value}"
-                        ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
-    </DockPanel>
+    <TabControl Grid.Column="1">
+      <TabItem Header="Document">
+        <DockPanel>
+          <ctrls:LabeledView DockPanel.Dock="Top"
+                             DataContext="{Binding PropertyModelsByName[Document]}" />
+          <ContentPresenter Content="{Binding PropertyModelsByName[Document].Value}"
+                            ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
+        </DockPanel>
+      </TabItem>
+      <TabItem Header="Transactions">
+        <StackPanel>
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentAmount]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentAmountNet]}" />
+          <ContentPresenter Content="{Binding PropertyModelsByName[Transactions]}"
+                            ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
+        </StackPanel>
+      </TabItem>
+    </TabControl>
     <ScrollViewer Grid.Column="0">
       <DockPanel>
         <StackPanel DockPanel.Dock="Top">
@@ -30,6 +45,9 @@
           <ctrls:LabeledView DataContext="{Binding Party}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentAmount]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentAmountNet]}" />
         </StackPanel>
         <ItemsControl DockPanel.Dock="Bottom"
                       ItemsSource="{Binding Actions}"
