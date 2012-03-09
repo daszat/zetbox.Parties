@@ -32,10 +32,6 @@ robocopy %source%\Modules %destination%\Modules /MIR
 rem errorlevel 8 or higher indicates errors
 IF ERRORLEVEL 8 GOTO FAIL
 
-robocopy %source%\bin\Debug.HttpService %destination%\HttpService /MIR
-rem errorlevel 8 or higher indicates errors
-IF ERRORLEVEL 8 GOTO FAIL
-
 echo ********************************************************************************
 echo ************************************ Success ***********************************
 echo ********************************************************************************
