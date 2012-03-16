@@ -27,7 +27,7 @@ namespace at.dasz.DocumentManagement
             {
                 if (sel != null)
                 {
-                    var invoice = (PurchaseInvoice)sel.Object;
+                    var invoice = (PurchaseInvoice)sel.First().Object;
                     invoice.Document = obj.MakeStaticFile();
                     e.Result = invoice;
                 }
@@ -43,7 +43,7 @@ namespace at.dasz.DocumentManagement
             {
                 if (sel != null)
                 {
-                    var quote = (PurchaseQuote)sel.Object;
+                    var quote = (PurchaseQuote)sel.First().Object;
                     quote.Document = obj.MakeDocument();
                     e.Result = quote;
                 }

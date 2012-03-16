@@ -6,5 +6,5 @@
 /Libs/Kistl/*.log*
 /Libs/Kistl/*.log.*
 /bin
-bin
 obj
+/Kistl.Parties.Client.Tests/bin

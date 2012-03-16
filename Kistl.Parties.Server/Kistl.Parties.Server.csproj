@@ -49,6 +49,7 @@
     </Reference>
     <Reference Include="Kistl.Objects">
       <HintPath>..\bin\CodeGen\bin\Debug\Common\Core.Generated\Kistl.Objects.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\Libs\Kistl\Common\Core\log4net.dll</HintPath>
