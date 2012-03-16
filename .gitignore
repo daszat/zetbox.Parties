@@ -7,3 +7,4 @@
 /Libs/Kistl/*.log.*
 /bin
 obj
+/Kistl.Parties.Client.Tests/bin
