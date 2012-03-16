@@ -7,6 +7,7 @@ namespace Kistl.Parties.Client.Tests.Integration
     using System.Text;
     using Autofac;
     using Kistl.API;
+    using Kistl.App.Base;
     using Kistl.App.GUI;
     using Kistl.Client.Models;
     using Kistl.Client.Presentables;
@@ -20,5 +21,12 @@ namespace Kistl.Parties.Client.Tests.Integration
 
     public class Parties : AbstractUITest
     {
+        [Test]
+        public void Query()
+        {
+            var ctx = GetClientContext();
+            var result = ctx.GetQuery<ObjectClass>().FirstOrDefault();
+            Assert.That(result, Is.Not.Null);
+        }
     }
 }
