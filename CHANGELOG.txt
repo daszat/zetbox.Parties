@@ -1,3 +1,7 @@
+== Version 0.3 ==
+
+2012-03-16: Update configuration for jenkins templates
+
 == Version 0.2 ==
 
 2012-01-03: Update release with new configs.
