@@ -104,15 +104,19 @@
     </Reference>
     <Reference Include="Kistl.Objects">
       <HintPath>..\bin\Debug\Common\Core.Generated\Kistl.Objects.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Kistl.Objects.ClientImpl">
       <HintPath>..\bin\Debug\Client\Core.Generated\Kistl.Objects.ClientImpl.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Kistl.Objects.MemoryImpl">
       <HintPath>..\bin\Debug\Common\Core.Generated\Kistl.Objects.MemoryImpl.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Kistl.Objects.NHibernateImpl">
       <HintPath>..\bin\Debug\Server\NH.Generated\Kistl.Objects.NHibernateImpl.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Kistl.Server">
       <HintPath>..\Libs\Kistl\Server\Core\Kistl.Server.dll</HintPath>
