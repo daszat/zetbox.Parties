@@ -163,9 +163,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Kistl.Parties.Client\Kistl.Parties.Client.csproj">
       <Project>{CA39A333-205A-4C14-BD33-C76A708D067A}</Project>
       <Name>Kistl.Parties.Client</Name>
