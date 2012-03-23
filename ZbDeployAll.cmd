@@ -13,13 +13,7 @@ set config=%1
 
 :GOON
 
-Libs\Kistl\Kistl.Server.Service.exe %config% -deploy Libs\Kistl\Modules\KistlBasic.xml -deploy Libs\Kistl\Modules\KistlUtils.xml -deploy Libs\Kistl\Modules\TestModules.xml -deploy-local -updatedeployedschema -repairschema
-IF ERRORLEVEL 1 GOTO FAIL
-
-Libs\Kistl\Kistl.Server.Service.exe %config% -generate
-IF ERRORLEVEL 1 GOTO FAIL
-
-Libs\Kistl\Kistl.Server.Service.exe %config% -syncidentities
+Libs\Kistl\Kistl.Server.Service.exe %config% -deploy-update -generate
 IF ERRORLEVEL 1 GOTO FAIL
 
 Libs\Kistl\Kistl.Server.Service.exe %config% -import Data\Invoicing.Data.xml -import Data\Accounting.Data.xml -import Data\Parties.xml
