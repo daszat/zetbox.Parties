@@ -10,7 +10,7 @@ if .%2. == .. GOTO FAIL
 set source=%1
 set destination=%2
 
-robocopy %source% %destination% /MIR /XD Core.Generated NH.Generated EF.Generated DocumentStore Configs
+robocopy %source% %destination% /MIR /XD Core.Generated NH.Generated EF.Generated DocumentStore Configs Tests
 rem errorlevel 8 or higher indicates errors
 IF ERRORLEVEL 8 GOTO FAIL
 
