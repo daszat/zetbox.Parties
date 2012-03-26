@@ -423,7 +423,7 @@
     <KistlBase:ChangedOn>2011-12-23T16:05:15.344307Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-12-09T13:29:50.541207Z</KistlBase:CreatedOn>
     <KistlBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</KistlBase:Module>
-    <KistlBase:Name>Tranfered</KistlBase:Name>
+    <KistlBase:Name>Transfered</KistlBase:Name>
     <KistlBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</KistlBase:ObjectClass>
     <KistlBase:Properties_pos>8</KistlBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
@@ -4948,7 +4948,7 @@
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Parent>702e6fde-6b9d-4286-8f04-f4d6076a488f</GUI:Parent>
     <GUI:Children_pos>101</GUI:Children_pos>
-    <GUI:Title>Ouotes</GUI:Title>
+    <GUI:Title>Quotes</GUI:Title>
   </GUI:NavigationScreen>
   <GUI:NavigationSearchScreen ExportGuid="5364cfe0-195b-4087-9f8a-adad91a1f979">
     <GUI:ChangedOn>2011-10-20T15:56:30.640622Z</GUI:ChangedOn>
