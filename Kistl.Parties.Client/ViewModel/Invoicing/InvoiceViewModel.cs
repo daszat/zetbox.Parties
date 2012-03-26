@@ -28,23 +28,6 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
             this.Invoice = obj;
         }
 
-        protected override void OnPropertyModelsByNameCreated()
-        {
-            base.OnPropertyModelsByNameCreated();
-
-            ObjectListViewModel vmdl = base.PropertyModelsByName["Items"] as ObjectListViewModel;
-            if (vmdl != null)
-            {
-                var col = vmdl.DisplayedColumns.Columns.SingleOrDefault(c => c.Property.Name == "VATType");
-                if (col != null)
-                {
-                    var kind = Kistl.NamedObjects.Gui.ControlKinds.Kistl_App_GUI_ObjectRefDropdownKind.Find(FrozenContext);
-                    col.GridPreEditKind = kind;
-                    col.ControlKind = kind;
-                }
-            }
-        }
-
         public Invoice Invoice { get; private set; }
 
         public abstract ViewModel Party { get; }

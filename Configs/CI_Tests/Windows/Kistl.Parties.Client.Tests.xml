@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <KistlConfig xmlns="http://dasz.at/Kistl/">
-  <ConfigName>Default Client Configuration</ConfigName>
+  <ConfigName>Kistl.Parties Client Configuration</ConfigName>
   <Server StartServer="false">
   </Server>
   <Client StartClient="false" ThrowErrors="false">

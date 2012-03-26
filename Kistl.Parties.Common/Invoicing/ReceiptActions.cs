@@ -20,5 +20,17 @@ namespace ZBox.Basic.Invoicing
         {
             // Do nothing, work is done in derived classes
         }
+
+        [Invocation]
+        public static void get_FulfillmentAmount(ZBox.Basic.Invoicing.Receipt obj, PropertyGetterEventArgs<decimal?> e)
+        {
+            e.Result = 0; // TODO: Not possible! obj.Transactions.Sum(i => i.Amount);
+        }
+
+        [Invocation]
+        public static void get_FulfillmentAmountNet(ZBox.Basic.Invoicing.Receipt obj, PropertyGetterEventArgs<decimal?> e)
+        {
+            e.Result = 0; // TODO: Not possible! obj.Transactions.Sum(i => i.Amount);
+        }
     }
 }

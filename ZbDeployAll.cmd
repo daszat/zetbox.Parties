@@ -13,15 +13,18 @@ set config=%1
 
 :GOON
 
-Libs\Kistl\Kistl.Server.Service.exe %config% -deploy-update -generate
+cd bin\Debug
+
+Kistl.Server.Service.exe %config% -deploy-update -generate
 IF ERRORLEVEL 1 GOTO FAIL
 
-Libs\Kistl\Kistl.Server.Service.exe %config% -import Data\Invoicing.Data.xml -import Data\Accounting.Data.xml -import Data\Parties.xml
+Kistl.Server.Service.exe %config% -import Data\Invoicing.Data.xml -import Data\Accounting.Data.xml -import Data\Parties.xml
 IF ERRORLEVEL 1 GOTO FAIL
 
 echo ********************************************************************************
 echo ************************************ Success ***********************************
 echo ********************************************************************************
+cd ..\..
 GOTO EOF
 
 :FAIL
@@ -30,6 +33,7 @@ echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX FAIL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo                                  Aborting Deploy
 rem return error without closing parent shell
+cd ..\..
 echo A | choice /c:A /n
 
 :EOF

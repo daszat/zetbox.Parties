@@ -8,12 +8,14 @@ namespace ZBox.Basic.Invoicing
     using Kistl.API;
     using ZBox.Basic.Invoicing;
 
+    [Implementor]
     public static class StatisticActionsActions
     {
+        [Invocation]
         public static void GetName(StatisticActions obj, MethodReturnEventArgs<string> e)
         {
             // Singelton!
-            e.Result = "StatisticActions";
+            e.Result = "Invoicing.StatisticActions";
         }
     }
 }

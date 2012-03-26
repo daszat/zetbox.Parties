@@ -13,7 +13,7 @@ set config=%1
 
 :GOON
 
-Libs\Kistl\Kistl.Server.Service.exe %config% -wipe -updateschema Libs\Kistl\Modules\KistlBasic.xml;Libs\Kistl\Modules\KistlUtils.xml;Libs\Kistl\Modules\TestModules.xml
+bin\debug\Kistl.Server.Service.exe %config% -wipe
 IF ERRORLEVEL 1 GOTO FAIL
 
 call "ZbDeployAll" %config%

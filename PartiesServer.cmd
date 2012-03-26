@@ -3,6 +3,8 @@ echo ***************************************************************************
 echo Run the development server.
 echo ********************************************************************************
 
-Libs\Kistl\Kistl.Server.Service.exe
+cd bin\debug
+Kistl.Server.Service.exe
+cd ..\..
 
 pause

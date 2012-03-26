@@ -8,7 +8,7 @@
     <CodeGenBinaryOutputPath>
       <string>.</string>
     </CodeGenBinaryOutputPath>
-    <CodeGenArchivePath>..\..\Backup</CodeGenArchivePath>
+    <CodeGenArchivePath>..\Backup</CodeGenArchivePath>
     <Modules>
       <Module>Kistl.API.ApiModule, Kistl.API</Module>
       <Module>Kistl.API.Server.ServerApiModule, Kistl.API.Server</Module>

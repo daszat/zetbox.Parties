@@ -114,10 +114,6 @@
       <HintPath>..\bin\Debug\Common\Core.Generated\Kistl.Objects.MemoryImpl.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Kistl.Objects.NHibernateImpl">
-      <HintPath>..\bin\Debug\Server\NH.Generated\Kistl.Objects.NHibernateImpl.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Kistl.Server">
       <HintPath>..\Libs\Kistl\Server\Core\Kistl.Server.dll</HintPath>
     </Reference>
