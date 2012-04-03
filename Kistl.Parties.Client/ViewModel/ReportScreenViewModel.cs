@@ -18,13 +18,15 @@ namespace Kistl.Parties.Client.ViewModel
 
         private readonly Func<IKistlContext> _ctxFactory;
         private readonly IViewModelDependencies _appCtx;
+        private readonly IFileOpener _fileOpener;
 
         public ReportScreenViewModel(IViewModelDependencies appCtx, Func<IKistlContext> ctxFactory,
-            IKistlContext dataCtx, ViewModel parent, NavigationScreen screen)
+            IKistlContext dataCtx, ViewModel parent, NavigationScreen screen, IFileOpener fileOpener)
             : base(appCtx, dataCtx, parent, screen)
         {
             _ctxFactory = ctxFactory;
             _appCtx = appCtx;
+            _fileOpener = fileOpener;
         }
 
         private DateRangeFilterModel _rangeMdl;
@@ -64,7 +66,7 @@ namespace Kistl.Parties.Client.ViewModel
                         _statistic = LoadStatistic();
                         if (_statistic != null)
                         {
-                            var tmp = DtoBuilder.BuildFrom(_statistic, _appCtx, DataContext, this);
+                            var tmp = DtoBuilder.BuildFrom(_statistic, _appCtx, DataContext, this, _fileOpener);
 
                             if (_statisticModel == null)
                             {
