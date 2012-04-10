@@ -36,5 +36,35 @@ namespace ZBox.Basic.Accounting
         {
             e.Result = (obj.TranferedFrom != null ? obj.TranferedFrom.Account : null) ?? (obj.TranferedTo != null ? obj.TranferedTo.Account : null);
         }
+
+        [Invocation]
+        public static void postSet_Amount(Transaction obj, PropertyPostSetterEventArgs<decimal> e)
+        {
+            UpdateCalculatedProperties(obj);
+        }
+
+        [Invocation]
+        public static void postSet_Receipts(Transaction obj)
+        {
+            UpdateCalculatedProperties(obj);
+        }
+
+        [Invocation]
+        public static void get_ChargedAmount(Transaction obj, PropertyGetterEventArgs<decimal> e)
+        {
+            e.Result = obj.Receipts.Sum(r => r.Amount);
+        }
+
+        [Invocation]
+        public static void get_OverPayment(Transaction obj, PropertyGetterEventArgs<decimal> e)
+        {
+            e.Result = obj.Amount - obj.ChargedAmount;
+        }
+
+        private static void UpdateCalculatedProperties(Transaction obj)
+        {
+            obj.Recalculate("ChargedAmount");
+            obj.Recalculate("OverPayment");
+        }   
     }
 }

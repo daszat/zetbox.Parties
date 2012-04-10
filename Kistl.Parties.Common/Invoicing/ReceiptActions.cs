@@ -20,5 +20,35 @@ namespace ZBox.Basic.Invoicing
         {
             // Do nothing, work is done in derived classes
         }
+
+        [Invocation]
+        public static void postSet_Transactions(Receipt obj)
+        {
+            UpdateCalculatedProperties(obj);
+        }
+
+        [Invocation]
+        public static void postSet_Total(Receipt obj, PropertyPostSetterEventArgs<decimal> e)
+        {
+            UpdateCalculatedProperties(obj);
+        }
+
+        [Invocation]
+        public static void get_OffenerRechnungsbetrag(Receipt obj, PropertyGetterEventArgs<decimal> e)
+        {
+            e.Result = obj.Total - obj.PaymentAmount;
+        }
+
+        [Invocation]
+        public static void get_EinzahlungsSumme(Receipt obj, PropertyGetterEventArgs<decimal> e)
+        {
+            e.Result = obj.Transactions.Sum(i => i.Amount);
+        }
+
+        private static void UpdateCalculatedProperties(Receipt obj)
+        {
+            obj.Recalculate("OpenAmount");
+            obj.Recalculate("PaymentAmount");
+        }  
     }
 }
