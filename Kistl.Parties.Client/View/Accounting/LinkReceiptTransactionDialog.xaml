@@ -17,8 +17,8 @@
   <DockPanel Style="{StaticResource addedMargins}"
              LastChildFill="True">
     <StackPanel DockPanel.Dock="Top">
-      <ctrls:LabeledView DataContext="{Binding ZahlungViewModel.PropertyModelsByName[Eingangsdatum]}" />
-      <ctrls:LabeledView DataContext="{Binding ZahlungViewModel.PropertyModelsByName[Eingangsbetrag]}" />
+      <ctrls:LabeledView DataContext="{Binding TransactionViewModel.PropertyModelsByName[Date]}" />
+      <ctrls:LabeledView DataContext="{Binding TransactionViewModel.PropertyModelsByName[Amount]}" />
     </StackPanel>
     <UniformGrid DockPanel.Dock="Bottom"
                  Style="{StaticResource addedMargins}"
@@ -44,12 +44,12 @@
             <GridViewColumn Header="Nr."
                             Width="100"
                             DisplayMemberBinding="{Binding Name}" />
-            <GridViewColumn Header="Betrag"
+            <GridViewColumn Header="Amount"
                             Width="100"
-                            DisplayMemberBinding="{Binding Rechnung.PropertyModelsByName[Rechnungsbetrag].FormattedValue}" />
+                            DisplayMemberBinding="{Binding Rechnung.PropertyModelsByName[Total].FormattedValue}" />
             <GridViewColumn Header="Offen"
                             Width="100"
-                            DisplayMemberBinding="{Binding Rechnung.PropertyModelsByName[OffenerRechnungsbetrag].FormattedValue}" />
+                            DisplayMemberBinding="{Binding Rechnung.PropertyModelsByName[OpenAmount].FormattedValue}" />
           </GridView.Columns>
         </GridView>
       </ctrls:ZBoxListView.View>

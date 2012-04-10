@@ -38,6 +38,7 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
                 typeof(Transaction).GetObjectClass(FrozenContext), 
                 () => DataContext.GetQuery<Transaction>().Where(i => i.Account == this.Account));
             lst.AllowAddNew = true;
+            lst.AllowDelete = true;
             lst.IsEditable = true;
             lst.ViewMethod = App.GUI.InstanceListViewMethod.Details;
             lst.RequestedKind = Kistl.NamedObjects.Gui.ControlKinds.Kistl_App_GUI_InstanceGridKind.Find(FrozenContext);
