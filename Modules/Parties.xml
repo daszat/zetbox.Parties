@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-04-10T15:25:08.5269201Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-04-10T16:10:55.084095Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T19:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T19:47:04.534407Z</KistlBase:CreatedOn>
@@ -1189,6 +1189,16 @@
     <KistlBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</KistlBase:Module>
     <KistlBase:Name>ToString</KistlBase:Name>
     <KistlBase:ObjectClass>57e5fc99-be46-485b-b732-4ab9790bc153</KistlBase:ObjectClass>
+  </KistlBase:Method>
+  <KistlBase:Method ExportGuid="b8c1ba56-92f9-46bb-968b-c206ba87a876">
+    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-04-10T16:10:55.084095Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-04-10T16:10:55.084095Z</KistlBase:CreatedOn>
+    <GUI:IsDisplayable>true</GUI:IsDisplayable>
+    <KistlBase:Label>Link receipts</KistlBase:Label>
+    <KistlBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</KistlBase:Module>
+    <KistlBase:Name>LinkReceipts</KistlBase:Name>
+    <KistlBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</KistlBase:ObjectClass>
   </KistlBase:Method>
   <KistlBase:Method ExportGuid="57810260-f915-4bef-ad7a-dba9ec95f522">
     <KistlBase:ChangedOn>2011-11-22T20:02:47.114757Z</KistlBase:ChangedOn>
