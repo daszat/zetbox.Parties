@@ -49,7 +49,7 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
         #region Commands
         public bool CanApply()
         {
-            return Rechnungen.Any(r => r.IsSelected) && Transaction.Amount != 0;
+            return Rechnungen != null && Rechnungen.Any(r => r.IsSelected) && Transaction.Amount != 0;
         }
 
         public void Apply()

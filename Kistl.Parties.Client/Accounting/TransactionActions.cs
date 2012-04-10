@@ -21,11 +21,6 @@ namespace ZBox.Basic.Accounting
         [Invocation]
         public static void NotifyCreated(Transaction obj)
         {
-            _vmf.TriggerDelayedTask(null, () =>
-            {
-                var mdl = _vmf.CreateViewModel<LinkReceiptTransactionViewModel.Factory>().Invoke(obj.Context, null, obj);
-                _vmf.ShowDialog(mdl);
-            });
         }
 
         [Invocation]
@@ -36,6 +31,13 @@ namespace ZBox.Basic.Accounting
             {
                 obj.Context.Delete(r_z);
             }
+        }
+
+        [Invocation]
+        public static void LinkReceipts(Transaction obj)
+        {
+            var mdl = _vmf.CreateViewModel<LinkReceiptTransactionViewModel.Factory>().Invoke(obj.Context, null, obj);
+            _vmf.ShowDialog(mdl);
         }
     }
 }

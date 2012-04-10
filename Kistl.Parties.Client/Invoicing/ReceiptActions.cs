@@ -11,9 +11,8 @@ namespace ZBox.Basic.Invoicing
     public static class ReceiptActions
     {
         [Invocation]
-        public static void postSet_Transactions(Receipt obj, PropertyPostSetterEventArgs<decimal> e)
+        public static void postSet_Transactions(Receipt obj)
         {
-            // TODO: Other algo
             //if (obj.FulfillmentDate.HasValue == false && Math.Abs(obj.Transactions.Sum(i => i.Amount)) == obj.Total)
             //{
             //    obj.FulfillmentDate = obj.Transactions.Max(i => i.Date);

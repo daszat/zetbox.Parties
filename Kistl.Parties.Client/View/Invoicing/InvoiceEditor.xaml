@@ -25,8 +25,8 @@
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
-          <!--<ContentPresenter Content="{Binding PropertyModelsByName[Transactions]}"
-                            ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>-->
+          <ContentPresenter Content="{Binding PropertyModelsByName[Transactions]}"
+                            ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
         </StackPanel>
       </TabItem>
     </TabControl>
