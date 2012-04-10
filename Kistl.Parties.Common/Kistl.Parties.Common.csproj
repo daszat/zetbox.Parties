@@ -64,6 +64,7 @@
     <Compile Include="Accounting\AccountActions.cs" />
     <Compile Include="Accounting\AccountImporter.cs" />
     <Compile Include="Accounting\AccountImporterDescriptorActions.cs" />
+    <Compile Include="Accounting\Receipt_TransactionActions.cs" />
     <Compile Include="Accounting\TransactionActions.cs" />
     <Compile Include="CustomCommonActionsModule.cs" />
     <Compile Include="Invoicing\ReceiptActions.cs" />

@@ -42,15 +42,15 @@
   </Server>
   <AssemblySearchPaths>
     <string>Common\Core</string>
-    <string>..\..\bin\Debug\Common\Core.Generated</string>
+    <string>Common\Core.Generated</string>
     <string>Common\Core.Fallback</string>
     <string>Server\Core</string>
     <string>Server\EF</string>
-    <string>..\..\bin\Debug\Server\EF.Generated</string>
+    <string>Server\EF.Generated</string>
     <string>Server\EF.Fallback</string>
     <string>Common\App.ZBox</string>
     <string>Server\App.ZBox</string>
-    <string>..\..\bin\Debug\Server\App.Parties</string>
-    <string>..\..\bin\Debug\Common\App.Parties</string>
+    <string>Server\App.Parties</string>
+    <string>Common\App.Parties</string>
   </AssemblySearchPaths>
 </KistlConfig>
