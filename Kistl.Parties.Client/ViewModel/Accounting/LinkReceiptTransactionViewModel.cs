@@ -49,63 +49,52 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
         #region Commands
         public bool CanApply()
         {
-            return Rechnungen != null && Rechnungen.Any(r => r.IsSelected) && Transaction.Amount != 0;
+            return Receipts != null && Receipts.Any(r => r.IsSelected) && Transaction.Amount != 0;
         }
 
         public void Apply()
         {
             if (!CanApply()) return;
 
-            //var andereÜberzahlungen = NeueZahlung.Klient.Zahlungen
-            //    .Where(z => z != NeueZahlung && z.Ueberzahlung != 0)
-            //    .OrderBy(z => z.Eingangsdatum)
-            //    .ToList();
-            var andereÜberzahlungen = new List<Transaction>();
-            // aktuelle Zahlung explizit als letzte einfügen
-            andereÜberzahlungen.Insert(0, Transaction);
-
-            var gewählteRechnungen = Rechnungen
+            var receipts = Receipts
                 .Where(i => i.IsSelected)
-                .Select(i => i.Rechnung.Object)
+                .Select(i => i.Receipt.Object)
                 .Cast<Receipt>()
                 .OrderBy(r => r.Date)
                 .ToList();
 
             bool didTransfered = false;
-            foreach (var zahlung in andereÜberzahlungen)
+            // Zahlungen von alt->neu anrechnen; Rücküberweisungen neu->alt
+            foreach (var receipt in (Transaction.OverPayment > 0 ? receipts.AsEnumerable() : receipts.AsEnumerable().Reverse()))
             {
-                // Zahlungen von alt->neu anrechnen; Rücküberweisungen neu->alt
-                foreach (var rechnung in (zahlung.OverPayment > 0 ? gewählteRechnungen.AsEnumerable() : gewählteRechnungen.AsEnumerable().Reverse()))
-                {
-                    // fertig mit der zahlung?
-                    if (zahlung.OverPayment == 0)
-                        break;
+                // fertig mit der zahlung?
+                if (Transaction.OverPayment == 0)
+                    break;
 
-                    if (rechnung.OpenAmount > 0 && zahlung.OverPayment >= rechnung.OpenAmount)
-                    {
-                        // komplett Zahlung
-                        Transfer(zahlung, rechnung, rechnung.OpenAmount);
-                        didTransfered = true;
-                    }
-                    else if (zahlung.OverPayment > 0 && zahlung.OverPayment < rechnung.OpenAmount)
-                    {
-                        // teilzahlung
-                        Transfer(zahlung, rechnung, zahlung.OverPayment);
-                        didTransfered = true;
-                    }
-                    else if (zahlung.OverPayment < 0 && -zahlung.OverPayment < rechnung.PaymentAmount)
-                    {
-                        // teil-rücküberweisung
-                        Transfer(zahlung, rechnung, zahlung.OverPayment);
-                        didTransfered = true;
-                    }
-                    else if (rechnung.PaymentAmount > 0 && -zahlung.OverPayment >= rechnung.PaymentAmount)
-                    {
-                        // komplett rücküberweisung
-                        // transfer z => r
-                        Transfer(zahlung, rechnung, -rechnung.PaymentAmount);
-                        didTransfered = true;
-                    }
+                if (receipt.OpenAmount > 0 && Transaction.OverPayment >= receipt.OpenAmount)
+                {
+                    // komplett Zahlung
+                    Transfer(Transaction, receipt, receipt.OpenAmount);
+                    didTransfered = true;
+                }
+                else if (Transaction.OverPayment > 0 && Transaction.OverPayment < receipt.OpenAmount)
+                {
+                    // teilzahlung
+                    Transfer(Transaction, receipt, Transaction.OverPayment);
+                    didTransfered = true;
+                }
+                else if (Transaction.OverPayment < 0 && -Transaction.OverPayment < receipt.PaymentAmount)
+                {
+                    // teil-rücküberweisung
+                    Transfer(Transaction, receipt, Transaction.OverPayment);
+                    didTransfered = true;
+                }
+                else if (receipt.PaymentAmount > 0 && -Transaction.OverPayment >= receipt.PaymentAmount)
+                {
+                    // komplett rücküberweisung
+                    // transfer z => r
+                    Transfer(Transaction, receipt, -receipt.PaymentAmount);
+                    didTransfered = true;
                 }
             }
             if (!didTransfered)
@@ -117,12 +106,12 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
             Show = false;
         }
 
-        private Receipt_Transaction Transfer(Transaction zahlung, Receipt rechnung, decimal betrag)
+        private Receipt_Transaction Transfer(Transaction payment, Receipt receipt, decimal amount)
         {
             var r_z = DataContext.Create<Receipt_Transaction>();
-            r_z.Receipt = rechnung;
-            r_z.Transaction = zahlung;
-            r_z.Amount = betrag;
+            r_z.Receipt = receipt;
+            r_z.Transaction = payment;
+            r_z.Amount = amount;
             return r_z;
         }
 
@@ -164,19 +153,19 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
         }
         #endregion
 
-        #region Rechnungen
+        #region Receipts
 
-        public class RechnungenSelectionViewModel : ViewModel
+        public class ReceiptsSelectionViewModel : ViewModel
         {
-            public new delegate RechnungenSelectionViewModel Factory(IKistlContext dataCtx, LinkReceiptTransactionViewModel parent, Receipt rechnung);
+            public new delegate ReceiptsSelectionViewModel Factory(IKistlContext dataCtx, LinkReceiptTransactionViewModel parent, Receipt receipt);
 
-            public RechnungenSelectionViewModel(IViewModelDependencies appCtx, IKistlContext dataCtx, LinkReceiptTransactionViewModel parent, Receipt rechnung)
+            public ReceiptsSelectionViewModel(IViewModelDependencies appCtx, IKistlContext dataCtx, LinkReceiptTransactionViewModel parent, Receipt receipt)
                 : base(appCtx, dataCtx, parent)
             {
-                _rechnung = rechnung;
+                _receipt = receipt;
             }
 
-            private Receipt _rechnung;
+            private Receipt _receipt;
 
             private bool _isSelected = false;
             public bool IsSelected
@@ -196,13 +185,13 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
             }
 
             private DataObjectViewModel _rechnungViewModel;
-            public DataObjectViewModel Rechnung
+            public DataObjectViewModel Receipt
             {
                 get
                 {
                     if (_rechnungViewModel == null)
                     {
-                        _rechnungViewModel = DataObjectViewModel.Fetch(ViewModelFactory, DataContext, Parent, _rechnung);
+                        _rechnungViewModel = DataObjectViewModel.Fetch(ViewModelFactory, DataContext, Parent, _receipt);
                     }
                     return _rechnungViewModel;
                 }
@@ -210,24 +199,24 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
 
             public override string Name
             {
-                get { return _rechnung.ToString(); }
+                get { return _receipt.ToString(); }
             }
         }
 
-        private List<RechnungenSelectionViewModel> _rechnungen;
-        public List<RechnungenSelectionViewModel> Rechnungen
+        private List<ReceiptsSelectionViewModel> _receipts;
+        public List<ReceiptsSelectionViewModel> Receipts
         {
             get
             {
-                if (_rechnungen == null && Transaction.Party != null)
+                if (_receipts == null && Transaction.Party != null)
                 {
-                    _rechnungen = Transaction.Party.PartyRole.OfType<Customer>().SelectMany(c => c.SalesInvoices).Cast<Receipt>()
+                    _receipts = Transaction.Party.PartyRole.OfType<Customer>().SelectMany(c => c.SalesInvoices).Cast<Receipt>()
                           .Concat(Transaction.Party.PartyRole.OfType<Supplier>().SelectMany(c => c.PurchaseInvoices).Cast<Receipt>())
                           .OrderBy(r => r.Date)
-                          .Select(r => ViewModelFactory.CreateViewModel<RechnungenSelectionViewModel.Factory>().Invoke(DataContext, this, r))
+                          .Select(r => ViewModelFactory.CreateViewModel<ReceiptsSelectionViewModel.Factory>().Invoke(DataContext, this, r))
                           .ToList();
                 }
-                return _rechnungen;
+                return _receipts;
             }
         }
         #endregion

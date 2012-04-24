@@ -5,6 +5,7 @@ namespace ZBox.Basic.Accounting
     using System.Linq;
     using System.Text;
     using Kistl.API;
+    using ZBox.Basic.Invoicing;
 
     [Implementor]
     public static class Receipt_TransactionActions
@@ -27,6 +28,36 @@ namespace ZBox.Basic.Accounting
             {
                 obj.Transaction.Recalculate("ChargedAmount");
                 obj.Transaction.Recalculate("OverPayment");
+            }
+        }
+
+        [Invocation]
+        public static void postSet_Receipt(Receipt_Transaction obj, PropertyPostSetterEventArgs<Receipt> e)
+        {
+            if (e.OldValue != null)
+            {
+                e.OldValue.Recalculate("OpenAmount");
+                e.OldValue.Recalculate("PaymentAmount");
+            }
+            if (e.NewValue != null)
+            {
+                e.NewValue.Recalculate("OpenAmount");
+                e.NewValue.Recalculate("PaymentAmount");
+            }
+        }
+
+        [Invocation]
+        public static void postSet_Transaction(Receipt_Transaction obj, PropertyPostSetterEventArgs<Transaction> e)
+        {
+            if (e.OldValue != null)
+            {
+                e.OldValue.Recalculate("ChargedAmount");
+                e.OldValue.Recalculate("OverPayment");
+            }
+            if (e.NewValue != null)
+            {
+                e.NewValue.Recalculate("ChargedAmount");
+                e.NewValue.Recalculate("OverPayment");
             }
         }
     }

@@ -24,6 +24,8 @@
         <StackPanel>
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[OpenAmount]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[PaymentAmount]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
           <ContentPresenter Content="{Binding PropertyModelsByName[Transactions]}"
                             ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
@@ -56,6 +58,8 @@
         <StackPanel DockPanel.Dock="Bottom">
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[OpenAmount]}" />
+          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[PaymentAmount]}" />
         </StackPanel>
         <ContentPresenter Content="{Binding PropertyModelsByName[Items]}"
                           ContentTemplateSelector="{StaticResource defaultTemplateSelector}" />

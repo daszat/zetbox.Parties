@@ -58,7 +58,7 @@ namespace ZBox.Basic.Accounting
         [Invocation]
         public static void get_OverPayment(Transaction obj, PropertyGetterEventArgs<decimal> e)
         {
-            e.Result = obj.Amount - obj.ChargedAmount;
+            e.Result = obj.Amount - obj.Receipts.Sum(r => r.Amount);
         }
 
         private static void UpdateCalculatedProperties(Transaction obj)

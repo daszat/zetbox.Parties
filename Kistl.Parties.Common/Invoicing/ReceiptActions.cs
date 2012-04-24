@@ -36,7 +36,7 @@ namespace ZBox.Basic.Invoicing
         [Invocation]
         public static void get_OpenAmount(Receipt obj, PropertyGetterEventArgs<decimal> e)
         {
-            e.Result = obj.Total - obj.PaymentAmount;
+            e.Result = obj.Total - obj.Transactions.Sum(i => i.Amount);
         }
 
         [Invocation]

@@ -29,7 +29,7 @@
                            Style="{StaticResource addedMargins}" />
 
     </UniformGrid>
-    <ctrls:ZBoxListView ItemsSource="{Binding Rechnungen}"
+    <ctrls:ZBoxListView ItemsSource="{Binding Receipts}"
                         SelectionMode="Single">
       <ctrls:ZBoxListView.View>
         <GridView>
@@ -46,10 +46,10 @@
                             DisplayMemberBinding="{Binding Name}" />
             <GridViewColumn Header="Amount"
                             Width="100"
-                            DisplayMemberBinding="{Binding Rechnung.PropertyModelsByName[Total].FormattedValue}" />
+                            DisplayMemberBinding="{Binding Receipt.PropertyModelsByName[Total].FormattedValue}" />
             <GridViewColumn Header="Offen"
                             Width="100"
-                            DisplayMemberBinding="{Binding Rechnung.PropertyModelsByName[OpenAmount].FormattedValue}" />
+                            DisplayMemberBinding="{Binding Receipt.PropertyModelsByName[OpenAmount].FormattedValue}" />
           </GridView.Columns>
         </GridView>
       </ctrls:ZBoxListView.View>
