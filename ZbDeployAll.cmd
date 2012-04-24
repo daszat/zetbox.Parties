@@ -13,6 +13,8 @@ set config=%1
 
 :GOON
 
+call "ZbInstall.cmd" %config%
+
 cd bin\Debug
 
 Kistl.Server.Service.exe %config% -deploy-update -generate
