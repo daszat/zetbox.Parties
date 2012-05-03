@@ -299,14 +299,6 @@
     <Accounting:Date>2011-12-06T01:00:00Z</Accounting:Date>
     <Accounting:ImportHash>2011-12-06 00:00:00Z|-83.76|DatenträgerBNKLEQ1125852238mit1ÜberweisungEmpfänger:FacilityManagementKontonummer:10812093068BLZ:32000AR-2011-0265,Differenz</Accounting:ImportHash>
   </Accounting:Transaction>
-  <Invoicing:OtherExpenseReceipt ExportGuid="d0fff6c7-949b-42a3-abfa-dfb333cd64f5">
-    <Invoicing:ChangedOn>2011-12-29T11:37:12.616301Z</Invoicing:ChangedOn>
-    <Invoicing:CreatedOn>2011-12-29T11:37:12.616301Z</Invoicing:CreatedOn>
-    <Invoicing:Date>2011-12-29T11:36:21.2963657Z</Invoicing:Date>
-    <Invoicing:DueDate>0001-01-01T01:00:00Z</Invoicing:DueDate>
-    <Invoicing:Total>200.00</Invoicing:Total>
-    <Invoicing:TotalNet>200.00</Invoicing:TotalNet>
-  </Invoicing:OtherExpenseReceipt>
   <Invoicing:PurchaseInvoice ExportGuid="411b44ac-dae6-4003-b79d-20c6de95ba58">
     <Invoicing:ChangedOn>2011-12-29T12:56:04.0187058Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-12-29T12:56:04.0187058Z</Invoicing:CreatedOn>
