@@ -36,6 +36,22 @@ namespace at.dasz.DocumentManagement
         }
 
         [Invocation]
+        public static void MakeOtherExpense(ImportedFile obj, MethodReturnEventArgs<OtherExpenseReceipt> e)
+        {
+            var ctx = obj.Context;
+            var dlg = _factory.CreateViewModel<DataObjectSelectionTaskViewModel.Factory>().Invoke(ctx, null, typeof(OtherExpenseReceipt).GetObjectClass(obj.ReadOnlyContext), null, (sel) =>
+            {
+                if (sel != null)
+                {
+                    var receipt = (OtherExpenseReceipt)sel.First().Object;
+                    receipt.Document = obj.MakeStaticFile();
+                    e.Result = receipt;
+                }
+            }, null);
+            _factory.ShowDialog(dlg);
+        }
+
+        [Invocation]
         public static void MakeQuote(ImportedFile obj, MethodReturnEventArgs<PurchaseQuote> e)
         {
             var ctx = obj.Context;
