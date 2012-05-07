@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-07T13:58:47.5266439Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-07T17:21:36.9526953Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T20:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T20:47:04.534407Z</KistlBase:CreatedOn>
@@ -8131,6 +8131,35 @@ public static void CreateItem(Receipt obj, MethodReturnEventArgs&lt;ZBox.Basic.I
     <KistlBase:Name>CreateItem</KistlBase:Name>
     <KistlBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</KistlBase:ObjectClass>
   </KistlBase:Method>
+  <KistlBase:Method ExportGuid="b894f132-6ef2-4031-9bdf-86b0ff781540">
+    <KistlBase:ChangedOn>2012-05-07T15:12:48.4244652Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void GetOpenAmount(Receipt obj, MethodReturnEventArgs&lt;decimal&gt; e)
+{
+}
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-07T15:12:48.4244652Z</KistlBase:CreatedOn>
+    <KistlBase:Description>Derived classes must implement this method to calculate the open amount</KistlBase:Description>
+    <GUI:IsDisplayable>false</GUI:IsDisplayable>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>GetOpenAmount</KistlBase:Name>
+    <KistlBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</KistlBase:ObjectClass>
+  </KistlBase:Method>
+  <KistlBase:Method ExportGuid="bc09fb13-b1fc-404f-9816-60043234316b">
+    <KistlBase:ChangedOn>2012-05-07T15:21:36.9526953Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void GetPaymentAmount(Receipt obj, MethodReturnEventArgs&lt;decimal&gt; e)
+{
+}
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-07T15:21:36.9526953Z</KistlBase:CreatedOn>
+    <KistlBase:Description>Derived classes must implement this method to calculate the payment amount</KistlBase:Description>
+    <KistlBase:InvokeOnServer>false</KistlBase:InvokeOnServer>
+    <GUI:IsDisplayable>false</GUI:IsDisplayable>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>GetPaymentAmount</KistlBase:Name>
+    <KistlBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</KistlBase:ObjectClass>
+  </KistlBase:Method>
   <KistlBase:Method ExportGuid="83e0726f-021e-41a0-b184-7bebf7d3b642">
     <KistlBase:ChangedOn>2011-08-05T16:31:13.104286Z</KistlBase:ChangedOn>
     <KistlBase:CodeTemplate>[Invocation]
@@ -8534,6 +8563,26 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <KistlBase:Parameter_pos>4</KistlBase:Parameter_pos>
     <KistlBase:Name>taxable</KistlBase:Name>
   </KistlBase:BoolParameter>
+  <KistlBase:DecimalParameter ExportGuid="d0700bfa-0c56-4172-9d20-0cefce7286c9">
+    <KistlBase:ChangedOn>2012-05-07T15:12:48.4244652Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-07T15:12:48.4244652Z</KistlBase:CreatedOn>
+    <KistlBase:IsList>false</KistlBase:IsList>
+    <KistlBase:IsNullable>false</KistlBase:IsNullable>
+    <KistlBase:IsReturnParameter>true</KistlBase:IsReturnParameter>
+    <KistlBase:Method>b894f132-6ef2-4031-9bdf-86b0ff781540</KistlBase:Method>
+    <KistlBase:Parameter_pos>0</KistlBase:Parameter_pos>
+    <KistlBase:Name>retVal</KistlBase:Name>
+  </KistlBase:DecimalParameter>
+  <KistlBase:DecimalParameter ExportGuid="022cb2c8-2752-4aaf-ac26-c9122f9d46ef">
+    <KistlBase:ChangedOn>2012-05-07T15:21:36.9526953Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-07T15:21:36.9526953Z</KistlBase:CreatedOn>
+    <KistlBase:IsList>false</KistlBase:IsList>
+    <KistlBase:IsNullable>false</KistlBase:IsNullable>
+    <KistlBase:IsReturnParameter>true</KistlBase:IsReturnParameter>
+    <KistlBase:Method>bc09fb13-b1fc-404f-9816-60043234316b</KistlBase:Method>
+    <KistlBase:Parameter_pos>0</KistlBase:Parameter_pos>
+    <KistlBase:Name>retVal</KistlBase:Name>
+  </KistlBase:DecimalParameter>
   <KistlBase:StringParameter ExportGuid="8c6d6bb0-2cd9-43b1-998a-a34854f8f676">
     <KistlBase:ChangedOn>2011-08-05T16:31:00.995796Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-07-26T23:25:29Z</KistlBase:CreatedOn>

@@ -35,5 +35,17 @@ namespace ZBox.Basic.Invoicing
             obj.Total = obj.Items.Sum(i => i.Amount);
             obj.TotalNet = obj.Items.Sum(i => i.AmountNet);
         }
+
+        [Invocation]
+        public static void GetOpenAmount(SalesInvoice obj, MethodReturnEventArgs<decimal> e)
+        {
+            e.Result = ReceiptAmountCalculator.GetIncomeOpenAmount(obj);
+        }
+
+        [Invocation]
+        public static void GetPaymentAmount(SalesInvoice obj, MethodReturnEventArgs<decimal> e)
+        {
+            e.Result = ReceiptAmountCalculator.GetIncomePaymentAmount(obj);
+        }
     }
 }

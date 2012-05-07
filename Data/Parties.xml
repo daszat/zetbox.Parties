@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2012-05-07T13:58:47.5266439Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2012-05-07T17:21:36.9526953Z" xmlns="http://dasz.at/Kistl">
   <Accounting:Account ExportGuid="10abf2ec-e809-4753-8bea-5e4e3fe45874">
     <Accounting:ChangedOn>2011-12-29T11:16:51.4206588Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2011-12-29T11:16:51.4206588Z</Accounting:CreatedOn>
@@ -17,6 +17,13 @@
     <Accounting:CreatedOn>2012-05-03T15:43:06.4594807Z</Accounting:CreatedOn>
     <Accounting:Receipt>028220be-8c24-4552-9cd3-7364192ca35c</Accounting:Receipt>
     <Accounting:Transaction>43891a3b-7f00-4909-ac02-6d9203503437</Accounting:Transaction>
+  </Accounting:Receipt_Transaction>
+  <Accounting:Receipt_Transaction ExportGuid="7895929a-4e03-4ffb-b468-2bc7eef59f08">
+    <Accounting:Amount>100.00</Accounting:Amount>
+    <Accounting:ChangedOn>2012-05-07T12:14:50.7197354Z</Accounting:ChangedOn>
+    <Accounting:CreatedOn>2012-05-07T12:14:50.7197354Z</Accounting:CreatedOn>
+    <Accounting:Receipt>1b69f1b9-609c-4a01-8750-0d89770e3708</Accounting:Receipt>
+    <Accounting:Transaction>c5477108-bf5d-45c7-9b70-27d47f086825</Accounting:Transaction>
   </Accounting:Receipt_Transaction>
   <Accounting:Receipt_Transaction ExportGuid="cda1a2b4-1a1a-49f9-b51e-e1a878730ce3">
     <Accounting:Amount>300.00</Accounting:Amount>
@@ -179,6 +186,17 @@
     <Accounting:ImportHash>2011-11-02 00:00:00Z|-515.59|DatenträgerBNKJ2L5604395046mit1ÜberweisungEmpfänger:FacilityManagementKontonummer:10812093068BLZ:32000AR-2011-XXXX</Accounting:ImportHash>
     <Accounting:OverPayment>-515.59</Accounting:OverPayment>
   </Accounting:Transaction>
+  <Accounting:Transaction ExportGuid="65fe66c1-0fbc-4987-ad57-02a47d173e62">
+    <Accounting:Account>10abf2ec-e809-4753-8bea-5e4e3fe45874</Accounting:Account>
+    <Accounting:Amount>-100.00</Accounting:Amount>
+    <Accounting:ChangedOn>2012-05-07T14:03:18.024932Z</Accounting:ChangedOn>
+    <Accounting:ChargedAmount>0</Accounting:ChargedAmount>
+    <Accounting:Comment>VAT</Accounting:Comment>
+    <Accounting:CreatedOn>2012-05-07T14:03:18.024932Z</Accounting:CreatedOn>
+    <Accounting:Date>2012-05-06T22:00:00Z</Accounting:Date>
+    <Accounting:OverPayment>-100.00</Accounting:OverPayment>
+    <Accounting:Party>54fa1810-f123-41a5-92ae-304adcda0852</Accounting:Party>
+  </Accounting:Transaction>
   <Accounting:Transaction ExportGuid="6a8d76c5-cf54-4753-8747-f4b8387bcd61">
     <Accounting:Account>10abf2ec-e809-4753-8bea-5e4e3fe45874</Accounting:Account>
     <Accounting:Amount>-3.20</Accounting:Amount>
@@ -333,6 +351,17 @@
     <Accounting:ImportHash>2011-10-28 00:00:00Z|-3,297.00|DatenträgerBNKJ2L5546217758mit1ÜberweisungEmpfänger:FinanzamtWien12/13/14PurkersdorfKontonummer:00005504082BLZ:60000323/5150</Accounting:ImportHash>
     <Accounting:OverPayment>-3297.00</Accounting:OverPayment>
   </Accounting:Transaction>
+  <Accounting:Transaction ExportGuid="c5477108-bf5d-45c7-9b70-27d47f086825">
+    <Accounting:Account>10abf2ec-e809-4753-8bea-5e4e3fe45874</Accounting:Account>
+    <Accounting:Amount>100.00</Accounting:Amount>
+    <Accounting:ChangedOn>2012-05-07T12:14:50.7197354Z</Accounting:ChangedOn>
+    <Accounting:ChargedAmount>100.00</Accounting:ChargedAmount>
+    <Accounting:Comment>test</Accounting:Comment>
+    <Accounting:CreatedOn>2012-05-07T12:14:50.7197354Z</Accounting:CreatedOn>
+    <Accounting:Date>2012-05-06T22:00:00Z</Accounting:Date>
+    <Accounting:OverPayment>0</Accounting:OverPayment>
+    <Accounting:Party>814f3a46-97b0-46e1-aeeb-2529bbaba738</Accounting:Party>
+  </Accounting:Transaction>
   <Accounting:Transaction ExportGuid="d84d3bfe-b5ff-486c-8db2-2e94524b6c48">
     <Accounting:Account>10abf2ec-e809-4753-8bea-5e4e3fe45874</Accounting:Account>
     <Accounting:Amount>-16.60</Accounting:Amount>
@@ -399,6 +428,32 @@
     <Accounting:ImportHash>2011-12-06 00:00:00Z|-83.76|DatenträgerBNKLEQ1125852238mit1ÜberweisungEmpfänger:FacilityManagementKontonummer:10812093068BLZ:32000AR-2011-0265,Differenz</Accounting:ImportHash>
     <Accounting:OverPayment>-83.76</Accounting:OverPayment>
   </Accounting:Transaction>
+  <Invoicing:OtherExpenseReceipt ExportGuid="1b69f1b9-609c-4a01-8750-0d89770e3708">
+    <Invoicing:ChangedOn>2012-05-07T12:14:50.7197354Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-05-07T12:13:54.4935194Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2012-05-06T22:00:00Z</Invoicing:Date>
+    <Invoicing:Description>some other expenses</Invoicing:Description>
+    <Invoicing:Document>0c6e41f2-8a3b-40ac-aa2b-5ccb9af06786</Invoicing:Document>
+    <Invoicing:DueDate>2012-05-06T22:00:00Z</Invoicing:DueDate>
+    <Accounting:OpenAmount>0</Accounting:OpenAmount>
+    <Accounting:PaymentAmount>100.00</Accounting:PaymentAmount>
+    <Invoicing:Total>100.00</Invoicing:Total>
+    <Invoicing:TotalNet>80.00</Invoicing:TotalNet>
+    <Invoicing:IntOrg>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:IntOrg>
+    <Invoicing:Party>814f3a46-97b0-46e1-aeeb-2529bbaba738</Invoicing:Party>
+  </Invoicing:OtherExpenseReceipt>
+  <Invoicing:OtherExpenseReceipt ExportGuid="ffe6d44a-5e7b-4a11-aa6e-cc662c74ce25">
+    <Invoicing:ChangedOn>2012-05-07T14:02:08.5799599Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-05-07T14:02:08.5799599Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2012-05-06T22:00:00Z</Invoicing:Date>
+    <Invoicing:DueDate>2012-06-06T22:00:00Z</Invoicing:DueDate>
+    <Accounting:OpenAmount>100.00</Accounting:OpenAmount>
+    <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
+    <Invoicing:Total>100.00</Invoicing:Total>
+    <Invoicing:TotalNet>100.00</Invoicing:TotalNet>
+    <Invoicing:IntOrg>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:IntOrg>
+    <Invoicing:Party>54fa1810-f123-41a5-92ae-304adcda0852</Invoicing:Party>
+  </Invoicing:OtherExpenseReceipt>
   <Invoicing:PurchaseInvoice ExportGuid="411b44ac-dae6-4003-b79d-20c6de95ba58">
     <Invoicing:ChangedOn>2011-12-29T12:56:04.0187058Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-12-29T12:56:04.0187058Z</Invoicing:CreatedOn>
@@ -518,6 +573,11 @@
     <Parties:ChangedOn>2011-12-28T15:54:28.0476717Z</Parties:ChangedOn>
     <Parties:CreatedOn>2011-12-28T15:54:28.0476717Z</Parties:CreatedOn>
     <Parties:Name>Realestate Business Services</Parties:Name>
+  </Parties:Organization>
+  <Parties:Organization ExportGuid="54fa1810-f123-41a5-92ae-304adcda0852">
+    <Parties:ChangedOn>2012-05-07T14:01:31.5658428Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2012-05-07T14:01:31.5658428Z</Parties:CreatedOn>
+    <Parties:Name>tax office</Parties:Name>
   </Parties:Organization>
   <Parties:Organization ExportGuid="814f3a46-97b0-46e1-aeeb-2529bbaba738">
     <Parties:ChangedOn>2011-12-28T15:54:08.2215377Z</Parties:ChangedOn>
