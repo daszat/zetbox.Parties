@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2012-04-24T14:37:59.823538Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2012-05-07T13:58:47.5266439Z" xmlns="http://dasz.at/Kistl">
   <Accounting:Account ExportGuid="10abf2ec-e809-4753-8bea-5e4e3fe45874">
     <Accounting:ChangedOn>2011-12-29T11:16:51.4206588Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2011-12-29T11:16:51.4206588Z</Accounting:CreatedOn>
@@ -11,6 +11,20 @@
     <Accounting:Name>BA-CA</Accounting:Name>
     <Accounting:TypeRef>a5498ede-ea93-433c-8464-c2af0a506b8b</Accounting:TypeRef>
   </Accounting:AccountImporterDescriptor>
+  <Accounting:Receipt_Transaction ExportGuid="0210b584-7f0a-4e26-8421-bcba0c3c7776">
+    <Accounting:Amount>478.00</Accounting:Amount>
+    <Accounting:ChangedOn>2012-05-03T15:43:06.4594807Z</Accounting:ChangedOn>
+    <Accounting:CreatedOn>2012-05-03T15:43:06.4594807Z</Accounting:CreatedOn>
+    <Accounting:Receipt>028220be-8c24-4552-9cd3-7364192ca35c</Accounting:Receipt>
+    <Accounting:Transaction>43891a3b-7f00-4909-ac02-6d9203503437</Accounting:Transaction>
+  </Accounting:Receipt_Transaction>
+  <Accounting:Receipt_Transaction ExportGuid="cda1a2b4-1a1a-49f9-b51e-e1a878730ce3">
+    <Accounting:Amount>300.00</Accounting:Amount>
+    <Accounting:ChangedOn>2012-05-03T15:42:30.2174078Z</Accounting:ChangedOn>
+    <Accounting:CreatedOn>2012-05-03T15:42:30.2174078Z</Accounting:CreatedOn>
+    <Accounting:Receipt>028220be-8c24-4552-9cd3-7364192ca35c</Accounting:Receipt>
+    <Accounting:Transaction>491da77a-5ba7-4dc1-bfa2-de25c45e751b</Accounting:Transaction>
+  </Accounting:Receipt_Transaction>
   <Accounting:Transaction ExportGuid="0d92b849-1bc5-4381-a666-fa0b128b844a">
     <Accounting:Account>10abf2ec-e809-4753-8bea-5e4e3fe45874</Accounting:Account>
     <Accounting:Amount>-1500.00</Accounting:Amount>
@@ -120,6 +134,28 @@
     <Accounting:Date>2011-12-02T01:00:00Z</Accounting:Date>
     <Accounting:ImportHash>2011-12-02 00:00:00Z|-10.46|Lastschrifta/OFFICESERVICESGMBH270403411208411208AR10,46-0,0010,46-</Accounting:ImportHash>
     <Accounting:OverPayment>-10.46</Accounting:OverPayment>
+  </Accounting:Transaction>
+  <Accounting:Transaction ExportGuid="43891a3b-7f00-4909-ac02-6d9203503437">
+    <Accounting:Account>10abf2ec-e809-4753-8bea-5e4e3fe45874</Accounting:Account>
+    <Accounting:Amount>478.00</Accounting:Amount>
+    <Accounting:ChangedOn>2012-05-03T15:43:06.4594807Z</Accounting:ChangedOn>
+    <Accounting:ChargedAmount>478.00</Accounting:ChargedAmount>
+    <Accounting:Comment>asdfsadf</Accounting:Comment>
+    <Accounting:CreatedOn>2012-05-03T15:43:06.4594807Z</Accounting:CreatedOn>
+    <Accounting:Date>2012-04-30T22:00:00Z</Accounting:Date>
+    <Accounting:OverPayment>0</Accounting:OverPayment>
+    <Accounting:Party>436b27ad-89fb-4a10-bc83-e44dab21b4bd</Accounting:Party>
+  </Accounting:Transaction>
+  <Accounting:Transaction ExportGuid="491da77a-5ba7-4dc1-bfa2-de25c45e751b">
+    <Accounting:Account>10abf2ec-e809-4753-8bea-5e4e3fe45874</Accounting:Account>
+    <Accounting:Amount>300.00</Accounting:Amount>
+    <Accounting:ChangedOn>2012-05-03T15:42:30.2174078Z</Accounting:ChangedOn>
+    <Accounting:ChargedAmount>300.00</Accounting:ChargedAmount>
+    <Accounting:Comment>asdfsadf</Accounting:Comment>
+    <Accounting:CreatedOn>2012-05-03T15:42:30.2174078Z</Accounting:CreatedOn>
+    <Accounting:Date>2012-05-02T22:00:00Z</Accounting:Date>
+    <Accounting:OverPayment>0</Accounting:OverPayment>
+    <Accounting:Party>436b27ad-89fb-4a10-bc83-e44dab21b4bd</Accounting:Party>
   </Accounting:Transaction>
   <Accounting:Transaction ExportGuid="612ee847-3493-4214-9ae0-ba2347298cf0">
     <Accounting:Account>10abf2ec-e809-4753-8bea-5e4e3fe45874</Accounting:Account>

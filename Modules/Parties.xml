@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-04-24T14:37:59.823538Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-07T13:58:47.5266439Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T20:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T20:47:04.534407Z</KistlBase:CreatedOn>
@@ -7892,6 +7892,21 @@ public static void MakeInvoice(ImportedFile obj, MethodReturnEventArgs&lt;ZBox.B
     <KistlBase:Name>MakeInvoice</KistlBase:Name>
     <KistlBase:ObjectClass>523a75bb-29c4-421c-9343-93d8658bb5f8</KistlBase:ObjectClass>
   </KistlBase:Method>
+  <KistlBase:Method ExportGuid="cab6bddb-d596-44de-ba48-a413d42b33a3">
+    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-07T11:58:47.5266439Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void MakeOtherExpense(ImportedFile obj, MethodReturnEventArgs&lt;ZBox.Basic.Invoicing.OtherExpenseReceipt&gt; e)
+{
+}
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-07T11:58:47.5266439Z</KistlBase:CreatedOn>
+    <GUI:IsDisplayable>true</GUI:IsDisplayable>
+    <KistlBase:Label>Make expense</KistlBase:Label>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>MakeOtherExpense</KistlBase:Name>
+    <KistlBase:ObjectClass>523a75bb-29c4-421c-9343-93d8658bb5f8</KistlBase:ObjectClass>
+  </KistlBase:Method>
   <KistlBase:Method ExportGuid="925078e5-1bbd-48fd-9bbe-921bf87b5298">
     <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
     <KistlBase:ChangedOn>2011-11-04T14:00:47.673814Z</KistlBase:ChangedOn>
@@ -8415,6 +8430,17 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <KistlBase:Parameter_pos>0</KistlBase:Parameter_pos>
     <KistlBase:Name>retVal</KistlBase:Name>
     <KistlBase:ObjectClass>c437c896-cfca-4800-8495-5538b025201a</KistlBase:ObjectClass>
+  </KistlBase:ObjectReferenceParameter>
+  <KistlBase:ObjectReferenceParameter ExportGuid="2ab26b3c-e4cd-4eda-8522-3d9b3aa2a807">
+    <KistlBase:ChangedOn>2012-05-07T11:58:47.5266439Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-07T11:58:47.5266439Z</KistlBase:CreatedOn>
+    <KistlBase:IsList>false</KistlBase:IsList>
+    <KistlBase:IsNullable>false</KistlBase:IsNullable>
+    <KistlBase:IsReturnParameter>true</KistlBase:IsReturnParameter>
+    <KistlBase:Method>cab6bddb-d596-44de-ba48-a413d42b33a3</KistlBase:Method>
+    <KistlBase:Parameter_pos>0</KistlBase:Parameter_pos>
+    <KistlBase:Name>retVal</KistlBase:Name>
+    <KistlBase:ObjectClass>cfb576f2-27dc-42dc-bb28-f38762ace7e7</KistlBase:ObjectClass>
   </KistlBase:ObjectReferenceParameter>
   <KistlBase:ObjectReferenceParameter ExportGuid="24b3f76b-7a69-47cc-b5b4-10a31b893bf0">
     <KistlBase:ChangedOn>2011-11-04T14:00:47.673814Z</KistlBase:ChangedOn>
