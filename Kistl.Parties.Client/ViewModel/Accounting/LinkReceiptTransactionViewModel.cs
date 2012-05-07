@@ -210,11 +210,14 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
             {
                 if (_receipts == null && Transaction.Party != null)
                 {
-                    _receipts = Transaction.Party.PartyRole.OfType<Customer>().SelectMany(c => c.SalesInvoices).Cast<Receipt>()
-                          .Concat(Transaction.Party.PartyRole.OfType<Supplier>().SelectMany(c => c.PurchaseInvoices).Cast<Receipt>())
-                          .OrderBy(r => r.Date)
-                          .Select(r => ViewModelFactory.CreateViewModel<ReceiptsSelectionViewModel.Factory>().Invoke(DataContext, this, r))
-                          .ToList();
+                    var party = Transaction.Party;
+                    _receipts = party.PartyRole.OfType<Customer>().SelectMany(c => c.SalesInvoices).Cast<Receipt>()
+                        .Concat(party.PartyRole.OfType<Supplier>().SelectMany(c => c.PurchaseInvoices).Cast<Receipt>())
+                        .Concat(party.OtherExpenses.Cast<Receipt>())
+                        .Concat(party.OtherIncomes.Cast<Receipt>())
+                        .OrderBy(r => r.Date)
+                        .Select(r => ViewModelFactory.CreateViewModel<ReceiptsSelectionViewModel.Factory>().Invoke(DataContext, this, r))
+                        .ToList();
                 }
                 return _receipts;
             }
