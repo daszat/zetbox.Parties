@@ -99,7 +99,7 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
             }
             if (!didTransfered)
             {
-                ViewModelFactory.ShowMessage("Es wurde keine Verknüpfung durchgeführt, bitte überprüfen Sie, ob die richigen Rechnungen gewählt wurden", "Warnung");
+                ViewModelFactory.ShowMessage("No link was created, please check, if the right receipts where selected.", "Warning");
                 return;
             }
 
