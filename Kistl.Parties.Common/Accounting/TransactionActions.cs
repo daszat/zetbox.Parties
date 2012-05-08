@@ -12,7 +12,7 @@ namespace ZBox.Basic.Accounting
         [Invocation]
         public static void ToString(Transaction obj, MethodReturnEventArgs<System.String> e)
         {
-            e.Result = string.Format("{0:d}, {1:n2} - {2}", obj.Date, obj.Amount, "no category");
+            e.Result = string.Format("{0:d}, {1:n2} - {2}", obj.Date, obj.Amount, obj.Party);
         }
 
         [Invocation]
