@@ -12,12 +12,6 @@ namespace ZBox.Basic.Accounting
     [Implementor]
     public class Receipt_TransactionActions
     {
-        [Invocation]
-        public static void NotifyDeleting(Receipt_Transaction obj)
-        {
-            // Workaround - remove from lists
-            obj.Receipt = null;
-            obj.Transaction = null;
-        }
+        
     }
 }

@@ -17,6 +17,25 @@ namespace ZBox.Basic.Accounting
         }
 
         [Invocation]
+        public static void NotifyDeleting(Receipt_Transaction obj)
+        {
+            if (obj.Receipt != null)
+            {
+                obj.Receipt.Recalculate("OpenAmount");
+                obj.Receipt.Recalculate("PaymentAmount");
+            }
+            if (obj.Transaction != null)
+            {
+                obj.Transaction.Recalculate("ChargedAmount");
+                obj.Transaction.Recalculate("OverPayment");
+            }
+
+            // Workaround - remove from lists
+            obj.Receipt = null;
+            obj.Transaction = null;
+        }
+
+        [Invocation]
         public static void postSet_Amount(Receipt_Transaction obj, PropertyPostSetterEventArgs<decimal> e)
         {
             if (obj.Receipt != null)
