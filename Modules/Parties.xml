@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-07T17:21:36.9526953Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-08T16:57:44.6593399Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T20:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T20:47:04.534407Z</KistlBase:CreatedOn>
@@ -2973,7 +2973,7 @@ public static void NotifyDeleting(OtherExpenseReceipt obj)
 }
 
 </KistlBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>cd8d2a31-0fb3-4b17-b782-eeeaf7ac0c5d</GUI:DefaultViewModelDescriptor>
     <KistlBase:IsAbstract>false</KistlBase:IsAbstract>
     <KistlBase:IsFrozenObject>false</KistlBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -3015,7 +3015,7 @@ public static void NotifyDeleting(OtherIncomeReceipt obj)
 }
 
 </KistlBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>b8f24ce3-0b97-4b81-b8f9-0eaabe5915e6</GUI:DefaultViewModelDescriptor>
     <KistlBase:IsAbstract>false</KistlBase:IsAbstract>
     <KistlBase:IsFrozenObject>false</KistlBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -9385,6 +9385,18 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:ViewModelRef>9b78e99f-cd2c-4280-8506-1df08b57a1b7</GUI:ViewModelRef>
   </GUI:ViewModelDescriptor>
+  <GUI:ViewModelDescriptor ExportGuid="cd8d2a31-0fb3-4b17-b782-eeeaf7ac0c5d">
+    <GUI:DefaultEditorKind>bb54f1d9-ab07-4787-b190-5c09c8c9756a</GUI:DefaultEditorKind>
+    <GUI:Description>ViewModel for Other Expense Receipts</GUI:Description>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:ViewModelRef>7fd35fab-4e62-4669-81b3-c01f58f90207</GUI:ViewModelRef>
+  </GUI:ViewModelDescriptor>
+  <GUI:ViewModelDescriptor ExportGuid="b8f24ce3-0b97-4b81-b8f9-0eaabe5915e6">
+    <GUI:DefaultEditorKind>bb54f1d9-ab07-4787-b190-5c09c8c9756a</GUI:DefaultEditorKind>
+    <GUI:Description>ViewModel for Other Income Receipts</GUI:Description>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:ViewModelRef>c0c98f41-33cf-4bf5-83bb-2254bdf10978</GUI:ViewModelRef>
+  </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="496c1a58-d48d-44bd-b7b2-32a5f593f7c2">
     <GUI:Description>ViewModel for Purchase Invoice Items</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
@@ -9443,6 +9455,12 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
   <GUI:ViewDescriptor ExportGuid="ab64b40f-1719-4ba1-a1e6-5b65badb7dcb">
     <GUI:ControlKind>2f53471c-6a08-4c1b-ad89-b9206c147ed8</GUI:ControlKind>
     <GUI:ControlRef>6207562d-a5d1-46f2-8179-6a998e846e2a</GUI:ControlRef>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:Toolkit>0</GUI:Toolkit>
+  </GUI:ViewDescriptor>
+  <GUI:ViewDescriptor ExportGuid="93c9d3ea-dae3-4024-88f1-af1ed7fe9fe1">
+    <GUI:ControlKind>bb54f1d9-ab07-4787-b190-5c09c8c9756a</GUI:ControlKind>
+    <GUI:ControlRef>645bec99-40af-4285-9a4e-b17973ee5cfc</GUI:ControlRef>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Toolkit>0</GUI:Toolkit>
   </GUI:ViewDescriptor>
@@ -9592,6 +9610,11 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
   <GUI:ControlKind ExportGuid="651ba328-b23a-4c1d-ad41-1e70a5f8ca97">
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Name>ZBox.Basic.Invoicing.InvoiceEditor</GUI:Name>
+    <GUI:Parent>06bf9adc-c5bc-4552-abdc-18a96c527962</GUI:Parent>
+  </GUI:ControlKind>
+  <GUI:ControlKind ExportGuid="bb54f1d9-ab07-4787-b190-5c09c8c9756a">
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:Name>ZBox.Basic.Invoicing.ReceiptEditor</GUI:Name>
     <GUI:Parent>06bf9adc-c5bc-4552-abdc-18a96c527962</GUI:Parent>
   </GUI:ControlKind>
   <GUI:ControlKind ExportGuid="f76922f7-d2ce-40bf-a277-7161045f6321">
@@ -13862,7 +13885,7 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:ChangedOn>2012-04-10T17:25:08.5269201Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2012-04-10T17:25:08.5269201Z</KistlBase:CreatedOn>
     <KistlBase:FullName>Kistl.Parties.Client.View.Accounting.LinkReceiptTransactionDialog</KistlBase:FullName>
-    <KistlBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</KistlBase:Parent>
+    <KistlBase:Parent>562a3a20-007d-464f-bf35-169f4c7e6c93</KistlBase:Parent>
   </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="300e3f2f-a5cc-4445-aa28-3d372e206c0c">
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
@@ -13876,6 +13899,13 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:ChangedOn>2011-11-08T19:21:05.280314Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T19:21:05.280314Z</KistlBase:CreatedOn>
     <KistlBase:FullName>Kistl.Parties.Client.View.Invoicing.PurchaseQuoteEditor</KistlBase:FullName>
+    <KistlBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="645bec99-40af-4285-9a4e-b17973ee5cfc">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-08T14:57:44.6593399Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-08T14:57:44.6593399Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.View.Invoicing.ReceiptEditor</KistlBase:FullName>
     <KistlBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</KistlBase:Parent>
   </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="ac7fe9ac-3439-48ac-9959-8f6598c45e28">
@@ -13920,6 +13950,20 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Accounting.LinkReceiptTransactionViewModel+Factory</KistlBase:FullName>
     <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
   </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="2dbb5d2d-4b44-4737-a3a7-a81bf6e33b98">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-08T14:57:44.6593399Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-08T14:57:44.6593399Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Accounting.LinkReceiptTransactionViewModel+ReceiptsSelectionViewModel</KistlBase:FullName>
+    <KistlBase:Parent>6012afb5-9ef6-4552-9481-b46a39f8f54d</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="973bbe12-b6cf-48ae-a717-b2ab2f2a7973">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-08T14:57:44.6593399Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-08T14:57:44.6593399Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Accounting.LinkReceiptTransactionViewModel+ReceiptsSelectionViewModel+Factory</KistlBase:FullName>
+    <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
+  </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="2fb9f674-de13-4c04-b90a-0825ac2c7f96">
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
     <KistlBase:ChangedOn>2011-11-22T20:38:59.540757Z</KistlBase:ChangedOn>
@@ -13953,13 +13997,41 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:ChangedOn>2011-10-20T23:38:22.032Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-10-20T23:38:22.032Z</KistlBase:CreatedOn>
     <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.InvoiceViewModel</KistlBase:FullName>
-    <KistlBase:Parent>a07f30a6-b920-4fef-98ac-53155791e804</KistlBase:Parent>
+    <KistlBase:Parent>5cc8d500-1802-462e-b0ed-1f0430b3a9ab</KistlBase:Parent>
   </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="bef6d5a3-6e0a-45b2-871f-266645decafd">
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
     <KistlBase:ChangedOn>2011-10-20T23:38:22.032Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-10-20T23:38:22.032Z</KistlBase:CreatedOn>
     <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.InvoiceViewModel+Factory</KistlBase:FullName>
+    <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="7fd35fab-4e62-4669-81b3-c01f58f90207">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-08T14:57:44.6593399Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-08T14:57:44.6593399Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.OtherExpenseReceiptViewModel</KistlBase:FullName>
+    <KistlBase:Parent>5cc8d500-1802-462e-b0ed-1f0430b3a9ab</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="de3c13ff-7fe0-40fe-b4ee-58b7d515fe3f">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-08T14:57:44.6593399Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-08T14:57:44.6593399Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.OtherExpenseReceiptViewModel+Factory</KistlBase:FullName>
+    <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="c0c98f41-33cf-4bf5-83bb-2254bdf10978">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-08T14:57:44.6593399Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-08T14:57:44.6593399Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.OtherIncomeReceiptViewModel</KistlBase:FullName>
+    <KistlBase:Parent>5cc8d500-1802-462e-b0ed-1f0430b3a9ab</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="8794a894-dbe0-4e85-97ba-9232812e3c61">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-08T14:57:44.6593399Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-08T14:57:44.6593399Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.OtherIncomeReceiptViewModel+Factory</KistlBase:FullName>
     <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
   </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="965ff549-7b67-4913-8cb5-bda515a98719">
@@ -14016,6 +14088,20 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:ChangedOn>2011-11-08T19:21:05.280314Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T19:21:05.280314Z</KistlBase:CreatedOn>
     <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.QuoteViewModel+Factory</KistlBase:FullName>
+    <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="5cc8d500-1802-462e-b0ed-1f0430b3a9ab">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-08T14:57:44.6593399Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-08T14:57:44.6593399Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.ReceiptViewModel</KistlBase:FullName>
+    <KistlBase:Parent>a07f30a6-b920-4fef-98ac-53155791e804</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="e39533e7-8987-4b24-a542-b1b67262fb4d">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-08T14:57:44.6593399Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-08T14:57:44.6593399Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.ReceiptViewModel+Factory</KistlBase:FullName>
     <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
   </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="05b05728-a38e-4d31-acfd-55f72722206b">
@@ -14121,6 +14207,13 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:ChangedOn>2011-12-09T15:05:30.084111Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-12-09T15:05:30.084111Z</KistlBase:CreatedOn>
     <KistlBase:FullName>ZBox.Basic.Accounting.AccountActions</KistlBase:FullName>
+    <KistlBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="e5ccabfd-89f8-42f6-9d55-45faa60e2329">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-08T14:57:44.6593399Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-08T14:57:44.6593399Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>ZBox.Basic.Accounting.Receipt_TransactionActions</KistlBase:FullName>
     <KistlBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</KistlBase:Parent>
   </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="a5361878-0a0f-4efd-b347-93a545d49c9a">

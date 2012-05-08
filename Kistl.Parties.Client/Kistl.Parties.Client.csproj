@@ -87,6 +87,9 @@
     <Compile Include="ViewModel\Accounting\AccountViewModel.cs" />
     <Compile Include="ViewModel\Accounting\LinkReceiptTransactionViewModel.cs" />
     <Compile Include="ViewModel\Accounting\TransactionViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\OtherIncomeReceiptViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\OtherExpenseReceiptViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\ReceiptViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\PurchaseInvoiceItemViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\SalesInvoiceItemViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\InvoiceItemViewModel.cs" />
@@ -105,6 +108,9 @@
     <Compile Include="ViewModel\ReportScreenViewModel.cs" />
     <Compile Include="View\Accounting\LinkReceiptTransactionDialog.xaml.cs">
       <DependentUpon>LinkReceiptTransactionDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Invoicing\ReceiptEditor.xaml.cs">
+      <DependentUpon>ReceiptEditor.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Invoicing\PurchaseQuoteEditor.xaml.cs">
       <DependentUpon>PurchaseQuoteEditor.xaml</DependentUpon>
@@ -129,6 +135,10 @@
     <Page Include="View\Accounting\LinkReceiptTransactionDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Invoicing\ReceiptEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\Invoicing\PurchaseQuoteEditor.xaml">
       <Generator>MSBuild:Compile</Generator>

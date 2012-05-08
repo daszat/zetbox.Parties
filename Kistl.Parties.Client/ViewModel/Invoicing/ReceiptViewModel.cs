@@ -18,21 +18,19 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
     /// <summary>
     /// Abstract class, no descriptor
     /// </summary>
-    public abstract class InvoiceViewModel : ReceiptViewModel
+    public abstract class ReceiptViewModel : DataObjectViewModel
     {
-        public new delegate InvoiceViewModel Factory(IKistlContext dataCtx, ViewModel parent, IDataObject obj);
+        public new delegate ReceiptViewModel Factory(IKistlContext dataCtx, ViewModel parent, IDataObject obj);
 
-        public InvoiceViewModel(IViewModelDependencies appCtx, IKistlContext dataCtx, ViewModel parent, Invoice obj)
+        public ReceiptViewModel(IViewModelDependencies appCtx, IKistlContext dataCtx, ViewModel parent, Receipt obj)
             : base(appCtx, dataCtx, parent, obj)
         {
-            this.Invoice = obj;
+            this.Receipt = obj;
         }
 
-        public Invoice Invoice { get; private set; }
+        public Receipt Receipt { get; private set; }
 
-        public override ViewModel InternalOrganization
-        {
-            get { return PropertyModelsByName["InternalOrganization"]; }
-        }
+        public abstract ViewModel Party { get; }
+        public abstract ViewModel InternalOrganization { get; }
     }
 }
