@@ -10,6 +10,24 @@ namespace ZBox.Basic.Invoicing
     public static class SalesInvoiceActions
     {
         [Invocation]
+        public static void ObjectIsValid(SalesInvoice obj, ObjectIsValidEventArgs e)
+        {
+            if (obj.InternalOrganization == null)
+            {
+                e.IsValid = false;
+                e.Errors.Add("No Internal Organization was selected");
+                return;
+            }
+
+            if (obj.InternalOrganization.InvoiceGenerator == null)
+            {
+                e.IsValid = false;
+                e.Errors.Add("Internal Organization has no invoce generator. Unable to create invoice id");
+                return;
+            }
+        }
+
+        [Invocation]
         public static void postSet_Items(SalesInvoice obj)
         {
             obj.UpdateTotal();

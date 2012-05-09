@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2012-05-07T17:21:36.9526953Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2012-05-09T13:52:21.5212101Z" xmlns="http://dasz.at/Kistl">
   <Accounting:Account ExportGuid="10abf2ec-e809-4753-8bea-5e4e3fe45874">
     <Accounting:ChangedOn>2011-12-29T11:16:51.4206588Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2011-12-29T11:16:51.4206588Z</Accounting:CreatedOn>
@@ -24,13 +24,6 @@
     <Accounting:CreatedOn>2012-05-07T12:14:50.7197354Z</Accounting:CreatedOn>
     <Accounting:Receipt>1b69f1b9-609c-4a01-8750-0d89770e3708</Accounting:Receipt>
     <Accounting:Transaction>c5477108-bf5d-45c7-9b70-27d47f086825</Accounting:Transaction>
-  </Accounting:Receipt_Transaction>
-  <Accounting:Receipt_Transaction ExportGuid="cda1a2b4-1a1a-49f9-b51e-e1a878730ce3">
-    <Accounting:Amount>300.00</Accounting:Amount>
-    <Accounting:ChangedOn>2012-05-03T15:42:30.2174078Z</Accounting:ChangedOn>
-    <Accounting:CreatedOn>2012-05-03T15:42:30.2174078Z</Accounting:CreatedOn>
-    <Accounting:Receipt>028220be-8c24-4552-9cd3-7364192ca35c</Accounting:Receipt>
-    <Accounting:Transaction>491da77a-5ba7-4dc1-bfa2-de25c45e751b</Accounting:Transaction>
   </Accounting:Receipt_Transaction>
   <Accounting:Transaction ExportGuid="0d92b849-1bc5-4381-a666-fa0b128b844a">
     <Accounting:Account>10abf2ec-e809-4753-8bea-5e4e3fe45874</Accounting:Account>
@@ -155,13 +148,13 @@
   </Accounting:Transaction>
   <Accounting:Transaction ExportGuid="491da77a-5ba7-4dc1-bfa2-de25c45e751b">
     <Accounting:Account>10abf2ec-e809-4753-8bea-5e4e3fe45874</Accounting:Account>
-    <Accounting:Amount>300.00</Accounting:Amount>
-    <Accounting:ChangedOn>2012-05-03T15:42:30.2174078Z</Accounting:ChangedOn>
-    <Accounting:ChargedAmount>300.00</Accounting:ChargedAmount>
+    <Accounting:Amount>5000.00</Accounting:Amount>
+    <Accounting:ChangedOn>2012-05-07T16:10:35.088747Z</Accounting:ChangedOn>
+    <Accounting:ChargedAmount>0</Accounting:ChargedAmount>
     <Accounting:Comment>asdfsadf</Accounting:Comment>
     <Accounting:CreatedOn>2012-05-03T15:42:30.2174078Z</Accounting:CreatedOn>
     <Accounting:Date>2012-05-02T22:00:00Z</Accounting:Date>
-    <Accounting:OverPayment>0</Accounting:OverPayment>
+    <Accounting:OverPayment>5000.00</Accounting:OverPayment>
     <Accounting:Party>436b27ad-89fb-4a10-bc83-e44dab21b4bd</Accounting:Party>
   </Accounting:Transaction>
   <Accounting:Transaction ExportGuid="612ee847-3493-4214-9ae0-ba2347298cf0">
@@ -195,7 +188,7 @@
     <Accounting:CreatedOn>2012-05-07T14:03:18.024932Z</Accounting:CreatedOn>
     <Accounting:Date>2012-05-06T22:00:00Z</Accounting:Date>
     <Accounting:OverPayment>-100.00</Accounting:OverPayment>
-    <Accounting:Party>54fa1810-f123-41a5-92ae-304adcda0852</Accounting:Party>
+    <Accounting:Party>814f3a46-97b0-46e1-aeeb-2529bbaba738</Accounting:Party>
   </Accounting:Transaction>
   <Accounting:Transaction ExportGuid="6a8d76c5-cf54-4753-8747-f4b8387bcd61">
     <Accounting:Account>10abf2ec-e809-4753-8bea-5e4e3fe45874</Accounting:Account>
@@ -428,6 +421,13 @@
     <Accounting:ImportHash>2011-12-06 00:00:00Z|-83.76|DatenträgerBNKLEQ1125852238mit1ÜberweisungEmpfänger:FacilityManagementKontonummer:10812093068BLZ:32000AR-2011-0265,Differenz</Accounting:ImportHash>
     <Accounting:OverPayment>-83.76</Accounting:OverPayment>
   </Accounting:Transaction>
+  <Invoicing:DefaultInvoiceGenerator ExportGuid="ff3e9614-cc81-488a-995e-af9835b6c94d">
+    <Invoicing:ChangedOn>2012-05-09T12:16:27.1685283Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-05-09T12:16:27.1685283Z</Invoicing:CreatedOn>
+    <Invoicing:Name>dasz invoice generator</Invoicing:Name>
+    <Invoicing:NumberSequence>50bc0db0-2603-48f2-a84d-02bccef729ad</Invoicing:NumberSequence>
+    <Invoicing:InvoiceIDFormatString>{0:yyyy}/{1:00}</Invoicing:InvoiceIDFormatString>
+  </Invoicing:DefaultInvoiceGenerator>
   <Invoicing:OtherExpenseReceipt ExportGuid="1b69f1b9-609c-4a01-8750-0d89770e3708">
     <Invoicing:ChangedOn>2012-05-07T12:14:50.7197354Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-05-07T12:13:54.4935194Z</Invoicing:CreatedOn>
@@ -454,12 +454,25 @@
     <Invoicing:IntOrg>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:IntOrg>
     <Invoicing:Party>54fa1810-f123-41a5-92ae-304adcda0852</Invoicing:Party>
   </Invoicing:OtherExpenseReceipt>
+  <Invoicing:OtherIncomeReceipt ExportGuid="b33ae1ba-764a-4d93-aff7-44fad101e1cd">
+    <Invoicing:ChangedOn>2012-05-08T15:06:54.7177062Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-05-08T15:06:54.7177062Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2012-05-07T22:00:00Z</Invoicing:Date>
+    <Invoicing:Description>test</Invoicing:Description>
+    <Invoicing:DueDate>2012-06-04T22:00:00Z</Invoicing:DueDate>
+    <Accounting:OpenAmount>1.00</Accounting:OpenAmount>
+    <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
+    <Invoicing:Total>1.00</Invoicing:Total>
+    <Invoicing:TotalNet>1.00</Invoicing:TotalNet>
+    <Invoicing:IntOrg>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:IntOrg>
+    <Invoicing:Party>814f3a46-97b0-46e1-aeeb-2529bbaba738</Invoicing:Party>
+  </Invoicing:OtherIncomeReceipt>
   <Invoicing:PurchaseInvoice ExportGuid="411b44ac-dae6-4003-b79d-20c6de95ba58">
-    <Invoicing:ChangedOn>2011-12-29T12:56:04.0187058Z</Invoicing:ChangedOn>
+    <Invoicing:ChangedOn>2012-05-08T15:07:18.0072476Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-12-29T12:56:04.0187058Z</Invoicing:CreatedOn>
     <Invoicing:Date>2011-12-29T12:54:55.0287598Z</Invoicing:Date>
     <Invoicing:Description>Miete</Invoicing:Description>
-    <Invoicing:DueDate>0001-01-01T01:00:00Z</Invoicing:DueDate>
+    <Invoicing:DueDate>2012-05-08T00:00:00Z</Invoicing:DueDate>
     <Accounting:OpenAmount>515.59</Accounting:OpenAmount>
     <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
     <Invoicing:Total>515.59</Invoicing:Total>
@@ -496,18 +509,46 @@
     <Invoicing:Customer>e3706731-bb31-4c96-b157-1ffbb89658af</Invoicing:Customer>
     <Invoicing:InternalOrganization>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:InternalOrganization>
   </Invoicing:SalesInvoice>
+  <Invoicing:SalesInvoice ExportGuid="1f94f1a8-affc-4319-85fd-45f8ef28d4c8">
+    <Invoicing:ChangedOn>2012-05-09T12:22:52.1138864Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-05-09T12:18:13.526761Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2012-05-08T22:00:00Z</Invoicing:Date>
+    <Invoicing:DueDate>2012-06-08T22:00:00Z</Invoicing:DueDate>
+    <Accounting:OpenAmount>1.20</Accounting:OpenAmount>
+    <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
+    <Invoicing:Total>1.20</Invoicing:Total>
+    <Invoicing:TotalNet>1.00</Invoicing:TotalNet>
+    <Invoicing:InvoiceID>adsfasdf</Invoicing:InvoiceID>
+    <Invoicing:Customer>e3706731-bb31-4c96-b157-1ffbb89658af</Invoicing:Customer>
+    <Invoicing:InternalOrganization>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:InternalOrganization>
+  </Invoicing:SalesInvoice>
   <Invoicing:SalesInvoice ExportGuid="760c1bbd-b80a-4f1d-aa0f-6a677c9d1716">
-    <Invoicing:ChangedOn>2011-12-29T12:25:56.7341413Z</Invoicing:ChangedOn>
+    <Invoicing:ChangedOn>2012-05-08T15:07:29.5193662Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-12-29T12:25:56.7341413Z</Invoicing:CreatedOn>
     <Invoicing:Date>2011-12-29T12:24:21.1306731Z</Invoicing:Date>
     <Invoicing:Description>Consulting</Invoicing:Description>
-    <Invoicing:DueDate>0001-01-01T01:00:00Z</Invoicing:DueDate>
+    <Invoicing:DueDate>2012-05-15T00:00:00Z</Invoicing:DueDate>
     <Accounting:OpenAmount>4698.00</Accounting:OpenAmount>
     <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
     <Invoicing:Period>12/2011</Invoicing:Period>
     <Invoicing:Total>4698.00</Invoicing:Total>
     <Invoicing:TotalNet>3915.00</Invoicing:TotalNet>
     <Invoicing:InvoiceID>2011/12</Invoicing:InvoiceID>
+    <Invoicing:Customer>e3706731-bb31-4c96-b157-1ffbb89658af</Invoicing:Customer>
+    <Invoicing:InternalOrganization>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:InternalOrganization>
+  </Invoicing:SalesInvoice>
+  <Invoicing:SalesInvoice ExportGuid="fb0936db-4ca7-451e-b5fb-32558a0d3c81">
+    <Invoicing:ChangedOn>2012-05-09T12:20:23.6111842Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-05-09T12:20:23.6111842Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2012-05-08T22:00:00Z</Invoicing:Date>
+    <Invoicing:Description>adsf</Invoicing:Description>
+    <Invoicing:DueDate>2012-06-08T22:00:00Z</Invoicing:DueDate>
+    <Accounting:OpenAmount>1.10</Accounting:OpenAmount>
+    <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
+    <Invoicing:Period>asdf</Invoicing:Period>
+    <Invoicing:Total>1.10</Invoicing:Total>
+    <Invoicing:TotalNet>1.00</Invoicing:TotalNet>
+    <Invoicing:InvoiceID>adsf</Invoicing:InvoiceID>
     <Invoicing:Customer>e3706731-bb31-4c96-b157-1ffbb89658af</Invoicing:Customer>
     <Invoicing:InternalOrganization>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:InternalOrganization>
   </Invoicing:SalesInvoice>
@@ -521,6 +562,30 @@
     <Invoicing:UnitPrice>60.00</Invoicing:UnitPrice>
     <Invoicing:VATType>d396ffcd-dfb4-4999-8327-02c5d99d8bf6</Invoicing:VATType>
     <Invoicing:SalesInvoice>760c1bbd-b80a-4f1d-aa0f-6a677c9d1716</Invoicing:SalesInvoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItem>
+  <Invoicing:SalesInvoiceItem ExportGuid="6e804e4a-6e84-45b7-9740-f698b81db04f">
+    <Invoicing:Amount>1.20</Invoicing:Amount>
+    <Invoicing:AmountNet>1.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-05-09T12:18:13.526761Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-05-09T12:18:13.526761Z</Invoicing:CreatedOn>
+    <Invoicing:Description>sdf</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>1.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>d396ffcd-dfb4-4999-8327-02c5d99d8bf6</Invoicing:VATType>
+    <Invoicing:SalesInvoice>1f94f1a8-affc-4319-85fd-45f8ef28d4c8</Invoicing:SalesInvoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItem>
+  <Invoicing:SalesInvoiceItem ExportGuid="9d6d3576-494a-4bb8-9896-4e80ba5b8653">
+    <Invoicing:Amount>1.10</Invoicing:Amount>
+    <Invoicing:AmountNet>1.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-05-09T12:20:23.6111842Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-05-09T12:20:23.6111842Z</Invoicing:CreatedOn>
+    <Invoicing:Description>sadf</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>1.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>39ce5d95-4e86-45b0-b431-a898ecb3f6a8</Invoicing:VATType>
+    <Invoicing:SalesInvoice>fb0936db-4ca7-451e-b5fb-32558a0d3c81</Invoicing:SalesInvoice>
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
   </Invoicing:SalesInvoiceItem>
   <Invoicing:SalesInvoiceItem ExportGuid="c23aec9f-bd72-4fdb-874c-d24942cc894f">
@@ -568,6 +633,7 @@
     <Parties:ChangedOn>2011-12-28T15:53:21.089842Z</Parties:ChangedOn>
     <Parties:CreatedOn>2011-12-28T15:53:21.089842Z</Parties:CreatedOn>
     <Parties:Party>c3a9b6ce-1687-49c7-95bb-7c4fe0c2cc44</Parties:Party>
+    <Invoicing:InvoiceGenerator>ff3e9614-cc81-488a-995e-af9835b6c94d</Invoicing:InvoiceGenerator>
   </Parties:InternalOrganization>
   <Parties:Organization ExportGuid="436b27ad-89fb-4a10-bc83-e44dab21b4bd">
     <Parties:ChangedOn>2011-12-28T15:54:28.0476717Z</Parties:ChangedOn>

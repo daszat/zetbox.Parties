@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-08T16:57:44.6593399Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-09T13:52:21.5212101Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T20:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T20:47:04.534407Z</KistlBase:CreatedOn>
@@ -2854,6 +2854,89 @@ public static void Transfer(Transaction obj, MethodReturnEventArgs&lt;ZBox.Basic
     <KistlBase:Namespace>ZBox.Basic.Invoicing</KistlBase:Namespace>
     <KistlBase:SchemaName>invoicing</KistlBase:SchemaName>
   </KistlBase:Module>
+  <KistlBase:ObjectClass ExportGuid="1bec6383-87ec-44a8-9646-4bed490f6746">
+    <KistlBase:ChangedOn>2012-05-09T09:46:52.5029466Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:Description>Abstract base class for a invoice document generator</KistlBase:Description>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>AbstractInvoiceGenerator</KistlBase:Name>
+    <GUI:ShowIconInLists>true</GUI:ShowIconInLists>
+    <GUI:ShowIdInLists>false</GUI:ShowIdInLists>
+    <GUI:ShowNameInLists>false</GUI:ShowNameInLists>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void ToString(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSave(AbstractInvoiceGenerator obj)
+{
+}
+
+[Invocation]
+public static void NotifyPostSave(AbstractInvoiceGenerator obj)
+{
+}
+
+[Invocation]
+public static void NotifyCreated(AbstractInvoiceGenerator obj)
+{
+}
+
+[Invocation]
+public static void NotifyDeleting(AbstractInvoiceGenerator obj)
+{
+}
+
+</KistlBase:CodeTemplate>
+    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <KistlBase:IsAbstract>true</KistlBase:IsAbstract>
+    <KistlBase:IsFrozenObject>false</KistlBase:IsFrozenObject>
+    <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
+    <KistlBase:TableName>AbstractInvoiceGenerators</KistlBase:TableName>
+  </KistlBase:ObjectClass>
+  <KistlBase:ObjectClass ExportGuid="63de66bd-c92a-4028-8a3f-3232cdd1d272">
+    <KistlBase:ChangedOn>2012-05-09T11:04:18.6999007Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T11:04:18.6999007Z</KistlBase:CreatedOn>
+    <KistlBase:Description>Invoice Generoator for invoices with a yearly sequence number</KistlBase:Description>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>DefaultInvoiceGenerator</KistlBase:Name>
+    <GUI:ShowIconInLists>true</GUI:ShowIconInLists>
+    <GUI:ShowIdInLists>false</GUI:ShowIdInLists>
+    <GUI:ShowNameInLists>false</GUI:ShowNameInLists>
+    <KistlBase:BaseObjectClass>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:BaseObjectClass>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void ToString(DefaultInvoiceGenerator obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSave(DefaultInvoiceGenerator obj)
+{
+}
+
+[Invocation]
+public static void NotifyPostSave(DefaultInvoiceGenerator obj)
+{
+}
+
+[Invocation]
+public static void NotifyCreated(DefaultInvoiceGenerator obj)
+{
+}
+
+[Invocation]
+public static void NotifyDeleting(DefaultInvoiceGenerator obj)
+{
+}
+
+</KistlBase:CodeTemplate>
+    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <KistlBase:IsAbstract>false</KistlBase:IsAbstract>
+    <KistlBase:IsFrozenObject>false</KistlBase:IsFrozenObject>
+    <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
+    <KistlBase:TableName>DefaultInvoiceGenerators</KistlBase:TableName>
+  </KistlBase:ObjectClass>
   <KistlBase:ObjectClass ExportGuid="eeff554b-2cd3-47f7-946c-fdd6ca4cb95e">
     <KistlBase:ChangedOn>2011-12-28T17:20:52.6038012Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-12-28T17:16:20.7107456Z</KistlBase:CreatedOn>
@@ -3564,6 +3647,14 @@ public static void NotifyDeleting(VATType obj)
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
     <KistlBase:TableName>VATTypes</KistlBase:TableName>
   </KistlBase:ObjectClass>
+  <KistlBase:DataType_implements_Interface_RelationEntry ExportGuid="0536e43b-9814-4fcd-86a2-ae73de7576dc">
+    <KistlBase:A>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:A>
+    <KistlBase:B>a73f2d0a-786b-483d-b474-b9d9df42b8b3</KistlBase:B>
+  </KistlBase:DataType_implements_Interface_RelationEntry>
+  <KistlBase:DataType_implements_Interface_RelationEntry ExportGuid="8ec94276-8b52-4b18-a12e-b8c45573cabc">
+    <KistlBase:A>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:A>
+    <KistlBase:B>4ae6616a-eca3-47a5-b502-8e3c3913c2f0</KistlBase:B>
+  </KistlBase:DataType_implements_Interface_RelationEntry>
   <KistlBase:DataType_implements_Interface_RelationEntry ExportGuid="c66c6208-f8be-4b33-b8d7-f796bfcfe09c">
     <KistlBase:A>592df488-dfe5-4832-b5c8-41f9dcaf694d</KistlBase:A>
     <KistlBase:B>a73f2d0a-786b-483d-b474-b9d9df42b8b3</KistlBase:B>
@@ -3620,6 +3711,264 @@ public static void NotifyDeleting(VATType obj)
     <KistlBase:A>7caf90cf-f27b-4e7b-936e-3858b50e8e0a</KistlBase:A>
     <KistlBase:B>b6afa3e7-edf6-4318-9194-75bdbfc7ec7b</KistlBase:B>
   </KistlBase:DataType_implements_Interface_RelationEntry>
+  <KistlBase:ObjectReferenceProperty ExportGuid="03eed528-dfee-476f-84dc-078973a3f972">
+    <KistlBase:CategoryTags>Changed</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-09T09:51:10.6567121Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_ChangedBy(AbstractInvoiceGenerator obj, PropertyGetterEventArgs&lt;Kistl.App.Base.Identity&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_ChangedBy(AbstractInvoiceGenerator obj, PropertyPreSetterEventArgs&lt;Kistl.App.Base.Identity&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_ChangedBy(AbstractInvoiceGenerator obj, PropertyPostSetterEventArgs&lt;Kistl.App.Base.Identity&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_ChangedBy(AbstractInvoiceGenerator obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.ChangedBy == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:Description>Identity which changed this object</KistlBase:Description>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>ChangedBy</KistlBase:Name>
+    <KistlBase:ObjectClass>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>6</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
+    <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
+    <KistlBase:RelationEnd>f92ad562-990b-45a0-b854-c249842d4fce</KistlBase:RelationEnd>
+  </KistlBase:ObjectReferenceProperty>
+  <KistlBase:DateTimeProperty ExportGuid="eb32deef-d4c6-4b2b-b649-2be211ba050c">
+    <KistlBase:CategoryTags>Changed</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-09T09:51:10.6567121Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_ChangedOn(AbstractInvoiceGenerator obj, PropertyGetterEventArgs&lt;DateTime&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_ChangedOn(AbstractInvoiceGenerator obj, PropertyPreSetterEventArgs&lt;DateTime&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_ChangedOn(AbstractInvoiceGenerator obj, PropertyPostSetterEventArgs&lt;DateTime&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_ChangedOn(AbstractInvoiceGenerator obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.ChangedOn == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:DefaultValue>867ae7c0-6f92-4bcc-bffe-04e3617dfb99</KistlBase:DefaultValue>
+    <KistlBase:Description>Date and time where this object was changed</KistlBase:Description>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>ChangedOn</KistlBase:Name>
+    <KistlBase:ObjectClass>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>4</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>fc74b434-3801-4e4a-ab67-e65a9e014005</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:DateTimeProperty>
+  <KistlBase:ObjectReferenceProperty ExportGuid="eb353da2-04df-485a-8a8d-2887b38fb8ed">
+    <KistlBase:CategoryTags>Changed</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-09T09:51:10.6567121Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_CreatedBy(AbstractInvoiceGenerator obj, PropertyGetterEventArgs&lt;Kistl.App.Base.Identity&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_CreatedBy(AbstractInvoiceGenerator obj, PropertyPreSetterEventArgs&lt;Kistl.App.Base.Identity&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_CreatedBy(AbstractInvoiceGenerator obj, PropertyPostSetterEventArgs&lt;Kistl.App.Base.Identity&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_CreatedBy(AbstractInvoiceGenerator obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.CreatedBy == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:Description>Identity which created this object</KistlBase:Description>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>CreatedBy</KistlBase:Name>
+    <KistlBase:ObjectClass>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>5</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
+    <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
+    <KistlBase:RelationEnd>5edf2390-8530-40c5-9a9e-52925acd2915</KistlBase:RelationEnd>
+  </KistlBase:ObjectReferenceProperty>
+  <KistlBase:DateTimeProperty ExportGuid="500d7107-d85e-40ff-9851-162c0b7859a3">
+    <KistlBase:CategoryTags>Changed</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-09T09:51:10.6567121Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_CreatedOn(AbstractInvoiceGenerator obj, PropertyGetterEventArgs&lt;DateTime&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_CreatedOn(AbstractInvoiceGenerator obj, PropertyPreSetterEventArgs&lt;DateTime&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_CreatedOn(AbstractInvoiceGenerator obj, PropertyPostSetterEventArgs&lt;DateTime&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_CreatedOn(AbstractInvoiceGenerator obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.CreatedOn == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:DefaultValue>855d76ec-b1ba-4086-aa6f-fc32cf5b4413</KistlBase:DefaultValue>
+    <KistlBase:Description>Date and time where this object was created</KistlBase:Description>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>CreatedOn</KistlBase:Name>
+    <KistlBase:ObjectClass>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>3</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>fc74b434-3801-4e4a-ab67-e65a9e014005</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:DateTimeProperty>
+  <KistlBase:GuidProperty ExportGuid="68f9fa98-bde3-428e-89b0-8c99d24177f8">
+    <KistlBase:CategoryTags>Export</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-09T09:51:10.6567121Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_ExportGuid(AbstractInvoiceGenerator obj, PropertyGetterEventArgs&lt;Guid&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_ExportGuid(AbstractInvoiceGenerator obj, PropertyPreSetterEventArgs&lt;Guid&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_ExportGuid(AbstractInvoiceGenerator obj, PropertyPostSetterEventArgs&lt;Guid&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_ExportGuid(AbstractInvoiceGenerator obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.ExportGuid == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:DefaultValue>37a171e2-6503-4fd2-9d82-0ae776c4ef34</KistlBase:DefaultValue>
+    <KistlBase:Description>Export Guid</KistlBase:Description>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>ExportGuid</KistlBase:Name>
+    <KistlBase:ObjectClass>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>2</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>2b6fb70f-a382-4057-a139-cc33333d619d</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:GuidProperty>
+  <KistlBase:StringProperty ExportGuid="a0e87b80-7474-4ec8-88d8-8f1d5e2e38a7">
+    <KistlBase:CategoryTags>Summary, Main</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-09T09:51:22.3193792Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_Name(AbstractInvoiceGenerator obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_Name(AbstractInvoiceGenerator obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_Name(AbstractInvoiceGenerator obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_Name(AbstractInvoiceGenerator obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.Name == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-09T09:46:52.5029466Z</KistlBase:CreatedOn>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>Name</KistlBase:Name>
+    <KistlBase:ObjectClass>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>0</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:StringProperty>
+  <KistlBase:ObjectReferenceProperty ExportGuid="934e318b-4339-4f7c-8d57-908ff1e8e4d0">
+    <KistlBase:CategoryTags>Main</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-09T09:51:10.6567121Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_NumberSequence(AbstractInvoiceGenerator obj, PropertyGetterEventArgs&lt;Kistl.App.Base.Sequence&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_NumberSequence(AbstractInvoiceGenerator obj, PropertyPreSetterEventArgs&lt;Kistl.App.Base.Sequence&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_NumberSequence(AbstractInvoiceGenerator obj, PropertyPostSetterEventArgs&lt;Kistl.App.Base.Sequence&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_NumberSequence(AbstractInvoiceGenerator obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.NumberSequence == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-09T09:51:04.639368Z</KistlBase:CreatedOn>
+    <KistlBase:Label>Number sequence</KistlBase:Label>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>NumberSequence</KistlBase:Name>
+    <KistlBase:ObjectClass>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>1</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
+    <KistlBase:EagerLoading>true</KistlBase:EagerLoading>
+    <KistlBase:RelationEnd>64876b4c-51b7-42f8-b217-c121a286707a</KistlBase:RelationEnd>
+  </KistlBase:ObjectReferenceProperty>
   <KistlBase:ObjectReferenceProperty ExportGuid="930396f9-f45a-4ee8-9afc-15a0631170c0">
     <KistlBase:CategoryTags>SalesInvoices</KistlBase:CategoryTags>
     <KistlBase:ChangedOn>2011-08-05T16:31:13.076284Z</KistlBase:ChangedOn>
@@ -3654,6 +4003,116 @@ public static void isValid_SalesInvoices(Customer obj, PropertyIsValidEventArgs 
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
     <KistlBase:RelationEnd>dd3dce25-cdd8-4022-80f3-f372b8ba7427</KistlBase:RelationEnd>
+  </KistlBase:ObjectReferenceProperty>
+  <KistlBase:StringProperty ExportGuid="40deef8e-9879-4420-8364-ba5f4c271cad">
+    <KistlBase:CategoryTags>Main</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-09T11:05:07.920716Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_InvoiceIDFormatString(DefaultInvoiceGenerator obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_InvoiceIDFormatString(DefaultInvoiceGenerator obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_InvoiceIDFormatString(DefaultInvoiceGenerator obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_InvoiceIDFormatString(DefaultInvoiceGenerator obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.InvoiceIDFormatString == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-09T11:05:07.920716Z</KistlBase:CreatedOn>
+    <KistlBase:Label>InvoiceID format string</KistlBase:Label>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>InvoiceIDFormatString</KistlBase:Name>
+    <KistlBase:ObjectClass>63de66bd-c92a-4028-8a3f-3232cdd1d272</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>0</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:StringProperty>
+  <KistlBase:DateTimeProperty ExportGuid="9ddc49b8-6552-4ff3-a415-06b637ef79cf">
+    <KistlBase:CategoryTags>Main</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-09T11:25:30.6110234Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_LastCreationDate(DefaultInvoiceGenerator obj, PropertyGetterEventArgs&lt;DateTime?&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_LastCreationDate(DefaultInvoiceGenerator obj, PropertyPreSetterEventArgs&lt;DateTime?&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_LastCreationDate(DefaultInvoiceGenerator obj, PropertyPostSetterEventArgs&lt;DateTime?&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_LastCreationDate(DefaultInvoiceGenerator obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.LastCreationDate == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-09T11:25:30.6110234Z</KistlBase:CreatedOn>
+    <KistlBase:Label>Last creation date</KistlBase:Label>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>LastCreationDate</KistlBase:Name>
+    <KistlBase:ObjectClass>63de66bd-c92a-4028-8a3f-3232cdd1d272</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>1</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>fc74b434-3801-4e4a-ab67-e65a9e014005</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:DateTimeProperty>
+  <KistlBase:ObjectReferenceProperty ExportGuid="1a8a2cb7-d4b4-459a-9d00-c3bb53ab35df">
+    <KistlBase:CategoryTags>SalesInvoices</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-09T09:45:15.3813915Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_InvoiceGenerator(InternalOrganization obj, PropertyGetterEventArgs&lt;ZBox.Basic.Invoicing.AbstractInvoiceGenerator&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_InvoiceGenerator(InternalOrganization obj, PropertyPreSetterEventArgs&lt;ZBox.Basic.Invoicing.AbstractInvoiceGenerator&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_InvoiceGenerator(InternalOrganization obj, PropertyPostSetterEventArgs&lt;ZBox.Basic.Invoicing.AbstractInvoiceGenerator&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_InvoiceGenerator(InternalOrganization obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.InvoiceGenerator == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-09T09:45:15.3813915Z</KistlBase:CreatedOn>
+    <KistlBase:Label>Invoice generator</KistlBase:Label>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>InvoiceGenerator</KistlBase:Name>
+    <KistlBase:ObjectClass>54153a59-049b-45bf-944c-d45c4f8d26da</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>0</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
+    <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
+    <KistlBase:RelationEnd>4021ddd5-9090-4f65-a33a-a388fe56e533</KistlBase:RelationEnd>
   </KistlBase:ObjectReferenceProperty>
   <KistlBase:ObjectReferenceProperty ExportGuid="c74f923b-921a-42ea-add4-0b0b10124889">
     <KistlBase:CategoryTags>OtherExpenses</KistlBase:CategoryTags>
@@ -3800,7 +4259,7 @@ public static void isValid_SalesInvoices(InternalOrganization obj, PropertyIsVal
   </KistlBase:ObjectReferenceProperty>
   <KistlBase:StringProperty ExportGuid="28849078-fe80-4f92-bd91-f3ced5cd6384">
     <KistlBase:CategoryTags>Summary, Main</KistlBase:CategoryTags>
-    <KistlBase:ChangedOn>2011-08-18T16:13:23.99114Z</KistlBase:ChangedOn>
+    <KistlBase:ChangedOn>2012-05-09T11:52:21.5212101Z</KistlBase:ChangedOn>
     <KistlBase:CodeTemplate>[Invocation]
 public static void get_InvoiceID(Invoice obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -6937,6 +7396,46 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <KistlBase:Precision>10</KistlBase:Precision>
     <KistlBase:Scale>2</KistlBase:Scale>
   </KistlBase:DecimalProperty>
+  <KistlBase:Relation ExportGuid="3e3afa4c-eef6-4bea-ab09-2641b361965b">
+    <KistlBase:A>a9787c13-7b41-4ae3-ad68-548b66da7366</KistlBase:A>
+    <KistlBase:B>4021ddd5-9090-4f65-a33a-a388fe56e533</KistlBase:B>
+    <KistlBase:ChangedOn>2012-05-09T09:45:15.3813915Z</KistlBase:ChangedOn>
+    <KistlBase:Containment>0</KistlBase:Containment>
+    <KistlBase:CreatedOn>2012-05-09T09:45:15.3813915Z</KistlBase:CreatedOn>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Storage>2</KistlBase:Storage>
+    <KistlBase:Verb>for</KistlBase:Verb>
+  </KistlBase:Relation>
+  <KistlBase:Relation ExportGuid="89a077a8-a7bf-4a2d-ad69-315391d4402c">
+    <KistlBase:A>64876b4c-51b7-42f8-b217-c121a286707a</KistlBase:A>
+    <KistlBase:B>1910ccf9-181c-45d2-89c6-e9f38cf34962</KistlBase:B>
+    <KistlBase:ChangedOn>2012-05-09T09:51:04.639368Z</KistlBase:ChangedOn>
+    <KistlBase:Containment>0</KistlBase:Containment>
+    <KistlBase:CreatedOn>2012-05-09T09:51:04.639368Z</KistlBase:CreatedOn>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Storage>1</KistlBase:Storage>
+    <KistlBase:Verb>has</KistlBase:Verb>
+  </KistlBase:Relation>
+  <KistlBase:Relation ExportGuid="8bec8129-5ff0-4301-ace8-001cf7bcc186">
+    <KistlBase:A>5edf2390-8530-40c5-9a9e-52925acd2915</KistlBase:A>
+    <KistlBase:B>ac83316d-01b3-42a6-8311-4154d6abfe74</KistlBase:B>
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:Containment>0</KistlBase:Containment>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Storage>1</KistlBase:Storage>
+    <KistlBase:Verb>was</KistlBase:Verb>
+  </KistlBase:Relation>
+  <KistlBase:Relation ExportGuid="a382abdd-a967-41dc-9cd7-b9a9fad378ae">
+    <KistlBase:A>f92ad562-990b-45a0-b854-c249842d4fce</KistlBase:A>
+    <KistlBase:B>2e097245-be3c-4267-98b3-6314c8aabf18</KistlBase:B>
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:Containment>0</KistlBase:Containment>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Storage>1</KistlBase:Storage>
+    <KistlBase:Verb>was</KistlBase:Verb>
+  </KistlBase:Relation>
   <KistlBase:Relation ExportGuid="c18177c6-4759-41df-85f0-0bf241db3c05">
     <KistlBase:A>a9e3823c-f67a-4a98-adff-e747e5a87d4b</KistlBase:A>
     <KistlBase:B>feca58dd-92da-4c95-9aca-38f2e9d26f85</KistlBase:B>
@@ -7257,6 +7756,45 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <KistlBase:Storage>1</KistlBase:Storage>
     <KistlBase:Verb>was</KistlBase:Verb>
   </KistlBase:Relation>
+  <KistlBase:RelationEnd ExportGuid="5edf2390-8530-40c5-9a9e-52925acd2915">
+    <KistlBase:AParent>8bec8129-5ff0-4301-ace8-001cf7bcc186</KistlBase:AParent>
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:Multiplicity>3</KistlBase:Multiplicity>
+    <KistlBase:Navigator>eb353da2-04df-485a-8a8d-2887b38fb8ed</KistlBase:Navigator>
+    <KistlBase:RoleName>AbstractInvoiceGenerator</KistlBase:RoleName>
+    <KistlBase:Type>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:Type>
+  </KistlBase:RelationEnd>
+  <KistlBase:RelationEnd ExportGuid="f92ad562-990b-45a0-b854-c249842d4fce">
+    <KistlBase:AParent>a382abdd-a967-41dc-9cd7-b9a9fad378ae</KistlBase:AParent>
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:Multiplicity>3</KistlBase:Multiplicity>
+    <KistlBase:Navigator>03eed528-dfee-476f-84dc-078973a3f972</KistlBase:Navigator>
+    <KistlBase:RoleName>AbstractInvoiceGenerator</KistlBase:RoleName>
+    <KistlBase:Type>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:Type>
+  </KistlBase:RelationEnd>
+  <KistlBase:RelationEnd ExportGuid="64876b4c-51b7-42f8-b217-c121a286707a">
+    <KistlBase:AParent>89a077a8-a7bf-4a2d-ad69-315391d4402c</KistlBase:AParent>
+    <KistlBase:ChangedOn>2012-05-09T09:51:04.639368Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T09:51:04.639368Z</KistlBase:CreatedOn>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:Multiplicity>3</KistlBase:Multiplicity>
+    <KistlBase:Navigator>934e318b-4339-4f7c-8d57-908ff1e8e4d0</KistlBase:Navigator>
+    <KistlBase:RoleName>InvoiceGenerator</KistlBase:RoleName>
+    <KistlBase:Type>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:Type>
+  </KistlBase:RelationEnd>
+  <KistlBase:RelationEnd ExportGuid="a9787c13-7b41-4ae3-ad68-548b66da7366">
+    <KistlBase:AParent>3e3afa4c-eef6-4bea-ab09-2641b361965b</KistlBase:AParent>
+    <KistlBase:ChangedOn>2012-05-09T09:45:15.3813915Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T09:45:15.3813915Z</KistlBase:CreatedOn>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:Multiplicity>1</KistlBase:Multiplicity>
+    <KistlBase:RoleName>InvoiceGenerator</KistlBase:RoleName>
+    <KistlBase:Type>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:Type>
+  </KistlBase:RelationEnd>
   <KistlBase:RelationEnd ExportGuid="dd3dce25-cdd8-4022-80f3-f372b8ba7427">
     <KistlBase:BParent>2daa6d43-aaf8-46dd-9c4b-45ea5749c0dc</KistlBase:BParent>
     <KistlBase:ChangedOn>2011-08-17T21:51:33.160917Z</KistlBase:ChangedOn>
@@ -7284,6 +7822,15 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <KistlBase:Multiplicity>1</KistlBase:Multiplicity>
     <KistlBase:RoleName>Document</KistlBase:RoleName>
     <KistlBase:Type>3f496de2-bef4-4059-8c3e-c25db38bd3c2</KistlBase:Type>
+  </KistlBase:RelationEnd>
+  <KistlBase:RelationEnd ExportGuid="2e097245-be3c-4267-98b3-6314c8aabf18">
+    <KistlBase:BParent>a382abdd-a967-41dc-9cd7-b9a9fad378ae</KistlBase:BParent>
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:Multiplicity>1</KistlBase:Multiplicity>
+    <KistlBase:RoleName>ChangedBy</KistlBase:RoleName>
+    <KistlBase:Type>31d8890a-67fc-4a78-9d35-9ff0b9e09b4c</KistlBase:Type>
   </KistlBase:RelationEnd>
   <KistlBase:RelationEnd ExportGuid="37a1f1f6-0a5b-4bd4-8f54-8760f973c38f">
     <KistlBase:BParent>33817141-b9de-4f35-b8c8-14081cdb8e8d</KistlBase:BParent>
@@ -7357,6 +7904,15 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <KistlBase:RoleName>CreatedBy</KistlBase:RoleName>
     <KistlBase:Type>31d8890a-67fc-4a78-9d35-9ff0b9e09b4c</KistlBase:Type>
   </KistlBase:RelationEnd>
+  <KistlBase:RelationEnd ExportGuid="ac83316d-01b3-42a6-8311-4154d6abfe74">
+    <KistlBase:BParent>8bec8129-5ff0-4301-ace8-001cf7bcc186</KistlBase:BParent>
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:Multiplicity>1</KistlBase:Multiplicity>
+    <KistlBase:RoleName>CreatedBy</KistlBase:RoleName>
+    <KistlBase:Type>31d8890a-67fc-4a78-9d35-9ff0b9e09b4c</KistlBase:Type>
+  </KistlBase:RelationEnd>
   <KistlBase:RelationEnd ExportGuid="bfabf42a-ca82-4552-9240-1d628449e17a">
     <KistlBase:BParent>ad76666d-5840-4de7-a3e9-2722d7427999</KistlBase:BParent>
     <KistlBase:ChangedOn>2011-08-05T16:30:55.271468Z</KistlBase:ChangedOn>
@@ -7374,6 +7930,16 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <KistlBase:Multiplicity>1</KistlBase:Multiplicity>
     <KistlBase:RoleName>CreatedBy</KistlBase:RoleName>
     <KistlBase:Type>31d8890a-67fc-4a78-9d35-9ff0b9e09b4c</KistlBase:Type>
+  </KistlBase:RelationEnd>
+  <KistlBase:RelationEnd ExportGuid="4021ddd5-9090-4f65-a33a-a388fe56e533">
+    <KistlBase:BParent>3e3afa4c-eef6-4bea-ab09-2641b361965b</KistlBase:BParent>
+    <KistlBase:ChangedOn>2012-05-09T09:45:15.3813915Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T09:45:15.3813915Z</KistlBase:CreatedOn>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:Multiplicity>3</KistlBase:Multiplicity>
+    <KistlBase:Navigator>1a8a2cb7-d4b4-459a-9d00-c3bb53ab35df</KistlBase:Navigator>
+    <KistlBase:RoleName>InternalOrg</KistlBase:RoleName>
+    <KistlBase:Type>54153a59-049b-45bf-944c-d45c4f8d26da</KistlBase:Type>
   </KistlBase:RelationEnd>
   <KistlBase:RelationEnd ExportGuid="3c885f97-944b-41dc-9eed-2853eea574fb">
     <KistlBase:BParent>6d531e41-6054-4ea8-9fe1-f519908665c3</KistlBase:BParent>
@@ -7791,6 +8357,15 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <KistlBase:RoleName>Items</KistlBase:RoleName>
     <KistlBase:Type>6dc867e4-8481-4916-b368-c6b1290373bf</KistlBase:Type>
   </KistlBase:RelationEnd>
+  <KistlBase:RelationEnd ExportGuid="1910ccf9-181c-45d2-89c6-e9f38cf34962">
+    <KistlBase:BParent>89a077a8-a7bf-4a2d-ad69-315391d4402c</KistlBase:BParent>
+    <KistlBase:ChangedOn>2012-05-09T09:51:04.639368Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T09:51:04.639368Z</KistlBase:CreatedOn>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:Multiplicity>2</KistlBase:Multiplicity>
+    <KistlBase:RoleName>NumberSequence</KistlBase:RoleName>
+    <KistlBase:Type>8745716a-a9e7-4b2f-b7e8-948b992aaafb</KistlBase:Type>
+  </KistlBase:RelationEnd>
   <KistlBase:RelationEnd ExportGuid="946e9012-478b-4db0-a68f-165e82e326fa">
     <KistlBase:BParent>86ea13d1-eae4-454f-92f1-48a81d686e20</KistlBase:BParent>
     <KistlBase:ChangedOn>2011-10-21T15:57:20.598779Z</KistlBase:ChangedOn>
@@ -7877,6 +8452,32 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <KistlBase:RoleName>VATType</KistlBase:RoleName>
     <KistlBase:Type>7caf90cf-f27b-4e7b-936e-3858b50e8e0a</KistlBase:Type>
   </KistlBase:RelationEnd>
+  <KistlBase:Method ExportGuid="a64b480f-4380-41b3-8628-59cc0e614eb5">
+    <KistlBase:ChangedOn>2012-05-09T11:02:50.4178512Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void CreateDocument(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;at.dasz.DocumentManagement.StaticFile&gt; e, ZBox.Basic.Invoicing.SalesInvoice invoice)
+{
+}
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-09T11:02:50.4178512Z</KistlBase:CreatedOn>
+    <GUI:IsDisplayable>false</GUI:IsDisplayable>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>CreateDocument</KistlBase:Name>
+    <KistlBase:ObjectClass>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:ObjectClass>
+  </KistlBase:Method>
+  <KistlBase:Method ExportGuid="a3d8960a-77d5-4c1d-9081-c19f097fa0d8">
+    <KistlBase:ChangedOn>2012-05-09T11:01:18.3845872Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void GetNextInvoiceID(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-09T11:01:18.3845872Z</KistlBase:CreatedOn>
+    <GUI:IsDisplayable>false</GUI:IsDisplayable>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>GetNextInvoiceID</KistlBase:Name>
+    <KistlBase:ObjectClass>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:ObjectClass>
+  </KistlBase:Method>
   <KistlBase:Method ExportGuid="ea444a9d-df91-4741-b8d5-fda85576eff2">
     <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
     <KistlBase:ChangedOn>2011-11-04T13:59:55.604836Z</KistlBase:ChangedOn>
@@ -8449,6 +9050,39 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <KistlBase:Name>ToString</KistlBase:Name>
     <KistlBase:ObjectClass>7caf90cf-f27b-4e7b-936e-3858b50e8e0a</KistlBase:ObjectClass>
   </KistlBase:Method>
+  <KistlBase:ObjectReferenceParameter ExportGuid="2643d5b2-2268-425b-a5b7-49696f51d4e5">
+    <KistlBase:ChangedOn>2012-05-09T11:02:50.4178512Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T11:02:50.4178512Z</KistlBase:CreatedOn>
+    <KistlBase:IsList>false</KistlBase:IsList>
+    <KistlBase:IsNullable>false</KistlBase:IsNullable>
+    <KistlBase:IsReturnParameter>false</KistlBase:IsReturnParameter>
+    <KistlBase:Label>Invoice</KistlBase:Label>
+    <KistlBase:Method>a64b480f-4380-41b3-8628-59cc0e614eb5</KistlBase:Method>
+    <KistlBase:Parameter_pos>0</KistlBase:Parameter_pos>
+    <KistlBase:Name>invoice</KistlBase:Name>
+    <KistlBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</KistlBase:ObjectClass>
+  </KistlBase:ObjectReferenceParameter>
+  <KistlBase:ObjectReferenceParameter ExportGuid="9ebd07ea-6a06-4435-ba2a-594928bdc3a9">
+    <KistlBase:ChangedOn>2012-05-09T11:02:50.4178512Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T11:02:50.4178512Z</KistlBase:CreatedOn>
+    <KistlBase:IsList>false</KistlBase:IsList>
+    <KistlBase:IsNullable>false</KistlBase:IsNullable>
+    <KistlBase:IsReturnParameter>true</KistlBase:IsReturnParameter>
+    <KistlBase:Method>a64b480f-4380-41b3-8628-59cc0e614eb5</KistlBase:Method>
+    <KistlBase:Parameter_pos>1</KistlBase:Parameter_pos>
+    <KistlBase:Name>retVal</KistlBase:Name>
+    <KistlBase:ObjectClass>5aaabfe9-081d-445d-a543-53e0253feeb8</KistlBase:ObjectClass>
+  </KistlBase:ObjectReferenceParameter>
+  <KistlBase:StringParameter ExportGuid="a108939e-f76d-4354-9906-6499d0565364">
+    <KistlBase:ChangedOn>2012-05-09T11:01:18.3845872Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T11:01:18.3845872Z</KistlBase:CreatedOn>
+    <KistlBase:IsList>false</KistlBase:IsList>
+    <KistlBase:IsNullable>false</KistlBase:IsNullable>
+    <KistlBase:IsReturnParameter>true</KistlBase:IsReturnParameter>
+    <KistlBase:Method>a3d8960a-77d5-4c1d-9081-c19f097fa0d8</KistlBase:Method>
+    <KistlBase:Parameter_pos>0</KistlBase:Parameter_pos>
+    <KistlBase:Name>retVal</KistlBase:Name>
+  </KistlBase:StringParameter>
   <KistlBase:ObjectReferenceParameter ExportGuid="624b7e95-b084-49de-9d99-c27bc49f68f3">
     <KistlBase:ChangedOn>2011-11-04T13:57:49.511624Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-04T13:57:49.511624Z</KistlBase:CreatedOn>
@@ -8755,11 +9389,80 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <KistlBase:Parameter_pos>0</KistlBase:Parameter_pos>
     <KistlBase:Name>retVal</KistlBase:Name>
   </KistlBase:StringParameter>
-  <KistlBase:NotNullableConstraint ExportGuid="7e424a25-fc7f-4e8c-89ee-c1d362963ed1">
-    <KistlBase:ChangedOn>2011-08-05T16:31:04.770012Z</KistlBase:ChangedOn>
-    <KistlBase:ConstrainedProperty>28849078-fe80-4f92-bd91-f3ced5cd6384</KistlBase:ConstrainedProperty>
-    <KistlBase:CreatedOn>2011-07-26T23:40:56Z</KistlBase:CreatedOn>
+  <KistlBase:ClientReadOnlyConstraint ExportGuid="bca145bf-1bfe-4e26-bf23-01b22d936b86">
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>03eed528-dfee-476f-84dc-078973a3f972</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+  </KistlBase:ClientReadOnlyConstraint>
+  <KistlBase:ClientReadOnlyConstraint ExportGuid="43a654cc-71b5-41cc-b807-e7a21b635179">
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>eb32deef-d4c6-4b2b-b649-2be211ba050c</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+  </KistlBase:ClientReadOnlyConstraint>
+  <KistlBase:NotNullableConstraint ExportGuid="b237dc95-d7f9-40b9-a442-e7e8742743b2">
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>eb32deef-d4c6-4b2b-b649-2be211ba050c</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
   </KistlBase:NotNullableConstraint>
+  <KistlBase:ClientReadOnlyConstraint ExportGuid="f65b70fd-d065-421c-b54e-c99a2ff9c378">
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>eb353da2-04df-485a-8a8d-2887b38fb8ed</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+  </KistlBase:ClientReadOnlyConstraint>
+  <KistlBase:ClientReadOnlyConstraint ExportGuid="1f545285-7b3d-4d77-ba1e-88aa33bfc105">
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>500d7107-d85e-40ff-9851-162c0b7859a3</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+  </KistlBase:ClientReadOnlyConstraint>
+  <KistlBase:NotNullableConstraint ExportGuid="831a0add-6943-4eeb-9737-a544b24027ab">
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>500d7107-d85e-40ff-9851-162c0b7859a3</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+  </KistlBase:NotNullableConstraint>
+  <KistlBase:InitOnlyConstraint ExportGuid="7a0cdfad-c589-49b1-bbb8-3f10f596e336">
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>68f9fa98-bde3-428e-89b0-8c99d24177f8</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+  </KistlBase:InitOnlyConstraint>
+  <KistlBase:NotNullableConstraint ExportGuid="8e5522ad-a1ea-46fe-9090-97a609304cda">
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>68f9fa98-bde3-428e-89b0-8c99d24177f8</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+  </KistlBase:NotNullableConstraint>
+  <KistlBase:NotNullableConstraint ExportGuid="51702b21-2a2d-4d1c-92c7-cf6ccf7b18a9">
+    <KistlBase:ChangedOn>2012-05-09T09:46:52.5029466Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>a0e87b80-7474-4ec8-88d8-8f1d5e2e38a7</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T09:46:52.5029466Z</KistlBase:CreatedOn>
+  </KistlBase:NotNullableConstraint>
+  <KistlBase:StringRangeConstraint ExportGuid="e19daabd-4f20-435d-89b8-5363718c7cf8">
+    <KistlBase:ChangedOn>2012-05-09T09:46:52.5029466Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>a0e87b80-7474-4ec8-88d8-8f1d5e2e38a7</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T09:46:52.5029466Z</KistlBase:CreatedOn>
+    <KistlBase:MaxLength>200</KistlBase:MaxLength>
+    <KistlBase:MinLength>0</KistlBase:MinLength>
+  </KistlBase:StringRangeConstraint>
+  <KistlBase:NotNullableConstraint ExportGuid="ed72e31f-780c-4e8b-822b-d8ff72bc6a30">
+    <KistlBase:ChangedOn>2012-05-09T09:51:04.639368Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>934e318b-4339-4f7c-8d57-908ff1e8e4d0</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T09:51:04.639368Z</KistlBase:CreatedOn>
+  </KistlBase:NotNullableConstraint>
+  <KistlBase:NotNullableConstraint ExportGuid="625de428-5191-4755-a572-92624491af2f">
+    <KistlBase:ChangedOn>2012-05-09T11:05:07.920716Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>40deef8e-9879-4420-8364-ba5f4c271cad</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T11:05:07.920716Z</KistlBase:CreatedOn>
+  </KistlBase:NotNullableConstraint>
+  <KistlBase:StringRangeConstraint ExportGuid="83901c3a-d4b6-454c-a728-38be1e54b209">
+    <KistlBase:ChangedOn>2012-05-09T11:05:07.920716Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>40deef8e-9879-4420-8364-ba5f4c271cad</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T11:05:07.920716Z</KistlBase:CreatedOn>
+    <KistlBase:MaxLength>200</KistlBase:MaxLength>
+    <KistlBase:MinLength>0</KistlBase:MinLength>
+  </KistlBase:StringRangeConstraint>
+  <KistlBase:ViewReadOnlyConstraint ExportGuid="8474c537-45ad-4b0c-aa4a-fbce611eb94b">
+    <KistlBase:ChangedOn>2012-05-09T11:25:30.6110234Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>9ddc49b8-6552-4ff3-a415-06b637ef79cf</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-09T11:25:30.6110234Z</KistlBase:CreatedOn>
+  </KistlBase:ViewReadOnlyConstraint>
   <KistlBase:StringRangeConstraint ExportGuid="441e78aa-ea37-4865-85a5-5d66032d94f1">
     <KistlBase:ChangedOn>2011-08-05T16:31:04.774012Z</KistlBase:ChangedOn>
     <KistlBase:ConstrainedProperty>28849078-fe80-4f92-bd91-f3ced5cd6384</KistlBase:ConstrainedProperty>
@@ -9230,6 +9933,11 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <KistlBase:CreatedOn>2011-07-27T00:23:08Z</KistlBase:CreatedOn>
     <KistlBase:Reason>This object must belong to a Module</KistlBase:Reason>
   </KistlBase:NotNullableConstraint>
+  <KistlBase:IndexConstraint ExportGuid="732500d9-1335-434b-8c69-d87730c2b984">
+    <KistlBase:Constrained>1bec6383-87ec-44a8-9646-4bed490f6746</KistlBase:Constrained>
+    <KistlBase:Reason>ExportGuid must be unique</KistlBase:Reason>
+    <KistlBase:IsUnique>true</KistlBase:IsUnique>
+  </KistlBase:IndexConstraint>
   <KistlBase:IndexConstraint ExportGuid="b45a3bbf-de4b-4e2d-8b54-d40694aef79e">
     <KistlBase:Constrained>592df488-dfe5-4832-b5c8-41f9dcaf694d</KistlBase:Constrained>
     <KistlBase:Reason>ExportGuid must be unique</KistlBase:Reason>
@@ -9280,10 +9988,29 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <KistlBase:A>6c81df83-af66-4960-9191-bb31eb5ce2ba</KistlBase:A>
     <KistlBase:B>0994b4dd-09a6-4412-ad14-5cda91ddf96b</KistlBase:B>
   </KistlBase:IndexConstraint_ensures_unique_on_Property_RelationEntry>
+  <KistlBase:IndexConstraint_ensures_unique_on_Property_RelationEntry ExportGuid="e095139d-eac2-47ed-9f4c-a8e14fb77865">
+    <KistlBase:A>732500d9-1335-434b-8c69-d87730c2b984</KistlBase:A>
+    <KistlBase:B>68f9fa98-bde3-428e-89b0-8c99d24177f8</KistlBase:B>
+  </KistlBase:IndexConstraint_ensures_unique_on_Property_RelationEntry>
   <KistlBase:IndexConstraint_ensures_unique_on_Property_RelationEntry ExportGuid="cb8ad1a6-b917-4e2c-9a82-cd4e99d232d1">
     <KistlBase:A>b45a3bbf-de4b-4e2d-8b54-d40694aef79e</KistlBase:A>
     <KistlBase:B>66bbaa53-ec46-4d40-bfaf-a558182a6329</KistlBase:B>
   </KistlBase:IndexConstraint_ensures_unique_on_Property_RelationEntry>
+  <KistlBase:CurrentDateTimeDefaultValue ExportGuid="867ae7c0-6f92-4bcc-bffe-04e3617dfb99">
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:Property>eb32deef-d4c6-4b2b-b649-2be211ba050c</KistlBase:Property>
+  </KistlBase:CurrentDateTimeDefaultValue>
+  <KistlBase:CurrentDateTimeDefaultValue ExportGuid="855d76ec-b1ba-4086-aa6f-fc32cf5b4413">
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:Property>500d7107-d85e-40ff-9851-162c0b7859a3</KistlBase:Property>
+  </KistlBase:CurrentDateTimeDefaultValue>
+  <KistlBase:NewGuidDefaultValue ExportGuid="37a171e2-6503-4fd2-9d82-0ae776c4ef34">
+    <KistlBase:ChangedOn>2012-05-09T09:42:13.8770101Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T09:42:13.8770101Z</KistlBase:CreatedOn>
+    <KistlBase:Property>68f9fa98-bde3-428e-89b0-8c99d24177f8</KistlBase:Property>
+  </KistlBase:NewGuidDefaultValue>
   <KistlBase:CurrentDateTimeDefaultValue ExportGuid="37dcf93b-46a4-417a-9c0b-0d4289e70e41">
     <KistlBase:ChangedOn>2011-08-05T16:30:55.266468Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-07-27T00:11:55Z</KistlBase:CreatedOn>
@@ -9470,6 +10197,17 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Toolkit>0</GUI:Toolkit>
   </GUI:ViewDescriptor>
+  <GUI:NavigationSearchScreen ExportGuid="7e52554c-961e-4cfb-8609-90f7b0543ef2">
+    <GUI:ChangedOn>2012-05-09T12:14:03.4193063Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2012-05-09T12:13:47.9794232Z</GUI:CreatedOn>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:Parent>916544de-0c04-4d6f-9ae1-d481e40361a0</GUI:Parent>
+    <GUI:Children_pos>407</GUI:Children_pos>
+    <GUI:Title>Invoice Generators</GUI:Title>
+    <GUI:AllowAddNew>true</GUI:AllowAddNew>
+    <GUI:Type>1bec6383-87ec-44a8-9646-4bed490f6746</GUI:Type>
+    <GUI:ViewMethod>2</GUI:ViewMethod>
+  </GUI:NavigationSearchScreen>
   <GUI:NavigationScreen ExportGuid="916544de-0c04-4d6f-9ae1-d481e40361a0">
     <GUI:ChangedOn>2011-10-20T21:56:30.640622Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-10-20T21:56:30.640622Z</GUI:CreatedOn>
@@ -9490,11 +10228,11 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <GUI:ViewMethod>2</GUI:ViewMethod>
   </GUI:NavigationSearchScreen>
   <GUI:NavigationSearchScreen ExportGuid="23822ad7-9708-4df6-b07f-489e682b7252">
-    <GUI:ChangedOn>2011-12-29T12:59:07.4864196Z</GUI:ChangedOn>
+    <GUI:ChangedOn>2012-05-09T12:13:47.9794232Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-12-29T12:59:07.4864196Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Parent>916544de-0c04-4d6f-9ae1-d481e40361a0</GUI:Parent>
-    <GUI:Children_pos>403</GUI:Children_pos>
+    <GUI:Children_pos>404</GUI:Children_pos>
     <GUI:Title>Other income receipts</GUI:Title>
     <GUI:AllowAddNew>true</GUI:AllowAddNew>
     <GUI:Type>bf363800-ddd6-40a2-809e-89e0db85e1b2</GUI:Type>
@@ -9593,11 +10331,11 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <GUI:Title>Sales</GUI:Title>
   </GUI:NavigationScreen>
   <GUI:NavigationSearchScreen ExportGuid="8c839de7-f94f-48e0-b67b-575e698eebd4">
-    <GUI:ChangedOn>2011-11-22T20:04:28.610757Z</GUI:ChangedOn>
+    <GUI:ChangedOn>2012-05-09T12:14:03.4193063Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-11-22T19:32:15.904609Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Parent>916544de-0c04-4d6f-9ae1-d481e40361a0</GUI:Parent>
-    <GUI:Children_pos>401</GUI:Children_pos>
+    <GUI:Children_pos>406</GUI:Children_pos>
     <GUI:Title>VAT Types</GUI:Title>
     <GUI:AllowAddNew>true</GUI:AllowAddNew>
     <GUI:Type>7caf90cf-f27b-4e7b-936e-3858b50e8e0a</GUI:Type>
@@ -9662,6 +10400,14 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <GUI:ViewModelDescriptor>47ea2958-1036-4fe2-afb5-84568651d817</GUI:ViewModelDescriptor>
     <GUI:Property>a22eff4a-b7c1-4fde-a714-d18d2a3cb2aa</GUI:Property>
   </GUI:RangeFilterConfiguration>
+  <KistlBase:Sequence ExportGuid="50bc0db0-2603-48f2-a84d-02bccef729ad">
+    <KistlBase:ChangedOn>2012-05-09T12:38:25.9172277Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-09T12:16:27.1685283Z</KistlBase:CreatedOn>
+    <KistlBase:Description>Default sales invoice Sequence</KistlBase:Description>
+    <KistlBase:IsContinuous>false</KistlBase:IsContinuous>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>DefaultSalesInvoiceSequence</KistlBase:Name>
+  </KistlBase:Sequence>
   <KistlBase:Module ExportGuid="b2008daa-9f3a-4844-85c3-9049af70c0ff">
     <KistlBase:ChangedOn>2011-08-05T16:30:47.662236Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-02-16T14:55:43Z</KistlBase:CreatedOn>

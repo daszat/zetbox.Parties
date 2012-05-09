@@ -79,6 +79,7 @@
     <Compile Include="Accounting\TransactionActions.cs" />
     <Compile Include="CustomClientActionsModule.cs" />
     <Compile Include="DocumentManagement\ImportedFileActions.cs" />
+    <Compile Include="Invoicing\DefaultInvoiceGeneratorActions.cs" />
     <Compile Include="Invoicing\ReceiptActions.cs" />
     <Compile Include="Invoicing\InvoiceItemActions.cs" />
     <Compile Include="Invoicing\QuoteItemActions.cs" />

@@ -22,5 +22,17 @@ namespace ZBox.Basic.Invoicing
         {
             _factory.ShowMessage("TODO: Create sales invoice document", "TODO");
         }
+
+        [Invocation]
+        public static void CreateInvoiceDocumentCanExec(SalesInvoice obj, MethodReturnEventArgs<bool> e)
+        {
+            e.Result = obj.ObjectState.In(DataObjectState.Unmodified, DataObjectState.Modified);
+        }
+
+        [Invocation]
+        public static void CreateInvoiceDocumentCanExecReason(SalesInvoice obj, MethodReturnEventArgs<string> e)
+        {
+            e.Result = "Object must be already created. Please save the invoice and try again.";
+        }
     }
 }

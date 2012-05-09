@@ -28,7 +28,7 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
             this.OtherIncomeReceipt = obj;
         }
 
-        public new OtherIncomeReceipt OtherIncomeReceipt { get; private set; }
+        public OtherIncomeReceipt OtherIncomeReceipt { get; private set; }
 
         public override ViewModel InternalOrganization
         {

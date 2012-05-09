@@ -64,6 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomServerActionsModule.cs" />
+    <Compile Include="Invoicing\DefaultInvoiceGeneratorActions.cs" />
+    <Compile Include="Invoicing\SalesInvoiceActions.cs" />
     <Compile Include="Invoicing\StatisticActionsActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
