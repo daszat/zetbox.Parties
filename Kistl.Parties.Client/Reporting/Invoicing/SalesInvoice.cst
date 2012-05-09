@@ -1,0 +1,39 @@
+﻿<%@ CodeTemplate Language="C#" 
+    Name="Invoicing.SalesInvoice"
+    ClassName="Kistl.Parties.Client.Reporting.Invoicing.SalesInvoice"
+    Inherits="Kistl.Parties.Client.Reporting.ReportTemplate" %>
+<%@ Import Namespace="System" %>
+<%@ Import Namespace="System.Collections.Generic" %>
+<%@ Import Namespace="System.Linq" %>
+<%@ Import Namespace="ZBox.Basic.Invoicing" %>
+<%@ Parameter Name="invoice" Type="ZBox.Basic.Invoicing.SalesInvoice" %>
+
+\document [
+<% Common.DocumentInfo.Call(Host, "Invoice", null); %>
+] {
+<% Common.DocumentStyles.Call(Host); %>
+
+\section [
+<% PageSetup(); %>
+	] {
+        \paragraph [ <%= GetStyleTitle() %> ] {
+            <%= GetTitle() %>
+        }
+
+        \textframe [ RelativeVertical = Paragraph ] {
+            <% FormatIntOrg(); %>
+            \linebreak
+            <% FormatIntOrgTaxNumber(); %>
+        }
+
+        \paragraph {
+            <%= GetToText() %>
+        }
+
+        \paragraph {
+            <% FormatRecipient(); %>
+            \linebreak
+            <% FormatRecipientTaxNumber(); %>
+        }
+    }
+}

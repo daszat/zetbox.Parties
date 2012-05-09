@@ -6,6 +6,7 @@ using Autofac;
 using Kistl.API;
 using Kistl.API.Client;
 using Kistl.Client;
+using Kistl.Client.Presentables;
 
 namespace Kistl.Parties.Client
 {
@@ -20,6 +21,18 @@ namespace Kistl.Parties.Client
 
             // Register explicit overrides here
             moduleBuilder.RegisterType<Kistl.Parties.Common.Accounting.BACA_AccountImporter>()
+                .InstancePerDependency();
+
+            moduleBuilder
+                .Register<Reporting.ReportingHost>(c => new Reporting.ReportingHost(
+                        typeof(Reporting.ReportingHost).Namespace,
+                        typeof(Reporting.ReportingHost).Assembly,
+                        c.Resolve<Func<IKistlContext>>(),
+                        c.Resolve<IViewModelFactory>(),
+                        c.Resolve<IFrozenContext>(),
+                        c.Resolve<IFileOpener>()
+                    )
+                )
                 .InstancePerDependency();
         }
     }

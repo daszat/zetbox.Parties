@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Kistl.API;
 using Kistl.Client.Presentables;
+using Kistl.Parties.Client.Reporting;
 
 namespace ZBox.Basic.Invoicing
 {
@@ -11,16 +12,30 @@ namespace ZBox.Basic.Invoicing
     public class SalesInvoiceActions
     {
         private static IViewModelFactory _factory;
+        private static Func<ReportingHost> _rptFactory;
 
-        public SalesInvoiceActions(IViewModelFactory factory)
+        public SalesInvoiceActions(IViewModelFactory factory, Func<ReportingHost> rptFactory)
         {
             _factory = factory;
+            _rptFactory = rptFactory;
         }
 
         [Invocation]
         public static void CreateInvoiceDocument(SalesInvoice obj)
         {
-            _factory.ShowMessage("TODO: Create sales invoice document", "TODO");
+            if (obj.InternalOrganization != null && obj.InternalOrganization.InvoiceGenerator != null)
+            {
+                var ctx = obj.Context;
+                var file = obj.InternalOrganization.InvoiceGenerator.CreateDocument(obj);
+                if (file == null) return;
+
+                if (obj.Document != null)
+                {
+                    ctx.Delete(obj.Document);
+                }
+
+                obj.Document = file;
+            }
         }
 
         [Invocation]
