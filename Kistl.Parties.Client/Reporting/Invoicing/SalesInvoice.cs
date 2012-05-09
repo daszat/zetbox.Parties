@@ -18,6 +18,15 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
             return "Style = \"Title\"";
         }
 
+        protected virtual string GetIntOrgTextFrame()
+        {
+            return @"RelativeVertical = Paragraph
+                     RelativeHorizontal = Margin                     
+                     Width = ""5cm""
+                     Left = ""11cm""
+                     WrapFormat { Style = Through }";
+        }
+
         protected virtual string GetTitle()
         {
             return "Invoice";
@@ -35,7 +44,7 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual void FormatRecipientTaxNumber()
         {
-            if (invoice.Customer is ZBox.Basic.Parties.Organization)
+            if (invoice.Customer.Party is ZBox.Basic.Parties.Organization)
             {
                 var org = (ZBox.Basic.Parties.Organization)invoice.Customer.Party;
                 this.WriteObjects("UID: ", org.TaxIDNumber); 
@@ -51,6 +60,16 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
         {
             var org = (ZBox.Basic.Parties.Organization)invoice.InternalOrganization.Party;
             this.WriteObjects("UID: ", org.TaxIDNumber);
+        }
+
+        protected virtual string GetSubject()
+        {
+            return string.Format("Subject: Invoice {0}", invoice.InvoiceID);
+        }
+
+        protected virtual string GetCityAndDate()
+        {
+            return string.Format("Vienna, {0}", FormatDate(invoice.Date));
         }
     }
 }

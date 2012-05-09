@@ -20,10 +20,12 @@
             <%= GetTitle() %>
         }
 
-        \textframe [ RelativeVertical = Paragraph ] {
-            <% FormatIntOrg(); %>
-            \linebreak
-            <% FormatIntOrgTaxNumber(); %>
+        \textframe [ <%= GetIntOrgTextFrame() %> ] {
+            \paragraph [ Format { Alignment = Right } ] {
+                <% FormatIntOrg(); %>
+                \linebreak
+                <% FormatIntOrgTaxNumber(); %>
+            }
         }
 
         \paragraph {
@@ -34,6 +36,82 @@
             <% FormatRecipient(); %>
             \linebreak
             <% FormatRecipientTaxNumber(); %>
+        }
+
+        \paragraph [ 
+            Format {
+                SpaceBefore = "1cm"
+                TabStops +=
+                {
+                  Position = "16cm"
+                  Alignment = Right
+                } } ] {
+            <%= GetSubject() %>
+            \tab 
+            <%= GetCityAndDate() %>
+        }
+
+        \paragraph [ Style = "Heading1" Format { SpaceBefore = "1cm" } ] {
+            Services
+        }
+
+        \table [ Style = "Compact" Borders { Width = 0.75 } ] {
+            \columns {
+                \column [ Width = "5cm" ]
+                \column [ Width = "2cm" ]
+                \column [ Width = "3cm" Format { Alignment = Right } ]
+                \column [ Width = "3cm" Format { Alignment = Right } ]
+                \column [ Width = "3cm" Format { Alignment = Right } ]
+            }
+            \rows {
+                \row [ HeadingFormat = True Format { Font { Bold = True } }] {
+                    \cell { Subject }
+                    \cell { Time }
+                    \cell { EUR / h }
+                    \cell { Quantity }
+                    \cell { Amount }
+                }
+<% foreach(var item in invoice.Items) { %>
+                \row {
+                    \cell { <%= Format(item.Description) %> }
+                    \cell { - }
+                    \cell { - }
+                    \cell { <%= Format(item.Quantity) %> }
+                    \cell { <%= Format(item.AmountNet) %> }
+                }
+<% } %>
+            }
+        }
+
+        \paragraph [ Style = "Heading1" Format { SpaceBefore = "1cm" } ] {
+            Conditions
+        }
+        \paragraph [ 
+            Format {
+                TabStops +=
+                {
+                  Position = "5cm"
+                }
+            } ] {
+            Payment within 30 days to:
+            \linebreak \linebreak
+            Bankaustria
+            \linebreak
+            BLZ: \tab 12000
+            \linebreak
+            Kontonummer: \tab 123344345423
+            \linebreak
+            BIC: \tab BKAUATWW
+            \linebreak
+            IBAN: \tab AT55 1200 123344345423
+        }
+
+        \paragraph [ Format { SpaceBefore = "1cm" } ] {
+            We thank you for your order!
+        }
+
+        \paragraph [ Format { SpaceBefore = "3cm" } ] {
+            My name
         }
     }
 }
