@@ -51,7 +51,7 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual string GetSubject()
         {
-            return Format(string.Format("Subject: Invoice {0}", invoice.InvoiceID));
+            return Format(string.Format("Subject: Invoice {0}", invoice.FinalizedOn.HasValue ? invoice.InvoiceID : "----/--"));
         }
 
         protected virtual string GetCityAndDate()

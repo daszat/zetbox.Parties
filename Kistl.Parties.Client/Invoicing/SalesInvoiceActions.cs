@@ -41,13 +41,20 @@ namespace ZBox.Basic.Invoicing
         [Invocation]
         public static void CreateInvoiceDocumentCanExec(SalesInvoice obj, MethodReturnEventArgs<bool> e)
         {
-            e.Result = obj.ObjectState.In(DataObjectState.Unmodified, DataObjectState.Modified);
+            e.Result = obj.InternalOrganization != null && obj.InternalOrganization.InvoiceGenerator != null;
         }
 
         [Invocation]
         public static void CreateInvoiceDocumentCanExecReason(SalesInvoice obj, MethodReturnEventArgs<string> e)
         {
-            e.Result = "Object must be already created. Please save the invoice and try again.";
+            if (obj.InternalOrganization == null)
+            {
+                e.Result = "Internal Organization must be set";
+            }
+            else if (obj.InternalOrganization.InvoiceGenerator == null)
+            {
+                e.Result = "Internal Organization must provide a invoice generator.";
+            }
         }
     }
 }
