@@ -28,7 +28,7 @@ namespace Kistl.Parties.Client.Reporting.Common
 #line 8 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Common\DocumentStyles.cst"
 this.WriteObjects("  \\styles {\r\n");
 this.WriteObjects("    Normal {\r\n");
-this.WriteObjects("      Font { Name = \"Arial\" Size = 12 }\r\n");
+this.WriteObjects("      Font { Name = \"Verdana\" Size = 10 }\r\n");
 this.WriteObjects("      ParagraphFormat {\r\n");
 this.WriteObjects("        SpaceBefore = 6\r\n");
 this.WriteObjects("        SpaceAfter = 6\r\n");
@@ -47,7 +47,7 @@ this.WriteObjects("      Font { Size = 16 Bold = true }\r\n");
 this.WriteObjects("    }\r\n");
 this.WriteObjects("	\r\n");
 this.WriteObjects("    Heading1 {\r\n");
-this.WriteObjects("      Font { Name = \"Arial\" Size = 16 Bold = true }\r\n");
+this.WriteObjects("      Font { Name = \"Verdana\" Size = 16 Bold = true }\r\n");
 this.WriteObjects("      ParagraphFormat {\r\n");
 this.WriteObjects("		SpaceBefore = 6\r\n");
 this.WriteObjects("        SpaceAfter = 6\r\n");

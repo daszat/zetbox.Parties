@@ -16,7 +16,7 @@
 \section [
 <% PageSetup(); %>
 	] {
-        \paragraph [ Style = "Title" ] {
+        \paragraph [ Style = "Title" Format { SpaceBefore = "2cm" } ] {
             <%= GetTitle() %>
         }
 

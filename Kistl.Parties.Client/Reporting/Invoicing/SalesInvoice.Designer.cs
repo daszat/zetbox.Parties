@@ -44,7 +44,7 @@ this.WriteObjects("\\section [\r\n");
 PageSetup(); 
 #line 18 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("	] {\r\n");
-this.WriteObjects("        \\paragraph [ Style = \"Title\" ] {\r\n");
+this.WriteObjects("        \\paragraph [ Style = \"Title\" Format { SpaceBefore = \"2cm\" } ] {\r\n");
 this.WriteObjects("            ",  GetTitle() , "\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
