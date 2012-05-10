@@ -44,21 +44,25 @@ this.WriteObjects("\\section [\r\n");
 PageSetup(); 
 #line 18 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("	] {\r\n");
-this.WriteObjects("        \\paragraph [ ",  GetStyleTitle() , " ] {\r\n");
+this.WriteObjects("        \\paragraph [ Style = \"Title\" ] {\r\n");
 this.WriteObjects("            ",  GetTitle() , "\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
-this.WriteObjects("        \\textframe [ ",  GetIntOrgTextFrame() , " ] {\r\n");
+this.WriteObjects("        \\textframe [ RelativeVertical = Paragraph\r\n");
+this.WriteObjects("                     RelativeHorizontal = Margin                     \r\n");
+this.WriteObjects("                     Width = \"5cm\"\r\n");
+this.WriteObjects("                     Left = \"11cm\"\r\n");
+this.WriteObjects("                     WrapFormat { Style = Through } ] {\r\n");
 this.WriteObjects("            \\paragraph [ Format { Alignment = Right } ] {\r\n");
 this.WriteObjects("                ");
-#line 25 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 29 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatIntOrg(); 
-#line 26 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 30 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("                \\linebreak\r\n");
 this.WriteObjects("                ");
-#line 27 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 31 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatIntOrgTaxNumber(); 
-#line 28 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 32 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("            }\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
@@ -68,14 +72,14 @@ this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
 this.WriteObjects("        \\paragraph {\r\n");
 this.WriteObjects("            ");
-#line 36 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 40 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatRecipient(); 
-#line 37 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 41 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("            \\linebreak\r\n");
 this.WriteObjects("            ");
-#line 38 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 42 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatRecipientTaxNumber(); 
-#line 39 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 43 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
 this.WriteObjects("        \\paragraph [ \r\n");
@@ -92,40 +96,94 @@ this.WriteObjects("            ",  GetCityAndDate() , "\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
 this.WriteObjects("        \\paragraph [ Style = \"Heading1\" Format { SpaceBefore = \"1cm\" } ] {\r\n");
-this.WriteObjects("            Services\r\n");
+this.WriteObjects("            ",  GetServicesHeading() , "\r\n");
+this.WriteObjects("        }\r\n");
+this.WriteObjects("\r\n");
+this.WriteObjects("        \\paragraph {\r\n");
+this.WriteObjects("            ",  GetPeriod() , "\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
 this.WriteObjects("        \\table [ Style = \"Compact\" Borders { Width = 0.75 } ] {\r\n");
 this.WriteObjects("            \\columns {\r\n");
-this.WriteObjects("                \\column [ Width = \"5cm\" ]\r\n");
-this.WriteObjects("                \\column [ Width = \"2cm\" ]\r\n");
+this.WriteObjects("                \\column [ Width = \"6cm\" ]\r\n");
+this.WriteObjects("                \\column [ Width = \"2cm\" Format { Alignment = Right } ]\r\n");
 this.WriteObjects("                \\column [ Width = \"3cm\" Format { Alignment = Right } ]\r\n");
-this.WriteObjects("                \\column [ Width = \"3cm\" Format { Alignment = Right } ]\r\n");
+this.WriteObjects("                \\column [ Width = \"2cm\" Format { Alignment = Right } ]\r\n");
 this.WriteObjects("                \\column [ Width = \"3cm\" Format { Alignment = Right } ]\r\n");
 this.WriteObjects("            }\r\n");
 this.WriteObjects("            \\rows {\r\n");
 this.WriteObjects("                \\row [ HeadingFormat = True Format { Font { Bold = True } }] {\r\n");
 this.WriteObjects("                    \\cell { Subject }\r\n");
-this.WriteObjects("                    \\cell { Time }\r\n");
-this.WriteObjects("                    \\cell { EUR / h }\r\n");
 this.WriteObjects("                    \\cell { Quantity }\r\n");
+this.WriteObjects("                    \\cell { Unit price }\r\n");
+this.WriteObjects("                    \\cell { VAT }\r\n");
 this.WriteObjects("                    \\cell { Amount }\r\n");
 this.WriteObjects("                }\r\n");
-#line 74 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
-foreach(var item in invoice.Items) { 
-#line 75 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
-this.WriteObjects("                \\row {\r\n");
-this.WriteObjects("                    \\cell { ",  Format(item.Description) , " }\r\n");
-this.WriteObjects("                    \\cell { - }\r\n");
-this.WriteObjects("                    \\cell { - }\r\n");
-this.WriteObjects("                    \\cell { ",  Format(item.Quantity) , " }\r\n");
-this.WriteObjects("                    \\cell { ",  Format(item.AmountNet) , " }\r\n");
-this.WriteObjects("                }\r\n");
 #line 82 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
-} 
+foreach(var item in GetItems()) { 
 #line 83 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+this.WriteObjects("                \\row {\r\n");
+this.WriteObjects("                    \\cell { ",  Format    (item.Description) , " }\r\n");
+this.WriteObjects("                    \\cell { ",  Format    (item.Quantity) , " }\r\n");
+this.WriteObjects("                    \\cell { ",  FormatEuro(item.UnitPrice) , " }\r\n");
+this.WriteObjects("                    \\cell { ",  Format    (item.VATType.Description) , " }\r\n");
+this.WriteObjects("                    \\cell { ",  FormatEuro(item.AmountNet) , " }\r\n");
+this.WriteObjects("                }\r\n");
+#line 90 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+} 
+#line 91 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+if(RenderSubTotal()) { 
+#line 92 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+this.WriteObjects("                \\row [ Height = \"0.1cm\" HeightRule = Exactly ] {\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                }\r\n");
+this.WriteObjects("                \\row [ Format { Font { Bold = True } } ] {\r\n");
+this.WriteObjects("                    \\cell { ",  GetSubTotalDescription() , " }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell { ",  GetSubTotalAmountNet() , " }\r\n");
+this.WriteObjects("                }\r\n");
+#line 106 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+} 
+#line 107 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+foreach(var vat in GetVATTypes()) { 
+#line 108 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+this.WriteObjects("                \\row {\r\n");
+this.WriteObjects("                    \\cell { ",  GetVATDescription(vat) , " }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell { ",  GetVATSum(vat) , " }\r\n");
+this.WriteObjects("                }\r\n");
+#line 115 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+} 
+#line 116 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+this.WriteObjects("                \\row [ Height = \"0.1cm\" HeightRule = Exactly ] {\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                }\r\n");
+this.WriteObjects("                \\row [ Format { Font { Bold = True } } ] {\r\n");
+this.WriteObjects("                    \\cell { ",  GetTotalDescription() , " }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell {  }\r\n");
+this.WriteObjects("                    \\cell { ",  GetTotalAmount() , " }\r\n");
+this.WriteObjects("                }\r\n");
 this.WriteObjects("            }\r\n");
 this.WriteObjects("        }\r\n");
+this.WriteObjects("\r\n");
+this.WriteObjects("        ");
+#line 133 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+FormatMessage(); 
+#line 134 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("        \\paragraph [ Style = \"Heading1\" Format { SpaceBefore = \"1cm\" } ] {\r\n");
 this.WriteObjects("            Conditions\r\n");
