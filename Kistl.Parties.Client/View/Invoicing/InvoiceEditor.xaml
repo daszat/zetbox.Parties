@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:ctrls="clr-namespace:Kistl.Client.WPF.CustomControls;assembly=Kistl.Client.WPF.Toolkit"
              mc:Ignorable="d"
+             x:Name="invoiceEditor"
              d:DesignHeight="300" d:DesignWidth="300">
   <Grid>
     <Grid.ColumnDefinitions>
@@ -33,7 +34,7 @@
       </TabItem>
     </TabControl>
     <ScrollViewer Grid.Column="0">
-      <DockPanel>
+      <DockPanel x:Name="detailsPanel">
         <StackPanel DockPanel.Dock="Top">
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Date]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[DueDate]}" />
@@ -43,7 +44,8 @@
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Message]}" />
           <ctrls:LabeledView DataContext="{Binding InternalOrganization}" />
           <ctrls:LabeledView DataContext="{Binding Party}" />
-          <ctrls:LabeledView DataContext="{Binding Issuer}" Visibility="{Binding IssuerVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
+          <ctrls:LabeledView DataContext="{Binding Issuer}"
+                             Visibility="{Binding DataContext.IssuerVisible, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=detailsPanel}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
         </StackPanel>
         <ItemsControl DockPanel.Dock="Bottom"
