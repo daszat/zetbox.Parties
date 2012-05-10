@@ -34,5 +34,8 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
         {
             get { return PropertyModelsByName["InternalOrganization"]; }
         }
+
+        public abstract ViewModel Issuer { get; }
+        public abstract bool IssuerVisible { get; }
     }
 }

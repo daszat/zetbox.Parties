@@ -43,6 +43,7 @@
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Message]}" />
           <ctrls:LabeledView DataContext="{Binding InternalOrganization}" />
           <ctrls:LabeledView DataContext="{Binding Party}" />
+          <ctrls:LabeledView DataContext="{Binding Issuer}" Visibility="{Binding IssuerVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
         </StackPanel>
         <ItemsControl DockPanel.Dock="Bottom"

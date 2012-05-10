@@ -27,7 +27,7 @@
                      WrapFormat { Style = Through } ] {
             \paragraph [ Format { Alignment = Right } ] {
                 <% FormatIntOrg(); %>
-                \linebreak
+                \linebreak \linebreak
                 <% FormatIntOrgTaxNumber(); %>
             }
         }
@@ -38,7 +38,7 @@
 
         \paragraph {
             <% FormatRecipient(); %>
-            \linebreak
+            \linebreak \linebreak
             <% FormatRecipientTaxNumber(); %>
         }
 

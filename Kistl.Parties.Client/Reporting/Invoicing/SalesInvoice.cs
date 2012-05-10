@@ -16,17 +16,17 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual string GetTitle()
         {
-            return "Invoice";
+            return SalesInvoiceResources.Title;
         }
 
         protected virtual string GetToText()
         {
-            return "To";
+            return SalesInvoiceResources.To;
         }
 
         protected virtual void FormatRecipient()
         {
-            Common.Address.Call(Host, invoice.Customer.Party);
+            Common.Address.Call(Host, invoice.Customer.Party, Coalesce(invoice.Customer.Party.InvoiceAddress, invoice.Customer.Party.Address));
         }
 
         protected virtual void FormatRecipientTaxNumber()
@@ -40,7 +40,7 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual void FormatIntOrg()
         {
-            Common.Address.Call(Host, invoice.InternalOrganization.Party);
+            Common.Address.Call(Host, invoice.InternalOrganization.Party, invoice.InternalOrganization.Party.Address);
         }
 
         protected virtual void FormatIntOrgTaxNumber()
@@ -56,7 +56,7 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual string GetCityAndDate()
         {
-            return string.Format("Vienna, {0}", FormatDate(invoice.Date));
+            return string.Format("{0}, {1}", invoice.InternalOrganization.Party.Address.City, FormatDate(invoice.Date));
         }
 
         protected virtual string GetServicesHeading()
@@ -123,12 +123,12 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual string GetPaymentIntroduction()
         {
-            return "Payment within 30 days to:";
+            return string.Format("Payment until {0} to:", FormatDate(invoice.DueDate));
         }
 
         protected virtual void FormatBankAccount()
         {
-            Common.BankAccount.Call(Host);
+            Common.BankAccount.Call(Host, invoice.InternalOrganization.Party.BankAccount);
         }
 
         protected virtual string GetGreetingsLine()
@@ -138,7 +138,10 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual void FormatSignature()
         {
-            Common.Signature.Call(Host, invoice.InternalOrganization.Party);
+            if (invoice.Issuer != null)
+            {
+                Common.Signature.Call(Host, invoice.Issuer);
+            }
         }
 
         protected virtual string GetSubjectHeader() { return "Subject"; }

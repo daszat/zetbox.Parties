@@ -37,5 +37,15 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
                 return PropertyModelsByName["Customer"];
             }
         }
+
+        public override ViewModel Issuer
+        {
+            get { return PropertyModelsByName["Issuer"]; }
+        }
+
+        public override bool IssuerVisible
+        {
+            get { return true; }
+        }
     }
 }

@@ -192,7 +192,6 @@ namespace Kistl.Parties.Client.Reporting
         public static string FormatName(ZBox.Basic.Parties.Person pers)
         {
             List<string> parts = new List<string>();
-            parts.Add(FormatAddressGender(pers.Gender));
             parts.Add(pers.PersonalTitle);
             parts.Add(pers.FirstName);
             parts.Add(pers.LastName);
@@ -201,18 +200,19 @@ namespace Kistl.Parties.Client.Reporting
             return string.Join(" ", parts.Where(s => !string.IsNullOrEmpty(s)).ToArray());
         }
 
-        private static string FormatAddressGender(ZBox.Basic.Parties.Gender? g)
+        public static ZBox.Basic.Parties.Address Coalesce(params ZBox.Basic.Parties.Address[] addresses)
         {
-            switch (g)
+            foreach (var a in addresses)
             {
-                case ZBox.Basic.Parties.Gender.Male:
-                    return "Herrn";
-                case ZBox.Basic.Parties.Gender.Female:
-                    return "Frau";
-                default:
-                    return "Herrn/Frau";
+                if (a != null && !string.IsNullOrEmpty(a.Line1))
+                {
+                    return a;
+                }
             }
+
+            return null;
         }
+
         #endregion
 
         #region ToDo

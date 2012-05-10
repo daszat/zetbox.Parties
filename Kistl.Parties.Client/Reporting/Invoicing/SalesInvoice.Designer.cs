@@ -58,7 +58,7 @@ this.WriteObjects("                ");
 #line 29 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatIntOrg(); 
 #line 30 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
-this.WriteObjects("                \\linebreak\r\n");
+this.WriteObjects("                \\linebreak \\linebreak\r\n");
 this.WriteObjects("                ");
 #line 31 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatIntOrgTaxNumber(); 
@@ -75,7 +75,7 @@ this.WriteObjects("            ");
 #line 40 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatRecipient(); 
 #line 41 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
-this.WriteObjects("            \\linebreak\r\n");
+this.WriteObjects("            \\linebreak \\linebreak\r\n");
 this.WriteObjects("            ");
 #line 42 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatRecipientTaxNumber(); 

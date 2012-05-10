@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2012-05-09T13:52:21.5212101Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:Accounting="ZBox.Basic.Accounting" xmlns:Invoicing="ZBox.Basic.Invoicing" xmlns:Parties="ZBox.Basic.Parties" date="2012-05-10T14:59:21.7685776Z" xmlns="http://dasz.at/Kistl">
   <Accounting:Account ExportGuid="10abf2ec-e809-4753-8bea-5e4e3fe45874">
     <Accounting:ChangedOn>2011-12-29T11:16:51.4206588Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2011-12-29T11:16:51.4206588Z</Accounting:CreatedOn>
@@ -494,12 +494,13 @@
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
   </Invoicing:PurchaseInvoiceItem>
   <Invoicing:SalesInvoice ExportGuid="028220be-8c24-4552-9cd3-7364192ca35c">
-    <Invoicing:ChangedOn>2011-12-28T15:55:17.1724815Z</Invoicing:ChangedOn>
+    <Invoicing:ChangedOn>2012-05-10T08:10:09.6965257Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-12-28T15:55:17.1724815Z</Invoicing:CreatedOn>
     <Invoicing:Date>2011-12-28T15:52:25.0792418Z</Invoicing:Date>
     <Invoicing:Description>Software Consulting</Invoicing:Description>
-    <Invoicing:DueDate>0001-01-01T01:00:00Z</Invoicing:DueDate>
-    <Invoicing:Message>Thank you</Invoicing:Message>
+    <Invoicing:Document>f8ed07e9-a861-416b-a224-a8b431062572</Invoicing:Document>
+    <Invoicing:DueDate>2012-01-28T01:00:00Z</Invoicing:DueDate>
+    <Invoicing:Message>All hours are listed in the \bold{apendix}.</Invoicing:Message>
     <Accounting:OpenAmount>4680.00</Accounting:OpenAmount>
     <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
     <Invoicing:Period>2011</Invoicing:Period>
@@ -522,20 +523,36 @@
     <Invoicing:Customer>e3706731-bb31-4c96-b157-1ffbb89658af</Invoicing:Customer>
     <Invoicing:InternalOrganization>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:InternalOrganization>
   </Invoicing:SalesInvoice>
+  <Invoicing:SalesInvoice ExportGuid="725c794f-70bc-4df7-ab9c-2e06f08dc97b">
+    <Invoicing:ChangedOn>2012-05-09T12:49:02.1878427Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-05-09T12:49:02.1878427Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2012-05-08T22:00:00Z</Invoicing:Date>
+    <Invoicing:DueDate>2012-06-08T22:00:00Z</Invoicing:DueDate>
+    <Accounting:OpenAmount>1.10</Accounting:OpenAmount>
+    <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
+    <Invoicing:Total>1.10</Invoicing:Total>
+    <Invoicing:TotalNet>1.00</Invoicing:TotalNet>
+    <Invoicing:InvoiceID>2012/02</Invoicing:InvoiceID>
+    <Invoicing:Customer>e3706731-bb31-4c96-b157-1ffbb89658af</Invoicing:Customer>
+    <Invoicing:InternalOrganization>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:InternalOrganization>
+  </Invoicing:SalesInvoice>
   <Invoicing:SalesInvoice ExportGuid="760c1bbd-b80a-4f1d-aa0f-6a677c9d1716">
-    <Invoicing:ChangedOn>2012-05-08T15:07:29.5193662Z</Invoicing:ChangedOn>
+    <Invoicing:ChangedOn>2012-05-10T08:04:42.965282Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2011-12-29T12:25:56.7341413Z</Invoicing:CreatedOn>
     <Invoicing:Date>2011-12-29T12:24:21.1306731Z</Invoicing:Date>
     <Invoicing:Description>Consulting</Invoicing:Description>
+    <Invoicing:Document>ec56b18e-9def-4c70-9076-138f5ab65555</Invoicing:Document>
     <Invoicing:DueDate>2012-05-15T00:00:00Z</Invoicing:DueDate>
-    <Accounting:OpenAmount>4698.00</Accounting:OpenAmount>
+    <Invoicing:Message>All hours are listed in the \bold{apendix}.</Invoicing:Message>
+    <Accounting:OpenAmount>7578.00</Accounting:OpenAmount>
     <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
     <Invoicing:Period>12/2011</Invoicing:Period>
-    <Invoicing:Total>4698.00</Invoicing:Total>
-    <Invoicing:TotalNet>3915.00</Invoicing:TotalNet>
+    <Invoicing:Total>7578.00</Invoicing:Total>
+    <Invoicing:TotalNet>6315.00</Invoicing:TotalNet>
     <Invoicing:InvoiceID>2011/12</Invoicing:InvoiceID>
     <Invoicing:Customer>e3706731-bb31-4c96-b157-1ffbb89658af</Invoicing:Customer>
     <Invoicing:InternalOrganization>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:InternalOrganization>
+    <Invoicing:Issuer>63bb8152-f3c4-4133-997d-6b7a3f50fb5c</Invoicing:Issuer>
   </Invoicing:SalesInvoice>
   <Invoicing:SalesInvoice ExportGuid="fb0936db-4ca7-451e-b5fb-32558a0d3c81">
     <Invoicing:ChangedOn>2012-05-09T12:20:23.6111842Z</Invoicing:ChangedOn>
@@ -552,6 +569,30 @@
     <Invoicing:Customer>e3706731-bb31-4c96-b157-1ffbb89658af</Invoicing:Customer>
     <Invoicing:InternalOrganization>2e67b9e5-3dba-4a88-a317-1bf89c7d3095</Invoicing:InternalOrganization>
   </Invoicing:SalesInvoice>
+  <Invoicing:SalesInvoiceItem ExportGuid="0e3631d9-606e-47bb-b8b9-ec4259f18c21">
+    <Invoicing:Amount>2880.00</Invoicing:Amount>
+    <Invoicing:AmountNet>2400.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-05-10T07:56:36.0915855Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-05-10T07:56:36.0915855Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Project Management</Invoicing:Description>
+    <Invoicing:Quantity>20.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>120.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>d396ffcd-dfb4-4999-8327-02c5d99d8bf6</Invoicing:VATType>
+    <Invoicing:SalesInvoice>760c1bbd-b80a-4f1d-aa0f-6a677c9d1716</Invoicing:SalesInvoice>
+    <Invoicing:Items_pos>1</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItem>
+  <Invoicing:SalesInvoiceItem ExportGuid="358cb511-a219-4415-97e7-0fe5cba1e6e4">
+    <Invoicing:Amount>1.10</Invoicing:Amount>
+    <Invoicing:AmountNet>1.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-05-09T12:49:02.1878427Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-05-09T12:49:02.1878427Z</Invoicing:CreatedOn>
+    <Invoicing:Description>asdfsadf</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>1.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>39ce5d95-4e86-45b0-b431-a898ecb3f6a8</Invoicing:VATType>
+    <Invoicing:SalesInvoice>725c794f-70bc-4df7-ab9c-2e06f08dc97b</Invoicing:SalesInvoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItem>
   <Invoicing:SalesInvoiceItem ExportGuid="51f45edc-85c0-4d25-adb7-bef2d7532828">
     <Invoicing:Amount>4698.00</Invoicing:Amount>
     <Invoicing:AmountNet>3915.00</Invoicing:AmountNet>
@@ -636,25 +677,49 @@
     <Invoicing:InvoiceGenerator>ff3e9614-cc81-488a-995e-af9835b6c94d</Invoicing:InvoiceGenerator>
   </Parties:InternalOrganization>
   <Parties:Organization ExportGuid="436b27ad-89fb-4a10-bc83-e44dab21b4bd">
-    <Parties:ChangedOn>2011-12-28T15:54:28.0476717Z</Parties:ChangedOn>
+    <Parties:Address />
+    <Parties:BankAccount />
+    <Parties:ChangedOn>2012-05-10T12:46:22.0417791Z</Parties:ChangedOn>
     <Parties:CreatedOn>2011-12-28T15:54:28.0476717Z</Parties:CreatedOn>
+    <Parties:DeliveryAddresses />
+    <Parties:InvoiceAddress />
     <Parties:Name>Realestate Business Services</Parties:Name>
+    <Parties:TaxIDNumber>ATU 654421</Parties:TaxIDNumber>
   </Parties:Organization>
   <Parties:Organization ExportGuid="54fa1810-f123-41a5-92ae-304adcda0852">
     <Parties:ChangedOn>2012-05-07T14:01:31.5658428Z</Parties:ChangedOn>
     <Parties:CreatedOn>2012-05-07T14:01:31.5658428Z</Parties:CreatedOn>
+    <Parties:DeliveryAddresses />
     <Parties:Name>tax office</Parties:Name>
   </Parties:Organization>
   <Parties:Organization ExportGuid="814f3a46-97b0-46e1-aeeb-2529bbaba738">
     <Parties:ChangedOn>2011-12-28T15:54:08.2215377Z</Parties:ChangedOn>
     <Parties:CreatedOn>2011-12-28T15:54:08.2215377Z</Parties:CreatedOn>
+    <Parties:DeliveryAddresses />
     <Parties:Name>Facility Management</Parties:Name>
   </Parties:Organization>
   <Parties:Organization ExportGuid="c3a9b6ce-1687-49c7-95bb-7c4fe0c2cc44">
-    <Parties:ChangedOn>2011-12-28T15:53:21.089842Z</Parties:ChangedOn>
+    <Parties:Address />
+    <Parties:BankAccount />
+    <Parties:ChangedOn>2012-05-10T12:46:54.9826632Z</Parties:ChangedOn>
     <Parties:CreatedOn>2011-12-28T15:53:21.089842Z</Parties:CreatedOn>
+    <Parties:DeliveryAddresses />
+    <Parties:InvoiceAddress />
     <Parties:Name>dasz.at OG</Parties:Name>
+    <Parties:TaxIDNumber>ATU 123456</Parties:TaxIDNumber>
   </Parties:Organization>
+  <Parties:Person ExportGuid="63bb8152-f3c4-4133-997d-6b7a3f50fb5c">
+    <Parties:Address />
+    <Parties:BankAccount />
+    <Parties:ChangedOn>2012-05-10T12:48:29.8720906Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2012-05-10T12:48:29.8720906Z</Parties:CreatedOn>
+    <Parties:DeliveryAddresses />
+    <Parties:InvoiceAddress />
+    <Parties:FirstName>Arthur</Parties:FirstName>
+    <Parties:Gender>1</Parties:Gender>
+    <Parties:LastName>Zaczek</Parties:LastName>
+    <Parties:PersonalTitle>DI (FH)</Parties:PersonalTitle>
+  </Parties:Person>
   <Parties:Supplier ExportGuid="7784b08a-fbc0-48d1-b615-fc6fa5ff525a">
     <Parties:ChangedOn>2011-12-28T15:54:08.2215377Z</Parties:ChangedOn>
     <Parties:CreatedOn>2011-12-28T15:54:08.2215377Z</Parties:CreatedOn>

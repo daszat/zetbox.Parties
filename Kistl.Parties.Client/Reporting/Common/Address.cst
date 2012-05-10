@@ -7,10 +7,25 @@
 <%@ Import Namespace="System.Linq" %>
 <%@ Import Namespace="ZBox.Basic.Parties" %>
 <%@ Parameter Name="party" Type="ZBox.Basic.Parties.Party" %>
+<%@ Parameter Name="address" Type="ZBox.Basic.Parties.Address" %>
 
 <%= FormatName(party) %>
 \linebreak
-\linebreak
-Test Street 12234
-\linebreak
-1234 Vienna
+<% if(address != null) { %>
+    <% if(!string.IsNullOrEmpty(address.Line1)) { %>
+        \linebreak
+        <%= Format(address.Line1) %>
+    <% } 
+    if(!string.IsNullOrEmpty(address.Line2)) { %>
+        \linebreak
+        <%= Format(address.Line2) %>
+    <% } 
+    if(!string.IsNullOrEmpty(address.ZIPCode) || !string.IsNullOrEmpty(address.City)) { %>
+        \linebreak
+        <%= Format(address.ZIPCode) %> <%= Format(address.City) %>
+    <% } 
+    if(!string.IsNullOrEmpty(address.Country)) { %>
+        \linebreak
+        <%= Format(address.Country) %>
+    <% } %>
+<% } %>

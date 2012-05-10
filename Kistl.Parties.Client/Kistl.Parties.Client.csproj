@@ -121,6 +121,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Reporting\Common\BankAccountResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankAccountResources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Reporting\Common\Signature.Designer.cs">
       <DependentUpon>Signature.cst</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -148,6 +153,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SalesInvoice.cst</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Invoicing\SalesInvoiceResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesInvoiceResources.resx</DependentUpon>
     </Compile>
     <Compile Include="Reporting\ReportingHost.cs" />
     <Compile Include="Reporting\ReportTemplate.cs" />
@@ -256,6 +266,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reporting\Parties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reporting\Common\BankAccountResources.de.resx" />
+    <EmbeddedResource Include="Reporting\Common\BankAccountResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BankAccountResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SalesInvoiceResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

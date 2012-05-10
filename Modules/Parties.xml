@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-09T13:52:21.5212101Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-10T14:59:21.7685776Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T20:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T20:47:04.534407Z</KistlBase:CreatedOn>
@@ -4849,7 +4849,7 @@ public static void isValid_Party(OtherIncomeReceipt obj, PropertyIsValidEventArg
   </KistlBase:ObjectReferenceProperty>
   <KistlBase:ObjectReferenceProperty ExportGuid="a7a77bd6-a4bf-49f9-94ea-cb82edff812c">
     <KistlBase:CategoryTags>OtherExpenses</KistlBase:CategoryTags>
-    <KistlBase:ChangedOn>2012-03-26T21:54:06.6234829Z</KistlBase:ChangedOn>
+    <KistlBase:ChangedOn>2012-05-10T12:05:02.8537542Z</KistlBase:ChangedOn>
     <KistlBase:CodeTemplate>[Invocation]
 public static void get_OtherExpenses(Party obj, PropertyGetterEventArgs&lt;ICollection&lt;ZBox.Basic.Invoicing.OtherExpenseReceipt&gt;&gt; e)
 {
@@ -4878,14 +4878,14 @@ public static void isValid_OtherExpenses(Party obj, PropertyIsValidEventArgs e)
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>OtherExpenses</KistlBase:Name>
     <KistlBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</KistlBase:ObjectClass>
-    <KistlBase:Properties_pos>702</KistlBase:Properties_pos>
+    <KistlBase:Properties_pos>9</KistlBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
     <KistlBase:RelationEnd>0526b7cd-e513-4321-b748-08679e7eaf92</KistlBase:RelationEnd>
   </KistlBase:ObjectReferenceProperty>
   <KistlBase:ObjectReferenceProperty ExportGuid="b330ca69-163f-4025-b368-18987299c0e9">
     <KistlBase:CategoryTags>OtherIncomes</KistlBase:CategoryTags>
-    <KistlBase:ChangedOn>2012-03-26T21:52:56.7594869Z</KistlBase:ChangedOn>
+    <KistlBase:ChangedOn>2012-05-10T12:05:02.8537542Z</KistlBase:ChangedOn>
     <KistlBase:CodeTemplate>[Invocation]
 public static void get_OtherIncomes(Party obj, PropertyGetterEventArgs&lt;ICollection&lt;ZBox.Basic.Invoicing.OtherIncomeReceipt&gt;&gt; e)
 {
@@ -4914,7 +4914,7 @@ public static void isValid_OtherIncomes(Party obj, PropertyIsValidEventArgs e)
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>OtherIncomes</KistlBase:Name>
     <KistlBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</KistlBase:ObjectClass>
-    <KistlBase:Properties_pos>0</KistlBase:Properties_pos>
+    <KistlBase:Properties_pos>8</KistlBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
     <KistlBase:RelationEnd>533050d8-c93f-4761-a60d-dbefbd625fc8</KistlBase:RelationEnd>
@@ -6658,7 +6658,7 @@ public static void isValid_Customer(SalesInvoice obj, PropertyIsValidEventArgs e
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>Customer</KistlBase:Name>
     <KistlBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</KistlBase:ObjectClass>
-    <KistlBase:Properties_pos>200</KistlBase:Properties_pos>
+    <KistlBase:Properties_pos>400</KistlBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
     <KistlBase:RelationEnd>4b01a383-cd0b-45d8-95ff-09d71460b42d</KistlBase:RelationEnd>
@@ -6694,11 +6694,46 @@ public static void isValid_InternalOrganization(SalesInvoice obj, PropertyIsVali
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>InternalOrganization</KistlBase:Name>
     <KistlBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</KistlBase:ObjectClass>
-    <KistlBase:Properties_pos>100</KistlBase:Properties_pos>
+    <KistlBase:Properties_pos>300</KistlBase:Properties_pos>
     <GUI:RequestedKind>d30d2676-7f2f-4f0d-895a-e46f19b8f526</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
     <KistlBase:RelationEnd>2ee4cbda-5a0d-4ac1-9436-fd7558de7089</KistlBase:RelationEnd>
+  </KistlBase:ObjectReferenceProperty>
+  <KistlBase:ObjectReferenceProperty ExportGuid="bcaa71f6-a78b-43f8-866e-2366b94fd10a">
+    <KistlBase:CategoryTags>Main</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T11:49:44.1817431Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_Issuer(SalesInvoice obj, PropertyGetterEventArgs&lt;ZBox.Basic.Parties.Party&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_Issuer(SalesInvoice obj, PropertyPreSetterEventArgs&lt;ZBox.Basic.Parties.Party&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_Issuer(SalesInvoice obj, PropertyPostSetterEventArgs&lt;ZBox.Basic.Parties.Party&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_Issuer(SalesInvoice obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.Issuer == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:49:44.1817431Z</KistlBase:CreatedOn>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>Issuer</KistlBase:Name>
+    <KistlBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>200</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
+    <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
+    <KistlBase:RelationEnd>f155939d-7ccb-4d97-b867-79884cfba034</KistlBase:RelationEnd>
   </KistlBase:ObjectReferenceProperty>
   <KistlBase:ObjectReferenceProperty ExportGuid="50d601c0-a0bf-4597-abaf-1698c542c30a">
     <KistlBase:CategoryTags>Items</KistlBase:CategoryTags>
@@ -6730,7 +6765,7 @@ public static void isValid_Items(SalesInvoice obj, PropertyIsValidEventArgs e)
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>Items</KistlBase:Name>
     <KistlBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</KistlBase:ObjectClass>
-    <KistlBase:Properties_pos>0</KistlBase:Properties_pos>
+    <KistlBase:Properties_pos>100</KistlBase:Properties_pos>
     <GUI:RequestedKind>3e933ba6-a890-4114-97f8-595ef0560aee</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>9fce01fe-fd6d-4e21-8b55-08d5e38aea36</GUI:ValueModelDescriptor>
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
@@ -7676,6 +7711,16 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <KistlBase:Storage>1</KistlBase:Storage>
     <KistlBase:Verb>billed_to</KistlBase:Verb>
   </KistlBase:Relation>
+  <KistlBase:Relation ExportGuid="b7450207-3897-46d9-bb8e-4cc94c926615">
+    <KistlBase:A>f155939d-7ccb-4d97-b867-79884cfba034</KistlBase:A>
+    <KistlBase:B>f54cffa4-fefd-403a-b623-a59c811501a2</KistlBase:B>
+    <KistlBase:ChangedOn>2012-05-10T11:49:44.1817431Z</KistlBase:ChangedOn>
+    <KistlBase:Containment>0</KistlBase:Containment>
+    <KistlBase:CreatedOn>2012-05-10T11:49:44.1817431Z</KistlBase:CreatedOn>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Storage>1</KistlBase:Storage>
+    <KistlBase:Verb>has</KistlBase:Verb>
+  </KistlBase:Relation>
   <KistlBase:Relation ExportGuid="8d9ea631-dd81-4043-bfd9-cb30622dfbd8">
     <KistlBase:A>f4651e79-5015-42d2-ab51-8d800a592872</KistlBase:A>
     <KistlBase:B>a6cee6f5-981e-44ee-85a0-eff10ea1d638</KistlBase:B>
@@ -8087,6 +8132,15 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <KistlBase:RoleName>OtherIncomes</KistlBase:RoleName>
     <KistlBase:Type>bf363800-ddd6-40a2-809e-89e0db85e1b2</KistlBase:Type>
   </KistlBase:RelationEnd>
+  <KistlBase:RelationEnd ExportGuid="f54cffa4-fefd-403a-b623-a59c811501a2">
+    <KistlBase:BParent>b7450207-3897-46d9-bb8e-4cc94c926615</KistlBase:BParent>
+    <KistlBase:ChangedOn>2012-05-10T11:49:44.1817431Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-10T11:49:44.1817431Z</KistlBase:CreatedOn>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:Multiplicity>1</KistlBase:Multiplicity>
+    <KistlBase:RoleName>Issuer</KistlBase:RoleName>
+    <KistlBase:Type>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</KistlBase:Type>
+  </KistlBase:RelationEnd>
   <KistlBase:RelationEnd ExportGuid="0526b7cd-e513-4321-b748-08679e7eaf92">
     <KistlBase:BParent>61eaf773-27f4-42f7-88d1-7a8d69f2da41</KistlBase:BParent>
     <KistlBase:ChangedOn>2012-03-26T21:51:32.8816893Z</KistlBase:ChangedOn>
@@ -8276,6 +8330,16 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <KistlBase:Navigator>e3c9dfcb-902b-4754-962d-d9b6fe2a3300</KistlBase:Navigator>
     <KistlBase:RoleName>Invoice</KistlBase:RoleName>
     <KistlBase:Type>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</KistlBase:Type>
+  </KistlBase:RelationEnd>
+  <KistlBase:RelationEnd ExportGuid="f155939d-7ccb-4d97-b867-79884cfba034">
+    <KistlBase:AParent>b7450207-3897-46d9-bb8e-4cc94c926615</KistlBase:AParent>
+    <KistlBase:ChangedOn>2012-05-10T11:49:44.1817431Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-10T11:49:44.1817431Z</KistlBase:CreatedOn>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:Multiplicity>3</KistlBase:Multiplicity>
+    <KistlBase:Navigator>bcaa71f6-a78b-43f8-866e-2366b94fd10a</KistlBase:Navigator>
+    <KistlBase:RoleName>SalesInvoice</KistlBase:RoleName>
+    <KistlBase:Type>84c9fa60-87dd-4715-9c14-38302a7936fd</KistlBase:Type>
   </KistlBase:RelationEnd>
   <KistlBase:RelationEnd ExportGuid="f4651e79-5015-42d2-ab51-8d800a592872">
     <KistlBase:AParent>8d9ea631-dd81-4043-bfd9-cb30622dfbd8</KistlBase:AParent>
@@ -10416,6 +10480,15 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <KistlBase:Namespace>ZBox.Basic.Parties</KistlBase:Namespace>
     <KistlBase:SchemaName>parties</KistlBase:SchemaName>
   </KistlBase:Module>
+  <KistlBase:CompoundObject ExportGuid="65cea6d5-76ee-4377-ad6a-05037aff48c8">
+    <KistlBase:ChangedOn>2012-05-10T11:17:08.455882Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-10T11:17:08.455882Z</KistlBase:CreatedOn>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>Address</KistlBase:Name>
+    <GUI:ShowIconInLists>false</GUI:ShowIconInLists>
+    <GUI:ShowIdInLists>false</GUI:ShowIdInLists>
+    <GUI:ShowNameInLists>false</GUI:ShowNameInLists>
+  </KistlBase:CompoundObject>
   <KistlBase:ObjectClass ExportGuid="00f670e1-52b0-4772-8c84-a38a913743c0">
     <KistlBase:ChangedOn>2011-08-05T16:31:13.034282Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-02-16T17:26:52Z</KistlBase:CreatedOn>
@@ -10458,6 +10531,15 @@ public static void NotifyDeleting(Association obj)
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
     <KistlBase:TableName>Associations</KistlBase:TableName>
   </KistlBase:ObjectClass>
+  <KistlBase:CompoundObject ExportGuid="bbd2740b-138e-45b4-8668-4b9c352193a6">
+    <KistlBase:ChangedOn>2012-05-10T11:45:58.7068467Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-10T11:45:58.7068467Z</KistlBase:CreatedOn>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>BankAccount</KistlBase:Name>
+    <GUI:ShowIconInLists>false</GUI:ShowIconInLists>
+    <GUI:ShowIdInLists>false</GUI:ShowIdInLists>
+    <GUI:ShowNameInLists>false</GUI:ShowNameInLists>
+  </KistlBase:CompoundObject>
   <KistlBase:ObjectClass ExportGuid="a1647d8c-2f20-42d6-9502-cf55934e40fb">
     <KistlBase:ChangedOn>2011-08-05T16:31:13.034282Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-02-16T17:25:45Z</KistlBase:CreatedOn>
@@ -11711,6 +11793,371 @@ public static void NotifyDeleting(SupplierRelationship obj)
     <KistlBase:A>a84638fa-40a4-4969-8ebd-d5b98ca0310d</KistlBase:A>
     <KistlBase:B>4ae6616a-eca3-47a5-b502-8e3c3913c2f0</KistlBase:B>
   </KistlBase:DataType_implements_Interface_RelationEntry>
+  <KistlBase:StringProperty ExportGuid="30556a3c-7a2b-4b1f-ac63-bff8baf829a1">
+    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T12:59:21.7685776Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_City(Address obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_City(Address obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_City(Address obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_City(Address obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.City == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:21:55.5673038Z</KistlBase:CreatedOn>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>City</KistlBase:Name>
+    <KistlBase:ObjectClass>65cea6d5-76ee-4377-ad6a-05037aff48c8</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>3</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:StringProperty>
+  <KistlBase:StringProperty ExportGuid="bd2fe91b-e5f7-4863-a5db-2bfaca429297">
+    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T12:59:21.7685776Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_Country(Address obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_Country(Address obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_Country(Address obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_Country(Address obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.Country == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T12:59:21.7685776Z</KistlBase:CreatedOn>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>Country</KistlBase:Name>
+    <KistlBase:ObjectClass>65cea6d5-76ee-4377-ad6a-05037aff48c8</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>4</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:StringProperty>
+  <KistlBase:StringProperty ExportGuid="cee427c0-6a23-46d0-ae05-04ff4e4b8de8">
+    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T11:22:11.6682248Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_Line1(Address obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_Line1(Address obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_Line1(Address obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_Line1(Address obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.Line1 == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:17:08.455882Z</KistlBase:CreatedOn>
+    <KistlBase:Label>Line 1</KistlBase:Label>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>Line1</KistlBase:Name>
+    <KistlBase:ObjectClass>65cea6d5-76ee-4377-ad6a-05037aff48c8</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>0</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:StringProperty>
+  <KistlBase:StringProperty ExportGuid="16abaa79-0e83-4dd7-ae6f-171f2bfb5ce8">
+    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T11:22:11.6682248Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_Line2(Address obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_Line2(Address obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_Line2(Address obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_Line2(Address obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.Line2 == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:21:01.2821989Z</KistlBase:CreatedOn>
+    <KistlBase:Label>Line 2</KistlBase:Label>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>Line2</KistlBase:Name>
+    <KistlBase:ObjectClass>65cea6d5-76ee-4377-ad6a-05037aff48c8</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>1</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:StringProperty>
+  <KistlBase:StringProperty ExportGuid="17992c6f-6dd0-4944-9430-647e63ed7d67">
+    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T12:59:21.7685776Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_ZIPCode(Address obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_ZIPCode(Address obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_ZIPCode(Address obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_ZIPCode(Address obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.ZIPCode == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:21:55.5673038Z</KistlBase:CreatedOn>
+    <KistlBase:Label>zip code</KistlBase:Label>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>ZIPCode</KistlBase:Name>
+    <KistlBase:ObjectClass>65cea6d5-76ee-4377-ad6a-05037aff48c8</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>2</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:StringProperty>
+  <KistlBase:StringProperty ExportGuid="3edd7a52-1548-485a-9738-8494c94642ec">
+    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T11:59:12.9657418Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_AccountNumber(BankAccount obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_AccountNumber(BankAccount obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_AccountNumber(BankAccount obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_AccountNumber(BankAccount obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.AccountNumber == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:45:58.7068467Z</KistlBase:CreatedOn>
+    <KistlBase:Label>account number</KistlBase:Label>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>AccountNumber</KistlBase:Name>
+    <KistlBase:ObjectClass>bbd2740b-138e-45b4-8668-4b9c352193a6</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>4</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:StringProperty>
+  <KistlBase:StringProperty ExportGuid="cc8c8ef0-e489-4bdf-81d8-9991e731b866">
+    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T11:59:12.9657418Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_BankCodeNumber(BankAccount obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_BankCodeNumber(BankAccount obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_BankCodeNumber(BankAccount obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_BankCodeNumber(BankAccount obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.BankCodeNumber == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:45:58.7068467Z</KistlBase:CreatedOn>
+    <KistlBase:Label>bank code number</KistlBase:Label>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>BankCodeNumber</KistlBase:Name>
+    <KistlBase:ObjectClass>bbd2740b-138e-45b4-8668-4b9c352193a6</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>3</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:StringProperty>
+  <KistlBase:StringProperty ExportGuid="d205a667-1e42-4cf7-a15f-75729cf3458d">
+    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T11:59:12.9657418Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_BIC(BankAccount obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_BIC(BankAccount obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_BIC(BankAccount obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_BIC(BankAccount obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.BIC == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:47:05.0726426Z</KistlBase:CreatedOn>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>BIC</KistlBase:Name>
+    <KistlBase:ObjectClass>bbd2740b-138e-45b4-8668-4b9c352193a6</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>1</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:StringProperty>
+  <KistlBase:StringProperty ExportGuid="6ece11a6-b211-4895-b214-5305c7eddd81">
+    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T11:59:12.9657418Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_IBAN(BankAccount obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_IBAN(BankAccount obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_IBAN(BankAccount obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_IBAN(BankAccount obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.IBAN == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:47:05.0726426Z</KistlBase:CreatedOn>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>IBAN</KistlBase:Name>
+    <KistlBase:ObjectClass>bbd2740b-138e-45b4-8668-4b9c352193a6</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>2</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:StringProperty>
+  <KistlBase:StringProperty ExportGuid="52ec43fe-7cca-41b0-881c-901e91c94ca7">
+    <KistlBase:CategoryTags>Summary</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T11:59:12.9657418Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_Name(BankAccount obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_Name(BankAccount obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_Name(BankAccount obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_Name(BankAccount obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.Name == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:58:47.6722951Z</KistlBase:CreatedOn>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>Name</KistlBase:Name>
+    <KistlBase:ObjectClass>bbd2740b-138e-45b4-8668-4b9c352193a6</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>0</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:StringProperty>
   <KistlBase:ObjectReferenceProperty ExportGuid="06bb0fd1-2162-4cca-904f-85efbd930a53">
     <KistlBase:CategoryTags>CustomerRelationship</KistlBase:CategoryTags>
     <KistlBase:ChangedOn>2011-08-05T16:31:13.088285Z</KistlBase:ChangedOn>
@@ -12391,6 +12838,79 @@ public static void isValid_ParentRollups(OrganizationUnit obj, PropertyIsValidEv
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
     <KistlBase:RelationEnd>f01819cf-959f-4359-9641-f3d0a0943c3a</KistlBase:RelationEnd>
   </KistlBase:ObjectReferenceProperty>
+  <KistlBase:CompoundObjectProperty ExportGuid="d6c6dc7f-a00e-482b-8cab-a3e7d0c0b1f2">
+    <KistlBase:CategoryTags>Addresses</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T11:24:17.3004105Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_Address(Party obj, PropertyGetterEventArgs&lt;ZBox.Basic.Parties.Address&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_Address(Party obj, PropertyPreSetterEventArgs&lt;ZBox.Basic.Parties.Address&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_Address(Party obj, PropertyPostSetterEventArgs&lt;ZBox.Basic.Parties.Address&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_Address(Party obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.Address == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:23:19.5501074Z</KistlBase:CreatedOn>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>Address</KistlBase:Name>
+    <KistlBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>3</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>a63b9f47-18b7-463d-a06b-7b636de9553f</GUI:ValueModelDescriptor>
+    <KistlBase:CompoundObjectDefinition>65cea6d5-76ee-4377-ad6a-05037aff48c8</KistlBase:CompoundObjectDefinition>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:CompoundObjectProperty>
+  <KistlBase:CompoundObjectProperty ExportGuid="df2191e1-4988-40cb-87ca-7ed99a3d7177">
+    <KistlBase:CategoryTags>BankAccount</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T12:05:02.8537542Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_BankAccount(Party obj, PropertyGetterEventArgs&lt;ZBox.Basic.Parties.BankAccount&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_BankAccount(Party obj, PropertyPreSetterEventArgs&lt;ZBox.Basic.Parties.BankAccount&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_BankAccount(Party obj, PropertyPostSetterEventArgs&lt;ZBox.Basic.Parties.BankAccount&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_BankAccount(Party obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.BankAccount == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:47:50.1272196Z</KistlBase:CreatedOn>
+    <KistlBase:Label>Bank account</KistlBase:Label>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>BankAccount</KistlBase:Name>
+    <KistlBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>201</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>a63b9f47-18b7-463d-a06b-7b636de9553f</GUI:ValueModelDescriptor>
+    <KistlBase:CompoundObjectDefinition>bbd2740b-138e-45b4-8668-4b9c352193a6</KistlBase:CompoundObjectDefinition>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:CompoundObjectProperty>
   <KistlBase:ObjectReferenceProperty ExportGuid="1e500d44-43e3-4a24-a930-dcf221cfa635">
     <KistlBase:CategoryTags>Changed</KistlBase:CategoryTags>
     <KistlBase:ChangedOn>2011-08-05T16:31:13.088285Z</KistlBase:ChangedOn>
@@ -12467,7 +12987,7 @@ public static void isValid_ChangedOn(Party obj, PropertyIsValidEventArgs e)
   </KistlBase:DateTimeProperty>
   <KistlBase:StringProperty ExportGuid="969bcdd5-8f4d-43ed-97ea-f85770042f11">
     <KistlBase:CategoryTags>Comment</KistlBase:CategoryTags>
-    <KistlBase:ChangedOn>2011-08-05T16:31:13.088285Z</KistlBase:ChangedOn>
+    <KistlBase:ChangedOn>2012-05-10T12:05:02.8537542Z</KistlBase:ChangedOn>
     <KistlBase:CodeTemplate>[Invocation]
 public static void get_Comment(Party obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -12495,7 +13015,7 @@ public static void isValid_Comment(Party obj, PropertyIsValidEventArgs e)
     <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
     <KistlBase:Name>Comment</KistlBase:Name>
     <KistlBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</KistlBase:ObjectClass>
-    <KistlBase:Properties_pos>700</KistlBase:Properties_pos>
+    <KistlBase:Properties_pos>202</KistlBase:Properties_pos>
     <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
     <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
     <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
@@ -12503,7 +13023,7 @@ public static void isValid_Comment(Party obj, PropertyIsValidEventArgs e)
   </KistlBase:StringProperty>
   <KistlBase:ObjectReferenceProperty ExportGuid="dbf9ebe4-c7d5-44b9-8686-de90d8249969">
     <KistlBase:CategoryTags>Changed</KistlBase:CategoryTags>
-    <KistlBase:ChangedOn>2011-08-05T16:31:13.088285Z</KistlBase:ChangedOn>
+    <KistlBase:ChangedOn>2012-05-10T12:05:02.8537542Z</KistlBase:ChangedOn>
     <KistlBase:CodeTemplate>[Invocation]
 public static void get_CreatedBy(Party obj, PropertyGetterEventArgs&lt;Kistl.App.Base.Identity&gt; e)
 {
@@ -12532,14 +13052,14 @@ public static void isValid_CreatedBy(Party obj, PropertyIsValidEventArgs e)
     <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
     <KistlBase:Name>CreatedBy</KistlBase:Name>
     <KistlBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</KistlBase:ObjectClass>
-    <KistlBase:Properties_pos>400</KistlBase:Properties_pos>
+    <KistlBase:Properties_pos>204</KistlBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
     <KistlBase:RelationEnd>593a9c7f-f85a-4bb5-ae66-04c4a08e4090</KistlBase:RelationEnd>
   </KistlBase:ObjectReferenceProperty>
   <KistlBase:DateTimeProperty ExportGuid="171c5f44-cdad-4e94-9d1c-cceedfe354fc">
     <KistlBase:CategoryTags>Changed</KistlBase:CategoryTags>
-    <KistlBase:ChangedOn>2011-08-05T16:31:13.088285Z</KistlBase:ChangedOn>
+    <KistlBase:ChangedOn>2012-05-10T12:05:02.8537542Z</KistlBase:ChangedOn>
     <KistlBase:CodeTemplate>[Invocation]
 public static void get_CreatedOn(Party obj, PropertyGetterEventArgs&lt;DateTime&gt; e)
 {
@@ -12569,12 +13089,49 @@ public static void isValid_CreatedOn(Party obj, PropertyIsValidEventArgs e)
     <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
     <KistlBase:Name>CreatedOn</KistlBase:Name>
     <KistlBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</KistlBase:ObjectClass>
-    <KistlBase:Properties_pos>100</KistlBase:Properties_pos>
+    <KistlBase:Properties_pos>203</KistlBase:Properties_pos>
     <GUI:ValueModelDescriptor>fc74b434-3801-4e4a-ab67-e65a9e014005</GUI:ValueModelDescriptor>
     <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
     <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
     <KistlBase:IsList>false</KistlBase:IsList>
   </KistlBase:DateTimeProperty>
+  <KistlBase:CompoundObjectProperty ExportGuid="59b52eef-82b4-4699-959e-e2ff106e2cbe">
+    <KistlBase:CategoryTags>Addresses</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T12:23:46.4575016Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_DeliveryAddresses(Party obj, PropertyGetterEventArgs&lt;ICollection&lt;ZBox.Basic.Parties.Address&gt;&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_DeliveryAddresses(Party obj, PropertyPreSetterEventArgs&lt;ICollection&lt;ZBox.Basic.Parties.Address&gt;&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_DeliveryAddresses(Party obj, PropertyPostSetterEventArgs&lt;ICollection&lt;ZBox.Basic.Parties.Address&gt;&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_DeliveryAddresses(Party obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.DeliveryAddresses == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:24:47.2721248Z</KistlBase:CreatedOn>
+    <KistlBase:Label>Delivery addresses</KistlBase:Label>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>DeliveryAddresses</KistlBase:Name>
+    <KistlBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>7</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>b255299f-0e90-42f6-a752-2619c058ccf2</GUI:ValueModelDescriptor>
+    <KistlBase:CompoundObjectDefinition>65cea6d5-76ee-4377-ad6a-05037aff48c8</KistlBase:CompoundObjectDefinition>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsList>true</KistlBase:IsList>
+  </KistlBase:CompoundObjectProperty>
   <KistlBase:GuidProperty ExportGuid="be1377ba-7e73-464f-9711-7ad81e25e07b">
     <KistlBase:CategoryTags>Export</KistlBase:CategoryTags>
     <KistlBase:ChangedOn>2011-08-05T16:31:13.089285Z</KistlBase:ChangedOn>
@@ -12613,6 +13170,43 @@ public static void isValid_ExportGuid(Party obj, PropertyIsValidEventArgs e)
     <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
     <KistlBase:IsList>false</KistlBase:IsList>
   </KistlBase:GuidProperty>
+  <KistlBase:CompoundObjectProperty ExportGuid="d991a56d-018b-47d9-ba6a-a8beb57b7b0a">
+    <KistlBase:CategoryTags>Addresses</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T12:05:02.8537542Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_InvoiceAddress(Party obj, PropertyGetterEventArgs&lt;ZBox.Basic.Parties.Address&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_InvoiceAddress(Party obj, PropertyPreSetterEventArgs&lt;ZBox.Basic.Parties.Address&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_InvoiceAddress(Party obj, PropertyPostSetterEventArgs&lt;ZBox.Basic.Parties.Address&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_InvoiceAddress(Party obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.InvoiceAddress == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T11:24:17.3004105Z</KistlBase:CreatedOn>
+    <KistlBase:Label>Invoice address</KistlBase:Label>
+    <KistlBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</KistlBase:Module>
+    <KistlBase:Name>InvoiceAddress</KistlBase:Name>
+    <KistlBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>5</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>a63b9f47-18b7-463d-a06b-7b636de9553f</GUI:ValueModelDescriptor>
+    <KistlBase:CompoundObjectDefinition>65cea6d5-76ee-4377-ad6a-05037aff48c8</KistlBase:CompoundObjectDefinition>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsList>false</KistlBase:IsList>
+  </KistlBase:CompoundObjectProperty>
   <KistlBase:ObjectReferenceProperty ExportGuid="017a81e1-9538-4911-a33a-171325d16d40">
     <KistlBase:CategoryTags>Roles</KistlBase:CategoryTags>
     <KistlBase:ChangedOn>2011-08-05T16:31:13.089285Z</KistlBase:ChangedOn>
@@ -14207,6 +14801,80 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:Parameter_pos>0</KistlBase:Parameter_pos>
     <KistlBase:Name>retVal</KistlBase:Name>
   </KistlBase:StringParameter>
+  <KistlBase:StringRangeConstraint ExportGuid="e082d718-516d-41ef-840b-6171d9b509cb">
+    <KistlBase:ChangedOn>2012-05-10T11:21:55.5673038Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>30556a3c-7a2b-4b1f-ac63-bff8baf829a1</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-10T11:21:55.5673038Z</KistlBase:CreatedOn>
+    <KistlBase:Reason>Max size of address sticker</KistlBase:Reason>
+    <KistlBase:MaxLength>30</KistlBase:MaxLength>
+    <KistlBase:MinLength>0</KistlBase:MinLength>
+  </KistlBase:StringRangeConstraint>
+  <KistlBase:StringRangeConstraint ExportGuid="fec3cfa3-c8b0-4e7f-acb9-9eba3ac4c1ea">
+    <KistlBase:ChangedOn>2012-05-10T12:59:21.7685776Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>bd2fe91b-e5f7-4863-a5db-2bfaca429297</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-10T12:59:21.7685776Z</KistlBase:CreatedOn>
+    <KistlBase:MaxLength>30</KistlBase:MaxLength>
+    <KistlBase:MinLength>0</KistlBase:MinLength>
+  </KistlBase:StringRangeConstraint>
+  <KistlBase:StringRangeConstraint ExportGuid="5ecc877a-faca-4b73-b714-ef22315eb108">
+    <KistlBase:ChangedOn>2012-05-10T11:17:08.455882Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>cee427c0-6a23-46d0-ae05-04ff4e4b8de8</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-10T11:17:08.455882Z</KistlBase:CreatedOn>
+    <KistlBase:Reason>Max size of address sticker</KistlBase:Reason>
+    <KistlBase:MaxLength>30</KistlBase:MaxLength>
+    <KistlBase:MinLength>0</KistlBase:MinLength>
+  </KistlBase:StringRangeConstraint>
+  <KistlBase:StringRangeConstraint ExportGuid="4c8cc876-c3fb-44bc-95fc-fbde4ae37425">
+    <KistlBase:ChangedOn>2012-05-10T11:21:01.2821989Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>16abaa79-0e83-4dd7-ae6f-171f2bfb5ce8</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-10T11:21:01.2821989Z</KistlBase:CreatedOn>
+    <KistlBase:Reason>Max size of address sticker</KistlBase:Reason>
+    <KistlBase:MaxLength>30</KistlBase:MaxLength>
+    <KistlBase:MinLength>0</KistlBase:MinLength>
+  </KistlBase:StringRangeConstraint>
+  <KistlBase:StringRangeConstraint ExportGuid="cc801d72-90ea-437e-a045-6b1af4a0321a">
+    <KistlBase:ChangedOn>2012-05-10T11:21:55.5673038Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>17992c6f-6dd0-4944-9430-647e63ed7d67</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-10T11:21:55.5673038Z</KistlBase:CreatedOn>
+    <KistlBase:Reason>Max size of address sticker</KistlBase:Reason>
+    <KistlBase:MaxLength>30</KistlBase:MaxLength>
+    <KistlBase:MinLength>0</KistlBase:MinLength>
+  </KistlBase:StringRangeConstraint>
+  <KistlBase:StringRangeConstraint ExportGuid="8b6a8773-1198-431f-9d28-bddc1e77b60c">
+    <KistlBase:ChangedOn>2012-05-10T11:45:58.7068467Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>3edd7a52-1548-485a-9738-8494c94642ec</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-10T11:45:58.7068467Z</KistlBase:CreatedOn>
+    <KistlBase:MaxLength>30</KistlBase:MaxLength>
+    <KistlBase:MinLength>0</KistlBase:MinLength>
+  </KistlBase:StringRangeConstraint>
+  <KistlBase:StringRangeConstraint ExportGuid="d756f8ff-4bb8-4671-bd7b-102fc87a7783">
+    <KistlBase:ChangedOn>2012-05-10T11:45:58.7068467Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>cc8c8ef0-e489-4bdf-81d8-9991e731b866</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-10T11:45:58.7068467Z</KistlBase:CreatedOn>
+    <KistlBase:MaxLength>30</KistlBase:MaxLength>
+    <KistlBase:MinLength>0</KistlBase:MinLength>
+  </KistlBase:StringRangeConstraint>
+  <KistlBase:StringRangeConstraint ExportGuid="40265f55-f591-442e-9959-87c7391a54ad">
+    <KistlBase:ChangedOn>2012-05-10T11:47:05.0726426Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>d205a667-1e42-4cf7-a15f-75729cf3458d</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-10T11:47:05.0726426Z</KistlBase:CreatedOn>
+    <KistlBase:MaxLength>30</KistlBase:MaxLength>
+    <KistlBase:MinLength>0</KistlBase:MinLength>
+  </KistlBase:StringRangeConstraint>
+  <KistlBase:StringRangeConstraint ExportGuid="339d2fe5-af79-433d-b745-57f0d80c1bba">
+    <KistlBase:ChangedOn>2012-05-10T11:47:05.0726426Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>6ece11a6-b211-4895-b214-5305c7eddd81</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-10T11:47:05.0726426Z</KistlBase:CreatedOn>
+    <KistlBase:MaxLength>30</KistlBase:MaxLength>
+    <KistlBase:MinLength>0</KistlBase:MinLength>
+  </KistlBase:StringRangeConstraint>
+  <KistlBase:StringRangeConstraint ExportGuid="61e39049-bacc-4f13-9135-3fc2c4cfd70b">
+    <KistlBase:ChangedOn>2012-05-10T11:58:47.6722951Z</KistlBase:ChangedOn>
+    <KistlBase:ConstrainedProperty>52ec43fe-7cca-41b0-881c-901e91c94ca7</KistlBase:ConstrainedProperty>
+    <KistlBase:CreatedOn>2012-05-10T11:58:47.6722951Z</KistlBase:CreatedOn>
+    <KistlBase:MaxLength>30</KistlBase:MaxLength>
+    <KistlBase:MinLength>0</KistlBase:MinLength>
+  </KistlBase:StringRangeConstraint>
   <KistlBase:NotNullableConstraint ExportGuid="3400ffdf-c132-4630-bacb-a2dce03f363a">
     <KistlBase:ChangedOn>2011-08-05T16:31:06.165091Z</KistlBase:ChangedOn>
     <KistlBase:ConstrainedProperty>d9a45851-6cb9-4c43-a16f-655ae3ca20ed</KistlBase:ConstrainedProperty>
