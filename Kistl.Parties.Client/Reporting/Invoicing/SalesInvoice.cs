@@ -78,13 +78,13 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
             return invoice.Items.Count > 1;
         }
 
-        protected virtual string GetSubTotalDescription() 
-        { 
-            return "Sub total net"; 
+        protected virtual string GetSubTotalDescription()
+        {
+            return "Sub total net";
         }
-        protected virtual string GetSubTotalAmountNet() 
-        { 
-            return FormatEuro(invoice.Items.Sum(i => i.AmountNet)); 
+        protected virtual string GetSubTotalAmountNet()
+        {
+            return FormatEuro(invoice.Items.Sum(i => i.AmountNet));
         }
 
         protected virtual IEnumerable<VATType> GetVATTypes()
@@ -120,5 +120,32 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
                 this.WriteLine("}");
             }
         }
+
+        protected virtual string GetPaymentIntroduction()
+        {
+            return "Payment within 30 days to:";
+        }
+
+        protected virtual void FormatBankAccount()
+        {
+            Common.BankAccount.Call(Host);
+        }
+
+        protected virtual string GetGreetingsLine()
+        {
+            return "We thank you for your order!";
+        }
+
+        protected virtual void FormatSignature()
+        {
+            Common.Signature.Call(Host, invoice.InternalOrganization.Party);
+        }
+
+        protected virtual string GetSubjectHeader() { return "Subject"; }
+        protected virtual string GetQuantityHeader() { return "Quantity"; }
+        protected virtual string GetUnitPriceHeader() { return "Unit price"; }
+        protected virtual string GetVATHeader() { return "VAT"; }
+        protected virtual string GetAmountHeader() { return "Amount"; }
+
     }
 }

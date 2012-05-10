@@ -73,11 +73,11 @@
             }
             \rows {
                 \row [ HeadingFormat = True Format { Font { Bold = True } }] {
-                    \cell { Subject }
-                    \cell { Quantity }
-                    \cell { Unit price }
-                    \cell { VAT }
-                    \cell { Amount }
+                    \cell { <%= GetSubjectHeader() %> }
+                    \cell { <%= GetQuantityHeader() %> }
+                    \cell { <%= GetUnitPriceHeader() %> }
+                    \cell { <%= GetVATHeader() %> }
+                    \cell { <%= GetAmountHeader() %> }
                 }
 <% foreach(var item in GetItems()) { %>
                 \row {
@@ -135,32 +135,15 @@
         \paragraph [ Style = "Heading1" Format { SpaceBefore = "1cm" } ] {
             Conditions
         }
-        \paragraph [ 
-            Format {
-                TabStops +=
-                {
-                  Position = "5cm"
-                }
-            } ] {
-            Payment within 30 days to:
-            \linebreak \linebreak
-            Bankaustria
-            \linebreak
-            BLZ: \tab 12000
-            \linebreak
-            Kontonummer: \tab 123344345423
-            \linebreak
-            BIC: \tab BKAUATWW
-            \linebreak
-            IBAN: \tab AT55 1200 123344345423
+        \paragraph {
+            <%= GetPaymentIntroduction() %>
         }
+        <% FormatBankAccount(); %>
 
         \paragraph [ Format { SpaceBefore = "1cm" } ] {
-            We thank you for your order!
+            <%= GetGreetingsLine() %>
         }
 
-        \paragraph [ Format { SpaceBefore = "3cm" } ] {
-            My name
-        }
+        <% FormatSignature(); %>
     }
 }

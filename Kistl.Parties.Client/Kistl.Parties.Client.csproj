@@ -116,6 +116,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Address.cst</DependentUpon>
     </Compile>
+    <Compile Include="Reporting\Common\BankAccount.Designer.cs">
+      <DependentUpon>BankAccount.cst</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reporting\Common\Signature.Designer.cs">
+      <DependentUpon>Signature.cst</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Reporting\Common\DocumentInfo.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -218,6 +228,14 @@
     <None Include="Reporting\Common\Address.cst">
       <Generator>Arebis Template Processor</Generator>
       <LastGenOutput>Address.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\Common\BankAccount.cst">
+      <Generator>Arebis Template Processor</Generator>
+      <LastGenOutput>BankAccount.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\Common\Signature.cst">
+      <Generator>Arebis Template Processor</Generator>
+      <LastGenOutput>Signature.Designer.cs</LastGenOutput>
     </None>
     <None Include="Reporting\Common\DocumentInfo.cst">
       <Generator>Arebis Template Processor</Generator>

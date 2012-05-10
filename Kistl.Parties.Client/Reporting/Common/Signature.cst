@@ -1,0 +1,13 @@
+﻿<%@ CodeTemplate Language="C#" 
+    Name="Common.Signature"
+    ClassName="Kistl.Parties.Client.Reporting.Common.Signature"
+    Inherits="Kistl.Parties.Client.Reporting.ReportTemplate" %>
+<%@ Import Namespace="System" %>
+<%@ Import Namespace="System.Collections.Generic" %>
+<%@ Import Namespace="System.Linq" %>
+<%@ Import Namespace="ZBox.Basic.Parties" %>
+<%@ Parameter Name="party" Type="ZBox.Basic.Parties.Party" %>
+
+\paragraph [ Format { SpaceBefore = "3cm" } ] {
+    <%= FormatName(party) %>
+}

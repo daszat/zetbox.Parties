@@ -113,11 +113,11 @@ this.WriteObjects("                \\column [ Width = \"3cm\" Format { Alignment
 this.WriteObjects("            }\r\n");
 this.WriteObjects("            \\rows {\r\n");
 this.WriteObjects("                \\row [ HeadingFormat = True Format { Font { Bold = True } }] {\r\n");
-this.WriteObjects("                    \\cell { Subject }\r\n");
-this.WriteObjects("                    \\cell { Quantity }\r\n");
-this.WriteObjects("                    \\cell { Unit price }\r\n");
-this.WriteObjects("                    \\cell { VAT }\r\n");
-this.WriteObjects("                    \\cell { Amount }\r\n");
+this.WriteObjects("                    \\cell { ",  GetSubjectHeader() , " }\r\n");
+this.WriteObjects("                    \\cell { ",  GetQuantityHeader() , " }\r\n");
+this.WriteObjects("                    \\cell { ",  GetUnitPriceHeader() , " }\r\n");
+this.WriteObjects("                    \\cell { ",  GetVATHeader() , " }\r\n");
+this.WriteObjects("                    \\cell { ",  GetAmountHeader() , " }\r\n");
 this.WriteObjects("                }\r\n");
 #line 82 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 foreach(var item in GetItems()) { 
@@ -188,33 +188,22 @@ this.WriteObjects("\r\n");
 this.WriteObjects("        \\paragraph [ Style = \"Heading1\" Format { SpaceBefore = \"1cm\" } ] {\r\n");
 this.WriteObjects("            Conditions\r\n");
 this.WriteObjects("        }\r\n");
-this.WriteObjects("        \\paragraph [ \r\n");
-this.WriteObjects("            Format {\r\n");
-this.WriteObjects("                TabStops +=\r\n");
-this.WriteObjects("                {\r\n");
-this.WriteObjects("                  Position = \"5cm\"\r\n");
-this.WriteObjects("                }\r\n");
-this.WriteObjects("            } ] {\r\n");
-this.WriteObjects("            Payment within 30 days to:\r\n");
-this.WriteObjects("            \\linebreak \\linebreak\r\n");
-this.WriteObjects("            Bankaustria\r\n");
-this.WriteObjects("            \\linebreak\r\n");
-this.WriteObjects("            BLZ: \\tab 12000\r\n");
-this.WriteObjects("            \\linebreak\r\n");
-this.WriteObjects("            Kontonummer: \\tab 123344345423\r\n");
-this.WriteObjects("            \\linebreak\r\n");
-this.WriteObjects("            BIC: \\tab BKAUATWW\r\n");
-this.WriteObjects("            \\linebreak\r\n");
-this.WriteObjects("            IBAN: \\tab AT55 1200 123344345423\r\n");
+this.WriteObjects("        \\paragraph {\r\n");
+this.WriteObjects("            ",  GetPaymentIntroduction() , "\r\n");
 this.WriteObjects("        }\r\n");
+this.WriteObjects("        ");
+#line 141 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+FormatBankAccount(); 
+#line 142 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("        \\paragraph [ Format { SpaceBefore = \"1cm\" } ] {\r\n");
-this.WriteObjects("            We thank you for your order!\r\n");
+this.WriteObjects("            ",  GetGreetingsLine() , "\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
-this.WriteObjects("        \\paragraph [ Format { SpaceBefore = \"3cm\" } ] {\r\n");
-this.WriteObjects("            My name\r\n");
-this.WriteObjects("        }\r\n");
+this.WriteObjects("        ");
+#line 147 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+FormatSignature(); 
+#line 148 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("    }\r\n");
 this.WriteObjects("}");
 

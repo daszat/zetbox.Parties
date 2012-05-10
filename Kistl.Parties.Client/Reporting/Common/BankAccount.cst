@@ -1,0 +1,25 @@
+﻿<%@ CodeTemplate Language="C#" 
+    Name="Common.BankAccount"
+    ClassName="Kistl.Parties.Client.Reporting.Common.BankAccount"
+    Inherits="Kistl.Parties.Client.Reporting.ReportTemplate" %>
+<%@ Import Namespace="System" %>
+<%@ Import Namespace="System.Collections.Generic" %>
+<%@ Import Namespace="System.Linq" %>
+<%@ Import Namespace="ZBox.Basic.Parties" %>
+\paragraph [ 
+            Format {
+                TabStops +=
+                {
+                  Position = "5cm"
+                }
+            } ] {
+Bankaustria
+\linebreak
+BLZ: \tab 12000
+\linebreak
+Kontonummer: \tab 123344345423
+\linebreak
+BIC: \tab BKAUATWW
+\linebreak
+IBAN: \tab AT55 1200 123344345423
+}
