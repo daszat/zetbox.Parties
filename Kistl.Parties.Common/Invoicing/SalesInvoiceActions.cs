@@ -65,5 +65,24 @@ namespace ZBox.Basic.Invoicing
         {
             e.Result = ReceiptAmountCalculator.GetIncomePaymentAmount(obj);
         }
+
+        [Invocation]
+        public static void FinalizeInvoiceCanExec(SalesInvoice obj, MethodReturnEventArgs<bool> e)
+        {
+            e.Result = obj.ObjectState == DataObjectState.Unmodified && obj.FinalizedOn.HasValue == false;
+        }
+
+        [Invocation]
+        public static void FinalizeInvoiceCanExecReason(SalesInvoice obj, MethodReturnEventArgs<string> e)
+        {
+            if (obj.FinalizedOn.HasValue)
+            {
+                e.Result = "Invoice is already finalized";
+            }
+            else if (obj.ObjectState != DataObjectState.Unmodified)
+            {
+                e.Result = "Only saved and unmodified invoices can be finilized";
+            }
+        }
     }
 }

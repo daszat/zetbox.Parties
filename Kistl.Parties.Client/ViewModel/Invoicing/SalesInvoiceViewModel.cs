@@ -28,6 +28,12 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing
             this.Invoice = obj;
         }
 
+        protected override void OnPropertyModelsByNameCreated()
+        {
+            base.OnPropertyModelsByNameCreated();
+            PropertyModelsByName["InvoiceID"].IsReadOnly = true;
+        }
+
         public new SalesInvoice Invoice { get; private set; }
 
         public override ViewModel Party

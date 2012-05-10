@@ -10,12 +10,12 @@ namespace ZBox.Basic.Invoicing
     public static class SalesInvoiceActions
     {
         [Invocation]
-        public static void NotifyPreSave(SalesInvoice obj)
+        public static void FinalizeInvoice(SalesInvoice obj)
         {
-            if (obj.ObjectState == DataObjectState.New && obj.InternalOrganization != null && obj.InternalOrganization.InvoiceGenerator != null)
-            {
-                obj.InvoiceID = obj.InternalOrganization.InvoiceGenerator.GetNextInvoiceID();
-            }
+            if (obj.FinalizedOn.HasValue) throw new InvalidOperationException("Sales Invoice is already finalized");
+
+            obj.InvoiceID = obj.InternalOrganization.InvoiceGenerator.GetNextInvoiceID();
+            obj.FinalizedOn = DateTime.Now;
         }
     }
 }

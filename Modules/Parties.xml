@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-10T14:59:21.7685776Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-10T17:37:26.8958319Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T20:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T20:47:04.534407Z</KistlBase:CreatedOn>
@@ -6663,6 +6663,44 @@ public static void isValid_Customer(SalesInvoice obj, PropertyIsValidEventArgs e
     <KistlBase:EagerLoading>false</KistlBase:EagerLoading>
     <KistlBase:RelationEnd>4b01a383-cd0b-45d8-95ff-09d71460b42d</KistlBase:RelationEnd>
   </KistlBase:ObjectReferenceProperty>
+  <KistlBase:DateTimeProperty ExportGuid="c06fc86b-31ee-46f4-9fab-013428039ccc">
+    <KistlBase:CategoryTags>Main</KistlBase:CategoryTags>
+    <KistlBase:ChangedOn>2012-05-10T15:32:20.2187024Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void get_FinalizedOn(SalesInvoice obj, PropertyGetterEventArgs&lt;DateTime?&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_FinalizedOn(SalesInvoice obj, PropertyPreSetterEventArgs&lt;DateTime?&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_FinalizedOn(SalesInvoice obj, PropertyPostSetterEventArgs&lt;DateTime?&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_FinalizedOn(SalesInvoice obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.FinalizedOn == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T15:32:20.2187024Z</KistlBase:CreatedOn>
+    <KistlBase:Label>Finalized on</KistlBase:Label>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>FinalizedOn</KistlBase:Name>
+    <KistlBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</KistlBase:ObjectClass>
+    <KistlBase:Properties_pos>401</KistlBase:Properties_pos>
+    <GUI:ValueModelDescriptor>fc74b434-3801-4e4a-ab67-e65a9e014005</GUI:ValueModelDescriptor>
+    <KistlBase:HasPersistentOrder>false</KistlBase:HasPersistentOrder>
+    <KistlBase:IsCalculated>false</KistlBase:IsCalculated>
+    <KistlBase:IsList>false</KistlBase:IsList>
+    <KistlBase:DateTimeStyle>1</KistlBase:DateTimeStyle>
+  </KistlBase:DateTimeProperty>
   <KistlBase:ObjectReferenceProperty ExportGuid="a93c7e31-1ad0-4e99-a4e6-3317320c3888">
     <KistlBase:CategoryTags>Summary, Main</KistlBase:CategoryTags>
     <KistlBase:ChangedOn>2011-08-05T16:31:13.076284Z</KistlBase:ChangedOn>
@@ -8915,6 +8953,31 @@ public static void CreateInvoiceDocument(SalesInvoice obj)
     <KistlBase:Label>Create document</KistlBase:Label>
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>CreateInvoiceDocument</KistlBase:Name>
+    <KistlBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</KistlBase:ObjectClass>
+  </KistlBase:Method>
+  <KistlBase:Method ExportGuid="93e3baf6-c10a-47cf-910e-c37740db7d79">
+    <KistlBase:ChangedOn>2012-05-10T15:37:26.8958319Z</KistlBase:ChangedOn>
+    <KistlBase:CodeTemplate>[Invocation]
+public static void FinalizeInvoice(SalesInvoice obj)
+{
+}
+
+[Invocation]
+public static void FinalizeInvoiceCanExec(SalesInvoice obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void FinalizeInvoiceCanExecReason(SalesInvoice obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+</KistlBase:CodeTemplate>
+    <KistlBase:CreatedOn>2012-05-10T15:33:53.4650358Z</KistlBase:CreatedOn>
+    <KistlBase:InvokeOnServer>true</KistlBase:InvokeOnServer>
+    <GUI:IsDisplayable>true</GUI:IsDisplayable>
+    <KistlBase:Label>Finalize</KistlBase:Label>
+    <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
+    <KistlBase:Name>FinalizeInvoice</KistlBase:Name>
     <KistlBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</KistlBase:ObjectClass>
   </KistlBase:Method>
   <KistlBase:Method ExportGuid="1ab2f81b-022a-4048-aae3-8a28fe9c3d17">
