@@ -20,7 +20,7 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing.Reports
         {
         }
 
-        protected override object LoadStatistic()
+        protected override object LoadStatistic(DateTime from, DateTime until)
         {
             return null;
         }

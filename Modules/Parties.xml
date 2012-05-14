@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-10T17:37:26.8958319Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-14T19:08:03.3119705Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T20:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T20:47:04.534407Z</KistlBase:CreatedOn>
@@ -9008,13 +9008,14 @@ public static void GetPurchaseInvoiceReport(StatisticActions obj, MethodReturnEv
     <KistlBase:ObjectClass>d3b90faa-f456-42f0-9b6b-3f78b7bb2afa</KistlBase:ObjectClass>
   </KistlBase:Method>
   <KistlBase:Method ExportGuid="b3052100-5477-4a15-869a-2561d0bb9bc4">
-    <KistlBase:ChangedOn>2011-12-30T13:52:11.727229Z</KistlBase:ChangedOn>
+    <KistlBase:ChangedOn>2012-05-14T17:08:03.3119705Z</KistlBase:ChangedOn>
     <KistlBase:CodeTemplate>[Invocation]
 public static void GetPurchaseQuoteReport(StatisticActions obj, MethodReturnEventArgs&lt;System.Object&gt; e, DateTime from, DateTime until)
 {
 }
 </KistlBase:CodeTemplate>
     <KistlBase:CreatedOn>2011-12-30T13:52:11.727229Z</KistlBase:CreatedOn>
+    <KistlBase:InvokeOnServer>true</KistlBase:InvokeOnServer>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>GetPurchaseQuoteReport</KistlBase:Name>
@@ -9035,13 +9036,14 @@ public static void GetSalesInvoiceReport(StatisticActions obj, MethodReturnEvent
     <KistlBase:ObjectClass>d3b90faa-f456-42f0-9b6b-3f78b7bb2afa</KistlBase:ObjectClass>
   </KistlBase:Method>
   <KistlBase:Method ExportGuid="1b794b9f-a9a3-4dc7-af30-02fce7db8091">
-    <KistlBase:ChangedOn>2011-10-21T16:13:21.995524Z</KistlBase:ChangedOn>
+    <KistlBase:ChangedOn>2012-05-14T17:08:03.3119705Z</KistlBase:ChangedOn>
     <KistlBase:CodeTemplate>[Invocation]
 public static void GetSalesQuoteReport(StatisticActions obj, MethodReturnEventArgs&lt;System.Object&gt; e, DateTime from, DateTime until)
 {
 }
 </KistlBase:CodeTemplate>
     <KistlBase:CreatedOn>2011-10-21T16:13:21.995524Z</KistlBase:CreatedOn>
+    <KistlBase:InvokeOnServer>true</KistlBase:InvokeOnServer>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
     <KistlBase:Module>73b3078c-d541-4015-b27e-7820408052e9</KistlBase:Module>
     <KistlBase:Name>GetSalesQuoteReport</KistlBase:Name>
@@ -10402,6 +10404,7 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <GUI:Parent>90992873-7109-496a-aba0-821406fb3556</GUI:Parent>
     <GUI:Children_pos>0</GUI:Children_pos>
     <GUI:Title>Purchase</GUI:Title>
+    <GUI:ViewModelDescriptor>5f1a0875-745c-45f6-a967-a36fff24e708</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
   <GUI:NavigationScreen ExportGuid="90992873-7109-496a-aba0-821406fb3556">
     <GUI:ChangedOn>2011-10-21T17:00:10.038524Z</GUI:ChangedOn>
@@ -10448,6 +10451,7 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <GUI:Parent>90992873-7109-496a-aba0-821406fb3556</GUI:Parent>
     <GUI:Children_pos>1</GUI:Children_pos>
     <GUI:Title>Sales</GUI:Title>
+    <GUI:ViewModelDescriptor>c5eb7c5a-7d81-4973-b5f3-6bd636dca3d6</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
   <GUI:NavigationScreen ExportGuid="59ad102f-cfe5-4ff1-8fef-65a67b240bd5">
     <GUI:ChangedOn>2011-10-21T16:15:29.742524Z</GUI:ChangedOn>
@@ -10456,6 +10460,7 @@ public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
     <GUI:Parent>12361d6d-dc7b-44d8-9b71-2a3373e7a1de</GUI:Parent>
     <GUI:Children_pos>0</GUI:Children_pos>
     <GUI:Title>Sales</GUI:Title>
+    <GUI:ViewModelDescriptor>27ec209b-6cc2-4a51-b8a8-a7604849328a</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
   <GUI:NavigationSearchScreen ExportGuid="8c839de7-f94f-48e0-b67b-575e698eebd4">
     <GUI:ChangedOn>2012-05-09T12:14:03.4193063Z</GUI:ChangedOn>
@@ -15357,6 +15362,69 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:FullName>Kistl.Parties.Client.CustomClientActionsModule</KistlBase:FullName>
     <KistlBase:Parent>2790156b-feec-4b8e-bbfd-2555f6bfff40</KistlBase:Parent>
   </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="c2e80a33-fdd0-46d4-bf5b-05ed88db2176">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-14T16:42:23.4454627Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-14T16:42:23.4454627Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.Reporting.Common.Address</KistlBase:FullName>
+    <KistlBase:Parent>ff351747-9c6f-4ad8-ae19-5ed074603237</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="0cf1893b-f69e-4878-80e2-81c9b54ce0c5">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-14T16:42:23.4454627Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-14T16:42:23.4454627Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.Reporting.Common.BankAccount</KistlBase:FullName>
+    <KistlBase:Parent>ff351747-9c6f-4ad8-ae19-5ed074603237</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="d304b278-f069-4228-be8e-c0176a3764f9">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-14T16:42:23.4454627Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-14T16:42:23.4454627Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.Reporting.Common.DocumentInfo</KistlBase:FullName>
+    <KistlBase:Parent>ff351747-9c6f-4ad8-ae19-5ed074603237</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="0e457ce5-c758-44d2-9a56-95319da13ca4">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-14T16:42:23.4454627Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-14T16:42:23.4454627Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.Reporting.Common.DocumentStyles</KistlBase:FullName>
+    <KistlBase:Parent>ff351747-9c6f-4ad8-ae19-5ed074603237</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="9d04666a-19c7-4853-b74e-a9c3bfe34506">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-14T16:42:23.4454627Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-14T16:42:23.4454627Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.Reporting.Common.PageSetup</KistlBase:FullName>
+    <KistlBase:Parent>ff351747-9c6f-4ad8-ae19-5ed074603237</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="7d062880-b2db-4a92-bd12-5a2415a7fe4d">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-14T16:42:23.4454627Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-14T16:42:23.4454627Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.Reporting.Common.Signature</KistlBase:FullName>
+    <KistlBase:Parent>ff351747-9c6f-4ad8-ae19-5ed074603237</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="bd9081f9-9fe1-47b6-866f-6ef21c756bcd">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-14T16:42:23.4454627Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-14T16:42:23.4454627Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.Reporting.Invoicing.SalesInvoice</KistlBase:FullName>
+    <KistlBase:Parent>ff351747-9c6f-4ad8-ae19-5ed074603237</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="19ea238d-5385-4e01-aec3-853431e5e84a">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-14T16:42:23.4454627Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-14T16:42:23.4454627Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.Reporting.ReportingHost</KistlBase:FullName>
+    <KistlBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</KistlBase:Parent>
+  </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="ff351747-9c6f-4ad8-ae19-5ed074603237">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-14T16:42:23.4454627Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-14T16:42:23.4454627Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>Kistl.Parties.Client.Reporting.ReportTemplate</KistlBase:FullName>
+    <KistlBase:Parent>0d086ab8-3c9a-4af5-8c65-8980b5501a56</KistlBase:Parent>
+  </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="66f0b655-387a-4b34-930e-701d89f57218">
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
     <KistlBase:ChangedOn>2012-04-10T17:25:08.5269201Z</KistlBase:ChangedOn>
@@ -15700,6 +15768,13 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:FullName>ZBox.Basic.Accounting.TransactionActions</KistlBase:FullName>
     <KistlBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</KistlBase:Parent>
   </KistlBase:TypeRef>
+  <KistlBase:TypeRef ExportGuid="ccee0662-cb9f-442a-aaf7-1d9c306bc48d">
+    <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
+    <KistlBase:ChangedOn>2012-05-14T16:42:23.4454627Z</KistlBase:ChangedOn>
+    <KistlBase:CreatedOn>2012-05-14T16:42:23.4454627Z</KistlBase:CreatedOn>
+    <KistlBase:FullName>ZBox.Basic.Invoicing.DefaultInvoiceGeneratorActions</KistlBase:FullName>
+    <KistlBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</KistlBase:Parent>
+  </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="9685b23c-d831-4457-a504-a6851a4ca21c">
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
     <KistlBase:ChangedOn>2011-11-22T19:47:51.413757Z</KistlBase:ChangedOn>
@@ -15946,6 +16021,12 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <GUI:Description>Specialized ViewModel for Persons</GUI:Description>
     <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
     <GUI:ViewModelRef>f69b3007-05a5-47db-b839-6f8e3218f9cf</GUI:ViewModelRef>
+  </GUI:ViewModelDescriptor>
+  <GUI:ViewModelDescriptor ExportGuid="f5b2305c-af5d-464a-9383-8bdd9d3b4243">
+    <GUI:DefaultEditorKind>cc9990fb-9de4-4b14-94f4-4fcc91d7eac1</GUI:DefaultEditorKind>
+    <GUI:Description>ScreenViewModel for an abstract Report screen</GUI:Description>
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:ViewModelRef>843bfb02-ca7c-496a-87b7-86e85a4e60d6</GUI:ViewModelRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewDescriptor ExportGuid="587e9967-f482-4dc9-bbee-42394655fbe8">
     <GUI:ControlKind>62ef08fd-326e-47cd-a4a1-79f56ea5943d</GUI:ControlKind>

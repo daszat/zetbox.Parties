@@ -51,6 +51,9 @@
       <HintPath>..\bin\CodeGen\bin\Debug\Common\Core.Generated\Kistl.Objects.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="LinqCube">
+      <HintPath>..\Libs\LinqCube.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\Libs\Kistl\Common\Core\log4net.dll</HintPath>
       <Private>False</Private>
@@ -63,11 +66,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cubes\SalesQuoteCube.cs" />
     <Compile Include="CustomServerActionsModule.cs" />
     <Compile Include="Invoicing\DefaultInvoiceGeneratorActions.cs" />
     <Compile Include="Invoicing\SalesInvoiceActions.cs" />
     <Compile Include="Invoicing\StatisticActionsActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kistl.Parties.Common\Kistl.Parties.Common.csproj">
+      <Project>{A3080370-A3AD-4810-AF93-CD9AB94A4385}</Project>
+      <Name>Kistl.Parties.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

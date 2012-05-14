@@ -12,6 +12,7 @@ namespace Kistl.Parties.Client.ViewModel
     using Kistl.Client.Presentables.FilterViewModels;
     using Kistl.Client.Presentables.DtoViewModels;
 
+    [ViewModelDescriptor]
     public abstract class ReportScreenViewModel : NavigationScreenViewModel
     {
         public new delegate ReportScreenViewModel Factory(IKistlContext dataCtx, ViewModel parent, NavigationScreen screen);
@@ -59,25 +60,28 @@ namespace Kistl.Parties.Client.ViewModel
         {
             get
             {
-                if (_statistic != null)
+                if (_statistic == null)
                 {
                     ViewModelFactory.CreateDelayedTask(Displayer, () =>
                     {
-                        _statistic = LoadStatistic();
-                        if (_statistic != null)
+                        if (_rangeMdl != null && _rangeMdl.From.Value.HasValue && _rangeMdl.To.Value.HasValue)
                         {
-                            var tmp = DtoBuilder.BuildFrom(_statistic, _appCtx, DataContext, this, _fileOpener);
+                            _statistic = LoadStatistic(_rangeMdl.From.Value.Value, _rangeMdl.To.Value.Value);
+                            if (_statistic != null)
+                            {
+                                var tmp = DtoBuilder.BuildFrom(_statistic, _appCtx, DataContext, this, _fileOpener);
 
-                            if (_statisticModel == null)
-                            {
-                                _statisticModel = tmp;
-                            }
-                            else
-                            {
-                                tmp = DtoBuilder.Combine(_statisticModel, tmp);
-                                if (tmp != _statisticModel)
+                                if (_statisticModel == null)
                                 {
                                     _statisticModel = tmp;
+                                }
+                                else
+                                {
+                                    tmp = DtoBuilder.Combine(_statisticModel, tmp);
+                                    if (tmp != _statisticModel)
+                                    {
+                                        _statisticModel = tmp;
+                                    }
                                 }
                             }
                         }
@@ -88,6 +92,6 @@ namespace Kistl.Parties.Client.ViewModel
             }
         }
 
-        protected abstract object LoadStatistic();
+        protected abstract object LoadStatistic(DateTime from, DateTime until);
     }
 }

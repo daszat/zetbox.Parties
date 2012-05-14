@@ -8,6 +8,7 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing.Reports
     using Kistl.Client.Presentables;
     using Kistl.Client.Presentables.GUI;
     using Kistl.App.GUI;
+    using ZBox.Basic.Invoicing;
 
     [ViewModelDescriptor]
     public class SalesQuoteReportScreenViewModel : ReportScreenViewModel
@@ -20,9 +21,9 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing.Reports
         {
         }
 
-        protected override object LoadStatistic()
+        protected override object LoadStatistic(DateTime from, DateTime until)
         {
-            return null;
+            return NamedObjects.Invoicing.StatisticActions.Find(DataContext).GetSalesQuoteReport(from, until);
         }
     }
 }

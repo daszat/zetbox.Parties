@@ -67,6 +67,7 @@
     <Compile Include="Accounting\Receipt_TransactionActions.cs" />
     <Compile Include="Accounting\TransactionActions.cs" />
     <Compile Include="CustomCommonActionsModule.cs" />
+    <Compile Include="Dtos\SalesQuoteReport.cs" />
     <Compile Include="Invoicing\AbstractInvoiceGeneratorActions.cs" />
     <Compile Include="Invoicing\OtherExpenseReceiptActions.cs" />
     <Compile Include="Invoicing\OtherIncomeReceiptActions.cs" />

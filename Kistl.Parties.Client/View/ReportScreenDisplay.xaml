@@ -34,7 +34,7 @@
       </ItemsControl>
     </StackPanel>
 
-    <ctrls:DtoDisplayer DataContext="{Binding Statistik}"
+    <ctrls:DtoDisplayer DataContext="{Binding Statistic}"
                       Margin="10" />
   </DockPanel>
 </UserControl>
