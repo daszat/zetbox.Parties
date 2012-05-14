@@ -133,7 +133,7 @@
         <% FormatMessage(); %>
 
         \paragraph [ Style = "Heading1" Format { SpaceBefore = "1cm" } ] {
-            Conditions
+            <%= GetPaymentTitle() %>
         }
         \paragraph {
             <%= GetPaymentIntroduction() %>

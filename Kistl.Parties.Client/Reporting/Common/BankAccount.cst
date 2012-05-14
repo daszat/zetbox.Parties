@@ -19,7 +19,6 @@
             } ] {
 
 <%= Format(account.Name) %>
-
 <% if(!string.IsNullOrEmpty(account.BIC) && !string.IsNullOrEmpty(account.IBAN)) { %>
 \linebreak
 BIC: \tab <%= Format(account.BIC) %>

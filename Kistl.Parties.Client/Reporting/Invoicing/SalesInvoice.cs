@@ -34,7 +34,7 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
             if (invoice.Customer.Party is ZBox.Basic.Parties.Organization)
             {
                 var org = (ZBox.Basic.Parties.Organization)invoice.Customer.Party;
-                this.WriteObjects("UID: ", org.TaxIDNumber);
+                this.WriteObjects(string.Format(SalesInvoiceResources.UID, org.TaxIDNumber));
             }
         }
 
@@ -46,33 +46,34 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
         protected virtual void FormatIntOrgTaxNumber()
         {
             var org = (ZBox.Basic.Parties.Organization)invoice.InternalOrganization.Party;
-            this.WriteObjects("UID: ", Format(org.TaxIDNumber));
+            this.WriteObjects(string.Format(SalesInvoiceResources.UID, org.TaxIDNumber));
         }
 
         protected virtual string GetSubject()
         {
-            return Format(string.Format("Subject: Invoice {0}", invoice.FinalizedOn.HasValue ? invoice.InvoiceID : "----/--"));
+            return Format(string.Format(SalesInvoiceResources.Subject, invoice.FinalizedOn.HasValue ? invoice.InvoiceID : "----/--"));
         }
 
         protected virtual string GetCityAndDate()
         {
-            return string.Format("{0}, {1}", invoice.InternalOrganization.Party.Address.City, FormatDate(invoice.Date));
+            return string.Format(SalesInvoiceResources.CityAndDate, invoice.InternalOrganization.Party.Address.City, FormatDate(invoice.Date));
         }
 
         protected virtual string GetServicesHeading()
         {
-            return "Services";
+            return SalesInvoiceResources.ServicesHeading;
         }
 
         protected virtual string GetPeriod()
         {
-            return Format(string.Format("For the period {0}", invoice.Period));
+            return Format(string.Format(SalesInvoiceResources.Period, invoice.Period));
         }
 
         protected virtual IEnumerable<SalesInvoiceItem> GetItems()
         {
             return invoice.Items;
         }
+
         protected virtual bool RenderSubTotal()
         {
             return invoice.Items.Count > 1;
@@ -80,7 +81,7 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual string GetSubTotalDescription()
         {
-            return "Sub total net";
+            return SalesInvoiceResources.SubTotalDescription;
         }
         protected virtual string GetSubTotalAmountNet()
         {
@@ -94,7 +95,7 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual string GetVATDescription(VATType vat)
         {
-            return Format(string.Format("VAT {0}", vat.Description));
+            return Format(string.Format(SalesInvoiceResources.VATDescription, vat.Description));
         }
 
         protected virtual string GetVATSum(VATType vat)
@@ -104,7 +105,7 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual string GetTotalDescription()
         {
-            return "Total";
+            return SalesInvoiceResources.TotalDescription;
         }
         protected virtual string GetTotalAmount()
         {
@@ -121,9 +122,14 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
             }
         }
 
+        protected virtual string GetPaymentTitle()
+        {
+            return SalesInvoiceResources.PaymentTitle;
+        }
+
         protected virtual string GetPaymentIntroduction()
         {
-            return string.Format("Payment until {0} to:", FormatDate(invoice.DueDate));
+            return string.Format(SalesInvoiceResources.PaymentIntroduction, FormatDate(invoice.DueDate));
         }
 
         protected virtual void FormatBankAccount()
@@ -133,7 +139,7 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual string GetGreetingsLine()
         {
-            return "We thank you for your order!";
+            return SalesInvoiceResources.GreetingsLine;
         }
 
         protected virtual void FormatSignature()
@@ -144,11 +150,10 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
             }
         }
 
-        protected virtual string GetSubjectHeader() { return "Subject"; }
-        protected virtual string GetQuantityHeader() { return "Quantity"; }
-        protected virtual string GetUnitPriceHeader() { return "Unit price"; }
-        protected virtual string GetVATHeader() { return "VAT"; }
-        protected virtual string GetAmountHeader() { return "Amount"; }
-
+        protected virtual string GetSubjectHeader() { return SalesInvoiceResources.SubjectHeader; }
+        protected virtual string GetQuantityHeader() { return SalesInvoiceResources.QuantityHeader; }
+        protected virtual string GetUnitPriceHeader() { return SalesInvoiceResources.UnitPriceHeader; }
+        protected virtual string GetVATHeader() { return SalesInvoiceResources.VATHeader; }
+        protected virtual string GetAmountHeader() { return SalesInvoiceResources.AmountHeader; }
     }
 }

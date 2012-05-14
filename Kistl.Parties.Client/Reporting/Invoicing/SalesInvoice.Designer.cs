@@ -186,7 +186,7 @@ FormatMessage();
 #line 134 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("        \\paragraph [ Style = \"Heading1\" Format { SpaceBefore = \"1cm\" } ] {\r\n");
-this.WriteObjects("            Conditions\r\n");
+this.WriteObjects("            ",  GetPaymentTitle() , "\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("        \\paragraph {\r\n");
 this.WriteObjects("            ",  GetPaymentIntroduction() , "\r\n");
