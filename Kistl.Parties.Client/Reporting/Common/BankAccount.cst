@@ -14,7 +14,7 @@
             Format {
                 TabStops +=
                 {
-                  Position = "5cm"
+                  Position = "4cm"
                 }
             } ] {
 

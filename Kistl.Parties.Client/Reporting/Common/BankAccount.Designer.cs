@@ -38,7 +38,7 @@ this.WriteObjects("\\paragraph [ \r\n");
 this.WriteObjects("            Format {\r\n");
 this.WriteObjects("                TabStops +=\r\n");
 this.WriteObjects("                {\r\n");
-this.WriteObjects("                  Position = \"5cm\"\r\n");
+this.WriteObjects("                  Position = \"4cm\"\r\n");
 this.WriteObjects("                }\r\n");
 this.WriteObjects("            } ] {\r\n");
 this.WriteObjects("\r\n");

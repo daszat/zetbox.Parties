@@ -142,7 +142,7 @@
     <value>Services</value>
   </data>
   <data name="Subject" xml:space="preserve">
-    <value>Subject: Invoice {0}</value>
+    <value>Invoice {0}</value>
   </data>
   <data name="SubjectHeader" xml:space="preserve">
     <value>Subject</value>

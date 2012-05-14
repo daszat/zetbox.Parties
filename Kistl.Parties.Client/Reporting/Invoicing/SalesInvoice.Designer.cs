@@ -103,7 +103,7 @@ this.WriteObjects("        \\paragraph {\r\n");
 this.WriteObjects("            ",  GetPeriod() , "\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
-this.WriteObjects("        \\table [ Style = \"Compact\" Borders { Width = 0.75 } ] {\r\n");
+this.WriteObjects("        \\table [ Style = \"Compact\" Borders { Width = 0.25 } ] {\r\n");
 this.WriteObjects("            \\columns {\r\n");
 this.WriteObjects("                \\column [ Width = \"6cm\" ]\r\n");
 this.WriteObjects("                \\column [ Width = \"2cm\" Format { Alignment = Right } ]\r\n");

@@ -133,7 +133,7 @@ namespace Kistl.Parties.Client.Reporting.Invoicing {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Subject: Invoice {0}.
+        ///   Looks up a localized string similar to Invoice {0}.
         /// </summary>
         internal static string Subject {
             get {

@@ -16,8 +16,8 @@
 
     Compact : Normal {
       ParagraphFormat {
-        SpaceBefore = 0
-        SpaceAfter = 0
+        SpaceBefore = "0.07cm"
+        SpaceAfter = "0.07cm"
       }
     }
 
@@ -26,7 +26,7 @@
     }
 	
     Heading1 {
-      Font { Name = "Verdana" Size = 16 Bold = true }
+      Font { Size = 14 Bold = true }
       ParagraphFormat {
 		SpaceBefore = 6
         SpaceAfter = 6
@@ -37,7 +37,7 @@
     }
 
     Heading2 {
-      Font { Size = 14 }
+      Font { Size = 12 Bold = true }
       ParagraphFormat {
         SpaceBefore = 6
 		SpaceAfter = 3
@@ -47,7 +47,7 @@
     }
 
     Heading3 {
-      Font { Size = 12 Italic = true }
+      Font { Size = 11 Bold = true }
       ParagraphFormat {
         SpaceAfter = 3
         OutlineLevel = Level3
@@ -56,7 +56,7 @@
     }
 
     Heading4 {
-      Font { Size = 12 }
+      Font { Size = 10 Bold = true }
       ParagraphFormat {
         SpaceAfter = 2
         OutlineLevel = Level4

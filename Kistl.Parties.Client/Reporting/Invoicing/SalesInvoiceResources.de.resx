@@ -142,7 +142,7 @@
     <value>Leistungsumfang</value>
   </data>
   <data name="Subject" xml:space="preserve">
-    <value>Betreff: Rechnung Nr. {0}</value>
+    <value>Rechnung Nr. {0}</value>
   </data>
   <data name="SubjectHeader" xml:space="preserve">
     <value>Position</value>

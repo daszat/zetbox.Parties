@@ -63,7 +63,7 @@
             <%= GetPeriod() %>
         }
 
-        \table [ Style = "Compact" Borders { Width = 0.75 } ] {
+        \table [ Style = "Compact" Borders { Width = 0.25 } ] {
             \columns {
                 \column [ Width = "6cm" ]
                 \column [ Width = "2cm" Format { Alignment = Right } ]
