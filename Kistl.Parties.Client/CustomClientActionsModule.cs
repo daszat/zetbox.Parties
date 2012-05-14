@@ -25,8 +25,7 @@ namespace Kistl.Parties.Client
 
             moduleBuilder
                 .Register<Reporting.ReportingHost>(c => new Reporting.ReportingHost(
-                        typeof(Reporting.ReportingHost).Namespace,
-                        typeof(Reporting.ReportingHost).Assembly,
+                        null,
                         c.Resolve<Func<IKistlContext>>(),
                         c.Resolve<IViewModelFactory>(),
                         c.Resolve<IFrozenContext>(),

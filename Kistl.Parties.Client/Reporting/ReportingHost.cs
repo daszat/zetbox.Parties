@@ -46,11 +46,17 @@ namespace Kistl.Parties.Client.Reporting
         private TextWriter contextWriter = null;
         //private List<string> _tempDirs = new List<string>();
 
-        // TODO: Move that class into a common reporting assembly and create a own Ini50 derived class with configuration
-        internal ReportingHost(string ns, Assembly a, Func<IKistlContext> ctxFactory, IViewModelFactory vmFactory, IFrozenContext frozenCtx, IFileOpener fileOpener)
+        // TODO: Move that class into a common reporting assembly and create a own derived class with configuration
+        /// <summary>
+        /// Creates a new reporting host
+        /// </summary>
+        /// <param name="templateAssembly">null, if default templates should be used, else a assembly with templates.</param>
+        /// <param name="ctxFactory"></param>
+        /// <param name="vmFactory"></param>
+        /// <param name="frozenCtx"></param>
+        /// <param name="fileOpener"></param>
+        public ReportingHost(Assembly templateAssembly, Func<IKistlContext> ctxFactory, IViewModelFactory vmFactory, IFrozenContext frozenCtx, IFileOpener fileOpener)
         {
-            if (string.IsNullOrEmpty(ns)) throw new ArgumentNullException("ns");
-            if (a == null) throw new ArgumentNullException("a");
             if (vmFactory == null) throw new ArgumentNullException("vmFactory");
             if (ctxFactory == null) throw new ArgumentNullException("ctxFactory");
             if (frozenCtx == null) throw new ArgumentNullException("frozenCtx");
@@ -62,8 +68,9 @@ namespace Kistl.Parties.Client.Reporting
             _fileOpener = fileOpener;
 
             var settings = new NameValueCollection();
-            settings["reporttemplatenamespace"] = ns;
-            settings["reporttemplateassembly"] = a.FullName;
+            settings["reporttemplateassembly"] = templateAssembly != null ? templateAssembly.FullName : null;
+            settings["reporttemplatenamespace"] = typeof(ReportingHost).Namespace;
+            settings["basereporttemplatenamespace"] = typeof(ReportingHost).Namespace;
 
             // Default Inititalization
             Initialize(settings);
@@ -121,15 +128,32 @@ namespace Kistl.Parties.Client.Reporting
 
         private void CallTemplateToContext(string templateClass, params object[] parameters)
         {
-            var providerName = String.Format(
-                "{0}.{1}, {2}",
-                Settings["reporttemplatenamespace"],
-                templateClass,
-                Settings["reporttemplateassembly"]);
-            Type t = Type.GetType(providerName);
+            string templateName;
+            if (!string.IsNullOrEmpty(Settings["reporttemplateassembly"]))
+            {
+                templateName = String.Format(
+                    "{0}.{1}, {2}",
+                    Settings["reporttemplatenamespace"],
+                    templateClass,
+                    Settings["reporttemplateassembly"]);
+            }
+            else
+            {
+                templateName = String.Format(
+                    "{0}.{1}",
+                    Settings["reporttemplatenamespace"],
+                    templateClass);
+            }
+            Type t = Type.GetType(templateName);
             if (t == null)
             {
-                throw new ArgumentOutOfRangeException("templateClass", String.Format("No class found for {0}", templateClass));
+                var defaultName = String.Format("{0}.{1}", this.Settings["basereporttemplatenamespace"], templateClass);
+                t = Type.GetType(defaultName);
+
+                if (t == null)
+                {
+                    throw new ArgumentOutOfRangeException("templateClass", String.Format("No class found for {0}", templateClass));
+                }
             }
 
             var template = (CodeTemplate)Activator.CreateInstance(t, new object[] { this }.Concat(parameters).ToArray());
