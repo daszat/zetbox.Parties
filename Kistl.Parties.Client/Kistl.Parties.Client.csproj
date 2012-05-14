@@ -273,6 +273,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>BankAccountResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.de.resx" />
     <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>SalesInvoiceResources.Designer.cs</LastGenOutput>
