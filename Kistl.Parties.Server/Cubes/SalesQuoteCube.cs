@@ -21,21 +21,24 @@ namespace Kistl.Parties.Server.Cubes
 
         public SalesQuoteCube(DateTime from, DateTime thru)
         {
-            DimDate = new Dimension<DateTime, SalesQuoteCubeRecord>("Date", g => g.Date.Date)
+            this.from = from;
+            this.thru = thru;
+
+            DimIssueDate = new Dimension<DateTime, SalesQuoteCubeRecord>("IssueDate", g => g.Date.Date)
                 .BuildYearRange(from.Date, thru.Date)
                 .BuildMonths()
                 .Build<DateTime, SalesQuoteCubeRecord>();
 
             SumTotal = new DecimalSumMeasure<SalesQuoteCubeRecord>("Total", g => g.Total);
-            SumTotalCorrected = new DecimalSumMeasure<SalesQuoteCubeRecord>("TotalCorrected", g => g.Total * g.Chance);
+            SumTotalCorrected = new DecimalSumMeasure<SalesQuoteCubeRecord>("TotalCorrected", g => g.Total * g.Chance / 100.0M);
 
             QrySalesQuotesMonth = new Query<SalesQuoteCubeRecord>("Sales quotes / month")
-                .WithPrimaryDimension(DimDate)
+                .WithPrimaryDimension(DimIssueDate)
                 .WithMeasure(SumTotal)
                 .WithMeasure(SumTotalCorrected);
         }
 
-        public readonly Dimension<DateTime, SalesQuoteCubeRecord> DimDate;
+        public readonly Dimension<DateTime, SalesQuoteCubeRecord> DimIssueDate;
 
         public readonly DecimalSumMeasure<SalesQuoteCubeRecord> SumTotal;
         public readonly DecimalSumMeasure<SalesQuoteCubeRecord> SumTotalCorrected;
@@ -50,7 +53,7 @@ namespace Kistl.Parties.Server.Cubes
                 {
                     Date = g.IssueDate,
                     Total = g.Items.OfType<SalesQuoteItem>().Sum(i => i.AmountNet),
-                    Chance = g.Chance ?? 1.0M
+                    Chance = g.Chance ?? 100.0M
                 });
         }
 

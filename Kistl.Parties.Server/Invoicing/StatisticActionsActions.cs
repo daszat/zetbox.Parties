@@ -31,13 +31,13 @@ namespace ZBox.Basic.Invoicing
 
                 var result = new SalesQuoteReport()
                 {
-                    //From = from,
-                    //Until = until,
-                    Total = cube.Result[cube.QrySalesQuotesMonth][cube.DimDate][cube.SumTotal].DecimalValue,
-                    TotalCorrected = cube.Result[cube.QrySalesQuotesMonth][cube.DimDate][cube.SumTotalCorrected].DecimalValue,
+                    From = from,
+                    Until = until,
+                    Total = cube.Result[cube.QrySalesQuotesMonth][cube.DimIssueDate][cube.SumTotal].DecimalValue,
+                    TotalCorrected = cube.Result[cube.QrySalesQuotesMonth][cube.DimIssueDate][cube.SumTotalCorrected].DecimalValue,
                 };
 
-                foreach (var year in cube.DimDate)
+                foreach (var year in cube.DimIssueDate)
                 foreach (var month in year)
                 {
                     var entry = cube.Result[cube.QrySalesQuotesMonth][year][month];
