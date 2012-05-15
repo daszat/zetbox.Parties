@@ -11,7 +11,7 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing.Reports
     using ZBox.Basic.Invoicing;
 
     [ViewModelDescriptor]
-    public class SalesQuoteReportScreenViewModel : ReportScreenViewModel
+    public class SalesQuoteReportScreenViewModel : NavigationReportScreenViewModel
     {
         public new delegate SalesQuoteReportScreenViewModel Factory(IKistlContext dataCtx, ViewModel parent, NavigationScreen screen);
 

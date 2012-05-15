@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-14T19:08:03.3119705Z" xmlns="http://dasz.at/Kistl">
+<KistlPackaging xmlns:KistlBase="Kistl.App.Base" xmlns:GUI="Kistl.App.GUI" date="2012-05-15T14:32:08.557789Z" xmlns="http://dasz.at/Kistl">
   <KistlBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <KistlBase:ChangedOn>2011-11-08T20:47:04.534407Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T20:47:04.534407Z</KistlBase:CreatedOn>
@@ -15464,6 +15464,7 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
     <KistlBase:ChangedOn>2011-11-08T19:21:05.280314Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T19:21:05.280314Z</KistlBase:CreatedOn>
+    <KistlBase:Deleted>true</KistlBase:Deleted>
     <KistlBase:FullName>Kistl.Parties.Client.View.ReportScreenDisplay</KistlBase:FullName>
     <KistlBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</KistlBase:Parent>
   </KistlBase:TypeRef>
@@ -15654,7 +15655,7 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:ChangedOn>2011-11-08T19:21:05.280314Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T19:21:05.280314Z</KistlBase:CreatedOn>
     <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.Reports.PurchaseInvoiceReportScreenViewModel</KistlBase:FullName>
-    <KistlBase:Parent>843bfb02-ca7c-496a-87b7-86e85a4e60d6</KistlBase:Parent>
+    <KistlBase:Parent>0ddd43e0-5e6a-47cf-9610-26f13273fe22</KistlBase:Parent>
   </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="aedca2c4-3388-4752-9d36-e97d3897aa50">
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
@@ -15668,7 +15669,7 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:ChangedOn>2011-11-08T19:21:05.280314Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T19:21:05.280314Z</KistlBase:CreatedOn>
     <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.Reports.SalesInvoiceReportScreenViewModel</KistlBase:FullName>
-    <KistlBase:Parent>843bfb02-ca7c-496a-87b7-86e85a4e60d6</KistlBase:Parent>
+    <KistlBase:Parent>0ddd43e0-5e6a-47cf-9610-26f13273fe22</KistlBase:Parent>
   </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="5bbf7e33-c6bb-43ed-b982-84c6f1593b96">
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
@@ -15682,7 +15683,7 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:ChangedOn>2011-11-08T19:21:05.280314Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T19:21:05.280314Z</KistlBase:CreatedOn>
     <KistlBase:FullName>Kistl.Parties.Client.ViewModel.Invoicing.Reports.SalesQuoteReportScreenViewModel</KistlBase:FullName>
-    <KistlBase:Parent>843bfb02-ca7c-496a-87b7-86e85a4e60d6</KistlBase:Parent>
+    <KistlBase:Parent>0ddd43e0-5e6a-47cf-9610-26f13273fe22</KistlBase:Parent>
   </KistlBase:TypeRef>
   <KistlBase:TypeRef ExportGuid="47c2555c-6363-46e9-bb81-f20172fe9913">
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
@@ -15737,6 +15738,7 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
     <KistlBase:ChangedOn>2011-11-08T19:21:05.280314Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T19:21:05.280314Z</KistlBase:CreatedOn>
+    <KistlBase:Deleted>true</KistlBase:Deleted>
     <KistlBase:FullName>Kistl.Parties.Client.ViewModel.ReportScreenViewModel</KistlBase:FullName>
     <KistlBase:Parent>353304f7-dc53-472a-a800-c9fa64977418</KistlBase:Parent>
   </KistlBase:TypeRef>
@@ -15744,6 +15746,7 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <KistlBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</KistlBase:Assembly>
     <KistlBase:ChangedOn>2011-11-08T19:21:05.280314Z</KistlBase:ChangedOn>
     <KistlBase:CreatedOn>2011-11-08T19:21:05.280314Z</KistlBase:CreatedOn>
+    <KistlBase:Deleted>true</KistlBase:Deleted>
     <KistlBase:FullName>Kistl.Parties.Client.ViewModel.ReportScreenViewModel+Factory</KistlBase:FullName>
     <KistlBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</KistlBase:Parent>
   </KistlBase:TypeRef>
@@ -16011,35 +16014,11 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
     <GUI:ViewModelRef>0f4cfbc8-9f75-4c9e-af15-efcb5e218ac2</GUI:ViewModelRef>
   </GUI:ViewModelDescriptor>
-  <GUI:ViewModelDescriptor ExportGuid="536f76a1-5856-4622-ac4f-b30c90a7edf9">
-    <GUI:DefaultEditorKind>62ef08fd-326e-47cd-a4a1-79f56ea5943d</GUI:DefaultEditorKind>
-    <GUI:Description>Specialized ViewModel for a List of ParyRoles, displaying one in a Details Mode</GUI:Description>
-    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
-    <GUI:ViewModelRef>ddd9fec6-7e19-438d-86dc-44d2bffe6f80</GUI:ViewModelRef>
-  </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="dad0f30a-a830-4a0c-a84f-22270d211753">
     <GUI:Description>Specialized ViewModel for Persons</GUI:Description>
     <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
     <GUI:ViewModelRef>f69b3007-05a5-47db-b839-6f8e3218f9cf</GUI:ViewModelRef>
   </GUI:ViewModelDescriptor>
-  <GUI:ViewModelDescriptor ExportGuid="f5b2305c-af5d-464a-9383-8bdd9d3b4243">
-    <GUI:DefaultEditorKind>cc9990fb-9de4-4b14-94f4-4fcc91d7eac1</GUI:DefaultEditorKind>
-    <GUI:Description>ScreenViewModel for an abstract Report screen</GUI:Description>
-    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
-    <GUI:ViewModelRef>843bfb02-ca7c-496a-87b7-86e85a4e60d6</GUI:ViewModelRef>
-  </GUI:ViewModelDescriptor>
-  <GUI:ViewDescriptor ExportGuid="587e9967-f482-4dc9-bbee-42394655fbe8">
-    <GUI:ControlKind>62ef08fd-326e-47cd-a4a1-79f56ea5943d</GUI:ControlKind>
-    <GUI:ControlRef>1dc1b216-87bc-42df-b252-6ad9ab26cd4e</GUI:ControlRef>
-    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
-    <GUI:Toolkit>0</GUI:Toolkit>
-  </GUI:ViewDescriptor>
-  <GUI:ViewDescriptor ExportGuid="03be214b-6811-4d1c-a6ea-a5bf7ad44dd5">
-    <GUI:ControlKind>cc9990fb-9de4-4b14-94f4-4fcc91d7eac1</GUI:ControlKind>
-    <GUI:ControlRef>c0d2864c-d97f-4467-a36f-b7c6ac1b1464</GUI:ControlRef>
-    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
-    <GUI:Toolkit>0</GUI:Toolkit>
-  </GUI:ViewDescriptor>
   <GUI:NavigationSearchScreen ExportGuid="9a7eab41-2d5c-4f03-884d-891d3066d75a">
     <GUI:ChangedOn>2011-11-08T21:28:37.663006Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-11-04T15:13:26.107102Z</GUI:CreatedOn>
@@ -16085,14 +16064,6 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
     <GUI:Title>ZetBox Parties</GUI:Title>
   </GUI:NavigationScreen>
-  <GUI:ControlKind ExportGuid="62ef08fd-326e-47cd-a4a1-79f56ea5943d">
-    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
-    <GUI:Name>ZBox.Basic.Parties.PartyRolesDisplay</GUI:Name>
-  </GUI:ControlKind>
-  <GUI:ControlKind ExportGuid="cc9990fb-9de4-4b14-94f4-4fcc91d7eac1">
-    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
-    <GUI:Name>ZBox.Basic.Parties.ReportScreenDisplay</GUI:Name>
-  </GUI:ControlKind>
   <GUI:Application ExportGuid="d80b20cf-8a8e-4300-83cd-129eb28f7d9b">
     <GUI:ChangedOn>2011-10-20T21:53:52.218622Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-10-20T21:53:52.218622Z</GUI:CreatedOn>

@@ -10,7 +10,7 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing.Reports
     using Kistl.App.GUI;
 
     [ViewModelDescriptor]
-    public class PurchaseInvoiceReportScreenViewModel : ReportScreenViewModel
+    public class PurchaseInvoiceReportScreenViewModel : NavigationReportScreenViewModel
     {
         public new delegate PurchaseInvoiceReportScreenViewModel Factory(IKistlContext dataCtx, ViewModel parent, NavigationScreen screen);
 

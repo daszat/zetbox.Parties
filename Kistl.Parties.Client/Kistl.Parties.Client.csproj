@@ -182,7 +182,6 @@
     <Compile Include="ViewModel\Parties\OrganizationViewModel.cs" />
     <Compile Include="ViewModel\Parties\PartyViewModel.cs" />
     <Compile Include="ViewModel\Parties\PersonViewModel.cs" />
-    <Compile Include="ViewModel\ReportScreenViewModel.cs" />
     <Compile Include="View\Accounting\LinkReceiptTransactionDialog.xaml.cs">
       <DependentUpon>LinkReceiptTransactionDialog.xaml</DependentUpon>
     </Compile>
@@ -197,9 +196,6 @@
     </Compile>
     <Compile Include="View\Invoicing\InvoiceEditor.xaml.cs">
       <DependentUpon>InvoiceEditor.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\ReportScreenDisplay.xaml.cs">
-      <DependentUpon>ReportScreenDisplay.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -226,10 +222,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="View\Invoicing\InvoiceEditor.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\ReportScreenDisplay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
