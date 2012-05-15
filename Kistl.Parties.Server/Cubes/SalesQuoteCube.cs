@@ -11,6 +11,7 @@ namespace Kistl.Parties.Server.Cubes
     public class SalesQuoteCubeRecord
     {
         public DateTime Date { get; set; }
+        public string Party { get; set; }
         public decimal Total { get; set; }
         public decimal Chance { get; set; }
     }
@@ -19,7 +20,7 @@ namespace Kistl.Parties.Server.Cubes
     {
         private readonly DateTime from, thru;
 
-        public SalesQuoteCube(DateTime from, DateTime thru)
+        public SalesQuoteCube(IKistlContext ctx, DateTime from, DateTime thru)
         {
             this.from = from;
             this.thru = thru;
@@ -29,16 +30,22 @@ namespace Kistl.Parties.Server.Cubes
                 .BuildMonths()
                 .Build<DateTime, SalesQuoteCubeRecord>();
 
+            DimParty = new Dimension<string, SalesQuoteCubeRecord>("Party", p => p.Party)
+                .BuildCustomerEnum(ctx)
+                .Build<string, SalesQuoteCubeRecord>();
+
             SumTotal = new DecimalSumMeasure<SalesQuoteCubeRecord>("Total", g => g.Total);
             SumTotalCorrected = new DecimalSumMeasure<SalesQuoteCubeRecord>("TotalCorrected", g => g.Total * g.Chance / 100.0M);
 
             QrySalesQuotesMonth = new Query<SalesQuoteCubeRecord>("Sales quotes / month")
-                .WithPrimaryDimension(DimIssueDate)
+                .WithSecondaryDimension(DimIssueDate)
+                .WithSecondaryDimension(DimParty)
                 .WithMeasure(SumTotal)
                 .WithMeasure(SumTotalCorrected);
         }
 
         public readonly Dimension<DateTime, SalesQuoteCubeRecord> DimIssueDate;
+        public readonly Dimension<string, SalesQuoteCubeRecord> DimParty;
 
         public readonly DecimalSumMeasure<SalesQuoteCubeRecord> SumTotal;
         public readonly DecimalSumMeasure<SalesQuoteCubeRecord> SumTotalCorrected;
@@ -49,12 +56,15 @@ namespace Kistl.Parties.Server.Cubes
         {
             return ctx.GetQuery<SalesQuote>()
                 .Where(q => q.IssueDate >= from && q.IssueDate <= thru)
+                .ToList()
                 .Select(g => new SalesQuoteCubeRecord()
                 {
                     Date = g.IssueDate,
+                    Party = g.Customer.Party.ToString(),
                     Total = g.Items.OfType<SalesQuoteItem>().Sum(i => i.AmountNet),
                     Chance = g.Chance ?? 100.0M
-                });
+                })
+                .AsQueryable();
         }
 
         public CubeResult Result { get; private set; }

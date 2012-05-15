@@ -26,27 +26,76 @@ namespace ZBox.Basic.Invoicing
         {
             using (var ctx = _srvCtxFactory())
             {
-                var cube = new SalesQuoteCube(from, until);
-                cube.Execute(ctx);
+                var quoteCube = new SalesQuoteCube(ctx, from, until);
+                quoteCube.Execute(ctx);
+
+                var itemCube = new SalesQuoteItemCube(ctx, from, until);
+                itemCube.Execute(ctx);
 
                 var result = new SalesQuoteReport()
                 {
                     From = from,
                     Until = until,
-                    Total = cube.Result[cube.QrySalesQuotesMonth][cube.DimIssueDate][cube.SumTotal].DecimalValue,
-                    TotalCorrected = cube.Result[cube.QrySalesQuotesMonth][cube.DimIssueDate][cube.SumTotalCorrected].DecimalValue,
+                    Issued = new SalesQuoteReport.DtoIssued()
+                    {
+                        Total = quoteCube.Result[quoteCube.QrySalesQuotesMonth][quoteCube.DimIssueDate][quoteCube.SumTotal].DecimalValue,
+                        TotalCorrected = quoteCube.Result[quoteCube.QrySalesQuotesMonth][quoteCube.DimIssueDate][quoteCube.SumTotalCorrected].DecimalValue,
+                    },
+                    Delivery = new SalesQuoteReport.DtoDelivery()
+                    {
+                        Total = itemCube.Result[itemCube.QrySalesQuotesItemMonth][itemCube.DimDeliveryDate][itemCube.SumTotal].DecimalValue,
+                        TotalCorrected = itemCube.Result[itemCube.QrySalesQuotesItemMonth][itemCube.DimDeliveryDate][itemCube.SumTotalCorrected].DecimalValue,
+                    },
                 };
 
-                foreach (var year in cube.DimIssueDate)
-                foreach (var month in year)
+                // Issue
+                foreach (var month in quoteCube.DimIssueDate.SelectMany(y => y.Children))
                 {
-                    var entry = cube.Result[cube.QrySalesQuotesMonth][year][month];
-                    result.SalesQuotesMonths.Add(new SalesQuotesMonth()
+                    var entry = quoteCube.Result[quoteCube.QrySalesQuotesMonth][month.Parent][month];
+                    result.Issued.Details.SalesQuotesIssuedMonths.Add(new SalesQuotesMonth()
                     {
-                        Year = year.Label,
+                        Year = month.Parent.Label,
                         Month = month.Label,
-                        Total = entry[cube.SumTotal].DecimalValue,
-                        TotalCorrected = entry[cube.SumTotalCorrected].DecimalValue,
+                        Total = entry[quoteCube.SumTotal].DecimalValue,
+                        TotalCorrected = entry[quoteCube.SumTotalCorrected].DecimalValue,
+                    });
+                }
+
+                foreach (var party in quoteCube.DimParty)
+                {
+                    var entry = quoteCube.Result[quoteCube.QrySalesQuotesMonth][party];
+                    result.Issued.Details.SalesQuotesIssuedCustomers.Add(new SalesQuotesCustomer()
+                    {
+                        Customer = party.Label,
+                        Total = entry[quoteCube.SumTotal].DecimalValue,
+                        TotalCorrected = entry[quoteCube.SumTotalCorrected].DecimalValue,
+                    });
+                }
+
+                // Delivery
+                foreach (var year in itemCube.DimDeliveryDate)
+                {
+                    foreach (var month in year)
+                    {
+                        var entry = itemCube.Result[itemCube.QrySalesQuotesItemMonth][year][month];
+                        result.Delivery.Details.SalesQuotesDeliveryMonths.Add(new SalesQuotesMonth()
+                        {
+                            Year = year.Label,
+                            Month = month.Label,
+                            Total = entry[itemCube.SumTotal].DecimalValue,
+                            TotalCorrected = entry[itemCube.SumTotalCorrected].DecimalValue,
+                        });
+                    }
+                }
+
+                foreach (var party in itemCube.DimParty)
+                {
+                    var entry = itemCube.Result[itemCube.QrySalesQuotesItemMonth][party];
+                    result.Delivery.Details.SalesQuotesDeliveryCustomers.Add(new SalesQuotesCustomer()
+                    {
+                        Customer = party.Label,
+                        Total = entry[itemCube.SumTotal].DecimalValue,
+                        TotalCorrected = entry[itemCube.SumTotalCorrected].DecimalValue,
                     });
                 }
 
