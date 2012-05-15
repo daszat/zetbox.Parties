@@ -56,14 +56,14 @@ namespace Kistl.Parties.Common.Dtos
             {
                 public DtoDetails()
                 {
-                    SalesQuotesIssuedMonths = new List<SalesQuotesMonth>();
-                    SalesQuotesIssuedCustomers = new List<SalesQuotesCustomer>();
+                    Months = new List<SalesQuotesMonth>();
+                    Customers = new List<SalesQuotesCustomer>();
                 }
                 [GuiTitle("Issued / Months")]
-                public List<SalesQuotesMonth> SalesQuotesIssuedMonths { get; set; }
+                public List<SalesQuotesMonth> Months { get; set; }
 
                 [GuiTitle("Issued / Customer")]
-                public List<SalesQuotesCustomer> SalesQuotesIssuedCustomers { get; set; }
+                public List<SalesQuotesCustomer> Customers { get; set; }
             }
 
             public DtoDetails Details { get; set; }
@@ -90,14 +90,14 @@ namespace Kistl.Parties.Common.Dtos
             {
                 public DtoDetails()
                 {
-                    SalesQuotesDeliveryMonths = new List<SalesQuotesMonth>();
-                    SalesQuotesDeliveryCustomers = new List<SalesQuotesCustomer>();
+                    Months = new List<SalesQuotesMonth>();
+                    Customers = new List<SalesQuotesCustomer>();
                 }
                 [GuiTitle("Delivery / Months")]
-                public List<SalesQuotesMonth> SalesQuotesDeliveryMonths { get; set; }
+                public List<SalesQuotesMonth> Months { get; set; }
 
                 [GuiTitle("Delivery / Customer")]
-                public List<SalesQuotesCustomer> SalesQuotesDeliveryCustomers { get; set; }
+                public List<SalesQuotesCustomer> Customers { get; set; }
             }
 
             public DtoDetails Details { get; set; }

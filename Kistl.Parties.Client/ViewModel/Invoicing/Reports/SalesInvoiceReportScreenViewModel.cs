@@ -22,7 +22,7 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing.Reports
 
         protected override object LoadStatistic(DateTime from, DateTime until)
         {
-            return null;
+            return NamedObjects.Invoicing.StatisticActions.Find(DataContext).GetSalesInvoiceReport(from, until);
         }
     }
 }

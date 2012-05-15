@@ -55,7 +55,6 @@ namespace Kistl.Parties.Server.Cubes
         private IQueryable<SalesQuoteCubeRecord> GetQuery(IKistlContext ctx)
         {
             return ctx.GetQuery<SalesQuote>()
-                .Where(q => q.IssueDate >= from && q.IssueDate <= thru)
                 .ToList()
                 .Select(g => new SalesQuoteCubeRecord()
                 {

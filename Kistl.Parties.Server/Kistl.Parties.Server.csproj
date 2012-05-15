@@ -66,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cubes\SalesInvoiceCube.cs" />
     <Compile Include="Cubes\SalesQuoteItemCube.cs" />
     <Compile Include="Cubes\CubeExtensions.cs" />
     <Compile Include="Cubes\SalesQuoteCube.cs" />
