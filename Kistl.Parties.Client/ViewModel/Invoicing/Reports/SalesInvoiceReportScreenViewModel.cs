@@ -8,6 +8,7 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing.Reports
     using Kistl.Client.Presentables;
     using Kistl.Client.Presentables.GUI;
     using Kistl.App.GUI;
+    using ZBox.Basic.Invoicing;
 
     [ViewModelDescriptor]
     public class SalesInvoiceReportScreenViewModel : NavigationReportScreenViewModel
@@ -22,7 +23,8 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing.Reports
 
         protected override object LoadStatistic(DateTime from, DateTime until)
         {
-            return NamedObjects.Invoicing.StatisticActions.Find(DataContext).GetSalesInvoiceReport(from, until);
+            var stat = DataContext.GetQuery<StatisticActions>().Single();
+            return stat.GetSalesInvoiceReport(from, until);
         }
     }
 }

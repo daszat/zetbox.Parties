@@ -23,7 +23,8 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing.Reports
 
         protected override object LoadStatistic(DateTime from, DateTime until)
         {
-            return NamedObjects.Invoicing.StatisticActions.Find(DataContext).GetSalesQuoteReport(from, until);
+            var stat = DataContext.GetQuery<StatisticActions>().Single();
+            return stat.GetSalesQuoteReport(from, until);
         }
     }
 }
