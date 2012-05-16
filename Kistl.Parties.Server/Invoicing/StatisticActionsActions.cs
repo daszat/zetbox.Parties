@@ -63,7 +63,7 @@ namespace ZBox.Basic.Invoicing
 
                 foreach (var party in quoteCube.DimParty)
                 {
-                    var entry = quoteCube.Result[quoteCube.QrySalesQuotesMonth][party];
+                    var entry = quoteCube.Result[quoteCube.QrySalesQuotesMonth][quoteCube.DimIssueDate][party];
                     result.Issued.Details.Customers.Add(new SalesQuotesCustomer()
                     {
                         Customer = party.Label,
@@ -90,7 +90,7 @@ namespace ZBox.Basic.Invoicing
 
                 foreach (var party in itemCube.DimParty)
                 {
-                    var entry = itemCube.Result[itemCube.QrySalesQuotesItemMonth][party];
+                    var entry = itemCube.Result[itemCube.QrySalesQuotesItemMonth][itemCube.DimDeliveryDate][party];
                     result.Delivery.Details.Customers.Add(new SalesQuotesCustomer()
                     {
                         Customer = party.Label,
@@ -148,7 +148,7 @@ namespace ZBox.Basic.Invoicing
 
                 foreach (var party in cube.DimParty)
                 {
-                    var entry = cube.Result[cube.QryInvoicesDate][party];
+                    var entry = cube.Result[cube.QryInvoicesDate][cube.DimDate][party];
                     result.Date.Details.Customers.Add(new SalesInvoiceReport.DtoDate.DtoDetails.InvoiceCustomer()
                     {
                         Customer = party.Label,
@@ -172,7 +172,7 @@ namespace ZBox.Basic.Invoicing
 
                 foreach (var party in cube.DimParty)
                 {
-                    var entry = cube.Result[cube.QryInvoicesFulfillmentDate][party];
+                    var entry = cube.Result[cube.QryInvoicesFulfillmentDate][cube.DimFulfillmentDate][party];
                     result.Fulfillment.Details.Customers.Add(new SalesInvoiceReport.DtoFulfillment.DtoDetails.FulfillmentCustomer()
                     {
                         Customer = party.Label,
