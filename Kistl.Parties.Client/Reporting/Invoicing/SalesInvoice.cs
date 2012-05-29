@@ -56,7 +56,9 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual string GetCityAndDate()
         {
-            return string.Format(SalesInvoiceResources.CityAndDate, invoice.InternalOrganization.Party.Address.City, FormatDate(invoice.Date));
+            return string.Format(SalesInvoiceResources.CityAndDate,
+                invoice.InternalOrganization.Party.Address != null ? invoice.InternalOrganization.Party.Address.City : "-", 
+                FormatDate(invoice.Date));
         }
 
         protected virtual string GetServicesHeading()
