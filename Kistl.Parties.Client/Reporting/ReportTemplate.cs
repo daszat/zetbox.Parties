@@ -18,7 +18,7 @@ namespace Kistl.Parties.Client.Reporting
     using Kistl.Client.Presentables.Calendar;
     using Kistl.Client.Presentables;
 
-    public abstract class ReportTemplate : Kistl.API.Common.Reporting.ReportTemplate // Derive from zetbox class
+    public abstract class ReportTemplate : Kistl.API.Common.Reporting.ReportTemplate
     {
         public ReportTemplate(IGenerationHost host)
             : base(host)

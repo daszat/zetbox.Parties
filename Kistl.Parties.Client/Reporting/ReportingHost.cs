@@ -35,7 +35,7 @@ namespace Kistl.Parties.Client.Reporting
 #if RELEASE
     [System.Diagnostics.DebuggerStepThrough]
 #endif
-    public class ReportingHost : AbstractReportingHost  // Derive from zetbox class
+    public class ReportingHost : Kistl.API.Common.Reporting.AbstractReportingHost
     {
         public ReportingHost(IFileOpener fileOpener)
             : base(fileOpener)
