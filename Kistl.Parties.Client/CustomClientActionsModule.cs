@@ -25,10 +25,6 @@ namespace Kistl.Parties.Client
 
             moduleBuilder
                 .Register<Reporting.ReportingHost>(c => new Reporting.ReportingHost(
-                        null,
-                        c.Resolve<Func<IKistlContext>>(),
-                        c.Resolve<IViewModelFactory>(),
-                        c.Resolve<IFrozenContext>(),
                         c.Resolve<IFileOpener>()
                     )
                 )
