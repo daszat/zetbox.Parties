@@ -82,7 +82,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="MigraDoc.RtfRendering">
-      <HintPath>..\Libs\PdfSharp\MigraDoc.RtfRendering.dll</HintPath>
+      <HintPath>..\Libs\Kistl\Client\Core\MigraDoc.RtfRendering.dll</HintPath>
     </Reference>
     <Reference Include="PdfSharp">
       <HintPath>..\Libs\Kistl\Client\Core\PdfSharp.dll</HintPath>
