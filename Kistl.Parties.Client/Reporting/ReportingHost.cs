@@ -37,12 +37,12 @@ namespace Kistl.Parties.Client.Reporting
 #endif
     public class ReportingHost : Kistl.API.Common.Reporting.AbstractReportingHost
     {
-        public ReportingHost(IFileOpener fileOpener)
-            : base(fileOpener)
+        public ReportingHost(IFileOpener fileOpener, ITempFileService tmpService)
+            : base(fileOpener, tmpService)
         {
         }
-        public ReportingHost(string overrideTemplateNamespace, Assembly overrideTemplateAssembly, IFileOpener fileOpener)
-            : base(overrideTemplateNamespace, overrideTemplateAssembly, fileOpener)
+        public ReportingHost(string overrideTemplateNamespace, Assembly overrideTemplateAssembly, IFileOpener fileOpener, ITempFileService tmpService)
+            : base(overrideTemplateNamespace, overrideTemplateAssembly, fileOpener, tmpService)
         {
         }
     }

@@ -16,8 +16,8 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing.Reports
         public new delegate SalesQuoteReportScreenViewModel Factory(IKistlContext dataCtx, ViewModel parent, NavigationScreen screen);
 
         public SalesQuoteReportScreenViewModel(IViewModelDependencies appCtx,
-            IKistlContext dataCtx, ViewModel parent, NavigationScreen screen, IFileOpener fileOpener)
-            : base(appCtx, dataCtx, parent, screen, fileOpener)
+            IKistlContext dataCtx, ViewModel parent, NavigationScreen screen, IFileOpener fileOpener, ITempFileService tmpService)
+            : base(appCtx, dataCtx, parent, screen, fileOpener, tmpService)
         {
         }
 

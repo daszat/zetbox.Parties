@@ -14,9 +14,9 @@ namespace Kistl.Parties.Client.ViewModel.Invoicing.Reports
     {
         public new delegate PurchaseInvoiceReportScreenViewModel Factory(IKistlContext dataCtx, ViewModel parent, NavigationScreen screen);
 
-        public PurchaseInvoiceReportScreenViewModel(IViewModelDependencies appCtx, 
-            IKistlContext dataCtx, ViewModel parent, NavigationScreen screen, IFileOpener fileOpener)
-            : base(appCtx, dataCtx, parent, screen, fileOpener)
+        public PurchaseInvoiceReportScreenViewModel(IViewModelDependencies appCtx,
+            IKistlContext dataCtx, ViewModel parent, NavigationScreen screen, IFileOpener fileOpener, ITempFileService tmpService)
+            : base(appCtx, dataCtx, parent, screen, fileOpener, tmpService)
         {
         }
 

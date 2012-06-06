@@ -25,7 +25,8 @@ namespace Kistl.Parties.Client
 
             moduleBuilder
                 .Register<Reporting.ReportingHost>(c => new Reporting.ReportingHost(
-                        c.Resolve<IFileOpener>()
+                        c.Resolve<IFileOpener>(),
+                        c.Resolve<ITempFileService>()
                     )
                 )
                 .InstancePerDependency();
