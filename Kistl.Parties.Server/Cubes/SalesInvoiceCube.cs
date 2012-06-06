@@ -48,15 +48,15 @@ namespace Kistl.Parties.Server.Cubes
             AvgFulfillmentDuration = new FilteredMeasure<SalesInvoiceCubeRecord, double>(f => f.FulfillmentDate.HasValue, new DoubleSumMeasure<SalesInvoiceCubeRecord>("Avg. payment duration", g => (g.FulfillmentDate.Value - g.Date).TotalDays));
 
             QryInvoicesDate = new Query<SalesInvoiceCubeRecord>("Invoices / month")
-                .WithSecondaryDimension(DimDate)
-                .WithSecondaryDimension(DimParty)
+                .WithCrossingDimension(DimDate)
+                .WithCrossingDimension(DimParty)
                 .WithMeasure(SumTotal)
                 .WithMeasure(SumTotalNet)
                 .WithMeasure(AvgFulfillmentDuration);
 
             QryInvoicesFulfillmentDate = new Query<SalesInvoiceCubeRecord>("Invoices fulfillment / month")
-                .WithSecondaryDimension(DimFulfillmentDate)
-                .WithSecondaryDimension(DimParty)
+                .WithCrossingDimension(DimFulfillmentDate)
+                .WithCrossingDimension(DimParty)
                 .WithMeasure(SumFulfillment)
                 .WithMeasure(SumFulfillmentNet)
                 .WithMeasure(AvgFulfillmentDuration);

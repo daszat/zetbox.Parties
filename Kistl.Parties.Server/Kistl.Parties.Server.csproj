@@ -52,7 +52,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="LinqCube">
-      <HintPath>..\Libs\LinqCube.dll</HintPath>
+      <HintPath>..\packages\LinqCube.1.0.43.0\lib\net35\LinqCube.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\Libs\Kistl\Common\Core\log4net.dll</HintPath>
@@ -81,6 +81,9 @@
       <Project>{A3080370-A3AD-4810-AF93-CD9AB94A4385}</Project>
       <Name>Kistl.Parties.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -38,8 +38,8 @@ namespace Kistl.Parties.Server.Cubes
             SumTotalCorrected = new DecimalSumMeasure<SalesQuoteCubeRecord>("TotalCorrected", g => g.Total * g.Chance / 100.0M);
 
             QrySalesQuotesMonth = new Query<SalesQuoteCubeRecord>("Sales quotes / month")
-                .WithSecondaryDimension(DimIssueDate)
-                .WithSecondaryDimension(DimParty)
+                .WithCrossingDimension(DimIssueDate)
+                .WithCrossingDimension(DimParty)
                 .WithMeasure(SumTotal)
                 .WithMeasure(SumTotalCorrected);
         }
