@@ -10,3 +10,4 @@ obj
 /Kistl.Parties.Client.Tests/bin
 /Libs/Kistl/Tests
 /packages/LinqCube.*
+/packages/zetboxBasic*

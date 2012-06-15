@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Autofac;
-using Kistl.API;
+using Zetbox.API;
 
 namespace Kistl.Parties.Common
 {
@@ -13,7 +13,7 @@ namespace Kistl.Parties.Common
         {
             base.Load(moduleBuilder);
 
-            moduleBuilder.RegisterZBoxImplementors(typeof(CustomCommonActionsModule).Assembly);
+            moduleBuilder.RegisterZetboxImplementors(typeof(CustomCommonActionsModule).Assembly);
 
             // Register explicit overrides here
         }
