@@ -17,10 +17,10 @@ call "ZbInstall.cmd" %config%
 
 cd bin\Debug
 
-Kistl.Server.Service.exe %config% -deploy-update -generate
+Zetbox.Server.Service.exe %config% -deploy-update -generate
 IF ERRORLEVEL 1 GOTO FAIL
 
-Kistl.Server.Service.exe %config% -import Data\Invoicing.Data.xml -import Data\Accounting.Data.xml -import Data\Parties.xml
+Zetbox.Server.Service.exe %config% -import Data\Invoicing.Data.xml -import Data\Accounting.Data.xml -import Data\Parties.xml
 IF ERRORLEVEL 1 GOTO FAIL
 
 echo ********************************************************************************
