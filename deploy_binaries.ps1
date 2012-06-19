@@ -35,10 +35,10 @@ $CCNET_REPO=Get-Location
 
 $SOURCEDIR="$CCNET_REPO-artifacts\Latest\bin\Debug"
 $SOURCEHTTPDIR="$CCNET_REPO-artifacts\Latest\bin\Debug\HttpService"
-$SOURCEHTTPFILESDIR="$CCNET_REPO\Libs\Kistl\HttpService"
+$SOURCEHTTPFILESDIR="$CCNET_REPO\Libs\Zetbox\HttpService"
 
-$MODULES="App.Parties", "App.ZBox", "Core", "Core.Generated", "EF", "EF.Generated", "WPF", "Microsoft"
-$EXE = @{"Server"="Kistl.Server.Service.exe"; "Client" = "Kistl.Client.WPF.exe" }
+$MODULES="App.Parties", "App.Zetbox", "Core", "Core.Generated", "EF", "EF.Generated", "WPF", "Microsoft"
+$EXE = @{"Server"="Zetbox.Server.Service.exe"; "Client" = "Zetbox.Client.WPF.exe" }
 
 # Create path structure
 save-rm $DESTDIR\bin, $DESTDIR\inetpub\bin

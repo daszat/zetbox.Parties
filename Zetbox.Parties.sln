@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kistl.Parties.Client", "Kistl.Parties.Client\Kistl.Parties.Client.csproj", "{CA39A333-205A-4C14-BD33-C76A708D067A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Client", "Zetbox.Parties.Client\Zetbox.Parties.Client.csproj", "{CA39A333-205A-4C14-BD33-C76A708D067A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{A3080370-A3AD-4810-AF93-CD9AB94A4385} = {A3080370-A3AD-4810-AF93-CD9AB94A4385}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kistl.Parties.Common", "Kistl.Parties.Common\Kistl.Parties.Common.csproj", "{A3080370-A3AD-4810-AF93-CD9AB94A4385}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Common", "Zetbox.Parties.Common\Zetbox.Parties.Common.csproj", "{A3080370-A3AD-4810-AF93-CD9AB94A4385}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kistl.Parties.Server", "Kistl.Parties.Server\Kistl.Parties.Server.csproj", "{6757D30D-F9CC-40E8-9889-6421F4581875}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Server", "Zetbox.Parties.Server\Zetbox.Parties.Server.csproj", "{6757D30D-F9CC-40E8-9889-6421F4581875}"
 	ProjectSection(ProjectDependencies) = postProject
 		{A3080370-A3AD-4810-AF93-CD9AB94A4385} = {A3080370-A3AD-4810-AF93-CD9AB94A4385}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kistl.Parties.Client.Tests", "Kistl.Parties.Client.Tests\Kistl.Parties.Client.Tests.csproj", "{C6625569-B51D-4A87-8547-A4B7DDD1294C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Client.Tests", "Zetbox.Parties.Client.Tests\Zetbox.Parties.Client.Tests.csproj", "{C6625569-B51D-4A87-8547-A4B7DDD1294C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{277FF4BB-D873-487E-BC9D-585803166DF1}"
 	ProjectSection(SolutionItems) = preProject

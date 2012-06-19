@@ -11,10 +11,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Kistl.Client.GUI;
-using Kistl.Parties.Client.ViewModel.Invoicing;
+using Zetbox.Client.GUI;
+using Zetbox.Parties.Client.ViewModel.Invoicing;
 
-namespace Kistl.Parties.Client.View.Invoicing
+namespace Zetbox.Parties.Client.View.Invoicing
 {
     /// <summary>
     /// Interaction logic for InvoiceEditor.xaml

@@ -1,12 +1,12 @@
 ﻿<%@ CodeTemplate Language="C#" 
     Name="Common.BankAccount"
-    ClassName="Kistl.Parties.Client.Reporting.Common.BankAccount"
-    Inherits="Kistl.Parties.Client.Reporting.ReportTemplate" %>
+    ClassName="Zetbox.Parties.Client.Reporting.Common.BankAccount"
+    Inherits="Zetbox.Parties.Client.Reporting.ReportTemplate" %>
 <%@ Import Namespace="System" %>
 <%@ Import Namespace="System.Collections.Generic" %>
 <%@ Import Namespace="System.Linq" %>
-<%@ Import Namespace="ZBox.Basic.Parties" %>
-<%@ Parameter Name="account" Type="ZBox.Basic.Parties.BankAccount" %>
+<%@ Import Namespace="Zetbox.Basic.Parties" %>
+<%@ Parameter Name="account" Type="Zetbox.Basic.Parties.BankAccount" %>
 
 <% if(account != null) { %>
 

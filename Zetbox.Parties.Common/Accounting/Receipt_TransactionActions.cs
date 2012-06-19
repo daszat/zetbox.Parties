@@ -1,11 +1,11 @@
-namespace ZBox.Basic.Accounting
+namespace Zetbox.Basic.Accounting
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Kistl.API;
-    using ZBox.Basic.Invoicing;
+    using Zetbox.API;
+    using Zetbox.Basic.Invoicing;
 
     [Implementor]
     public static class Receipt_TransactionActions

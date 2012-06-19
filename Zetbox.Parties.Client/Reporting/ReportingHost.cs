@@ -1,6 +1,6 @@
 
 
-namespace Kistl.Parties.Client.Reporting
+namespace Zetbox.Parties.Client.Reporting
 {
     using System;
     using System.Collections.Generic;
@@ -12,20 +12,20 @@ namespace Kistl.Parties.Client.Reporting
     using System.Text;
     using Arebis.CodeGeneration;
     using Arebis.CodeGenerator.Templated;
-    using Kistl.API;
-    using Kistl.App.GUI;
-    using Kistl.Client;
-    using Kistl.Client.Models;
-    using Kistl.Client.Presentables;
-    using Kistl.Client.Presentables.ValueViewModels;
+    using Zetbox.API;
+    using Zetbox.App.GUI;
+    using Zetbox.Client;
+    using Zetbox.Client.Models;
+    using Zetbox.Client.Presentables;
+    using Zetbox.Client.Presentables.ValueViewModels;
     using MigraDoc.DocumentObjectModel;
     using MigraDoc.DocumentObjectModel.IO;
     using MigraDoc.Rendering;
     using MigraDoc.RtfRendering;
-    using ControlKinds = Kistl.NamedObjects.Gui.ControlKinds;
+    using ControlKinds = Zetbox.NamedObjects.Gui.ControlKinds;
     using PdfSharp.Pdf;
     using PdfSharp.Pdf.IO;
-    using Kistl.API.Common.Reporting;
+    using Zetbox.API.Common.Reporting;
 
     /// <summary>
     /// a <see cref="IGenerationHost"/> to use the pre-compiled Templates from the given assembly
@@ -35,7 +35,7 @@ namespace Kistl.Parties.Client.Reporting
 #if RELEASE
     [System.Diagnostics.DebuggerStepThrough]
 #endif
-    public class ReportingHost : Kistl.API.Common.Reporting.AbstractReportingHost
+    public class ReportingHost : Zetbox.API.Common.Reporting.AbstractReportingHost
     {
         public ReportingHost(IFileOpener fileOpener, ITempFileService tmpService)
             : base(fileOpener, tmpService)

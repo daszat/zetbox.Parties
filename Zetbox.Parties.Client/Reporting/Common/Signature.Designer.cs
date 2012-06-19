@@ -1,25 +1,25 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using ZBox.Basic.Parties;
+using Zetbox.Basic.Parties;
 
 
-namespace Kistl.Parties.Client.Reporting.Common
+namespace Zetbox.Parties.Client.Reporting.Common
 {
-    [Arebis.CodeGeneration.TemplateInfo(@"P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Common\Signature.cst")]
-    public partial class Signature : Kistl.Parties.Client.Reporting.ReportTemplate
+    [Arebis.CodeGeneration.TemplateInfo(@"P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Signature.cst")]
+    public partial class Signature : Zetbox.Parties.Client.Reporting.ReportTemplate
     {
-		protected ZBox.Basic.Parties.Party party;
+		protected Zetbox.Basic.Parties.Party party;
 
 
-        public static void Call(Arebis.CodeGeneration.IGenerationHost _host, ZBox.Basic.Parties.Party party)
+        public static void Call(Arebis.CodeGeneration.IGenerationHost _host, Zetbox.Basic.Parties.Party party)
         {
             if (_host == null) { throw new global::System.ArgumentNullException("_host"); }
 
             _host.CallTemplate("Common.Signature", party);
         }
 
-        public Signature(Arebis.CodeGeneration.IGenerationHost _host, ZBox.Basic.Parties.Party party)
+        public Signature(Arebis.CodeGeneration.IGenerationHost _host, Zetbox.Basic.Parties.Party party)
             : base(_host)
         {
 			this.party = party;
@@ -28,7 +28,7 @@ namespace Kistl.Parties.Client.Reporting.Common
 
         public override void Generate()
         {
-#line 10 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Common\Signature.cst"
+#line 10 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Signature.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("\\paragraph [ Format { SpaceBefore = \"3cm\" } ] {\r\n");
 this.WriteObjects("    ",  FormatName(party) , "\r\n");

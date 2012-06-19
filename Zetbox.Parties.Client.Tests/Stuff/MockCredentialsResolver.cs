@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Kistl.API;
-using Kistl.API.Client;
-using Kistl.API.Common;
-using Kistl.API.Utils;
+using Zetbox.API;
+using Zetbox.API.Client;
+using Zetbox.API.Common;
+using Zetbox.API.Utils;
 
-namespace Kistl.Parties.Client.Tests.Stuff
+namespace Zetbox.Parties.Client.Tests.Stuff
 {
     public class MockCredentialsResolver : ICredentialsResolver
     {
@@ -32,12 +32,12 @@ namespace Kistl.Parties.Client.Tests.Stuff
 
     public class MockIdentityResolver : BaseIdentityResolver
     {
-        public MockIdentityResolver(Func<IReadOnlyKistlContext> resolverCtxFactory)
+        public MockIdentityResolver(Func<IReadOnlyZetboxContext> resolverCtxFactory)
             : base(resolverCtxFactory)
         {
         }
 
-        public override Kistl.App.Base.Identity GetCurrent()
+        public override Zetbox.App.Base.Identity GetCurrent()
         {
             return Resolve("ccnet");
         }

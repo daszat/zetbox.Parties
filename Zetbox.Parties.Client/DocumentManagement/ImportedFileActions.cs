@@ -4,11 +4,11 @@ namespace at.dasz.DocumentManagement
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Kistl.API;
-    using Kistl.App.Extensions;
-    using Kistl.App.Base;
-    using ZBox.Basic.Invoicing;
-    using Kistl.Client.Presentables;
+    using Zetbox.API;
+    using Zetbox.App.Extensions;
+    using Zetbox.App.Base;
+    using Zetbox.Basic.Invoicing;
+    using Zetbox.Client.Presentables;
 
     [Implementor]
     public class ImportedFileActions

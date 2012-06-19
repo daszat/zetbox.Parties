@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Kistl.Parties.Client.Tests.Stuff
+namespace Zetbox.Parties.Client.Tests.Stuff
 {
     public static class CommonExtenstions
     {

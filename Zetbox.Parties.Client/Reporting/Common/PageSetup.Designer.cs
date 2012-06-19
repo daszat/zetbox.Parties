@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-namespace Kistl.Parties.Client.Reporting.Common
+namespace Zetbox.Parties.Client.Reporting.Common
 {
-    [Arebis.CodeGeneration.TemplateInfo(@"P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Common\PageSetup.cst")]
-    public partial class PageSetup : Kistl.Parties.Client.Reporting.ReportTemplate
+    [Arebis.CodeGeneration.TemplateInfo(@"P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\PageSetup.cst")]
+    public partial class PageSetup : Zetbox.Parties.Client.Reporting.ReportTemplate
     {
 		protected string Orientation;
 
@@ -27,7 +27,7 @@ namespace Kistl.Parties.Client.Reporting.Common
 
         public override void Generate()
         {
-#line 9 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Common\PageSetup.cst"
+#line 9 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\PageSetup.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("PageSetup\r\n");
 this.WriteObjects("{\r\n");

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Kistl.Parties.Common
+namespace Zetbox.Parties.Common
 {
     public static class PartiesNamedObjects
     {

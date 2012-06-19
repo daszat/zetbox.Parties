@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Kistl.API.Dtos;
+using Zetbox.API.Dtos;
 using System.ComponentModel;
 
-namespace Kistl.Parties.Common.Dtos
+namespace Zetbox.Parties.Common.Dtos
 {
     [Serializable]
     [GuiPrintableRoot]

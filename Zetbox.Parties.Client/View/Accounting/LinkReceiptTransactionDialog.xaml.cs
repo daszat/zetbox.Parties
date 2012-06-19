@@ -10,16 +10,16 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Kistl.Client.GUI;
-using Kistl.Client.WPF.CustomControls;
-using Kistl.Parties.Client.ViewModel.Accounting;
+using Zetbox.Client.GUI;
+using Zetbox.Client.WPF.CustomControls;
+using Zetbox.Parties.Client.ViewModel.Accounting;
 
-namespace Kistl.Parties.Client.View.Accounting
+namespace Zetbox.Parties.Client.View.Accounting
 {
     /// <summary>
     /// Interaction logic for LinkReceiptTransactionDialog.xaml
     /// </summary>
-    [ViewDescriptor(Kistl.App.GUI.Toolkit.WPF)]
+    [ViewDescriptor(Zetbox.App.GUI.Toolkit.WPF)]
     public partial class LinkReceiptTransactionDialog : WindowView, IHasViewModel<LinkReceiptTransactionViewModel>
     {
         public LinkReceiptTransactionDialog()

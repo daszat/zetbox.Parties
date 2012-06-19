@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Kistl.API;
+using Zetbox.API;
 using dasz.LinqCube;
-using ZBox.Basic.Invoicing;
+using Zetbox.Basic.Invoicing;
 
-namespace Kistl.Parties.Server.Cubes
+namespace Zetbox.Parties.Server.Cubes
 {
     public class SalesInvoiceCubeRecord
     {
@@ -22,7 +22,7 @@ namespace Kistl.Parties.Server.Cubes
     {
         private readonly DateTime from, thru;
 
-        public SalesInvoiceCube(IKistlContext ctx, DateTime from, DateTime thru)
+        public SalesInvoiceCube(IZetboxContext ctx, DateTime from, DateTime thru)
         {
             this.from = from;
             this.thru = thru;
@@ -75,7 +75,7 @@ namespace Kistl.Parties.Server.Cubes
         public readonly Query<SalesInvoiceCubeRecord> QryInvoicesDate;
         public readonly Query<SalesInvoiceCubeRecord> QryInvoicesFulfillmentDate;
 
-        private IQueryable<SalesInvoiceCubeRecord> GetQuery(IKistlContext ctx)
+        private IQueryable<SalesInvoiceCubeRecord> GetQuery(IZetboxContext ctx)
         {
             return ctx.GetQuery<SalesInvoice>()
                 .ToList()
@@ -93,7 +93,7 @@ namespace Kistl.Parties.Server.Cubes
 
         public CubeResult Result { get; private set; }
 
-        public void Execute(IKistlContext ctx)
+        public void Execute(IZetboxContext ctx)
         {
             Result = Cube.Execute(GetQuery(ctx), QryInvoicesDate, QryInvoicesFulfillmentDate);
         }

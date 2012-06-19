@@ -1,22 +1,22 @@
 
-namespace Kistl.Parties.Client.ViewModel.Accounting
+namespace Zetbox.Parties.Client.ViewModel.Accounting
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Kistl.Client.Presentables;
-    using Kistl.API;
-    using ZBox.Basic.Accounting;
-    using ZBox.Basic.Invoicing;
-    using ZBox.Basic.Parties;
+    using Zetbox.Client.Presentables;
+    using Zetbox.API;
+    using Zetbox.Basic.Accounting;
+    using Zetbox.Basic.Invoicing;
+    using Zetbox.Basic.Parties;
 
     [ViewModelDescriptor]
     public class LinkReceiptTransactionViewModel : WindowViewModel
     {
-        public new delegate LinkReceiptTransactionViewModel Factory(IKistlContext dataCtx, ViewModel parent, Transaction obj);
+        public new delegate LinkReceiptTransactionViewModel Factory(IZetboxContext dataCtx, ViewModel parent, Transaction obj);
 
-        public LinkReceiptTransactionViewModel(IViewModelDependencies appCtx, IKistlContext dataCtx, ViewModel parent, Transaction obj)
+        public LinkReceiptTransactionViewModel(IViewModelDependencies appCtx, IZetboxContext dataCtx, ViewModel parent, Transaction obj)
             : base(appCtx, dataCtx, parent)
         {
             this.Transaction = obj;
@@ -202,9 +202,9 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
 
         public class ReceiptsSelectionViewModel : ViewModel
         {
-            public new delegate ReceiptsSelectionViewModel Factory(IKistlContext dataCtx, LinkReceiptTransactionViewModel parent, Receipt receipt);
+            public new delegate ReceiptsSelectionViewModel Factory(IZetboxContext dataCtx, LinkReceiptTransactionViewModel parent, Receipt receipt);
 
-            public ReceiptsSelectionViewModel(IViewModelDependencies appCtx, IKistlContext dataCtx, LinkReceiptTransactionViewModel parent, Receipt receipt)
+            public ReceiptsSelectionViewModel(IViewModelDependencies appCtx, IZetboxContext dataCtx, LinkReceiptTransactionViewModel parent, Receipt receipt)
                 : base(appCtx, dataCtx, parent)
             {
                 _receipt = receipt;

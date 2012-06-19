@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Kistl.API;
+using Zetbox.API;
 using at.dasz.DocumentManagement;
 
-namespace ZBox.Basic.Invoicing
+namespace Zetbox.Basic.Invoicing
 {
     [Implementor]
     public static class DefaultInvoiceGeneratorActions

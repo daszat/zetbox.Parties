@@ -1,23 +1,23 @@
-namespace Kistl.Parties.Client.ViewModel.Accounting
+namespace Zetbox.Parties.Client.ViewModel.Accounting
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Kistl.Client.Presentables;
-    using Kistl.App.Extensions;
-    using Kistl.API;
-    using ZBox.Basic.Accounting;
-    using Kistl.Client.Presentables.KistlBase;
-    using Kistl.App.GUI;
-    using Kistl.Client;
+    using Zetbox.Client.Presentables;
+    using Zetbox.App.Extensions;
+    using Zetbox.API;
+    using Zetbox.Basic.Accounting;
+    using Zetbox.Client.Presentables.ZetboxBase;
+    using Zetbox.App.GUI;
+    using Zetbox.Client;
 
     [ViewModelDescriptor]
     public class AccountViewModel : DataObjectViewModel
     {
-        public new delegate AccountViewModel Factory(IKistlContext dataCtx, ViewModel parent, IDataObject obj);
+        public new delegate AccountViewModel Factory(IZetboxContext dataCtx, ViewModel parent, IDataObject obj);
 
-        public AccountViewModel(IViewModelDependencies appCtx, IKistlContext dataCtx, ViewModel parent, Account obj)
+        public AccountViewModel(IViewModelDependencies appCtx, IZetboxContext dataCtx, ViewModel parent, Account obj)
             : base(appCtx, dataCtx, parent, obj)
         {
             this.Account = obj;
@@ -41,7 +41,7 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
             lst.AllowDelete = true;
             lst.IsEditable = true;
             lst.ViewMethod = App.GUI.InstanceListViewMethod.Details;
-            lst.RequestedKind = Kistl.NamedObjects.Gui.ControlKinds.Kistl_App_GUI_InstanceGridKind.Find(FrozenContext);
+            lst.RequestedKind = Zetbox.NamedObjects.Gui.ControlKinds.Zetbox_App_GUI_InstanceGridKind.Find(FrozenContext);
             lst.DisplayedColumnsCreated += new InstanceListViewModel.DisplayedColumnsCreatedHandler(lst_DisplayedColumnsCreated);
             lst.SetInitialSort("Date");
             lst.ObjectCreated += (obj) =>
@@ -56,17 +56,17 @@ namespace Kistl.Parties.Client.ViewModel.Accounting
             return result;
         }
 
-        void lst_DisplayedColumnsCreated(Kistl.Client.Models.GridDisplayConfiguration cols)
+        void lst_DisplayedColumnsCreated(Zetbox.Client.Models.GridDisplayConfiguration cols)
         {
             var col = cols.Columns.SingleOrDefault(i => i.Property != null && i.Property.Name == "Receipts");
             if (col != null)
             {
-                col.GridPreEditKind = NamedObjects.Gui.ControlKinds.Kistl_App_GUI_TextKind.Find(FrozenContext);
+                col.GridPreEditKind = NamedObjects.Gui.ControlKinds.Zetbox_App_GUI_TextKind.Find(FrozenContext);
             }
             col = cols.Columns.SingleOrDefault(i => i.Property != null && i.Property.Name == "Documents");
             if (col != null)
             {
-                col.GridPreEditKind = NamedObjects.Gui.ControlKinds.Kistl_App_GUI_TextKind.Find(FrozenContext);
+                col.GridPreEditKind = NamedObjects.Gui.ControlKinds.Zetbox_App_GUI_TextKind.Find(FrozenContext);
             }
         }
     }

@@ -1,22 +1,22 @@
 
-namespace ZBox.Basic.Invoicing
+namespace Zetbox.Basic.Invoicing
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Kistl.API;
-    using ZBox.Basic.Invoicing;
-    using Kistl.Parties.Server.Cubes;
-    using Kistl.API.Server;
-    using Kistl.Parties.Common.Dtos;
+    using Zetbox.API;
+    using Zetbox.Basic.Invoicing;
+    using Zetbox.Parties.Server.Cubes;
+    using Zetbox.API.Server;
+    using Zetbox.Parties.Common.Dtos;
 
     [Implementor]
     public class StatisticActionsActions
     {
-        public static Func<IKistlServerContext> _srvCtxFactory;
+        public static Func<IZetboxServerContext> _srvCtxFactory;
 
-        public StatisticActionsActions(Func<IKistlServerContext> srvCtxFactory)
+        public StatisticActionsActions(Func<IZetboxServerContext> srvCtxFactory)
         {
             _srvCtxFactory = srvCtxFactory;
         }

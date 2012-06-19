@@ -1,12 +1,12 @@
 
-namespace ZBox.Basic.Invoicing
+namespace Zetbox.Basic.Invoicing
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Kistl.API;
-    using ZBox.Basic.Invoicing;
+    using Zetbox.API;
+    using Zetbox.Basic.Invoicing;
 
     [Implementor]
     public static class StatisticActionsActions

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Kistl.Parties.Client.Reporting.Common {
+namespace Zetbox.Parties.Client.Reporting.Common {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Kistl.Parties.Client.Reporting.Common {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Kistl.Parties.Client.Reporting.Common.BankAccountResources", typeof(BankAccountResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Zetbox.Parties.Client.Reporting.Common.BankAccountResources", typeof(BankAccountResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

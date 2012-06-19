@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-namespace Kistl.Parties.Client.Reporting.Common
+namespace Zetbox.Parties.Client.Reporting.Common
 {
-    [Arebis.CodeGeneration.TemplateInfo(@"P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Common\DocumentStyles.cst")]
-    public partial class DocumentStyles : Kistl.Parties.Client.Reporting.ReportTemplate
+    [Arebis.CodeGeneration.TemplateInfo(@"P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\DocumentStyles.cst")]
+    public partial class DocumentStyles : Zetbox.Parties.Client.Reporting.ReportTemplate
     {
 
 
@@ -25,7 +25,7 @@ namespace Kistl.Parties.Client.Reporting.Common
 
         public override void Generate()
         {
-#line 8 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Common\DocumentStyles.cst"
+#line 8 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\DocumentStyles.cst"
 this.WriteObjects("  \\styles {\r\n");
 this.WriteObjects("    Normal {\r\n");
 this.WriteObjects("      Font { Name = \"Verdana\" Size = 10 }\r\n");

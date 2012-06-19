@@ -1,6 +1,6 @@
 #define NO_DATABASE_RESET
 
-namespace Kistl.Parties.Client
+namespace Zetbox.Parties.Client
 {
     using System;
     using System.Collections.Generic;
@@ -8,31 +8,31 @@ namespace Kistl.Parties.Client
     using System.Text;
     using System.Threading;
     using Autofac;
-    using Kistl.API;
-    using Kistl.API.Client;
-    using Kistl.API.Client.PerfCounter;
-    using Kistl.API.Common;
-    using Kistl.API.Configuration;
-    using Kistl.API.Server;
-    using Kistl.API.Utils;
-    using Kistl.Client;
-    using Kistl.Client.Presentables;
-    using Kistl.Parties.Client.Tests.Stuff;
-    using Kistl.Parties.Client.ViewModel;
+    using Zetbox.API;
+    using Zetbox.API.Client;
+    using Zetbox.API.Client.PerfCounter;
+    using Zetbox.API.Common;
+    using Zetbox.API.Configuration;
+    using Zetbox.API.Server;
+    using Zetbox.API.Utils;
+    using Zetbox.Client;
+    using Zetbox.Client.Presentables;
+    using Zetbox.Parties.Client.Tests.Stuff;
+    using Zetbox.Parties.Client.ViewModel;
     using NUnit.Framework;
 
     [SetUpFixture]
-    public class SetUpFixture : Kistl.API.AbstractConsumerTests.AbstractSetUpFixture, IDisposable
+    public class SetUpFixture : Zetbox.API.AbstractConsumerTests.AbstractSetUpFixture, IDisposable
     {
-        private readonly static log4net.ILog Log = log4net.LogManager.GetLogger("Kistl.Parties.Client.Tests.SetUpFixture");
-        private IKistlAppDomain manager;
+        private readonly static log4net.ILog Log = log4net.LogManager.GetLogger("Zetbox.Parties.Client.Tests.SetUpFixture");
+        private IZetboxAppDomain manager;
 
         protected override void SetupBuilder(Autofac.ContainerBuilder builder)
         {
             base.SetupBuilder(builder);
 
             builder
-                .Register(c => new Kistl.Server.SchemaManagement.LoggingSchemaProviderAdapter(new Kistl.Server.SchemaManagement.NpgsqlProvider.Postgresql()))
+                .Register(c => new Zetbox.Server.SchemaManagement.LoggingSchemaProviderAdapter(new Zetbox.Server.SchemaManagement.NpgsqlProvider.Postgresql()))
                 .As<ISchemaProvider>()
                 .Named<ISchemaProvider>("POSTGRESQL")
                 .InstancePerDependency();
@@ -55,7 +55,7 @@ namespace Kistl.Parties.Client
         {
             base.SetUp(container);
 
-            var config = container.Resolve<KistlConfig>();
+            var config = container.Resolve<ZetboxConfig>();
 
             if (config.Server != null && config.Server.StartServer)
             {
@@ -96,7 +96,7 @@ namespace Kistl.Parties.Client
 
         protected override string GetConfigFile()
         {
-            return "Kistl.Parties.Client.Tests.xml";
+            return "Zetbox.Parties.Client.Tests.xml";
         }
 
         protected override HostType GetHostType()

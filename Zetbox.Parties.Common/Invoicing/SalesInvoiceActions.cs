@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Kistl.API;
+using Zetbox.API;
 
-namespace ZBox.Basic.Invoicing
+namespace Zetbox.Basic.Invoicing
 {
     [Implementor]
     public static class SalesInvoiceActions
@@ -48,7 +48,7 @@ namespace ZBox.Basic.Invoicing
 
 
         [Invocation]
-        public static void UpdateTotal(ZBox.Basic.Invoicing.SalesInvoice obj)
+        public static void UpdateTotal(Zetbox.Basic.Invoicing.SalesInvoice obj)
         {
             obj.Total = obj.Items.Sum(i => i.Amount);
             obj.TotalNet = obj.Items.Sum(i => i.AmountNet);

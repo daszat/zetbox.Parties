@@ -1,19 +1,19 @@
 
-namespace Kistl.Parties.Client.Tests.Stuff
+namespace Zetbox.Parties.Client.Tests.Stuff
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using Autofac;
-    using Kistl.API;
-    using Kistl.API.Client.PerfCounter;
-    using Kistl.API.Configuration;
-    using Kistl.Client.Presentables;
+    using Zetbox.API;
+    using Zetbox.API.Client.PerfCounter;
+    using Zetbox.API.Configuration;
+    using Zetbox.Client.Presentables;
 
     public class MockedViewModelFactory : ViewModelFactory
     {
-        public MockedViewModelFactory(ILifetimeScope container, IFrozenContext frozenCtx, KistlConfig cfg, IPerfCounter perfCounter)
+        public MockedViewModelFactory(ILifetimeScope container, IFrozenContext frozenCtx, ZetboxConfig cfg, IPerfCounter perfCounter)
             : base(container, frozenCtx, cfg, perfCounter)
         {
         }
@@ -64,9 +64,9 @@ namespace Kistl.Parties.Client.Tests.Stuff
             LastShownModel = null;
         }
 
-        public override Kistl.App.GUI.Toolkit Toolkit
+        public override Zetbox.App.GUI.Toolkit Toolkit
         {
-            get { return Kistl.App.GUI.Toolkit.TEST; }
+            get { return Zetbox.App.GUI.Toolkit.TEST; }
         }
     }
 

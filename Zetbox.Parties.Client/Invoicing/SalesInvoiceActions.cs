@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Kistl.API;
-using Kistl.Client.Presentables;
-using Kistl.Parties.Client.Reporting;
+using Zetbox.API;
+using Zetbox.Client.Presentables;
+using Zetbox.Parties.Client.Reporting;
 
-namespace ZBox.Basic.Invoicing
+namespace Zetbox.Basic.Invoicing
 {
     [Implementor]
     public class SalesInvoiceActions

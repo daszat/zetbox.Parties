@@ -1,5 +1,5 @@
 
-namespace Kistl.Parties.Client.Reporting
+namespace Zetbox.Parties.Client.Reporting
 {
     using System;
     using System.Collections.Generic;
@@ -12,13 +12,13 @@ namespace Kistl.Parties.Client.Reporting
     using System.Text;
     using System.Text.RegularExpressions;
     using Arebis.CodeGeneration;
-    using Kistl.API;
-    using Kistl.API.Common;
-    using Kistl.App.Base;
-    using Kistl.Client.Presentables.Calendar;
-    using Kistl.Client.Presentables;
+    using Zetbox.API;
+    using Zetbox.API.Common;
+    using Zetbox.App.Base;
+    using Zetbox.Client.Presentables.Calendar;
+    using Zetbox.Client.Presentables;
 
-    public abstract class ReportTemplate : Kistl.API.Common.Reporting.ReportTemplate
+    public abstract class ReportTemplate : Zetbox.API.Common.Reporting.ReportTemplate
     {
         public ReportTemplate(IGenerationHost host)
             : base(host)
@@ -31,24 +31,24 @@ namespace Kistl.Parties.Client.Reporting
 
 
         #region Formathelper
-        public static string FormatName(ZBox.Basic.Parties.Party party)
+        public static string FormatName(Zetbox.Basic.Parties.Party party)
         {
-            if (party is ZBox.Basic.Parties.Organization)
+            if (party is Zetbox.Basic.Parties.Organization)
             {
-                return FormatName((ZBox.Basic.Parties.Organization)party);
+                return FormatName((Zetbox.Basic.Parties.Organization)party);
             }
-            else if (party is ZBox.Basic.Parties.Person)
+            else if (party is Zetbox.Basic.Parties.Person)
             {
-                return FormatName((ZBox.Basic.Parties.Person)party);
+                return FormatName((Zetbox.Basic.Parties.Person)party);
             }
             return string.Empty;
         }
 
-        public static string FormatName(ZBox.Basic.Parties.Organization org)
+        public static string FormatName(Zetbox.Basic.Parties.Organization org)
         {
             return org.Name;
         }
-        public static string FormatName(ZBox.Basic.Parties.Person pers)
+        public static string FormatName(Zetbox.Basic.Parties.Person pers)
         {
             List<string> parts = new List<string>();
             parts.Add(pers.PersonalTitle);
@@ -59,7 +59,7 @@ namespace Kistl.Parties.Client.Reporting
             return string.Join(" ", parts.Where(s => !string.IsNullOrEmpty(s)).ToArray());
         }
 
-        public static ZBox.Basic.Parties.Address Coalesce(params ZBox.Basic.Parties.Address[] addresses)
+        public static Zetbox.Basic.Parties.Address Coalesce(params Zetbox.Basic.Parties.Address[] addresses)
         {
             foreach (var a in addresses)
             {

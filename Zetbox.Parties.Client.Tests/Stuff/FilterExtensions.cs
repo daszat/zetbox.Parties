@@ -1,5 +1,5 @@
 
-namespace Kistl.Parties.Client.Tests.Stuff
+namespace Zetbox.Parties.Client.Tests.Stuff
 {
     using System;
     using System.Collections.Generic;

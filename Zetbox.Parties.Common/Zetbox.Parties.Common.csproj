@@ -8,8 +8,8 @@
     <ProjectGuid>{A3080370-A3AD-4810-AF93-CD9AB94A4385}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Kistl.Parties.Common</RootNamespace>
-    <AssemblyName>Kistl.Parties.Common</AssemblyName>
+    <RootNamespace>Zetbox.Parties.Common</RootNamespace>
+    <AssemblyName>Zetbox.Parties.Common</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -18,7 +18,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\bin\Debug\Common\App.Parties\</OutputPath>
-    <KistlOutputPath>..\bin\Debug\</KistlOutputPath>
+    <ZetboxOutputPath>..\bin\Debug\</ZetboxOutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -27,7 +27,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\bin\Release\Common\App.Parties\</OutputPath>
-    <KistlOutputPath>..\bin\Release\</KistlOutputPath>
+    <ZetboxOutputPath>..\bin\Release\</ZetboxOutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

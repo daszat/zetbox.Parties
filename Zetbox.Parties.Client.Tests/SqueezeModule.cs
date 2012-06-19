@@ -1,14 +1,14 @@
 
-namespace Kistl.Parties.Client.Tests
+namespace Zetbox.Parties.Client.Tests
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using Autofac;
-    using Kistl.Parties.Client.Tests.Stuff;
-    using Kistl.API.Client;
-    using Kistl.API.Common;
+    using Zetbox.Parties.Client.Tests.Stuff;
+    using Zetbox.API.Client;
+    using Zetbox.API.Common;
     
     public class SqueezeModule : Module
     {

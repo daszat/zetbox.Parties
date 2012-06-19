@@ -1,13 +1,13 @@
 ﻿<%@ CodeTemplate Language="C#" 
     Name="Common.Address"
-    ClassName="Kistl.Parties.Client.Reporting.Common.Address"
-    Inherits="Kistl.Parties.Client.Reporting.ReportTemplate" %>
+    ClassName="Zetbox.Parties.Client.Reporting.Common.Address"
+    Inherits="Zetbox.Parties.Client.Reporting.ReportTemplate" %>
 <%@ Import Namespace="System" %>
 <%@ Import Namespace="System.Collections.Generic" %>
 <%@ Import Namespace="System.Linq" %>
-<%@ Import Namespace="ZBox.Basic.Parties" %>
-<%@ Parameter Name="party" Type="ZBox.Basic.Parties.Party" %>
-<%@ Parameter Name="address" Type="ZBox.Basic.Parties.Address" %>
+<%@ Import Namespace="Zetbox.Basic.Parties" %>
+<%@ Parameter Name="party" Type="Zetbox.Basic.Parties.Party" %>
+<%@ Parameter Name="address" Type="Zetbox.Basic.Parties.Address" %>
 
 <%= FormatName(party) %>
 \linebreak

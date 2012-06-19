@@ -1,10 +1,10 @@
-namespace ZBox.Basic.Accounting
+namespace Zetbox.Basic.Accounting
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Kistl.API;
+    using Zetbox.API;
 
     [Implementor]
     public static class TransactionActions

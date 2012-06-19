@@ -1,7 +1,7 @@
 ﻿<%@ CodeTemplate Language="C#" 
     Name="Common.DocumentInfo"
-    ClassName="Kistl.Parties.Client.Reporting.Common.DocumentInfo"
-    Inherits="Kistl.Parties.Client.Reporting.ReportTemplate" %>
+    ClassName="Zetbox.Parties.Client.Reporting.Common.DocumentInfo"
+    Inherits="Zetbox.Parties.Client.Reporting.ReportTemplate" %>
 <%@ Import Namespace="System" %>
 <%@ Import Namespace="System.Collections.Generic" %>
 <%@ Import Namespace="System.Linq" %>

@@ -2,15 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Kistl.API;
-using ZBox.Basic.Accounting;
+using Zetbox.API;
+using Zetbox.Basic.Accounting;
 using System.Globalization;
 
-namespace Kistl.Parties.Common.Accounting
+namespace Zetbox.Parties.Common.Accounting
 {
     public interface IAccountImporter
     {
-        void Import(IKistlContext ctx, Account account, string fileName);
+        void Import(IZetboxContext ctx, Account account, string fileName);
     }
 
     public class ImportedTransaction
@@ -37,7 +37,7 @@ namespace Kistl.Parties.Common.Accounting
 
     public abstract class AccountImporter : IAccountImporter
     {
-        public void Import(IKistlContext ctx, Account account, string fileName)
+        public void Import(IZetboxContext ctx, Account account, string fileName)
         {
             List<ImportedTransaction> importedTransactions = Read(fileName);
             var min = importedTransactions.Min(i => i.Date).AddDays(-7);

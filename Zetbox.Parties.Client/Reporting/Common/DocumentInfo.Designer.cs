@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-namespace Kistl.Parties.Client.Reporting.Common
+namespace Zetbox.Parties.Client.Reporting.Common
 {
-    [Arebis.CodeGeneration.TemplateInfo(@"P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Common\DocumentInfo.cst")]
-    public partial class DocumentInfo : Kistl.Parties.Client.Reporting.ReportTemplate
+    [Arebis.CodeGeneration.TemplateInfo(@"P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\DocumentInfo.cst")]
+    public partial class DocumentInfo : Zetbox.Parties.Client.Reporting.ReportTemplate
     {
 		protected string Subject;
 		protected string Author;
@@ -29,7 +29,7 @@ namespace Kistl.Parties.Client.Reporting.Common
 
         public override void Generate()
         {
-#line 10 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Common\DocumentInfo.cst"
+#line 10 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\DocumentInfo.cst"
 this.WriteObjects("Info\r\n");
 this.WriteObjects("{\r\n");
 this.WriteObjects("	Title = \"",  Subject , "\"\r\n");

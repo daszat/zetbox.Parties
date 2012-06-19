@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Kistl.API;
+using Zetbox.API;
 using at.dasz.DocumentManagement;
-using Kistl.Parties.Client.Reporting;
-using Kistl.App.Base;
+using Zetbox.Parties.Client.Reporting;
+using Zetbox.App.Base;
 
-namespace ZBox.Basic.Invoicing
+namespace Zetbox.Basic.Invoicing
 {
     [Implementor]
     public class DefaultInvoiceGeneratorActions
@@ -25,7 +25,7 @@ namespace ZBox.Basic.Invoicing
             using (var rpt = _rptFactory())
             {
                 var ctx = obj.Context;
-                Kistl.Parties.Client.Reporting.Invoicing.SalesInvoice.Call(rpt, invoice);
+                Zetbox.Parties.Client.Reporting.Invoicing.SalesInvoice.Call(rpt, invoice);
                 using (var s = rpt.GetStream())
                 {
                     var name = "Invoice.pdf";

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Kistl.Parties.Client")]
-[assembly: AssemblyDescription("Client functionality for Kistl.Parties")]
+[assembly: AssemblyTitle("Zetbox.Parties.Client")]
+[assembly: AssemblyDescription("Client functionality for Zetbox.Parties")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("dasz.at OG")]
-[assembly: AssemblyProduct("Kistl.Parties.Client")]
+[assembly: AssemblyProduct("Zetbox.Parties.Client")]
 [assembly: AssemblyCopyright("Copyright © dasz.at OG 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

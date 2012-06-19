@@ -8,8 +8,8 @@
     <ProjectGuid>{CA39A333-205A-4C14-BD33-C76A708D067A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Kistl.Parties.Client</RootNamespace>
-    <AssemblyName>Kistl.Parties.Client</AssemblyName>
+    <RootNamespace>Zetbox.Parties.Client</RootNamespace>
+    <AssemblyName>Zetbox.Parties.Client</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -154,9 +154,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Kistl.Parties.Common\Kistl.Parties.Common.csproj">
+    <ProjectReference Include="..\Zetbox.Parties.Common\Zetbox.Parties.Common.csproj">
       <Project>{A3080370-A3AD-4810-AF93-CD9AB94A4385}</Project>
-      <Name>Kistl.Parties.Common</Name>
+      <Name>Zetbox.Parties.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

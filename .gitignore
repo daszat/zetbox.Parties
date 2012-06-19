@@ -2,12 +2,12 @@
 *.suo
 /Configs/Local
 /DocumentStore
-/Libs/Kistl/*.csv
-/Libs/Kistl/*.log*
-/Libs/Kistl/*.log.*
+/Libs/Zetbox/*.csv
+/Libs/Zetbox/*.log*
+/Libs/Zetbox/*.log.*
 /bin
 obj
-/Kistl.Parties.Client.Tests/bin
-/Libs/Kistl/Tests
+/Zetbox.Parties.Client.Tests/bin
+/Libs/Zetbox/Tests
 /packages/LinqCube.*
 /packages/zetboxBasic*

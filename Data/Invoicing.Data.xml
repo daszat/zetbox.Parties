@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<KistlPackaging xmlns:Invoicing="ZBox.Basic.Invoicing" date="2012-05-07T17:21:36.9526953Z" xmlns="http://dasz.at/Kistl">
+<ZetboxPackaging xmlns:Invoicing="Zetbox.Basic.Invoicing" date="2012-05-07T17:21:36.9526953Z" xmlns="http://dasz.at/Zetbox">
   <Invoicing:StatisticActions ExportGuid="abf66edd-93b1-40a9-868a-adf6f7a94ea1">
     <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
   </Invoicing:StatisticActions>
@@ -24,4 +24,4 @@
     <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
     <Invoicing:Percentage>0.00</Invoicing:Percentage>
   </Invoicing:VATType>
-</KistlPackaging>
+</ZetboxPackaging>

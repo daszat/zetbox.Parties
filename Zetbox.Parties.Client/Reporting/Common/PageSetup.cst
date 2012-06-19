@@ -1,7 +1,7 @@
 ﻿<%@ CodeTemplate Language="C#" 
     Name="Common.PageSetup"
-    ClassName="Kistl.Parties.Client.Reporting.Common.PageSetup"
-    Inherits="Kistl.Parties.Client.Reporting.ReportTemplate" %>
+    ClassName="Zetbox.Parties.Client.Reporting.Common.PageSetup"
+    Inherits="Zetbox.Parties.Client.Reporting.ReportTemplate" %>
 <%@ Import Namespace="System" %>
 <%@ Import Namespace="System.Collections.Generic" %>
 <%@ Import Namespace="System.Linq" %>

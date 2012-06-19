@@ -1,27 +1,27 @@
 
-namespace Kistl.Parties.Client.Tests
+namespace Zetbox.Parties.Client.Tests
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using Autofac;
-    using Kistl.API;
-    using Kistl.API.AbstractConsumerTests;
+    using Zetbox.API;
+    using Zetbox.API.AbstractConsumerTests;
     using NUnit.Framework;
-    using ZBox.Basic.Parties;
+    using Zetbox.Basic.Parties;
 
     [Explicit]
     public class StressTests
         : AbstractTestFixture
     {
-        protected Func<IKistlContext> ctxFactory;
-        protected IKistlContext ctx;
+        protected Func<IZetboxContext> ctxFactory;
+        protected IZetboxContext ctx;
         public override void SetUp()
         {
             base.SetUp();
 
-            ctxFactory = scope.Resolve<Func<IKistlContext>>();
+            ctxFactory = scope.Resolve<Func<IZetboxContext>>();
             ctx = ctxFactory();
         }
 
@@ -34,7 +34,7 @@ namespace Kistl.Parties.Client.Tests
             {
                 using (var subScope = scope.BeginLifetimeScope())
                 {
-                    var ctx = subScope.Resolve<IKistlContext>();
+                    var ctx = subScope.Resolve<IZetboxContext>();
                     var results1 = ctx.GetQuery<Person>().Where(k => k.LastName.Contains("e")).ToList();
                     var results2 = ctx.GetQuery<Person>().Where(k => k.LastName.Contains("r")).ToList();
 

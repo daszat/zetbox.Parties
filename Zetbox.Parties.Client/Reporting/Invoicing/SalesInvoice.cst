@@ -1,12 +1,12 @@
 ﻿<%@ CodeTemplate Language="C#" 
     Name="Invoicing.SalesInvoice"
-    ClassName="Kistl.Parties.Client.Reporting.Invoicing.SalesInvoice"
-    Inherits="Kistl.Parties.Client.Reporting.ReportTemplate" %>
+    ClassName="Zetbox.Parties.Client.Reporting.Invoicing.SalesInvoice"
+    Inherits="Zetbox.Parties.Client.Reporting.ReportTemplate" %>
 <%@ Import Namespace="System" %>
 <%@ Import Namespace="System.Collections.Generic" %>
 <%@ Import Namespace="System.Linq" %>
-<%@ Import Namespace="ZBox.Basic.Invoicing" %>
-<%@ Parameter Name="invoice" Type="ZBox.Basic.Invoicing.SalesInvoice" %>
+<%@ Import Namespace="Zetbox.Basic.Invoicing" %>
+<%@ Parameter Name="invoice" Type="Zetbox.Basic.Invoicing.SalesInvoice" %>
 
 \document [
 <% Common.DocumentInfo.Call(Host, "Invoice", null); %>

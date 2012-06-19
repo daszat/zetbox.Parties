@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Autofac;
-using Kistl.API;
-using Kistl.API.Client;
-using Kistl.Client;
-using Kistl.Client.Presentables;
+using Zetbox.API;
+using Zetbox.API.Client;
+using Zetbox.Client;
+using Zetbox.Client.Presentables;
 
-namespace Kistl.Parties.Client
+namespace Zetbox.Parties.Client
 {
     public class CustomClientActionsModule : Module
     {
@@ -16,11 +16,11 @@ namespace Kistl.Parties.Client
         {
             base.Load(moduleBuilder);
 
-            moduleBuilder.RegisterZBoxImplementors(typeof(CustomClientActionsModule).Assembly);
+            moduleBuilder.RegisterZetboxImplementors(typeof(CustomClientActionsModule).Assembly);
             moduleBuilder.RegisterViewModels(typeof(CustomClientActionsModule).Assembly);
 
             // Register explicit overrides here
-            moduleBuilder.RegisterType<Kistl.Parties.Common.Accounting.BACA_AccountImporter>()
+            moduleBuilder.RegisterType<Zetbox.Parties.Common.Accounting.BACA_AccountImporter>()
                 .InstancePerDependency();
 
             moduleBuilder

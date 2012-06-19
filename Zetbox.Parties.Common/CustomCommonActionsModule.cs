@@ -5,7 +5,7 @@ using System.Text;
 using Autofac;
 using Zetbox.API;
 
-namespace Kistl.Parties.Common
+namespace Zetbox.Parties.Common
 {
     public class CustomCommonActionsModule : Module
     {

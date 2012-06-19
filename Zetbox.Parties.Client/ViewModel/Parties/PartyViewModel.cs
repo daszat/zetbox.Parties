@@ -1,22 +1,22 @@
-namespace Kistl.Client.Presentables.Parties
+namespace Zetbox.Client.Presentables.Parties
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Kistl.Client.Presentables;
-    using Kistl.API;
-    using ZBox.Basic.Parties;
+    using Zetbox.Client.Presentables;
+    using Zetbox.API;
+    using Zetbox.Basic.Parties;
 
     /// <summary>
     /// No viewmodel decriptor - Party is abstract
     /// </summary>
     public class PartyViewModel : DataObjectViewModel
     {
-        public new delegate PartyViewModel Factory(IKistlContext dataCtx, ViewModel parent,
+        public new delegate PartyViewModel Factory(IZetboxContext dataCtx, ViewModel parent,
             IDataObject obj);
 
-        public PartyViewModel(IViewModelDependencies appCtx, IKistlContext dataCtx, ViewModel parent,
+        public PartyViewModel(IViewModelDependencies appCtx, IZetboxContext dataCtx, ViewModel parent,
             Party obj)
             : base(appCtx, dataCtx, parent, obj)
         {

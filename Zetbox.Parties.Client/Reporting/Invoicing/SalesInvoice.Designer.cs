@@ -1,25 +1,25 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using ZBox.Basic.Invoicing;
+using Zetbox.Basic.Invoicing;
 
 
-namespace Kistl.Parties.Client.Reporting.Invoicing
+namespace Zetbox.Parties.Client.Reporting.Invoicing
 {
-    [Arebis.CodeGeneration.TemplateInfo(@"P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst")]
-    public partial class SalesInvoice : Kistl.Parties.Client.Reporting.ReportTemplate
+    [Arebis.CodeGeneration.TemplateInfo(@"P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst")]
+    public partial class SalesInvoice : Zetbox.Parties.Client.Reporting.ReportTemplate
     {
-		protected ZBox.Basic.Invoicing.SalesInvoice invoice;
+		protected Zetbox.Basic.Invoicing.SalesInvoice invoice;
 
 
-        public static void Call(Arebis.CodeGeneration.IGenerationHost _host, ZBox.Basic.Invoicing.SalesInvoice invoice)
+        public static void Call(Arebis.CodeGeneration.IGenerationHost _host, Zetbox.Basic.Invoicing.SalesInvoice invoice)
         {
             if (_host == null) { throw new global::System.ArgumentNullException("_host"); }
 
             _host.CallTemplate("Invoicing.SalesInvoice", invoice);
         }
 
-        public SalesInvoice(Arebis.CodeGeneration.IGenerationHost _host, ZBox.Basic.Invoicing.SalesInvoice invoice)
+        public SalesInvoice(Arebis.CodeGeneration.IGenerationHost _host, Zetbox.Basic.Invoicing.SalesInvoice invoice)
             : base(_host)
         {
 			this.invoice = invoice;
@@ -28,21 +28,21 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         public override void Generate()
         {
-#line 10 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 10 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("\\document [\r\n");
-#line 12 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 12 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 Common.DocumentInfo.Call(Host, "Invoice", null); 
-#line 13 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 13 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("] {\r\n");
-#line 14 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 14 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 Common.DocumentStyles.Call(Host); 
-#line 15 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 15 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("\\section [\r\n");
-#line 17 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 17 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 PageSetup(); 
-#line 18 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 18 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("	] {\r\n");
 this.WriteObjects("        \\paragraph [ Style = \"Title\" Format { SpaceBefore = \"2cm\" } ] {\r\n");
 this.WriteObjects("            ",  GetTitle() , "\r\n");
@@ -55,14 +55,14 @@ this.WriteObjects("                     Left = \"11cm\"\r\n");
 this.WriteObjects("                     WrapFormat { Style = Through } ] {\r\n");
 this.WriteObjects("            \\paragraph [ Format { Alignment = Right } ] {\r\n");
 this.WriteObjects("                ");
-#line 29 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 29 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatIntOrg(); 
-#line 30 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 30 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("                \\linebreak \\linebreak\r\n");
 this.WriteObjects("                ");
-#line 31 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 31 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatIntOrgTaxNumber(); 
-#line 32 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 32 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("            }\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
@@ -72,14 +72,14 @@ this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
 this.WriteObjects("        \\paragraph {\r\n");
 this.WriteObjects("            ");
-#line 40 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 40 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatRecipient(); 
-#line 41 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 41 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("            \\linebreak \\linebreak\r\n");
 this.WriteObjects("            ");
-#line 42 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 42 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatRecipientTaxNumber(); 
-#line 43 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 43 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
 this.WriteObjects("        \\paragraph [ \r\n");
@@ -119,9 +119,9 @@ this.WriteObjects("                    \\cell { ",  GetUnitPriceHeader() , " }\r
 this.WriteObjects("                    \\cell { ",  GetVATHeader() , " }\r\n");
 this.WriteObjects("                    \\cell { ",  GetAmountHeader() , " }\r\n");
 this.WriteObjects("                }\r\n");
-#line 82 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 82 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 foreach(var item in GetItems()) { 
-#line 83 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 83 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("                \\row {\r\n");
 this.WriteObjects("                    \\cell { ",  Format    (item.Description) , " }\r\n");
 this.WriteObjects("                    \\cell { ",  Format    (item.Quantity) , " }\r\n");
@@ -129,11 +129,11 @@ this.WriteObjects("                    \\cell { ",  FormatEuro(item.UnitPrice) ,
 this.WriteObjects("                    \\cell { ",  Format    (item.VATType.Description) , " }\r\n");
 this.WriteObjects("                    \\cell { ",  FormatEuro(item.AmountNet) , " }\r\n");
 this.WriteObjects("                }\r\n");
-#line 90 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 90 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 } 
-#line 91 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 91 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 if(RenderSubTotal()) { 
-#line 92 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 92 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("                \\row [ Height = \"0.1cm\" HeightRule = Exactly ] {\r\n");
 this.WriteObjects("                    \\cell {  }\r\n");
 this.WriteObjects("                    \\cell {  }\r\n");
@@ -148,11 +148,11 @@ this.WriteObjects("                    \\cell {  }\r\n");
 this.WriteObjects("                    \\cell {  }\r\n");
 this.WriteObjects("                    \\cell { ",  GetSubTotalAmountNet() , " }\r\n");
 this.WriteObjects("                }\r\n");
-#line 106 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 106 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 } 
-#line 107 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 107 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 foreach(var vat in GetVATTypes()) { 
-#line 108 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 108 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("                \\row {\r\n");
 this.WriteObjects("                    \\cell { ",  GetVATDescription(vat) , " }\r\n");
 this.WriteObjects("                    \\cell {  }\r\n");
@@ -160,9 +160,9 @@ this.WriteObjects("                    \\cell {  }\r\n");
 this.WriteObjects("                    \\cell {  }\r\n");
 this.WriteObjects("                    \\cell { ",  GetVATSum(vat) , " }\r\n");
 this.WriteObjects("                }\r\n");
-#line 115 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 115 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 } 
-#line 116 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 116 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("                \\row [ Height = \"0.1cm\" HeightRule = Exactly ] {\r\n");
 this.WriteObjects("                    \\cell {  }\r\n");
 this.WriteObjects("                    \\cell {  }\r\n");
@@ -181,9 +181,9 @@ this.WriteObjects("            }\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
 this.WriteObjects("        ");
-#line 133 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 133 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatMessage(); 
-#line 134 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 134 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("        \\paragraph [ Style = \"Heading1\" Format { SpaceBefore = \"1cm\" } ] {\r\n");
 this.WriteObjects("            ",  GetPaymentTitle() , "\r\n");
@@ -192,18 +192,18 @@ this.WriteObjects("        \\paragraph {\r\n");
 this.WriteObjects("            ",  GetPaymentIntroduction() , "\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("        ");
-#line 141 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 141 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatBankAccount(); 
-#line 142 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 142 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("        \\paragraph [ Format { SpaceBefore = \"1cm\" } ] {\r\n");
 this.WriteObjects("            ",  GetGreetingsLine() , "\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
 this.WriteObjects("        ");
-#line 147 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 147 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatSignature(); 
-#line 148 "P:\Kistl.Parties\Kistl.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 148 "P:\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("    }\r\n");
 this.WriteObjects("}");
 

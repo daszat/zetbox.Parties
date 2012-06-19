@@ -1,11 +1,11 @@
 
-namespace Kistl.Parties.Client.Reporting.Invoicing
+namespace Zetbox.Parties.Client.Reporting.Invoicing
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using ZBox.Basic.Invoicing;
+    using Zetbox.Basic.Invoicing;
 
     public partial class SalesInvoice
     {
@@ -31,9 +31,9 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual void FormatRecipientTaxNumber()
         {
-            if (invoice.Customer.Party is ZBox.Basic.Parties.Organization)
+            if (invoice.Customer.Party is Zetbox.Basic.Parties.Organization)
             {
-                var org = (ZBox.Basic.Parties.Organization)invoice.Customer.Party;
+                var org = (Zetbox.Basic.Parties.Organization)invoice.Customer.Party;
                 this.WriteObjects(string.Format(SalesInvoiceResources.UID, org.TaxIDNumber));
             }
         }
@@ -45,7 +45,7 @@ namespace Kistl.Parties.Client.Reporting.Invoicing
 
         protected virtual void FormatIntOrgTaxNumber()
         {
-            var org = (ZBox.Basic.Parties.Organization)invoice.InternalOrganization.Party;
+            var org = (Zetbox.Basic.Parties.Organization)invoice.InternalOrganization.Party;
             this.WriteObjects(string.Format(SalesInvoiceResources.UID, org.TaxIDNumber));
         }
 
