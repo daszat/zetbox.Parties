@@ -11,3 +11,4 @@ obj
 /Libs/Zetbox/Tests
 /packages/LinqCube.*
 /packages/zetboxBasic*
+/packages/Arebis.CodeGenerator.*

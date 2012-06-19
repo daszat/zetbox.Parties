@@ -33,15 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Arebis.CodeGeneration">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(AREBISROOT)\Arebis.CodeGeneration.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Arebis.CodeGeneration, Version=1.2.1.0, Culture=neutral, PublicKeyToken=1012dfebee6c8abd, processorArchitecture=MSIL">
+      <HintPath>..\packages\Arebis.CodeGenerator.1.2.1.0\lib\net35\Arebis.CodeGeneration.dll</HintPath>
     </Reference>
-    <Reference Include="Arebis.CodeGenerator">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(AREBISROOT)\Arebis.CodeGenerator.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Arebis.CodeGenerator, Version=1.2.1.0, Culture=neutral, PublicKeyToken=1012dfebee6c8abd, processorArchitecture=MSIL">
+      <HintPath>..\packages\Arebis.CodeGenerator.1.2.1.0\lib\net35\Arebis.CodeGenerator.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -182,6 +178,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Reporting\Common\Address.cst">
       <Generator>Arebis Template Processor</Generator>
       <LastGenOutput>Address.Designer.cs</LastGenOutput>
