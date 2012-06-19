@@ -3,4 +3,4 @@ echo ***************************************************************************
 echo Run the development client.
 echo ********************************************************************************
 
-start bin\debug\Zetbox.Client.WPF.exe
+start bin\debug\Zetbox.WPF.exe
