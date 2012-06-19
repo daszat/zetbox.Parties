@@ -96,7 +96,7 @@
     </Reference>
     <Reference Include="Zetbox.Objects">
       <HintPath>..\bin\Debug\Common\Core.Generated\Zetbox.Objects.dll</HintPath>
-      <Private>False</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Zetbox.Objects.ClientImpl">
       <HintPath>..\bin\Debug\Client\Core.Generated\Zetbox.Objects.ClientImpl.dll</HintPath>
@@ -123,7 +123,7 @@
       <HintPath>..\bin\Debug\Server\NH\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-	<SpecificVersion>False</SpecificVersion>
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\bin\Debug\Common\Tests\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
