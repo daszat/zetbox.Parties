@@ -13,6 +13,8 @@ set config=%1
 
 :GOON
 
+call "ZbInstall" %config%
+
 bin\debug\Zetbox.Server.Service.exe %config% -wipe
 IF ERRORLEVEL 1 GOTO FAIL
 
