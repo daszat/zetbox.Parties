@@ -5,6 +5,8 @@ echo Changes to the object model are generated.
 echo Use this to create a clean environment.
 echo ********************************************************************************
 
+IF NOT EXIST Configs\Local XCOPY /S/E Configs\Examples Configs\Local\
+
 set config=Configs\Local\Fallback\Zetbox.Server.Service.xml
 
 if .%1. == .. GOTO GOON
