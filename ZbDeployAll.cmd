@@ -20,9 +20,6 @@ cd bin\Debug
 Zetbox.Server.Service.exe %config% -deploy-update -generate
 IF ERRORLEVEL 1 GOTO FAIL
 
-Zetbox.Server.Service.exe %config% -import Data\Invoicing.Data.xml -import Data\Accounting.Data.xml -import Data\Parties.xml
-IF ERRORLEVEL 1 GOTO FAIL
-
 echo ********************************************************************************
 echo ************************************ Success ***********************************
 echo ********************************************************************************
@@ -34,8 +31,8 @@ echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX FAIL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo                                  Aborting Deploy
-rem return error without closing parent shell
 cd ..\..
+rem return error without closing parent shell
 echo A | choice /c:A /n
 
 :EOF

@@ -13,7 +13,7 @@ set config=%1
 
 :GOON
 
-cd bin\debug
+cd bin\Debug
 
 Zetbox.Server.Service.exe %config% -generate -updatedeployedschema -repairschema
 IF ERRORLEVEL 1 GOTO FAIL
@@ -22,9 +22,11 @@ rem publish schema data for parties project
 Zetbox.Server.Service.exe %config% -publish ..\..\Modules\Parties.xml -ownermodules Parties;Invoicing;Accounting
 IF ERRORLEVEL 1 GOTO FAIL
 
+
 rem export Invoicing Module data
 Zetbox.Server.Service.exe %config% -export ..\..\Data\Invoicing.Data.xml -schemamodules Invoicing -ownermodules Invoicing
 IF ERRORLEVEL 1 GOTO FAIL
+
 
 rem export Accounting Module data
 Zetbox.Server.Service.exe %config% -export ..\..\Data\Accounting.Data.xml -schemamodules Accounting -ownermodules Accounting
@@ -33,7 +35,6 @@ IF ERRORLEVEL 1 GOTO FAIL
 rem export test data
 Zetbox.Server.Service.exe %config% -export ..\..\Data\Parties.xml -schemamodules Parties;Invoicing;Accounting
 IF ERRORLEVEL 1 GOTO FAIL
-
 
 echo ********************************************************************************
 echo ************************************ Success ***********************************
@@ -46,8 +47,8 @@ echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX FAIL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo                                Aborting Publish
-rem return error without closing parent shell
 cd ..\..
+rem return error without closing parent shell
 echo A | choice /c:A /n
 
 :EOF

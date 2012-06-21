@@ -1,5 +1,5 @@
 
-namespace Zetbox.Parties.Server
+namespace Zetbox.Parties.Client.WPF
 {
     using System;
     using System.Collections.Generic;
@@ -7,17 +7,17 @@ namespace Zetbox.Parties.Server
     using System.Text;
     using Autofac;
     using Zetbox.API;
-    using Zetbox.API.Server;
+    using Zetbox.API.Client;
+    using Zetbox.Client;
 
-    public class CustomServerActionsModule : Module
+    public class ClientWPFModule : Module
     {
         protected override void Load(ContainerBuilder moduleBuilder)
         {
             base.Load(moduleBuilder);
 
-            moduleBuilder.RegisterZetboxImplementors(typeof(CustomServerActionsModule).Assembly);
-
             // Register explicit overrides here
+
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ZetboxConfig xmlns="http://dasz.at/Zetbox/">
   <ConfigName>Zetbox.Parties Server Configuration</ConfigName>
   <Server StartServer="true">
@@ -8,7 +8,7 @@
     <CodeGenBinaryOutputPath>
       <string>.</string>
     </CodeGenBinaryOutputPath>
-    <CodeGenArchivePath>..\Backup</CodeGenArchivePath>
+    <CodeGenArchivePath>..\..\Backup</CodeGenArchivePath>
     <Modules>
       <Module>Zetbox.API.ApiModule, Zetbox.API</Module>
       <Module>Zetbox.API.Server.ServerApiModule, Zetbox.API.Server</Module>
@@ -23,8 +23,8 @@
       <Module>Zetbox.App.Projekte.Common.CustomCommonActionsModule, Zetbox.App.Projekte.Common</Module>
 
       <!-- application specific modules -->
-      <Module>Zetbox.Parties.Common.CustomCommonActionsModule, Zetbox.Parties.Common</Module>
-      <Module>Zetbox.Parties.Server.CustomServerActionsModule, Zetbox.Parties.Server</Module>
+      <Module>Zetbox.Parties.Common.CommonModule, Zetbox.Parties.Common</Module>
+      <Module>Zetbox.Parties.Server.ServerModule, Zetbox.Parties.Server</Module>
     </Modules>
   </Server>
   <AssemblySearchPaths>
@@ -35,7 +35,7 @@
     <string>Server\EF.Generated</string>
     <string>Common\App.Zetbox</string>
     <string>Server\App.Zetbox</string>
-    <string>Server\App.Parties</string>
-    <string>Common\App.Parties</string>
+    <string>Server\App.Zetbox.Parties</string>
+    <string>Common\App.Zetbox.Parties</string>
   </AssemblySearchPaths>
 </ZetboxConfig>

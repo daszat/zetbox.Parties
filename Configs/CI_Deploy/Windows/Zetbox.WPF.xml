@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ZetboxConfig xmlns="http://dasz.at/Zetbox/">
-  <ConfigName>Zetbox.Parties Client Configuration</ConfigName>
+  <ConfigName>Parties Client Configuration</ConfigName>
   <Client StartClient="false" ThrowErrors="false">
     <!--<Application>6be0ba52-4589-48f1-832f-6cd463ba319a</Application>-->
     <Culture>de-AT</Culture>
@@ -21,14 +21,15 @@
       <Module>Zetbox.DalProvider.Memory.MemoryProvider, Zetbox.DalProvider.Memory</Module>
       <Module>Zetbox.App.Projekte.Client.CustomClientActionsModule, Zetbox.App.Projekte.Client</Module>
       <Module>Zetbox.App.Projekte.Common.CustomCommonActionsModule, Zetbox.App.Projekte.Common</Module>
-	  <Module>Zetbox.Microsoft.Module, Zetbox.Microsoft</Module>
-	  <Module>Zetbox.Microsoft.OutlookMailSender+Module, Zetbox.Microsoft</Module>
+      <Module>Zetbox.Microsoft.Module, Zetbox.Microsoft</Module>
+      <Module>Zetbox.Microsoft.OutlookMailSender+Module, Zetbox.Microsoft</Module>
       <Module>Zetbox.API.MailProblemReporter+Module, Zetbox.API</Module>
       <Module>Zetbox.App.Projekte.DocumentManagement.FileImportService+Module, Zetbox.App.Projekte.Common</Module>
 
       <!-- application specific modules -->
-      <Module>Zetbox.Parties.Common.CustomCommonActionsModule, Zetbox.Parties.Common</Module>
-      <Module>Zetbox.Parties.Client.CustomClientActionsModule, Zetbox.Parties.Client</Module>
+      <Module>Zetbox.Parties.Common.CommonModule, Zetbox.Parties.Common</Module>
+      <Module>Zetbox.Parties.Client.ClientModule, Zetbox.Parties.Client</Module>
+      <Module>Zetbox.Parties.Client.WPF.ClientWPFModule, Zetbox.Parties.Client.WPF</Module>
     </Modules>
   </Client>
   <AssemblySearchPaths>
@@ -39,8 +40,8 @@
     <string>Client\WPF</string>
     <string>Common\App.Zetbox</string>
     <string>Client\App.Zetbox</string>
-    <string>Common\App.Parties</string>
-    <string>Client\App.Parties</string>
+    <string>Common\App.Zetbox.Parties</string>
+    <string>Client\App.Zetbox.Parties</string>
     <string>Common\Microsoft</string>
   </AssemblySearchPaths>
 </ZetboxConfig>

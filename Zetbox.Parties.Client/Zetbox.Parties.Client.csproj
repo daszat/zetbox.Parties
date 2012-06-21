@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{CA39A333-205A-4C14-BD33-C76A708D067A}</ProjectGuid>
+    <ProjectGuid>{8BD50142-8052-403B-BFCB-087AD437E29E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Zetbox.Parties.Client</RootNamespace>
@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin\Debug\Client\App.Parties\</OutputPath>
+    <OutputPath>..\bin\Debug\Client\App.Zetbox.Parties\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -27,20 +27,27 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\bin\Release\Client\App.Parties\</OutputPath>
+    <OutputPath>..\bin\Release\Client\App.Zetbox.Parties\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Linux.Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\Client\App.Zetbox.Parties\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;MONO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Arebis.CodeGeneration, Version=1.2.1.0, Culture=neutral, PublicKeyToken=1012dfebee6c8abd, processorArchitecture=MSIL">
+    <Reference Include="Arebis.CodeGeneration">
       <HintPath>..\packages\Arebis.CodeGenerator.1.2.1.0\lib\net35\Arebis.CodeGeneration.dll</HintPath>
     </Reference>
-    <Reference Include="Arebis.CodeGenerator, Version=1.2.1.0, Culture=neutral, PublicKeyToken=1012dfebee6c8abd, processorArchitecture=MSIL">
+    <Reference Include="Arebis.CodeGenerator">
       <HintPath>..\packages\Arebis.CodeGenerator.1.2.1.0\lib\net35\Arebis.CodeGenerator.dll</HintPath>
     </Reference>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -54,12 +61,12 @@
     <Compile Include="Accounting\AccountActions.cs" />
     <Compile Include="Accounting\Receipt_TransactionActions.cs" />
     <Compile Include="Accounting\TransactionActions.cs" />
-    <Compile Include="CustomClientActionsModule.cs" />
+    <Compile Include="ClientModule.cs" />
     <Compile Include="DocumentManagement\ImportedFileActions.cs" />
     <Compile Include="Invoicing\DefaultInvoiceGeneratorActions.cs" />
-    <Compile Include="Invoicing\ReceiptActions.cs" />
     <Compile Include="Invoicing\InvoiceItemActions.cs" />
     <Compile Include="Invoicing\QuoteItemActions.cs" />
+    <Compile Include="Invoicing\ReceiptActions.cs" />
     <Compile Include="Invoicing\SalesInvoiceActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reporting\Common\Address.Designer.cs">
@@ -115,118 +122,52 @@
     <Compile Include="ViewModel\Accounting\AccountViewModel.cs" />
     <Compile Include="ViewModel\Accounting\LinkReceiptTransactionViewModel.cs" />
     <Compile Include="ViewModel\Accounting\TransactionViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\OtherIncomeReceiptViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\OtherExpenseReceiptViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\ReceiptViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\PurchaseInvoiceItemViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\SalesInvoiceItemViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\InvoiceItemViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\PurchaseQuoteViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\SalesQuoteViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\QuoteViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\Reports\SalesQuoteReportScreenViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\Reports\SalesInvoiceReportScreenViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\Reports\PurchaseInvoiceReportScreenViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\SalesInvoiceViewModel.cs" />
-    <Compile Include="ViewModel\Invoicing\PurchaseInvoiceViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\InvoiceViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\OtherExpenseReceiptViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\OtherIncomeReceiptViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\PurchaseInvoiceItemViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\PurchaseInvoiceViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\PurchaseQuoteViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\QuoteViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\ReceiptViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\Reports\PurchaseInvoiceReportScreenViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\Reports\SalesInvoiceReportScreenViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\Reports\SalesQuoteReportScreenViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\SalesInvoiceItemViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\SalesInvoiceViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\SalesQuoteViewModel.cs" />
     <Compile Include="ViewModel\Parties\OrganizationViewModel.cs" />
     <Compile Include="ViewModel\Parties\PartyViewModel.cs" />
     <Compile Include="ViewModel\Parties\PersonViewModel.cs" />
-    <Compile Include="View\Accounting\LinkReceiptTransactionDialog.xaml.cs">
-      <DependentUpon>LinkReceiptTransactionDialog.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Invoicing\ReceiptEditor.xaml.cs">
-      <DependentUpon>ReceiptEditor.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Invoicing\PurchaseQuoteEditor.xaml.cs">
-      <DependentUpon>PurchaseQuoteEditor.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Invoicing\SalesQuoteEditor.xaml.cs">
-      <DependentUpon>SalesQuoteEditor.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Invoicing\InvoiceEditor.xaml.cs">
-      <DependentUpon>InvoiceEditor.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Zetbox.Parties.Common\Zetbox.Parties.Common.csproj">
-      <Project>{A3080370-A3AD-4810-AF93-CD9AB94A4385}</Project>
-      <Name>Zetbox.Parties.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="View\Accounting\LinkReceiptTransactionDialog.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\Invoicing\ReceiptEditor.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\Invoicing\PurchaseQuoteEditor.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\Invoicing\SalesQuoteEditor.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\Invoicing\InvoiceEditor.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Reporting\Common\Address.cst">
-      <Generator>Arebis Template Processor</Generator>
-      <LastGenOutput>Address.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Reporting\Common\BankAccount.cst">
-      <Generator>Arebis Template Processor</Generator>
-      <LastGenOutput>BankAccount.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Reporting\Common\Signature.cst">
-      <Generator>Arebis Template Processor</Generator>
-      <LastGenOutput>Signature.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Reporting\Common\DocumentInfo.cst">
-      <Generator>Arebis Template Processor</Generator>
-      <LastGenOutput>DocumentInfo.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Reporting\Common\DocumentStyles.cst">
-      <Generator>Arebis Template Processor</Generator>
-      <LastGenOutput>DocumentStyles.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Reporting\Common\PageSetup.cst">
-      <Generator>Arebis Template Processor</Generator>
-      <LastGenOutput>PageSetup.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Reporting\Invoicing\SalesInvoice.cst">
-      <Generator>Arebis Template Processor</Generator>
-      <LastGenOutput>SalesInvoice.Designer.cs</LastGenOutput>
-    </None>
+    <None Include="Reporting\Common\Address.cst" />
+    <None Include="Reporting\Common\BankAccount.cst" />
+    <None Include="Reporting\Common\DocumentInfo.cst" />
+    <None Include="Reporting\Common\DocumentStyles.cst" />
+    <None Include="Reporting\Common\PageSetup.cst" />
+    <None Include="Reporting\Common\Signature.cst" />
+    <None Include="Reporting\Invoicing\SalesInvoice.cst" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reporting\Common\BankAccountResources.de.resx" />
+    <EmbeddedResource Include="Reporting\Common\BankAccountResources.resx" />
+    <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.de.resx" />
+    <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.resx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reporting\Parties\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Reporting\Common\BankAccountResources.de.resx" />
-    <EmbeddedResource Include="Reporting\Common\BankAccountResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>BankAccountResources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.de.resx" />
-    <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>SalesInvoiceResources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    <ProjectReference Include="..\Zetbox.Parties.Common\Zetbox.Parties.Common.csproj">
+      <Project>{927FD8BF-5FE0-4D07-B89E-926E7F694623}</Project>
+      <Name>Zetbox.Parties.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Arebis Generation Tools\ArebisGenTask.targets" />
-  <Import Project="..\.zetbox\client.targets" />
-  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -234,4 +175,6 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <Import Project="$(SolutionDir)\.zetbox\client.targets" />
 </Project>

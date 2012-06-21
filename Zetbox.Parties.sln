@@ -1,26 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Client", "Zetbox.Parties.Client\Zetbox.Parties.Client.csproj", "{CA39A333-205A-4C14-BD33-C76A708D067A}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A3080370-A3AD-4810-AF93-CD9AB94A4385} = {A3080370-A3AD-4810-AF93-CD9AB94A4385}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Bootstrapper", "Zetbox.Parties.Bootstrapper\Zetbox.Parties.Bootstrapper.csproj", "{1813BD9C-4FE8-4DD5-BD98-90FDF46A7A69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Common", "Zetbox.Parties.Common\Zetbox.Parties.Common.csproj", "{A3080370-A3AD-4810-AF93-CD9AB94A4385}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Common", "Zetbox.Parties.Common\Zetbox.Parties.Common.csproj", "{927FD8BF-5FE0-4D07-B89E-926E7F694623}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Server", "Zetbox.Parties.Server\Zetbox.Parties.Server.csproj", "{6757D30D-F9CC-40E8-9889-6421F4581875}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A3080370-A3AD-4810-AF93-CD9AB94A4385} = {A3080370-A3AD-4810-AF93-CD9AB94A4385}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Client", "Zetbox.Parties.Client\Zetbox.Parties.Client.csproj", "{8BD50142-8052-403B-BFCB-087AD437E29E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Client.Tests", "Zetbox.Parties.Client.Tests\Zetbox.Parties.Client.Tests.csproj", "{C6625569-B51D-4A87-8547-A4B7DDD1294C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Client.Tests", "Zetbox.Parties.Client.Tests\Zetbox.Parties.Client.Tests.csproj", "{F27CAA31-FFB9-4526-8151-E0C0CD071504}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{277FF4BB-D873-487E-BC9D-585803166DF1}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\nuget.exe = .nuget\nuget.exe
-		.nuget\nuget.targets = .nuget\nuget.targets
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Client.WPF", "Zetbox.Parties.Client.WPF\Zetbox.Parties.Client.WPF.csproj", "{359C6120-1128-44A2-B438-6CD1D50F49B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.WPF", "Zetbox.Parties.WPF\Zetbox.Parties.WPF.csproj", "{F60AEDBF-66BF-4C9A-AE15-84FDA8494CDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Server", "Zetbox.Parties.Server\Zetbox.Parties.Server.csproj", "{C295DF3B-FB98-484F-B311-041A291D3307}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,28 +22,47 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CA39A333-205A-4C14-BD33-C76A708D067A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA39A333-205A-4C14-BD33-C76A708D067A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA39A333-205A-4C14-BD33-C76A708D067A}.Linux.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA39A333-205A-4C14-BD33-C76A708D067A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA39A333-205A-4C14-BD33-C76A708D067A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3080370-A3AD-4810-AF93-CD9AB94A4385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3080370-A3AD-4810-AF93-CD9AB94A4385}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3080370-A3AD-4810-AF93-CD9AB94A4385}.Linux.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3080370-A3AD-4810-AF93-CD9AB94A4385}.Linux.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3080370-A3AD-4810-AF93-CD9AB94A4385}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3080370-A3AD-4810-AF93-CD9AB94A4385}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6757D30D-F9CC-40E8-9889-6421F4581875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6757D30D-F9CC-40E8-9889-6421F4581875}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6757D30D-F9CC-40E8-9889-6421F4581875}.Linux.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6757D30D-F9CC-40E8-9889-6421F4581875}.Linux.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6757D30D-F9CC-40E8-9889-6421F4581875}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6757D30D-F9CC-40E8-9889-6421F4581875}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C6625569-B51D-4A87-8547-A4B7DDD1294C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C6625569-B51D-4A87-8547-A4B7DDD1294C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C6625569-B51D-4A87-8547-A4B7DDD1294C}.Linux.Debug|Any CPU.ActiveCfg = Linux.Debug|Any CPU
-		{C6625569-B51D-4A87-8547-A4B7DDD1294C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C6625569-B51D-4A87-8547-A4B7DDD1294C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1813BD9C-4FE8-4DD5-BD98-90FDF46A7A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1813BD9C-4FE8-4DD5-BD98-90FDF46A7A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1813BD9C-4FE8-4DD5-BD98-90FDF46A7A69}.Linux.Debug|Any CPU.ActiveCfg = Linux.Debug|Any CPU
+		{1813BD9C-4FE8-4DD5-BD98-90FDF46A7A69}.Linux.Debug|Any CPU.Build.0 = Linux.Debug|Any CPU
+		{1813BD9C-4FE8-4DD5-BD98-90FDF46A7A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1813BD9C-4FE8-4DD5-BD98-90FDF46A7A69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927FD8BF-5FE0-4D07-B89E-926E7F694623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927FD8BF-5FE0-4D07-B89E-926E7F694623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927FD8BF-5FE0-4D07-B89E-926E7F694623}.Linux.Debug|Any CPU.ActiveCfg = Linux.Debug|Any CPU
+		{927FD8BF-5FE0-4D07-B89E-926E7F694623}.Linux.Debug|Any CPU.Build.0 = Linux.Debug|Any CPU
+		{927FD8BF-5FE0-4D07-B89E-926E7F694623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927FD8BF-5FE0-4D07-B89E-926E7F694623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD50142-8052-403B-BFCB-087AD437E29E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD50142-8052-403B-BFCB-087AD437E29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD50142-8052-403B-BFCB-087AD437E29E}.Linux.Debug|Any CPU.ActiveCfg = Linux.Debug|Any CPU
+		{8BD50142-8052-403B-BFCB-087AD437E29E}.Linux.Debug|Any CPU.Build.0 = Linux.Debug|Any CPU
+		{8BD50142-8052-403B-BFCB-087AD437E29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD50142-8052-403B-BFCB-087AD437E29E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F27CAA31-FFB9-4526-8151-E0C0CD071504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F27CAA31-FFB9-4526-8151-E0C0CD071504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F27CAA31-FFB9-4526-8151-E0C0CD071504}.Linux.Debug|Any CPU.ActiveCfg = Linux.Debug|Any CPU
+		{F27CAA31-FFB9-4526-8151-E0C0CD071504}.Linux.Debug|Any CPU.Build.0 = Linux.Debug|Any CPU
+		{F27CAA31-FFB9-4526-8151-E0C0CD071504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F27CAA31-FFB9-4526-8151-E0C0CD071504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359C6120-1128-44A2-B438-6CD1D50F49B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359C6120-1128-44A2-B438-6CD1D50F49B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359C6120-1128-44A2-B438-6CD1D50F49B5}.Linux.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359C6120-1128-44A2-B438-6CD1D50F49B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359C6120-1128-44A2-B438-6CD1D50F49B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F60AEDBF-66BF-4C9A-AE15-84FDA8494CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F60AEDBF-66BF-4C9A-AE15-84FDA8494CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F60AEDBF-66BF-4C9A-AE15-84FDA8494CDD}.Linux.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F60AEDBF-66BF-4C9A-AE15-84FDA8494CDD}.Linux.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F60AEDBF-66BF-4C9A-AE15-84FDA8494CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F60AEDBF-66BF-4C9A-AE15-84FDA8494CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C295DF3B-FB98-484F-B311-041A291D3307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C295DF3B-FB98-484F-B311-041A291D3307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C295DF3B-FB98-484F-B311-041A291D3307}.Linux.Debug|Any CPU.ActiveCfg = Linux.Debug|Any CPU
+		{C295DF3B-FB98-484F-B311-041A291D3307}.Linux.Debug|Any CPU.Build.0 = Linux.Debug|Any CPU
+		{C295DF3B-FB98-484F-B311-041A291D3307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C295DF3B-FB98-484F-B311-041A291D3307}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

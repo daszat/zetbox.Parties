@@ -1,10 +1,8 @@
 @echo off
 echo ********************************************************************************
-echo Run the development server.
+echo Run the development client.
 echo ********************************************************************************
 
-cd bin\debug
-Zetbox.Server.Service.exe
+cd bin\Debug
+start Zetbox.Parties.WPF.exe
 cd ..\..
-
-pause

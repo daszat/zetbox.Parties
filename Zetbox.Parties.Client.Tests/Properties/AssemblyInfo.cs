@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Zetbox.Parties.Client.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("dasz.at OG")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Zetbox.Parties.Client.Tests")]
-[assembly: AssemblyCopyright("Copyright © dasz.at OG 2011")]
+[assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("041a2541-0eb2-4d4c-87e2-87b245268629")]
+[assembly: Guid("1ab9a917-1ea6-4683-8e22-3dfa1411c977")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Zetbox.Parties.Client")]
-[assembly: AssemblyDescription("Client functionality for Zetbox.Parties")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("dasz.at OG")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Zetbox.Parties.Client")]
-[assembly: AssemblyCopyright("Copyright © dasz.at OG 2011")]
+[assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("71a8c222-e28c-4dde-98ec-dabec4942b66")]
+[assembly: Guid("4b9e23d5-6acf-4b3b-a765-655f405aa0f8")]
 
 // Version information for an assembly consists of the following four values:
 //

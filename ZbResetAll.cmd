@@ -5,8 +5,6 @@ echo Changes to the object model are generated.
 echo Use this to create a clean environment.
 echo ********************************************************************************
 
-IF NOT EXIST Configs\Local XCOPY /S/E Configs\Examples Configs\Local\
-
 set config=Configs\Local\Fallback\Zetbox.Server.Service.xml
 
 if .%1. == .. GOTO GOON
@@ -17,18 +15,24 @@ set config=%1
 
 call "ZbInstall" %config%
 
-bin\debug\Zetbox.Server.Service.exe %config% -wipe
-IF ERRORLEVEL 1 GOTO FAIL
+cd bin\Debug
+
+Zetbox.Server.Service.exe %config% -wipe
+IF ERRORLEVEL 1 GOTO FAIL1
+
+cd ..\..
 
 call "ZbDeployAll" %config%
-IF ERRORLEVEL 1 GOTO FAIL
+IF ERRORLEVEL 1 GOTO FAIL2
 
 echo ********************************************************************************
 echo ************************************ Success ***********************************
 echo ********************************************************************************
 GOTO EOF
 
-:FAIL
+:FAIL1
+cd ..\..
+:FAIL2
 echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX FAIL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

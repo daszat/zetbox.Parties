@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-05-15T14:32:08.557789Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-06-21T10:22:17.7371559Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -39,6 +39,11 @@ public static void NotifyCreated(Account obj)
 
 [Invocation]
 public static void NotifyDeleting(Account obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(Account obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -83,6 +88,11 @@ public static void NotifyDeleting(AccountImporterDescriptor obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(AccountImporterDescriptor obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -124,6 +134,11 @@ public static void NotifyDeleting(Receipt_Transaction obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(Receipt_Transaction obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -161,6 +176,11 @@ public static void NotifyCreated(Transaction obj)
 
 [Invocation]
 public static void NotifyDeleting(Transaction obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(Transaction obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -2154,6 +2174,16 @@ public static void isValid_TranferedTo(Transaction obj, PropertyIsValidEventArgs
 public static void Import(Account obj)
 {
 }
+
+[Invocation]
+public static void ImportCanExec(Account obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ImportCanExecReason(Account obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-12-09T14:01:07.962268Z</ZetboxBase:CreatedOn>
     <ZetboxBase:Description>Import transactions</ZetboxBase:Description>
@@ -2166,6 +2196,16 @@ public static void Import(Account obj)
     <ZetboxBase:ChangedOn>2011-11-22T21:02:47.114757Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyCreated(Account obj)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExec(Account obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExecReason(Account obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -2181,6 +2221,16 @@ public static void NotifyCreated(Account obj)
 public static void NotifyDeleting(Account obj)
 {
 }
+
+[Invocation]
+public static void NotifyDeletingCanExec(Account obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExecReason(Account obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-11-22T21:02:47.114757Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -2192,6 +2242,16 @@ public static void NotifyDeleting(Account obj)
     <ZetboxBase:ChangedOn>2011-11-22T21:02:47.114757Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyPostSave(Account obj)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExec(Account obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExecReason(Account obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -2207,6 +2267,16 @@ public static void NotifyPostSave(Account obj)
 public static void NotifyPreSave(Account obj)
 {
 }
+
+[Invocation]
+public static void NotifyPreSaveCanExec(Account obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExecReason(Account obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-11-22T21:02:47.114757Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -2218,6 +2288,16 @@ public static void NotifyPreSave(Account obj)
     <ZetboxBase:ChangedOn>2011-11-22T21:02:47.114757Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void ToString(Account obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExec(Account obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExecReason(Account obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -2233,6 +2313,16 @@ public static void ToString(Account obj, MethodReturnEventArgs&lt;string&gt; e)
 public static void NotifyCreated(AccountImporterDescriptor obj)
 {
 }
+
+[Invocation]
+public static void NotifyCreatedCanExec(AccountImporterDescriptor obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExecReason(AccountImporterDescriptor obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-12-09T13:40:52.913189Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -2244,6 +2334,16 @@ public static void NotifyCreated(AccountImporterDescriptor obj)
     <ZetboxBase:ChangedOn>2011-12-09T13:40:52.913189Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyDeleting(AccountImporterDescriptor obj)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExec(AccountImporterDescriptor obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExecReason(AccountImporterDescriptor obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -2259,6 +2359,16 @@ public static void NotifyDeleting(AccountImporterDescriptor obj)
 public static void NotifyPostSave(AccountImporterDescriptor obj)
 {
 }
+
+[Invocation]
+public static void NotifyPostSaveCanExec(AccountImporterDescriptor obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExecReason(AccountImporterDescriptor obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-12-09T13:40:52.913189Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -2272,6 +2382,16 @@ public static void NotifyPostSave(AccountImporterDescriptor obj)
 public static void NotifyPreSave(AccountImporterDescriptor obj)
 {
 }
+
+[Invocation]
+public static void NotifyPreSaveCanExec(AccountImporterDescriptor obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExecReason(AccountImporterDescriptor obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-12-09T13:40:52.913189Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -2283,6 +2403,16 @@ public static void NotifyPreSave(AccountImporterDescriptor obj)
     <ZetboxBase:ChangedOn>2011-12-09T13:40:52.913189Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void ToString(AccountImporterDescriptor obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExec(AccountImporterDescriptor obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExecReason(AccountImporterDescriptor obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -2299,6 +2429,16 @@ public static void ToString(AccountImporterDescriptor obj, MethodReturnEventArgs
 public static void LinkReceipts(Transaction obj)
 {
 }
+
+[Invocation]
+public static void LinkReceiptsCanExec(Transaction obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void LinkReceiptsCanExecReason(Transaction obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2012-04-10T18:10:55.084095Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>true</GUI:IsDisplayable>
@@ -2311,6 +2451,16 @@ public static void LinkReceipts(Transaction obj)
     <ZetboxBase:ChangedOn>2011-11-22T21:02:47.114757Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyCreated(Transaction obj)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExec(Transaction obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExecReason(Transaction obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -2326,6 +2476,16 @@ public static void NotifyCreated(Transaction obj)
 public static void NotifyDeleting(Transaction obj)
 {
 }
+
+[Invocation]
+public static void NotifyDeletingCanExec(Transaction obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExecReason(Transaction obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-11-22T21:02:47.114757Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -2337,6 +2497,16 @@ public static void NotifyDeleting(Transaction obj)
     <ZetboxBase:ChangedOn>2011-11-22T21:02:47.114757Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyPostSave(Transaction obj)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExec(Transaction obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExecReason(Transaction obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -2352,6 +2522,16 @@ public static void NotifyPostSave(Transaction obj)
 public static void NotifyPreSave(Transaction obj)
 {
 }
+
+[Invocation]
+public static void NotifyPreSaveCanExec(Transaction obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExecReason(Transaction obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-11-22T21:02:47.114757Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -2363,6 +2543,16 @@ public static void NotifyPreSave(Transaction obj)
     <ZetboxBase:ChangedOn>2011-11-22T21:02:47.114757Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void ToString(Transaction obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExec(Transaction obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExecReason(Transaction obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -2377,6 +2567,16 @@ public static void ToString(Transaction obj, MethodReturnEventArgs&lt;string&gt;
     <ZetboxBase:ChangedOn>2011-12-09T16:14:08.577104Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void Transfer(Transaction obj, MethodReturnEventArgs&lt;Zetbox.Basic.Accounting.Transaction&gt; e, Zetbox.Basic.Accounting.Account account)
+{
+}
+
+[Invocation]
+public static void TransferCanExec(Transaction obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -2888,6 +3088,11 @@ public static void NotifyDeleting(AbstractInvoiceGenerator obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(AbstractInvoiceGenerator obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>true</ZetboxBase:IsAbstract>
@@ -2927,6 +3132,11 @@ public static void NotifyCreated(DefaultInvoiceGenerator obj)
 
 [Invocation]
 public static void NotifyDeleting(DefaultInvoiceGenerator obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(DefaultInvoiceGenerator obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -2972,6 +3182,11 @@ public static void NotifyDeleting(Invoice obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(Invoice obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>true</ZetboxBase:IsAbstract>
@@ -3010,6 +3225,11 @@ public static void NotifyCreated(InvoiceItem obj)
 
 [Invocation]
 public static void NotifyDeleting(InvoiceItem obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(InvoiceItem obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -3055,6 +3275,11 @@ public static void NotifyDeleting(OtherExpenseReceipt obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(OtherExpenseReceipt obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>cd8d2a31-0fb3-4b17-b782-eeeaf7ac0c5d</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -3094,6 +3319,11 @@ public static void NotifyCreated(OtherIncomeReceipt obj)
 
 [Invocation]
 public static void NotifyDeleting(OtherIncomeReceipt obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(OtherIncomeReceipt obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -3139,6 +3369,11 @@ public static void NotifyDeleting(PurchaseInvoice obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(PurchaseInvoice obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>4c10c8c1-8108-4d21-9f91-69f3ae8db405</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -3178,6 +3413,11 @@ public static void NotifyCreated(PurchaseInvoiceItem obj)
 
 [Invocation]
 public static void NotifyDeleting(PurchaseInvoiceItem obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(PurchaseInvoiceItem obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -3224,6 +3464,11 @@ public static void NotifyDeleting(PurchaseQuote obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(PurchaseQuote obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>b30e713b-ce88-4f8f-ac56-65d12eecdde6</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -3263,6 +3508,11 @@ public static void NotifyCreated(PurchaseQuoteItem obj)
 
 [Invocation]
 public static void NotifyDeleting(PurchaseQuoteItem obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(PurchaseQuoteItem obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -3307,6 +3557,11 @@ public static void NotifyDeleting(Quote obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(Quote obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>true</ZetboxBase:IsAbstract>
@@ -3348,6 +3603,11 @@ public static void NotifyDeleting(QuoteItem obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(QuoteItem obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>true</ZetboxBase:IsAbstract>
@@ -3386,6 +3646,11 @@ public static void NotifyCreated(Receipt obj)
 
 [Invocation]
 public static void NotifyDeleting(Receipt obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(Receipt obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -3431,6 +3696,11 @@ public static void NotifyDeleting(SalesInvoice obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(SalesInvoice obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>e3a061b7-1f12-4fa0-a968-eacd299e752e</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -3470,6 +3740,11 @@ public static void NotifyCreated(SalesInvoiceItem obj)
 
 [Invocation]
 public static void NotifyDeleting(SalesInvoiceItem obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(SalesInvoiceItem obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -3516,6 +3791,11 @@ public static void NotifyDeleting(SalesQuote obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(SalesQuote obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>605b2b7e-e3d3-463f-838f-8896415f77a3</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -3555,6 +3835,11 @@ public static void NotifyCreated(SalesQuoteItem obj)
 
 [Invocation]
 public static void NotifyDeleting(SalesQuoteItem obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(SalesQuoteItem obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -3599,6 +3884,11 @@ public static void NotifyDeleting(StatisticActions obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(StatisticActions obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -3637,6 +3927,11 @@ public static void NotifyCreated(VATType obj)
 
 [Invocation]
 public static void NotifyDeleting(VATType obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(VATType obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -8560,6 +8855,16 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
 public static void CreateDocument(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;at.dasz.DocumentManagement.StaticFile&gt; e, Zetbox.Basic.Invoicing.SalesInvoice invoice)
 {
 }
+
+[Invocation]
+public static void CreateDocumentCanExec(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void CreateDocumentCanExecReason(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2012-05-09T11:02:50.4178512Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8571,6 +8876,16 @@ public static void CreateDocument(AbstractInvoiceGenerator obj, MethodReturnEven
     <ZetboxBase:ChangedOn>2012-05-09T11:01:18.3845872Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void GetNextInvoiceID(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void GetNextInvoiceIDCanExec(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void GetNextInvoiceIDCanExecReason(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8585,6 +8900,16 @@ public static void GetNextInvoiceID(AbstractInvoiceGenerator obj, MethodReturnEv
     <ZetboxBase:ChangedOn>2011-11-04T13:59:55.604836Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void MakeInvoice(ImportedFile obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.PurchaseInvoice&gt; e)
+{
+}
+
+[Invocation]
+public static void MakeInvoiceCanExec(ImportedFile obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void MakeInvoiceCanExecReason(ImportedFile obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8602,6 +8927,16 @@ public static void MakeInvoice(ImportedFile obj, MethodReturnEventArgs&lt;Zetbox
 public static void MakeOtherExpense(ImportedFile obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.OtherExpenseReceipt&gt; e)
 {
 }
+
+[Invocation]
+public static void MakeOtherExpenseCanExec(ImportedFile obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void MakeOtherExpenseCanExecReason(ImportedFile obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2012-05-07T11:58:47.5266439Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>true</GUI:IsDisplayable>
@@ -8615,6 +8950,16 @@ public static void MakeOtherExpense(ImportedFile obj, MethodReturnEventArgs&lt;Z
     <ZetboxBase:ChangedOn>2011-11-04T14:00:47.673814Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void MakeQuote(ImportedFile obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.PurchaseQuote&gt; e)
+{
+}
+
+[Invocation]
+public static void MakeQuoteCanExec(ImportedFile obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void MakeQuoteCanExecReason(ImportedFile obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8631,6 +8976,16 @@ public static void MakeQuote(ImportedFile obj, MethodReturnEventArgs&lt;Zetbox.B
 public static void NotifyCreated(InvoiceItem obj)
 {
 }
+
+[Invocation]
+public static void NotifyCreatedCanExec(InvoiceItem obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExecReason(InvoiceItem obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-07-27T00:11:55Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8642,6 +8997,16 @@ public static void NotifyCreated(InvoiceItem obj)
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.104286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyDeleting(InvoiceItem obj)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExec(InvoiceItem obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExecReason(InvoiceItem obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8657,6 +9022,16 @@ public static void NotifyDeleting(InvoiceItem obj)
 public static void NotifyPostSave(InvoiceItem obj)
 {
 }
+
+[Invocation]
+public static void NotifyPostSaveCanExec(InvoiceItem obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExecReason(InvoiceItem obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-07-27T00:11:55Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8668,6 +9043,16 @@ public static void NotifyPostSave(InvoiceItem obj)
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.104286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyPreSave(InvoiceItem obj)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExec(InvoiceItem obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExecReason(InvoiceItem obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8683,6 +9068,16 @@ public static void NotifyPreSave(InvoiceItem obj)
 public static void ToString(InvoiceItem obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
+
+[Invocation]
+public static void ToStringCanExec(InvoiceItem obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExecReason(InvoiceItem obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-07-27T00:11:55Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8694,6 +9089,16 @@ public static void ToString(InvoiceItem obj, MethodReturnEventArgs&lt;string&gt;
     <ZetboxBase:ChangedOn>2011-08-18T15:57:54.06914Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyCreated(Quote obj)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExec(Quote obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExecReason(Quote obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8709,6 +9114,16 @@ public static void NotifyCreated(Quote obj)
 public static void NotifyDeleting(Quote obj)
 {
 }
+
+[Invocation]
+public static void NotifyDeletingCanExec(Quote obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExecReason(Quote obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-08-18T15:57:54.06914Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8720,6 +9135,16 @@ public static void NotifyDeleting(Quote obj)
     <ZetboxBase:ChangedOn>2011-08-18T15:57:54.06914Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyPostSave(Quote obj)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExec(Quote obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExecReason(Quote obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8735,6 +9160,16 @@ public static void NotifyPostSave(Quote obj)
 public static void NotifyPreSave(Quote obj)
 {
 }
+
+[Invocation]
+public static void NotifyPreSaveCanExec(Quote obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExecReason(Quote obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-08-18T15:57:54.06914Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8746,6 +9181,16 @@ public static void NotifyPreSave(Quote obj)
     <ZetboxBase:ChangedOn>2011-08-18T15:57:54.06914Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void ToString(Quote obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExec(Quote obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExecReason(Quote obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8761,6 +9206,16 @@ public static void ToString(Quote obj, MethodReturnEventArgs&lt;string&gt; e)
 public static void NotifyCreated(QuoteItem obj)
 {
 }
+
+[Invocation]
+public static void NotifyCreatedCanExec(QuoteItem obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExecReason(QuoteItem obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-08-18T16:03:32.13714Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8772,6 +9227,16 @@ public static void NotifyCreated(QuoteItem obj)
     <ZetboxBase:ChangedOn>2011-08-18T16:03:32.13714Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyDeleting(QuoteItem obj)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExec(QuoteItem obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExecReason(QuoteItem obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8787,6 +9252,16 @@ public static void NotifyDeleting(QuoteItem obj)
 public static void NotifyPostSave(QuoteItem obj)
 {
 }
+
+[Invocation]
+public static void NotifyPostSaveCanExec(QuoteItem obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExecReason(QuoteItem obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-08-18T16:03:32.13714Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8798,6 +9273,16 @@ public static void NotifyPostSave(QuoteItem obj)
     <ZetboxBase:ChangedOn>2011-08-18T16:03:32.13714Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyPreSave(QuoteItem obj)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExec(QuoteItem obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExecReason(QuoteItem obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8813,6 +9298,16 @@ public static void NotifyPreSave(QuoteItem obj)
 public static void ToString(QuoteItem obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
+
+[Invocation]
+public static void ToStringCanExec(QuoteItem obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExecReason(QuoteItem obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-08-18T16:03:32.13714Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8824,6 +9319,16 @@ public static void ToString(QuoteItem obj, MethodReturnEventArgs&lt;string&gt; e
     <ZetboxBase:ChangedOn>2011-10-21T00:03:25.584Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void CreateItem(Receipt obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.InvoiceItem&gt; e, decimal quantity, decimal amount, string description, bool taxable)
+{
+}
+
+[Invocation]
+public static void CreateItemCanExec(Receipt obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void CreateItemCanExecReason(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8840,6 +9345,16 @@ public static void CreateItem(Receipt obj, MethodReturnEventArgs&lt;Zetbox.Basic
 public static void GetOpenAmount(Receipt obj, MethodReturnEventArgs&lt;decimal&gt; e)
 {
 }
+
+[Invocation]
+public static void GetOpenAmountCanExec(Receipt obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void GetOpenAmountCanExecReason(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2012-05-07T15:12:48.4244652Z</ZetboxBase:CreatedOn>
     <ZetboxBase:Description>Derived classes must implement this method to calculate the open amount</ZetboxBase:Description>
@@ -8852,6 +9367,16 @@ public static void GetOpenAmount(Receipt obj, MethodReturnEventArgs&lt;decimal&g
     <ZetboxBase:ChangedOn>2012-05-07T15:21:36.9526953Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void GetPaymentAmount(Receipt obj, MethodReturnEventArgs&lt;decimal&gt; e)
+{
+}
+
+[Invocation]
+public static void GetPaymentAmountCanExec(Receipt obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void GetPaymentAmountCanExecReason(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8869,6 +9394,16 @@ public static void GetPaymentAmount(Receipt obj, MethodReturnEventArgs&lt;decima
 public static void NotifyCreated(Receipt obj)
 {
 }
+
+[Invocation]
+public static void NotifyCreatedCanExec(Receipt obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExecReason(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-07-26T23:25:29Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8880,6 +9415,16 @@ public static void NotifyCreated(Receipt obj)
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.104286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyDeleting(Receipt obj)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExec(Receipt obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExecReason(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8895,6 +9440,16 @@ public static void NotifyDeleting(Receipt obj)
 public static void NotifyPostSave(Receipt obj)
 {
 }
+
+[Invocation]
+public static void NotifyPostSaveCanExec(Receipt obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExecReason(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-07-26T23:25:29Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8906,6 +9461,16 @@ public static void NotifyPostSave(Receipt obj)
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.104286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyPreSave(Receipt obj)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExec(Receipt obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExecReason(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8921,6 +9486,16 @@ public static void NotifyPreSave(Receipt obj)
 public static void ToString(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
+
+[Invocation]
+public static void ToStringCanExec(Receipt obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExecReason(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-07-26T23:25:29Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8934,6 +9509,16 @@ public static void ToString(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
 public static void UpdateTotal(Receipt obj)
 {
 }
+
+[Invocation]
+public static void UpdateTotalCanExec(Receipt obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void UpdateTotalCanExecReason(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-12-28T17:40:53.6638379Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8945,6 +9530,16 @@ public static void UpdateTotal(Receipt obj)
     <ZetboxBase:ChangedOn>2011-11-04T17:20:11.417101Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void CreateInvoiceDocument(SalesInvoice obj)
+{
+}
+
+[Invocation]
+public static void CreateInvoiceDocumentCanExec(SalesInvoice obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void CreateInvoiceDocumentCanExecReason(SalesInvoice obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -8986,6 +9581,16 @@ public static void FinalizeInvoiceCanExecReason(SalesInvoice obj, MethodReturnEv
 public static void GetName(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
+
+[Invocation]
+public static void GetNameCanExec(StatisticActions obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void GetNameCanExecReason(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-12-30T13:48:38.917057Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -8997,6 +9602,16 @@ public static void GetName(StatisticActions obj, MethodReturnEventArgs&lt;string
     <ZetboxBase:ChangedOn>2011-10-21T16:12:24.850524Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void GetPurchaseInvoiceReport(StatisticActions obj, MethodReturnEventArgs&lt;System.Object&gt; e, DateTime from, DateTime until)
+{
+}
+
+[Invocation]
+public static void GetPurchaseInvoiceReportCanExec(StatisticActions obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void GetPurchaseInvoiceReportCanExecReason(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -9013,6 +9628,16 @@ public static void GetPurchaseInvoiceReport(StatisticActions obj, MethodReturnEv
 public static void GetPurchaseQuoteReport(StatisticActions obj, MethodReturnEventArgs&lt;System.Object&gt; e, DateTime from, DateTime until)
 {
 }
+
+[Invocation]
+public static void GetPurchaseQuoteReportCanExec(StatisticActions obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void GetPurchaseQuoteReportCanExecReason(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-12-30T13:52:11.727229Z</ZetboxBase:CreatedOn>
     <ZetboxBase:InvokeOnServer>true</ZetboxBase:InvokeOnServer>
@@ -9025,6 +9650,16 @@ public static void GetPurchaseQuoteReport(StatisticActions obj, MethodReturnEven
     <ZetboxBase:ChangedOn>2011-10-21T16:10:29.073524Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void GetSalesInvoiceReport(StatisticActions obj, MethodReturnEventArgs&lt;System.Object&gt; e, DateTime from, DateTime until)
+{
+}
+
+[Invocation]
+public static void GetSalesInvoiceReportCanExec(StatisticActions obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void GetSalesInvoiceReportCanExecReason(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -9041,6 +9676,16 @@ public static void GetSalesInvoiceReport(StatisticActions obj, MethodReturnEvent
 public static void GetSalesQuoteReport(StatisticActions obj, MethodReturnEventArgs&lt;System.Object&gt; e, DateTime from, DateTime until)
 {
 }
+
+[Invocation]
+public static void GetSalesQuoteReportCanExec(StatisticActions obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-10-21T16:13:21.995524Z</ZetboxBase:CreatedOn>
     <ZetboxBase:InvokeOnServer>true</ZetboxBase:InvokeOnServer>
@@ -9053,6 +9698,16 @@ public static void GetSalesQuoteReport(StatisticActions obj, MethodReturnEventAr
     <ZetboxBase:ChangedOn>2011-10-21T16:39:16.781524Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyCreated(StatisticActions obj)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExec(StatisticActions obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExecReason(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -9068,6 +9723,16 @@ public static void NotifyCreated(StatisticActions obj)
 public static void NotifyDeleting(StatisticActions obj)
 {
 }
+
+[Invocation]
+public static void NotifyDeletingCanExec(StatisticActions obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExecReason(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-10-21T16:39:16.781524Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -9079,6 +9744,16 @@ public static void NotifyDeleting(StatisticActions obj)
     <ZetboxBase:ChangedOn>2011-10-21T16:39:16.781524Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyPostSave(StatisticActions obj)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExec(StatisticActions obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExecReason(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -9094,6 +9769,16 @@ public static void NotifyPostSave(StatisticActions obj)
 public static void NotifyPreSave(StatisticActions obj)
 {
 }
+
+[Invocation]
+public static void NotifyPreSaveCanExec(StatisticActions obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExecReason(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-10-21T16:39:16.781524Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -9105,6 +9790,16 @@ public static void NotifyPreSave(StatisticActions obj)
     <ZetboxBase:ChangedOn>2011-10-21T16:39:16.781524Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void ToString(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExec(StatisticActions obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExecReason(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -9120,6 +9815,16 @@ public static void ToString(StatisticActions obj, MethodReturnEventArgs&lt;strin
 public static void NotifyCreated(VATType obj)
 {
 }
+
+[Invocation]
+public static void NotifyCreatedCanExec(VATType obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExecReason(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-07-27T00:23:08Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -9131,6 +9836,16 @@ public static void NotifyCreated(VATType obj)
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.104286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyDeleting(VATType obj)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExec(VATType obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExecReason(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -9146,6 +9861,16 @@ public static void NotifyDeleting(VATType obj)
 public static void NotifyPostSave(VATType obj)
 {
 }
+
+[Invocation]
+public static void NotifyPostSaveCanExec(VATType obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExecReason(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-07-27T00:23:08Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -9159,6 +9884,16 @@ public static void NotifyPostSave(VATType obj)
 public static void NotifyPreSave(VATType obj)
 {
 }
+
+[Invocation]
+public static void NotifyPreSaveCanExec(VATType obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExecReason(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-07-27T00:23:08Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -9170,6 +9905,16 @@ public static void NotifyPreSave(VATType obj)
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.104286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void ToString(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExec(VATType obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExecReason(VATType obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -10592,6 +11337,11 @@ public static void NotifyDeleting(Association obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(Association obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -10643,6 +11393,11 @@ public static void NotifyDeleting(Competitor obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(Competitor obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -10682,6 +11437,11 @@ public static void NotifyCreated(Contact obj)
 
 [Invocation]
 public static void NotifyDeleting(Contact obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(Contact obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -10727,6 +11487,11 @@ public static void NotifyDeleting(Contractor obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(Contractor obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -10766,6 +11531,11 @@ public static void NotifyCreated(Customer obj)
 
 [Invocation]
 public static void NotifyDeleting(Customer obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(Customer obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -10811,6 +11581,11 @@ public static void NotifyDeleting(CustomerRelationship obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(CustomerRelationship obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -10850,6 +11625,11 @@ public static void NotifyCreated(Department obj)
 
 [Invocation]
 public static void NotifyDeleting(Department obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(Department obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -10895,6 +11675,11 @@ public static void NotifyDeleting(DistributionChannel obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(DistributionChannel obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -10934,6 +11719,11 @@ public static void NotifyCreated(Division obj)
 
 [Invocation]
 public static void NotifyDeleting(Division obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(Division obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -10979,6 +11769,11 @@ public static void NotifyDeleting(Employee obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(Employee obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -11021,6 +11816,11 @@ public static void NotifyDeleting(Employment obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(Employment obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -11060,6 +11860,11 @@ public static void NotifyCreated(FamilyMember obj)
 
 [Invocation]
 public static void NotifyDeleting(FamilyMember obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(FamilyMember obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -11115,6 +11920,11 @@ public static void NotifyDeleting(HouseHold obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(HouseHold obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -11154,6 +11964,11 @@ public static void NotifyCreated(InternalOrganization obj)
 
 [Invocation]
 public static void NotifyDeleting(InternalOrganization obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(InternalOrganization obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -11200,6 +12015,11 @@ public static void NotifyDeleting(Organization obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(Organization obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>f5ebd849-58e0-4b13-a564-7e243589c25d</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -11239,6 +12059,11 @@ public static void NotifyCreated(OrganizationRole obj)
 
 [Invocation]
 public static void NotifyDeleting(OrganizationRole obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(OrganizationRole obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -11284,6 +12109,11 @@ public static void NotifyDeleting(OrganizationRollup obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(OrganizationRollup obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -11323,6 +12153,11 @@ public static void NotifyCreated(OrganizationUnit obj)
 
 [Invocation]
 public static void NotifyDeleting(OrganizationUnit obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(OrganizationUnit obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -11368,6 +12203,11 @@ public static void NotifyDeleting(OtherOrganizationUnit obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(OtherOrganizationUnit obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -11407,6 +12247,11 @@ public static void NotifyCreated(ParentOrganization obj)
 
 [Invocation]
 public static void NotifyDeleting(ParentOrganization obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(ParentOrganization obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -11452,6 +12297,11 @@ public static void NotifyDeleting(Partner obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(Partner obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -11491,6 +12341,11 @@ public static void NotifyCreated(Party obj)
 
 [Invocation]
 public static void NotifyDeleting(Party obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(Party obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -11535,6 +12390,11 @@ public static void NotifyDeleting(PartyRelationship obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(PartyRelationship obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>true</ZetboxBase:IsAbstract>
@@ -11574,6 +12434,11 @@ public static void NotifyCreated(PartyRole obj)
 
 [Invocation]
 public static void NotifyDeleting(PartyRole obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(PartyRole obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -11620,6 +12485,11 @@ public static void NotifyDeleting(Person obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(Person obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>dad0f30a-a830-4a0c-a84f-22270d211753</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -11659,6 +12529,11 @@ public static void NotifyCreated(PersonRole obj)
 
 [Invocation]
 public static void NotifyDeleting(PersonRole obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(PersonRole obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -11704,6 +12579,11 @@ public static void NotifyDeleting(RegulatoryAgency obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(RegulatoryAgency obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -11743,6 +12623,11 @@ public static void NotifyCreated(Subsidiary obj)
 
 [Invocation]
 public static void NotifyDeleting(Subsidiary obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(Subsidiary obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -11788,6 +12673,11 @@ public static void NotifyDeleting(Supplier obj)
 {
 }
 
+[Invocation]
+public static void ObjectIsValid(Supplier obj, ObjectIsValidEventArgs e)
+{
+}
+
 </ZetboxBase:CodeTemplate>
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
@@ -11827,6 +12717,11 @@ public static void NotifyCreated(SupplierRelationship obj)
 
 [Invocation]
 public static void NotifyDeleting(SupplierRelationship obj)
+{
+}
+
+[Invocation]
+public static void ObjectIsValid(SupplierRelationship obj, ObjectIsValidEventArgs e)
 {
 }
 
@@ -14625,6 +15520,16 @@ public static void isValid_Supplier(SupplierRelationship obj, PropertyIsValidEve
 public static void AddPartyRole(Party obj, MethodReturnEventArgs&lt;Zetbox.Basic.Parties.PartyRole&gt; e)
 {
 }
+
+[Invocation]
+public static void AddPartyRoleCanExec(Party obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-02-21T19:33:55Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>true</GUI:IsDisplayable>
@@ -14637,6 +15542,16 @@ public static void AddPartyRole(Party obj, MethodReturnEventArgs&lt;Zetbox.Basic
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.108286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyCreated(Party obj)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExec(Party obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExecReason(Party obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -14652,6 +15567,16 @@ public static void NotifyCreated(Party obj)
 public static void NotifyDeleting(Party obj)
 {
 }
+
+[Invocation]
+public static void NotifyDeletingCanExec(Party obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExecReason(Party obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-02-16T15:00:47Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -14663,6 +15588,16 @@ public static void NotifyDeleting(Party obj)
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.108286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyPostSave(Party obj)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExec(Party obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExecReason(Party obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -14678,6 +15613,16 @@ public static void NotifyPostSave(Party obj)
 public static void NotifyPreSave(Party obj)
 {
 }
+
+[Invocation]
+public static void NotifyPreSaveCanExec(Party obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExecReason(Party obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-02-16T15:00:47Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -14689,6 +15634,16 @@ public static void NotifyPreSave(Party obj)
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.108286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void ToString(Party obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExec(Party obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExecReason(Party obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -14704,6 +15659,16 @@ public static void ToString(Party obj, MethodReturnEventArgs&lt;string&gt; e)
 public static void NotifyCreated(PartyRelationship obj)
 {
 }
+
+[Invocation]
+public static void NotifyCreatedCanExec(PartyRelationship obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExecReason(PartyRelationship obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-02-16T18:41:56Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -14715,6 +15680,16 @@ public static void NotifyCreated(PartyRelationship obj)
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.108286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyDeleting(PartyRelationship obj)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExec(PartyRelationship obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExecReason(PartyRelationship obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -14730,6 +15705,16 @@ public static void NotifyDeleting(PartyRelationship obj)
 public static void NotifyPostSave(PartyRelationship obj)
 {
 }
+
+[Invocation]
+public static void NotifyPostSaveCanExec(PartyRelationship obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExecReason(PartyRelationship obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-02-16T18:41:56Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -14741,6 +15726,16 @@ public static void NotifyPostSave(PartyRelationship obj)
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.109286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyPreSave(PartyRelationship obj)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExec(PartyRelationship obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExecReason(PartyRelationship obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -14756,6 +15751,16 @@ public static void NotifyPreSave(PartyRelationship obj)
 public static void ToString(PartyRelationship obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
+
+[Invocation]
+public static void ToStringCanExec(PartyRelationship obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExecReason(PartyRelationship obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-02-16T18:41:56Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -14767,6 +15772,16 @@ public static void ToString(PartyRelationship obj, MethodReturnEventArgs&lt;stri
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.109286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyCreated(PartyRole obj)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExec(PartyRole obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyCreatedCanExecReason(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -14782,6 +15797,16 @@ public static void NotifyCreated(PartyRole obj)
 public static void NotifyDeleting(PartyRole obj)
 {
 }
+
+[Invocation]
+public static void NotifyDeletingCanExec(PartyRole obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyDeletingCanExecReason(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-02-16T17:02:30Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -14793,6 +15818,16 @@ public static void NotifyDeleting(PartyRole obj)
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.109286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void NotifyPostSave(PartyRole obj)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExec(PartyRole obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPostSaveCanExecReason(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -14808,6 +15843,16 @@ public static void NotifyPostSave(PartyRole obj)
 public static void NotifyPreSave(PartyRole obj)
 {
 }
+
+[Invocation]
+public static void NotifyPreSaveCanExec(PartyRole obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void NotifyPreSaveCanExecReason(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-02-16T17:02:30Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>false</GUI:IsDisplayable>
@@ -14819,6 +15864,16 @@ public static void NotifyPreSave(PartyRole obj)
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.109286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExec(PartyRole obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ToStringCanExecReason(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 </ZetboxBase:CodeTemplate>
@@ -15276,6 +16331,13 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Zetbox.Parties.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</ZetboxBase:Name>
   </ZetboxBase:Assembly>
+  <ZetboxBase:Assembly ExportGuid="d4e45693-19a5-4fd4-ad41-a4879e13240d">
+    <ZetboxBase:ChangedOn>2012-06-21T08:22:17.7371559Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-06-21T08:22:17.7371559Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:DeploymentRestrictions>1</ZetboxBase:DeploymentRestrictions>
+    <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
+    <ZetboxBase:Name>Zetbox.Parties.Client.WPF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</ZetboxBase:Name>
+  </ZetboxBase:Assembly>
   <ZetboxBase:Assembly ExportGuid="8f3abcd4-341e-483f-a04c-aedd98ab9e9d">
     <ZetboxBase:ChangedOn>2011-10-20T21:07:45.184622Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-10-20T21:04:55.792622Z</ZetboxBase:CreatedOn>
@@ -15295,6 +16357,70 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <ZetboxBase:ChangedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:CreatedOn>
     <ZetboxBase:FullName>at.dasz.DocumentManagement.ImportedFileActions</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="198f8835-2291-4c89-9161-04b8cd052b67">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-12-09T15:05:30.084111Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-12-09T15:05:30.084111Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Basic.Accounting.AccountActions</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="e5ccabfd-89f8-42f6-9d55-45faa60e2329">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-05-08T14:57:44.6593399Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-05-08T14:57:44.6593399Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Basic.Accounting.Receipt_TransactionActions</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="a5361878-0a0f-4efd-b347-93a545d49c9a">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-04-10T17:25:08.5269201Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-04-10T17:25:08.5269201Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Basic.Accounting.TransactionActions</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="ccee0662-cb9f-442a-aaf7-1d9c306bc48d">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.DefaultInvoiceGeneratorActions</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="9685b23c-d831-4457-a504-a6851a4ca21c">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-11-22T19:47:51.413757Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-10-20T23:38:22.032Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Deleted>true</ZetboxBase:Deleted>
+    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.InvoiceAdjustmentActions</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="0ec1cc38-42bc-40c4-8713-cce771c05e20">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-11-22T19:47:51.413757Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-11-22T19:47:51.413757Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.InvoiceItemActions</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="9ff92784-636f-4e44-a591-64d2c5ceb586">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-11-22T19:47:51.413757Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-11-22T19:47:51.413757Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.QuoteItemActions</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="5bbd00ff-c741-4012-a96f-4feb9c461764">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-04-10T17:25:08.5269201Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-04-10T17:25:08.5269201Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.ReceiptActions</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="8455d2ae-e48c-4cba-9d80-1e05cd5f7ebd">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.SalesInvoiceActions</ZetboxBase:FullName>
     <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="0f4cfbc8-9f75-4c9e-af15-efcb5e218ac2">
@@ -15424,41 +16550,6 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <ZetboxBase:CreatedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:CreatedOn>
     <ZetboxBase:FullName>Zetbox.Parties.Client.Reporting.ReportTemplate</ZetboxBase:FullName>
     <ZetboxBase:Parent>0d086ab8-3c9a-4af5-8c65-8980b5501a56</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="66f0b655-387a-4b34-930e-701d89f57218">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2012-04-10T17:25:08.5269201Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2012-04-10T17:25:08.5269201Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Client.View.Accounting.LinkReceiptTransactionDialog</ZetboxBase:FullName>
-    <ZetboxBase:Parent>562a3a20-007d-464f-bf35-169f4c7e6c93</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="300e3f2f-a5cc-4445-aa28-3d372e206c0c">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-10-20T23:38:22.032Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-10-20T23:38:22.032Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.InvoiceEditor</ZetboxBase:FullName>
-    <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="6207562d-a5d1-46f2-8179-6a998e846e2a">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.PurchaseQuoteEditor</ZetboxBase:FullName>
-    <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="645bec99-40af-4285-9a4e-b17973ee5cfc">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2012-05-08T14:57:44.6593399Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2012-05-08T14:57:44.6593399Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.ReceiptEditor</ZetboxBase:FullName>
-    <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="ac7fe9ac-3439-48ac-9959-8f6598c45e28">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.SalesQuoteEditor</ZetboxBase:FullName>
-    <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="c0d2864c-d97f-4467-a36f-b7c6ac1b1464">
     <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
@@ -15750,124 +16841,40 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.ReportScreenViewModel+Factory</ZetboxBase:FullName>
     <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="198f8835-2291-4c89-9161-04b8cd052b67">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-12-09T15:05:30.084111Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-12-09T15:05:30.084111Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Basic.Accounting.AccountActions</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="e5ccabfd-89f8-42f6-9d55-45faa60e2329">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2012-05-08T14:57:44.6593399Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2012-05-08T14:57:44.6593399Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Basic.Accounting.Receipt_TransactionActions</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="a5361878-0a0f-4efd-b347-93a545d49c9a">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+  <ZetboxBase:TypeRef ExportGuid="66f0b655-387a-4b34-930e-701d89f57218">
+    <ZetboxBase:Assembly>d4e45693-19a5-4fd4-ad41-a4879e13240d</ZetboxBase:Assembly>
     <ZetboxBase:ChangedOn>2012-04-10T17:25:08.5269201Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2012-04-10T17:25:08.5269201Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Basic.Accounting.TransactionActions</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.View.Accounting.LinkReceiptTransactionDialog</ZetboxBase:FullName>
+    <ZetboxBase:Parent>562a3a20-007d-464f-bf35-169f4c7e6c93</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="ccee0662-cb9f-442a-aaf7-1d9c306bc48d">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.DefaultInvoiceGeneratorActions</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="9685b23c-d831-4457-a504-a6851a4ca21c">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-11-22T19:47:51.413757Z</ZetboxBase:ChangedOn>
+  <ZetboxBase:TypeRef ExportGuid="300e3f2f-a5cc-4445-aa28-3d372e206c0c">
+    <ZetboxBase:Assembly>d4e45693-19a5-4fd4-ad41-a4879e13240d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-10-20T23:38:22.032Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-10-20T23:38:22.032Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:Deleted>true</ZetboxBase:Deleted>
-    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.InvoiceAdjustmentActions</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.InvoiceEditor</ZetboxBase:FullName>
+    <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="0ec1cc38-42bc-40c4-8713-cce771c05e20">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-11-22T19:47:51.413757Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-11-22T19:47:51.413757Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.InvoiceItemActions</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="9ff92784-636f-4e44-a591-64d2c5ceb586">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-11-22T19:47:51.413757Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-11-22T19:47:51.413757Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.QuoteItemActions</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="5bbd00ff-c741-4012-a96f-4feb9c461764">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2012-04-10T17:25:08.5269201Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2012-04-10T17:25:08.5269201Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.ReceiptActions</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="8455d2ae-e48c-4cba-9d80-1e05cd5f7ebd">
-    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+  <ZetboxBase:TypeRef ExportGuid="6207562d-a5d1-46f2-8179-6a998e846e2a">
+    <ZetboxBase:Assembly>d4e45693-19a5-4fd4-ad41-a4879e13240d</ZetboxBase:Assembly>
     <ZetboxBase:ChangedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.SalesInvoiceActions</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.PurchaseQuoteEditor</ZetboxBase:FullName>
+    <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="7e12545c-f406-44d5-804b-ec0729c5a466">
-    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.AccountImporter</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  <ZetboxBase:TypeRef ExportGuid="645bec99-40af-4285-9a4e-b17973ee5cfc">
+    <ZetboxBase:Assembly>d4e45693-19a5-4fd4-ad41-a4879e13240d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-05-08T14:57:44.6593399Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-05-08T14:57:44.6593399Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.ReceiptEditor</ZetboxBase:FullName>
+    <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="a5498ede-ea93-433c-8464-c2af0a506b8b">
-    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.BACA_AccountImporter</ZetboxBase:FullName>
-    <ZetboxBase:Parent>7e12545c-f406-44d5-804b-ec0729c5a466</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="06db6405-5a47-48ac-bce2-47efae70a0fa">
-    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.IAccountImporter</ZetboxBase:FullName>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="dc7125ae-c8fc-4f7e-982d-8291549b9d44">
-    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.ImportedTransaction</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="116798cb-d8c1-414c-a165-4129cc4ea05a">
-    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Common.CustomCommonActionsModule</ZetboxBase:FullName>
-    <ZetboxBase:Parent>2790156b-feec-4b8e-bbfd-2555f6bfff40</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="a7fc61cd-6a93-4a69-9af9-062b08dad613">
-    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Common.PartiesNamedObjects</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="5702be7c-901b-414a-a737-ee1f7d6275b9">
-    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Common.PartiesNamedObjects+Invoicing</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
-  </ZetboxBase:TypeRef>
-  <ZetboxBase:TypeRef ExportGuid="51c34f86-8b8c-41ab-a3c7-dd03eccf307d">
-    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:FullName>Zetbox.Parties.Common.PartiesNamedObjects+Parties</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  <ZetboxBase:TypeRef ExportGuid="ac7fe9ac-3439-48ac-9959-8f6598c45e28">
+    <ZetboxBase:Assembly>d4e45693-19a5-4fd4-ad41-a4879e13240d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.SalesQuoteEditor</ZetboxBase:FullName>
+    <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="c9ab67a3-8e42-4f18-9c41-3b9b08903476">
     <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
@@ -16007,6 +17014,61 @@ public static void ToString(PartyRole obj, MethodReturnEventArgs&lt;string&gt; e
     <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
     <ZetboxBase:FullName>Zetbox.Basic.Parties.SupplierRelationshipActions</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="7e12545c-f406-44d5-804b-ec0729c5a466">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.AccountImporter</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="a5498ede-ea93-433c-8464-c2af0a506b8b">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.BACA_AccountImporter</ZetboxBase:FullName>
+    <ZetboxBase:Parent>7e12545c-f406-44d5-804b-ec0729c5a466</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="06db6405-5a47-48ac-bce2-47efae70a0fa">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.IAccountImporter</ZetboxBase:FullName>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="dc7125ae-c8fc-4f7e-982d-8291549b9d44">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.ImportedTransaction</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="116798cb-d8c1-414c-a165-4129cc4ea05a">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.CustomCommonActionsModule</ZetboxBase:FullName>
+    <ZetboxBase:Parent>2790156b-feec-4b8e-bbfd-2555f6bfff40</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="a7fc61cd-6a93-4a69-9af9-062b08dad613">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.PartiesNamedObjects</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="5702be7c-901b-414a-a737-ee1f7d6275b9">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.PartiesNamedObjects+Invoicing</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="51c34f86-8b8c-41ab-a3c7-dd03eccf307d">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.PartiesNamedObjects+Parties</ZetboxBase:FullName>
     <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <GUI:ViewModelDescriptor ExportGuid="f5ebd849-58e0-4b13-a564-7e243589c25d">
