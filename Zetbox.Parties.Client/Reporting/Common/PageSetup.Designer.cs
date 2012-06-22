@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Zetbox.Parties.Client.Reporting.Common
 {
-    [Arebis.CodeGeneration.TemplateInfo(@"C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\PageSetup.cst")]
+    [Arebis.CodeGeneration.TemplateInfo(@"P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\PageSetup.cst")]
     public partial class PageSetup : Zetbox.Parties.Client.Reporting.ReportTemplate
     {
 		protected string Orientation;
@@ -27,7 +27,7 @@ namespace Zetbox.Parties.Client.Reporting.Common
 
         public override void Generate()
         {
-#line 9 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\PageSetup.cst"
+#line 9 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\PageSetup.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("PageSetup\r\n");
 this.WriteObjects("{\r\n");

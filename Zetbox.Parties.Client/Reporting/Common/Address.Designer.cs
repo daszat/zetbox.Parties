@@ -6,7 +6,7 @@ using Zetbox.Basic.Parties;
 
 namespace Zetbox.Parties.Client.Reporting.Common
 {
-    [Arebis.CodeGeneration.TemplateInfo(@"C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst")]
+    [Arebis.CodeGeneration.TemplateInfo(@"P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst")]
     public partial class Address : Zetbox.Parties.Client.Reporting.ReportTemplate
     {
 		protected Zetbox.Basic.Parties.Party party;
@@ -30,44 +30,44 @@ namespace Zetbox.Parties.Client.Reporting.Common
 
         public override void Generate()
         {
-#line 11 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 11 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("",  FormatName(party) , "\r\n");
 this.WriteObjects("\\linebreak\r\n");
-#line 14 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 14 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 if(address != null) { 
-#line 15 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 15 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 this.WriteObjects("    ");
-#line 15 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 15 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 if(!string.IsNullOrEmpty(address.Line1)) { 
-#line 16 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 16 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 this.WriteObjects("        \\linebreak\r\n");
 this.WriteObjects("        ",  Format(address.Line1) , "\r\n");
 this.WriteObjects("    ");
-#line 18 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 18 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 } 
     if(!string.IsNullOrEmpty(address.Line2)) { 
-#line 20 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 20 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 this.WriteObjects("        \\linebreak\r\n");
 this.WriteObjects("        ",  Format(address.Line2) , "\r\n");
 this.WriteObjects("    ");
-#line 22 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 22 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 } 
     if(!string.IsNullOrEmpty(address.ZIPCode) || !string.IsNullOrEmpty(address.City)) { 
-#line 24 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 24 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 this.WriteObjects("        \\linebreak\r\n");
 this.WriteObjects("        ",  Format(address.ZIPCode) , " ",  Format(address.City) , "\r\n");
 this.WriteObjects("    ");
-#line 26 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 26 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 } 
     if(!string.IsNullOrEmpty(address.Country)) { 
-#line 28 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 28 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 this.WriteObjects("        \\linebreak\r\n");
 this.WriteObjects("        ",  Format(address.Country) , "\r\n");
 this.WriteObjects("    ");
-#line 30 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 30 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 } 
-#line 31 "C:\Users\arthur\Documents\Visual Studio 2010\Projects\Zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 31 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 } 
 
         }
