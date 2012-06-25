@@ -1,9 +1,9 @@
-/bin
 /Configs/Local
 /DocumentStore
 /Zetbox.Parties.Client.Tests/bin
 *.suo
 *.csproj.user
+bin
 obj
 /packages/zetbox*
 /packages/Arebis.CodeGenerator.*
