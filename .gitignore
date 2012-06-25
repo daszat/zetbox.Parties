@@ -8,3 +8,4 @@ obj
 /packages/zetbox*
 /packages/Arebis.CodeGenerator.*
 /packages/LinqCube.*
+/packages/NUnit.*
