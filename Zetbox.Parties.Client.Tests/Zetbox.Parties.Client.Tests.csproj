@@ -70,6 +70,17 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zetbox.Parties.Client\Zetbox.Parties.Client.csproj">
+      <Project>{8BD50142-8052-403B-BFCB-087AD437E29E}</Project>
+      <Name>Zetbox.Parties.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zetbox.Parties.Common\Zetbox.Parties.Common.csproj">
+      <Project>{927FD8BF-5FE0-4D07-B89E-926E7F694623}</Project>
+      <Name>Zetbox.Parties.Common</Name>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
