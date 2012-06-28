@@ -24,10 +24,9 @@
       <Module>Zetbox.Tests.Utilities.PostgreSql.UtilityModule, Zetbox.Tests.Utilities.PostgreSql</Module>
       <Module>Zetbox.Server.SchemaManagement.SchemaModule, Zetbox.Server</Module>
 
-      <!-- application specific modules 
-      <Module>Zetbox.Parties.Client.CustomClientActionsModule, Zetbox.Parties.Client</Module>
-      <Module>Zetbox.Parties.Client.Tests.SqueezeModule, Zetbox.Parties.Client.Tests</Module>
-      -->
+      <!-- application specific modules -->
+      <Module>Zetbox.Parties.Common.CommonModule, Zetbox.Parties.Common</Module>
+      <Module>Zetbox.Parties.Client.ClientModule, Zetbox.Parties.Client</Module>
     </Modules>
   </Client>
   <AssemblySearchPaths>
