@@ -53,14 +53,14 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Zetbox.API.AbstractConsumerTests">
-      <HintPath>..\packages\zetboxBasic-Tests.1.0.4088.1\lib\net35\Zetbox.API.AbstractConsumerTests.dll</HintPath>
+    <Reference Include="Zetbox.API.AbstractConsumerTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ccdf16e4dd7b6d78, processorArchitecture=MSIL">
+      <HintPath>..\packages\zetboxBasic-Tests.1.0.4095.1\lib\net35\Zetbox.API.AbstractConsumerTests.dll</HintPath>
     </Reference>
-    <Reference Include="Zetbox.Tests.Utilities.MsSql">
-      <HintPath>..\packages\zetboxBasic-Tests.1.0.4088.1\lib\net35\Zetbox.Tests.Utilities.MsSql.dll</HintPath>
+    <Reference Include="Zetbox.Tests.Utilities.MsSql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ccdf16e4dd7b6d78, processorArchitecture=MSIL">
+      <HintPath>..\packages\zetboxBasic-Tests.1.0.4095.1\lib\net35\Zetbox.Tests.Utilities.MsSql.dll</HintPath>
     </Reference>
-    <Reference Include="Zetbox.Tests.Utilities.PostgreSql">
-      <HintPath>..\packages\zetboxBasic-Tests.1.0.4088.1\lib\net35\Zetbox.Tests.Utilities.PostgreSql.dll</HintPath>
+    <Reference Include="Zetbox.Tests.Utilities.PostgreSql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ccdf16e4dd7b6d78, processorArchitecture=MSIL">
+      <HintPath>..\packages\zetboxBasic-Tests.1.0.4095.1\lib\net35\Zetbox.Tests.Utilities.PostgreSql.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
