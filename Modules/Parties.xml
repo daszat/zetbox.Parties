@@ -11118,7 +11118,7 @@ public static void ToStringCanExecReason(VATType obj, MethodReturnEventArgs&lt;s
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Parent>702e6fde-6b9d-4286-8f04-f4d6076a488f</GUI:Parent>
     <GUI:Children_pos>101</GUI:Children_pos>
-    <GUI:Title>Ouotes</GUI:Title>
+    <GUI:Title>Quotes</GUI:Title>
   </GUI:NavigationScreen>
   <GUI:NavigationSearchScreen ExportGuid="5364cfe0-195b-4087-9f8a-adad91a1f979">
     <GUI:ChangedOn>2011-10-20T21:56:30.640622Z</GUI:ChangedOn>
