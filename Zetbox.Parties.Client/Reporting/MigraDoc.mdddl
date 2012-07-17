@@ -1,0 +1,999 @@
+\document
+[
+  Info
+  {
+    Title = "Hello, MigraDoc"
+    Subject = "Demonstrates an excerpt of the capabilities of MigraDoc."
+    Author = "Stefan Lange"
+  }
+]
+{
+  \styles
+  {
+    Normal
+    {
+      Font
+      {
+        Name = "Times New Roman"
+      }
+    }
+
+    Heading1
+    {
+      Font
+      {
+        Name = "Tahoma"
+        Size = 14
+        Bold = true
+        Color = DarkBlue
+      }
+      ParagraphFormat
+      {
+        SpaceAfter = 6
+        PageBreakBefore = true
+        OutlineLevel = Level1
+      }
+    }
+
+    Heading2
+    {
+      Font
+      {
+        Size = 12
+      }
+      ParagraphFormat
+      {
+        SpaceBefore = 6
+        PageBreakBefore = false
+        OutlineLevel = Level2
+      }
+    }
+
+    Heading3
+    {
+      Font
+      {
+        Size = 10
+        Italic = true
+      }
+      ParagraphFormat
+      {
+        SpaceAfter = 3
+        OutlineLevel = Level3
+      }
+    }
+
+    Heading4
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level4
+      }
+    }
+
+    Heading5
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level5
+      }
+    }
+
+    Heading6
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level6
+      }
+    }
+
+    Heading7
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level7
+      }
+    }
+
+    Heading8
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level8
+      }
+    }
+
+    Heading9
+    {
+      ParagraphFormat
+      {
+        OutlineLevel = Level9
+      }
+    }
+
+    Header
+    {
+      ParagraphFormat
+      {
+        TabStops +=
+        {
+          Position = "16cm"
+          Alignment = Right
+        }
+      }
+    }
+
+    Footer
+    {
+      ParagraphFormat
+      {
+        TabStops +=
+        {
+          Position = "8cm"
+          Alignment = Center
+        }
+      }
+    }
+
+    InvalidStyleName
+    {
+      Font
+      {
+        Bold = true
+        Underline = Dash
+        Color = Lime
+      }
+    }
+
+    TextBox : Normal
+    {
+      ParagraphFormat
+      {
+        Alignment = Justify
+        Borders
+        {
+          Width = 2.5
+          DistanceFromTop = 3
+          DistanceFromBottom = 3
+          DistanceFromLeft = 3
+          DistanceFromRight = 3
+        }
+        Shading
+        {
+          Color = SkyBlue
+        }
+      }
+    }
+
+    TOC : Normal
+    {
+      Font
+      {
+        Color = Blue
+      }
+      ParagraphFormat
+      {
+        TabStops +=
+        {
+          Position = "16cm"
+          Alignment = Right
+          Leader = Dots
+        }
+      }
+    }
+  }
+  \section
+  {
+    \paragraph
+    [
+      Format
+      {
+        SpaceAfter = "3cm"
+      }
+    ]
+    {
+    }
+    \image("../../images/Logo landscape.png")
+    [
+      Width = "10cm"
+    ]
+    \paragraph
+    [
+      Format
+      {
+        Font
+        {
+          Size = 16
+          Color = DarkRed
+        }
+        SpaceBefore = "8cm"
+        SpaceAfter = "3cm"
+      }
+    ]
+    {
+      A sample document that demonstrates the\linebreak
+      capabilities of MigraDoc
+    }
+    \paragraph
+    {
+      Rendering date: \field(Date)[]
+    }
+    \pagebreak
+    \paragraph
+    [
+      Format
+      {
+        Font
+        {
+          Size = 14
+          Bold = true
+        }
+        SpaceAfter = 24
+        OutlineLevel = Level1
+      }
+    ]
+    {
+      Table of Contents
+    }
+    \paragraph
+    [
+      Style = "TOC"
+    ]
+    {
+      \hyperlink[Name = "Paragraphs"]{Paragraphs\tab \field(PageRef)[Name = "Paragraphs"]}
+    }
+    \paragraph
+    [
+      Style = "TOC"
+    ]
+    {
+      \hyperlink[Name = "Tables"]{Tables\tab \field(PageRef)[Name = "Tables"]}
+    }
+    \paragraph
+    [
+      Style = "TOC"
+    ]
+    {
+      \hyperlink[Name = "Charts"]{Charts\tab \field(PageRef)[Name = "Charts"]}
+    }
+  }
+  \section
+  [
+    PageSetup
+    {
+      OddAndEvenPagesHeaderFooter = true
+      StartingNumber = 1
+    }
+  ]
+  {
+    \primaryheader
+    {
+      \tab Odd Page Header
+    }
+    \evenpageheader
+    {
+      Even Page Header
+    }
+    \primaryfooter
+    {
+      \tab \field(Page)[]
+    }
+    \evenpagefooter
+    {
+      \tab \field(Page)[]
+    }
+    \paragraph
+    [
+      Style = "Heading1"
+    ]
+    {
+      Paragraph Layout Overview\field(Bookmark)[Name = "Paragraphs"]
+    }
+    \paragraph
+    [
+      Style = "Heading2"
+    ]
+    {
+      Alignment
+    }
+    \paragraph
+    [
+      Style = "Heading3"
+    ]
+    {
+      Left Aligned
+    }
+    \paragraph
+    [
+      Format
+      {
+        Alignment = Left
+      }
+    ]
+    {
+      Loboreet autpat, quis adigna conse dipit la consed exeril et utpatetuer autat, voloboreet, consequamet ilit nos aut in henit ullam, sim doloreratis dolobore tat, venim quissequat. Nisci tat
+       laor ametumsan vulla feuisim ing eliquisi tatum autat, velenisit iustionsed tis dunt exerostrud dolore verae.
+    }
+    \paragraph
+    [
+      Style = "Heading3"
+    ]
+    {
+      Right Aligned
+    }
+    \paragraph
+    [
+      Format
+      {
+        Alignment = Right
+      }
+    ]
+    {
+      Loboreet autpat, quis adigna conse dipit la consed exeril et utpatetuer autat, voloboreet, consequamet ilit nos aut in henit ullam, sim doloreratis dolobore tat, venim quissequat. Nisci tat
+       laor ametumsan vulla feuisim ing eliquisi tatum autat, velenisit iustionsed tis dunt exerostrud dolore verae.
+    }
+    \paragraph
+    [
+      Style = "Heading3"
+    ]
+    {
+      Centered
+    }
+    \paragraph
+    [
+      Format
+      {
+        Alignment = Center
+      }
+    ]
+    {
+      Loboreet autpat, quis adigna conse dipit la consed exeril et utpatetuer autat, voloboreet, consequamet ilit nos aut in henit ullam, sim doloreratis dolobore tat, venim quissequat. Nisci tat
+       laor ametumsan vulla feuisim ing eliquisi tatum autat, velenisit iustionsed tis dunt exerostrud dolore verae.
+    }
+    \paragraph
+    [
+      Style = "Heading3"
+    ]
+    {
+      Justified
+    }
+    \paragraph
+    [
+      Format
+      {
+        Alignment = Justify
+      }
+    ]
+    {
+      Incinibh ecte dionsent am, sisl ute magna faccum ing eu feugait ulla consequismod tetum zzrilluptat. Ut velis accum dit la corper inci essequat, venis nisl dolutat. Sandipit esequisit autpat.
+       Magnibh et laortie feugiamcommy nulluptat dolorpero euipis nonum augait wis dit, quamcon sequipit at vel il eui blaorper si tat ipit at nis nullan hent num dunt irit, sum dolendio consendigna
+       consent lan ut illan etue miniam dolenisis nonsenim inim quat, conulla orercinisim vel inci ent illam quat volore veliquam amconsequat. Ut lut incincipit nullaor iriurercip et luptat erat
+       illamco mmoluptat.\linebreak
+      Ut iriusciduis nonsed do el dolut ea autem il dolore verci blam, quatue el ute facilis cidunt dit alisl ut lut num vercinc illaore del ilisi blandre commodit, quamcon sequipsusto dunt ver
+       illaorperit utpat, velisci lisciniam vent alis nostisi et, quisit, con eu facipit vulputpat.
+    }
+    \paragraph
+    [
+      Style = "Heading2"
+    ]
+    {
+      Indent
+    }
+    \paragraph
+    [
+      Style = "Heading3"
+    ]
+    {
+      Left Indent
+    }
+    \paragraph
+    [
+      Format
+      {
+        LeftIndent = "2cm"
+      }
+    ]
+    {
+      Loboreet autpat, quis adigna conse dipit la consed exeril et utpatetuer autat, voloboreet, consequamet ilit nos aut in henit ullam, sim doloreratis dolobore tat, venim quissequat. Nisci tat
+       laor ametumsan vulla feuisim ing eliquisi tatum autat, velenisit iustionsed tis dunt exerostrud dolore verae.
+    }
+    \paragraph
+    [
+      Style = "Heading3"
+    ]
+    {
+      Right Indent
+    }
+    \paragraph
+    [
+      Format
+      {
+        RightIndent = "1in"
+      }
+    ]
+    {
+      Loboreet autpat, quis adigna conse dipit la consed exeril et utpatetuer autat, voloboreet, consequamet ilit nos aut in henit ullam, sim doloreratis dolobore tat, venim quissequat. Nisci tat
+       laor ametumsan vulla feuisim ing eliquisi tatum autat, velenisit iustionsed tis dunt exerostrud dolore verae.
+    }
+    \paragraph
+    [
+      Style = "Heading3"
+    ]
+    {
+      First Line Indent
+    }
+    \paragraph
+    [
+      Format
+      {
+        FirstLineIndent = "12mm"
+      }
+    ]
+    {
+      Loboreet autpat, quis adigna conse dipit la consed exeril et utpatetuer autat, voloboreet, consequamet ilit nos aut in henit ullam, sim doloreratis dolobore tat, venim quissequat. Nisci tat
+       laor ametumsan vulla feuisim ing eliquisi tatum autat, velenisit iustionsed tis dunt exerostrud dolore verae.
+    }
+    \paragraph
+    [
+      Style = "Heading3"
+    ]
+    {
+      First Line Negative Indent
+    }
+    \paragraph
+    [
+      Format
+      {
+        LeftIndent = "1.5cm"
+        FirstLineIndent = "-1.5cm"
+      }
+    ]
+    {
+      Loboreet autpat, quis adigna conse dipit la consed exeril et utpatetuer autat, voloboreet, consequamet ilit nos aut in henit ullam, sim doloreratis dolobore tat, venim quissequat. Nisci tat
+       laor ametumsan vulla feuisim ing eliquisi tatum autat, velenisit iustionsed tis dunt exerostrud dolore verae.
+    }
+    \paragraph
+    [
+      Style = "Heading2"
+    ]
+    {
+      Tabs
+    }
+    \paragraph
+    [
+      Format
+      {
+        TabStops +=
+        {
+          Position = "2cm"
+        }
+        TabStops +=
+        {
+          Position = "5cm"
+        }
+      }
+    ]
+    {
+      Text\tab Tab1\tab Tab2
+    }
+    \paragraph
+    [
+      Style = "Heading2"
+    ]
+    {
+      Formatted Text
+    }
+    \paragraph
+    {
+      Text can be formatted \bold{bold}, \italic{italic}, or \font[Bold = true
+      Italic = true
+      ]{bold & italic}.\linebreak
+      You can set the \fontsize(15){size }the \fontcolor(Firebrick){color }the \font[Name = "Verdana"
+      ]{font}.\linebreak
+      You can set the \font[Subscript = true
+      ]{subscript} or \font[Superscript = true
+      ]{superscript}.
+    }
+    \pagebreak
+    \paragraph
+    [
+      Style = "Heading2"
+    ]
+    {
+      Borders and Shading
+    }
+    \paragraph
+    [
+      Style = "Heading3"
+    ]
+    {
+      Border around Paragraph
+    }
+    \paragraph
+    [
+      Format
+      {
+        Borders
+        {
+          Width = 2.5
+          Color = Navy
+          DistanceFromTop = 3
+          DistanceFromBottom = 3
+          DistanceFromLeft = 3
+          DistanceFromRight = 3
+        }
+      }
+    ]
+    {
+      Incinibh ecte dionsent am, sisl ute magna faccum ing eu feugait ulla consequismod tetum zzrilluptat. Ut velis accum dit la corper inci essequat, venis nisl dolutat. Sandipit esequisit autpat.
+       Magnibh et laortie feugiamcommy nulluptat dolorpero euipis nonum augait wis dit, quamcon sequipit at vel il eui blaorper si tat ipit at nis nullan hent num dunt irit, sum dolendio consendigna
+       consent lan ut illan etue miniam dolenisis nonsenim inim quat, conulla orercinisim vel inci ent illam quat volore veliquam amconsequat. Ut lut incincipit nullaor iriurercip et luptat erat
+       illamco mmoluptat.\linebreak
+      Ut iriusciduis nonsed do el dolut ea autem il dolore verci blam, quatue el ute facilis cidunt dit alisl ut lut num vercinc illaore del ilisi blandre commodit, quamcon sequipsusto dunt ver
+       illaorperit utpat, velisci lisciniam vent alis nostisi et, quisit, con eu facipit vulputpat.
+    }
+    \paragraph
+    [
+      Style = "Heading3"
+    ]
+    {
+      Shading
+    }
+    \paragraph
+    [
+      Format
+      {
+        Shading
+        {
+          Color = LightCoral
+        }
+      }
+    ]
+    {
+      Loboreet autpat, quis adigna conse dipit la consed exeril et utpatetuer autat, voloboreet, consequamet ilit nos aut in henit ullam, sim doloreratis dolobore tat, venim quissequat. Nisci tat
+       laor ametumsan vulla feuisim ing eliquisi tatum autat, velenisit iustionsed tis dunt exerostrud dolore verae.
+    }
+    \paragraph
+    [
+      Style = "Heading3"
+    ]
+    {
+      Borders & Shading
+    }
+    \paragraph
+    [
+      Style = "TextBox"
+    ]
+    {
+      Incinibh ecte dionsent am, sisl ute magna faccum ing eu feugait ulla consequismod tetum zzrilluptat. Ut velis accum dit la corper inci essequat, venis nisl dolutat. Sandipit esequisit autpat.
+       Magnibh et laortie feugiamcommy nulluptat dolorpero euipis nonum augait wis dit, quamcon sequipit at vel il eui blaorper si tat ipit at nis nullan hent num dunt irit, sum dolendio consendigna
+       consent lan ut illan etue miniam dolenisis nonsenim inim quat, conulla orercinisim vel inci ent illam quat volore veliquam amconsequat. Ut lut incincipit nullaor iriurercip et luptat erat
+       illamco mmoluptat.\linebreak
+      Ut iriusciduis nonsed do el dolut ea autem il dolore verci blam, quatue el ute facilis cidunt dit alisl ut lut num vercinc illaore del ilisi blandre commodit, quamcon sequipsusto dunt ver
+       illaorperit utpat, velisci lisciniam vent alis nostisi et, quisit, con eu facipit vulputpat.
+    }
+    \paragraph
+    [
+      Style = "Heading1"
+    ]
+    {
+      Table Overview\field(Bookmark)[Name = "Tables"]
+    }
+    \paragraph
+    [
+      Style = "Heading2"
+    ]
+    {
+      Simple Tables
+    }
+    \table
+    [
+      Borders
+      {
+        Width = 0.75
+      }
+    ]
+    {
+      \columns
+      {
+        \column
+        [
+          Format
+          {
+            Alignment = Center
+          }
+          Width = "2cm"
+        ]
+        \column
+        [
+          Width = "5cm"
+        ]
+      }
+      \rows
+      {
+        \row
+        [
+          Shading
+          {
+            Color = PaleGoldenrod
+          }
+        ]
+        {
+          \cell
+          [
+            Borders
+            {
+              Top
+              {
+                Style = Single
+                Width = 1.5
+                Color = Black
+              }
+              Left
+              {
+                Style = Single
+                Width = 1.5
+                Color = Black
+              }
+            }
+          ]
+          {
+            Itemus
+          }
+          \cell
+          [
+            Borders
+            {
+              Top
+              {
+                Style = Single
+                Width = 1.5
+                Color = Black
+              }
+              Right
+              {
+                Style = Single
+                Width = 1.5
+                Color = Black
+              }
+            }
+          ]
+          {
+            Descriptum
+          }
+        }
+        \row
+        {
+          \cell
+          [
+            Borders
+            {
+              Left
+              {
+                Style = Single
+                Width = 1.5
+                Color = Black
+              }
+            }
+          ]
+          {
+            1
+          }
+          \cell
+          [
+            Borders
+            {
+              Right
+              {
+                Style = Single
+                Width = 1.5
+                Color = Black
+              }
+            }
+          ]
+          {
+            Andigna cons nonsectem accummo diamet nis diat.
+          }
+        }
+        \row
+        {
+          \cell
+          [
+            Borders
+            {
+              Left
+              {
+                Style = Single
+                Width = 1.5
+                Color = Black
+              }
+              Bottom
+              {
+                Style = Single
+                Width = 1.5
+                Color = Black
+              }
+            }
+          ]
+          {
+            2
+          }
+          \cell
+          [
+            Borders
+            {
+              Bottom
+              {
+                Style = Single
+                Width = 1.5
+                Color = Black
+              }
+              Right
+              {
+                Style = Single
+                Width = 1.5
+                Color = Black
+              }
+            }
+          ]
+          {
+            Loboreet autpat, quis adigna conse dipit la consed exeril et utpatetuer autat, voloboreet, consequamet ilit nos aut in henit ullam, sim doloreratis dolobore tat, venim quissequat. Nisci
+             tat laor ametumsan vulla feuisim ing eliquisi tatum autat, velenisit iustionsed tis dunt exerostrud dolore verae.
+          }
+        }
+      }
+    }
+    \paragraph
+    [
+      Style = "Heading2"
+    ]
+    {
+      Cell Alignment
+    }
+    \table
+    [
+      Format
+      {
+        Shading
+        {
+          Color = LavenderBlush
+        }
+      }
+      TopPadding = 5
+      BottomPadding = 5
+      Borders
+      {
+        Visible = true
+      }
+      Shading
+      {
+        Color = Salmon
+      }
+    ]
+    {
+      \columns
+      {
+        \column
+        [
+          Format
+          {
+            Alignment = Left
+          }
+        ]
+        \column
+        [
+          Format
+          {
+            Alignment = Center
+          }
+        ]
+        \column
+        [
+          Format
+          {
+            Alignment = Right
+          }
+        ]
+      }
+      \rows
+      [
+        Height = 35
+      ]
+      {
+        \row
+        [
+          VerticalAlignment = Top
+        ]
+        {
+          \cell
+          {
+            Text
+          }
+          \cell
+          {
+            Text
+          }
+          \cell
+          {
+            Text
+          }
+        }
+        \row
+        [
+          VerticalAlignment = Center
+        ]
+        {
+          \cell
+          {
+            Text
+          }
+          \cell
+          {
+            Text
+          }
+          \cell
+          {
+            Text
+          }
+        }
+        \row
+        [
+          VerticalAlignment = Bottom
+        ]
+        {
+          \cell
+          {
+            Text
+          }
+          \cell
+          {
+            Text
+          }
+          \cell
+          {
+            Text
+          }
+        }
+      }
+    }
+    \paragraph
+    [
+      Style = "Heading2"
+    ]
+    {
+      Cell Merge
+    }
+    \table
+    [
+      TopPadding = 5
+      BottomPadding = 5
+      Borders
+      {
+        Visible = true
+      }
+    ]
+    {
+      \columns
+      {
+        \column
+        [
+          Format
+          {
+            Alignment = Left
+          }
+        ]
+        \column
+        [
+          Format
+          {
+            Alignment = Center
+          }
+        ]
+        \column
+        [
+          Format
+          {
+            Alignment = Right
+          }
+        ]
+      }
+      \rows
+      [
+        Height = 35
+      ]
+      {
+        \row
+        {
+          \cell
+          [
+            MergeRight = 1
+          ]
+          {
+            Merge Right
+          }
+        }
+        \row
+        [
+          VerticalAlignment = Bottom
+        ]
+        {
+          \cell
+          [
+            MergeDown = 1
+            VerticalAlignment = Bottom
+          ]
+          {
+            Merge Down
+          }
+        }
+        \row
+        {
+        }
+      }
+    }
+    \paragraph
+    [
+      Style = "Heading1"
+    ]
+    {
+      Chart Overview\field(Bookmark)[Name = "Charts"]
+    }
+    \paragraph
+    [
+      Style = "Heading2"
+    ]
+    {
+      Sample Chart
+    }
+    \chart(Line)
+    [
+      Height = "12cm"
+      Width = "16cm"
+      Left = 0
+    ]
+    {
+      \plotarea
+      [
+        LineFormat
+        {
+          Width = 1
+          Color = DarkGray
+        }
+      ]
+      {
+      }
+      \xaxis
+      [
+        MajorTickMark = Outside
+        Title
+        {
+          Caption = "X-Axis"
+        }
+      ]
+      \yaxis
+      [
+        HasMajorGridLines = true
+        MajorTickMark = Outside
+      ]
+      \series
+      [
+        ChartType = Column2D
+        HasDataLabel = true
+      ]
+      {
+        1, 17, 45, 5, 3, 20, 11, 23, 8, 19, 
+      }
+      \series
+      [
+        ChartType = Line
+      ]
+      {
+        41, 7, 5, 45, 13, 10, 21, 13, 18, 9, 
+      }
+      \xvalues
+      {
+        "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", 
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+﻿<%@ CodeTemplate Language="C#" 
+    Name="Common.Address"
+    ClassName="Zetbox.Parties.Client.Reporting.Common.Address"
+    Inherits="Zetbox.Parties.Client.Reporting.ReportTemplate" %>
+<%@ Import Namespace="System" %>
+<%@ Import Namespace="System.Collections.Generic" %>
+<%@ Import Namespace="System.Linq" %>
+<%@ Import Namespace="Zetbox.Basic.Parties" %>
+<%@ Parameter Name="party" Type="Zetbox.Basic.Parties.Party" %>
+<%@ Parameter Name="address" Type="Zetbox.Basic.Parties.Address" %>
+
+<%= FormatName(party) %>
+\linebreak
+<% if(address != null) { %>
+    <% if(!string.IsNullOrEmpty(address.Line1)) { %>
+        \linebreak
+        <%= Format(address.Line1) %>
+    <% } 
+    if(!string.IsNullOrEmpty(address.Line2)) { %>
+        \linebreak
+        <%= Format(address.Line2) %>
+    <% } 
+    if(!string.IsNullOrEmpty(address.ZIPCode) || !string.IsNullOrEmpty(address.City)) { %>
+        \linebreak
+        <%= Format(address.ZIPCode) %> <%= Format(address.City) %>
+    <% } 
+    if(!string.IsNullOrEmpty(address.Country)) { %>
+        \linebreak
+        <%= Format(address.Country) %>
+    <% } %>
+<% } %>

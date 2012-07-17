@@ -1,0 +1,35 @@
+﻿<%@ CodeTemplate Language="C#" 
+    Name="Common.BankAccount"
+    ClassName="Zetbox.Parties.Client.Reporting.Common.BankAccount"
+    Inherits="Zetbox.Parties.Client.Reporting.ReportTemplate" %>
+<%@ Import Namespace="System" %>
+<%@ Import Namespace="System.Collections.Generic" %>
+<%@ Import Namespace="System.Linq" %>
+<%@ Import Namespace="Zetbox.Basic.Parties" %>
+<%@ Parameter Name="account" Type="Zetbox.Basic.Parties.BankAccount" %>
+
+<% if(account != null) { %>
+
+\paragraph [ 
+            Format {
+                TabStops +=
+                {
+                  Position = "4cm"
+                }
+            } ] {
+
+<%= Format(account.Name) %>
+<% if(!string.IsNullOrEmpty(account.BIC) && !string.IsNullOrEmpty(account.IBAN)) { %>
+\linebreak
+BIC: \tab <%= Format(account.BIC) %>
+\linebreak
+IBAN: \tab <%= Format(account.IBAN) %>
+<% } 
+if(!string.IsNullOrEmpty(account.BankCodeNumber) && !string.IsNullOrEmpty(account.AccountNumber)) { %>
+\linebreak
+<%= BankAccountResources.BankCodeNumber %>: \tab <%= Format(account.BankCodeNumber) %>
+\linebreak
+<%= BankAccountResources.AccountNumber %>: \tab <%= Format(account.AccountNumber) %>
+<% } %>
+}
+<% } %>

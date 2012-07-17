@@ -13,21 +13,17 @@ set config=%1
 
 :GOON
 
-Libs\Kistl\Kistl.Server.Service.exe %config% -deploy Libs\Kistl\Modules\KistlBasic.xml -deploy Libs\Kistl\Modules\KistlUtils.xml -deploy Libs\Kistl\Modules\TestModules.xml -deploy-local -updatedeployedschema -repairschema
-IF ERRORLEVEL 1 GOTO FAIL
+call "ZbInstall.cmd" %config%
 
-Libs\Kistl\Kistl.Server.Service.exe %config% -generate
-IF ERRORLEVEL 1 GOTO FAIL
+cd bin\Debug
 
-Libs\Kistl\Kistl.Server.Service.exe %config% -syncidentities
-IF ERRORLEVEL 1 GOTO FAIL
-
-Libs\Kistl\Kistl.Server.Service.exe %config% -import Data\Invoicing.Data.xml -import Data\Accounting.Data.xml -import Data\Parties.xml
+Zetbox.Server.Service.exe %config% -deploy-update -generate
 IF ERRORLEVEL 1 GOTO FAIL
 
 echo ********************************************************************************
 echo ************************************ Success ***********************************
 echo ********************************************************************************
+cd ..\..
 GOTO EOF
 
 :FAIL
@@ -35,6 +31,7 @@ echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX FAIL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 echo                                  Aborting Deploy
+cd ..\..
 rem return error without closing parent shell
 echo A | choice /c:A /n
 

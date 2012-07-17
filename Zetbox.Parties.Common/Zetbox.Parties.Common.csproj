@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{927FD8BF-5FE0-4D07-B89E-926E7F694623}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zetbox.Parties.Common</RootNamespace>
+    <AssemblyName>Zetbox.Parties.Common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\Common\App.Zetbox.Parties\</OutputPath>
+    <ZetboxOutputPath>..\bin\Debug\</ZetboxOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\Common\App.Zetbox.Parties\</OutputPath>
+    <ZetboxOutputPath>..\bin\Release\</ZetboxOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Linux.Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\Common\App.Zetbox.Parties\</OutputPath>
+    <ZetboxOutputPath>..\bin\Debug\</ZetboxOutputPath>
+    <DefineConstants>DEBUG;TRACE;MONO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounting\AccountActions.cs" />
+    <Compile Include="Accounting\AccountImporter.cs" />
+    <Compile Include="Accounting\AccountImporterDescriptorActions.cs" />
+    <Compile Include="Accounting\Receipt_TransactionActions.cs" />
+    <Compile Include="Accounting\TransactionActions.cs" />
+    <Compile Include="CommonModule.cs" />
+    <Compile Include="Dtos\SalesInvoiceReport.cs" />
+    <Compile Include="Dtos\SalesQuoteReport.cs" />
+    <Compile Include="Invoicing\AbstractInvoiceGeneratorActions.cs" />
+    <Compile Include="Invoicing\InvoiceActions.cs" />
+    <Compile Include="Invoicing\InvoiceItemActions.cs" />
+    <Compile Include="Invoicing\OtherExpenseReceiptActions.cs" />
+    <Compile Include="Invoicing\OtherIncomeReceiptActions.cs" />
+    <Compile Include="Invoicing\PurchaseInvoiceActions.cs" />
+    <Compile Include="Invoicing\PurchaseInvoiceItemActions.cs" />
+    <Compile Include="Invoicing\ReceiptActions.cs" />
+    <Compile Include="Invoicing\SalesInvoiceActions.cs" />
+    <Compile Include="Invoicing\SalesInvoiceItemActions.cs" />
+    <Compile Include="Invoicing\StatisticActionsActions.cs" />
+    <Compile Include="Invoicing\VATTypeActions.cs" />
+    <Compile Include="PartiesNamedObjects.cs" />
+    <Compile Include="Parties\CustomerActions.cs" />
+    <Compile Include="Parties\CustomerRelationshipActions.cs" />
+    <Compile Include="Parties\EmployeeActions.cs" />
+    <Compile Include="Parties\EmploymentActions.cs" />
+    <Compile Include="Parties\OrganizationActions.cs" />
+    <Compile Include="Parties\PartyRelationshipActions.cs" />
+    <Compile Include="Parties\PartyRoleActions.cs" />
+    <Compile Include="Parties\PersonActions.cs" />
+    <Compile Include="Parties\SupplierRelationshipActions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.  -->
+  <!--<Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>-->
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <Import Project="$(SolutionDir)\.zetbox\common.targets" />
+</Project>

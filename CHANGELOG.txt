@@ -1,3 +1,11 @@
+== Version 0.4 ==
+
+2012-07-17
+
+  * New project structure from zetbox templates
+  * New CI configs
+  * New zetbox version
+
 == Version 0.3 ==
 
 2012-03-16: Update configuration for jenkins templates

@@ -1,0 +1,149 @@
+﻿<%@ CodeTemplate Language="C#" 
+    Name="Invoicing.SalesInvoice"
+    ClassName="Zetbox.Parties.Client.Reporting.Invoicing.SalesInvoice"
+    Inherits="Zetbox.Parties.Client.Reporting.ReportTemplate" %>
+<%@ Import Namespace="System" %>
+<%@ Import Namespace="System.Collections.Generic" %>
+<%@ Import Namespace="System.Linq" %>
+<%@ Import Namespace="Zetbox.Basic.Invoicing" %>
+<%@ Parameter Name="invoice" Type="Zetbox.Basic.Invoicing.SalesInvoice" %>
+
+\document [
+<% Common.DocumentInfo.Call(Host, "Invoice", null); %>
+] {
+<% Common.DocumentStyles.Call(Host); %>
+
+\section [
+<% PageSetup(); %>
+	] {
+        \paragraph [ Style = "Title" Format { SpaceBefore = "2cm" } ] {
+            <%= GetTitle() %>
+        }
+
+        \textframe [ RelativeVertical = Paragraph
+                     RelativeHorizontal = Margin                     
+                     Width = "5cm"
+                     Left = "11cm"
+                     WrapFormat { Style = Through } ] {
+            \paragraph [ Format { Alignment = Right } ] {
+                <% FormatIntOrg(); %>
+                \linebreak \linebreak
+                <% FormatIntOrgTaxNumber(); %>
+            }
+        }
+
+        \paragraph {
+            <%= GetToText() %>
+        }
+
+        \paragraph {
+            <% FormatRecipient(); %>
+            \linebreak \linebreak
+            <% FormatRecipientTaxNumber(); %>
+        }
+
+        \paragraph [ 
+            Format {
+                SpaceBefore = "1cm"
+                TabStops +=
+                {
+                  Position = "16cm"
+                  Alignment = Right
+                } } ] {
+            <%= GetSubject() %>
+            \tab 
+            <%= GetCityAndDate() %>
+        }
+
+        \paragraph [ Style = "Heading1" Format { SpaceBefore = "1cm" } ] {
+            <%= GetServicesHeading() %>
+        }
+
+        \paragraph {
+            <%= GetPeriod() %>
+        }
+
+        \table [ Style = "Compact" Borders { Width = 0.25 } ] {
+            \columns {
+                \column [ Width = "6cm" ]
+                \column [ Width = "2cm" Format { Alignment = Right } ]
+                \column [ Width = "3cm" Format { Alignment = Right } ]
+                \column [ Width = "2cm" Format { Alignment = Right } ]
+                \column [ Width = "3cm" Format { Alignment = Right } ]
+            }
+            \rows {
+                \row [ HeadingFormat = True Format { Font { Bold = True } }] {
+                    \cell { <%= GetSubjectHeader() %> }
+                    \cell { <%= GetQuantityHeader() %> }
+                    \cell { <%= GetUnitPriceHeader() %> }
+                    \cell { <%= GetVATHeader() %> }
+                    \cell { <%= GetAmountHeader() %> }
+                }
+<% foreach(var item in GetItems()) { %>
+                \row {
+                    \cell { <%= Format    (item.Description) %> }
+                    \cell { <%= Format    (item.Quantity) %> }
+                    \cell { <%= FormatEuro(item.UnitPrice) %> }
+                    \cell { <%= Format    (item.VATType.Description) %> }
+                    \cell { <%= FormatEuro(item.AmountNet) %> }
+                }
+<% } %>
+<% if(RenderSubTotal()) { %>
+                \row [ Height = "0.1cm" HeightRule = Exactly ] {
+                    \cell {  }
+                    \cell {  }
+                    \cell {  }
+                    \cell {  }
+                    \cell {  }
+                }
+                \row [ Format { Font { Bold = True } } ] {
+                    \cell { <%= GetSubTotalDescription() %> }
+                    \cell {  }
+                    \cell {  }
+                    \cell {  }
+                    \cell { <%= GetSubTotalAmountNet() %> }
+                }
+<% } %>
+<% foreach(var vat in GetVATTypes()) { %>
+                \row {
+                    \cell { <%= GetVATDescription(vat) %> }
+                    \cell {  }
+                    \cell {  }
+                    \cell {  }
+                    \cell { <%= GetVATSum(vat) %> }
+                }
+<% } %>
+                \row [ Height = "0.1cm" HeightRule = Exactly ] {
+                    \cell {  }
+                    \cell {  }
+                    \cell {  }
+                    \cell {  }
+                    \cell {  }
+                }
+                \row [ Format { Font { Bold = True } } ] {
+                    \cell { <%= GetTotalDescription() %> }
+                    \cell {  }
+                    \cell {  }
+                    \cell {  }
+                    \cell { <%= GetTotalAmount() %> }
+                }
+            }
+        }
+
+        <% FormatMessage(); %>
+
+        \paragraph [ Style = "Heading1" Format { SpaceBefore = "1cm" } ] {
+            <%= GetPaymentTitle() %>
+        }
+        \paragraph {
+            <%= GetPaymentIntroduction() %>
+        }
+        <% FormatBankAccount(); %>
+
+        \paragraph [ Format { SpaceBefore = "1cm" } ] {
+            <%= GetGreetingsLine() %>
+        }
+
+        <% FormatSignature(); %>
+    }
+}
