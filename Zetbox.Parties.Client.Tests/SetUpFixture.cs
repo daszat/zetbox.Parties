@@ -8,26 +8,15 @@ namespace Zetbox.Parties.Client.Tests
     using Autofac;
     using NUnit.Framework;
     using Zetbox.API;
-    using Zetbox.API.Client.PerfCounter;
 
     [SetUpFixture]
     public class SetUpFixture : Zetbox.API.AbstractConsumerTests.AbstractSetUpFixture
     {
-        protected override void SetupBuilder(Autofac.ContainerBuilder builder)
+        protected override void SetupBuilder(ContainerBuilder builder)
         {
             base.SetupBuilder(builder);
 
-            builder
-                .RegisterType<PerfCounterDispatcher>()
-                .As<IPerfCounter>()
-                .OnActivated(args => args.Instance.Initialize(args.Context.Resolve<IFrozenContext>()))
-                .OnRelease(obj => obj.Dump())
-                .SingleInstance();
-
-            builder
-                .RegisterType<NopFileOpener>()
-                .AsImplementedInterfaces()
-                .SingleInstance();
+            // register local overrides here
         }
 
         protected override string GetConfigFile()
