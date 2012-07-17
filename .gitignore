@@ -5,7 +5,10 @@
 *.csproj.user
 bin
 obj
+/NuGetPackages/*.nuspec
+/NuGetPackages/*.targets
 /packages/zetbox*
 /packages/Arebis.CodeGenerator.*
 /packages/LinqCube.*
 /packages/NUnit.*
+/packages/MSBuildVersioning.*

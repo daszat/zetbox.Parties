@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>zetbox.Parties-Client</id>
+    <version>1.0.$REVNUM$.$DIRTY$</version>
+    <title>zetbox.Parties client assemblies</title>
+    <authors>dasz.at OG</authors>
+    <owners>dasz.at OG</owners>
+    <licenseUrl>http://www.gnu.org/licenses/lgpl.html</licenseUrl>
+    <projectUrl>http://zetbox.at/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Client assemblies for zetbox.Parties.</description>
+    <releaseNotes>First package.</releaseNotes>
+    <copyright>Copyright © 2012 dasz.at OG</copyright>
+    <dependencies>
+      <dependency id="zetboxBasic" version="[1.0.4185.1]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Client\App.Zetbox.Parties\*.dll" target="lib\net35" />
+    <file src="Client\App.Zetbox.Parties\*.pdb" target="lib\net35" />
+  </files>
+</package>
