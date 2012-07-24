@@ -22,7 +22,7 @@
       <Module>Zetbox.Parties.Server.ServerModule, Zetbox.Parties.Server</Module>
     </Modules>
     <ClientFilesLocations>
-      <Location Name="Exe">..\Zetbox.Client.WPF.exe</Location>
+      <Location Name="Exe" Start="true">..\Zetbox.Client.WPF.exe</Location>
       <Location Name="Configs">..\Configs\Zetbox.Client.WPF.xml</Location>
       <Location Name="Common">..\Common</Location>
       <Location Name="Client">..\Client</Location>
