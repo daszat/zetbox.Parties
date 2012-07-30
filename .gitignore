@@ -7,8 +7,7 @@ bin
 obj
 /NuGetPackages/*.nuspec
 /NuGetPackages/*.targets
-/packages/zetbox*
-/packages/Arebis.CodeGenerator.*
-/packages/LinqCube.*
-/packages/NUnit.*
-/packages/MSBuildVersioning.*
+
+# Only commit repositories.config. The rest of /packages is only a local cache
+!/packages/repositories.config
+/packages/*
