@@ -2615,6 +2615,14 @@ public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&
     <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
     <GUI:Toolkit>0</GUI:Toolkit>
   </GUI:ViewDescriptor>
+  <GUI:NavigationScreen ExportGuid="0ff7053a-8d41-4bab-bc8f-ab017486736a">
+    <GUI:ChangedOn>2012-08-22T15:19:08.8394505Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2011-11-08T21:27:44.776981Z</GUI:CreatedOn>
+    <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
+    <GUI:Parent>7b479813-814b-471a-b045-83ac8602a522</GUI:Parent>
+    <GUI:Children_pos>0</GUI:Children_pos>
+    <GUI:Title>Account Settings</GUI:Title>
+  </GUI:NavigationScreen>
   <GUI:NavigationScreen ExportGuid="7e1f4c85-784f-4404-b396-ef4862662ced">
     <GUI:ChangedOn>2011-11-08T21:28:37.663006Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-11-08T21:26:24.957415Z</GUI:CreatedOn>
@@ -2634,14 +2642,6 @@ public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&
     <GUI:InitialSort>Name</GUI:InitialSort>
     <GUI:Type>9dc19fb1-4c9d-422d-89e3-bed1ebebf5a6</GUI:Type>
   </GUI:NavigationSearchScreen>
-  <GUI:NavigationScreen ExportGuid="0ff7053a-8d41-4bab-bc8f-ab017486736a">
-    <GUI:ChangedOn>2011-11-08T21:29:24.173666Z</GUI:ChangedOn>
-    <GUI:CreatedOn>2011-11-08T21:27:44.776981Z</GUI:CreatedOn>
-    <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
-    <GUI:Parent>7e1f4c85-784f-4404-b396-ef4862662ced</GUI:Parent>
-    <GUI:Children_pos>0</GUI:Children_pos>
-    <GUI:Title>Settings</GUI:Title>
-  </GUI:NavigationScreen>
   <GUI:ControlKind ExportGuid="5d3b4969-b3cc-4dfb-b51f-b88fbf1ef2b2">
     <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
     <GUI:Name>Zetbox.Basic.Accounting.LinkReceiptTransactionDialog</GUI:Name>
@@ -9947,11 +9947,11 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Toolkit>0</GUI:Toolkit>
   </GUI:ViewDescriptor>
   <GUI:NavigationSearchScreen ExportGuid="7e52554c-961e-4cfb-8609-90f7b0543ef2">
-    <GUI:ChangedOn>2012-05-09T12:14:03.4193063Z</GUI:ChangedOn>
+    <GUI:ChangedOn>2012-08-22T15:15:52.4962203Z</GUI:ChangedOn>
     <GUI:CreatedOn>2012-05-09T12:13:47.9794232Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:Parent>916544de-0c04-4d6f-9ae1-d481e40361a0</GUI:Parent>
-    <GUI:Children_pos>407</GUI:Children_pos>
+    <GUI:Parent>7b479813-814b-471a-b045-83ac8602a522</GUI:Parent>
+    <GUI:Children_pos>408</GUI:Children_pos>
     <GUI:Title>Invoice Generators</GUI:Title>
     <GUI:AllowAddNew>true</GUI:AllowAddNew>
     <GUI:Type>1bec6383-87ec-44a8-9646-4bed490f6746</GUI:Type>
@@ -9964,6 +9964,7 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Parent>702e6fde-6b9d-4286-8f04-f4d6076a488f</GUI:Parent>
     <GUI:Children_pos>300</GUI:Children_pos>
     <GUI:Title>Invoices</GUI:Title>
+    <GUI:ViewModelDescriptor>ebc13c2a-0375-46e6-9fc2-a4ee5afc3568</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
   <GUI:NavigationSearchScreen ExportGuid="f9e32a90-c162-466f-86f2-c101ab622601">
     <GUI:ChangedOn>2011-12-29T12:59:07.4864196Z</GUI:ChangedOn>
@@ -10025,13 +10026,14 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Parent>702e6fde-6b9d-4286-8f04-f4d6076a488f</GUI:Parent>
     <GUI:Children_pos>101</GUI:Children_pos>
     <GUI:Title>Quotes</GUI:Title>
+    <GUI:ViewModelDescriptor>ebc13c2a-0375-46e6-9fc2-a4ee5afc3568</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
   <GUI:NavigationScreen ExportGuid="90992873-7109-496a-aba0-821406fb3556">
-    <GUI:ChangedOn>2011-10-21T17:00:10.038524Z</GUI:ChangedOn>
+    <GUI:ChangedOn>2012-08-22T15:15:52.4962203Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-10-21T16:14:15.943524Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Parent>916544de-0c04-4d6f-9ae1-d481e40361a0</GUI:Parent>
-    <GUI:Children_pos>400</GUI:Children_pos>
+    <GUI:Children_pos>405</GUI:Children_pos>
     <GUI:Title>Reports</GUI:Title>
   </GUI:NavigationScreen>
   <GUI:NavigationScreen ExportGuid="12361d6d-dc7b-44d8-9b71-2a3373e7a1de">
@@ -10086,7 +10088,7 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:ChangedOn>2012-05-09T12:14:03.4193063Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-11-22T19:32:15.904609Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:Parent>916544de-0c04-4d6f-9ae1-d481e40361a0</GUI:Parent>
+    <GUI:Parent>7b479813-814b-471a-b045-83ac8602a522</GUI:Parent>
     <GUI:Children_pos>406</GUI:Children_pos>
     <GUI:Title>VAT Types</GUI:Title>
     <GUI:AllowAddNew>true</GUI:AllowAddNew>
@@ -15582,11 +15584,11 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <GUI:ViewModelRef>f69b3007-05a5-47db-b839-6f8e3218f9cf</GUI:ViewModelRef>
   </GUI:ViewModelDescriptor>
   <GUI:NavigationSearchScreen ExportGuid="9a7eab41-2d5c-4f03-884d-891d3066d75a">
-    <GUI:ChangedOn>2011-11-08T21:28:37.663006Z</GUI:ChangedOn>
+    <GUI:ChangedOn>2012-08-22T15:21:30.4795519Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-11-04T15:13:26.107102Z</GUI:CreatedOn>
     <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
     <GUI:Parent>702e6fde-6b9d-4286-8f04-f4d6076a488f</GUI:Parent>
-    <GUI:Children_pos>401</GUI:Children_pos>
+    <GUI:Children_pos>403</GUI:Children_pos>
     <GUI:Title>Imported files</GUI:Title>
     <GUI:ViewModelDescriptor>eabf464f-a5a9-4967-ac2e-577fe51fd23d</GUI:ViewModelDescriptor>
   </GUI:NavigationSearchScreen>
@@ -15608,6 +15610,7 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <GUI:Parent>702e6fde-6b9d-4286-8f04-f4d6076a488f</GUI:Parent>
     <GUI:Children_pos>100</GUI:Children_pos>
     <GUI:Title>Parties</GUI:Title>
+    <GUI:ViewModelDescriptor>ebc13c2a-0375-46e6-9fc2-a4ee5afc3568</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
   <GUI:NavigationSearchScreen ExportGuid="69c1e738-84cc-4477-bdd3-b063f94cee7e">
     <GUI:ChangedOn>2011-10-20T21:57:19.717622Z</GUI:ChangedOn>
@@ -15620,11 +15623,21 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <GUI:Type>89636484-ab2d-48e2-b15e-33230b770785</GUI:Type>
     <GUI:ViewMethod>2</GUI:ViewMethod>
   </GUI:NavigationSearchScreen>
+  <GUI:NavigationScreen ExportGuid="7b479813-814b-471a-b045-83ac8602a522">
+    <GUI:ChangedOn>2012-08-22T15:21:30.4795519Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2012-08-22T15:16:34.7036345Z</GUI:CreatedOn>
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:Parent>702e6fde-6b9d-4286-8f04-f4d6076a488f</GUI:Parent>
+    <GUI:Children_pos>404</GUI:Children_pos>
+    <GUI:Title>Settings</GUI:Title>
+  </GUI:NavigationScreen>
   <GUI:NavigationScreen ExportGuid="702e6fde-6b9d-4286-8f04-f4d6076a488f">
-    <GUI:ChangedOn>2011-10-20T21:53:52.218622Z</GUI:ChangedOn>
+    <GUI:ChangedOn>2012-08-22T15:03:43.9205482Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-10-20T21:53:52.218622Z</GUI:CreatedOn>
     <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
-    <GUI:Title>ZetBox Parties</GUI:Title>
+    <GUI:RequestedKind>3166aeb8-215d-4274-a930-e9de6393edc1</GUI:RequestedKind>
+    <GUI:Title>zetbox Parties</GUI:Title>
+    <GUI:ViewModelDescriptor>ebc13c2a-0375-46e6-9fc2-a4ee5afc3568</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
   <GUI:Application ExportGuid="d80b20cf-8a8e-4300-83cd-129eb28f7d9b">
     <GUI:ChangedOn>2011-10-20T21:53:52.218622Z</GUI:ChangedOn>
