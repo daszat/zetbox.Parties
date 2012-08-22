@@ -1,2 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-06-21T10:22:17.7371559Z" xmlns="http://dasz.at/Zetbox" />
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-08-21T12:24:21.822223Z" xmlns="http://dasz.at/Zetbox">
+  <Parties:Person ExportGuid="c3f9998a-a779-4a3a-b570-4ba42bfb2b5f">
+    <Parties:Address />
+    <Parties:BankAccount />
+    <Parties:ChangedOn>2012-08-22T08:26:14.4654374Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2012-08-22T08:26:14.4654374Z</Parties:CreatedOn>
+    <Parties:DeliveryAddresses />
+    <Parties:InvoiceAddress />
+    <Parties:FirstName>Test</Parties:FirstName>
+    <Parties:LastName>User</Parties:LastName>
+  </Parties:Person>
+</ZetboxPackaging>
