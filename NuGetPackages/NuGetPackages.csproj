@@ -16,7 +16,9 @@
     <OutputPath>..\bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="zetbox.Parties-Common.nuspec.in" />
+    <None Include="zetbox.Parties-Common.nuspec.in">
+      <SubType>Designer</SubType>
+    </None>
     <NuSpec Include="zetbox.Parties-Common.nuspec">
       <DependentUpon>zetbox.Parties-Common.nuspec.in</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -28,14 +30,18 @@
       <DependentUpon>zetbox.Parties-Client.nuspec.in</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </NuSpec>
-    <None Include="zetbox.Parties-Server.nuspec.in" />
+    <None Include="zetbox.Parties-Server.nuspec.in">
+      <SubType>Designer</SubType>
+    </None>
     <NuSpec Include="zetbox.Parties-Server.nuspec">
       <DependentUpon>zetbox.Parties-Server.nuspec.in</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </NuSpec>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="..\packages\MSBuildVersioning.1.0.34.0\lib\net35\MsBuildVersioning.targets" />
   <Target Name="GitVersionTargets" Inputs="@(Targets)" Outputs="%(Identity).Dummy">

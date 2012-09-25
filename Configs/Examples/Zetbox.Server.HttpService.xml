@@ -29,6 +29,10 @@
       <Module>Zetbox.DalProvider.Ef.Generator.NHibernateGeneratorProvider, Zetbox.DalProvider.Ef.Generator</Module>
       <Module>Zetbox.DalProvider.Client.Generator.ClientGeneratorProvider, Zetbox.DalProvider.Client.Generator</Module>
 
+	  <!-- Additional modules -->
+	  <Module>zetbox.Workflow.Common.CommonModule, zetbox.Workflow.Common</Module>
+      <Module>zetbox.Workflow.Server.ServerModule, zetbox.Workflow.Server</Module>
+
       <!-- application specific modules -->
       <Module>Zetbox.Parties.Common.CommonModule, Zetbox.Parties.Common</Module>
       <Module>Zetbox.Parties.Server.ServerModule, Zetbox.Parties.Server</Module>

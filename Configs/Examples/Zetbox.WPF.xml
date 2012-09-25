@@ -28,6 +28,12 @@
       <!-- 
       <Module>Zetbox.Client.BasicAuthCredentialsResolver+Module, Zetbox.Client</Module>
       -->
+	  
+	  	  <!-- Additional modules -->
+	  <Module>zetbox.Workflow.Common.CommonModule, zetbox.Workflow.Common</Module>
+      <Module>zetbox.Workflow.Client.ClientModule, zetbox.Workflow.Client</Module>
+      <Module>zetbox.Workflow.Client.WPF.ClientWPFModule, zetbox.Workflow.Client.WPF</Module>
+
       <!-- application specific modules -->
       <Module>Zetbox.Parties.Common.CommonModule, Zetbox.Parties.Common</Module>
       <Module>Zetbox.Parties.Client.ClientModule, Zetbox.Parties.Client</Module>
