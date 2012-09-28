@@ -82,6 +82,7 @@
     <Compile Include="Dtos\SalesInvoiceReport.cs" />
     <Compile Include="Dtos\SalesQuoteReport.cs" />
     <Compile Include="Invoicing\AbstractInvoiceGeneratorActions.cs" />
+    <Compile Include="Invoicing\ReceiptTemplateActions.cs" />
     <Compile Include="Invoicing\InvoiceActions.cs" />
     <Compile Include="Invoicing\InvoiceItemActions.cs" />
     <Compile Include="Invoicing\OtherExpenseReceiptActions.cs" />
