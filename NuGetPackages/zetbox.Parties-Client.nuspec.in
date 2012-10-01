@@ -17,7 +17,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="Client\App.Zetbox.Parties\*.dll" target="lib\net35" />
-    <file src="Client\App.Zetbox.Parties\*.pdb" target="lib\net35" />
+    <file src="Client\App.Zetbox.Parties\*.dll" target="lib\net40" />
+    <file src="Client\App.Zetbox.Parties\*.pdb" target="lib\net40" />
   </files>
 </package>

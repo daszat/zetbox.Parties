@@ -20,8 +20,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="Common\App.Zetbox.Parties\*.dll" target="lib\net35" />
-    <file src="Common\App.Zetbox.Parties\*.pdb" target="lib\net35" />
+    <file src="Common\App.Zetbox.Parties\*.dll" target="lib\net40" />
+    <file src="Common\App.Zetbox.Parties\*.pdb" target="lib\net40" />
     <file src="..\..\Data\**\*.*" target="zetbox\Data" />
     <file src="..\..\Modules\**\*.*" target="zetbox\Modules" />
   </files>
