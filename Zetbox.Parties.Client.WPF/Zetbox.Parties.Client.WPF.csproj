@@ -80,6 +80,12 @@
     <Compile Include="View\Accounting\LinkReceiptTransactionDialog.xaml.cs">
       <DependentUpon>LinkReceiptTransactionDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Invoicing\ReceiptTemplateEditor.xaml.cs">
+      <DependentUpon>ReceiptTemplateEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Invoicing\InvoiceTemplateEditor.xaml.cs">
+      <DependentUpon>InvoiceTemplateEditor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Invoicing\InvoiceEditor.xaml.cs">
       <DependentUpon>InvoiceEditor.xaml</DependentUpon>
     </Compile>
@@ -95,6 +101,14 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="View\Accounting\LinkReceiptTransactionDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Invoicing\ReceiptTemplateEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Invoicing\InvoiceTemplateEditor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

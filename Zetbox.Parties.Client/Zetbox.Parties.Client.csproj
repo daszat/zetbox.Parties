@@ -190,6 +190,12 @@
     <Compile Include="ViewModel\Accounting\AccountViewModel.cs" />
     <Compile Include="ViewModel\Accounting\LinkReceiptTransactionViewModel.cs" />
     <Compile Include="ViewModel\Accounting\TransactionViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\SalesInvoiceTemplateViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\InvoiceTemplateViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\PurchaseInvoiceTemplateViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\OtherIncomeReceiptTemplateViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\OtherExpenseReceiptTemplateViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\ReceiptTemplateViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\InvoiceItemViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\InvoiceViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\OtherExpenseReceiptViewModel.cs" />
