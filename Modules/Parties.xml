@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-05T10:19:09.6809593Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-05T10:43:48.6505515Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -7817,7 +7817,7 @@ public static void isValid_ExportGuid(ReceiptTemplate obj, PropertyIsValidEventA
   </ZetboxBase:GuidProperty>
   <ZetboxBase:StringProperty ExportGuid="13a24458-02f9-4830-8557-04362f49864c">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-09-28T07:09:58.2718204Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-10-05T08:43:48.6505515Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Message(ReceiptTemplate obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -7846,7 +7846,7 @@ public static void isValid_Message(ReceiptTemplate obj, PropertyIsValidEventArgs
     <ZetboxBase:Name>Message</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>5e556e9f-5769-4266-b485-e655e6da825b</ZetboxBase:ObjectClass>
     <ZetboxBase:Properties_pos>5</ZetboxBase:Properties_pos>
-    <GUI:ValueModelDescriptor>fbf7ee47-b967-4e63-8db9-e7827f5ffe05</GUI:ValueModelDescriptor>
+    <GUI:ValueModelDescriptor>a5e18586-d80f-49cf-8aa1-41d305eee289</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
