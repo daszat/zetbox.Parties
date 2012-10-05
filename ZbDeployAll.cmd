@@ -20,6 +20,10 @@ cd bin\Debug
 Zetbox.Server.Service.exe %config% -deploy-update -generate
 IF ERRORLEVEL 1 GOTO FAIL
 
+cd ..\..
+call "ZbInstall.cmd" %config%
+cd bin\Debug
+
 Zetbox.Server.Service.exe %config% -import Data\Workflow.Data.xml
 IF ERRORLEVEL 1 GOTO FAIL
 
