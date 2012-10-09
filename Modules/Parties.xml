@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-05T11:23:49.9919004Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-09T17:41:20.571968Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -2997,7 +2997,7 @@ public static void ObjectIsValid(OtherExpenseReceiptTemplate obj, ObjectIsValidE
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>6ad05d98-01e2-4d84-9003-ef2d78a7e317</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -3090,7 +3090,7 @@ public static void ObjectIsValid(OtherIncomeReceiptTemplate obj, ObjectIsValidEv
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>2d27c081-ef97-41a0-8af1-fe2515183b02</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -3276,7 +3276,7 @@ public static void ObjectIsValid(PurchaseInvoiceTemplate obj, ObjectIsValidEvent
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>90b827ba-5e9d-4241-8981-36aa7394ec74</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -3741,7 +3741,7 @@ public static void ObjectIsValid(SalesInvoiceTemplate obj, ObjectIsValidEventArg
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>4b16f58c-3d44-4658-b8a8-488099b1bd33</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -5040,7 +5040,7 @@ public static void isValid_Amount(InvoiceItemTemplate obj, PropertyIsValidEventA
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>Amount</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>3</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>500</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>481d7a65-208c-4706-8d4d-64ea629a109c</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -5079,7 +5079,7 @@ public static void isValid_AmountNet(InvoiceItemTemplate obj, PropertyIsValidEve
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>AmountNet</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>2</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>400</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>481d7a65-208c-4706-8d4d-64ea629a109c</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -5118,7 +5118,7 @@ public static void isValid_ChangedBy(InvoiceItemTemplate obj, PropertyIsValidEve
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>ChangedBy</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>9</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>1100</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>0bc70c56-8de4-4e8c-9cda-7a81bedaa555</ZetboxBase:RelationEnd>
@@ -5155,7 +5155,7 @@ public static void isValid_ChangedOn(InvoiceItemTemplate obj, PropertyIsValidEve
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>ChangedOn</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>7</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>900</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>fc74b434-3801-4e4a-ab67-e65a9e014005</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -5192,7 +5192,7 @@ public static void isValid_CreatedBy(InvoiceItemTemplate obj, PropertyIsValidEve
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>CreatedBy</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>8</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>1000</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>6368383a-ed1b-4e94-9cbf-4cdb976305a0</ZetboxBase:RelationEnd>
@@ -5229,7 +5229,7 @@ public static void isValid_CreatedOn(InvoiceItemTemplate obj, PropertyIsValidEve
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>CreatedOn</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>6</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>800</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>fc74b434-3801-4e4a-ab67-e65a9e014005</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -5265,7 +5265,7 @@ public static void isValid_Description(InvoiceItemTemplate obj, PropertyIsValidE
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>Description</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>4</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>600</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -5303,7 +5303,7 @@ public static void isValid_ExportGuid(InvoiceItemTemplate obj, PropertyIsValidEv
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>ExportGuid</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>5</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>700</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>2b6fb70f-a382-4057-a139-cc33333d619d</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -5339,7 +5339,7 @@ public static void isValid_Quantity(InvoiceItemTemplate obj, PropertyIsValidEven
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>Quantity</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>0</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>200</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>481d7a65-208c-4706-8d4d-64ea629a109c</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -5378,7 +5378,7 @@ public static void isValid_UnitPrice(InvoiceItemTemplate obj, PropertyIsValidEve
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>UnitPrice</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>1</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>300</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>481d7a65-208c-4706-8d4d-64ea629a109c</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -5417,7 +5417,7 @@ public static void isValid_VATType(InvoiceItemTemplate obj, PropertyIsValidEvent
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>VATType</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>0</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>100</ZetboxBase:Properties_pos>
     <GUI:RequestedKind>d30d2676-7f2f-4f0d-895a-e46f19b8f526</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
@@ -12290,11 +12290,23 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:ViewModelRef>9b78e99f-cd2c-4280-8506-1df08b57a1b7</GUI:ViewModelRef>
   </GUI:ViewModelDescriptor>
+  <GUI:ViewModelDescriptor ExportGuid="6ad05d98-01e2-4d84-9003-ef2d78a7e317">
+    <GUI:DefaultEditorKind>df925785-eadf-477d-a4f6-54acf2d3581b</GUI:DefaultEditorKind>
+    <GUI:Description>ViewModel for Other Expense Receipt Template</GUI:Description>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:ViewModelRef>97770e91-671b-418e-b5c8-ac0342694864</GUI:ViewModelRef>
+  </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="cd8d2a31-0fb3-4b17-b782-eeeaf7ac0c5d">
     <GUI:DefaultEditorKind>bb54f1d9-ab07-4787-b190-5c09c8c9756a</GUI:DefaultEditorKind>
     <GUI:Description>ViewModel for Other Expense Receipts</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:ViewModelRef>7fd35fab-4e62-4669-81b3-c01f58f90207</GUI:ViewModelRef>
+  </GUI:ViewModelDescriptor>
+  <GUI:ViewModelDescriptor ExportGuid="2d27c081-ef97-41a0-8af1-fe2515183b02">
+    <GUI:DefaultEditorKind>df925785-eadf-477d-a4f6-54acf2d3581b</GUI:DefaultEditorKind>
+    <GUI:Description>ViewModel for Other Income Receipt Templates</GUI:Description>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:ViewModelRef>98208c34-aad2-4603-9e2c-10d0fc323e52</GUI:ViewModelRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="b8f24ce3-0b97-4b81-b8f9-0eaabe5915e6">
     <GUI:DefaultEditorKind>bb54f1d9-ab07-4787-b190-5c09c8c9756a</GUI:DefaultEditorKind>
@@ -12306,6 +12318,12 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Description>ViewModel for Purchase Invoice Items</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:ViewModelRef>965ff549-7b67-4913-8cb5-bda515a98719</GUI:ViewModelRef>
+  </GUI:ViewModelDescriptor>
+  <GUI:ViewModelDescriptor ExportGuid="90b827ba-5e9d-4241-8981-36aa7394ec74">
+    <GUI:DefaultEditorKind>a49c62da-e4c7-43c4-ae34-ca91767641e3</GUI:DefaultEditorKind>
+    <GUI:Description>ViewModel for Purchase Invoice Template</GUI:Description>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:ViewModelRef>67be9633-17a5-4723-8b62-6c98b6dcf51b</GUI:ViewModelRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="4c10c8c1-8108-4d21-9f91-69f3ae8db405">
     <GUI:DefaultEditorKind>651ba328-b23a-4c1d-ad41-1e70a5f8ca97</GUI:DefaultEditorKind>
@@ -12339,6 +12357,12 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:ViewModelRef>8572fc1b-0591-4235-8120-4fdc2e09b044</GUI:ViewModelRef>
   </GUI:ViewModelDescriptor>
+  <GUI:ViewModelDescriptor ExportGuid="4b16f58c-3d44-4658-b8a8-488099b1bd33">
+    <GUI:DefaultEditorKind>a49c62da-e4c7-43c4-ae34-ca91767641e3</GUI:DefaultEditorKind>
+    <GUI:Description>ViewModel for Sales Invoice Templates</GUI:Description>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:ViewModelRef>a0e8f7ed-f133-4a7d-8b05-c48a897bca0a</GUI:ViewModelRef>
+  </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="e3a061b7-1f12-4fa0-a968-eacd299e752e">
     <GUI:DefaultEditorKind>651ba328-b23a-4c1d-ad41-1e70a5f8ca97</GUI:DefaultEditorKind>
     <GUI:Description>ViewModel for Sales Invoices</GUI:Description>
@@ -12357,6 +12381,12 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Toolkit>0</GUI:Toolkit>
   </GUI:ViewDescriptor>
+  <GUI:ViewDescriptor ExportGuid="3bebdf65-4dbc-43a8-a7f5-97ca37b7ef27">
+    <GUI:ControlKind>a49c62da-e4c7-43c4-ae34-ca91767641e3</GUI:ControlKind>
+    <GUI:ControlRef>98444bba-2b02-4ac9-9367-5d20186f8608</GUI:ControlRef>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:Toolkit>0</GUI:Toolkit>
+  </GUI:ViewDescriptor>
   <GUI:ViewDescriptor ExportGuid="ab64b40f-1719-4ba1-a1e6-5b65badb7dcb">
     <GUI:ControlKind>2f53471c-6a08-4c1b-ad89-b9206c147ed8</GUI:ControlKind>
     <GUI:ControlRef>6207562d-a5d1-46f2-8179-6a998e846e2a</GUI:ControlRef>
@@ -12366,6 +12396,12 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
   <GUI:ViewDescriptor ExportGuid="93c9d3ea-dae3-4024-88f1-af1ed7fe9fe1">
     <GUI:ControlKind>bb54f1d9-ab07-4787-b190-5c09c8c9756a</GUI:ControlKind>
     <GUI:ControlRef>645bec99-40af-4285-9a4e-b17973ee5cfc</GUI:ControlRef>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:Toolkit>0</GUI:Toolkit>
+  </GUI:ViewDescriptor>
+  <GUI:ViewDescriptor ExportGuid="a949a68e-65d3-4297-a72e-328a394dabf6">
+    <GUI:ControlKind>df925785-eadf-477d-a4f6-54acf2d3581b</GUI:ControlKind>
+    <GUI:ControlRef>ca88caf7-3515-4192-a6f0-b70ab20a0003</GUI:ControlRef>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Toolkit>0</GUI:Toolkit>
   </GUI:ViewDescriptor>
@@ -12533,9 +12569,19 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Name>Zetbox.Basic.Invoicing.InvoiceEditor</GUI:Name>
     <GUI:Parent>06bf9adc-c5bc-4552-abdc-18a96c527962</GUI:Parent>
   </GUI:ControlKind>
+  <GUI:ControlKind ExportGuid="a49c62da-e4c7-43c4-ae34-ca91767641e3">
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:Name>Zetbox.Basic.Invoicing.InvoiceTemplateEditor</GUI:Name>
+    <GUI:Parent>06bf9adc-c5bc-4552-abdc-18a96c527962</GUI:Parent>
+  </GUI:ControlKind>
   <GUI:ControlKind ExportGuid="bb54f1d9-ab07-4787-b190-5c09c8c9756a">
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Name>Zetbox.Basic.Invoicing.ReceiptEditor</GUI:Name>
+    <GUI:Parent>06bf9adc-c5bc-4552-abdc-18a96c527962</GUI:Parent>
+  </GUI:ControlKind>
+  <GUI:ControlKind ExportGuid="df925785-eadf-477d-a4f6-54acf2d3581b">
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:Name>Zetbox.Basic.Invoicing.ReceiptTemplateEditor</GUI:Name>
     <GUI:Parent>06bf9adc-c5bc-4552-abdc-18a96c527962</GUI:Parent>
   </GUI:ControlKind>
   <GUI:ControlKind ExportGuid="f76922f7-d2ce-40bf-a277-7161045f6321">
@@ -17412,10 +17458,18 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:FullName>Zetbox.Client.WPF.View.Parties.PartyRolesDisplay</ZetboxBase:FullName>
     <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="e9cdaf2f-100e-4552-9276-1aa677afc2ad">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ClientModule</ZetboxBase:FullName>
+    <ZetboxBase:Parent>2790156b-feec-4b8e-bbfd-2555f6bfff40</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="8518dbea-bfca-4a13-a0cf-f679b68dcb94">
     <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
-    <ZetboxBase:ChangedOn>2011-10-20T21:07:50.926622Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-10-20T21:07:50.926622Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Deleted>true</ZetboxBase:Deleted>
     <ZetboxBase:FullName>Zetbox.Parties.Client.CustomClientActionsModule</ZetboxBase:FullName>
     <ZetboxBase:Parent>2790156b-feec-4b8e-bbfd-2555f6bfff40</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
@@ -17473,14 +17527,14 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:ChangedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:CreatedOn>
     <ZetboxBase:FullName>Zetbox.Parties.Client.Reporting.ReportingHost</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+    <ZetboxBase:Parent>c27faa8a-e0d1-4cde-8925-965aa695a6ed</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="ff351747-9c6f-4ad8-ae19-5ed074603237">
     <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
     <ZetboxBase:ChangedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:CreatedOn>
     <ZetboxBase:FullName>Zetbox.Parties.Client.Reporting.ReportTemplate</ZetboxBase:FullName>
-    <ZetboxBase:Parent>0d086ab8-3c9a-4af5-8c65-8980b5501a56</ZetboxBase:Parent>
+    <ZetboxBase:Parent>a25a58e0-a643-4dd5-a60a-3cd2a3e96203</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="c0d2864c-d97f-4467-a36f-b7c6ac1b1464">
     <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
@@ -17560,6 +17614,20 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.InvoiceItemViewModel+Factory</ZetboxBase:FullName>
     <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="cbfd9642-17ed-4ca9-97dd-56541060f74a">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.InvoiceTemplateViewModel</ZetboxBase:FullName>
+    <ZetboxBase:Parent>397ea723-466f-480b-bf2f-ceddb6219d59</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="50cc7c54-ebf6-4579-8d9d-9a2f327c564b">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.InvoiceTemplateViewModel+Factory</ZetboxBase:FullName>
+    <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="9b78e99f-cd2c-4280-8506-1df08b57a1b7">
     <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
     <ZetboxBase:ChangedOn>2011-10-20T23:38:22.032Z</ZetboxBase:ChangedOn>
@@ -17574,6 +17642,20 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.InvoiceViewModel+Factory</ZetboxBase:FullName>
     <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="97770e91-671b-418e-b5c8-ac0342694864">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.OtherExpenseReceiptTemplateViewModel</ZetboxBase:FullName>
+    <ZetboxBase:Parent>397ea723-466f-480b-bf2f-ceddb6219d59</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="8a2d33e1-db40-4caf-84dc-5985a0a7e0fb">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.OtherExpenseReceiptTemplateViewModel+Factory</ZetboxBase:FullName>
+    <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="7fd35fab-4e62-4669-81b3-c01f58f90207">
     <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
     <ZetboxBase:ChangedOn>2012-05-08T14:57:44.6593399Z</ZetboxBase:ChangedOn>
@@ -17586,6 +17668,20 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:ChangedOn>2012-05-08T14:57:44.6593399Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2012-05-08T14:57:44.6593399Z</ZetboxBase:CreatedOn>
     <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.OtherExpenseReceiptViewModel+Factory</ZetboxBase:FullName>
+    <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="98208c34-aad2-4603-9e2c-10d0fc323e52">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.OtherIncomeReceiptTemplateViewModel</ZetboxBase:FullName>
+    <ZetboxBase:Parent>397ea723-466f-480b-bf2f-ceddb6219d59</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="9b9e27c3-6ac4-4b97-bc3e-af5f9e15273f">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.OtherIncomeReceiptTemplateViewModel+Factory</ZetboxBase:FullName>
     <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="c0c98f41-33cf-4bf5-83bb-2254bdf10978">
@@ -17614,6 +17710,20 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:ChangedOn>2011-11-22T19:47:51.413757Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-22T19:47:51.413757Z</ZetboxBase:CreatedOn>
     <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.PurchaseInvoiceItemViewModel+Factory</ZetboxBase:FullName>
+    <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="67be9633-17a5-4723-8b62-6c98b6dcf51b">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.PurchaseInvoiceTemplateViewModel</ZetboxBase:FullName>
+    <ZetboxBase:Parent>cbfd9642-17ed-4ca9-97dd-56541060f74a</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="249efe42-a4f8-41c8-8ccf-c6f666949149">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.PurchaseInvoiceTemplateViewModel+Factory</ZetboxBase:FullName>
     <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="78146cfd-f957-4a13-af62-d57ba611d657">
@@ -17656,6 +17766,20 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:ChangedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:CreatedOn>
     <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.QuoteViewModel+Factory</ZetboxBase:FullName>
+    <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="397ea723-466f-480b-bf2f-ceddb6219d59">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.ReceiptTemplateViewModel</ZetboxBase:FullName>
+    <ZetboxBase:Parent>a07f30a6-b920-4fef-98ac-53155791e804</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="6dc73c65-4b13-46d9-8022-87d0d99fa24b">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.ReceiptTemplateViewModel+Factory</ZetboxBase:FullName>
     <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="5cc8d500-1802-462e-b0ed-1f0430b3a9ab">
@@ -17728,6 +17852,20 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.SalesInvoiceItemViewModel+Factory</ZetboxBase:FullName>
     <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="a0e8f7ed-f133-4a7d-8b05-c48a897bca0a">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.SalesInvoiceTemplateViewModel</ZetboxBase:FullName>
+    <ZetboxBase:Parent>cbfd9642-17ed-4ca9-97dd-56541060f74a</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="77ef487c-691b-4e73-84e8-d1c1f667b5e4">
+    <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:41:20.571968Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.ViewModel.Invoicing.SalesInvoiceTemplateViewModel+Factory</ZetboxBase:FullName>
+    <ZetboxBase:Parent>68559faa-c4b4-4bb2-bb0d-49bb83a081a7</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="fb5db0f6-17ed-46af-abb4-76275d21912d">
     <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
     <ZetboxBase:ChangedOn>2011-10-20T23:48:58.637Z</ZetboxBase:ChangedOn>
@@ -17786,6 +17924,13 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.InvoiceEditor</ZetboxBase:FullName>
     <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="98444bba-2b02-4ac9-9367-5d20186f8608">
+    <ZetboxBase:Assembly>d4e45693-19a5-4fd4-ad41-a4879e13240d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:39:22.6422228Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:39:22.6422228Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.InvoiceTemplateEditor</ZetboxBase:FullName>
+    <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="6207562d-a5d1-46f2-8179-6a998e846e2a">
     <ZetboxBase:Assembly>d4e45693-19a5-4fd4-ad41-a4879e13240d</ZetboxBase:Assembly>
     <ZetboxBase:ChangedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:ChangedOn>
@@ -17800,12 +17945,26 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.ReceiptEditor</ZetboxBase:FullName>
     <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="ca88caf7-3515-4192-a6f0-b70ab20a0003">
+    <ZetboxBase:Assembly>d4e45693-19a5-4fd4-ad41-a4879e13240d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:39:22.6422228Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:39:22.6422228Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.ReceiptTemplateEditor</ZetboxBase:FullName>
+    <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="ac7fe9ac-3439-48ac-9959-8f6598c45e28">
     <ZetboxBase:Assembly>d4e45693-19a5-4fd4-ad41-a4879e13240d</ZetboxBase:Assembly>
     <ZetboxBase:ChangedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T19:21:05.280314Z</ZetboxBase:CreatedOn>
     <ZetboxBase:FullName>Zetbox.Parties.Client.View.Invoicing.SalesQuoteEditor</ZetboxBase:FullName>
     <ZetboxBase:Parent>1fda132a-a95c-4483-9f9d-1e952fa20245</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="33c96153-fb30-48eb-a54a-545b4d9a6cb3">
+    <ZetboxBase:Assembly>d4e45693-19a5-4fd4-ad41-a4879e13240d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-10-09T15:39:22.6422228Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-09T15:39:22.6422228Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Client.WPF.ClientWPFModule</ZetboxBase:FullName>
+    <ZetboxBase:Parent>2790156b-feec-4b8e-bbfd-2555f6bfff40</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="c9ab67a3-8e42-4f18-9c41-3b9b08903476">
     <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
