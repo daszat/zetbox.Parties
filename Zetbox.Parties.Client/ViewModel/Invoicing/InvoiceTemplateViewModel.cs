@@ -29,7 +29,7 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
 
         public override ViewModel InternalOrganization
         {
-            get { return PropertyModelsByName["InternalOrganization"]; }
+            get { return PropertyModelsByName["IntOrg"]; }
         }
 
         public abstract ViewModel Issuer { get; }

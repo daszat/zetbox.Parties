@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:ctrls="clr-namespace:Zetbox.Client.WPF.CustomControls;assembly=Zetbox.Client.WPF.Toolkit"
              mc:Ignorable="d"
-             x:Name="invoiceEditor"
+             x:Name="invoiceTemplateEditor"
              d:DesignHeight="300" d:DesignWidth="300">
   <Grid>
     <Grid.ColumnDefinitions>
@@ -36,9 +36,7 @@
     <ScrollViewer Grid.Column="0">
       <DockPanel x:Name="detailsPanel">
         <StackPanel DockPanel.Dock="Top">
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Date]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[DueDate]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[InvoiceID]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Description]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Period]}" />
           <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Message]}" />

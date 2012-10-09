@@ -12,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Client.WPF", "Zetbox.Parties.Client.WPF\Zetbox.Parties.Client.WPF.csproj", "{359C6120-1128-44A2-B438-6CD1D50F49B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.WPF", "Zetbox.Parties.WPF\Zetbox.Parties.WPF.csproj", "{F60AEDBF-66BF-4C9A-AE15-84FDA8494CDD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{359C6120-1128-44A2-B438-6CD1D50F49B5} = {359C6120-1128-44A2-B438-6CD1D50F49B5}
+		{8BD50142-8052-403B-BFCB-087AD437E29E} = {8BD50142-8052-403B-BFCB-087AD437E29E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Server", "Zetbox.Parties.Server\Zetbox.Parties.Server.csproj", "{C295DF3B-FB98-484F-B311-041A291D3307}"
 EndProject
