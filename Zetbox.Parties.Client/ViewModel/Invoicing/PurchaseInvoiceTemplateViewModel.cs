@@ -14,6 +14,8 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
     using Zetbox.App.GUI;
     using Zetbox.App.Extensions;
     using Zetbox.Client;
+    using Zetbox.App.Base;
+    using Zetbox.Basic.Parties;
 
     /// <summary>
     /// </summary>
@@ -38,11 +40,39 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             }
         }
 
+        private ViewModel _supplierParty;
         public override ViewModel Party
         {
             get
             {
-                return PropertyModelsByName["Supplier"];
+                if (_supplierParty == null)
+                {
+                    var mdl = new ObjectReferenceValueModel("Supplier", "", false, false, (ObjectClass)NamedObjects.Base.Classes.Zetbox.Basic.Parties.Party.Find(FrozenContext));
+                    mdl.Value = Invoice.Supplier != null ? Invoice.Supplier.Party : null;
+                    mdl.PropertyChanged += (s, e) =>
+                    {
+                        if (e.PropertyName == "Value")
+                        {
+                            if (mdl.Value != null)
+                            {
+                                var party = (Party)mdl.Value;
+                                var supplier = party.PartyRole.OfType<Supplier>().SingleOrDefault();
+                                if (supplier == null)
+                                {
+                                    supplier = DataContext.Create<Supplier>();
+                                    supplier.Party = party;
+                                }
+                                Invoice.Supplier = supplier;
+                            }
+                            else
+                            {
+                                Invoice.Supplier = null;
+                            }
+                        }
+                    };
+                    _supplierParty = ViewModelFactory.CreateViewModel<ObjectReferenceViewModel.Factory>().Invoke(DataContext, this, mdl);
+                }
+                return _supplierParty;
             }
         }
 
