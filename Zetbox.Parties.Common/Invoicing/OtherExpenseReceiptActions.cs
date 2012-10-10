@@ -24,11 +24,34 @@ namespace Zetbox.Basic.Invoicing
         [Invocation]
         public static void Duplicate(OtherExpenseReceipt obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.Receipt> e)
         {
+            var ctx = obj.Context;
+            var result = ctx.Create<OtherExpenseReceipt>();
+
+            result.Description = obj.Description;
+            result.IntOrg = obj.IntOrg;
+            result.Message = obj.Message;
+            result.Party = obj.Party;
+            result.Total = obj.Total;
+            result.TotalNet = obj.TotalNet;
+
+            e.Result = result;
         }
 
         [Invocation]
         public static void CreateTemplate(OtherExpenseReceipt obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.ReceiptTemplate> e)
         {
+            var ctx = obj.Context;
+            var result = ctx.Create<OtherExpenseReceiptTemplate>();
+
+            result.DueDate.DaysOffset = (obj.DueDate - obj.Date).TotalDays;
+            result.Description = obj.Description;
+            result.IntOrg = obj.IntOrg;
+            result.Message = obj.Message;
+            result.Party = obj.Party;
+            result.Total = obj.Total;
+            result.TotalNet = obj.TotalNet;
+
+            e.Result = result;
         }
     }
 }

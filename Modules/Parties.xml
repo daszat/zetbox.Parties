@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-10T11:53:47.8048597Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-10T13:33:52.0402823Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -5389,7 +5389,7 @@ public static void isValid_UnitPrice(InvoiceItemTemplate obj, PropertyIsValidEve
   </ZetboxBase:DecimalProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="2f1171c7-775f-4ecd-b844-2aef80924511">
     <ZetboxBase:CategoryTags>Main, Summary</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-05T09:23:49.9919004Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-10-10T11:32:54.7550058Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_VATType(InvoiceItemTemplate obj, PropertyGetterEventArgs&lt;Zetbox.Basic.Invoicing.VATType&gt; e)
 {
@@ -5418,7 +5418,7 @@ public static void isValid_VATType(InvoiceItemTemplate obj, PropertyIsValidEvent
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>VATType</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>100</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>401</ZetboxBase:Properties_pos>
     <GUI:RequestedKind>d30d2676-7f2f-4f0d-895a-e46f19b8f526</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
@@ -9328,8 +9328,8 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
   <ZetboxBase:Relation ExportGuid="caf23b52-37d6-4d6b-be61-e6f6bec23f0c">
     <ZetboxBase:A>2bde4976-060e-40ef-8696-512dc936980a</ZetboxBase:A>
     <ZetboxBase:B>bf45ce34-fd09-496c-9715-e86252f22551</ZetboxBase:B>
-    <ZetboxBase:ChangedOn>2012-10-05T09:06:41.6210809Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:Containment>0</ZetboxBase:Containment>
+    <ZetboxBase:ChangedOn>2012-10-10T11:33:28.6229429Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:Containment>1</ZetboxBase:Containment>
     <ZetboxBase:CreatedOn>2012-10-05T09:06:41.6210809Z</ZetboxBase:CreatedOn>
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Storage>2</ZetboxBase:Storage>
@@ -9558,8 +9558,8 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
   <ZetboxBase:Relation ExportGuid="9cc59d12-c067-433f-902d-35214c4835ca">
     <ZetboxBase:A>3447554e-d1ab-4df1-9770-85f05b7d2a36</ZetboxBase:A>
     <ZetboxBase:B>27fc2103-ad3b-44a9-a91c-f529ecc36fd7</ZetboxBase:B>
-    <ZetboxBase:ChangedOn>2012-10-05T09:08:02.1476868Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:Containment>0</ZetboxBase:Containment>
+    <ZetboxBase:ChangedOn>2012-10-10T11:33:52.0402823Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:Containment>1</ZetboxBase:Containment>
     <ZetboxBase:CreatedOn>2012-10-05T09:08:02.1476868Z</ZetboxBase:CreatedOn>
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Storage>2</ZetboxBase:Storage>

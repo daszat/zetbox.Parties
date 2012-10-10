@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-10-10T11:53:47.8048597Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-10-10T13:33:52.0402823Z" xmlns="http://dasz.at/Zetbox">
   <Invoicing:DefaultInvoiceGenerator ExportGuid="3e35dc9c-9e37-46d3-b0b9-8beeb23109f5">
     <Invoicing:ChangedOn>2012-10-10T09:20:38.746092Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T09:20:38.746092Z</Invoicing:CreatedOn>
@@ -62,9 +62,9 @@
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
   </Invoicing:SalesInvoiceItem>
   <Invoicing:SalesInvoiceItemTemplate ExportGuid="03f0532b-0043-4bd7-9373-5cdf47c1416d">
-    <Invoicing:Amount>80.00</Invoicing:Amount>
+    <Invoicing:Amount>84.00</Invoicing:Amount>
     <Invoicing:AmountNet>70.00</Invoicing:AmountNet>
-    <Invoicing:ChangedOn>2012-10-10T09:22:51.8787068Z</Invoicing:ChangedOn>
+    <Invoicing:ChangedOn>2012-10-10T11:30:58.9983849Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T09:22:51.8787068Z</Invoicing:CreatedOn>
     <Invoicing:Description>Wartung</Invoicing:Description>
     <Invoicing:Quantity>1.00</Invoicing:Quantity>
@@ -74,7 +74,7 @@
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
   </Invoicing:SalesInvoiceItemTemplate>
   <Invoicing:SalesInvoiceTemplate ExportGuid="a66e0f3a-f898-4c23-ba0f-2af7e9a80b67">
-    <Invoicing:ChangedOn>2012-10-10T09:22:51.8787068Z</Invoicing:ChangedOn>
+    <Invoicing:ChangedOn>2012-10-10T11:30:58.9983849Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T09:22:51.8787068Z</Invoicing:CreatedOn>
     <Invoicing:Description>Wartungsvertrag</Invoicing:Description>
     <Invoicing:DueDate>
@@ -83,8 +83,8 @@
       <EveryQuater xmlns="Zetbox.App.Base">false</EveryQuater>
       <EveryYear xmlns="Zetbox.App.Base">false</EveryYear>
     </Invoicing:DueDate>
-    <Invoicing:Total>70.00</Invoicing:Total>
-    <Invoicing:TotalNet>80.00</Invoicing:TotalNet>
+    <Invoicing:Total>84.00</Invoicing:Total>
+    <Invoicing:TotalNet>70.00</Invoicing:TotalNet>
     <Invoicing:Customer>e9fab734-8b2b-4154-a256-ff74e9cf98bc</Invoicing:Customer>
     <Invoicing:IntOrg>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:IntOrg>
   </Invoicing:SalesInvoiceTemplate>

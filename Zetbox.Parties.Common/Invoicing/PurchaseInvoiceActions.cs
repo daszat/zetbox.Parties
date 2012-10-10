@@ -50,11 +50,56 @@ namespace Zetbox.Basic.Invoicing
         [Invocation]
         public static void Duplicate(PurchaseInvoice obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.Receipt> e)
         {
+            var ctx = obj.Context;
+            var result = ctx.Create<PurchaseInvoice>();
+
+            result.Description = obj.Description;
+            result.Document = obj.Document;
+            result.InternalOrganization = obj.InternalOrganization;
+            result.Message = obj.Message;
+            result.Supplier = obj.Supplier;
+
+            foreach (var it in obj.Items)
+            {
+                var item = ctx.Create<PurchaseInvoiceItem>();
+                item.Amount = it.Amount;
+                item.AmountNet = it.AmountNet;
+                item.Description = it.Description;
+                item.Quantity = it.Quantity;
+                item.UnitPrice = it.UnitPrice;
+                item.VATType = it.VATType;
+                result.Items.Add(item);
+            }
+
+            e.Result = result;
         }
 
         [Invocation]
         public static void CreateTemplate(PurchaseInvoice obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.ReceiptTemplate> e)
         {
+            var ctx = obj.Context;
+            var result = ctx.Create<PurchaseInvoiceTemplate>();
+
+            result.DueDate.DaysOffset = (obj.DueDate - obj.Date).TotalDays;
+            result.Description = obj.Description;
+            result.Document = obj.Document;
+            result.IntOrg = obj.InternalOrganization;
+            result.Message = obj.Message;
+            result.Supplier = obj.Supplier;
+
+            foreach (var it in obj.Items)
+            {
+                var item = ctx.Create<PurchaseInvoiceItemTemplate>();
+                item.Amount = it.Amount;
+                item.AmountNet = it.AmountNet;
+                item.Description = it.Description;
+                item.Quantity = it.Quantity;
+                item.UnitPrice = it.UnitPrice;
+                item.VATType = it.VATType;
+                result.Items.Add(item);
+            }
+
+            e.Result = result;
         }
     }
 }
