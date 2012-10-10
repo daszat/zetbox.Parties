@@ -25,16 +25,16 @@ namespace Zetbox.Basic.Accounting
             newTx.Date = obj.Date;
             newTx.ImportHash = obj.ImportHash;
 
-            obj.TranferedTo = newTx;
+            obj.TransferedTo = newTx;
 
             e.Result = newTx;
-            obj.NotifyPropertyChanged("Tranfered", null, null);
+            obj.NotifyPropertyChanged("Transfered", null, null);
         }
 
         [Invocation]
-        public static void get_Tranfered(Transaction obj, PropertyGetterEventArgs<Account> e)
+        public static void get_Transfered(Transaction obj, PropertyGetterEventArgs<Account> e)
         {
-            e.Result = (obj.TranferedFrom != null ? obj.TranferedFrom.Account : null) ?? (obj.TranferedTo != null ? obj.TranferedTo.Account : null);
+            e.Result = (obj.TransferedFrom != null ? obj.TransferedFrom.Account : null) ?? (obj.TransferedTo != null ? obj.TransferedTo.Account : null);
         }
 
         [Invocation]

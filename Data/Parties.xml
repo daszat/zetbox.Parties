@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-10-10T13:33:52.0402823Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-10-10T16:48:40.8688451Z" xmlns="http://dasz.at/Zetbox">
   <Invoicing:DefaultInvoiceGenerator ExportGuid="3e35dc9c-9e37-46d3-b0b9-8beeb23109f5">
     <Invoicing:ChangedOn>2012-10-10T09:20:38.746092Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T09:20:38.746092Z</Invoicing:CreatedOn>
@@ -20,8 +20,34 @@
     <Invoicing:TotalNet>20.00</Invoicing:TotalNet>
     <Invoicing:InvoiceID>123456</Invoicing:InvoiceID>
     <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
+    <Invoicing:Supplier>6d149258-029a-46c5-9853-59e86359fd7d</Invoicing:Supplier>
+  </Invoicing:PurchaseInvoice>
+  <Invoicing:PurchaseInvoice ExportGuid="afca8993-9555-43d7-b0d5-942764ed58a6">
+    <Invoicing:ChangedOn>2012-10-10T12:05:11.6797915Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-10T12:05:11.6797915Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2012-10-09T22:00:00Z</Invoicing:Date>
+    <Invoicing:Description>Mobile</Invoicing:Description>
+    <Invoicing:DueDate>2012-10-30T23:00:00Z</Invoicing:DueDate>
+    <Accounting:OpenAmount>26.40</Accounting:OpenAmount>
+    <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
+    <Invoicing:Period>2/2012</Invoicing:Period>
+    <Invoicing:Total>26.40</Invoicing:Total>
+    <Invoicing:TotalNet>22.00</Invoicing:TotalNet>
+    <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
     <Invoicing:Supplier>8d797cbd-0b03-49c7-98a8-59b199a91b36</Invoicing:Supplier>
   </Invoicing:PurchaseInvoice>
+  <Invoicing:PurchaseInvoiceItem ExportGuid="366e4aef-b815-4e15-b10c-ff64abdac8bb">
+    <Invoicing:Amount>26.40</Invoicing:Amount>
+    <Invoicing:AmountNet>22.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-10-10T12:05:11.6797915Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-10T12:05:11.6797915Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Phone 1</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>22.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:PurchaseInvoice>afca8993-9555-43d7-b0d5-942764ed58a6</Invoicing:PurchaseInvoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:PurchaseInvoiceItem>
   <Invoicing:PurchaseInvoiceItem ExportGuid="428fce35-b586-4888-8a8b-fe6a1f73ea6b">
     <Invoicing:Amount>24.00</Invoicing:Amount>
     <Invoicing:AmountNet>20.00</Invoicing:AmountNet>
@@ -34,6 +60,47 @@
     <Invoicing:PurchaseInvoice>3ddd2c8a-56cb-43de-9bb1-60634f0e5466</Invoicing:PurchaseInvoice>
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
   </Invoicing:PurchaseInvoiceItem>
+  <Invoicing:PurchaseInvoiceItemTemplate ExportGuid="27a29fbb-a3e7-493f-b703-ea8a5de62c0d">
+    <Invoicing:Amount>24.00</Invoicing:Amount>
+    <Invoicing:AmountNet>20.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-10-10T12:05:11.6797915Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-10T12:05:11.6797915Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Phone 1</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>20.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:PITemplate>efde4cb0-fab3-46f1-9f08-a32f8e734609</Invoicing:PITemplate>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:PurchaseInvoiceItemTemplate>
+  <Invoicing:PurchaseInvoiceTemplate ExportGuid="efde4cb0-fab3-46f1-9f08-a32f8e734609">
+    <Invoicing:ChangedOn>2012-10-10T12:05:11.6797915Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-10T12:05:11.6797915Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Mobile</Invoicing:Description>
+    <Invoicing:DueDate>
+      <DaysOffset xmlns="Zetbox.App.Base">7</DaysOffset>
+      <EveryDay xmlns="Zetbox.App.Base">false</EveryDay>
+      <EveryMonth xmlns="Zetbox.App.Base">false</EveryMonth>
+      <EveryQuater xmlns="Zetbox.App.Base">false</EveryQuater>
+      <EveryYear xmlns="Zetbox.App.Base">false</EveryYear>
+    </Invoicing:DueDate>
+    <Invoicing:Total>24.00</Invoicing:Total>
+    <Invoicing:TotalNet>20.00</Invoicing:TotalNet>
+    <Invoicing:IntOrg>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:IntOrg>
+    <Invoicing:Supplier>8d797cbd-0b03-49c7-98a8-59b199a91b36</Invoicing:Supplier>
+  </Invoicing:PurchaseInvoiceTemplate>
+  <Invoicing:SalesInvoice ExportGuid="60bc62ad-262d-4af4-bdc9-e31710a18bb5">
+    <Invoicing:ChangedOn>2012-10-10T11:44:47.9757997Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-10T11:44:47.9757997Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2012-10-09T22:00:00Z</Invoicing:Date>
+    <Invoicing:Description>Wartungsvertrag</Invoicing:Description>
+    <Invoicing:DueDate>2012-11-08T23:00:00Z</Invoicing:DueDate>
+    <Accounting:OpenAmount>144.00</Accounting:OpenAmount>
+    <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
+    <Invoicing:Total>144.00</Invoicing:Total>
+    <Invoicing:TotalNet>120.00</Invoicing:TotalNet>
+    <Invoicing:Customer>e9fab734-8b2b-4154-a256-ff74e9cf98bc</Invoicing:Customer>
+    <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
+  </Invoicing:SalesInvoice>
   <Invoicing:SalesInvoice ExportGuid="81dbb5a2-d2c2-4040-9af6-a70c991e9e75">
     <Invoicing:ChangedOn>2012-10-10T09:20:38.746092Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T09:20:38.746092Z</Invoicing:CreatedOn>
@@ -49,6 +116,30 @@
     <Invoicing:Customer>e9fab734-8b2b-4154-a256-ff74e9cf98bc</Invoicing:Customer>
     <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
   </Invoicing:SalesInvoice>
+  <Invoicing:SalesInvoiceItem ExportGuid="4aff16b2-58d8-4852-9689-118d77bb5bb4">
+    <Invoicing:Amount>60.00</Invoicing:Amount>
+    <Invoicing:AmountNet>50.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-10-10T11:44:47.9757997Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-10T11:44:47.9757997Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Garantie</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>50.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:SalesInvoice>60bc62ad-262d-4af4-bdc9-e31710a18bb5</Invoicing:SalesInvoice>
+    <Invoicing:Items_pos>1</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItem>
+  <Invoicing:SalesInvoiceItem ExportGuid="5e0bcb31-ffaf-4cfb-a75d-341a747f9232">
+    <Invoicing:Amount>84.00</Invoicing:Amount>
+    <Invoicing:AmountNet>70.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-10-10T11:44:47.9757997Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-10T11:44:47.9757997Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Wartung</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>70.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:SalesInvoice>60bc62ad-262d-4af4-bdc9-e31710a18bb5</Invoicing:SalesInvoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItem>
   <Invoicing:SalesInvoiceItem ExportGuid="c04464fd-26b8-4c24-bc1e-e3e938824b8c">
     <Invoicing:Amount>70.00</Invoicing:Amount>
     <Invoicing:AmountNet>70.00</Invoicing:AmountNet>
@@ -73,18 +164,31 @@
     <Invoicing:SITemplate>a66e0f3a-f898-4c23-ba0f-2af7e9a80b67</Invoicing:SITemplate>
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
   </Invoicing:SalesInvoiceItemTemplate>
+  <Invoicing:SalesInvoiceItemTemplate ExportGuid="80d86cdb-b77d-468b-b111-90650589e8b1">
+    <Invoicing:Amount>60.00</Invoicing:Amount>
+    <Invoicing:AmountNet>50.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-10-10T11:44:05.741384Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-10T11:44:05.741384Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Garantie</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>50.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:SITemplate>a66e0f3a-f898-4c23-ba0f-2af7e9a80b67</Invoicing:SITemplate>
+    <Invoicing:Items_pos>1</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItemTemplate>
   <Invoicing:SalesInvoiceTemplate ExportGuid="a66e0f3a-f898-4c23-ba0f-2af7e9a80b67">
-    <Invoicing:ChangedOn>2012-10-10T11:30:58.9983849Z</Invoicing:ChangedOn>
+    <Invoicing:ChangedOn>2012-10-10T11:44:05.741384Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T09:22:51.8787068Z</Invoicing:CreatedOn>
     <Invoicing:Description>Wartungsvertrag</Invoicing:Description>
     <Invoicing:DueDate>
+      <DaysOffset xmlns="Zetbox.App.Base">30</DaysOffset>
       <EveryDay xmlns="Zetbox.App.Base">false</EveryDay>
       <EveryMonth xmlns="Zetbox.App.Base">false</EveryMonth>
       <EveryQuater xmlns="Zetbox.App.Base">false</EveryQuater>
       <EveryYear xmlns="Zetbox.App.Base">false</EveryYear>
     </Invoicing:DueDate>
-    <Invoicing:Total>84.00</Invoicing:Total>
-    <Invoicing:TotalNet>70.00</Invoicing:TotalNet>
+    <Invoicing:Total>144.00</Invoicing:Total>
+    <Invoicing:TotalNet>120.00</Invoicing:TotalNet>
     <Invoicing:Customer>e9fab734-8b2b-4154-a256-ff74e9cf98bc</Invoicing:Customer>
     <Invoicing:IntOrg>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:IntOrg>
   </Invoicing:SalesInvoiceTemplate>
@@ -124,6 +228,15 @@
     <Parties:InvoiceAddress />
     <Parties:Name>dasz.at OG</Parties:Name>
   </Parties:Organization>
+  <Parties:Organization ExportGuid="c16da32d-0625-4ea0-b8f2-cd891db6a065">
+    <Parties:Address />
+    <Parties:BankAccount />
+    <Parties:ChangedOn>2012-10-10T13:03:17.4671672Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2012-10-10T13:03:17.4671672Z</Parties:CreatedOn>
+    <Parties:DeliveryAddresses />
+    <Parties:InvoiceAddress />
+    <Parties:Name>Another Mobile Supplier</Parties:Name>
+  </Parties:Organization>
   <Parties:Organization ExportGuid="f6cfbc02-61f2-4d5d-8507-404bed32466a">
     <Parties:Address />
     <Parties:BankAccount />
@@ -133,6 +246,11 @@
     <Parties:InvoiceAddress />
     <Parties:Name>First Customer</Parties:Name>
   </Parties:Organization>
+  <Parties:Supplier ExportGuid="6d149258-029a-46c5-9853-59e86359fd7d">
+    <Parties:ChangedOn>2012-10-10T13:03:17.4671672Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2012-10-10T13:03:17.4671672Z</Parties:CreatedOn>
+    <Parties:Party>c16da32d-0625-4ea0-b8f2-cd891db6a065</Parties:Party>
+  </Parties:Supplier>
   <Parties:Supplier ExportGuid="8d797cbd-0b03-49c7-98a8-59b199a91b36">
     <Parties:ChangedOn>2012-10-10T09:36:27.9003806Z</Parties:ChangedOn>
     <Parties:CreatedOn>2012-10-10T09:36:27.9003806Z</Parties:CreatedOn>
