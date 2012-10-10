@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-09T17:41:20.571968Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-10T10:51:31.67732Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -7804,6 +7804,7 @@ public static void isValid_Description(ReceiptTemplate obj, PropertyIsValidEvent
 
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2012-09-28T07:07:52.2206107Z</ZetboxBase:CreatedOn>
+    <GUI:FilterConfiguration>d43eb3f8-f9cf-4269-a9eb-a6c127866fd9</GUI:FilterConfiguration>
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>Description</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>5e556e9f-5769-4266-b485-e655e6da825b</ZetboxBase:ObjectClass>
@@ -10816,6 +10817,59 @@ public static void CreateItemCanExecReason(Receipt obj, MethodReturnEventArgs&lt
     <ZetboxBase:Name>CreateItem</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</ZetboxBase:ObjectClass>
   </ZetboxBase:Method>
+  <ZetboxBase:Method ExportGuid="2e032e1b-7975-45f9-b89e-5e323fac2ae7">
+    <ZetboxBase:CategoryTags>Reuse</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2012-10-10T08:51:31.67732Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void CreateTemplate(Receipt obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.ReceiptTemplate&gt; e)
+{
+}
+
+[Invocation]
+public static void CreateTemplateCanExec(Receipt obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void CreateTemplateCanExecReason(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2012-10-10T08:51:31.67732Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>Creates a new Template and copy almost all data</ZetboxBase:Description>
+    <ZetboxBase:InvokeOnServer>false</ZetboxBase:InvokeOnServer>
+    <GUI:IsDisplayable>true</GUI:IsDisplayable>
+    <ZetboxBase:Label>Create template</ZetboxBase:Label>
+    <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
+    <ZetboxBase:Name>CreateTemplate</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</ZetboxBase:ObjectClass>
+  </ZetboxBase:Method>
+  <ZetboxBase:Method ExportGuid="98305bc7-a5c8-4b3c-b71b-a276cf6f5d49">
+    <ZetboxBase:CategoryTags>Reuse</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2012-10-10T08:51:31.67732Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void Duplicate(Receipt obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.Receipt&gt; e)
+{
+}
+
+[Invocation]
+public static void DuplicateCanExec(Receipt obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void DuplicateCanExecReason(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2012-10-10T08:49:15.9345559Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>Creates a new Receipt and copy almost all data</ZetboxBase:Description>
+    <ZetboxBase:InvokeOnServer>false</ZetboxBase:InvokeOnServer>
+    <GUI:IsDisplayable>true</GUI:IsDisplayable>
+    <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
+    <ZetboxBase:Name>Duplicate</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</ZetboxBase:ObjectClass>
+  </ZetboxBase:Method>
   <ZetboxBase:Method ExportGuid="b894f132-6ef2-4031-9bdf-86b0ff781540">
     <ZetboxBase:ChangedOn>2012-05-07T15:12:48.4244652Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
@@ -11199,6 +11253,28 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <ZetboxBase:Parameter_pos>4</ZetboxBase:Parameter_pos>
     <ZetboxBase:Name>taxable</ZetboxBase:Name>
   </ZetboxBase:BoolParameter>
+  <ZetboxBase:ObjectReferenceParameter ExportGuid="a7769e65-63f4-48b6-bd2d-caa12d8c0d2b">
+    <ZetboxBase:ChangedOn>2012-10-10T08:51:31.67732Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-10T08:51:31.67732Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:IsList>false</ZetboxBase:IsList>
+    <ZetboxBase:IsNullable>false</ZetboxBase:IsNullable>
+    <ZetboxBase:IsReturnParameter>true</ZetboxBase:IsReturnParameter>
+    <ZetboxBase:Method>2e032e1b-7975-45f9-b89e-5e323fac2ae7</ZetboxBase:Method>
+    <ZetboxBase:Parameter_pos>0</ZetboxBase:Parameter_pos>
+    <ZetboxBase:Name>retVal</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>5e556e9f-5769-4266-b485-e655e6da825b</ZetboxBase:ObjectClass>
+  </ZetboxBase:ObjectReferenceParameter>
+  <ZetboxBase:ObjectReferenceParameter ExportGuid="68fd5b86-695d-4cac-b827-8528ac4e1356">
+    <ZetboxBase:ChangedOn>2012-10-10T08:49:15.9345559Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-10T08:49:15.9345559Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:IsList>false</ZetboxBase:IsList>
+    <ZetboxBase:IsNullable>false</ZetboxBase:IsNullable>
+    <ZetboxBase:IsReturnParameter>true</ZetboxBase:IsReturnParameter>
+    <ZetboxBase:Method>98305bc7-a5c8-4b3c-b71b-a276cf6f5d49</ZetboxBase:Method>
+    <ZetboxBase:Parameter_pos>0</ZetboxBase:Parameter_pos>
+    <ZetboxBase:Name>retVal</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</ZetboxBase:ObjectClass>
+  </ZetboxBase:ObjectReferenceParameter>
   <ZetboxBase:DecimalParameter ExportGuid="d0700bfa-0c56-4172-9d20-0cefce7286c9">
     <ZetboxBase:ChangedOn>2012-05-07T15:12:48.4244652Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2012-05-07T15:12:48.4244652Z</ZetboxBase:CreatedOn>
@@ -12494,11 +12570,11 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:ViewModelDescriptor>ebc13c2a-0375-46e6-9fc2-a4ee5afc3568</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
   <GUI:NavigationScreen ExportGuid="90992873-7109-496a-aba0-821406fb3556">
-    <GUI:ChangedOn>2012-08-22T15:15:52.4962203Z</GUI:ChangedOn>
+    <GUI:ChangedOn>2012-10-10T08:20:42.8025704Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-10-21T16:14:15.943524Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:Parent>916544de-0c04-4d6f-9ae1-d481e40361a0</GUI:Parent>
-    <GUI:Children_pos>405</GUI:Children_pos>
+    <GUI:Children_pos>406</GUI:Children_pos>
     <GUI:Title>Reports</GUI:Title>
   </GUI:NavigationScreen>
   <GUI:NavigationScreen ExportGuid="12361d6d-dc7b-44d8-9b71-2a3373e7a1de">
@@ -12549,6 +12625,17 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Title>Sales</GUI:Title>
     <GUI:ViewModelDescriptor>27ec209b-6cc2-4a51-b8a8-a7604849328a</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
+  <GUI:NavigationSearchScreen ExportGuid="e7731e2e-da22-472e-aa1e-8a71bba77c50">
+    <GUI:ChangedOn>2012-10-10T08:20:42.8025704Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2012-10-10T08:20:30.3328571Z</GUI:CreatedOn>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:Parent>916544de-0c04-4d6f-9ae1-d481e40361a0</GUI:Parent>
+    <GUI:Children_pos>405</GUI:Children_pos>
+    <GUI:Title>Templates</GUI:Title>
+    <GUI:AllowAddNew>true</GUI:AllowAddNew>
+    <GUI:Type>5e556e9f-5769-4266-b485-e655e6da825b</GUI:Type>
+    <GUI:ViewMethod>2</GUI:ViewMethod>
+  </GUI:NavigationSearchScreen>
   <GUI:NavigationSearchScreen ExportGuid="8c839de7-f94f-48e0-b67b-575e698eebd4">
     <GUI:ChangedOn>2012-05-09T12:14:03.4193063Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-11-22T19:32:15.904609Z</GUI:CreatedOn>
@@ -12629,6 +12716,14 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:ViewModelDescriptor>47ea2958-1036-4fe2-afb5-84568651d817</GUI:ViewModelDescriptor>
     <GUI:Property>a22eff4a-b7c1-4fde-a714-d18d2a3cb2aa</GUI:Property>
   </GUI:RangeFilterConfiguration>
+  <GUI:SinglePropertyFilterConfiguration ExportGuid="d43eb3f8-f9cf-4269-a9eb-a6c127866fd9">
+    <GUI:ChangedOn>2012-10-10T08:22:02.6511375Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2012-10-10T08:22:02.6511375Z</GUI:CreatedOn>
+    <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:Required>false</GUI:Required>
+    <GUI:ViewModelDescriptor>4ff2b6ec-a47f-431b-aa6d-d10b39f8d628</GUI:ViewModelDescriptor>
+    <GUI:Property>76a1421e-e848-4ca3-a29a-c9064b83e4ec</GUI:Property>
+  </GUI:SinglePropertyFilterConfiguration>
   <ZetboxBase:Sequence ExportGuid="50bc0db0-2603-48f2-a84d-02bccef729ad">
     <ZetboxBase:ChangedOn>2012-05-09T12:38:25.9172277Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2012-05-09T12:16:27.1685283Z</ZetboxBase:CreatedOn>

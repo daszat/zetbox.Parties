@@ -20,5 +20,15 @@ namespace Zetbox.Basic.Invoicing
         {
             e.Result = ReceiptAmountCalculator.GetIncomePaymentAmount(obj);
         }
+
+        [Invocation]
+        public static void Duplicate(OtherIncomeReceipt obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.Receipt> e)
+        {
+        }
+
+        [Invocation]
+        public static void CreateTemplate(OtherIncomeReceipt obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.ReceiptTemplate> e)
+        {
+        }
     }
 }

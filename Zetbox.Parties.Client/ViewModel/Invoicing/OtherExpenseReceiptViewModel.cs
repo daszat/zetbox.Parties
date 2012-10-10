@@ -30,6 +30,15 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
 
         public OtherExpenseReceipt OtherExpenseReceipt { get; private set; }
 
+        public override string Name
+        {
+            get
+            {
+                return "Other expense receipt: " + base.Name;
+            }
+        }
+
+
         public override ViewModel InternalOrganization
         {
             get

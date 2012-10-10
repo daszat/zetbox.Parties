@@ -84,5 +84,15 @@ namespace Zetbox.Basic.Invoicing
                 e.Result = "Only saved and unmodified invoices can be finilized";
             }
         }
+
+        [Invocation]
+        public static void Duplicate(SalesInvoice obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.Receipt> e)
+        {
+        }
+
+        [Invocation]
+        public static void CreateTemplate(SalesInvoice obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.ReceiptTemplate> e)
+        {
+        }
     }
 }

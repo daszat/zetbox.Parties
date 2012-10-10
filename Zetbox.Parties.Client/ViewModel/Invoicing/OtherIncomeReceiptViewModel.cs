@@ -30,6 +30,15 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
 
         public OtherIncomeReceipt OtherIncomeReceipt { get; private set; }
 
+        public override string Name
+        {
+            get
+            {
+                return "Other income receipt: " + base.Name;
+            }
+        }
+
+
         public override ViewModel InternalOrganization
         {
             get

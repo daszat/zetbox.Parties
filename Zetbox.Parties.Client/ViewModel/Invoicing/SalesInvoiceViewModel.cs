@@ -34,6 +34,14 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             PropertyModelsByName["InvoiceID"].IsReadOnly = true;
         }
 
+        public override string Name
+        {
+            get
+            {
+                return "Sales invoice: " + base.Name;
+            }
+        }
+
         public new SalesInvoice Invoice { get; private set; }
 
         public override ViewModel Party

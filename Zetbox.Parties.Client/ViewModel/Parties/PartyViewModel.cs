@@ -32,8 +32,7 @@ namespace Zetbox.Client.Presentables.Parties
             foreach (var role in Party.PartyRole)
             {
                 var vMdl = ViewModelFactory.CreateViewModel<DataObjectViewModel.Factory>().Invoke(DataContext, this, role);
-                var lblMdl = ViewModelFactory.CreateViewModel<LabeledViewContainerViewModel.Factory>().Invoke(DataContext, this, "Role", "", vMdl);
-                var propGrpMdl = ViewModelFactory.CreateViewModel<SinglePropertyGroupViewModel.Factory>().Invoke(DataContext, this, vMdl.GetInterfaceType().Type.Name, new ViewModel[] { lblMdl });
+                var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, vMdl.Name, new ViewModel[] { vMdl });
                 groups.Add(propGrpMdl);
             }
 

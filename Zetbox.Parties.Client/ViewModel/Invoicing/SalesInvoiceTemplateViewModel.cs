@@ -30,6 +30,14 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
 
         public new SalesInvoiceTemplate Invoice { get; private set; }
 
+        public override string Name
+        {
+            get
+            {
+                return "Sales invoice template: " + base.Name;
+            }
+        }
+
         public override ViewModel Party
         {
             get
