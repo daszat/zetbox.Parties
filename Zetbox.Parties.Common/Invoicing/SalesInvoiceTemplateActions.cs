@@ -38,5 +38,18 @@ namespace Zetbox.Basic.Invoicing
 
             e.Result = result;
         }
+
+        [Invocation]
+        public static void postSet_Items(SalesInvoiceTemplate obj)
+        {
+            obj.UpdateTotal();
+        }
+
+        [Invocation]
+        public static void UpdateTotal(SalesInvoiceTemplate obj)
+        {
+            obj.Total = obj.Items.Sum(i => i.Amount);
+            obj.TotalNet = obj.Items.Sum(i => i.AmountNet);
+        }
     }
 }

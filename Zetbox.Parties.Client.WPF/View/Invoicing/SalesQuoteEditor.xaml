@@ -32,7 +32,7 @@
           <ctrls:LabeledView DataContext="{Binding Party}" />
         </StackPanel>
         <ItemsControl DockPanel.Dock="Bottom"
-                      ItemsSource="{Binding Actions}"
+                      ItemsSource="{Binding ReceiptActions}"
                       ItemTemplateSelector="{StaticResource defaultTemplateSelector}">
           <ItemsControl.ItemsPanel>
             <ItemsPanelTemplate>

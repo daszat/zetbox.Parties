@@ -61,5 +61,10 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
         {
             get { return true; }
         }
+
+        protected override IEnumerable<ViewModel> FetchReceiptActions()
+        {
+            return base.FetchReceiptActions().Concat(new[] { ActionViewModelsByName["CreateInvoiceDocument"], ActionViewModelsByName["FinalizeInvoice"] });
+        }
     }
 }

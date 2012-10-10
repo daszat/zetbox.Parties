@@ -19,5 +19,11 @@ namespace Zetbox.Basic.Invoicing
         public static void CreateReceipt(ReceiptTemplate obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.Receipt> e)
         {
         }
+
+        [Invocation]
+        public static void UpdateTotal(ReceiptTemplate obj)
+        {
+            // Do nothing, work is done in derived classes
+        }
     }
 }

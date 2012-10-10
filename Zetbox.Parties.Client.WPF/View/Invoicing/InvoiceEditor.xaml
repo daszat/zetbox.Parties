@@ -70,7 +70,7 @@
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
                     </StackPanel>
                     <ItemsControl DockPanel.Dock="Bottom"
-                                  ItemsSource="{Binding Actions}"
+                                  ItemsSource="{Binding ReceiptActions}"
                                   ItemTemplateSelector="{StaticResource defaultTemplateSelector}">
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-10T10:51:31.67732Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-10T11:53:47.8048597Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -2866,7 +2866,7 @@ public static void ObjectIsValid(InvoiceItem obj, ObjectIsValidEventArgs e)
     <ZetboxBase:TableName>InvoiceItems</ZetboxBase:TableName>
   </ZetboxBase:ObjectClass>
   <ZetboxBase:ObjectClass ExportGuid="4e1bbc95-afe9-4a31-a0d0-4fa413bd18e2">
-    <ZetboxBase:ChangedOn>2012-09-28T07:48:58.5366759Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-10-10T09:44:17.1972228Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2012-09-28T07:48:58.5366759Z</ZetboxBase:CreatedOn>
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>InvoiceItemTemplate</ZetboxBase:Name>
@@ -2907,7 +2907,7 @@ public static void ObjectIsValid(InvoiceItemTemplate obj, ObjectIsValidEventArgs
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>true</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
-    <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
+    <GUI:IsSimpleObject>true</GUI:IsSimpleObject>
     <ZetboxBase:TableName>InvoiceItemTemplates</ZetboxBase:TableName>
   </ZetboxBase:ObjectClass>
   <ZetboxBase:ObjectClass ExportGuid="cfb576f2-27dc-42dc-bb28-f38762ace7e7">
@@ -3191,7 +3191,7 @@ public static void ObjectIsValid(PurchaseInvoiceItem obj, ObjectIsValidEventArgs
     <ZetboxBase:TableName>PurchaseInvoiceItems</ZetboxBase:TableName>
   </ZetboxBase:ObjectClass>
   <ZetboxBase:ObjectClass ExportGuid="abd5a37c-95f3-4814-b2bb-75418bfa42e8">
-    <ZetboxBase:ChangedOn>2012-09-28T07:54:37.351055Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-10-10T09:44:17.1972228Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2012-09-28T07:54:37.351055Z</ZetboxBase:CreatedOn>
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>PurchaseInvoiceItemTemplate</ZetboxBase:Name>
@@ -3233,7 +3233,7 @@ public static void ObjectIsValid(PurchaseInvoiceItemTemplate obj, ObjectIsValidE
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
-    <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
+    <GUI:IsSimpleObject>true</GUI:IsSimpleObject>
     <ZetboxBase:TableName>PurchaseInvoiceItemTemplates</ZetboxBase:TableName>
   </ZetboxBase:ObjectClass>
   <ZetboxBase:ObjectClass ExportGuid="6b627a77-5c51-4b5a-a342-d5a53a694cb1">
@@ -3656,7 +3656,7 @@ public static void ObjectIsValid(SalesInvoiceItem obj, ObjectIsValidEventArgs e)
     <ZetboxBase:TableName>SalesInvoiceItems</ZetboxBase:TableName>
   </ZetboxBase:ObjectClass>
   <ZetboxBase:ObjectClass ExportGuid="0634a619-1f5e-4ca4-8bf6-c455fc2a7ac1">
-    <ZetboxBase:ChangedOn>2012-09-28T07:54:19.1950165Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-10-10T09:44:17.1972228Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2012-09-28T07:54:19.1950165Z</ZetboxBase:CreatedOn>
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>SalesInvoiceItemTemplate</ZetboxBase:Name>
@@ -3698,7 +3698,7 @@ public static void ObjectIsValid(SalesInvoiceItemTemplate obj, ObjectIsValidEven
     <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
-    <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
+    <GUI:IsSimpleObject>true</GUI:IsSimpleObject>
     <ZetboxBase:TableName>SalesInvoiceItemTemplates</ZetboxBase:TableName>
   </ZetboxBase:ObjectClass>
   <ZetboxBase:ObjectClass ExportGuid="41f99fe4-400d-4247-9e3d-a2e2db4bc2d4">
@@ -4309,7 +4309,7 @@ public static void isValid_SalesInvoices(Customer obj, PropertyIsValidEventArgs 
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:StringProperty ExportGuid="40deef8e-9879-4420-8364-ba5f4c271cad">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-05-09T11:05:07.920716Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-10-10T09:53:47.8048597Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_InvoiceIDFormatString(DefaultInvoiceGenerator obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -4334,6 +4334,7 @@ public static void isValid_InvoiceIDFormatString(DefaultInvoiceGenerator obj, Pr
 
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2012-05-09T11:05:07.920716Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>{1}/{0:yyyy}</ZetboxBase:Description>
     <ZetboxBase:Label>InvoiceID format string</ZetboxBase:Label>
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>InvoiceIDFormatString</ZetboxBase:Name>
@@ -5995,7 +5996,7 @@ public static void isValid_IntOrg(PurchaseInvoiceTemplate obj, PropertyIsValidEv
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="42268bf1-0543-4907-8688-cd56bc84b19d">
     <ZetboxBase:CategoryTags>Items</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-05T09:06:41.6210809Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-10-10T09:50:39.3050781Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Items(PurchaseInvoiceTemplate obj, PropertyGetterEventArgs&lt;IList&lt;Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate&gt;&gt; e)
 {
@@ -6024,6 +6025,7 @@ public static void isValid_Items(PurchaseInvoiceTemplate obj, PropertyIsValidEve
     <ZetboxBase:Name>Items</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>6b627a77-5c51-4b5a-a342-d5a53a694cb1</ZetboxBase:ObjectClass>
     <ZetboxBase:Properties_pos>0</ZetboxBase:Properties_pos>
+    <GUI:RequestedKind>3e933ba6-a890-4114-97f8-595ef0560aee</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>9fce01fe-fd6d-4e21-8b55-08d5e38aea36</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>2bde4976-060e-40ef-8696-512dc936980a</ZetboxBase:RelationEnd>
@@ -8434,7 +8436,7 @@ public static void isValid_Issuer(SalesInvoiceTemplate obj, PropertyIsValidEvent
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="be7b15ef-1fd5-4ef7-b70e-31b8ec351093">
     <ZetboxBase:CategoryTags>Items</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-05T09:08:02.1476868Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-10-10T09:49:52.5944064Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Items(SalesInvoiceTemplate obj, PropertyGetterEventArgs&lt;IList&lt;Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate&gt;&gt; e)
 {
@@ -8463,6 +8465,7 @@ public static void isValid_Items(SalesInvoiceTemplate obj, PropertyIsValidEventA
     <ZetboxBase:Name>Items</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>41f99fe4-400d-4247-9e3d-a2e2db4bc2d4</ZetboxBase:ObjectClass>
     <ZetboxBase:Properties_pos>100</ZetboxBase:Properties_pos>
+    <GUI:RequestedKind>3e933ba6-a890-4114-97f8-595ef0560aee</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>9fce01fe-fd6d-4e21-8b55-08d5e38aea36</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>3447554e-d1ab-4df1-9770-85f05b7d2a36</ZetboxBase:RelationEnd>
@@ -10966,6 +10969,29 @@ public static void CreateReceiptCanExecReason(ReceiptTemplate obj, MethodReturnE
     <ZetboxBase:Label>Create receipt</ZetboxBase:Label>
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>CreateReceipt</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>5e556e9f-5769-4266-b485-e655e6da825b</ZetboxBase:ObjectClass>
+  </ZetboxBase:Method>
+  <ZetboxBase:Method ExportGuid="fec107e1-836b-425a-be44-4c39f3474b78">
+    <ZetboxBase:ChangedOn>2012-10-10T09:43:13.0135517Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void UpdateTotal(ReceiptTemplate obj)
+{
+}
+
+[Invocation]
+public static void UpdateTotalCanExec(ReceiptTemplate obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void UpdateTotalCanExecReason(ReceiptTemplate obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2012-10-10T09:43:13.0135517Z</ZetboxBase:CreatedOn>
+    <GUI:IsDisplayable>false</GUI:IsDisplayable>
+    <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
+    <ZetboxBase:Name>UpdateTotal</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>5e556e9f-5769-4266-b485-e655e6da825b</ZetboxBase:ObjectClass>
   </ZetboxBase:Method>
   <ZetboxBase:Method ExportGuid="215886d7-d9b9-46f8-9ff4-f9a098d819c5">
