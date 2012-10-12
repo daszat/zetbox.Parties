@@ -7,6 +7,9 @@ namespace Zetbox.Client.Presentables.Parties
     using Zetbox.Client.Presentables;
     using Zetbox.API;
     using Zetbox.Basic.Parties;
+    using Zetbox.Client.Presentables.ZetboxBase;
+    using Zetbox.Basic.Accounting;
+    using Zetbox.App.Extensions;
 
     /// <summary>
     /// No viewmodel decriptor - Party is abstract
@@ -35,6 +38,20 @@ namespace Zetbox.Client.Presentables.Parties
                 var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, vMdl.Name, new ViewModel[] { vMdl });
                 groups.Add(propGrpMdl);
             }
+
+            var lst = ViewModelFactory.CreateViewModel<InstanceListViewModel.Factory>().Invoke(DataContext, this,
+                () => DataContext,
+                typeof(Transaction).GetObjectClass(FrozenContext),
+                () => DataContext.GetQuery<Transaction>().Where(i => i.Party == this.Party));
+            lst.AllowAddNew = false;
+            lst.AllowDelete = false;
+            lst.IsEditable = false;
+            lst.ViewMethod = App.GUI.InstanceListViewMethod.Details;
+            lst.RequestedKind = Zetbox.NamedObjects.Gui.ControlKinds.Zetbox_App_GUI_InstanceGridKind.Find(FrozenContext);
+            lst.SetInitialSort("Date");
+
+            var grp = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, "Transactions", new[] { lst });
+            groups.Add(grp);
 
             return groups;
         }
