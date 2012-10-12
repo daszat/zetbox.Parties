@@ -100,6 +100,7 @@
     <Compile Include="Invoicing\SalesInvoiceItemActions.cs" />
     <Compile Include="Invoicing\StatisticActionsActions.cs" />
     <Compile Include="Invoicing\VATTypeActions.cs" />
+    <Compile Include="Invoicing\Workflow\Action.cs" />
     <Compile Include="PartiesNamedObjects.cs" />
     <Compile Include="Parties\CustomerActions.cs" />
     <Compile Include="Parties\CustomerRelationshipActions.cs" />

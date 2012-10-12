@@ -27,6 +27,9 @@ rem export Invoicing Module data
 Zetbox.Server.Service.exe %config% -export ..\..\Data\Invoicing.Data.xml -schemamodules Invoicing -ownermodules Invoicing
 IF ERRORLEVEL 1 GOTO FAIL
 
+rem export Invoicing Workflow data
+Zetbox.Server.Service.exe %config% -export ..\..\Data\Invoicing.Workflow.xml -schemamodules Workflow -ownermodules Invoicing
+IF ERRORLEVEL 1 GOTO FAIL
 
 rem export Accounting Module data
 Zetbox.Server.Service.exe %config% -export ..\..\Data\Accounting.Data.xml -schemamodules Accounting -ownermodules Accounting

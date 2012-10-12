@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-10-12T10:21:41.981501Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-10-12T12:14:05.2211922Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:Account ExportGuid="5ce18612-eac2-4384-916d-ebf488f5a5ea">
     <Accounting:ChangedOn>2012-10-12T08:16:49.8127899Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2012-10-12T08:16:49.8127899Z</Accounting:CreatedOn>
@@ -50,6 +50,23 @@
     <Invoicing:IntOrg>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:IntOrg>
     <Invoicing:Party>5c0efd1f-5954-48f3-bb14-ba7270d36c55</Invoicing:Party>
   </Invoicing:OtherExpenseReceipt>
+  <Invoicing:OtherExpenseReceiptTemplate ExportGuid="ad035a88-05a1-4672-8e58-73a9151c350a">
+    <Invoicing:ChangedOn>2012-10-12T10:27:18.8805869Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-12T10:27:18.8805869Z</Invoicing:CreatedOn>
+    <Invoicing:Description>SVA</Invoicing:Description>
+    <Invoicing:DueDate>
+      <DaysOffset xmlns="Zetbox.App.Base">-1</DaysOffset>
+      <EveryDay xmlns="Zetbox.App.Base">false</EveryDay>
+      <EveryMonth xmlns="Zetbox.App.Base">false</EveryMonth>
+      <EveryQuater xmlns="Zetbox.App.Base">false</EveryQuater>
+      <EveryYear xmlns="Zetbox.App.Base">false</EveryYear>
+      <MonthsOffset xmlns="Zetbox.App.Base">1</MonthsOffset>
+    </Invoicing:DueDate>
+    <Invoicing:Total>2000.00</Invoicing:Total>
+    <Invoicing:TotalNet>2000.00</Invoicing:TotalNet>
+    <Invoicing:IntOrg>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:IntOrg>
+    <Invoicing:Party>5c0efd1f-5954-48f3-bb14-ba7270d36c55</Invoicing:Party>
+  </Invoicing:OtherExpenseReceiptTemplate>
   <Invoicing:OtherIncomeReceipt ExportGuid="1c54c9b6-f18c-4223-8185-125de7ea3ed6">
     <Invoicing:ChangedOn>2012-10-12T07:46:39.3672383Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-12T07:46:39.3672383Z</Invoicing:CreatedOn>
