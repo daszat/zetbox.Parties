@@ -16,6 +16,7 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
     using Zetbox.Client;
     using Zetbox.App.Base;
     using Zetbox.Basic.Parties;
+    using Zetbox.Parties.Client.ViewModel.Invoicing.Utils;
 
     /// <summary>
     /// </summary>
@@ -53,30 +54,8 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             {
                 if (_customerParty == null)
                 {
-                    var mdl = new ObjectReferenceValueModel("Customer", "", false, false, (ObjectClass)NamedObjects.Base.Classes.Zetbox.Basic.Parties.Party.Find(FrozenContext));
-                    mdl.Value = Invoice.Customer != null ? Invoice.Customer.Party : null;
-                    mdl.PropertyChanged += (s, e) =>
-                    {
-                        if (e.PropertyName == "Value")
-                        {
-                            if (mdl.Value != null)
-                            {
-                                var party = (Party)mdl.Value;
-                                var customer = party.PartyRole.OfType<Customer>().SingleOrDefault();
-                                if (customer == null)
-                                {
-                                    customer = DataContext.Create<Customer>();
-                                    customer.Party = party;
-                                }
-                                Invoice.Customer = customer;
-                            }
-                            else
-                            {
-                                Invoice.Customer = null;
-                            }
-                        }
-                    };
-                    _customerParty = ViewModelFactory.CreateViewModel<ObjectReferenceViewModel.Factory>().Invoke(DataContext, this, mdl);
+                    _customerParty = PartyRoleReferenceViewModelFactory.Create<SalesInvoice, Supplier>(ViewModelFactory, DataContext, FrozenContext, this, "Customer", Invoice, i => i.Customer);
+
                 }
                 return _customerParty;
             }

@@ -16,6 +16,7 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
     using Zetbox.Client;
     using Zetbox.App.Base;
     using Zetbox.Basic.Parties;
+    using Zetbox.Parties.Client.ViewModel.Invoicing.Utils;
 
     /// <summary>
     /// </summary>
@@ -47,30 +48,7 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             {
                 if (_supplierParty == null)
                 {
-                    var mdl = new ObjectReferenceValueModel("Supplier", "", false, false, (ObjectClass)NamedObjects.Base.Classes.Zetbox.Basic.Parties.Party.Find(FrozenContext));
-                    mdl.Value = Invoice.Supplier != null ? Invoice.Supplier.Party : null;
-                    mdl.PropertyChanged += (s, e) =>
-                    {
-                        if (e.PropertyName == "Value")
-                        {
-                            if (mdl.Value != null)
-                            {
-                                var party = (Party)mdl.Value;
-                                var supplier = party.PartyRole.OfType<Supplier>().SingleOrDefault();
-                                if (supplier == null)
-                                {
-                                    supplier = DataContext.Create<Supplier>();
-                                    supplier.Party = party;
-                                }
-                                Invoice.Supplier = supplier;
-                            }
-                            else
-                            {
-                                Invoice.Supplier = null;
-                            }
-                        }
-                    };
-                    _supplierParty = ViewModelFactory.CreateViewModel<ObjectReferenceViewModel.Factory>().Invoke(DataContext, this, mdl);
+                    _supplierParty = PartyRoleReferenceViewModelFactory.Create<PurchaseInvoiceTemplate, Supplier>(ViewModelFactory, DataContext, FrozenContext, this, "Supplier", Invoice, i => i.Supplier);
                 }
                 return _supplierParty;
             }
