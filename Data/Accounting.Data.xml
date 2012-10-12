@@ -1,2 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" date="2012-10-10T16:48:40.8688451Z" xmlns="http://dasz.at/Zetbox" />
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" date="2012-10-12T10:21:41.981501Z" xmlns="http://dasz.at/Zetbox">
+  <Accounting:AccountImporterDescriptor ExportGuid="fd1e08fa-eb7e-4129-95ef-5b0615a29c05">
+    <Accounting:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</Accounting:Module>
+    <Accounting:Name>BA-CA Importer</Accounting:Name>
+    <Accounting:TypeRef>a5498ede-ea93-433c-8464-c2af0a506b8b</Accounting:TypeRef>
+  </Accounting:AccountImporterDescriptor>
+</ZetboxPackaging>

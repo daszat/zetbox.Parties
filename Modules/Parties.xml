@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-10T16:48:40.8688451Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-12T10:21:41.981501Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -2167,6 +2167,33 @@ public static void isValid_TransferedTo(Transaction obj, PropertyIsValidEventArg
     <ZetboxBase:RoleName>TypeRef</ZetboxBase:RoleName>
     <ZetboxBase:Type>87766ae2-89a4-4c37-ab25-583a710c55e5</ZetboxBase:Type>
   </ZetboxBase:RelationEnd>
+  <ZetboxBase:Method ExportGuid="665f35ca-e161-47ff-818e-217dc97870b2">
+    <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2012-10-12T08:21:41.981501Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void AssignParties(Account obj)
+{
+}
+
+[Invocation]
+public static void AssignPartiesCanExec(Account obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void AssignPartiesCanExecReason(Account obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2012-10-12T08:21:41.981501Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>Automatically assign parties to transactions</ZetboxBase:Description>
+    <ZetboxBase:InvokeOnServer>false</ZetboxBase:InvokeOnServer>
+    <GUI:IsDisplayable>true</GUI:IsDisplayable>
+    <ZetboxBase:Label>Assign parties</ZetboxBase:Label>
+    <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
+    <ZetboxBase:Name>AssignParties</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>9dc19fb1-4c9d-422d-89e3-bed1ebebf5a6</ZetboxBase:ObjectClass>
+  </ZetboxBase:Method>
   <ZetboxBase:Method ExportGuid="9dfcd490-2b6e-40c7-8076-986bef774a67">
     <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2011-12-09T14:01:07.962268Z</ZetboxBase:ChangedOn>
@@ -17649,14 +17676,12 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:ChangedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:CreatedOn>
     <ZetboxBase:FullName>Zetbox.Parties.Client.Reporting.ReportingHost</ZetboxBase:FullName>
-    <ZetboxBase:Parent>c27faa8a-e0d1-4cde-8925-965aa695a6ed</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="ff351747-9c6f-4ad8-ae19-5ed074603237">
     <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
     <ZetboxBase:ChangedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2012-05-14T16:42:23.4454627Z</ZetboxBase:CreatedOn>
     <ZetboxBase:FullName>Zetbox.Parties.Client.Reporting.ReportTemplate</ZetboxBase:FullName>
-    <ZetboxBase:Parent>a25a58e0-a643-4dd5-a60a-3cd2a3e96203</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="c0d2864c-d97f-4467-a36f-b7c6ac1b1464">
     <ZetboxBase:Assembly>e3dc0edf-60d6-4d72-ba5e-5b6df2689c78</ZetboxBase:Assembly>
