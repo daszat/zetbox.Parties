@@ -17,6 +17,9 @@ namespace Zetbox.Parties.Common
             moduleBuilder.RegisterZetboxImplementors(typeof(CommonModule).Assembly);
 
             // Register explicit overrides here
+            moduleBuilder
+               .RegisterType<Invoicing.Workflow.Action>()
+               .SingleInstance();
         }
     }
 }
