@@ -48,7 +48,7 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             {
                 if (_customerParty == null)
                 {
-                    _customerParty = PartyRoleReferenceViewModelFactory.Create<SalesInvoiceTemplate, Supplier>(ViewModelFactory, DataContext, FrozenContext, this, "Customer", Invoice, i => i.Customer);
+                    _customerParty = PartyRoleReferenceViewModelFactory.Create<SalesInvoiceTemplate, Customer>(ViewModelFactory, DataContext, FrozenContext, this, "Customer", Invoice, i => i.Customer);
                 }
                 return _customerParty;
             }
