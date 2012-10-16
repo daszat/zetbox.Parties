@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-12T12:14:05.2211922Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-16T12:16:58.3909736Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -10999,6 +10999,32 @@ public static void CreateReceiptCanExecReason(ReceiptTemplate obj, MethodReturnE
     <ZetboxBase:Name>CreateReceipt</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>5e556e9f-5769-4266-b485-e655e6da825b</ZetboxBase:ObjectClass>
   </ZetboxBase:Method>
+  <ZetboxBase:Method ExportGuid="81e04b8b-e124-4b19-9cb5-96d6d4f70b5e">
+    <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2012-10-16T10:16:58.3909736Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void StartWorkflow(ReceiptTemplate obj, MethodReturnEventArgs&lt;Zetbox.Basic.Workflow.WFInstance&gt; e, Zetbox.Basic.Workflow.WFDefinition workflow)
+{
+}
+
+[Invocation]
+public static void StartWorkflowCanExec(ReceiptTemplate obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void StartWorkflowCanExecReason(ReceiptTemplate obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2012-10-16T10:16:58.3909736Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>Starts a workflow. eg. to create recurrent invoices</ZetboxBase:Description>
+    <GUI:IsDisplayable>true</GUI:IsDisplayable>
+    <ZetboxBase:Label>Start a workflow</ZetboxBase:Label>
+    <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
+    <ZetboxBase:Name>StartWorkflow</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>5e556e9f-5769-4266-b485-e655e6da825b</ZetboxBase:ObjectClass>
+  </ZetboxBase:Method>
   <ZetboxBase:Method ExportGuid="fec107e1-836b-425a-be44-4c39f3474b78">
     <ZetboxBase:ChangedOn>2012-10-10T09:43:13.0135517Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
@@ -11359,6 +11385,30 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <ZetboxBase:Parameter_pos>0</ZetboxBase:Parameter_pos>
     <ZetboxBase:Name>retVal</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</ZetboxBase:ObjectClass>
+  </ZetboxBase:ObjectReferenceParameter>
+  <ZetboxBase:ObjectReferenceParameter ExportGuid="3456d75b-2a90-4fe1-9082-c83adc2af129">
+    <ZetboxBase:ChangedOn>2012-10-16T10:16:58.3909736Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-16T10:16:58.3909736Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>Workflow instance</ZetboxBase:Description>
+    <ZetboxBase:IsList>false</ZetboxBase:IsList>
+    <ZetboxBase:IsNullable>false</ZetboxBase:IsNullable>
+    <ZetboxBase:IsReturnParameter>true</ZetboxBase:IsReturnParameter>
+    <ZetboxBase:Method>81e04b8b-e124-4b19-9cb5-96d6d4f70b5e</ZetboxBase:Method>
+    <ZetboxBase:Parameter_pos>1</ZetboxBase:Parameter_pos>
+    <ZetboxBase:Name>retVal</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>c579b352-ac0c-4c0a-a28e-a99f58a05a95</ZetboxBase:ObjectClass>
+  </ZetboxBase:ObjectReferenceParameter>
+  <ZetboxBase:ObjectReferenceParameter ExportGuid="f2263640-30ed-4b4e-9394-05b429a8cf1f">
+    <ZetboxBase:ChangedOn>2012-10-16T10:16:58.3909736Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-10-16T10:16:58.3909736Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>Workflow definition</ZetboxBase:Description>
+    <ZetboxBase:IsList>false</ZetboxBase:IsList>
+    <ZetboxBase:IsNullable>false</ZetboxBase:IsNullable>
+    <ZetboxBase:IsReturnParameter>false</ZetboxBase:IsReturnParameter>
+    <ZetboxBase:Method>81e04b8b-e124-4b19-9cb5-96d6d4f70b5e</ZetboxBase:Method>
+    <ZetboxBase:Parameter_pos>0</ZetboxBase:Parameter_pos>
+    <ZetboxBase:Name>workflow</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>81bdfa01-39bb-44c6-821f-ba22efaa4ce1</ZetboxBase:ObjectClass>
   </ZetboxBase:ObjectReferenceParameter>
   <ZetboxBase:StringParameter ExportGuid="d1d772d7-001f-4aa1-b1b8-972beae3047b">
     <ZetboxBase:ChangedOn>2011-12-30T13:48:38.917057Z</ZetboxBase:ChangedOn>
@@ -18545,6 +18595,30 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
     <GUI:ViewModelRef>f69b3007-05a5-47db-b839-6f8e3218f9cf</GUI:ViewModelRef>
   </GUI:ViewModelDescriptor>
+  <GUI:NavigationSearchScreen ExportGuid="c0cc663c-ab2b-4cdd-b7ff-ce6069fabdc6">
+    <GUI:ChangedOn>2012-10-16T10:20:04.6346262Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2012-10-16T10:18:58.0618184Z</GUI:CreatedOn>
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:Parent>83c3d76b-dd6a-4abe-9a08-9f378dbd6e96</GUI:Parent>
+    <GUI:Children_pos>1</GUI:Children_pos>
+    <GUI:Title>Active workflows</GUI:Title>
+    <GUI:ViewModelDescriptor>f902b61a-2fb1-4b6c-8e64-26a547d2ba01</GUI:ViewModelDescriptor>
+    <GUI:AllowAddNew>false</GUI:AllowAddNew>
+    <GUI:AllowDelete>false</GUI:AllowDelete>
+    <GUI:ViewMethod>2</GUI:ViewMethod>
+  </GUI:NavigationSearchScreen>
+  <GUI:NavigationSearchScreen ExportGuid="a4eb346a-28e1-494d-8a4b-c72d8d89f7eb">
+    <GUI:ChangedOn>2012-10-16T10:19:50.3888114Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2012-10-16T10:19:50.3888114Z</GUI:CreatedOn>
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:Parent>83c3d76b-dd6a-4abe-9a08-9f378dbd6e96</GUI:Parent>
+    <GUI:Children_pos>2</GUI:Children_pos>
+    <GUI:Title>Definitions</GUI:Title>
+    <GUI:AllowAddNew>true</GUI:AllowAddNew>
+    <GUI:AllowDelete>true</GUI:AllowDelete>
+    <GUI:Type>81bdfa01-39bb-44c6-821f-ba22efaa4ce1</GUI:Type>
+    <GUI:ViewMethod>2</GUI:ViewMethod>
+  </GUI:NavigationSearchScreen>
   <GUI:NavigationSearchScreen ExportGuid="9a7eab41-2d5c-4f03-884d-891d3066d75a">
     <GUI:ChangedOn>2012-08-22T15:21:30.4795519Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-11-04T15:13:26.107102Z</GUI:CreatedOn>
@@ -18592,6 +18666,15 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <GUI:Parent>702e6fde-6b9d-4286-8f04-f4d6076a488f</GUI:Parent>
     <GUI:Children_pos>404</GUI:Children_pos>
     <GUI:Title>Settings</GUI:Title>
+  </GUI:NavigationScreen>
+  <GUI:NavigationScreen ExportGuid="83c3d76b-dd6a-4abe-9a08-9f378dbd6e96">
+    <GUI:ChangedOn>2012-10-16T10:18:00.2905141Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2012-10-16T10:18:00.2905141Z</GUI:CreatedOn>
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:Parent>702e6fde-6b9d-4286-8f04-f4d6076a488f</GUI:Parent>
+    <GUI:Children_pos>405</GUI:Children_pos>
+    <GUI:Title>Workflow</GUI:Title>
+    <GUI:ViewModelDescriptor>ebc13c2a-0375-46e6-9fc2-a4ee5afc3568</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
   <GUI:NavigationScreen ExportGuid="702e6fde-6b9d-4286-8f04-f4d6076a488f">
     <GUI:ChangedOn>2012-08-22T15:03:43.9205482Z</GUI:ChangedOn>

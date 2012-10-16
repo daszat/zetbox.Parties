@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Workflow="Zetbox.Basic.Workflow" date="2012-10-12T12:14:05.2211922Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Workflow="Zetbox.Basic.Workflow" date="2012-10-16T12:16:58.3909736Z" xmlns="http://dasz.at/Zetbox">
   <Workflow:Action ExportGuid="35fb1b84-5892-4eef-b770-6889569fc5d2">
     <Workflow:ChangedOn>2012-10-12T10:15:37.6684799Z</Workflow:ChangedOn>
     <Workflow:CreatedOn>2012-10-12T10:15:37.6684799Z</Workflow:CreatedOn>
@@ -16,33 +16,32 @@
   </Workflow:Action>
   <Workflow:ParameterizedActionDefinition ExportGuid="f0c54523-0d21-4dcd-a27d-28a50471b3f1">
     <Workflow:Action>35fb1b84-5892-4eef-b770-6889569fc5d2</Workflow:Action>
-    <Workflow:ChangedOn>2012-10-12T10:25:29.4663288Z</Workflow:ChangedOn>
+    <Workflow:ChangedOn>2012-10-16T09:50:25.8458853Z</Workflow:ChangedOn>
     <Workflow:CreatedOn>2012-10-12T10:25:29.4663288Z</Workflow:CreatedOn>
     <Workflow:IsOnEnterAction>false</Workflow:IsOnEnterAction>
-    <Workflow:IsVisible>false</Workflow:IsVisible>
+    <Workflow:IsVisible>true</Workflow:IsVisible>
     <Workflow:Module>73b3078c-d541-4015-b27e-7820408052e9</Workflow:Module>
     <Workflow:Name>CreateReceipt</Workflow:Name>
     <Workflow:StateDefinition>8f418349-8a12-42ad-8325-f313c648aaec</Workflow:StateDefinition>
     <Workflow:Actions_pos>1</Workflow:Actions_pos>
   </Workflow:ParameterizedActionDefinition>
-  <Workflow:ScheduledActionDefinition ExportGuid="ab93b42c-78e8-4206-881f-24d4cfc628c9">
-    <Workflow:Action>1fcb81c7-4347-4394-9897-0b072776dd40</Workflow:Action>
-    <Workflow:ChangedOn>2012-10-12T10:25:29.4663288Z</Workflow:ChangedOn>
-    <Workflow:CreatedOn>2012-10-12T10:25:29.4663288Z</Workflow:CreatedOn>
+  <Workflow:ScheduledActionDefinition ExportGuid="85313d56-6f27-447a-957e-f57a346399e1">
+    <Workflow:Action>20c24e3f-5191-4b97-bff4-7645f53d57eb</Workflow:Action>
+    <Workflow:ChangedOn>2012-10-16T09:50:25.8458853Z</Workflow:ChangedOn>
+    <Workflow:CreatedOn>2012-10-16T09:50:25.8458853Z</Workflow:CreatedOn>
     <Workflow:IsOnEnterAction>true</Workflow:IsOnEnterAction>
     <Workflow:IsVisible>false</Workflow:IsVisible>
     <Workflow:Module>73b3078c-d541-4015-b27e-7820408052e9</Workflow:Module>
-    <Workflow:Name>QuaterlyScheduler</Workflow:Name>
+    <Workflow:Name>EmptyScheduler</Workflow:Name>
     <Workflow:StateDefinition>8f418349-8a12-42ad-8325-f313c648aaec</Workflow:StateDefinition>
-    <Workflow:Actions_pos>0</Workflow:Actions_pos>
+    <Workflow:Actions_pos>2</Workflow:Actions_pos>
     <Workflow:InvokeAction>f0c54523-0d21-4dcd-a27d-28a50471b3f1</Workflow:InvokeAction>
     <Workflow:IsRecurrent>true</Workflow:IsRecurrent>
     <Workflow:Schedule>
       <EveryDay xmlns="Zetbox.App.Base">false</EveryDay>
-      <EveryMonth xmlns="Zetbox.App.Base">false</EveryMonth>
+      <EveryMonth xmlns="Zetbox.App.Base">true</EveryMonth>
       <EveryQuater xmlns="Zetbox.App.Base">false</EveryQuater>
       <EveryYear xmlns="Zetbox.App.Base">false</EveryYear>
-      <MonthsOffset xmlns="Zetbox.App.Base">1</MonthsOffset>
     </Workflow:Schedule>
   </Workflow:ScheduledActionDefinition>
   <Workflow:StateDefinition ExportGuid="8f418349-8a12-42ad-8325-f313c648aaec">

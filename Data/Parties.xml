@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-10-12T12:14:05.2211922Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-10-16T12:16:58.3909736Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:Account ExportGuid="5ce18612-eac2-4384-916d-ebf488f5a5ea">
     <Accounting:ChangedOn>2012-10-12T08:16:49.8127899Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2012-10-12T08:16:49.8127899Z</Accounting:CreatedOn>
@@ -162,6 +162,19 @@
     <Invoicing:IntOrg>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:IntOrg>
     <Invoicing:Supplier>8d797cbd-0b03-49c7-98a8-59b199a91b36</Invoicing:Supplier>
   </Invoicing:PurchaseInvoiceTemplate>
+  <Invoicing:SalesInvoice ExportGuid="333a0ed7-4926-47f1-b282-1eaa39b60775">
+    <Invoicing:ChangedOn>2012-10-16T09:54:30.6088849Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-16T09:54:30.6088849Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2012-10-15T22:00:00Z</Invoicing:Date>
+    <Invoicing:Description>Wartungsvertrag</Invoicing:Description>
+    <Invoicing:DueDate>2012-11-14T23:00:00Z</Invoicing:DueDate>
+    <Accounting:OpenAmount>84.00</Accounting:OpenAmount>
+    <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
+    <Invoicing:Total>84.00</Invoicing:Total>
+    <Invoicing:TotalNet>70.00</Invoicing:TotalNet>
+    <Invoicing:Customer>e9fab734-8b2b-4154-a256-ff74e9cf98bc</Invoicing:Customer>
+    <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
+  </Invoicing:SalesInvoice>
   <Invoicing:SalesInvoice ExportGuid="60bc62ad-262d-4af4-bdc9-e31710a18bb5">
     <Invoicing:ChangedOn>2012-10-10T11:44:47.9757997Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T11:44:47.9757997Z</Invoicing:CreatedOn>
@@ -190,6 +203,19 @@
     <Invoicing:Customer>e9fab734-8b2b-4154-a256-ff74e9cf98bc</Invoicing:Customer>
     <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
   </Invoicing:SalesInvoice>
+  <Invoicing:SalesInvoice ExportGuid="83e056ca-9595-498b-8869-852435368d52">
+    <Invoicing:ChangedOn>2012-10-16T09:54:04.4503887Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-16T09:54:04.4503887Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2012-10-15T22:00:00Z</Invoicing:Date>
+    <Invoicing:Description>Wartungsvertrag</Invoicing:Description>
+    <Invoicing:DueDate>2012-11-14T23:00:00Z</Invoicing:DueDate>
+    <Accounting:OpenAmount>84.00</Accounting:OpenAmount>
+    <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
+    <Invoicing:Total>84.00</Invoicing:Total>
+    <Invoicing:TotalNet>70.00</Invoicing:TotalNet>
+    <Invoicing:Customer>e9fab734-8b2b-4154-a256-ff74e9cf98bc</Invoicing:Customer>
+    <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
+  </Invoicing:SalesInvoice>
   <Invoicing:SalesInvoiceItem ExportGuid="4aff16b2-58d8-4852-9689-118d77bb5bb4">
     <Invoicing:Amount>60.00</Invoicing:Amount>
     <Invoicing:AmountNet>50.00</Invoicing:AmountNet>
@@ -200,6 +226,18 @@
     <Invoicing:UnitPrice>50.00</Invoicing:UnitPrice>
     <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
     <Invoicing:SalesInvoice>60bc62ad-262d-4af4-bdc9-e31710a18bb5</Invoicing:SalesInvoice>
+    <Invoicing:Items_pos>1</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItem>
+  <Invoicing:SalesInvoiceItem ExportGuid="5127c5f0-410e-4149-a55c-4f87243090f3">
+    <Invoicing:Amount>60.00</Invoicing:Amount>
+    <Invoicing:AmountNet>50.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-10-16T09:54:30.6088849Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-16T09:54:30.6088849Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Garantie</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>50.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:SalesInvoice>333a0ed7-4926-47f1-b282-1eaa39b60775</Invoicing:SalesInvoice>
     <Invoicing:Items_pos>1</Invoicing:Items_pos>
   </Invoicing:SalesInvoiceItem>
   <Invoicing:SalesInvoiceItem ExportGuid="5e0bcb31-ffaf-4cfb-a75d-341a747f9232">
@@ -214,6 +252,30 @@
     <Invoicing:SalesInvoice>60bc62ad-262d-4af4-bdc9-e31710a18bb5</Invoicing:SalesInvoice>
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
   </Invoicing:SalesInvoiceItem>
+  <Invoicing:SalesInvoiceItem ExportGuid="7e09fdac-c06c-4019-b8c3-e578ff4ceaac">
+    <Invoicing:Amount>84.00</Invoicing:Amount>
+    <Invoicing:AmountNet>70.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-10-16T09:54:30.6088849Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-16T09:54:30.6088849Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Wartung</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>70.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:SalesInvoice>333a0ed7-4926-47f1-b282-1eaa39b60775</Invoicing:SalesInvoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItem>
+  <Invoicing:SalesInvoiceItem ExportGuid="84048bf4-f5bb-47b8-a1a9-94b4b3fa1125">
+    <Invoicing:Amount>60.00</Invoicing:Amount>
+    <Invoicing:AmountNet>50.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-10-16T09:54:04.4503887Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-16T09:54:04.4503887Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Garantie</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>50.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:SalesInvoice>83e056ca-9595-498b-8869-852435368d52</Invoicing:SalesInvoice>
+    <Invoicing:Items_pos>1</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItem>
   <Invoicing:SalesInvoiceItem ExportGuid="c04464fd-26b8-4c24-bc1e-e3e938824b8c">
     <Invoicing:Amount>70.00</Invoicing:Amount>
     <Invoicing:AmountNet>70.00</Invoicing:AmountNet>
@@ -224,6 +286,18 @@
     <Invoicing:UnitPrice>70.00</Invoicing:UnitPrice>
     <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
     <Invoicing:SalesInvoice>81dbb5a2-d2c2-4040-9af6-a70c991e9e75</Invoicing:SalesInvoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:SalesInvoiceItem>
+  <Invoicing:SalesInvoiceItem ExportGuid="fcad2e5d-71a3-4519-b624-1dfd0ec533f2">
+    <Invoicing:Amount>84.00</Invoicing:Amount>
+    <Invoicing:AmountNet>70.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-10-16T09:54:04.4503887Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-10-16T09:54:04.4503887Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Wartung</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>70.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:SalesInvoice>83e056ca-9595-498b-8869-852435368d52</Invoicing:SalesInvoice>
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
   </Invoicing:SalesInvoiceItem>
   <Invoicing:SalesInvoiceItemTemplate ExportGuid="03f0532b-0043-4bd7-9373-5cdf47c1416d">
