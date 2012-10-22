@@ -31,7 +31,7 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             this.Invoice = obj;
         }
 
-        public new PurchaseInvoiceTemplate Invoice { get; private set; }
+        public PurchaseInvoiceTemplate Invoice { get; private set; }
 
         public override string Name
         {
