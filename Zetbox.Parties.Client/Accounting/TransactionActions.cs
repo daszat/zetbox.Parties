@@ -39,5 +39,10 @@ namespace Zetbox.Basic.Accounting
             var mdl = _vmf.CreateViewModel<LinkReceiptTransactionViewModel.Factory>().Invoke(obj.Context, null, obj);
             _vmf.ShowDialog(mdl);
         }
+
+        [Invocation]
+        public static void CreateReceipt(Transaction obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.Receipt> e)
+        {
+        }
     }
 }

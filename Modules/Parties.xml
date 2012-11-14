@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-10-16T12:16:58.3909736Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-11-14T17:42:17.5478637Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -2219,6 +2219,32 @@ public static void ImportCanExecReason(Account obj, MethodReturnEventArgs&lt;str
     <ZetboxBase:Name>Import</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>9dc19fb1-4c9d-422d-89e3-bed1ebebf5a6</ZetboxBase:ObjectClass>
   </ZetboxBase:Method>
+  <ZetboxBase:Method ExportGuid="63c73c29-6fdb-4997-b349-0592e7327e2c">
+    <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2012-11-14T16:40:04.9671398Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void CreateReceipt(Transaction obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.Receipt&gt; e)
+{
+}
+
+[Invocation]
+public static void CreateReceiptCanExec(Transaction obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void CreateReceiptCanExecReason(Transaction obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2012-11-14T16:40:04.9671398Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>Creates a new receipt</ZetboxBase:Description>
+    <GUI:IsDisplayable>true</GUI:IsDisplayable>
+    <ZetboxBase:Label>Create receipt</ZetboxBase:Label>
+    <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
+    <ZetboxBase:Name>CreateReceipt</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:ObjectClass>
+  </ZetboxBase:Method>
   <ZetboxBase:Method ExportGuid="b8c1ba56-92f9-46bb-968b-c206ba87a876">
     <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2012-04-10T18:10:55.084095Z</ZetboxBase:ChangedOn>
@@ -2269,6 +2295,17 @@ public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&
     <ZetboxBase:Name>Transfer</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:ObjectClass>
   </ZetboxBase:Method>
+  <ZetboxBase:ObjectReferenceParameter ExportGuid="72cd1b7a-3653-4e45-8fd4-49e200ab5192">
+    <ZetboxBase:ChangedOn>2012-11-14T16:40:04.9671398Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-14T16:40:04.9671398Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:IsList>false</ZetboxBase:IsList>
+    <ZetboxBase:IsNullable>false</ZetboxBase:IsNullable>
+    <ZetboxBase:IsReturnParameter>true</ZetboxBase:IsReturnParameter>
+    <ZetboxBase:Method>63c73c29-6fdb-4997-b349-0592e7327e2c</ZetboxBase:Method>
+    <ZetboxBase:Parameter_pos>0</ZetboxBase:Parameter_pos>
+    <ZetboxBase:Name>retVal</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</ZetboxBase:ObjectClass>
+  </ZetboxBase:ObjectReferenceParameter>
   <ZetboxBase:ObjectReferenceParameter ExportGuid="bf940708-d317-41d5-a323-3c7ab9929afb">
     <ZetboxBase:ChangedOn>2011-12-09T16:13:01.848288Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-12-09T16:13:01.848288Z</ZetboxBase:CreatedOn>
@@ -10751,7 +10788,7 @@ public static void GetNextInvoiceIDCanExecReason(AbstractInvoiceGenerator obj, M
   </ZetboxBase:Method>
   <ZetboxBase:Method ExportGuid="ea444a9d-df91-4741-b8d5-fda85576eff2">
     <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-11-04T13:59:55.604836Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-11-14T16:42:17.5478637Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void MakeInvoice(ImportedFile obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.PurchaseInvoice&gt; e)
 {
@@ -10769,14 +10806,14 @@ public static void MakeInvoiceCanExecReason(ImportedFile obj, MethodReturnEventA
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-11-04T13:57:49.511624Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>true</GUI:IsDisplayable>
-    <ZetboxBase:Label>Make invoice</ZetboxBase:Label>
+    <ZetboxBase:Label>Make purchase invoice</ZetboxBase:Label>
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>MakeInvoice</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>523a75bb-29c4-421c-9343-93d8658bb5f8</ZetboxBase:ObjectClass>
   </ZetboxBase:Method>
   <ZetboxBase:Method ExportGuid="cab6bddb-d596-44de-ba48-a413d42b33a3">
     <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-05-07T11:58:47.5266439Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-11-14T16:42:17.5478637Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void MakeOtherExpense(ImportedFile obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.OtherExpenseReceipt&gt; e)
 {
@@ -10794,14 +10831,14 @@ public static void MakeOtherExpenseCanExecReason(ImportedFile obj, MethodReturnE
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2012-05-07T11:58:47.5266439Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>true</GUI:IsDisplayable>
-    <ZetboxBase:Label>Make expense</ZetboxBase:Label>
+    <ZetboxBase:Label>Make other expense</ZetboxBase:Label>
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>MakeOtherExpense</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>523a75bb-29c4-421c-9343-93d8658bb5f8</ZetboxBase:ObjectClass>
   </ZetboxBase:Method>
   <ZetboxBase:Method ExportGuid="925078e5-1bbd-48fd-9bbe-921bf87b5298">
     <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-11-04T14:00:47.673814Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-11-14T16:42:17.5478637Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void MakeQuote(ImportedFile obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.PurchaseQuote&gt; e)
 {
@@ -10819,7 +10856,7 @@ public static void MakeQuoteCanExecReason(ImportedFile obj, MethodReturnEventArg
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-11-04T14:00:47.673814Z</ZetboxBase:CreatedOn>
     <GUI:IsDisplayable>true</GUI:IsDisplayable>
-    <ZetboxBase:Label>Make quote</ZetboxBase:Label>
+    <ZetboxBase:Label>Make purchase quote</ZetboxBase:Label>
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>MakeQuote</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>523a75bb-29c4-421c-9343-93d8658bb5f8</ZetboxBase:ObjectClass>
