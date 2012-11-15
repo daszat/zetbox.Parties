@@ -268,5 +268,94 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             }
         }
         #endregion
+
+        #region Templates
+        private ICommandViewModel _CreateFromTemplateCommand = null;
+        public ICommandViewModel CreateFromTemplateCommand
+        {
+            get
+            {
+                if (_CreateFromTemplateCommand == null)
+                {
+                    _CreateFromTemplateCommand = ViewModelFactory.CreateViewModel<SimpleCommandViewModel.Factory>().Invoke(DataContext, this, "Create", "Creates a new receipt from a template", CreateFromTemplate, null, null);
+                }
+                return _CreateFromTemplateCommand;
+            }
+        }
+
+        public void CreateFromTemplate()
+        {
+        }
+        #endregion
+
+        #region create new receipt
+        private ICommandViewModel _CreatePurchaseInvoiceCommand = null;
+        public ICommandViewModel CreatePurchaseInvoiceCommand
+        {
+            get
+            {
+                if (_CreatePurchaseInvoiceCommand == null)
+                {
+                    _CreatePurchaseInvoiceCommand = ViewModelFactory.CreateViewModel<SimpleCommandViewModel.Factory>().Invoke(DataContext, this, "Purchase invoice", "Creates a new purchase invoice", CreatePurchaseInvoice, null, null);
+                }
+                return _CreatePurchaseInvoiceCommand;
+            }
+        }
+
+        public void CreatePurchaseInvoice()
+        {
+        }
+
+        private ICommandViewModel _CreateOtherExpenseCommand = null;
+        public ICommandViewModel CreateOtherExpenseCommand
+        {
+            get
+            {
+                if (_CreateOtherExpenseCommand == null)
+                {
+                    _CreateOtherExpenseCommand = ViewModelFactory.CreateViewModel<SimpleCommandViewModel.Factory>().Invoke(DataContext, this, "Other expense", "Creates a other expence receipts", CreateOtherExpense, null, null);
+                }
+                return _CreateOtherExpenseCommand;
+            }
+        }
+
+        public void CreateOtherExpense()
+        {
+        }
+
+        private ICommandViewModel _CreateOtherIncomeCommand = null;
+        public ICommandViewModel CreateOtherIncomeCommand
+        {
+            get
+            {
+                if (_CreateOtherIncomeCommand == null)
+                {
+                    _CreateOtherIncomeCommand = ViewModelFactory.CreateViewModel<SimpleCommandViewModel.Factory>().Invoke(DataContext, this, "Other income", "Creates a other income receipts", CreateOtherIncome, null, null);
+                }
+                return _CreateOtherIncomeCommand;
+            }
+        }
+
+        public void CreateOtherIncome()
+        {
+        }
+
+        private ICommandViewModel _CreateSalesInvoiceCommand = null;
+        public ICommandViewModel CreateSalesInvoiceCommand
+        {
+            get
+            {
+                if (_CreateSalesInvoiceCommand == null)
+                {
+                    _CreateSalesInvoiceCommand = ViewModelFactory.CreateViewModel<SimpleCommandViewModel.Factory>().Invoke(DataContext, this, "Sales invoice", "Creates a sales invoice", CreateSalesInvoice, null, null);
+                }
+                return _CreateSalesInvoiceCommand;
+            }
+        }
+
+        public void CreateSalesInvoice()
+        {
+        }
+        #endregion
     }
 }
