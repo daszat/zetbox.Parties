@@ -47,135 +47,6 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         }
 
         #region Commands
-        public bool CanApply()
-        {
-            return Receipts != null && Receipts.Any(r => r.IsSelected) && Transaction.Amount != 0;
-        }
-
-        public void Apply()
-        {
-            if (!CanApply()) return;
-            var trans = Transaction;
-            var party = trans.Party;
-            var otherOverpayments = DataContext.GetQuery<Transaction>()
-                .Where(t => t.Party == party && !(t == trans))
-                .Where(t => t.OverPayment != 0)
-                .OrderBy(z => z.Date)
-                .ToList();
-            // aktuelle Zahlung explizit als letzte einfügen
-            otherOverpayments.Insert(0, Transaction);
-
-            var receipts = Receipts
-                .Where(i => i.IsSelected)
-                .Select(i => i.Receipt.Object)
-                .Cast<Receipt>()
-                .OrderBy(r => r.Date)
-                .ToList();
-
-            bool didTransfered = false;
-            foreach (var payment in otherOverpayments)
-            {
-            // Zahlungen von alt->neu anrechnen; Rücküberweisungen neu->alt
-                foreach (var receipt in (payment.OverPayment > 0 ? receipts.AsEnumerable() : receipts.AsEnumerable().Reverse()))
-                {
-                    // fertig mit der zahlung?
-                    if (payment.OverPayment == 0)
-                        break;
-
-                    if (receipt is SalesInvoice || receipt is OtherIncomeReceipt)
-                    {
-                        // Verkauf -> unsere einkünfte, transaktion ist positiv
-                        if (receipt.OpenAmount > 0 && payment.OverPayment >= receipt.OpenAmount)
-                        {
-                            // komplett Zahlung
-                            Transfer(payment, receipt, receipt.OpenAmount);
-                            didTransfered = true;
-                        }
-                        else if (payment.OverPayment > 0 && payment.OverPayment < receipt.OpenAmount)
-                        {
-                            // teilzahlung
-                            Transfer(payment, receipt, payment.OverPayment);
-                            didTransfered = true;
-                        }
-                        else if (payment.OverPayment < 0 && -payment.OverPayment < receipt.PaymentAmount)
-                        {
-                            // teil-rücküberweisung
-                            Transfer(payment, receipt, payment.OverPayment);
-                            didTransfered = true;
-                        }
-                        else if (receipt.PaymentAmount > 0 && -payment.OverPayment >= receipt.PaymentAmount)
-                        {
-                            // komplett rücküberweisung
-                            // transfer z => r
-                            Transfer(payment, receipt, -receipt.PaymentAmount);
-                            didTransfered = true;
-                        }
-                    }
-                    else
-                    {
-                        // Einkauf -> unsere ausgaben, transaktion ist negativ
-                        if (receipt.OpenAmount > 0 && -payment.OverPayment >= receipt.OpenAmount)
-                        {
-                            // komplett Zahlung
-                            Transfer(payment, receipt, -receipt.OpenAmount);
-                            didTransfered = true;
-                        }
-                        else if (-payment.OverPayment > 0 && -payment.OverPayment < receipt.OpenAmount)
-                        {
-                            // teilzahlung
-                            Transfer(payment, receipt, payment.OverPayment);
-                            didTransfered = true;
-                        }
-                        else if (-payment.OverPayment < 0 && payment.OverPayment < receipt.PaymentAmount)
-                        {
-                            // teil-rücküberweisung
-                            Transfer(payment, receipt, payment.OverPayment);
-                            didTransfered = true;
-                        }
-                        else if (receipt.PaymentAmount > 0 && payment.OverPayment >= receipt.PaymentAmount)
-                        {
-                            // komplett rücküberweisung
-                            // transfer z => r
-                            Transfer(payment, receipt, receipt.PaymentAmount);
-                            didTransfered = true;
-                        }
-                    }
-                }
-            }
-            if (!didTransfered)
-            {
-                ViewModelFactory.ShowMessage("No link was created, please check, if the right receipts where selected.", "Warning");
-                return;
-            }
-
-            Show = false;
-        }
-
-        private Receipt_Transaction Transfer(Transaction payment, Receipt receipt, decimal amount)
-        {
-            var r_z = DataContext.Create<Receipt_Transaction>();
-            r_z.Receipt = receipt;
-            r_z.Transaction = payment;
-            r_z.Amount = amount;
-            return r_z;
-        }
-
-        private ICommandViewModel _ApplyCommand = null;
-        public ICommandViewModel ApplyCommand
-        {
-            get
-            {
-                if (_ApplyCommand == null)
-                {
-                    _ApplyCommand = ViewModelFactory.CreateViewModel<SimpleCommandViewModel.Factory>().Invoke(DataContext, this,
-                        "New",
-                        "Creates new links",
-                        Apply, CanApply, null);
-                }
-                return _ApplyCommand;
-            }
-        }
-
         public void Cancel()
         {
             Show = false;
@@ -199,7 +70,6 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         #endregion
 
         #region Receipts
-
         public class ReceiptsSelectionViewModel : ViewModel
         {
             public new delegate ReceiptsSelectionViewModel Factory(IZetboxContext dataCtx, LinkReceiptTransactionViewModel parent, Receipt receipt);
@@ -267,9 +137,115 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
                 return _receipts;
             }
         }
+        public bool CanApply()
+        {
+            return Receipts != null && Receipts.Any(r => r.IsSelected) && Transaction.Amount != 0;
+        }
+
+        public void Apply()
+        {
+            if (!CanApply()) return;
+
+            var receipts = Receipts
+                .Where(i => i.IsSelected)
+                .Select(i => i.Receipt.Object)
+                .Cast<Receipt>()
+                .OrderBy(r => r.Date)
+                .ToList();
+
+            bool didTransfered = LinkReceiptsTransaction(receipts);
+            if (!didTransfered)
+            {
+                ViewModelFactory.ShowMessage("No link was created, please check, if the right receipts where selected.", "Warning");
+                return;
+            }
+
+            Show = false;
+        }
+
+        private ICommandViewModel _ApplyCommand = null;
+        public ICommandViewModel ApplyCommand
+        {
+            get
+            {
+                if (_ApplyCommand == null)
+                {
+                    _ApplyCommand = ViewModelFactory.CreateViewModel<SimpleCommandViewModel.Factory>().Invoke(DataContext, this,
+                        "New",
+                        "Creates new links",
+                        Apply, CanApply, null);
+                }
+                return _ApplyCommand;
+            }
+        }
         #endregion
 
         #region Templates
+        public class TemplateSelectionViewModel : ViewModel
+        {
+            public new delegate TemplateSelectionViewModel Factory(IZetboxContext dataCtx, LinkReceiptTransactionViewModel parent, ReceiptTemplate template);
+
+            public TemplateSelectionViewModel(IViewModelDependencies appCtx, IZetboxContext dataCtx, LinkReceiptTransactionViewModel parent, ReceiptTemplate template)
+                : base(appCtx, dataCtx, parent)
+            {
+                _template = template;
+            }
+
+            private ReceiptTemplate _template;
+
+            private bool _isSelected = false;
+            public bool IsSelected
+            {
+                get
+                {
+                    return _isSelected;
+                }
+                set
+                {
+                    if (_isSelected != value)
+                    {
+                        _isSelected = value;
+                        OnPropertyChanged("IsSelected");
+                    }
+                }
+            }
+
+            private DataObjectViewModel _templateViewModel;
+            public DataObjectViewModel Template
+            {
+                get
+                {
+                    if (_templateViewModel == null)
+                    {
+                        _templateViewModel = DataObjectViewModel.Fetch(ViewModelFactory, DataContext, Parent, _template);
+                    }
+                    return _templateViewModel;
+                }
+            }
+
+            public override string Name
+            {
+                get { return _template.ToString(); }
+            }
+        }
+
+        private List<TemplateSelectionViewModel> _templates;
+        public List<TemplateSelectionViewModel> Templates
+        {
+            get
+            {
+                if (_templates == null)
+                {
+                    _templates = DataContext
+                        .GetQuery<ReceiptTemplate>()
+                        .ToList()
+                        .Select(t => ViewModelFactory.CreateViewModel<TemplateSelectionViewModel.Factory>().Invoke(DataContext, this, t))
+                        .ToList();
+                }
+                return _templates;
+            }
+        }
+
         private ICommandViewModel _CreateFromTemplateCommand = null;
         public ICommandViewModel CreateFromTemplateCommand
         {
@@ -277,7 +253,12 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             {
                 if (_CreateFromTemplateCommand == null)
                 {
-                    _CreateFromTemplateCommand = ViewModelFactory.CreateViewModel<SimpleCommandViewModel.Factory>().Invoke(DataContext, this, "Create", "Creates a new receipt from a template", CreateFromTemplate, null, null);
+                    _CreateFromTemplateCommand = ViewModelFactory.CreateViewModel<SimpleCommandViewModel.Factory>().Invoke(DataContext, this,
+                        "Create",
+                        "Creates a new receipt from a template",
+                        CreateFromTemplate,
+                        CanCreateFromTemplate,
+                        null);
                 }
                 return _CreateFromTemplateCommand;
             }
@@ -285,10 +266,29 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
 
         public void CreateFromTemplate()
         {
+            if (!CanCreateFromTemplate()) return;
+
+            var template = (ReceiptTemplate)Templates.Single(i => i.IsSelected).Template.Object;
+            var newReceipt = template.CreateReceipt();
+            
+            var didTransfered = LinkReceiptsTransaction(new List<Receipt>(new [] { newReceipt}));
+            if (!didTransfered)
+            {
+                ViewModelFactory.ShowMessage("No link was created, please check, if the new receipt is filled out correctly.", "Warning");
+                return;
+            }
+
+            ViewModelFactory.ShowModel(DataObjectViewModel.Fetch(ViewModelFactory, DataContext, Parent, newReceipt), true);
+            Show = false;
+        }
+
+        public bool CanCreateFromTemplate()
+        {
+            return Templates != null && Templates.Count(r => r.IsSelected) == 1 && Transaction.Amount != 0;
         }
         #endregion
 
-        #region create new receipt
+        #region Create new receipt
         private ICommandViewModel _CreatePurchaseInvoiceCommand = null;
         public ICommandViewModel CreatePurchaseInvoiceCommand
         {
@@ -355,6 +355,102 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
 
         public void CreateSalesInvoice()
         {
+        }
+        #endregion
+
+        #region Link receipts and transaction
+        private bool LinkReceiptsTransaction(List<Receipt> receipts)
+        {
+            var trans = Transaction;
+            var party = trans.Party;
+            var otherOverpayments = DataContext.GetQuery<Transaction>()
+                .Where(t => t.Party == party && !(t == trans))
+                .Where(t => t.OverPayment != 0)
+                .OrderBy(z => z.Date)
+                .ToList();
+            // aktuelle Zahlung explizit als letzte einfügen
+            otherOverpayments.Insert(0, Transaction);
+
+            bool didTransfered = false;
+            foreach (var payment in otherOverpayments)
+            {
+                // Zahlungen von alt->neu anrechnen; Rücküberweisungen neu->alt
+                foreach (var receipt in (payment.OverPayment > 0 ? receipts.AsEnumerable() : receipts.AsEnumerable().Reverse()))
+                {
+                    // fertig mit der zahlung?
+                    if (payment.OverPayment == 0)
+                        break;
+
+                    if (receipt is SalesInvoice || receipt is OtherIncomeReceipt)
+                    {
+                        // Verkauf -> unsere einkünfte, transaktion ist positiv
+                        if (receipt.OpenAmount > 0 && payment.OverPayment >= receipt.OpenAmount)
+                        {
+                            // komplett Zahlung
+                            Transfer(payment, receipt, receipt.OpenAmount);
+                            didTransfered = true;
+                        }
+                        else if (payment.OverPayment > 0 && payment.OverPayment < receipt.OpenAmount)
+                        {
+                            // teilzahlung
+                            Transfer(payment, receipt, payment.OverPayment);
+                            didTransfered = true;
+                        }
+                        else if (payment.OverPayment < 0 && -payment.OverPayment < receipt.PaymentAmount)
+                        {
+                            // teil-rücküberweisung
+                            Transfer(payment, receipt, payment.OverPayment);
+                            didTransfered = true;
+                        }
+                        else if (receipt.PaymentAmount > 0 && -payment.OverPayment >= receipt.PaymentAmount)
+                        {
+                            // komplett rücküberweisung
+                            // transfer z => r
+                            Transfer(payment, receipt, -receipt.PaymentAmount);
+                            didTransfered = true;
+                        }
+                    }
+                    else
+                    {
+                        // Einkauf -> unsere ausgaben, transaktion ist negativ
+                        if (receipt.OpenAmount > 0 && -payment.OverPayment >= receipt.OpenAmount)
+                        {
+                            // komplett Zahlung
+                            Transfer(payment, receipt, -receipt.OpenAmount);
+                            didTransfered = true;
+                        }
+                        else if (-payment.OverPayment > 0 && -payment.OverPayment < receipt.OpenAmount)
+                        {
+                            // teilzahlung
+                            Transfer(payment, receipt, payment.OverPayment);
+                            didTransfered = true;
+                        }
+                        else if (-payment.OverPayment < 0 && payment.OverPayment < receipt.PaymentAmount)
+                        {
+                            // teil-rücküberweisung
+                            Transfer(payment, receipt, payment.OverPayment);
+                            didTransfered = true;
+                        }
+                        else if (receipt.PaymentAmount > 0 && payment.OverPayment >= receipt.PaymentAmount)
+                        {
+                            // komplett rücküberweisung
+                            // transfer z => r
+                            Transfer(payment, receipt, receipt.PaymentAmount);
+                            didTransfered = true;
+                        }
+                    }
+                }
+            }
+            return didTransfered;
+        }
+
+        private Receipt_Transaction Transfer(Transaction payment, Receipt receipt, decimal amount)
+        {
+            var r_z = DataContext.Create<Receipt_Transaction>();
+            r_z.Receipt = receipt;
+            r_z.Transaction = payment;
+            r_z.Amount = amount;
+            return r_z;
         }
         #endregion
     }
