@@ -92,7 +92,7 @@ namespace Zetbox.Basic.Invoicing
             var result = ctx.Create<SalesInvoice>();
 
             result.Description = obj.Description;
-            result.Document = obj.Document;
+            // result.Document = obj.Document; Don't copy document on reuse
             result.InternalOrganization = obj.InternalOrganization;
             result.Message = obj.Message;
             result.Customer = obj.Customer;
@@ -120,7 +120,7 @@ namespace Zetbox.Basic.Invoicing
 
             result.DueDate.DaysOffset = (obj.DueDate - obj.Date).TotalDays;
             result.Description = obj.Description;
-            result.Document = obj.Document;
+            // result.Document = obj.Document; Don't copy document on reuse
             result.IntOrg = obj.InternalOrganization;
             result.Message = obj.Message;
             result.Customer = obj.Customer;
