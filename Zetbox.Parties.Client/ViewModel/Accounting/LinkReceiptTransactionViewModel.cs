@@ -10,6 +10,9 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
     using Zetbox.Basic.Accounting;
     using Zetbox.Basic.Invoicing;
     using Zetbox.Basic.Parties;
+    using at.dasz.DocumentManagement;
+    using Zetbox.App.Base;
+    using System.IO;
 
     [ViewModelDescriptor]
     public class LinkReceiptTransactionViewModel : WindowViewModel
@@ -270,15 +273,8 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
 
             var template = (ReceiptTemplate)Templates.Single(i => i.IsSelected).Template.Object;
             var newReceipt = template.CreateReceipt();
-            
-            var didTransfered = LinkReceiptsTransaction(new List<Receipt>(new [] { newReceipt}));
-            if (!didTransfered)
-            {
-                ViewModelFactory.ShowMessage("No link was created, please check, if the new receipt is filled out correctly.", "Warning");
-                return;
-            }
 
-            ViewModelFactory.ShowModel(DataObjectViewModel.Fetch(ViewModelFactory, DataContext, Parent, newReceipt), true);
+            LinkAndSow(newReceipt);
             Show = false;
         }
 
@@ -304,6 +300,18 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
 
         public void CreatePurchaseInvoice()
         {
+            var newReceipt = DataContext.Create<PurchaseInvoice>();
+            newReceipt.Supplier = Transaction.Party.PartyRole.OfType<Supplier>().FirstOrDefault();
+            newReceipt.FulfillmentDate = Transaction.Date;
+            
+            var newItem = DataContext.Create<PurchaseInvoiceItem>();
+            newItem.Amount = -Transaction.Amount;
+            newReceipt.Items.Add(newItem);
+
+            newReceipt.Document = CreateDocumentFromTransaction();
+
+            LinkAndSow(newReceipt);
+            Show = false;
         }
 
         private ICommandViewModel _CreateOtherExpenseCommand = null;
@@ -321,6 +329,16 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
 
         public void CreateOtherExpense()
         {
+            var newReceipt = DataContext.Create<OtherExpenseReceipt>();
+            newReceipt.Party = Transaction.Party;
+            newReceipt.FulfillmentDate = Transaction.Date;
+            newReceipt.Total = -Transaction.Amount;
+            newReceipt.TotalNet = -Transaction.Amount;
+
+            newReceipt.Document = CreateDocumentFromTransaction();
+            
+            LinkAndSow(newReceipt);
+            Show = false;
         }
 
         private ICommandViewModel _CreateOtherIncomeCommand = null;
@@ -338,6 +356,16 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
 
         public void CreateOtherIncome()
         {
+            var newReceipt = DataContext.Create<OtherIncomeReceipt>();
+            newReceipt.Party = Transaction.Party;
+            newReceipt.FulfillmentDate = Transaction.Date;
+            newReceipt.Total = Transaction.Amount;
+            newReceipt.TotalNet = Transaction.Amount;
+
+            newReceipt.Document = CreateDocumentFromTransaction();
+
+            LinkAndSow(newReceipt);
+            Show = false;
         }
 
         private ICommandViewModel _CreateSalesInvoiceCommand = null;
@@ -355,10 +383,44 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
 
         public void CreateSalesInvoice()
         {
+            var newReceipt = DataContext.Create<SalesInvoice>();
+            newReceipt.Customer = Transaction.Party.PartyRole.OfType<Customer>().FirstOrDefault();
+            newReceipt.FulfillmentDate = Transaction.Date;
+
+            var newItem = DataContext.Create<SalesInvoiceItem>();
+            newItem.Amount = Transaction.Amount;
+            newReceipt.Items.Add(newItem);
+
+            newReceipt.Document = CreateDocumentFromTransaction();
+        
+            LinkAndSow(newReceipt);
+            Show = false;
+        }
+
+        private StaticFile CreateDocumentFromTransaction()
+        {
+            var document = DataContext.Create<StaticFile>();
+            var stream = new MemoryStream();
+            var sw = new StreamWriter(stream);
+            sw.Write(Transaction.Comment);
+            sw.Flush();
+            stream.Seek(0, SeekOrigin.Begin);
+            document.Blob = DataContext.Find<Blob>(DataContext.CreateBlob(stream, "Receipt.txt", "text/plain"));
+            return document;
         }
         #endregion
 
         #region Link receipts and transaction
+        private void LinkAndSow(Receipt newReceipt)
+        {
+            ViewModelFactory.ShowModel(DataObjectViewModel.Fetch(ViewModelFactory, DataContext, Parent, newReceipt), true);
+            var didTransfered = LinkReceiptsTransaction(new List<Receipt>(new[] { newReceipt }));
+            if (!didTransfered)
+            {
+                ViewModelFactory.ShowMessage("No link was created, please check, if the new receipt is filled out correctly.", "Warning");
+            }
+        }
+
         private bool LinkReceiptsTransaction(List<Receipt> receipts)
         {
             var trans = Transaction;
