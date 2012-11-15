@@ -9,13 +9,7 @@
                   mc:Ignorable="d"
                   d:DesignHeight="300"
                   d:DesignWidth="300">
-    <ctrls:WindowView.Resources>
-        <Style x:Key="addedMargins">
-            <Setter Property="FrameworkElement.Margin"
-                    Value="5" />
-        </Style>
-    </ctrls:WindowView.Resources>
-    <TabControl Style="{StaticResource addedMargins}">
+    <TabControl>
         <TabItem Header="Receipts">
             <DockPanel LastChildFill="True">
                 <StackPanel DockPanel.Dock="Top">
@@ -23,12 +17,11 @@
                     <ctrls:LabeledView DataContext="{Binding TransactionViewModel.PropertyModelsByName[Amount]}" />
                 </StackPanel>
                 <UniformGrid DockPanel.Dock="Bottom"
-                             Style="{StaticResource addedMargins}"
                              Rows="1">
                     <ctrls:CommandButton CommandViewModel="{Binding ApplyCommand}"
-                                         Style="{StaticResource addedMargins}" />
+                                         Style="{StaticResource ImageButton}" />
                     <ctrls:CommandButton CommandViewModel="{Binding CancelCommand}"
-                                         Style="{StaticResource addedMargins}" />
+                                         Style="{StaticResource ImageButton}" />
 
                 </UniformGrid>
                 <ctrls:ZetboxListView ItemsSource="{Binding Receipts}"
@@ -65,12 +58,11 @@
                     <ctrls:LabeledView DataContext="{Binding TransactionViewModel.PropertyModelsByName[Amount]}" />
                 </StackPanel>
                 <UniformGrid DockPanel.Dock="Bottom"
-                             Style="{StaticResource addedMargins}"
                              Rows="1">
                     <ctrls:CommandButton CommandViewModel="{Binding CreateFromTemplateCommand}"
-                                         Style="{StaticResource addedMargins}" />
+                                         Style="{StaticResource ImageButton}" />
                     <ctrls:CommandButton CommandViewModel="{Binding CancelCommand}"
-                                         Style="{StaticResource addedMargins}" />
+                                         Style="{StaticResource ImageButton}" />
 
                 </UniformGrid>
                 <ctrls:ZetboxListView ItemsSource="{Binding Templates}"
@@ -95,18 +87,26 @@
             </DockPanel>
         </TabItem>
         <TabItem Header="Create new">
-            <StackPanel>
-                <ctrls:CommandButton CommandViewModel="{Binding CreatePurchaseInvoiceCommand}"
-                                     Style="{StaticResource addedMargins}" />
-                <ctrls:CommandButton CommandViewModel="{Binding CreateOtherExpenseCommand}"
-                                     Style="{StaticResource addedMargins}" />
-                <ctrls:CommandButton CommandViewModel="{Binding CreateOtherIncomeCommand}"
-                                     Style="{StaticResource addedMargins}" />
-                <ctrls:CommandButton CommandViewModel="{Binding CreateSalesInvoiceCommand}"
-                                     Style="{StaticResource addedMargins}" />
-                <ctrls:CommandButton CommandViewModel="{Binding CancelCommand}"
-                                     Style="{StaticResource addedMargins}" />
-            </StackPanel>
+            <DockPanel LastChildFill="True">
+                <UniformGrid DockPanel.Dock="Bottom"
+                             Rows="1">
+                    <ctrls:CommandButton CommandViewModel="{Binding CancelCommand}"
+                                         Style="{StaticResource ImageButton}" />
+
+                </UniformGrid>
+                <UniformGrid Columns="2"
+                             Width="300"
+                             Height="200">
+                    <ctrls:CommandButton CommandViewModel="{Binding CreatePurchaseInvoiceCommand}"
+                                         Style="{StaticResource ImageButton}" />
+                    <ctrls:CommandButton CommandViewModel="{Binding CreateOtherExpenseCommand}"
+                                         Style="{StaticResource ImageButton}" />
+                    <ctrls:CommandButton CommandViewModel="{Binding CreateOtherIncomeCommand}"
+                                         Style="{StaticResource ImageButton}" />
+                    <ctrls:CommandButton CommandViewModel="{Binding CreateSalesInvoiceCommand}"
+                                         Style="{StaticResource ImageButton}" />
+                </UniformGrid>
+            </DockPanel>
         </TabItem>
     </TabControl>
 </ctrls:WindowView>
