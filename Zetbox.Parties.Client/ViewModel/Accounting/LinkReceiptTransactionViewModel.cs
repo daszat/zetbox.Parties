@@ -274,6 +274,23 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             var template = (ReceiptTemplate)Templates.Single(i => i.IsSelected).Template.Object;
             var newReceipt = template.CreateReceipt();
 
+            if (newReceipt is OtherExpenseReceipt)
+            {
+                var oe = (OtherExpenseReceipt)newReceipt;
+                if (oe.Total == 0 && oe.TotalNet == 0)
+                {
+                    oe.Total = oe.TotalNet = -Transaction.Amount;
+                }
+            }
+            else if (newReceipt is OtherIncomeReceipt)
+            {
+                var oe = (OtherIncomeReceipt)newReceipt;
+                if (oe.Total == 0 && oe.TotalNet == 0)
+                {
+                    oe.Total = oe.TotalNet = Transaction.Amount;
+                }
+            }
+
             LinkAndSow(newReceipt);
             Show = false;
         }
