@@ -508,6 +508,11 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
                         didTransfered = true;
                     }
                 }
+
+                if (receipt.OpenAmount == 0 && receipt.FulfillmentDate == null)
+                {
+                    receipt.FulfillmentDate = Transaction.Date;
+                }
             }
             return didTransfered;
         }
