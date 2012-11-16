@@ -292,6 +292,7 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             }
 
             newReceipt.Date = Transaction.Date;
+            newReceipt.DueDate = Transaction.Date;
 
             LinkAndSow(newReceipt);
             Show = false;
@@ -321,6 +322,7 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         {
             var newReceipt = DataContext.Create<PurchaseInvoice>();
             newReceipt.Date = Transaction.Date;
+            newReceipt.DueDate = Transaction.Date;
             newReceipt.Supplier = Transaction.Party.PartyRole.OfType<Supplier>().FirstOrDefault();
 
             var newItem = DataContext.Create<PurchaseInvoiceItem>();
@@ -350,6 +352,7 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         {
             var newReceipt = DataContext.Create<OtherExpenseReceipt>();
             newReceipt.Date = Transaction.Date;
+            newReceipt.DueDate = Transaction.Date;
             newReceipt.Party = Transaction.Party;
             newReceipt.Total = -Transaction.Amount;
             newReceipt.TotalNet = -Transaction.Amount;
@@ -377,6 +380,7 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         {
             var newReceipt = DataContext.Create<OtherIncomeReceipt>();
             newReceipt.Date = Transaction.Date;
+            newReceipt.DueDate = Transaction.Date;
             newReceipt.Party = Transaction.Party;
             newReceipt.Total = Transaction.Amount;
             newReceipt.TotalNet = Transaction.Amount;
@@ -404,6 +408,7 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         {
             var newReceipt = DataContext.Create<SalesInvoice>();
             newReceipt.Date = Transaction.Date;
+            newReceipt.DueDate = Transaction.Date;
             newReceipt.Customer = Transaction.Party.PartyRole.OfType<Customer>().FirstOrDefault();
 
             var newItem = DataContext.Create<SalesInvoiceItem>();
