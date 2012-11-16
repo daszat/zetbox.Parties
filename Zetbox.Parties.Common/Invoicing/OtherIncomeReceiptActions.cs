@@ -53,5 +53,10 @@ namespace Zetbox.Basic.Invoicing
 
             e.Result = result;
         }
+
+        [Invocation]
+        public static void ChangeTypeTo(OtherIncomeReceipt obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.Receipt> e, ReceiptType newType)
+        {
+        }
     }
 }

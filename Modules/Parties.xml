@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-11-14T17:42:17.5478637Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-11-16T13:47:29.0249338Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -2657,6 +2657,7 @@ public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&
     <GUI:Parent>702e6fde-6b9d-4286-8f04-f4d6076a488f</GUI:Parent>
     <GUI:Children_pos>402</GUI:Children_pos>
     <GUI:Title>Accounting</GUI:Title>
+    <GUI:ViewModelDescriptor>ebc13c2a-0375-46e6-9fc2-a4ee5afc3568</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
   <GUI:NavigationSearchScreen ExportGuid="a6e848de-abb8-474b-a33c-e77537a7dd05">
     <GUI:ChangedOn>2011-11-08T21:30:07.219128Z</GUI:ChangedOn>
@@ -2669,6 +2670,14 @@ public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&
     <GUI:InitialSort>Name</GUI:InitialSort>
     <GUI:Type>9dc19fb1-4c9d-422d-89e3-bed1ebebf5a6</GUI:Type>
   </GUI:NavigationSearchScreen>
+  <GUI:NavigationScreen ExportGuid="0b657bd1-8e9b-40a4-abba-fbfe4b68892b">
+    <GUI:ChangedOn>2012-11-16T12:41:25.1731227Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2012-11-16T12:41:25.1731227Z</GUI:CreatedOn>
+    <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
+    <GUI:Parent>7e1f4c85-784f-4404-b396-ef4862662ced</GUI:Parent>
+    <GUI:Children_pos>3</GUI:Children_pos>
+    <GUI:Title>Reports</GUI:Title>
+  </GUI:NavigationScreen>
   <GUI:ControlKind ExportGuid="5d3b4969-b3cc-4dfb-b51f-b88fbf1ef2b2">
     <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
     <GUI:Name>Zetbox.Basic.Accounting.LinkReceiptTransactionDialog</GUI:Name>
@@ -3589,6 +3598,17 @@ public static void ObjectIsValid(ReceiptTemplate obj, ObjectIsValidEventArgs e)
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
     <ZetboxBase:TableName>ReceiptTemplates</ZetboxBase:TableName>
   </ZetboxBase:ObjectClass>
+  <ZetboxBase:Enumeration ExportGuid="66973b1e-7896-4b44-a33c-d019ed88c42d">
+    <ZetboxBase:ChangedOn>2012-11-16T12:46:38.2940322Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-16T12:46:38.2940322Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>Type of an receipt</ZetboxBase:Description>
+    <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
+    <ZetboxBase:Name>ReceiptType</ZetboxBase:Name>
+    <GUI:ShowIconInLists>false</GUI:ShowIconInLists>
+    <GUI:ShowIdInLists>false</GUI:ShowIdInLists>
+    <GUI:ShowNameInLists>false</GUI:ShowNameInLists>
+    <ZetboxBase:AreFlags>false</ZetboxBase:AreFlags>
+  </ZetboxBase:Enumeration>
   <ZetboxBase:ObjectClass ExportGuid="84c9fa60-87dd-4715-9c14-38302a7936fd">
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.028281Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-07-26T23:59:24Z</ZetboxBase:CreatedOn>
@@ -10703,6 +10723,42 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <ZetboxBase:RoleName>VATType</ZetboxBase:RoleName>
     <ZetboxBase:Type>7caf90cf-f27b-4e7b-936e-3858b50e8e0a</ZetboxBase:Type>
   </ZetboxBase:RelationEnd>
+  <ZetboxBase:EnumerationEntry ExportGuid="9346966a-aab1-4b59-bb42-34f6f56d3fe5">
+    <ZetboxBase:ChangedOn>2012-11-16T12:46:38.2940322Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-16T12:46:38.2940322Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Enumeration>66973b1e-7896-4b44-a33c-d019ed88c42d</ZetboxBase:Enumeration>
+    <ZetboxBase:EnumerationEntries_pos>1</ZetboxBase:EnumerationEntries_pos>
+    <ZetboxBase:Label>Other expense receipt</ZetboxBase:Label>
+    <ZetboxBase:Name>OtherExpenseReceipt</ZetboxBase:Name>
+    <ZetboxBase:Value>2</ZetboxBase:Value>
+  </ZetboxBase:EnumerationEntry>
+  <ZetboxBase:EnumerationEntry ExportGuid="05ca876d-f193-4e80-95b5-0840bdd63000">
+    <ZetboxBase:ChangedOn>2012-11-16T12:47:29.0249338Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-16T12:47:29.0249338Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Enumeration>66973b1e-7896-4b44-a33c-d019ed88c42d</ZetboxBase:Enumeration>
+    <ZetboxBase:EnumerationEntries_pos>3</ZetboxBase:EnumerationEntries_pos>
+    <ZetboxBase:Label>Other income receipt</ZetboxBase:Label>
+    <ZetboxBase:Name>OtherIncomeReceipt</ZetboxBase:Name>
+    <ZetboxBase:Value>4</ZetboxBase:Value>
+  </ZetboxBase:EnumerationEntry>
+  <ZetboxBase:EnumerationEntry ExportGuid="ef1746f7-37d7-43f7-9291-bb4dd82f1a9a">
+    <ZetboxBase:ChangedOn>2012-11-16T12:46:38.2940322Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-16T12:46:38.2940322Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Enumeration>66973b1e-7896-4b44-a33c-d019ed88c42d</ZetboxBase:Enumeration>
+    <ZetboxBase:EnumerationEntries_pos>0</ZetboxBase:EnumerationEntries_pos>
+    <ZetboxBase:Label>Purchase invoice</ZetboxBase:Label>
+    <ZetboxBase:Name>PurchaseInvoice</ZetboxBase:Name>
+    <ZetboxBase:Value>1</ZetboxBase:Value>
+  </ZetboxBase:EnumerationEntry>
+  <ZetboxBase:EnumerationEntry ExportGuid="22c3bf5a-92d1-4542-a3bd-b0d7a7266e0a">
+    <ZetboxBase:ChangedOn>2012-11-16T12:46:38.2940322Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-16T12:46:38.2940322Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Enumeration>66973b1e-7896-4b44-a33c-d019ed88c42d</ZetboxBase:Enumeration>
+    <ZetboxBase:EnumerationEntries_pos>2</ZetboxBase:EnumerationEntries_pos>
+    <ZetboxBase:Label>Sales invoice</ZetboxBase:Label>
+    <ZetboxBase:Name>SalesInvoice</ZetboxBase:Name>
+    <ZetboxBase:Value>3</ZetboxBase:Value>
+  </ZetboxBase:EnumerationEntry>
   <ZetboxBase:Method ExportGuid="a64b480f-4380-41b3-8628-59cc0e614eb5">
     <ZetboxBase:ChangedOn>2012-05-09T11:02:50.4178512Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
@@ -10823,6 +10879,32 @@ public static void MakeQuoteCanExecReason(ImportedFile obj, MethodReturnEventArg
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>MakeQuote</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>523a75bb-29c4-421c-9343-93d8658bb5f8</ZetboxBase:ObjectClass>
+  </ZetboxBase:Method>
+  <ZetboxBase:Method ExportGuid="d71864d6-d844-4226-ae88-387223b185d1">
+    <ZetboxBase:CategoryTags>Mistakes</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2012-11-16T12:43:25.1519851Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void ChangeTypeTo(Receipt obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.Receipt&gt; e)
+{
+}
+
+[Invocation]
+public static void ChangeTypeToCanExec(Receipt obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void ChangeTypeToCanExecReason(Receipt obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2012-11-16T12:43:25.1519851Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>Changes the type of the current receipt</ZetboxBase:Description>
+    <GUI:IsDisplayable>true</GUI:IsDisplayable>
+    <ZetboxBase:Label>Change type</ZetboxBase:Label>
+    <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
+    <ZetboxBase:Name>ChangeTypeTo</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</ZetboxBase:ObjectClass>
   </ZetboxBase:Method>
   <ZetboxBase:Method ExportGuid="ac7180a0-ce46-4d93-99f9-6783d980ee96">
     <ZetboxBase:ChangedOn>2011-10-21T00:03:25.584Z</ZetboxBase:ChangedOn>
@@ -11281,6 +11363,30 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <ZetboxBase:Parameter_pos>0</ZetboxBase:Parameter_pos>
     <ZetboxBase:Name>retVal</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>3cb91c18-07bf-42b0-8048-df808670be55</ZetboxBase:ObjectClass>
+  </ZetboxBase:ObjectReferenceParameter>
+  <ZetboxBase:EnumParameter ExportGuid="aed74f0f-0a1f-49da-9d7d-a8b9bc6a7014">
+    <ZetboxBase:ChangedOn>2012-11-16T12:46:38.2940322Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-16T12:46:38.2940322Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>The new type of the receipt</ZetboxBase:Description>
+    <ZetboxBase:IsList>false</ZetboxBase:IsList>
+    <ZetboxBase:IsNullable>false</ZetboxBase:IsNullable>
+    <ZetboxBase:IsReturnParameter>false</ZetboxBase:IsReturnParameter>
+    <ZetboxBase:Label>New Type</ZetboxBase:Label>
+    <ZetboxBase:Method>d71864d6-d844-4226-ae88-387223b185d1</ZetboxBase:Method>
+    <ZetboxBase:Parameter_pos>1</ZetboxBase:Parameter_pos>
+    <ZetboxBase:Name>newType</ZetboxBase:Name>
+    <ZetboxBase:Enumeration>66973b1e-7896-4b44-a33c-d019ed88c42d</ZetboxBase:Enumeration>
+  </ZetboxBase:EnumParameter>
+  <ZetboxBase:ObjectReferenceParameter ExportGuid="c6735b16-d5c8-4692-ab37-b2fbed0ccf4e">
+    <ZetboxBase:ChangedOn>2012-11-16T12:43:25.1519851Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-16T12:43:25.1519851Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:IsList>false</ZetboxBase:IsList>
+    <ZetboxBase:IsNullable>false</ZetboxBase:IsNullable>
+    <ZetboxBase:IsReturnParameter>true</ZetboxBase:IsReturnParameter>
+    <ZetboxBase:Method>d71864d6-d844-4226-ae88-387223b185d1</ZetboxBase:Method>
+    <ZetboxBase:Parameter_pos>0</ZetboxBase:Parameter_pos>
+    <ZetboxBase:Name>retVal</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</ZetboxBase:ObjectClass>
   </ZetboxBase:ObjectReferenceParameter>
   <ZetboxBase:DecimalParameter ExportGuid="68a2f8c8-f641-4b68-bca6-a85d78c382ce">
     <ZetboxBase:ChangedOn>2011-10-21T00:02:53.681Z</ZetboxBase:ChangedOn>
@@ -18666,6 +18772,7 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <GUI:Parent>702e6fde-6b9d-4286-8f04-f4d6076a488f</GUI:Parent>
     <GUI:Children_pos>404</GUI:Children_pos>
     <GUI:Title>Settings</GUI:Title>
+    <GUI:ViewModelDescriptor>ebc13c2a-0375-46e6-9fc2-a4ee5afc3568</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
   <GUI:NavigationScreen ExportGuid="83c3d76b-dd6a-4abe-9a08-9f378dbd6e96">
     <GUI:ChangedOn>2012-10-16T10:18:00.2905141Z</GUI:ChangedOn>
