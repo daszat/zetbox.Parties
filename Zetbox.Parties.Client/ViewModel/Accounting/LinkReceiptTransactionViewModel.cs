@@ -291,6 +291,8 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
                 }
             }
 
+            newReceipt.Date = Transaction.Date;
+
             LinkAndSow(newReceipt);
             Show = false;
         }
@@ -318,8 +320,8 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         public void CreatePurchaseInvoice()
         {
             var newReceipt = DataContext.Create<PurchaseInvoice>();
+            newReceipt.Date = Transaction.Date;
             newReceipt.Supplier = Transaction.Party.PartyRole.OfType<Supplier>().FirstOrDefault();
-            newReceipt.FulfillmentDate = Transaction.Date;
 
             var newItem = DataContext.Create<PurchaseInvoiceItem>();
             newItem.Amount = -Transaction.Amount;
@@ -347,8 +349,8 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         public void CreateOtherExpense()
         {
             var newReceipt = DataContext.Create<OtherExpenseReceipt>();
+            newReceipt.Date = Transaction.Date;
             newReceipt.Party = Transaction.Party;
-            newReceipt.FulfillmentDate = Transaction.Date;
             newReceipt.Total = -Transaction.Amount;
             newReceipt.TotalNet = -Transaction.Amount;
 
@@ -374,8 +376,8 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         public void CreateOtherIncome()
         {
             var newReceipt = DataContext.Create<OtherIncomeReceipt>();
+            newReceipt.Date = Transaction.Date;
             newReceipt.Party = Transaction.Party;
-            newReceipt.FulfillmentDate = Transaction.Date;
             newReceipt.Total = Transaction.Amount;
             newReceipt.TotalNet = Transaction.Amount;
 
@@ -401,8 +403,8 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         public void CreateSalesInvoice()
         {
             var newReceipt = DataContext.Create<SalesInvoice>();
+            newReceipt.Date = Transaction.Date;
             newReceipt.Customer = Transaction.Party.PartyRole.OfType<Customer>().FirstOrDefault();
-            newReceipt.FulfillmentDate = Transaction.Date;
 
             var newItem = DataContext.Create<SalesInvoiceItem>();
             newItem.Amount = Transaction.Amount;
