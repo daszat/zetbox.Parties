@@ -320,7 +320,7 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             var newReceipt = DataContext.Create<PurchaseInvoice>();
             newReceipt.Supplier = Transaction.Party.PartyRole.OfType<Supplier>().FirstOrDefault();
             newReceipt.FulfillmentDate = Transaction.Date;
-            
+
             var newItem = DataContext.Create<PurchaseInvoiceItem>();
             newItem.Amount = -Transaction.Amount;
             newReceipt.Items.Add(newItem);
@@ -353,7 +353,7 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             newReceipt.TotalNet = -Transaction.Amount;
 
             newReceipt.Document = CreateDocumentFromTransaction();
-            
+
             LinkAndSow(newReceipt);
             Show = false;
         }
@@ -409,7 +409,7 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             newReceipt.Items.Add(newItem);
 
             newReceipt.Document = CreateDocumentFromTransaction();
-        
+
             LinkAndSow(newReceipt);
             Show = false;
         }
@@ -442,81 +442,70 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         {
             var trans = Transaction;
             var party = trans.Party;
-            var otherOverpayments = DataContext.GetQuery<Transaction>()
-                .Where(t => t.Party == party && !(t == trans))
-                .Where(t => t.OverPayment != 0)
-                .OrderBy(z => z.Date)
-                .ToList();
-            // aktuelle Zahlung explizit als letzte einfügen
-            otherOverpayments.Insert(0, Transaction);
-
             bool didTransfered = false;
-            foreach (var payment in otherOverpayments)
+            // Zahlungen von alt->neu anrechnen; Rücküberweisungen neu->alt
+            foreach (var receipt in (trans.OverPayment > 0 ? receipts.AsEnumerable() : receipts.AsEnumerable().Reverse()))
             {
-                // Zahlungen von alt->neu anrechnen; Rücküberweisungen neu->alt
-                foreach (var receipt in (payment.OverPayment > 0 ? receipts.AsEnumerable() : receipts.AsEnumerable().Reverse()))
-                {
-                    // fertig mit der zahlung?
-                    if (payment.OverPayment == 0)
-                        break;
+                // fertig mit der zahlung?
+                if (trans.OverPayment == 0)
+                    break;
 
-                    if (receipt is SalesInvoice || receipt is OtherIncomeReceipt)
+                if (receipt is SalesInvoice || receipt is OtherIncomeReceipt)
+                {
+                    // Verkauf -> unsere einkünfte, transaktion ist positiv
+                    if (receipt.OpenAmount > 0 && trans.OverPayment >= receipt.OpenAmount)
                     {
-                        // Verkauf -> unsere einkünfte, transaktion ist positiv
-                        if (receipt.OpenAmount > 0 && payment.OverPayment >= receipt.OpenAmount)
-                        {
-                            // komplett Zahlung
-                            Transfer(payment, receipt, receipt.OpenAmount);
-                            didTransfered = true;
-                        }
-                        else if (payment.OverPayment > 0 && payment.OverPayment < receipt.OpenAmount)
-                        {
-                            // teilzahlung
-                            Transfer(payment, receipt, payment.OverPayment);
-                            didTransfered = true;
-                        }
-                        else if (payment.OverPayment < 0 && -payment.OverPayment < receipt.PaymentAmount)
-                        {
-                            // teil-rücküberweisung
-                            Transfer(payment, receipt, payment.OverPayment);
-                            didTransfered = true;
-                        }
-                        else if (receipt.PaymentAmount > 0 && -payment.OverPayment >= receipt.PaymentAmount)
-                        {
-                            // komplett rücküberweisung
-                            // transfer z => r
-                            Transfer(payment, receipt, -receipt.PaymentAmount);
-                            didTransfered = true;
-                        }
+                        // komplett Zahlung
+                        Transfer(trans, receipt, receipt.OpenAmount);
+                        didTransfered = true;
                     }
-                    else
+                    else if (trans.OverPayment > 0 && trans.OverPayment < receipt.OpenAmount)
                     {
-                        // Einkauf -> unsere ausgaben, transaktion ist negativ
-                        if (receipt.OpenAmount > 0 && -payment.OverPayment >= receipt.OpenAmount)
-                        {
-                            // komplett Zahlung
-                            Transfer(payment, receipt, -receipt.OpenAmount);
-                            didTransfered = true;
-                        }
-                        else if (-payment.OverPayment > 0 && -payment.OverPayment < receipt.OpenAmount)
-                        {
-                            // teilzahlung
-                            Transfer(payment, receipt, payment.OverPayment);
-                            didTransfered = true;
-                        }
-                        else if (-payment.OverPayment < 0 && payment.OverPayment < receipt.PaymentAmount)
-                        {
-                            // teil-rücküberweisung
-                            Transfer(payment, receipt, payment.OverPayment);
-                            didTransfered = true;
-                        }
-                        else if (receipt.PaymentAmount > 0 && payment.OverPayment >= receipt.PaymentAmount)
-                        {
-                            // komplett rücküberweisung
-                            // transfer z => r
-                            Transfer(payment, receipt, receipt.PaymentAmount);
-                            didTransfered = true;
-                        }
+                        // teilzahlung
+                        Transfer(trans, receipt, trans.OverPayment);
+                        didTransfered = true;
+                    }
+                    else if (trans.OverPayment < 0 && -trans.OverPayment < receipt.PaymentAmount)
+                    {
+                        // teil-rücküberweisung
+                        Transfer(trans, receipt, trans.OverPayment);
+                        didTransfered = true;
+                    }
+                    else if (receipt.PaymentAmount > 0 && -trans.OverPayment >= receipt.PaymentAmount)
+                    {
+                        // komplett rücküberweisung
+                        // transfer z => r
+                        Transfer(trans, receipt, -receipt.PaymentAmount);
+                        didTransfered = true;
+                    }
+                }
+                else
+                {
+                    // Einkauf -> unsere ausgaben, transaktion ist negativ
+                    if (receipt.OpenAmount > 0 && -trans.OverPayment >= receipt.OpenAmount)
+                    {
+                        // komplett Zahlung
+                        Transfer(trans, receipt, -receipt.OpenAmount);
+                        didTransfered = true;
+                    }
+                    else if (-trans.OverPayment > 0 && -trans.OverPayment < receipt.OpenAmount)
+                    {
+                        // teilzahlung
+                        Transfer(trans, receipt, trans.OverPayment);
+                        didTransfered = true;
+                    }
+                    else if (-trans.OverPayment < 0 && trans.OverPayment < receipt.PaymentAmount)
+                    {
+                        // teil-rücküberweisung
+                        Transfer(trans, receipt, trans.OverPayment);
+                        didTransfered = true;
+                    }
+                    else if (receipt.PaymentAmount > 0 && trans.OverPayment >= receipt.PaymentAmount)
+                    {
+                        // komplett rücküberweisung
+                        // transfer z => r
+                        Transfer(trans, receipt, receipt.PaymentAmount);
+                        didTransfered = true;
                     }
                 }
             }
