@@ -284,10 +284,45 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             }
             else if (newReceipt is OtherIncomeReceipt)
             {
-                var oe = (OtherIncomeReceipt)newReceipt;
-                if (oe.Total == 0 && oe.TotalNet == 0)
+                var oi = (OtherIncomeReceipt)newReceipt;
+                if (oi.Total == 0 && oi.TotalNet == 0)
                 {
-                    oe.Total = oe.TotalNet = Transaction.Amount;
+                    oi.Total = oi.TotalNet = Transaction.Amount;
+                }
+            }
+            else if (newReceipt is PurchaseInvoice)
+            {
+                var pi = (PurchaseInvoice)newReceipt;
+                if (pi.Items.Count == 0)
+                {
+                    var newItem = DataContext.Create<PurchaseInvoiceItem>();
+                    newItem.Amount = -Transaction.Amount;
+                    pi.Items.Add(newItem);
+                }
+                else if (pi.Items.Count == 1)
+                {
+                    var item = pi.Items.Single();
+                    if (item.Amount == 0m && item.AmountNet == 0m)
+                    {
+                        if (item.VATType != null)
+                        {
+                            var percent = (item.VATType.Percentage ?? 0m) / 100m;
+                            var net = (-Transaction.Amount / (1.0m + percent)) - (item.VATType.Absolute ?? 0m);
+                            if (item.UnitPrice == null || item.UnitPrice == 0m)
+                            {
+                                if (item.Quantity == 0) item.Quantity = 1;
+                                item.UnitPrice = net / item.Quantity;
+                            }
+                            else
+                            {
+                                item.AmountNet = net;
+                            }
+                        }
+                        else
+                        {
+                            item.Amount = -Transaction.Amount;
+                        }
+                    }
                 }
             }
 
@@ -534,6 +569,10 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             var document = DataContext.Create<StaticFile>();
             var stream = new MemoryStream();
             var sw = new StreamWriter(stream);
+            sw.WriteLine(Transaction.Date.ToShortDateString());
+            sw.WriteLine(Transaction.Amount.ToString("n2"));
+            sw.WriteLine(Transaction.Party);
+            sw.WriteLine("-----------------------------------------");
             sw.Write(Transaction.Comment);
             sw.Flush();
             stream.Seek(0, SeekOrigin.Begin);
