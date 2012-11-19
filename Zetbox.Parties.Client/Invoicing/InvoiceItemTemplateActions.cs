@@ -33,8 +33,8 @@ namespace Zetbox.Basic.Invoicing
         {
             if (obj.VATType != null)
             {
-                var percent = (obj.VATType.Percentage ?? (decimal)0) / (decimal)100;
-                obj.Amount = obj.AmountNet + (obj.AmountNet * percent) + (obj.VATType.Absolute ?? (decimal)0);
+                var percent = (obj.VATType.Percentage ?? 0m) / 100m;
+                obj.Amount = obj.AmountNet + (obj.AmountNet * percent) + (obj.VATType.Absolute ?? 0m);
             }
         }
 
@@ -43,8 +43,8 @@ namespace Zetbox.Basic.Invoicing
         {
             if (obj.VATType != null)
             {
-                var percent = (obj.VATType.Percentage ?? (decimal)0) / (decimal)100;
-                obj.Amount = obj.AmountNet + (obj.AmountNet * percent) + (obj.VATType.Absolute ?? (decimal)0);
+                var percent = (obj.VATType.Percentage ?? 0m) / 100m;
+                obj.Amount = obj.AmountNet + (obj.AmountNet * percent) + (obj.VATType.Absolute ?? 0m);
             }
         }
     }
