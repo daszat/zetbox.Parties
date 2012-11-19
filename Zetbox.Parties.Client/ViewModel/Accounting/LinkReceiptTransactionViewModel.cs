@@ -294,6 +294,12 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             newReceipt.Date = Transaction.Date;
             newReceipt.DueDate = Transaction.Date;
 
+            if (newReceipt.Document == null)
+            {
+                // Template does not contain a document -> create one from transaction
+                newReceipt.Document = CreateDocumentFromTransaction();
+            }
+
             LinkAndSow(newReceipt);
             Show = false;
         }
@@ -420,18 +426,6 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             LinkAndSow(newReceipt);
             Show = false;
         }
-
-        private StaticFile CreateDocumentFromTransaction()
-        {
-            var document = DataContext.Create<StaticFile>();
-            var stream = new MemoryStream();
-            var sw = new StreamWriter(stream);
-            sw.Write(Transaction.Comment);
-            sw.Flush();
-            stream.Seek(0, SeekOrigin.Begin);
-            document.Blob = DataContext.Find<Blob>(DataContext.CreateBlob(stream, "Receipt.txt", "text/plain"));
-            return document;
-        }
         #endregion
 
         #region Link receipts and transaction
@@ -531,6 +525,20 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             r_z.Transaction = payment;
             r_z.Amount = amount;
             return r_z;
+        }
+        #endregion
+
+        #region Create document
+        private StaticFile CreateDocumentFromTransaction()
+        {
+            var document = DataContext.Create<StaticFile>();
+            var stream = new MemoryStream();
+            var sw = new StreamWriter(stream);
+            sw.Write(Transaction.Comment);
+            sw.Flush();
+            stream.Seek(0, SeekOrigin.Begin);
+            document.Blob = DataContext.Find<Blob>(DataContext.CreateBlob(stream, "Receipt.txt", "text/plain"));
+            return document;
         }
         #endregion
     }
