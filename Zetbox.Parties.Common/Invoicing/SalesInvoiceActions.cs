@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Zetbox.API;
+using Zetbox.Basic.Parties;
 
 namespace Zetbox.Basic.Invoicing
 {
@@ -143,6 +144,61 @@ namespace Zetbox.Basic.Invoicing
         [Invocation]
         public static void ChangeTypeTo(SalesInvoice obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.Receipt> e, ReceiptType newType)
         {
+            var ctx = obj.Context;
+            switch (newType)
+            {
+                case ReceiptType.OtherExpenseReceipt:
+                    {
+                        var newObj = ctx.Create<OtherExpenseReceipt>();
+                        ReceiptHeper.CopyCommonData(obj, newObj);
+                        ReceiptHeper.MoveTransactions(obj, newObj);
+                        newObj.IntOrg = obj.InternalOrganization;
+                        newObj.Party = obj.Customer != null ?  obj.Customer.Party : null;
+                        ctx.Delete(obj);
+                        e.Result = newObj;
+                        break;
+                    }
+                case ReceiptType.OtherIncomeReceipt:
+                    {
+                        var newObj = ctx.Create<OtherIncomeReceipt>();
+                        ReceiptHeper.CopyCommonData(obj, newObj);
+                        ReceiptHeper.MoveTransactions(obj, newObj);
+                        newObj.IntOrg = obj.InternalOrganization;
+                        newObj.Party = obj.Customer != null ? obj.Customer.Party : null;
+                        ctx.Delete(obj);
+                        e.Result = newObj;
+                        break;
+                    }
+                case ReceiptType.PurchaseInvoice:
+                    {
+                        var newObj = ctx.Create<PurchaseInvoice>();
+                        ReceiptHeper.CopyCommonData(obj, newObj);
+                        ReceiptHeper.MoveTransactions(obj, newObj);
+                        newObj.InternalOrganization = obj.InternalOrganization;
+                        newObj.Supplier = obj.Customer != null ? obj.Customer.Party.PartyRole.OfType<Supplier>().FirstOrDefault() : null;
+                        foreach(var item in obj.Items)
+                        {
+                            var newItem = ctx.Create<PurchaseInvoiceItem>();
+                            newItem.Quantity = item.Quantity;
+                            newItem.UnitPrice = item.UnitPrice;
+                            newItem.AmountNet = item.AmountNet;
+                            newItem.VATType= item.VATType;
+                            newItem.Amount = item.Amount;
+                            newItem.Description = item.Description;
+                            newObj.Items.Add(newItem);
+                        }
+                        ctx.Delete(obj);
+                        e.Result = newObj;
+                        break;
+                    }
+                case ReceiptType.SalesInvoice:
+                    {
+                        e.Result = obj;
+                        break;
+                    }
+                default:
+                    break;
+            }   
         }
     }
 }

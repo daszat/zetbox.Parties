@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Zetbox.API;
+using Zetbox.Basic.Accounting;
 
 namespace Zetbox.Basic.Invoicing
 {
@@ -57,7 +58,35 @@ namespace Zetbox.Basic.Invoicing
         {
             obj.Recalculate("OpenAmount");
             obj.Recalculate("PaymentAmount");
-        }  
+        }
+    }
+
+    public static class ReceiptHeper
+    {
+        public static void CopyCommonData(Receipt src, Receipt dest)
+        {
+            dest.Total = src.Total;
+            dest.TotalNet = src.TotalNet;
+            dest.Date = src.Date;
+            dest.Description = src.Description;
+            dest.Document = src.Document;
+            dest.DueDate = src.DueDate;
+            dest.FulfillmentDate = src.FulfillmentDate;
+            dest.Message = src.Message;
+            dest.Period = src.Period;
+        }
+        
+        public static void MoveTransactions(Receipt src, Receipt dest)
+        {
+            var ctx = src.Context;
+            foreach (var srcTx in src.Transactions.ToList())
+            {
+                var newTx = ctx.Create<Receipt_Transaction>();
+                newTx.Amount = srcTx.Amount;
+                newTx.Transaction = srcTx.Transaction;
+                ctx.Delete(srcTx);
+            }
+        }
     }
 
     public static class ReceiptAmountCalculator
