@@ -17,6 +17,18 @@ namespace Zetbox.Basic.Invoicing
         }
 
         [Invocation]
+        public static void postSet_Total(ReceiptTemplate obj, PropertyPostSetterEventArgs<decimal> e)
+        {
+            if (obj is OtherIncomeReceiptTemplate || obj is OtherExpenseReceiptTemplate)
+            {
+                // There is no difference between total & total net
+                // sync the props in common to ensure, they are always the same
+                // TODO: Enable overriding property setter
+                obj.TotalNet = obj.Total;
+            }
+        }
+
+        [Invocation]
         public static void CreateReceipt(ReceiptTemplate obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.Receipt> e)
         {
         }

@@ -30,6 +30,14 @@ namespace Zetbox.Basic.Invoicing
         [Invocation]
         public static void postSet_Total(Receipt obj, PropertyPostSetterEventArgs<decimal> e)
         {
+            if (obj is OtherIncomeReceipt || obj is OtherExpenseReceipt)
+            {
+                // There is no difference between total & total net
+                // sync the props in common to ensure, they are always the same
+                // TODO: Enable overriding property setter
+                obj.TotalNet = obj.Total;
+            }
+
             UpdateCalculatedProperties(obj);
         }
 

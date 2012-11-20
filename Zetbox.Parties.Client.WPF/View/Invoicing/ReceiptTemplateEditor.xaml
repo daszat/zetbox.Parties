@@ -48,7 +48,6 @@
                     <ctrls:LabeledView DataContext="{Binding InternalOrganization}" />
                     <ctrls:LabeledView DataContext="{Binding Party}" />
                     <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
-                    <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
                 </StackPanel>
             </ScrollViewer>
         </Grid>

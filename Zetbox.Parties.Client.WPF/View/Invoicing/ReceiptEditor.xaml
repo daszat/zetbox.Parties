@@ -44,7 +44,6 @@
                 <TabItem Header="Transactions">
                     <StackPanel>
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
-                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[OpenAmount]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[PaymentAmount]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
@@ -65,7 +64,6 @@
                         <ctrls:LabeledView DataContext="{Binding Party}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
-                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[OpenAmount]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[PaymentAmount]}" />
                     </StackPanel>
