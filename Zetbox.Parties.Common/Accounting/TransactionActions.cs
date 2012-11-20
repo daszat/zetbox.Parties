@@ -75,10 +75,14 @@ namespace Zetbox.Basic.Accounting
                 {
                     e.Result = Math.Round(receipts.Sum(r => r.TotalNet), 2);
                 }
-                else
+                else if (receipts.Sum(r => r.TotalNet) != 0)
                 {
                     var vatp = receipts.Sum(r => r.Total) / receipts.Sum(r => r.TotalNet);
                     e.Result = Math.Round(obj.Amount / vatp, 2);
+                }
+                else
+                {
+                    e.Result = obj.Amount;
                 }
             }
         }
