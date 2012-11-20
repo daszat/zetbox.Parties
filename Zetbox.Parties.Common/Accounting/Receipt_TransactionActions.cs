@@ -66,8 +66,6 @@ namespace Zetbox.Basic.Accounting
             {
                 e.NewValue.Recalculate("OpenAmount");
                 e.NewValue.Recalculate("PaymentAmount");
-                e.NewValue.Recalculate("AmountNet");
-                e.NewValue.Recalculate("VAT");
             }
         }
 
