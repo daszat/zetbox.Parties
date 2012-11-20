@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-11-16T13:47:29.0249338Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-11-20T08:36:46.9094483Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:Account ExportGuid="5ce18612-eac2-4384-916d-ebf488f5a5ea">
-    <Accounting:ChangedOn>2012-10-12T08:16:49.8127899Z</Accounting:ChangedOn>
+    <Accounting:ChangedOn>2012-11-19T12:37:34.0433906Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2012-10-12T08:16:49.8127899Z</Accounting:CreatedOn>
     <Accounting:Importer>fd1e08fa-eb7e-4129-95ef-5b0615a29c05</Accounting:Importer>
-    <Accounting:Name>MY Account</Accounting:Name>
+    <Accounting:Name>My Account</Accounting:Name>
   </Accounting:Account>
   <Accounting:AccountImporterDescriptor ExportGuid="fd1e08fa-eb7e-4129-95ef-5b0615a29c05">
     <Accounting:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</Accounting:Module>
@@ -39,6 +39,17 @@
     <Accounting:Date>2012-11-14T23:00:00Z</Accounting:Date>
     <Accounting:OverPayment>-20.00</Accounting:OverPayment>
     <Accounting:Party>5b504f25-708c-467a-936a-a3f4aeec7916</Accounting:Party>
+  </Accounting:Transaction>
+  <Accounting:Transaction ExportGuid="b32735ec-0256-4f34-8a05-d332f2119376">
+    <Accounting:Account>5ce18612-eac2-4384-916d-ebf488f5a5ea</Accounting:Account>
+    <Accounting:Amount>-501.00</Accounting:Amount>
+    <Accounting:ChangedOn>2012-11-19T12:37:34.0433906Z</Accounting:ChangedOn>
+    <Accounting:ChargedAmount>0</Accounting:ChargedAmount>
+    <Accounting:Comment>Miete</Accounting:Comment>
+    <Accounting:CreatedOn>2012-11-19T12:37:34.0433906Z</Accounting:CreatedOn>
+    <Accounting:Date>2012-11-18T23:00:00Z</Accounting:Date>
+    <Accounting:OverPayment>-501.00</Accounting:OverPayment>
+    <Accounting:Party>933d258c-4a48-4a5c-ab46-655a70b8aa5f</Accounting:Party>
   </Accounting:Transaction>
   <Accounting:Transaction ExportGuid="be0a47be-bc78-4415-b70c-cfd4d5c7723c">
     <Accounting:Account>5ce18612-eac2-4384-916d-ebf488f5a5ea</Accounting:Account>
@@ -194,6 +205,31 @@
     <Invoicing:PITemplate>efde4cb0-fab3-46f1-9f08-a32f8e734609</Invoicing:PITemplate>
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
   </Invoicing:PurchaseInvoiceItemTemplate>
+  <Invoicing:PurchaseInvoiceItemTemplate ExportGuid="91ff36c7-f6a8-4170-bbf2-7d4d4484de58">
+    <Invoicing:Amount>0</Invoicing:Amount>
+    <Invoicing:AmountNet>0</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2012-11-19T12:47:16.0396789Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-11-19T12:36:43.0874761Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Miete</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:PITemplate>8bd4a195-72bf-4bfc-9f49-51270e357813</Invoicing:PITemplate>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:PurchaseInvoiceItemTemplate>
+  <Invoicing:PurchaseInvoiceTemplate ExportGuid="8bd4a195-72bf-4bfc-9f49-51270e357813">
+    <Invoicing:ChangedOn>2012-11-19T12:36:43.0874761Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2012-11-19T12:36:43.0874761Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Miete</Invoicing:Description>
+    <Invoicing:DueDate>
+      <EveryDay xmlns="Zetbox.App.Base">false</EveryDay>
+      <EveryMonth xmlns="Zetbox.App.Base">false</EveryMonth>
+      <EveryQuater xmlns="Zetbox.App.Base">false</EveryQuater>
+      <EveryYear xmlns="Zetbox.App.Base">false</EveryYear>
+    </Invoicing:DueDate>
+    <Invoicing:Period>MM/20YY</Invoicing:Period>
+    <Invoicing:Total>0</Invoicing:Total>
+    <Invoicing:TotalNet>0</Invoicing:TotalNet>
+  </Invoicing:PurchaseInvoiceTemplate>
   <Invoicing:PurchaseInvoiceTemplate ExportGuid="efde4cb0-fab3-46f1-9f08-a32f8e734609">
     <Invoicing:ChangedOn>2012-10-10T12:05:11.6797915Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T12:05:11.6797915Z</Invoicing:CreatedOn>
@@ -441,6 +477,15 @@
     <Parties:DeliveryAddresses />
     <Parties:InvoiceAddress />
     <Parties:Name>SVA</Parties:Name>
+  </Parties:Organization>
+  <Parties:Organization ExportGuid="933d258c-4a48-4a5c-ab46-655a70b8aa5f">
+    <Parties:Address />
+    <Parties:BankAccount />
+    <Parties:ChangedOn>2012-11-19T12:43:31.3178255Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2012-11-19T12:43:31.3178255Z</Parties:CreatedOn>
+    <Parties:DeliveryAddresses />
+    <Parties:InvoiceAddress />
+    <Parties:Name>Real Estate Management</Parties:Name>
   </Parties:Organization>
   <Parties:Organization ExportGuid="c16da32d-0625-4ea0-b8f2-cd891db6a065">
     <Parties:Address />

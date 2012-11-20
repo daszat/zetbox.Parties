@@ -61,10 +61,56 @@ namespace Zetbox.Basic.Accounting
             e.Result = obj.Amount - obj.Receipts.Sum(r => r.Amount);
         }
 
+        [Invocation]
+        public static void get_AmountNet(Transaction obj, PropertyGetterEventArgs<decimal> e)
+        {
+            if (obj.Receipts.Count == 0)
+            {
+                e.Result = obj.Amount;
+            }
+            else
+            {
+                var receipts = obj.Receipts.Where(r => r.Receipt != null).Select(r => r.Receipt).ToList();
+                if (receipts.Sum(r => r.Total) == obj.Amount)
+                {
+                    e.Result = Math.Round(receipts.Sum(r => r.TotalNet), 2);
+                }
+                else
+                {
+                    var vatp = receipts.Sum(r => r.Total) / receipts.Sum(r => r.TotalNet);
+                    e.Result = Math.Round(obj.Amount / vatp, 2);
+                }
+            }
+        }
+
+        [Invocation]
+        public static void get_VAT(Transaction obj, PropertyGetterEventArgs<decimal> e)
+        {
+            if (obj.Receipts.Count == 0)
+            {
+                e.Result = 0;
+            }
+            else
+            {
+                var receipts = obj.Receipts.Where(r => r.Receipt != null).Select(r => r.Receipt).ToList();
+                if (receipts.Sum(r => r.Total) == obj.Amount)
+                {
+                    e.Result = Math.Round(receipts.Sum(r => r.TotalNet), 2);
+                }
+                else
+                {
+                    var vatp = receipts.Sum(r => r.Total) / receipts.Sum(r => r.TotalNet);
+                    e.Result = Math.Round(obj.Amount - (obj.Amount / vatp), 2);
+                }
+            }
+        }
+
         private static void UpdateCalculatedProperties(Transaction obj)
         {
             obj.Recalculate("ChargedAmount");
             obj.Recalculate("OverPayment");
+            obj.Recalculate("AmountNet");
+            obj.Recalculate("VAT");
         }   
     }
 }

@@ -28,6 +28,8 @@ namespace Zetbox.Basic.Accounting
             {
                 obj.Transaction.Recalculate("ChargedAmount");
                 obj.Transaction.Recalculate("OverPayment");
+                obj.Transaction.Recalculate("AmountNet");
+                obj.Transaction.Recalculate("VAT");
             }
 
             // Workaround - remove from lists
@@ -47,6 +49,8 @@ namespace Zetbox.Basic.Accounting
             {
                 obj.Transaction.Recalculate("ChargedAmount");
                 obj.Transaction.Recalculate("OverPayment");
+                obj.Transaction.Recalculate("AmountNet");
+                obj.Transaction.Recalculate("VAT");
             }
         }
 
@@ -62,6 +66,8 @@ namespace Zetbox.Basic.Accounting
             {
                 e.NewValue.Recalculate("OpenAmount");
                 e.NewValue.Recalculate("PaymentAmount");
+                e.NewValue.Recalculate("AmountNet");
+                e.NewValue.Recalculate("VAT");
             }
         }
 
@@ -77,6 +83,8 @@ namespace Zetbox.Basic.Accounting
             {
                 e.NewValue.Recalculate("ChargedAmount");
                 e.NewValue.Recalculate("OverPayment");
+                e.NewValue.Recalculate("AmountNet");
+                e.NewValue.Recalculate("VAT");
             }
         }
     }

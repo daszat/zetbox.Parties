@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-11-16T13:47:29.0249338Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-11-20T08:36:46.9094483Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -1071,7 +1071,7 @@ public static void isValid_Transaction(Receipt_Transaction obj, PropertyIsValidE
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="fd464385-dbfd-4f11-bd2f-621d31b12bd1">
     <ZetboxBase:CategoryTags>Meta</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:25:14.4264012Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Account(Transaction obj, PropertyGetterEventArgs&lt;Zetbox.Basic.Accounting.Account&gt; e)
 {
@@ -1099,14 +1099,14 @@ public static void isValid_Account(Transaction obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
     <ZetboxBase:Name>Account</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>22</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>24</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>0dacac32-9af1-4177-aefb-c70a8788eb21</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:DecimalProperty ExportGuid="d97197ec-b74c-425d-a07d-d9a5783425dc">
-    <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:25:14.4264012Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Summary, Receipts</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Amount(Transaction obj, PropertyGetterEventArgs&lt;decimal&gt; e)
 {
@@ -1143,9 +1143,48 @@ public static void isValid_Amount(Transaction obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Precision>10</ZetboxBase:Precision>
     <ZetboxBase:Scale>2</ZetboxBase:Scale>
   </ZetboxBase:DecimalProperty>
+  <ZetboxBase:DecimalProperty ExportGuid="3b6f9f9e-3fd6-4c84-a0ad-7c5db5177066">
+    <ZetboxBase:CategoryTags>Receipts</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void get_AmountNet(Transaction obj, PropertyGetterEventArgs&lt;decimal&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_AmountNet(Transaction obj, PropertyPreSetterEventArgs&lt;decimal&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_AmountNet(Transaction obj, PropertyPostSetterEventArgs&lt;decimal&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_AmountNet(Transaction obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.AmountNet == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Label>Amount net</ZetboxBase:Label>
+    <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
+    <ZetboxBase:Name>AmountNet</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:ObjectClass>
+    <ZetboxBase:Properties_pos>21</ZetboxBase:Properties_pos>
+    <GUI:ValueModelDescriptor>481d7a65-208c-4706-8d4d-64ea629a109c</GUI:ValueModelDescriptor>
+    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
+    <ZetboxBase:IsCalculated>true</ZetboxBase:IsCalculated>
+    <ZetboxBase:IsList>false</ZetboxBase:IsList>
+    <ZetboxBase:Precision>10</ZetboxBase:Precision>
+    <ZetboxBase:Scale>2</ZetboxBase:Scale>
+  </ZetboxBase:DecimalProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="32de5a39-9844-4da2-b12b-95cae7e5f8d0">
     <ZetboxBase:CategoryTags>Meta</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:25:14.4264012Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_ChangedBy(Transaction obj, PropertyGetterEventArgs&lt;Zetbox.App.Base.Identity&gt; e)
 {
@@ -1174,14 +1213,14 @@ public static void isValid_ChangedBy(Transaction obj, PropertyIsValidEventArgs e
     <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
     <ZetboxBase:Name>ChangedBy</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>27</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>29</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>f75d11b8-098b-4dc1-84e2-0bae297885e7</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:DateTimeProperty ExportGuid="30642a49-2964-4077-a56c-1bfa34fc32bd">
     <ZetboxBase:CategoryTags>Meta</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:25:14.4264012Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_ChangedOn(Transaction obj, PropertyGetterEventArgs&lt;DateTime&gt; e)
 {
@@ -1211,7 +1250,7 @@ public static void isValid_ChangedOn(Transaction obj, PropertyIsValidEventArgs e
     <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
     <ZetboxBase:Name>ChangedOn</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>25</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>27</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>fc74b434-3801-4e4a-ab67-e65a9e014005</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -1295,7 +1334,7 @@ public static void isValid_Comment(Transaction obj, PropertyIsValidEventArgs e)
   </ZetboxBase:StringProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="62eda647-27c3-4b0a-b1c1-7d5d22f6adce">
     <ZetboxBase:CategoryTags>Meta</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:25:14.4264012Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_CreatedBy(Transaction obj, PropertyGetterEventArgs&lt;Zetbox.App.Base.Identity&gt; e)
 {
@@ -1324,14 +1363,14 @@ public static void isValid_CreatedBy(Transaction obj, PropertyIsValidEventArgs e
     <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
     <ZetboxBase:Name>CreatedBy</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>26</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>28</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>c9cef004-69ec-4118-a460-785539f86b01</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:DateTimeProperty ExportGuid="433891a8-9f4d-4ae5-a9d4-4965c4cf3cc9">
     <ZetboxBase:CategoryTags>Meta</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:25:14.4264012Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_CreatedOn(Transaction obj, PropertyGetterEventArgs&lt;DateTime&gt; e)
 {
@@ -1361,7 +1400,7 @@ public static void isValid_CreatedOn(Transaction obj, PropertyIsValidEventArgs e
     <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
     <ZetboxBase:Name>CreatedOn</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>24</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>26</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>fc74b434-3801-4e4a-ab67-e65a9e014005</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -1443,7 +1482,7 @@ public static void isValid_Documents(Transaction obj, PropertyIsValidEventArgs e
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:GuidProperty ExportGuid="eaf641da-40ef-4e00-8b33-377098f943de">
     <ZetboxBase:CategoryTags>Meta</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:25:14.4264012Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_ExportGuid(Transaction obj, PropertyGetterEventArgs&lt;Guid&gt; e)
 {
@@ -1473,7 +1512,7 @@ public static void isValid_ExportGuid(Transaction obj, PropertyIsValidEventArgs 
     <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
     <ZetboxBase:Name>ExportGuid</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>28</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>30</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>2b6fb70f-a382-4057-a139-cc33333d619d</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -1481,7 +1520,7 @@ public static void isValid_ExportGuid(Transaction obj, PropertyIsValidEventArgs 
   </ZetboxBase:GuidProperty>
   <ZetboxBase:StringProperty ExportGuid="93e58e37-f6de-4dde-8432-35451d313d11">
     <ZetboxBase:CategoryTags>Meta</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:25:14.4264012Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_ImportHash(Transaction obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -1510,7 +1549,7 @@ public static void isValid_ImportHash(Transaction obj, PropertyIsValidEventArgs 
     <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
     <ZetboxBase:Name>ImportHash</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>23</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>25</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -1592,7 +1631,7 @@ public static void isValid_Party(Transaction obj, PropertyIsValidEventArgs e)
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="ba28ff75-15d6-4600-bb42-e06cba8d24de">
     <ZetboxBase:CategoryTags>Receipts</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:25:14.4264012Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Receipts(Transaction obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Accounting.Receipt_Transaction&gt;&gt; e)
 {
@@ -1620,7 +1659,7 @@ public static void isValid_Receipts(Transaction obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
     <ZetboxBase:Name>Receipts</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>21</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>23</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>e8e20a6c-192a-4a59-adb7-9d6eb387f84e</ZetboxBase:RelationEnd>
@@ -1729,6 +1768,44 @@ public static void isValid_TransferedTo(Transaction obj, PropertyIsValidEventArg
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>d6d37bd9-7f09-45c3-824c-ca352c53b0af</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
+  <ZetboxBase:DecimalProperty ExportGuid="85b0136a-b7ed-4adf-a147-a5bd3948faf0">
+    <ZetboxBase:CategoryTags>Receipts</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void get_VAT(Transaction obj, PropertyGetterEventArgs&lt;decimal&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_VAT(Transaction obj, PropertyPreSetterEventArgs&lt;decimal&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_VAT(Transaction obj, PropertyPostSetterEventArgs&lt;decimal&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_VAT(Transaction obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.VAT == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
+    <ZetboxBase:Name>VAT</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:ObjectClass>
+    <ZetboxBase:Properties_pos>22</ZetboxBase:Properties_pos>
+    <GUI:ValueModelDescriptor>481d7a65-208c-4706-8d4d-64ea629a109c</GUI:ValueModelDescriptor>
+    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
+    <ZetboxBase:IsCalculated>true</ZetboxBase:IsCalculated>
+    <ZetboxBase:IsList>false</ZetboxBase:IsList>
+    <ZetboxBase:Precision>10</ZetboxBase:Precision>
+    <ZetboxBase:Scale>2</ZetboxBase:Scale>
+  </ZetboxBase:DecimalProperty>
   <ZetboxBase:Relation ExportGuid="f7be3b85-ef77-4ec7-aaac-277f37843195">
     <ZetboxBase:A>cdd034bd-06ef-497c-97d8-6e59b81e18b7</ZetboxBase:A>
     <ZetboxBase:B>0dacac32-9af1-4177-aefb-c70a8788eb21</ZetboxBase:B>
@@ -2460,6 +2537,11 @@ public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&
     <ZetboxBase:ConstrainedProperty>d97197ec-b74c-425d-a07d-d9a5783425dc</ZetboxBase:ConstrainedProperty>
     <ZetboxBase:CreatedOn>2011-11-08T20:53:14.458565Z</ZetboxBase:CreatedOn>
   </ZetboxBase:NotNullableConstraint>
+  <ZetboxBase:NotNullableConstraint ExportGuid="7f20cbcd-bdb0-4eff-8a8f-941efd3da1bd">
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ConstrainedProperty>3b6f9f9e-3fd6-4c84-a0ad-7c5db5177066</ZetboxBase:ConstrainedProperty>
+    <ZetboxBase:CreatedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:CreatedOn>
+  </ZetboxBase:NotNullableConstraint>
   <ZetboxBase:ClientReadOnlyConstraint ExportGuid="d6f05bcc-4543-4f37-b0a4-f47a62f2b562">
     <ZetboxBase:ChangedOn>2011-11-08T20:51:13.232632Z</ZetboxBase:ChangedOn>
     <ZetboxBase:ConstrainedProperty>32de5a39-9844-4da2-b12b-95cae7e5f8d0</ZetboxBase:ConstrainedProperty>
@@ -2533,6 +2615,11 @@ public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&
     <ZetboxBase:ChangedOn>2012-04-10T17:21:15.5895969Z</ZetboxBase:ChangedOn>
     <ZetboxBase:ConstrainedProperty>d7533687-f04c-428d-abaf-993ac6fded80</ZetboxBase:ConstrainedProperty>
     <ZetboxBase:CreatedOn>2012-04-10T17:21:15.5895969Z</ZetboxBase:CreatedOn>
+  </ZetboxBase:NotNullableConstraint>
+  <ZetboxBase:NotNullableConstraint ExportGuid="122d03fd-98c0-4292-bbcc-271b9dcdca73">
+    <ZetboxBase:ChangedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ConstrainedProperty>85b0136a-b7ed-4adf-a147-a5bd3948faf0</ZetboxBase:ConstrainedProperty>
+    <ZetboxBase:CreatedOn>2012-11-20T07:36:46.9094483Z</ZetboxBase:CreatedOn>
   </ZetboxBase:NotNullableConstraint>
   <ZetboxBase:IndexConstraint ExportGuid="03cd27bb-ba86-4c4f-b797-2f6c4101d602">
     <ZetboxBase:Constrained>9dc19fb1-4c9d-422d-89e3-bed1ebebf5a6</ZetboxBase:Constrained>
