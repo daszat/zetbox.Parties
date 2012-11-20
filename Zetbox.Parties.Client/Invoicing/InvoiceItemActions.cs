@@ -15,7 +15,7 @@ namespace Zetbox.Basic.Invoicing
         {
             if (obj.UnitPrice.HasValue)
             {
-                obj.AmountNet = obj.Quantity * obj.UnitPrice.Value;
+                obj.AmountNet = Math.Round(obj.Quantity * obj.UnitPrice.Value, 2);
             }
         }
 
@@ -24,7 +24,7 @@ namespace Zetbox.Basic.Invoicing
         {
             if (obj.UnitPrice.HasValue)
             {
-                obj.AmountNet = obj.Quantity * obj.UnitPrice.Value;
+                obj.AmountNet = Math.Round(obj.Quantity * obj.UnitPrice.Value, 2);
             }
         }
 
@@ -34,7 +34,7 @@ namespace Zetbox.Basic.Invoicing
             if (obj.VATType != null)
             {
                 var percent = (obj.VATType.Percentage ?? 0m) / 100m;
-                obj.Amount = obj.AmountNet + (obj.AmountNet * percent) + (obj.VATType.Absolute ?? 0m);
+                obj.Amount = Math.Round(obj.AmountNet + (obj.AmountNet * percent) + (obj.VATType.Absolute ?? 0m), 2);
             }
         }
 
@@ -44,7 +44,7 @@ namespace Zetbox.Basic.Invoicing
             if (obj.VATType != null)
             {
                 var percent = (obj.VATType.Percentage ?? 0m) / 100m;
-                obj.Amount = obj.AmountNet + (obj.AmountNet * percent) + (obj.VATType.Absolute ?? 0m);
+                obj.Amount = Math.Round(obj.AmountNet + (obj.AmountNet * percent) + (obj.VATType.Absolute ?? 0m), 2);
             }
         }
     }
