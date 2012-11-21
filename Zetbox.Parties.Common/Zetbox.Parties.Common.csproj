@@ -77,6 +77,8 @@
     <Compile Include="Accounting\AccountActions.cs" />
     <Compile Include="Accounting\AccountImporter.cs" />
     <Compile Include="Accounting\AccountImporterDescriptorActions.cs" />
+    <Compile Include="Accounting\BACA_AccountImporter.cs" />
+    <Compile Include="Accounting\MT940_AccountImporter.cs" />
     <Compile Include="Accounting\Receipt_TransactionActions.cs" />
     <Compile Include="Accounting\TransactionActions.cs" />
     <Compile Include="CommonModule.cs" />

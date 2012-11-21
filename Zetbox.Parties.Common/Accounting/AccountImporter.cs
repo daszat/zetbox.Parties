@@ -5,6 +5,9 @@ using System.Text;
 using Zetbox.API;
 using Zetbox.Basic.Accounting;
 using System.Globalization;
+using at.dasz.DocumentManagement;
+using Zetbox.App.Base;
+using System.IO;
 
 namespace Zetbox.Parties.Common.Accounting
 {
@@ -18,6 +21,16 @@ namespace Zetbox.Parties.Common.Accounting
         public DateTime Date {get;set;}
         public decimal Ammount {get;set;}
         public string Text {get;set;}
+
+        private List<string> _receipts = new List<string>();
+        public List<string> Receipts
+        {
+            get
+            {
+                return _receipts;
+            }
+        }
+
         public string ImportHash
         {
             get
@@ -58,6 +71,19 @@ namespace Zetbox.Parties.Common.Accounting
                     newTx.Amount = impTx.Ammount;
                     newTx.Comment = impTx.Text;
                     newTx.ImportHash = impTx.ImportHash;
+
+                    foreach (var receipt in impTx.Receipts)
+                    {
+                        var file = ctx.Create<StaticFile>();
+                        using(var stream = new MemoryStream())
+                        using (var sw = new StreamWriter(stream))
+                        {
+                            sw.Write(receipt);
+                            sw.Flush();
+                            stream.Seek(0, SeekOrigin.Begin);
+                            file.Blob = ctx.Find<Blob>(ctx.CreateBlob(stream, "Receipt.txt", "text/plain"));
+                        }
+                    }
                 }
             }
         }
@@ -65,37 +91,4 @@ namespace Zetbox.Parties.Common.Accounting
         protected abstract List<ImportedTransaction> Read(string fileName);
     }
 
-    public class BACA_AccountImporter : AccountImporter
-    {
-        // 0: Buchungsdatum; 1:Valutadatum; 2:Text1; 3:Interne Notiz; 4:EUR; 5:Betrag;?
-        public const int COL_CSV_BUCHUNGSDATUM = 0;
-        public const int COL_CSV_VALUTADATUM = 1;
-        public const int COL_CSV_BEZ = 2;
-        public const int COL_CSV_INT_NOTIZ = 3;
-        public const int COL_CSV_BETRAG = 5;
-
-        protected override List<ImportedTransaction> Read(string fileName)
-        {
-            var result = new List<ImportedTransaction>();
-
-            using (var file = new System.IO.StreamReader(fileName, Encoding.Default))
-            {
-                if(!file.EndOfStream) file.ReadLine(); // Skip header
-                while (!file.EndOfStream)
-                {
-                    var line = file.ReadLine();
-                    var columns = line.Split(';');
-
-                    var buchungsdatum = Convert.ToDateTime(columns[COL_CSV_BUCHUNGSDATUM].Replace('/', '.'));
-                    var valutadatum = Convert.ToDateTime(columns[COL_CSV_VALUTADATUM].Replace('/', '.'));
-                    var bez = columns[COL_CSV_BEZ].Trim('"');
-                    var notiz = columns[COL_CSV_INT_NOTIZ].Trim('"');
-                    var betrag = Convert.ToDecimal(columns[COL_CSV_BETRAG]);
-
-                    result.Add(new ImportedTransaction() { Date = valutadatum, Text = bez.Trim() + "\n" + notiz.Trim(), Ammount = betrag });                    
-                }
-            }
-            return result;
-        }
-    }
 }
