@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-11-20T09:51:21.41866Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2012-11-21T15:48:09.9876572Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -18530,6 +18530,13 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:FullName>Zetbox.Basic.Invoicing.ReceiptAmountCalculator</ZetboxBase:FullName>
     <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="1b13f537-bb23-4100-aec0-86450ce8e6b4">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Basic.Invoicing.ReceiptHeper</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="ea79e16c-e7e7-4c66-b55b-4dc3b491f674">
     <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
     <ZetboxBase:ChangedOn>2012-10-12T10:14:05.2211922Z</ZetboxBase:ChangedOn>
@@ -18661,6 +18668,83 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:CreatedOn>2011-12-09T15:05:26.150886Z</ZetboxBase:CreatedOn>
     <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.ImportedTransaction</ZetboxBase:FullName>
     <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="032c95cd-1a31-44d5-8cff-af715b4c0069">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.MT940_AccountImporter</ZetboxBase:FullName>
+    <ZetboxBase:Parent>7e12545c-f406-44d5-804b-ec0729c5a466</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="000aca76-5feb-4ed4-8105-a32dfb1ea64e">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.MT940AccountRecord</ZetboxBase:FullName>
+    <ZetboxBase:Parent>01630bfe-e18b-4700-818d-25f8b95b1745</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="7c742647-a28d-4e87-a8c0-192726fb71d1">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.MT940OrderReferenceRecord</ZetboxBase:FullName>
+    <ZetboxBase:Parent>01630bfe-e18b-4700-818d-25f8b95b1745</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="aadc4e57-510f-464e-a2f5-4b8deaa5994a">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.MT940Reader</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="2f095799-65f0-4b49-a94f-f57f8b04c968">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.MT940ReceiptRecord</ZetboxBase:FullName>
+    <ZetboxBase:Parent>01630bfe-e18b-4700-818d-25f8b95b1745</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="501c02be-3a7d-48a5-8322-013b5069e1b5">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.MT940ReceiptRefRecord</ZetboxBase:FullName>
+    <ZetboxBase:Parent>01630bfe-e18b-4700-818d-25f8b95b1745</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="01630bfe-e18b-4700-818d-25f8b95b1745">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.MT940Record</ZetboxBase:FullName>
+    <ZetboxBase:Parent>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="122a4660-5266-4847-a836-d2988dfb3351">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.MT940ReferenceRecord</ZetboxBase:FullName>
+    <ZetboxBase:Parent>01630bfe-e18b-4700-818d-25f8b95b1745</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="9f3f18d2-2eb6-4ade-878d-c7cca88e5007">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.MT940StatementNumberRecord</ZetboxBase:FullName>
+    <ZetboxBase:Parent>01630bfe-e18b-4700-818d-25f8b95b1745</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="9d10840e-8003-4c3c-9565-01e806d9baa6">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.MT940TextRecord</ZetboxBase:FullName>
+    <ZetboxBase:Parent>01630bfe-e18b-4700-818d-25f8b95b1745</ZetboxBase:Parent>
+  </ZetboxBase:TypeRef>
+  <ZetboxBase:TypeRef ExportGuid="cb7e05ab-91f3-48b3-819f-5a8027aabfcb">
+    <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
+    <ZetboxBase:ChangedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-11-21T14:48:09.9876572Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:FullName>Zetbox.Parties.Common.Accounting.MT940TransactionRecord</ZetboxBase:FullName>
+    <ZetboxBase:Parent>01630bfe-e18b-4700-818d-25f8b95b1745</ZetboxBase:Parent>
   </ZetboxBase:TypeRef>
   <ZetboxBase:TypeRef ExportGuid="24c393c1-8dcb-4fe0-af83-5a0fc62faceb">
     <ZetboxBase:Assembly>8f3abcd4-341e-483f-a04c-aedd98ab9e9d</ZetboxBase:Assembly>
