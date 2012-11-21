@@ -30,6 +30,19 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
 
         public Receipt Receipt { get; private set; }
 
+        protected override void OnObjectPropertyChanged(string propName)
+        {
+            base.OnObjectPropertyChanged(propName);
+
+            switch (propName)
+            {
+                case "FulfillmentDate":
+                case "DueDate":
+                    OnHighlightChanged();
+                    break;
+            }
+        }
+
         public abstract ViewModel Party { get; }
         public abstract ViewModel InternalOrganization { get; }
 
@@ -49,6 +62,17 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
         protected virtual IEnumerable<ViewModel> FetchReceiptActions()
         {
             return new ViewModel[] { };
+        }
+
+        public override Highlight Highlight
+        {
+            get
+            {
+                if (Receipt.FulfillmentDate.HasValue) return Highlight.Deactivated;
+                if (Receipt.DueDate < DateTime.Today) return Highlight.Bad;
+                if (Receipt.DueDate.AddDays(-14) < DateTime.Today) return Highlight.Warning;
+                return base.Highlight;
+            }
         }
     }
 }
