@@ -181,7 +181,7 @@ namespace Zetbox.Parties.Common.Accounting
     public class MT940TransactionRecord : MT940Record
     {
         public const string FieldNumber = ":61:";
-        public static Regex parser = new Regex(@"^:61:(?<year>\d{2})(?<month>\d{2})(?<day>\d{2})(\d{2})(\d{2})(?<sign>C|RC|D|RD)(\D?)(?<amount>[\d,]*)(N\w\w\w)(?<ref>[^/]*)(//)?(\w*)?([\n\r]*)(?<receipt>\d{8})?");
+        public static Regex parser = new Regex(@"^:61:(?<year>\d{2})(?<month>\d{2})(?<day>\d{2})(\d{4})?(?<sign>C|RC|D|RD)(\D?)(?<amount>[\d,]*)(N\w\w\w)(?<ref>[^/]*)(//)?(\w*)?([\n\r]*)(?<receipt>\d{8})?");
 
         public MT940TransactionRecord(string raw)
             : base(raw)
