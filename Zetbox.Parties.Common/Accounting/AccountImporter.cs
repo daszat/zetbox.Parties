@@ -75,14 +75,16 @@ namespace Zetbox.Parties.Common.Accounting
                     foreach (var receipt in impTx.Receipts)
                     {
                         var file = ctx.Create<StaticFile>();
+                        file.Name = string.Format("Receipt {0}.txt", impTx.Date.ToShortDateString());
                         using(var stream = new MemoryStream())
                         using (var sw = new StreamWriter(stream))
                         {
                             sw.Write(receipt);
                             sw.Flush();
                             stream.Seek(0, SeekOrigin.Begin);
-                            file.Blob = ctx.Find<Blob>(ctx.CreateBlob(stream, "Receipt.txt", "text/plain"));
+                            file.Blob = ctx.Find<Blob>(ctx.CreateBlob(stream, file.Name, "text/plain"));
                         }
+                        newTx.Documents.Add(file);
                     }
                 }
             }

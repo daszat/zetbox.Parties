@@ -566,18 +566,26 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         #region Create document
         private StaticFile CreateDocumentFromTransaction()
         {
-            var document = DataContext.Create<StaticFile>();
-            var stream = new MemoryStream();
-            var sw = new StreamWriter(stream);
-            sw.WriteLine(Transaction.Date.ToShortDateString());
-            sw.WriteLine(Transaction.Amount.ToString("n2"));
-            sw.WriteLine(Transaction.Party);
-            sw.WriteLine("-----------------------------------------");
-            sw.Write(Transaction.Comment);
-            sw.Flush();
-            stream.Seek(0, SeekOrigin.Begin);
-            document.Blob = DataContext.Find<Blob>(DataContext.CreateBlob(stream, "Receipt.txt", "text/plain"));
-            return document;
+            if (Transaction.Documents.OfType<StaticFile>().Count() > 0)
+            {
+                return Transaction.Documents.OfType<StaticFile>().First();
+            }
+            else
+            {
+                var document = DataContext.Create<StaticFile>();
+                document.Name = string.Format("Receipt {0}.txt", Transaction.Date.ToShortDateString());
+                var stream = new MemoryStream();
+                var sw = new StreamWriter(stream);
+                sw.WriteLine(Transaction.Date.ToShortDateString());
+                sw.WriteLine(Transaction.Amount.ToString("n2"));
+                sw.WriteLine(Transaction.Party);
+                sw.WriteLine("-----------------------------------------");
+                sw.Write(Transaction.Comment);
+                sw.Flush();
+                stream.Seek(0, SeekOrigin.Begin);
+                document.Blob = DataContext.Find<Blob>(DataContext.CreateBlob(stream, document.Name, "text/plain"));
+                return document;
+            }
         }
         #endregion
     }
