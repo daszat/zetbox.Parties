@@ -364,7 +364,10 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
             var newReceipt = DataContext.Create<PurchaseInvoice>();
             newReceipt.Date = Transaction.Date;
             newReceipt.DueDate = Transaction.Date;
-            newReceipt.Supplier = Transaction.Party.PartyRole.OfType<Supplier>().FirstOrDefault();
+            if (Transaction.Party != null)
+            {
+                newReceipt.Supplier = Transaction.Party.PartyRole.OfType<Supplier>().FirstOrDefault();
+            }
 
             var newItem = DataContext.Create<PurchaseInvoiceItem>();
             newItem.Amount = -Transaction.Amount;
