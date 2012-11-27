@@ -99,7 +99,7 @@ namespace Zetbox.Basic.Accounting
                 var receipts = obj.Receipts.Where(r => r.Receipt != null).Select(r => r.Receipt).ToList();
                 if (receipts.Sum(r => r.Total) == obj.Amount)
                 {
-                    e.Result = Math.Round(receipts.Sum(r => r.TotalNet), 2);
+                    e.Result = Math.Round(receipts.Sum(r => r.Total - r.TotalNet), 2);
                 }
                 else if (receipts.Sum(r => r.Total) != 0 && receipts.Sum(r => r.TotalNet) != 0)
                 {
