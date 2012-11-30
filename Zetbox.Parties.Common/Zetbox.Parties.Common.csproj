@@ -47,13 +47,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autofac, Version=2.6.3.862, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\zetbox.Workflow-Common.1.0.118.1\lib\net40\Autofac.dll</HintPath>
+      <HintPath>..\packages\zetbox.Workflow-Common.1.0.119.1\lib\net40\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="Autofac.Configuration, Version=2.6.3.862, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\zetbox.Workflow-Common.1.0.118.1\lib\net40\Autofac.Configuration.dll</HintPath>
+      <HintPath>..\packages\zetbox.Workflow-Common.1.0.119.1\lib\net40\Autofac.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\zetbox.Workflow-Common.1.0.118.1\lib\net40\log4net.dll</HintPath>
+      <HintPath>..\packages\zetbox.Workflow-Common.1.0.119.1\lib\net40\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,15 +62,15 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Zetbox.API">
-      <HintPath>..\packages\zetboxBasic-Common.1.0.4641.1\lib\net40\Zetbox.API.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Common.1.0.4685.1\lib\net40\Zetbox.API.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Zetbox.API.Common">
-      <HintPath>..\packages\zetboxBasic-Common.1.0.4641.1\lib\net40\Zetbox.API.Common.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Common.1.0.4685.1\lib\net40\Zetbox.API.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="zetbox.Workflow.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\zetbox.Workflow-Common.1.0.118.1\lib\net40\zetbox.Workflow.Common.dll</HintPath>
+      <HintPath>..\packages\zetbox.Workflow-Common.1.0.119.1\lib\net40\zetbox.Workflow.Common.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
