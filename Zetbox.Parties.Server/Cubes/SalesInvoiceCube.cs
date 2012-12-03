@@ -15,6 +15,7 @@ namespace Zetbox.Parties.Server.Cubes
         public string Party { get; set; }
         public decimal Total { get; set; }
         public decimal TotalNet { get; set; }
+        public decimal Open { get; set; }
         public decimal Fulfillment { get; set; }
     }
 
@@ -43,6 +44,8 @@ namespace Zetbox.Parties.Server.Cubes
 
             SumTotal = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Total", g => g.Total);
             SumTotalNet = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Total net", g => g.TotalNet);
+            SumOpenTotal = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Total", g => g.Open);
+            SumOpenTotalNet = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Total net", g => g.Open * g.TotalNet / g.Total);
             SumFulfillment = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Fulfillment", g => g.Fulfillment);
             SumFulfillmentNet = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Fulfillment net", g => g.Fulfillment * g.TotalNet / g.Total);
             AvgFulfillmentDuration = new FilteredMeasure<SalesInvoiceCubeRecord, double>(f => f.FulfillmentDate.HasValue, new DoubleSumMeasure<SalesInvoiceCubeRecord>("Avg. payment duration", g => (g.FulfillmentDate.Value - g.Date).TotalDays));
@@ -52,6 +55,8 @@ namespace Zetbox.Parties.Server.Cubes
                 .WithCrossingDimension(DimParty)
                 .WithMeasure(SumTotal)
                 .WithMeasure(SumTotalNet)
+                .WithMeasure(SumOpenTotal)
+                .WithMeasure(SumOpenTotalNet)
                 .WithMeasure(AvgFulfillmentDuration);
 
             QryInvoicesFulfillmentDate = new Query<SalesInvoiceCubeRecord>("Invoices fulfillment / month")
@@ -68,6 +73,8 @@ namespace Zetbox.Parties.Server.Cubes
 
         public readonly DecimalSumMeasure<SalesInvoiceCubeRecord> SumTotal;
         public readonly DecimalSumMeasure<SalesInvoiceCubeRecord> SumTotalNet;
+        public readonly DecimalSumMeasure<SalesInvoiceCubeRecord> SumOpenTotal;
+        public readonly DecimalSumMeasure<SalesInvoiceCubeRecord> SumOpenTotalNet;
         public readonly DecimalSumMeasure<SalesInvoiceCubeRecord> SumFulfillment;
         public readonly DecimalSumMeasure<SalesInvoiceCubeRecord> SumFulfillmentNet;
         public readonly FilteredMeasure<SalesInvoiceCubeRecord, double> AvgFulfillmentDuration;
@@ -86,6 +93,7 @@ namespace Zetbox.Parties.Server.Cubes
                     Party = g.Customer.Party.ToString(),
                     Total = g.Total,
                     TotalNet = g.TotalNet,
+                    Open = g.OpenAmount,
                     Fulfillment = g.PaymentAmount,
                 })
                 .AsQueryable();
