@@ -14,6 +14,7 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
     using Zetbox.App.GUI;
     using Zetbox.App.Extensions;
     using Zetbox.Client;
+    using Zetbox.API.Async;
 
     /// <summary>
     /// Abstract class, no descriptor
@@ -72,6 +73,17 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
                 if (Receipt.DueDate < DateTime.Today) return Highlight.Bad;
                 if (Receipt.DueDate.AddDays(-14) < DateTime.Today) return Highlight.Warning;
                 return base.Highlight;
+            }
+        }
+
+        public override Highlight HighlightAsync
+        {
+            get
+            {
+                if (Receipt.FulfillmentDate.HasValue) return Highlight.Deactivated;
+                if (Receipt.DueDate < DateTime.Today) return Highlight.Bad;
+                if (Receipt.DueDate.AddDays(-14) < DateTime.Today) return Highlight.Warning;
+                return base.HighlightAsync;
             }
         }
     }
