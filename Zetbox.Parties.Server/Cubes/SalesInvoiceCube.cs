@@ -44,10 +44,10 @@ namespace Zetbox.Parties.Server.Cubes
 
             SumTotal = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Total", g => g.Total);
             SumTotalNet = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Total net", g => g.TotalNet);
-            SumOpenTotal = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Total", g => g.Open);
-            SumOpenTotalNet = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Total net", g => g.Open * g.TotalNet / g.Total);
+            SumOpenTotal = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Open Total", g => g.Open);
+            SumOpenTotalNet = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Open Total net", g => g.Total != 0m ? g.Open * g.TotalNet / g.Total : 0m);
             SumFulfillment = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Fulfillment", g => g.Fulfillment);
-            SumFulfillmentNet = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Fulfillment net", g => g.Fulfillment * g.TotalNet / g.Total);
+            SumFulfillmentNet = new DecimalSumMeasure<SalesInvoiceCubeRecord>("Fulfillment net", g => g.Total != 0m ? g.Fulfillment * g.TotalNet / g.Total : 0m);
             AvgFulfillmentDuration = new FilteredMeasure<SalesInvoiceCubeRecord, double>(f => f.FulfillmentDate.HasValue, new DoubleSumMeasure<SalesInvoiceCubeRecord>("Avg. payment duration", g => (g.FulfillmentDate.Value - g.Date).TotalDays));
 
             QryInvoicesDate = new Query<SalesInvoiceCubeRecord>("Invoices / month")
