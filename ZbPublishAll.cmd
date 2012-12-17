@@ -15,28 +15,28 @@ set config=%1
 
 cd bin\Debug
 
-Zetbox.Server.Service.exe %config% -generate -updatedeployedschema -repairschema
+Zetbox.Cli.exe %config% -generate -updatedeployedschema -repairschema
 IF ERRORLEVEL 1 GOTO FAIL
 
 rem publish schema data for parties project
-Zetbox.Server.Service.exe %config% -publish ..\..\Modules\Parties.xml -ownermodules Parties;Invoicing;Accounting
+Zetbox.Cli.exe %config% -publish ..\..\Modules\Parties.xml -ownermodules Parties;Invoicing;Accounting
 IF ERRORLEVEL 1 GOTO FAIL
 
 
 rem export Invoicing Module data
-Zetbox.Server.Service.exe %config% -export ..\..\Data\Invoicing.Data.xml -schemamodules Invoicing -ownermodules Invoicing
+Zetbox.Cli.exe %config% -export ..\..\Data\Invoicing.Data.xml -schemamodules Invoicing -ownermodules Invoicing
 IF ERRORLEVEL 1 GOTO FAIL
 
 rem export Invoicing Workflow data
-Zetbox.Server.Service.exe %config% -export ..\..\Data\Invoicing.Workflow.xml -schemamodules Workflow -ownermodules Invoicing
+Zetbox.Cli.exe %config% -export ..\..\Data\Invoicing.Workflow.xml -schemamodules Workflow -ownermodules Invoicing
 IF ERRORLEVEL 1 GOTO FAIL
 
 rem export Accounting Module data
-Zetbox.Server.Service.exe %config% -export ..\..\Data\Accounting.Data.xml -schemamodules Accounting -ownermodules Accounting
+Zetbox.Cli.exe %config% -export ..\..\Data\Accounting.Data.xml -schemamodules Accounting -ownermodules Accounting
 IF ERRORLEVEL 1 GOTO FAIL
 
 rem export test data
-Zetbox.Server.Service.exe %config% -export ..\..\Data\Parties.xml -schemamodules Parties;Invoicing;Accounting
+Zetbox.Cli.exe %config% -export ..\..\Data\Parties.xml -schemamodules Parties;Invoicing;Accounting
 IF ERRORLEVEL 1 GOTO FAIL
 
 echo ********************************************************************************

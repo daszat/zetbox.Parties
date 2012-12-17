@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ZetboxConfig xmlns="http://dasz.at/Zetbox/">
-  <ConfigName>Zetbox.Parties Server Configuration</ConfigName>
+  <ConfigName>Zetbox.Parties Server Cli Configuration</ConfigName>
   <Server StartServer="true">
     <DocumentStore>DocumentStore/Server</DocumentStore>
     <Modules>
