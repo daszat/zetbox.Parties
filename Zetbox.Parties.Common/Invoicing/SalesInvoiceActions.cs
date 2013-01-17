@@ -70,7 +70,7 @@ namespace Zetbox.Basic.Invoicing
         [Invocation]
         public static void FinalizeInvoiceCanExec(SalesInvoice obj, MethodReturnEventArgs<bool> e)
         {
-            e.Result = obj.ObjectState == DataObjectState.Unmodified && obj.FinalizedOn.HasValue == false;
+            e.Result = obj.Context.IsModified == false && obj.FinalizedOn.HasValue == false;
         }
 
         [Invocation]
@@ -80,9 +80,9 @@ namespace Zetbox.Basic.Invoicing
             {
                 e.Result = "Invoice is already finalized";
             }
-            else if (obj.ObjectState != DataObjectState.Unmodified)
+            else if (obj.Context.IsModified)
             {
-                e.Result = "Only saved and unmodified invoices can be finilized";
+                e.Result = "Only saved and unmodified invoices can be finalized";
             }
         }
 

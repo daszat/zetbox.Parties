@@ -16,6 +16,8 @@ namespace Zetbox.Basic.Invoicing
 
             obj.InvoiceID = obj.InternalOrganization.InvoiceGenerator.GetNextInvoiceID();
             obj.FinalizedOn = DateTime.Now;
+
+            obj.Context.SubmitChanges();
         }
     }
 }
