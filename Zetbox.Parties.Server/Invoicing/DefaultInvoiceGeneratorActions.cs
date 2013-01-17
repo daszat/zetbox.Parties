@@ -4,12 +4,19 @@ using System.Linq;
 using System.Text;
 using Zetbox.API;
 using at.dasz.DocumentManagement;
+using Zetbox.API.Server;
 
 namespace Zetbox.Basic.Invoicing
 {
     [Implementor]
-    public static class DefaultInvoiceGeneratorActions
+    public class DefaultInvoiceGeneratorActions
     {
+        private static Func<IZetboxServerContext> _srvCtxFactory;
+        public DefaultInvoiceGeneratorActions(Func<IZetboxServerContext> srvCtxFactory)
+        {
+            _srvCtxFactory = srvCtxFactory;
+        }
+
         [Invocation]
         public static void GetNextInvoiceID(DefaultInvoiceGenerator obj, MethodReturnEventArgs<string> e)
         {
@@ -18,8 +25,12 @@ namespace Zetbox.Basic.Invoicing
             if (obj.LastCreationDate.HasValue && obj.LastCreationDate.Value.Year != DateTime.Today.Year)
             {
                 // Reset sequence to 0
-                // TODO: This won't work as the squence number is retreived and updated by a stored procedure
-                obj.NumberSequence.Data.CurrentNumber = 0;
+                using (var srvCtx = _srvCtxFactory())
+                {
+                    var srvObj = srvCtx.Find<DefaultInvoiceGenerator>(obj.ID);
+                    srvObj.NumberSequence.Data.CurrentNumber = 0;
+                    srvCtx.SubmitChanges();
+                }
             }
             int nextNum = ctx.GetSequenceNumber(obj.NumberSequence.ExportGuid);
             obj.LastCreationDate = DateTime.Now;
