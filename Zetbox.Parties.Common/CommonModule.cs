@@ -7,7 +7,10 @@ namespace Zetbox.Parties.Common
     using System.Text;
     using Autofac;
     using Zetbox.API;
+    using System.ComponentModel;
 
+    // No feature, implicit loaded
+    [Description("Parties common module")]
     public class CommonModule : Module
     {
         protected override void Load(ContainerBuilder moduleBuilder)

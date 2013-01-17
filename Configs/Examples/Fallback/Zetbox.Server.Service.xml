@@ -7,25 +7,14 @@
     </ConnectionStrings>
     <DocumentStore>DocumentStore\Server\</DocumentStore>
     <Modules>
-      <Module>Zetbox.Server.UnifiedModule, Zetbox.Server</Module>
-
-      <Module>Zetbox.Objects.EfModule, Zetbox.Objects.EfImpl</Module>
+      <Module>Zetbox.Server.ServerModule, Zetbox.Server</Module>
       <Module>Zetbox.DalProvider.Ef.EfProvider, Zetbox.DalProvider.Ef</Module>
-
-      <Module>Zetbox.App.Projekte.Server.CustomServerActionsModule, Zetbox.App.Projekte.Server</Module>
-      <Module>Zetbox.App.Projekte.Common.CustomCommonActionsModule, Zetbox.App.Projekte.Common</Module>
-      <!--
-      <Module>Zetbox.Unix.Module, Zetbox.Unix</Module>
-      <Module>Zetbox.Server.HtpasswdIdentitySource+Module, Zetbox.Server</Module>
-      -->
     </Modules>
   </Server>
   <AssemblySearchPaths>
     <string>Common\Core</string>
-    <string>Common\Core.Fallback</string>
     <string>Server\Core</string>
     <string>Server\EF</string>
-    <string>Server\EF.Fallback</string>
     <string>Common\App.Zetbox</string>
     <string>Server\App.Zetbox</string>
   </AssemblySearchPaths>

@@ -9,12 +9,18 @@ namespace Zetbox.Parties.Client
     using Zetbox.API;
     using Zetbox.API.Client;
     using Zetbox.Client;
+    using Zetbox.API.Configuration;
+    using System.ComponentModel;
 
+    [Feature(NotOnFallback=true)]
+    [Description("Parties client module")]
     public class ClientModule : Module
     {
         protected override void Load(ContainerBuilder moduleBuilder)
         {
             base.Load(moduleBuilder);
+
+            moduleBuilder.RegisterModule<Zetbox.Parties.Common.CommonModule>();
 
             moduleBuilder.RegisterZetboxImplementors(typeof(ClientModule).Assembly);
             moduleBuilder.RegisterViewModels(typeof(ClientModule).Assembly);
