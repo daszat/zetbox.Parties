@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ZetboxConfig xmlns="http://dasz.at/Zetbox/">
+<?xml version="1.0" encoding="Windows-1252"?>
+<ZetboxConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://dasz.at/Zetbox/">
   <ConfigName>Zetbox.Parties Client Test Configuration</ConfigName>
-  <Client StartClient="false" ThrowErrors="false">
+  <Client>
     <Culture>de-AT</Culture>
     <UICulture>de-AT</UICulture>
-    <DocumentStore>DocumentStore\Client\</DocumentStore>
-    <DevelopmentEnvironment>false</DevelopmentEnvironment>
     <Modules>
       <Module>Zetbox.API.Client.WcfClientModule, Zetbox.API.Client</Module>
       <Module>Zetbox.Client.ClientModule, Zetbox.Client</Module>
@@ -15,7 +13,7 @@
       <Module NotOnFallback="true">Zetbox.Parties.Client.ClientModule, Zetbox.Parties.Client</Module>
     </Modules>
   </Client>
-  <AssemblySearchPaths>
+  <AssemblySearchPaths EnableShadowCopy="true">
     <string>Common\Core</string>
     <string>Client\Core</string>
     <string>Common\App.Zetbox</string>

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ZetboxConfig xmlns="http://dasz.at/Zetbox/">
+<?xml version="1.0" encoding="Windows-1252"?>
+<ZetboxConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://dasz.at/Zetbox/">
   <ConfigName>Zetbox.Parties Server Configuration</ConfigName>
   <Server StartServer="true">
     <ConnectionStrings>
@@ -12,8 +12,9 @@
       <Module NotOnFallback="true">zetbox.Workflow.Server.ServerModule, zetbox.Workflow.Server</Module>
       <Module NotOnFallback="true">Zetbox.Parties.Server.ServerModule, Zetbox.Parties.Server</Module>
     </Modules>
+    <ClientFilesLocations />
   </Server>
-  <AssemblySearchPaths>
+  <AssemblySearchPaths EnableShadowCopy="true">
     <string>Common\Core</string>
     <string>Server\Core</string>
     <string>Server\EF</string>
