@@ -9,6 +9,7 @@
     <Modules>
       <Module>Zetbox.Server.ServerModule, Zetbox.Server</Module>
       <Module>Zetbox.DalProvider.Ef.EfProvider, Zetbox.DalProvider.Ef</Module>
+	  <Module>Zetbox.Server.Wcf.WcfModule, Zetbox.Server.Wcf</Module>
       <Module NotOnFallback="true">zetbox.Workflow.Server.ServerModule, zetbox.Workflow.Server</Module>
       <Module NotOnFallback="true">Zetbox.Parties.Server.ServerModule, Zetbox.Parties.Server</Module>
     </Modules>
