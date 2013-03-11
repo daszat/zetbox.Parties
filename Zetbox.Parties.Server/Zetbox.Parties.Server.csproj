@@ -114,6 +114,7 @@
     <ProjectReference Include="..\Zetbox.Parties.Common\Zetbox.Parties.Common.csproj">
       <Project>{927FD8BF-5FE0-4D07-B89E-926E7F694623}</Project>
       <Name>Zetbox.Parties.Common</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

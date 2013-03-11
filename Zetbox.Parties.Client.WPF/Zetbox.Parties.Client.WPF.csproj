@@ -187,10 +187,12 @@
     <ProjectReference Include="..\Zetbox.Parties.Client\Zetbox.Parties.Client.csproj">
       <Project>{8BD50142-8052-403B-BFCB-087AD437E29E}</Project>
       <Name>Zetbox.Parties.Client</Name>
+      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\Zetbox.Parties.Common\Zetbox.Parties.Common.csproj">
       <Project>{927FD8BF-5FE0-4D07-B89E-926E7F694623}</Project>
       <Name>Zetbox.Parties.Common</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

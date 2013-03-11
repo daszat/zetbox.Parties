@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>zetbox.Parties</id>
+    <version>1.0.$REVNUM$.$DIRTY$</version>
+    <title>zetbox.Parties</title>
+    <authors>dasz.at OG</authors>
+    <owners>dasz.at OG</owners>
+    <licenseUrl>http://www.gnu.org/licenses/lgpl.html</licenseUrl>
+    <projectUrl>http://zetbox.at/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>zetbox.Parties supporting package.</description>
+    <releaseNotes>First package.</releaseNotes>
+    <copyright>Copyright © 2012 dasz.at OG</copyright>
+    <dependencies>
+      <dependency id="zetboxBasic" version="[1.0.5144.1, 1.1.0)" />
+      <dependency id="zetbox.Workflow" version="[1.0.142.1, 1.1.0)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Common\zetbox.Parties.Common.dll" target="zetbox\Common" />
+    <file src="Client\zetbox.Parties.Client.dll" target="zetbox\Client" />
+    <file src="Client\zetbox.Parties.Client.WPF.dll" target="zetbox\Client" />
+    <file src="Server\zetbox.Parties.Server.dll" target="zetbox\Server" />
+
+    <file src="..\..\Data\**\*.*" target="zetbox\Data" />
+    <file src="..\..\Modules\**\*.*" target="zetbox\Modules" />
+
+    <!-- this is required to avoid being seen as empty package by nuget -->
+    <!-- see #595 and #2590 on the nuget issue tracker                  -->
+    <file src="README.zetbox.Parties.txt" target="content" />
+  </files>
+</package>

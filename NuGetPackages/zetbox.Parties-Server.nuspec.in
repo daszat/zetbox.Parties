@@ -14,11 +14,12 @@
     <copyright>Copyright © 2012 dasz.at OG</copyright>
     <dependencies>
       <dependency id="zetboxBasic-Server" version="[1.0.4493.1, 1.1.0)" />
-      <dependency id="zetbox.Workflow-Server" version="[1.0.97.1, 1.1.0)" />
+      <dependency id="zetbox.Workflow-Server" version="[1.0.142.1, 1.1.0)" />
     </dependencies>
   </metadata>
   <files>
-    <file src="Server\App.Zetbox.Parties\*.dll" target="lib\net40" />
-    <file src="Server\App.Zetbox.Parties\*.pdb" target="lib\net40" />
+    <file src="Server\Zetbox.Parties.Server.dll" target="lib\net40" />
+    <file src="Server\Zetbox.Parties.Server.pdb" target="lib\net40" />
+    <file src="Server\Zetbox.Parties.Server.xml" target="lib\net40" />
   </files>
 </package>

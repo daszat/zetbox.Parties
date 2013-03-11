@@ -19,6 +19,13 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="zetbox.Parties.nuspec.in">
+      <SubType>Designer</SubType>
+    </None>
+    <NuSpec Include="zetbox.Parties.nuspec">
+      <DependentUpon>zetbox.Parties.nuspec.in</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </NuSpec>
     <None Include="zetbox.Parties-Common.nuspec.in">
       <SubType>Designer</SubType>
     </None>
@@ -48,6 +55,11 @@
     <Compile Include="Properties\VersionInfo.Designer.cs">
       <DependentUpon>VersionInfo.cs</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.zetbox.Parties.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Target Name="GitVersionTargets" Inputs="@(Targets)" Outputs="%(Identity).Dummy">
     <GitVersionFile TemplateFile="@(Targets).in" DestinationFile="@(Targets)" />
