@@ -4,13 +4,13 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Zetbox.Client.Presentables;
-    using Zetbox.App.Extensions;
     using Zetbox.API;
-    using Zetbox.Basic.Accounting;
-    using Zetbox.Client.Presentables.ZetboxBase;
+    using Zetbox.App.Extensions;
     using Zetbox.App.GUI;
+    using Zetbox.Basic.Accounting;
     using Zetbox.Client;
+    using Zetbox.Client.Presentables;
+    using Zetbox.Client.Presentables.ZetboxBase;
 
     [ViewModelDescriptor]
     public class AccountViewModel : DataObjectViewModel
@@ -33,13 +33,12 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         protected override List<PropertyGroupViewModel> CreatePropertyGroups()
         {
             var result = base.CreatePropertyGroups();
-            var lst = ViewModelFactory.CreateViewModel<InstanceListViewModel.Factory>().Invoke(DataContext, this, 
-                () => DataContext, 
-                typeof(Transaction).GetObjectClass(FrozenContext), 
+            var lst = ViewModelFactory.CreateViewModel<InstanceListViewModel.Factory>().Invoke(DataContext, this,
+                typeof(Transaction).GetObjectClass(FrozenContext),
                 () => DataContext.GetQuery<Transaction>().Where(i => i.Account == this.Account));
             lst.AllowAddNew = true;
             lst.AllowDelete = true;
-            lst.IsEditable = true;
+            //lst.IsEditable = true;
             lst.ViewMethod = App.GUI.InstanceListViewMethod.Details;
             lst.RequestedKind = Zetbox.NamedObjects.Gui.ControlKinds.Zetbox_App_GUI_InstanceGridKind.Find(FrozenContext);
             lst.DisplayedColumnsCreated += new InstanceListViewModel.DisplayedColumnsCreatedHandler(lst_DisplayedColumnsCreated);

@@ -3,16 +3,17 @@ namespace Zetbox.Parties.Client
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.Linq;
     using System.Text;
     using Autofac;
     using Zetbox.API;
     using Zetbox.API.Client;
-    using Zetbox.Client;
+    using Zetbox.API.Common.Reporting;
     using Zetbox.API.Configuration;
-    using System.ComponentModel;
+    using Zetbox.Client;
 
-    [Feature(NotOnFallback=true)]
+    [Feature(NotOnFallback = true)]
     [Description("Parties client module")]
     public class ClientModule : Module
     {
@@ -35,7 +36,8 @@ namespace Zetbox.Parties.Client
             moduleBuilder
                 .Register<Reporting.ReportingHost>(c => new Reporting.ReportingHost(
                         c.Resolve<IFileOpener>(),
-                        c.Resolve<ITempFileService>()
+                        c.Resolve<ITempFileService>(),
+                        c.Resolve<IReportingErrorReporter>()
                     )
                 )
                 .InstancePerDependency();
