@@ -16,7 +16,9 @@
     <OutputPath>..\bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="zetbox.Parties-Common.nuspec.in">
       <SubType>Designer</SubType>
     </None>
