@@ -6,6 +6,10 @@
     <DocumentStore>DocumentStore\Server\</DocumentStore>
     <CodeGenWorkingPath>..\CodeGenNext</CodeGenWorkingPath>
     <CodeGenOutputPath>..\CodeGen</CodeGenOutputPath>
+    <CodeGenBinaryOutputPath>
+      <string>./</string>
+      <string>./HttpService/bin</string>
+    </CodeGenBinaryOutputPath>
     <CodeGenArchivePath>..\..\Backup</CodeGenArchivePath>
     <Modules>
       <Module>Zetbox.Server.ServerModule, Zetbox.Server</Module>
@@ -17,13 +21,4 @@
     </Modules>
     <ClientFilesLocations />
   </Server>
-  <AssemblySearchPaths EnableShadowCopy="true">
-    <string>Common\Core</string>
-    <string>Server\Core</string>
-    <string>Server\EF</string>
-    <string>Common\App.Zetbox</string>
-    <string>Server\App.Zetbox</string>
-    <string>Server\App.Zetbox.Parties</string>
-    <string>Common\App.Zetbox.Parties</string>
-  </AssemblySearchPaths>
 </ZetboxConfig>

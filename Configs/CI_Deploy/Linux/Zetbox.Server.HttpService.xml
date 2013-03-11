@@ -8,7 +8,7 @@
       <Module>Zetbox.Server.ServerModule, Zetbox.Server</Module>
       <Module>Zetbox.DalProvider.NHibernate.NHibernateProvider, Zetbox.DalProvider.NHibernate</Module>
       <Module>Zetbox.Server.HtpasswdIdentitySource+Module, Zetbox.Server</Module>
-      <Module NotOnFallback="true">Zetbox.Parties.Server.ServerModule, Zetbox.Parties.Server</Module>
+      <Module>Zetbox.Parties.Server.ServerModule, Zetbox.Parties.Server</Module>
     </Modules>
     <ClientFilesLocations>
       <Location Name="Exe" Start="true">..\Zetbox.Client.WPF.exe</Location>
@@ -17,13 +17,4 @@
       <Location Name="Client">..\Client</Location>
     </ClientFilesLocations>
   </Server>
-  <AssemblySearchPaths EnableShadowCopy="true">
-    <string>../Common/Core</string>
-    <string>../Server/Core</string>
-    <string>../Server/NH</string>
-    <string>../Common/App.Zetbox</string>
-    <string>../Server/App.Zetbox</string>
-    <string>../Server/App.Zetbox.Parties</string>
-    <string>../Common/App.Zetbox.Parties</string>
-  </AssemblySearchPaths>
 </ZetboxConfig>
