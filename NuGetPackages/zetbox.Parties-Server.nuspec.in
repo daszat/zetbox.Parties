@@ -13,6 +13,8 @@
     <releaseNotes>First package.</releaseNotes>
     <copyright>Copyright © 2012 dasz.at OG</copyright>
     <dependencies>
+      <dependency id="zetbox.Parties-Common" version="[1.0.$REVNUM$.$DIRTY$]" />
+
       <dependency id="zetboxBasic-Server" version="[1.0.4493.1, 1.1.0)" />
       <dependency id="zetbox.Workflow-Server" version="[1.0.142.1, 1.1.0)" />
     </dependencies>
