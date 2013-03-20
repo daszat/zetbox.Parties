@@ -6,7 +6,7 @@ using Zetbox.Basic.Parties;
 
 namespace Zetbox.Parties.Client.Reporting.Common
 {
-    [Arebis.CodeGeneration.TemplateInfo(@"C:\Users\david\Projekte\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Signature.cst")]
+    [Arebis.CodeGeneration.TemplateInfo(@"P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Signature.cst")]
     public partial class Signature : Zetbox.Parties.Client.Reporting.ReportTemplate
     {
 		protected Zetbox.Basic.Parties.Party party;
@@ -28,7 +28,7 @@ namespace Zetbox.Parties.Client.Reporting.Common
 
         public override void Generate()
         {
-#line 10 "C:\Users\david\Projekte\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Signature.cst"
+#line 10 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Signature.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("\\paragraph [ Format { SpaceBefore = \"3cm\" } ] {\r\n");
 this.WriteObjects("    ",  FormatName(party) , "\r\n");
