@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-03-20T17:24:30.4916375Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-03-25T10:40:03.1734447Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -20092,7 +20092,7 @@ public static void isValid_VATType(OrderItem obj, PropertyIsValidEventArgs e)
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:CompoundObjectProperty ExportGuid="9ff82091-7374-424e-bbf6-14ccfaec6e26">
     <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-03-20T16:20:36.053196Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-03-25T09:40:03.1734447Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Details(Product obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Products.ProductDetails&gt;&gt; e)
 {
@@ -20122,7 +20122,7 @@ public static void isValid_Details(Product obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Name>Details</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>d10c7d6f-4e7c-49bd-ab7c-82af0f9eda51</ZetboxBase:ObjectClass>
     <ZetboxBase:Properties_pos>4</ZetboxBase:Properties_pos>
-    <GUI:ValueModelDescriptor>a63b9f47-18b7-463d-a06b-7b636de9553f</GUI:ValueModelDescriptor>
+    <GUI:ValueModelDescriptor>856fc0b0-2681-4792-a330-51a35232ee94</GUI:ValueModelDescriptor>
     <ZetboxBase:CompoundObjectDefinition>c58cc541-c273-4cd3-8fc1-ef3f08b7672c</ZetboxBase:CompoundObjectDefinition>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsList>true</ZetboxBase:IsList>
