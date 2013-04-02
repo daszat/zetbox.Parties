@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" date="2013-03-29T11:50:08.4150137Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" date="2013-04-02T11:47:13.7248584Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:AccountImporterDescriptor ExportGuid="edf3def7-0aba-4362-a30a-023e7637b06a">
     <Accounting:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</Accounting:Module>
     <Accounting:Name>MT940 Importer</Accounting:Name>
