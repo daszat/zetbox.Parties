@@ -81,7 +81,7 @@ namespace Zetbox.Basic.Invoicing
             var ctx = obj.Context;
             var result = ctx.Create<PurchaseInvoiceTemplate>();
 
-            result.DueDate.DaysOffset = (obj.DueDate - obj.Date).TotalDays;
+            // TODO: migrate this: result.DueDate.DaysOffset = (obj.DueDate - obj.Date).TotalDays;
             result.Description = obj.Description;
             result.Document = obj.Document;
             result.IntOrg = obj.InternalOrganization;
@@ -115,7 +115,7 @@ namespace Zetbox.Basic.Invoicing
                         ReceiptHeper.CopyCommonData(obj, newObj);
                         ReceiptHeper.MoveTransactions(obj, newObj);
                         newObj.IntOrg = obj.InternalOrganization;
-                        newObj.Party = obj.Supplier != null ?  obj.Supplier.Party : null;
+                        newObj.Party = obj.Supplier != null ? obj.Supplier.Party : null;
                         ctx.Delete(obj);
                         e.Result = newObj;
                         break;
@@ -143,13 +143,13 @@ namespace Zetbox.Basic.Invoicing
                         ReceiptHeper.MoveTransactions(obj, newObj);
                         newObj.InternalOrganization = obj.InternalOrganization;
                         newObj.Customer = obj.Supplier != null ? obj.Supplier.Party.PartyRole.OfType<Customer>().FirstOrDefault() : null;
-                        foreach(var item in obj.Items)
+                        foreach (var item in obj.Items)
                         {
                             var newItem = ctx.Create<SalesInvoiceItem>();
                             newItem.Quantity = item.Quantity;
                             newItem.UnitPrice = item.UnitPrice;
                             newItem.AmountNet = item.AmountNet;
-                            newItem.VATType= item.VATType;
+                            newItem.VATType = item.VATType;
                             newItem.Amount = item.Amount;
                             newItem.Description = item.Description;
                             newObj.Items.Add(newItem);

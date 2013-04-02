@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" date="2012-11-21T15:48:09.9876572Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2013-03-29T11:50:08.4150137Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:Account ExportGuid="5ce18612-eac2-4384-916d-ebf488f5a5ea">
     <Accounting:ChangedOn>2012-11-19T12:37:34.0433906Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2012-10-12T08:16:49.8127899Z</Accounting:CreatedOn>
@@ -167,12 +167,7 @@
     <Invoicing:ChangedOn>2012-11-15T16:09:35.0479244Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-11-15T16:09:35.0479244Z</Invoicing:CreatedOn>
     <Invoicing:Description>Kosten Bankkarte</Invoicing:Description>
-    <Invoicing:DueDate>
-      <EveryDay xmlns="Zetbox.App.Base">false</EveryDay>
-      <EveryMonth xmlns="Zetbox.App.Base">false</EveryMonth>
-      <EveryQuater xmlns="Zetbox.App.Base">false</EveryQuater>
-      <EveryYear xmlns="Zetbox.App.Base">false</EveryYear>
-    </Invoicing:DueDate>
+    <Invoicing:DueDate />
     <Invoicing:Total>0</Invoicing:Total>
     <Invoicing:TotalNet>0</Invoicing:TotalNet>
     <Invoicing:IntOrg>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:IntOrg>
@@ -182,14 +177,7 @@
     <Invoicing:ChangedOn>2012-11-20T09:22:57.8358169Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-12T10:27:18.8805869Z</Invoicing:CreatedOn>
     <Invoicing:Description>SVA</Invoicing:Description>
-    <Invoicing:DueDate>
-      <DaysOffset xmlns="Zetbox.App.Base">-1</DaysOffset>
-      <EveryDay xmlns="Zetbox.App.Base">false</EveryDay>
-      <EveryMonth xmlns="Zetbox.App.Base">false</EveryMonth>
-      <EveryQuater xmlns="Zetbox.App.Base">false</EveryQuater>
-      <EveryYear xmlns="Zetbox.App.Base">false</EveryYear>
-      <MonthsOffset xmlns="Zetbox.App.Base">1</MonthsOffset>
-    </Invoicing:DueDate>
+    <Invoicing:DueDate />
     <Invoicing:Total>1400.00</Invoicing:Total>
     <Invoicing:TotalNet>1400.00</Invoicing:TotalNet>
     <Invoicing:IntOrg>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:IntOrg>
@@ -229,7 +217,6 @@
     <Invoicing:CreatedOn>2012-11-20T08:43:53.9565192Z</Invoicing:CreatedOn>
     <Invoicing:Date>2012-11-18T23:00:00Z</Invoicing:Date>
     <Invoicing:Description>Miete</Invoicing:Description>
-    <Invoicing:Document>4f1fee0c-11a5-4a6d-9cf6-249962b510cc</Invoicing:Document>
     <Invoicing:DueDate>2012-11-18T23:00:00Z</Invoicing:DueDate>
     <Invoicing:FulfillmentDate>2012-11-18T23:00:00Z</Invoicing:FulfillmentDate>
     <Accounting:OpenAmount>0</Accounting:OpenAmount>
@@ -317,12 +304,7 @@
     <Invoicing:ChangedOn>2012-11-19T12:36:43.0874761Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-11-19T12:36:43.0874761Z</Invoicing:CreatedOn>
     <Invoicing:Description>Miete</Invoicing:Description>
-    <Invoicing:DueDate>
-      <EveryDay xmlns="Zetbox.App.Base">false</EveryDay>
-      <EveryMonth xmlns="Zetbox.App.Base">false</EveryMonth>
-      <EveryQuater xmlns="Zetbox.App.Base">false</EveryQuater>
-      <EveryYear xmlns="Zetbox.App.Base">false</EveryYear>
-    </Invoicing:DueDate>
+    <Invoicing:DueDate />
     <Invoicing:Period>MM/20YY</Invoicing:Period>
     <Invoicing:Total>0</Invoicing:Total>
     <Invoicing:TotalNet>0</Invoicing:TotalNet>
@@ -333,13 +315,7 @@
     <Invoicing:ChangedOn>2012-10-10T12:05:11.6797915Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T12:05:11.6797915Z</Invoicing:CreatedOn>
     <Invoicing:Description>Mobile</Invoicing:Description>
-    <Invoicing:DueDate>
-      <DaysOffset xmlns="Zetbox.App.Base">7</DaysOffset>
-      <EveryDay xmlns="Zetbox.App.Base">false</EveryDay>
-      <EveryMonth xmlns="Zetbox.App.Base">false</EveryMonth>
-      <EveryQuater xmlns="Zetbox.App.Base">false</EveryQuater>
-      <EveryYear xmlns="Zetbox.App.Base">false</EveryYear>
-    </Invoicing:DueDate>
+    <Invoicing:DueDate />
     <Invoicing:Total>24.00</Invoicing:Total>
     <Invoicing:TotalNet>20.00</Invoicing:TotalNet>
     <Invoicing:IntOrg>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:IntOrg>
@@ -511,13 +487,7 @@
     <Invoicing:ChangedOn>2012-10-10T11:44:05.741384Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T09:22:51.8787068Z</Invoicing:CreatedOn>
     <Invoicing:Description>Wartungsvertrag</Invoicing:Description>
-    <Invoicing:DueDate>
-      <DaysOffset xmlns="Zetbox.App.Base">30</DaysOffset>
-      <EveryDay xmlns="Zetbox.App.Base">false</EveryDay>
-      <EveryMonth xmlns="Zetbox.App.Base">false</EveryMonth>
-      <EveryQuater xmlns="Zetbox.App.Base">false</EveryQuater>
-      <EveryYear xmlns="Zetbox.App.Base">false</EveryYear>
-    </Invoicing:DueDate>
+    <Invoicing:DueDate />
     <Invoicing:Total>144.00</Invoicing:Total>
     <Invoicing:TotalNet>120.00</Invoicing:TotalNet>
     <Invoicing:Customer>e9fab734-8b2b-4154-a256-ff74e9cf98bc</Invoicing:Customer>

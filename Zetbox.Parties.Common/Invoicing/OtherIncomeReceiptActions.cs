@@ -44,7 +44,7 @@ namespace Zetbox.Basic.Invoicing
             var ctx = obj.Context;
             var result = ctx.Create<OtherIncomeReceiptTemplate>();
 
-            result.DueDate.DaysOffset = (obj.DueDate - obj.Date).TotalDays;
+            // TODO: migrate this: result.DueDate.DaysOffset = (obj.DueDate - obj.Date).TotalDays;
             result.Description = obj.Description;
             result.IntOrg = obj.IntOrg;
             result.Message = obj.Message;

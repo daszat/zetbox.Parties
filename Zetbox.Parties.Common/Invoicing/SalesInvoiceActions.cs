@@ -119,7 +119,7 @@ namespace Zetbox.Basic.Invoicing
             var ctx = obj.Context;
             var result = ctx.Create<SalesInvoiceTemplate>();
 
-            result.DueDate.DaysOffset = (obj.DueDate - obj.Date).TotalDays;
+            // TODO: migrate this: result.DueDate.DaysOffset = (obj.DueDate - obj.Date).TotalDays;
             result.Description = obj.Description;
             // result.Document = obj.Document; Don't copy document on reuse
             result.IntOrg = obj.InternalOrganization;
@@ -153,7 +153,7 @@ namespace Zetbox.Basic.Invoicing
                         ReceiptHeper.CopyCommonData(obj, newObj);
                         ReceiptHeper.MoveTransactions(obj, newObj);
                         newObj.IntOrg = obj.InternalOrganization;
-                        newObj.Party = obj.Customer != null ?  obj.Customer.Party : null;
+                        newObj.Party = obj.Customer != null ? obj.Customer.Party : null;
                         ctx.Delete(obj);
                         e.Result = newObj;
                         break;
@@ -176,13 +176,13 @@ namespace Zetbox.Basic.Invoicing
                         ReceiptHeper.MoveTransactions(obj, newObj);
                         newObj.InternalOrganization = obj.InternalOrganization;
                         newObj.Supplier = obj.Customer != null ? obj.Customer.Party.PartyRole.OfType<Supplier>().FirstOrDefault() : null;
-                        foreach(var item in obj.Items)
+                        foreach (var item in obj.Items)
                         {
                             var newItem = ctx.Create<PurchaseInvoiceItem>();
                             newItem.Quantity = item.Quantity;
                             newItem.UnitPrice = item.UnitPrice;
                             newItem.AmountNet = item.AmountNet;
-                            newItem.VATType= item.VATType;
+                            newItem.VATType = item.VATType;
                             newItem.Amount = item.Amount;
                             newItem.Description = item.Description;
                             newObj.Items.Add(newItem);
@@ -198,7 +198,7 @@ namespace Zetbox.Basic.Invoicing
                     }
                 default:
                     break;
-            }   
+            }
         }
     }
 }
