@@ -12598,7 +12598,7 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
   </ZetboxBase:DateTimeParameter>
   <GUI:ViewModelDescriptor ExportGuid="c8ee4665-c274-4915-b87e-af2db021a67a">
     <GUI:DefaultEditorKind>651ba328-b23a-4c1d-ad41-1e70a5f8ca97</GUI:DefaultEditorKind>
-    <GUI:Deleted>false</GUI:Deleted>
+    <GUI:Deleted>true</GUI:Deleted>
     <GUI:Description>ViewModel for Invoices</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
     <GUI:ViewModelRef>9b78e99f-cd2c-4280-8506-1df08b57a1b7</GUI:ViewModelRef>
