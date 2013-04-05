@@ -12,6 +12,8 @@
       <Module>Zetbox.Microsoft.OutlookMailSender+Module, Zetbox.Microsoft</Module>
       <Module>Zetbox.API.MailProblemReporter+Module, Zetbox.API</Module>
       <Module>Zetbox.App.Projekte.DocumentManagement.FileImportService+Module, Zetbox.App.Projekte.Common</Module>
+      <Module>zetbox.Workflow.Client.ClientModule, zetbox.Workflow.Client</Module>
+      <Module>zetbox.Workflow.Client.WPF.ClientWPFModule, zetbox.Workflow.Client.WPF</Module>
       <Module>Zetbox.Parties.Client.ClientModule, Zetbox.Parties.Client</Module>
       <Module>Zetbox.Parties.Client.WPF.ClientWPFModule, Zetbox.Parties.Client.WPF</Module>
     </Modules>
