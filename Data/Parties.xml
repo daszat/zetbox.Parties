@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2013-04-02T13:33:39.6554087Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2013-04-05T10:37:26.1377154Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:Account ExportGuid="5ce18612-eac2-4384-916d-ebf488f5a5ea">
     <Accounting:ChangedOn>2012-11-19T12:37:34.0433906Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2012-10-12T08:16:49.8127899Z</Accounting:CreatedOn>
@@ -7,14 +7,14 @@
     <Accounting:Name>My Account</Accounting:Name>
   </Accounting:Account>
   <Accounting:AccountImporterDescriptor ExportGuid="edf3def7-0aba-4362-a30a-023e7637b06a">
+    <Accounting:ImporterName>Zetbox.Parties.Common.Accounting.MT940_AccountImporter, Zetbox.Parties.Common</Accounting:ImporterName>
     <Accounting:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</Accounting:Module>
     <Accounting:Name>MT940 Importer</Accounting:Name>
-    <Accounting:TypeRef>032c95cd-1a31-44d5-8cff-af715b4c0069</Accounting:TypeRef>
   </Accounting:AccountImporterDescriptor>
   <Accounting:AccountImporterDescriptor ExportGuid="fd1e08fa-eb7e-4129-95ef-5b0615a29c05">
+    <Accounting:ImporterName>Zetbox.Parties.Common.Accounting.BACA_AccountImporter, Zetbox.Parties.Common</Accounting:ImporterName>
     <Accounting:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</Accounting:Module>
     <Accounting:Name>BA-CA Importer</Accounting:Name>
-    <Accounting:TypeRef>a5498ede-ea93-433c-8464-c2af0a506b8b</Accounting:TypeRef>
   </Accounting:AccountImporterDescriptor>
   <Accounting:Receipt_Transaction ExportGuid="3b8e7f02-3243-4d93-91d7-bb15e4b25d79">
     <Accounting:Amount>-400.00</Accounting:Amount>

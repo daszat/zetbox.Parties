@@ -25,7 +25,7 @@ namespace Zetbox.Basic.Accounting
         {
             if (obj.Importer != null)
             {
-                var type = obj.Importer.TypeRef.AsType(true);
+                var type = Type.GetType(obj.Importer.ImporterName, true);
                 var importer = (IAccountImporter)_container.Resolve(type);
                 importer.Import(obj.Context, obj, _modelFactory.GetSourceFileNameFromUser());
                 _modelFactory.ShowMessage("Transactions successfully imported", "Success");

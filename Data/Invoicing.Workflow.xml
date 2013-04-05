@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Workflow="Zetbox.Basic.Workflow" date="2013-04-02T13:33:39.6554087Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Workflow="Zetbox.Basic.Workflow" date="2013-04-05T10:37:26.1377154Z" xmlns="http://dasz.at/Zetbox">
   <Workflow:Action ExportGuid="35fb1b84-5892-4eef-b770-6889569fc5d2">
     <Workflow:ChangedOn>2013-04-02T09:31:42.9287881Z</Workflow:ChangedOn>
     <Workflow:CreatedOn>2012-10-12T10:15:37.6684799Z</Workflow:CreatedOn>
     <Workflow:Description>Creates a receipt from the given template</Workflow:Description>
-    <Workflow:Implementor>1997a929-f121-44e1-a3fa-fec05402b89c</Workflow:Implementor>
     <Workflow:ImplementorName>Zetbox.Parties.Common.Invoicing.Workflow.Action, Zetbox.Parties.Common</Workflow:ImplementorName>
     <Workflow:IsOnEnterActionDefault>false</Workflow:IsOnEnterActionDefault>
     <Workflow:IsVisibleDefault>false</Workflow:IsVisibleDefault>

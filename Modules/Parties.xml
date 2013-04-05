@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-04-02T13:33:39.6554087Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-04-05T10:37:26.1377154Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -555,6 +555,44 @@ public static void isValid_ExportGuid(AccountImporterDescriptor obj, PropertyIsV
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
   </ZetboxBase:GuidProperty>
+  <ZetboxBase:StringProperty ExportGuid="82b700dd-6886-43e3-83ea-b355d769f90a">
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-04-05T08:37:26.1377154Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void get_ImporterName(AccountImporterDescriptor obj, PropertyGetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_ImporterName(AccountImporterDescriptor obj, PropertyPreSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_ImporterName(AccountImporterDescriptor obj, PropertyPostSetterEventArgs&lt;string&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_ImporterName(AccountImporterDescriptor obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.ImporterName == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2013-04-05T08:37:26.1377154Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>The typename of this importer.</ZetboxBase:Description>
+    <ZetboxBase:Label>Importer name</ZetboxBase:Label>
+    <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
+    <ZetboxBase:Name>ImporterName</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>57e5fc99-be46-485b-b732-4ab9790bc153</ZetboxBase:ObjectClass>
+    <ZetboxBase:Properties_pos>4</ZetboxBase:Properties_pos>
+    <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
+    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
+    <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
+    <ZetboxBase:IsList>false</ZetboxBase:IsList>
+  </ZetboxBase:StringProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="e2e9ebc7-ef6d-4af6-a853-244a8a8a65fe">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2012-10-10T14:27:19.6005607Z</ZetboxBase:ChangedOn>
@@ -627,41 +665,6 @@ public static void isValid_Name(AccountImporterDescriptor obj, PropertyIsValidEv
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
   </ZetboxBase:StringProperty>
-  <ZetboxBase:ObjectReferenceProperty ExportGuid="fd8037f7-a255-4720-94f9-f3d6d0b638c0">
-    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-12-09T13:46:39.233312Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CodeTemplate>[Invocation]
-public static void get_TypeRef(AccountImporterDescriptor obj, PropertyGetterEventArgs&lt;Zetbox.App.Base.TypeRef&gt; e)
-{
-}
-
-[Invocation]
-public static void preSet_TypeRef(AccountImporterDescriptor obj, PropertyPreSetterEventArgs&lt;Zetbox.App.Base.TypeRef&gt; e)
-{
-}
-
-[Invocation]
-public static void postSet_TypeRef(AccountImporterDescriptor obj, PropertyPostSetterEventArgs&lt;Zetbox.App.Base.TypeRef&gt; e)
-{
-}
-
-[Invocation]
-public static void isValid_TypeRef(AccountImporterDescriptor obj, PropertyIsValidEventArgs e)
-{
-	e.IsValid = obj.TypeRef == ...;
-	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
-}
-
-</ZetboxBase:CodeTemplate>
-    <ZetboxBase:CreatedOn>2011-12-09T13:46:39.233312Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
-    <ZetboxBase:Name>TypeRef</ZetboxBase:Name>
-    <ZetboxBase:ObjectClass>57e5fc99-be46-485b-b732-4ab9790bc153</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>1</ZetboxBase:Properties_pos>
-    <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
-    <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
-    <ZetboxBase:RelationEnd>d9dd8514-a58a-49d5-9d13-2fa715a1464f</ZetboxBase:RelationEnd>
-  </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:DecimalProperty ExportGuid="0ab00b9e-62f8-4518-b807-019cd4511aae">
     <ZetboxBase:CategoryTags>Summary, Transactions</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2012-04-10T17:22:54.7672695Z</ZetboxBase:ChangedOn>
@@ -1776,16 +1779,6 @@ public static void get_VAT(Transaction obj, PropertyGetterEventArgs&lt;decimal&g
     <ZetboxBase:Storage>1</ZetboxBase:Storage>
     <ZetboxBase:Verb>has</ZetboxBase:Verb>
   </ZetboxBase:Relation>
-  <ZetboxBase:Relation ExportGuid="8ddd4578-0a9f-475d-a943-ae0cc347a591">
-    <ZetboxBase:A>d9dd8514-a58a-49d5-9d13-2fa715a1464f</ZetboxBase:A>
-    <ZetboxBase:B>72d3f0cc-1e88-4d5d-9a52-a1b7c0fd210f</ZetboxBase:B>
-    <ZetboxBase:ChangedOn>2011-12-09T13:46:39.233312Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:Containment>0</ZetboxBase:Containment>
-    <ZetboxBase:CreatedOn>2011-12-09T13:46:39.233312Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
-    <ZetboxBase:Storage>1</ZetboxBase:Storage>
-    <ZetboxBase:Verb>using</ZetboxBase:Verb>
-  </ZetboxBase:Relation>
   <ZetboxBase:Relation ExportGuid="f11b5841-4e99-4110-ae9f-dd234474b3ae">
     <ZetboxBase:A>ff9d4bf7-30ef-4fed-b1fb-ef535e67d992</ZetboxBase:A>
     <ZetboxBase:B>4225697b-f84a-4936-8437-68858e8a1018</ZetboxBase:B>
@@ -1914,16 +1907,6 @@ public static void get_VAT(Transaction obj, PropertyGetterEventArgs&lt;decimal&g
     <ZetboxBase:Navigator>f31e0f5a-2d02-4272-9e97-983bad75e5ec</ZetboxBase:Navigator>
     <ZetboxBase:RoleName>Account</ZetboxBase:RoleName>
     <ZetboxBase:Type>9dc19fb1-4c9d-422d-89e3-bed1ebebf5a6</ZetboxBase:Type>
-  </ZetboxBase:RelationEnd>
-  <ZetboxBase:RelationEnd ExportGuid="d9dd8514-a58a-49d5-9d13-2fa715a1464f">
-    <ZetboxBase:AParent>8ddd4578-0a9f-475d-a943-ae0cc347a591</ZetboxBase:AParent>
-    <ZetboxBase:ChangedOn>2011-12-09T13:46:39.233312Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-12-09T13:46:39.233312Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
-    <ZetboxBase:Multiplicity>3</ZetboxBase:Multiplicity>
-    <ZetboxBase:Navigator>fd8037f7-a255-4720-94f9-f3d6d0b638c0</ZetboxBase:Navigator>
-    <ZetboxBase:RoleName>AccountImporter</ZetboxBase:RoleName>
-    <ZetboxBase:Type>57e5fc99-be46-485b-b732-4ab9790bc153</ZetboxBase:Type>
   </ZetboxBase:RelationEnd>
   <ZetboxBase:RelationEnd ExportGuid="82d58de2-051b-46ab-bbb4-c1da86c65f54">
     <ZetboxBase:AParent>36d3a107-7a79-4bb2-9c05-62980700d6e8</ZetboxBase:AParent>
@@ -2155,15 +2138,6 @@ public static void get_VAT(Transaction obj, PropertyGetterEventArgs&lt;decimal&g
     <ZetboxBase:RoleName>Transactions</ZetboxBase:RoleName>
     <ZetboxBase:Type>1b46a1ab-6a94-440c-b7b5-a8d6de685eae</ZetboxBase:Type>
   </ZetboxBase:RelationEnd>
-  <ZetboxBase:RelationEnd ExportGuid="72d3f0cc-1e88-4d5d-9a52-a1b7c0fd210f">
-    <ZetboxBase:BParent>8ddd4578-0a9f-475d-a943-ae0cc347a591</ZetboxBase:BParent>
-    <ZetboxBase:ChangedOn>2011-12-09T13:46:39.233312Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-12-09T13:46:39.233312Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
-    <ZetboxBase:Multiplicity>2</ZetboxBase:Multiplicity>
-    <ZetboxBase:RoleName>TypeRef</ZetboxBase:RoleName>
-    <ZetboxBase:Type>87766ae2-89a4-4c37-ab25-583a710c55e5</ZetboxBase:Type>
-  </ZetboxBase:RelationEnd>
   <ZetboxBase:ClientReadOnlyConstraint ExportGuid="7de46537-48cf-473c-b521-e653625c7b29">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:56.321369Z</ZetboxBase:ChangedOn>
     <ZetboxBase:ConstrainedProperty>242bf769-3c25-413a-8783-59abf9f3f1e1</ZetboxBase:ConstrainedProperty>
@@ -2233,6 +2207,13 @@ public static void get_VAT(Transaction obj, PropertyGetterEventArgs&lt;decimal&g
     <ZetboxBase:ConstrainedProperty>1ef0011f-3d26-409d-bde1-2cec3e7cb269</ZetboxBase:ConstrainedProperty>
     <ZetboxBase:CreatedOn>2011-12-09T13:44:45.985834Z</ZetboxBase:CreatedOn>
   </ZetboxBase:NotNullableConstraint>
+  <ZetboxBase:StringRangeConstraint ExportGuid="916a93bb-07ca-439d-9d71-93498b75a43a">
+    <ZetboxBase:ChangedOn>2013-04-05T08:37:26.1377154Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ConstrainedProperty>82b700dd-6886-43e3-83ea-b355d769f90a</ZetboxBase:ConstrainedProperty>
+    <ZetboxBase:CreatedOn>2013-04-05T08:37:26.1377154Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:MaxLength>3000</ZetboxBase:MaxLength>
+    <ZetboxBase:MinLength>1</ZetboxBase:MinLength>
+  </ZetboxBase:StringRangeConstraint>
   <ZetboxBase:NotNullableConstraint ExportGuid="d00d44ef-0f2b-411b-91ef-1fc25ae20700">
     <ZetboxBase:ChangedOn>2011-12-09T13:44:45.985834Z</ZetboxBase:ChangedOn>
     <ZetboxBase:ConstrainedProperty>e2e9ebc7-ef6d-4af6-a853-244a8a8a65fe</ZetboxBase:ConstrainedProperty>
@@ -2251,11 +2232,6 @@ public static void get_VAT(Transaction obj, PropertyGetterEventArgs&lt;decimal&g
     <ZetboxBase:MaxLength>200</ZetboxBase:MaxLength>
     <ZetboxBase:MinLength>0</ZetboxBase:MinLength>
   </ZetboxBase:StringRangeConstraint>
-  <ZetboxBase:NotNullableConstraint ExportGuid="8d6cc924-1611-46f7-a002-7a7651e47440">
-    <ZetboxBase:ChangedOn>2011-12-09T13:46:39.233312Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:ConstrainedProperty>fd8037f7-a255-4720-94f9-f3d6d0b638c0</ZetboxBase:ConstrainedProperty>
-    <ZetboxBase:CreatedOn>2011-12-09T13:46:39.233312Z</ZetboxBase:CreatedOn>
-  </ZetboxBase:NotNullableConstraint>
   <ZetboxBase:NotNullableConstraint ExportGuid="18924f94-c3e9-451a-95f2-5e13a36b21ad">
     <ZetboxBase:ChangedOn>2012-04-10T17:22:33.8780747Z</ZetboxBase:ChangedOn>
     <ZetboxBase:ConstrainedProperty>0ab00b9e-62f8-4518-b807-019cd4511aae</ZetboxBase:ConstrainedProperty>
@@ -2631,7 +2607,6 @@ public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Accounts</GUI:Description>
     <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
-    <GUI:ViewModelRef>4aede3d7-d585-49cf-ae30-3af0f2f41509</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Accounting.AccountViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="b23e80c9-22bc-4a70-9c35-395fdcb6af7a">
@@ -2639,19 +2614,16 @@ public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Accounting Link Receipt and Transaction</GUI:Description>
     <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
-    <GUI:ViewModelRef>717f6660-b612-4f4e-910f-1c6f8ef121ec</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Accounting.LinkReceiptTransactionViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="01072a87-ad1a-46c4-9dd7-f831fa185e48">
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Transactions</GUI:Description>
     <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
-    <GUI:ViewModelRef>2fb9f674-de13-4c04-b90a-0825ac2c7f96</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Accounting.TransactionViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewDescriptor ExportGuid="274feafe-91ce-4c6a-b5bb-6062aa7f225f">
     <GUI:ControlKind>5d3b4969-b3cc-4dfb-b51f-b88fbf1ef2b2</GUI:ControlKind>
-    <GUI:ControlRef>66f0b655-387a-4b34-930e-701d89f57218</GUI:ControlRef>
     <GUI:ControlTypeRef>Zetbox.Parties.Client.View.Accounting.LinkReceiptTransactionDialog, Zetbox.Parties.Client.WPF</GUI:ControlTypeRef>
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
@@ -12481,7 +12453,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <ZetboxBase:Method>7abd5601-ac20-4d5a-b1fa-a975a98adb4d</ZetboxBase:Method>
     <ZetboxBase:Parameter_pos>0</ZetboxBase:Parameter_pos>
     <ZetboxBase:Name>retVal</ZetboxBase:Name>
-    <ZetboxBase:Type>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Type>
     <ZetboxBase:TypeRef>System.Object, mscorlib</ZetboxBase:TypeRef>
   </ZetboxBase:CLRObjectParameter>
   <ZetboxBase:DateTimeParameter ExportGuid="bd47f5bd-3ab4-43f9-b176-f293f7deb355">
@@ -12515,7 +12486,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <ZetboxBase:Method>b3052100-5477-4a15-869a-2561d0bb9bc4</ZetboxBase:Method>
     <ZetboxBase:Parameter_pos>0</ZetboxBase:Parameter_pos>
     <ZetboxBase:Name>retVal</ZetboxBase:Name>
-    <ZetboxBase:Type>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Type>
     <ZetboxBase:TypeRef>System.Object, mscorlib</ZetboxBase:TypeRef>
   </ZetboxBase:CLRObjectParameter>
   <ZetboxBase:DateTimeParameter ExportGuid="92e7b0ad-e15c-47e8-b4e8-54e997840976">
@@ -12549,7 +12519,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <ZetboxBase:Method>4acfbb53-bd2a-4639-8b5d-d55b853e1513</ZetboxBase:Method>
     <ZetboxBase:Parameter_pos>0</ZetboxBase:Parameter_pos>
     <ZetboxBase:Name>retVal</ZetboxBase:Name>
-    <ZetboxBase:Type>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Type>
     <ZetboxBase:TypeRef>System.Object, mscorlib</ZetboxBase:TypeRef>
   </ZetboxBase:CLRObjectParameter>
   <ZetboxBase:DateTimeParameter ExportGuid="2688cd77-4e98-44d9-a52f-63aca55e1a1e">
@@ -12582,7 +12551,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <ZetboxBase:Method>1b794b9f-a9a3-4dc7-af30-02fce7db8091</ZetboxBase:Method>
     <ZetboxBase:Parameter_pos>0</ZetboxBase:Parameter_pos>
     <ZetboxBase:Name>retVal</ZetboxBase:Name>
-    <ZetboxBase:Type>c51c8086-60b2-410e-96c4-c1a32c1f57ee</ZetboxBase:Type>
     <ZetboxBase:TypeRef>System.Object, mscorlib</ZetboxBase:TypeRef>
   </ZetboxBase:CLRObjectParameter>
   <ZetboxBase:DateTimeParameter ExportGuid="e35322eb-9a33-4e68-9db3-0a450800b0c5">
@@ -12601,14 +12569,12 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Deleted>true</GUI:Deleted>
     <GUI:Description>ViewModel for Invoices</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>9b78e99f-cd2c-4280-8506-1df08b57a1b7</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.InvoiceViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="99d11e51-81d8-46e2-a838-4e2d1a609ab3">
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>SearchViewModel for open receipts</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>da63a5fa-aa3e-41f3-80e8-918ed28e3422</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.OpenReceiptsNavigationSearchViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="6ad05d98-01e2-4d84-9003-ef2d78a7e317">
@@ -12616,7 +12582,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Other Expense Receipt Template</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>97770e91-671b-418e-b5c8-ac0342694864</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.OtherExpenseReceiptTemplateViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="cd8d2a31-0fb3-4b17-b782-eeeaf7ac0c5d">
@@ -12624,7 +12589,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Other Expense Receipts</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>7fd35fab-4e62-4669-81b3-c01f58f90207</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.OtherExpenseReceiptViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="2d27c081-ef97-41a0-8af1-fe2515183b02">
@@ -12632,7 +12596,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Other Income Receipt Templates</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>98208c34-aad2-4603-9e2c-10d0fc323e52</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.OtherIncomeReceiptTemplateViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="b8f24ce3-0b97-4b81-b8f9-0eaabe5915e6">
@@ -12640,14 +12603,12 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Other Income Receipts</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>c0c98f41-33cf-4bf5-83bb-2254bdf10978</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.OtherIncomeReceiptViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="496c1a58-d48d-44bd-b7b2-32a5f593f7c2">
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Purchase Invoice Items</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>965ff549-7b67-4913-8cb5-bda515a98719</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.PurchaseInvoiceItemViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="90b827ba-5e9d-4241-8981-36aa7394ec74">
@@ -12655,7 +12616,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Purchase Invoice Template</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>67be9633-17a5-4723-8b62-6c98b6dcf51b</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.PurchaseInvoiceTemplateViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="4c10c8c1-8108-4d21-9f91-69f3ae8db405">
@@ -12663,7 +12623,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Purchase Invoices</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>78146cfd-f957-4a13-af62-d57ba611d657</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.PurchaseInvoiceViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="b30e713b-ce88-4f8f-ac56-65d12eecdde6">
@@ -12671,35 +12630,30 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Purchase Quotes</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>f2fbf5d2-8a39-45d8-bdb0-42ea8d7a4093</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.PurchaseQuoteViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="5f1a0875-745c-45f6-a967-a36fff24e708">
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ScreenViewModel for Purchase Invoice Reports</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>05b05728-a38e-4d31-acfd-55f72722206b</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.Reports.PurchaseInvoiceReportScreenViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="c5eb7c5a-7d81-4973-b5f3-6bd636dca3d6">
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ScreenViewModel for Sales Invoice Reports</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>ed1dd717-c913-49e4-98f3-1267a24585c1</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.Reports.SalesInvoiceReportScreenViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="27ec209b-6cc2-4a51-b8a8-a7604849328a">
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ScreenViewModel for Sales Quote Reports</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>9fc69633-6a7d-4ed2-ac2b-6bf4be5777d9</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.Reports.SalesQuoteReportScreenViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="d0803ad9-c968-4c08-aac1-15ee31987b31">
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Sales Invoice Items</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>8572fc1b-0591-4235-8120-4fdc2e09b044</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.SalesInvoiceItemViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="4b16f58c-3d44-4658-b8a8-488099b1bd33">
@@ -12707,7 +12661,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Sales Invoice Templates</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>a0e8f7ed-f133-4a7d-8b05-c48a897bca0a</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.SalesInvoiceTemplateViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="e3a061b7-1f12-4fa0-a968-eacd299e752e">
@@ -12715,7 +12668,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Sales Invoices</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>fb5db0f6-17ed-46af-abb4-76275d21912d</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.SalesInvoiceViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="605b2b7e-e3d3-463f-838f-8896415f77a3">
@@ -12723,12 +12675,10 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>ViewModel for Sales Quotes</GUI:Description>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
-    <GUI:ViewModelRef>af1b64ba-8934-40ca-a84c-1f9b3732f917</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Parties.Client.ViewModel.Invoicing.SalesQuoteViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewDescriptor ExportGuid="06d99cd4-b8e6-4b9a-8acc-37c407dd76b0">
     <GUI:ControlKind>651ba328-b23a-4c1d-ad41-1e70a5f8ca97</GUI:ControlKind>
-    <GUI:ControlRef>300e3f2f-a5cc-4445-aa28-3d372e206c0c</GUI:ControlRef>
     <GUI:ControlTypeRef>Zetbox.Parties.Client.View.Invoicing.InvoiceEditor, Zetbox.Parties.Client.WPF</GUI:ControlTypeRef>
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
@@ -12736,7 +12686,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
   </GUI:ViewDescriptor>
   <GUI:ViewDescriptor ExportGuid="3bebdf65-4dbc-43a8-a7f5-97ca37b7ef27">
     <GUI:ControlKind>a49c62da-e4c7-43c4-ae34-ca91767641e3</GUI:ControlKind>
-    <GUI:ControlRef>98444bba-2b02-4ac9-9367-5d20186f8608</GUI:ControlRef>
     <GUI:ControlTypeRef>Zetbox.Parties.Client.View.Invoicing.InvoiceTemplateEditor, Zetbox.Parties.Client.WPF</GUI:ControlTypeRef>
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
@@ -12744,7 +12693,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
   </GUI:ViewDescriptor>
   <GUI:ViewDescriptor ExportGuid="ab64b40f-1719-4ba1-a1e6-5b65badb7dcb">
     <GUI:ControlKind>2f53471c-6a08-4c1b-ad89-b9206c147ed8</GUI:ControlKind>
-    <GUI:ControlRef>6207562d-a5d1-46f2-8179-6a998e846e2a</GUI:ControlRef>
     <GUI:ControlTypeRef>Zetbox.Parties.Client.View.Invoicing.PurchaseQuoteEditor, Zetbox.Parties.Client.WPF</GUI:ControlTypeRef>
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
@@ -12752,7 +12700,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
   </GUI:ViewDescriptor>
   <GUI:ViewDescriptor ExportGuid="93c9d3ea-dae3-4024-88f1-af1ed7fe9fe1">
     <GUI:ControlKind>bb54f1d9-ab07-4787-b190-5c09c8c9756a</GUI:ControlKind>
-    <GUI:ControlRef>645bec99-40af-4285-9a4e-b17973ee5cfc</GUI:ControlRef>
     <GUI:ControlTypeRef>Zetbox.Parties.Client.View.Invoicing.ReceiptEditor, Zetbox.Parties.Client.WPF</GUI:ControlTypeRef>
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
@@ -12760,7 +12707,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
   </GUI:ViewDescriptor>
   <GUI:ViewDescriptor ExportGuid="a949a68e-65d3-4297-a72e-328a394dabf6">
     <GUI:ControlKind>df925785-eadf-477d-a4f6-54acf2d3581b</GUI:ControlKind>
-    <GUI:ControlRef>ca88caf7-3515-4192-a6f0-b70ab20a0003</GUI:ControlRef>
     <GUI:ControlTypeRef>Zetbox.Parties.Client.View.Invoicing.ReceiptTemplateEditor, Zetbox.Parties.Client.WPF</GUI:ControlTypeRef>
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
@@ -12768,7 +12714,6 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
   </GUI:ViewDescriptor>
   <GUI:ViewDescriptor ExportGuid="0ffce35a-e94b-4aa9-9705-1364386de66c">
     <GUI:ControlKind>f76922f7-d2ce-40bf-a277-7161045f6321</GUI:ControlKind>
-    <GUI:ControlRef>ac7fe9ac-3439-48ac-9959-8f6598c45e28</GUI:ControlRef>
     <GUI:ControlTypeRef>Zetbox.Parties.Client.View.Invoicing.SalesQuoteEditor, Zetbox.Parties.Client.WPF</GUI:ControlTypeRef>
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
@@ -17733,14 +17678,12 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>Specialized ViewModel for Organizations</GUI:Description>
     <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
-    <GUI:ViewModelRef>0f4cfbc8-9f75-4c9e-af15-efcb5e218ac2</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Client.Presentables.Parties.OrganizationViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="dad0f30a-a830-4a0c-a84f-22270d211753">
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>Specialized ViewModel for Persons</GUI:Description>
     <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
-    <GUI:ViewModelRef>f69b3007-05a5-47db-b839-6f8e3218f9cf</GUI:ViewModelRef>
     <GUI:ViewModelTypeRef>Zetbox.Client.Presentables.Parties.PersonViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
   <GUI:NavigationSearchScreen ExportGuid="c0cc663c-ab2b-4cdd-b7ff-ce6069fabdc6">
