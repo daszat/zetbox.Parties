@@ -15,8 +15,8 @@
     <dependencies>
       <dependency id="zetbox.Parties-Common" version="[1.0.$REVNUM$.$DIRTY$]" />
 
-      <dependency id="zetboxBasic-Server" version="[1.0.4493.1, 1.1.0)" />
-      <dependency id="zetbox.Workflow-Server" version="[1.0.142.1, 1.1.0)" />
+      <dependency id="zetboxBasic-Server" version="[1.0.5355.1, 1.1.0)" />
+      <dependency id="zetbox.Workflow-Server" version="[1.0.152.1, 1.1.0)" />
     </dependencies>
   </metadata>
   <files>
