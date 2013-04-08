@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-04-05T10:37:26.1377154Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-04-08T11:19:44.0657052Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -15775,7 +15775,7 @@ public static void isValid_CreatedOn(Party obj, PropertyIsValidEventArgs e)
   </ZetboxBase:DateTimeProperty>
   <ZetboxBase:CompoundObjectProperty ExportGuid="59b52eef-82b4-4699-959e-e2ff106e2cbe">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:18:24.3499461Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-04-08T09:19:44.0657052Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_DeliveryAddresses(Party obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Parties.Address&gt;&gt; e)
 {
@@ -15805,7 +15805,7 @@ public static void isValid_DeliveryAddresses(Party obj, PropertyIsValidEventArgs
     <ZetboxBase:Name>DeliveryAddresses</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</ZetboxBase:ObjectClass>
     <ZetboxBase:Properties_pos>7</ZetboxBase:Properties_pos>
-    <GUI:ValueModelDescriptor>b255299f-0e90-42f6-a752-2619c058ccf2</GUI:ValueModelDescriptor>
+    <GUI:ValueModelDescriptor>856fc0b0-2681-4792-a330-51a35232ee94</GUI:ValueModelDescriptor>
     <ZetboxBase:CompoundObjectDefinition>65cea6d5-76ee-4377-ad6a-05037aff48c8</ZetboxBase:CompoundObjectDefinition>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsList>true</ZetboxBase:IsList>
