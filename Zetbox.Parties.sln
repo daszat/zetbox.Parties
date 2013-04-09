@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E9A64B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetPackages", "NuGetPackages\NuGetPackages.csproj", "{9ABBE6BE-0F08-4ED6-A1AB-B3882849CDD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.ASPNET", "Zetbox.Parties.ASPNET\Zetbox.Parties.ASPNET.csproj", "{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,14 @@ Global
 		{9ABBE6BE-0F08-4ED6-A1AB-B3882849CDD0}.Linux.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ABBE6BE-0F08-4ED6-A1AB-B3882849CDD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ABBE6BE-0F08-4ED6-A1AB-B3882849CDD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Fallback|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Fallback|Any CPU.Build.0 = Release|Any CPU
+		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Linux.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Linux.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
