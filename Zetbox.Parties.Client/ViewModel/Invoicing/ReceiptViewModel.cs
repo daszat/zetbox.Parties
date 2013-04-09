@@ -44,8 +44,8 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             }
         }
 
-        public abstract ViewModel Party { get; }
-        public abstract ViewModel InternalOrganization { get; }
+        public abstract BaseValueViewModel Party { get; }
+        public abstract BaseValueViewModel InternalOrganization { get; }
 
         private IEnumerable<ViewModel> _receiptActions;
         public IEnumerable<ViewModel> ReceiptActions

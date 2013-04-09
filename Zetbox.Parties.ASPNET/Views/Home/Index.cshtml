@@ -1,8 +1,16 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@using Zetbox.Parties.ASPNET
+@{
+    ViewBag.Title = @Resources.HomePageTitle;
 }
-
-<h2>@ViewBag.Message</h2>
+<h2>@Resources.HomePageTitle</h2>
+<strong>@Resources.HomePageSubTitle</strong>
 <p>
-    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+    <h1>
+        @Html.ActionLink(@Resources.Receipts, "Index", "Receipt")
+    </h1>
+</p>
+<p>
+    <h1>
+        @Html.ActionLink(@Resources.Transactions, "Index", "Transaction")
+    </h1>
 </p>

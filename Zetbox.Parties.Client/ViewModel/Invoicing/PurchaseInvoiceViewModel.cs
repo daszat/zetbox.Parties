@@ -6,6 +6,7 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
     using Zetbox.App.GUI;
     using Zetbox.Basic.Parties;
     using Zetbox.Parties.Client.ViewModel.Invoicing.Utils;
+    using Zetbox.Client.Presentables.ValueViewModels;
 
     /// <summary>
     /// </summary>
@@ -30,8 +31,8 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             }
         }
 
-        private ViewModel _supplierParty;
-        public override ViewModel Party
+        private BaseValueViewModel _supplierParty;
+        public override BaseValueViewModel Party
         {
             get
             {
@@ -43,7 +44,7 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             }
         }
 
-        public override ViewModel Issuer
+        public override BaseValueViewModel Issuer
         {
             get { return null; }
         }

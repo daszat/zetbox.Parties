@@ -1,0 +1,38 @@
+﻿@model Zetbox.Parties.ASPNET.Models.TransactionSearchViewModel
+@using Zetbox.Parties.ASPNET
+@using Zetbox.Client.ASPNET
+@{
+    ViewBag.Title = @Resources.Transactions;
+}
+
+<h2>@Resources.Transactions</h2>
+
+
+@using (Html.BeginForm())
+{
+    <p>
+        Search
+    </p>
+    <p>
+        <input type="submit" /></p>
+}
+<table class="strech">
+    <tr>
+        <th>
+        </th>
+        <th style="width:100%;">
+            Name
+        </th>
+    </tr>
+    @foreach (var prj in Model.Result)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink("Details", "Details", new { ID = prj.ID })
+            </td>
+            <td>
+                @prj.Name
+            </td>
+        </tr>
+    }
+</table>

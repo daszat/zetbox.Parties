@@ -17,7 +17,7 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing.Utils
     
     public static class PartyRoleReferenceViewModelFactory
     {
-        public static ViewModel Create<TObject, TRole>(IViewModelFactory mdlFactory, IZetboxContext ctx, IFrozenContext frozenCtx, ViewModel parent, string label, IDataObject obj, Expression<Func<TObject, PartyRole>> property)
+        public static BaseValueViewModel Create<TObject, TRole>(IViewModelFactory mdlFactory, IZetboxContext ctx, IFrozenContext frozenCtx, ViewModel parent, string label, IDataObject obj, Expression<Func<TObject, PartyRole>> property)
             where TRole : class, PartyRole
             where TObject : class, IDataObject
         {

@@ -47,8 +47,8 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
 
         public new SalesInvoice Invoice { get; private set; }
 
-        private ViewModel _customerParty;
-        public override ViewModel Party
+        private BaseValueViewModel _customerParty;
+        public override BaseValueViewModel Party
         {
             get
             {
@@ -61,7 +61,7 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             }
         }
 
-        public override ViewModel Issuer
+        public override BaseValueViewModel Issuer
         {
             get { return PropertyModelsByName["Issuer"]; }
         }
