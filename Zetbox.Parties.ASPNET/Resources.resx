@@ -123,6 +123,12 @@
   <data name="BackToList" xml:space="preserve">
     <value>Back to List</value>
   </data>
+  <data name="Document" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -141,10 +147,16 @@
   <data name="Navigation" xml:space="preserve">
     <value>Navigation</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
   <data name="Receipts" xml:space="preserve">
     <value>Receipts</value>
   </data>
   <data name="Transactions" xml:space="preserve">
     <value>Transactions</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
   </data>
 </root>

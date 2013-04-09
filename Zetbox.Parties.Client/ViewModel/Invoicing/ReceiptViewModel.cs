@@ -86,5 +86,13 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
                 return base.HighlightAsync;
             }
         }
+
+        public bool HasDocument
+        {
+            get
+            {
+                return Receipt.Document != null && Receipt.Document.Blob != null;
+            }
+        }
     }
 }

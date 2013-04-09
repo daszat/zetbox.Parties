@@ -31,5 +31,13 @@ namespace Zetbox.Parties.ASPNET.Models
                 return (Zetbox.Parties.Client.ViewModel.Invoicing.ReceiptViewModel)ViewModel;
             }
         }
+
+        public int BlobID // ASP.NET specific?
+        {
+            get
+            {
+                return ReceiptViewModel.HasDocument ? Object.Document.Blob.ID : -1;
+            }
+        }
     }
 }

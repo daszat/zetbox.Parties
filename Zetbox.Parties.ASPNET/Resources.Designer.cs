@@ -79,6 +79,24 @@ namespace Zetbox.Parties.ASPNET {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Document.
+        /// </summary>
+        public static string Document {
+            get {
+                return ResourceManager.GetString("Document", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        public static string Edit {
+            get {
+                return ResourceManager.GetString("Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string Home {
@@ -133,6 +151,15 @@ namespace Zetbox.Parties.ASPNET {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to New.
+        /// </summary>
+        public static string New {
+            get {
+                return ResourceManager.GetString("New", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Receipts.
         /// </summary>
         public static string Receipts {
@@ -147,6 +174,15 @@ namespace Zetbox.Parties.ASPNET {
         public static string Transactions {
             get {
                 return ResourceManager.GetString("Transactions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View.
+        /// </summary>
+        public static string View {
+            get {
+                return ResourceManager.GetString("View", resourceCulture);
             }
         }
     }

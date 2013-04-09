@@ -11,7 +11,7 @@
     <ConnectionStrings>
       <Database Name="Zetbox" Schema="MSSQL" Provider="System.Data.SqlClient">Data Source=.\SQLEXPRESS;Initial Catalog=Parties;Integrated Security=True;MultipleActiveResultSets=true;</Database>
     </ConnectionStrings>
-    <DocumentStore>DocumentStore\Server\</DocumentStore>
+    <DocumentStore>..\bin\Debug\DocumentStore\Server\</DocumentStore>
     <Modules>
       <Module>Zetbox.Server.ServerModule, Zetbox.Server</Module>
       <Module>Zetbox.DalProvider.NHibernate.NHibernateProvider, Zetbox.DalProvider.NHibernate</Module>

@@ -4,8 +4,13 @@
 @{
     ViewBag.Title = Model.Name;
 }
-
 <h2>@Html.DisplayFor(model => model.Name)</h2>
+@if (Model.ReceiptViewModel.HasDocument)
+{
+    <div class="Toolbar ui-widget-header ui-corner-all">
+        @Html.ActionLink(@Resources.View, "Get", "Blob", new { id = Model.BlobID }, new { @class = "button" })
+    </div>
+}
 <div class="AreaGroup1">
     <div class="display-label">
         @Html.ZbLabelFor(model => model.ViewModel.PropertyModelsByName["Date"])

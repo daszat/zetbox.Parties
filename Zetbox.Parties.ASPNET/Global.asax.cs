@@ -24,6 +24,12 @@ namespace Zetbox.Parties.ASPNET
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "GetBlob", // Route name
+                "Blob/{id}", // URL with parameters
+                new { controller = "Blob", action = "Get" } // Parameter defaults
+            );
+
+            routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
