@@ -10,9 +10,32 @@
 
 @using (Html.BeginForm())
 {
-    <p>
-        Search
-    </p>
+    <div class="editor-label">
+        @Html.ZbLabelFor(model => model.InvoiceID)
+    </div>
+    <div class="editor-field">
+        @Html.ZbEditorFor(model => model.InvoiceID)
+    </div>
+    <div class="editor-label">
+        Date
+    </div>
+    <div class="editor-field">
+        @Html.ZbEditorFor(model => model.DateFrom)
+        @Resources.Until
+        @Html.ZbEditorFor(model => model.DateUntil)
+    </div>
+    <div class="editor-label">
+        @Html.ZbLabelFor(model => model.Period)
+    </div>
+    <div class="editor-field">
+        @Html.ZbEditorFor(model => model.Period)
+    </div>
+    <div class="editor-label">
+        @Html.ZbLabelFor(model => model.Description)
+    </div>
+    <div class="editor-field large">
+        @Html.ZbEditorFor(model => model.Description)
+    </div>
     <p>
         <input type="submit" /></p>
 }

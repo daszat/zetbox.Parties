@@ -79,6 +79,15 @@ namespace Zetbox.Parties.ASPNET {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        public static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Document.
         /// </summary>
         public static string Document {
@@ -93,6 +102,15 @@ namespace Zetbox.Parties.ASPNET {
         public static string Edit {
             get {
                 return ResourceManager.GetString("Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From.
+        /// </summary>
+        public static string From {
+            get {
+                return ResourceManager.GetString("From", resourceCulture);
             }
         }
         
@@ -133,6 +151,15 @@ namespace Zetbox.Parties.ASPNET {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invoice ID.
+        /// </summary>
+        public static string InvoiceID {
+            get {
+                return ResourceManager.GetString("InvoiceID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Logon.
         /// </summary>
         public static string Logon {
@@ -160,6 +187,15 @@ namespace Zetbox.Parties.ASPNET {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Period.
+        /// </summary>
+        public static string Period {
+            get {
+                return ResourceManager.GetString("Period", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Receipts.
         /// </summary>
         public static string Receipts {
@@ -174,6 +210,15 @@ namespace Zetbox.Parties.ASPNET {
         public static string Transactions {
             get {
                 return ResourceManager.GetString("Transactions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Until.
+        /// </summary>
+        public static string Until {
+            get {
+                return ResourceManager.GetString("Until", resourceCulture);
             }
         }
         

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using Zetbox.Client.Presentables;
 using Zetbox.API;
+using Zetbox.Client.Presentables.ValueViewModels;
+using Zetbox.Client.Models;
 
 namespace Zetbox.Parties.ASPNET.Models
 {
