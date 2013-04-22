@@ -138,6 +138,7 @@
     <Compile Include="Parties\PartyRoleActions.cs" />
     <Compile Include="Parties\PersonActions.cs" />
     <Compile Include="Parties\SupplierRelationshipActions.cs" />
+    <Compile Include="Products\ProductActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
