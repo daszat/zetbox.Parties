@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2013-04-05T10:37:26.1377154Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2013-07-05T12:18:20.2041926Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:Account ExportGuid="5ce18612-eac2-4384-916d-ebf488f5a5ea">
     <Accounting:ChangedOn>2012-11-19T12:37:34.0433906Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2012-10-12T08:16:49.8127899Z</Accounting:CreatedOn>
@@ -116,11 +116,12 @@
     <Accounting:VAT>0</Accounting:VAT>
   </Accounting:Transaction>
   <Invoicing:DefaultInvoiceGenerator ExportGuid="3e35dc9c-9e37-46d3-b0b9-8beeb23109f5">
-    <Invoicing:ChangedOn>2012-10-10T09:20:38.746092Z</Invoicing:ChangedOn>
+    <Invoicing:ChangedOn>2013-07-05T11:03:14.2102686Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T09:20:38.746092Z</Invoicing:CreatedOn>
     <Invoicing:Name>MY Invoice Generator</Invoicing:Name>
     <Invoicing:NumberSequence>50bc0db0-2603-48f2-a84d-02bccef729ad</Invoicing:NumberSequence>
-    <Invoicing:InvoiceIDFormatString>{0]</Invoicing:InvoiceIDFormatString>
+    <Invoicing:InvoiceIDFormatString>{0}</Invoicing:InvoiceIDFormatString>
+    <Invoicing:LastCreationDate>2013-07-05T11:03:14.2032679Z</Invoicing:LastCreationDate>
   </Invoicing:DefaultInvoiceGenerator>
   <Invoicing:OtherExpenseReceipt ExportGuid="33be612d-9633-4bad-9e2c-4084ef4ec615">
     <Invoicing:ChangedOn>2012-11-20T09:18:39.9980694Z</Invoicing:ChangedOn>
