@@ -224,7 +224,10 @@
     <EmbeddedResource Include="Reporting\Common\BankAccountResources.de.resx" />
     <EmbeddedResource Include="Reporting\Common\BankAccountResources.resx" />
     <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.de.resx" />
-    <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.resx" />
+    <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SalesInvoiceResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reporting\Parties\" />

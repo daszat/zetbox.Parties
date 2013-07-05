@@ -51,13 +51,14 @@ namespace Zetbox.Parties.Client.Reporting.Invoicing
 
         protected virtual string GetSubject()
         {
-            return Format(string.Format(SalesInvoiceResources.Subject, invoice.FinalizedOn.HasValue ? invoice.InvoiceID : "----/--"));
+            var fmt = invoice.Invoice == null ? SalesInvoiceResources.Subject : SalesInvoiceResources.SubjectReversal;
+            return Format(string.Format(fmt, invoice.FinalizedOn.HasValue ? invoice.InvoiceID : "----/--"));
         }
 
         protected virtual string GetCityAndDate()
         {
             return string.Format(SalesInvoiceResources.CityAndDate,
-                invoice.InternalOrganization.Party.Address != null ? invoice.InternalOrganization.Party.Address.City : "-", 
+                invoice.InternalOrganization.Party.Address != null ? invoice.InternalOrganization.Party.Address.City : "-",
                 FormatDate(invoice.Date));
         }
 

@@ -185,6 +185,9 @@ this.WriteObjects("        ");
 FormatMessage(); 
 #line 134 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("\r\n");
+#line 135 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+if (invoice.Invoice != null) { // is reversal 
+#line 136 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("        \\paragraph [ Style = \"Heading1\" Format { SpaceBefore = \"1cm\" } ] {\r\n");
 this.WriteObjects("            ",  GetPaymentTitle() , "\r\n");
 this.WriteObjects("        }\r\n");
@@ -192,18 +195,20 @@ this.WriteObjects("        \\paragraph {\r\n");
 this.WriteObjects("            ",  GetPaymentIntroduction() , "\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("        ");
-#line 141 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
-FormatBankAccount(); 
 #line 142 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+FormatBankAccount(); 
+#line 143 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+} 
+#line 144 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("\r\n");
 this.WriteObjects("        \\paragraph [ Format { SpaceBefore = \"1cm\" } ] {\r\n");
 this.WriteObjects("            ",  GetGreetingsLine() , "\r\n");
 this.WriteObjects("        }\r\n");
 this.WriteObjects("\r\n");
 this.WriteObjects("        ");
-#line 147 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 149 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 FormatSignature(); 
-#line 148 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
+#line 150 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("    }\r\n");
 this.WriteObjects("}");
 
