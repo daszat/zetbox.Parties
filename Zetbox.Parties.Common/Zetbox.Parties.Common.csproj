@@ -112,6 +112,11 @@
     <Compile Include="Invoicing\AbstractInvoiceGeneratorActions.cs" />
     <Compile Include="Invoicing\InvoiceItemTemplateActions.cs" />
     <Compile Include="Invoicing\PurchaseInvoiceTemplateActions.cs" />
+    <Compile Include="Invoicing\SalesInvoiceResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesInvoiceResources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Invoicing\SalesInvoiceTemplateActions.cs" />
     <Compile Include="Invoicing\OtherIncomeReceiptTemplateActions.cs" />
     <Compile Include="Invoicing\OtherExpenseReceiptTemplateActions.cs" />
@@ -154,6 +159,11 @@
     <Content Include="README.zetbox.Workflow.txt" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Invoicing\SalesInvoiceResources.de.resx" />
+    <EmbeddedResource Include="Invoicing\SalesInvoiceResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SalesInvoiceResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.de.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>

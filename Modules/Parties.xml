@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-04-08T11:19:44.0657052Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-04-18T11:05:17.724577Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -8176,7 +8176,7 @@ public static void isValid_Customer(SalesInvoice obj, PropertyIsValidEventArgs e
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>Customer</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>400</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>600</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>4b01a383-cd0b-45d8-95ff-09d71460b42d</ZetboxBase:RelationEnd>
@@ -8212,7 +8212,7 @@ public static void isValid_FinalizedOn(SalesInvoice obj, PropertyIsValidEventArg
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>FinalizedOn</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>401</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>700</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>fc74b434-3801-4e4a-ab67-e65a9e014005</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -8250,11 +8250,47 @@ public static void isValid_InternalOrganization(SalesInvoice obj, PropertyIsVali
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>InternalOrganization</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>300</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>500</ZetboxBase:Properties_pos>
     <GUI:RequestedKind>d30d2676-7f2f-4f0d-895a-e46f19b8f526</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>2ee4cbda-5a0d-4ac1-9436-fd7558de7089</ZetboxBase:RelationEnd>
+  </ZetboxBase:ObjectReferenceProperty>
+  <ZetboxBase:ObjectReferenceProperty ExportGuid="bb7dcb9a-6f2c-471d-8124-4cb1c454a952">
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-07-05T10:18:20.2041926Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void get_Invoice(SalesInvoice obj, PropertyGetterEventArgs&lt;Zetbox.Basic.Invoicing.SalesInvoice&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_Invoice(SalesInvoice obj, PropertyPreSetterEventArgs&lt;Zetbox.Basic.Invoicing.SalesInvoice&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_Invoice(SalesInvoice obj, PropertyPostSetterEventArgs&lt;Zetbox.Basic.Invoicing.SalesInvoice&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_Invoice(SalesInvoice obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.Invoice == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2013-07-05T10:18:20.2041926Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>The invoice this is reversing.</ZetboxBase:Description>
+    <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
+    <ZetboxBase:Name>Invoice</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</ZetboxBase:ObjectClass>
+    <ZetboxBase:Properties_pos>200</ZetboxBase:Properties_pos>
+    <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
+    <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
+    <ZetboxBase:RelationEnd>bbaad7c9-7537-48b1-ae11-575158f69144</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="bcaa71f6-a78b-43f8-866e-2366b94fd10a">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
@@ -8286,7 +8322,7 @@ public static void isValid_Issuer(SalesInvoice obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>Issuer</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>200</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>400</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>f155939d-7ccb-4d97-b867-79884cfba034</ZetboxBase:RelationEnd>
@@ -8321,11 +8357,47 @@ public static void isValid_Items(SalesInvoice obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>Items</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>100</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>300</ZetboxBase:Properties_pos>
     <GUI:RequestedKind>3e933ba6-a890-4114-97f8-595ef0560aee</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>9fce01fe-fd6d-4e21-8b55-08d5e38aea36</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>f4651e79-5015-42d2-ab51-8d800a592872</ZetboxBase:RelationEnd>
+  </ZetboxBase:ObjectReferenceProperty>
+  <ZetboxBase:ObjectReferenceProperty ExportGuid="550e7b3c-d762-425f-9ddf-5bf2241c9c68">
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-07-05T10:18:20.2041926Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void get_Reversal(SalesInvoice obj, PropertyGetterEventArgs&lt;Zetbox.Basic.Invoicing.SalesInvoice&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_Reversal(SalesInvoice obj, PropertyPreSetterEventArgs&lt;Zetbox.Basic.Invoicing.SalesInvoice&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_Reversal(SalesInvoice obj, PropertyPostSetterEventArgs&lt;Zetbox.Basic.Invoicing.SalesInvoice&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_Reversal(SalesInvoice obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.Reversal == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2013-07-05T10:18:20.2041926Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>The reversal of this invoice, if it was canceled.</ZetboxBase:Description>
+    <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
+    <ZetboxBase:Name>Reversal</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</ZetboxBase:ObjectClass>
+    <ZetboxBase:Properties_pos>100</ZetboxBase:Properties_pos>
+    <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
+    <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
+    <ZetboxBase:RelationEnd>475b8165-e464-4c80-93aa-2e6981bb3736</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="619d0721-2b65-4992-9b09-f7736e045091">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
@@ -9575,6 +9647,16 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Storage>1</ZetboxBase:Storage>
     <ZetboxBase:Verb>billed_to</ZetboxBase:Verb>
   </ZetboxBase:Relation>
+  <ZetboxBase:Relation ExportGuid="433662b1-887e-47a0-8a3d-f627d13231c0">
+    <ZetboxBase:A>bbaad7c9-7537-48b1-ae11-575158f69144</ZetboxBase:A>
+    <ZetboxBase:B>475b8165-e464-4c80-93aa-2e6981bb3736</ZetboxBase:B>
+    <ZetboxBase:ChangedOn>2013-07-05T10:18:20.2041926Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:Containment>0</ZetboxBase:Containment>
+    <ZetboxBase:CreatedOn>2013-07-05T10:18:20.2041926Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
+    <ZetboxBase:Storage>1</ZetboxBase:Storage>
+    <ZetboxBase:Verb>cancels</ZetboxBase:Verb>
+  </ZetboxBase:Relation>
   <ZetboxBase:Relation ExportGuid="b7450207-3897-46d9-bb8e-4cc94c926615">
     <ZetboxBase:A>f155939d-7ccb-4d97-b867-79884cfba034</ZetboxBase:A>
     <ZetboxBase:B>f54cffa4-fefd-403a-b623-a59c811501a2</ZetboxBase:B>
@@ -10482,6 +10564,26 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Navigator>06680bc5-322a-4a17-afbf-e56a61c6f948</ZetboxBase:Navigator>
     <ZetboxBase:RoleName>ReceiptTemplate</ZetboxBase:RoleName>
     <ZetboxBase:Type>5e556e9f-5769-4266-b485-e655e6da825b</ZetboxBase:Type>
+  </ZetboxBase:RelationEnd>
+  <ZetboxBase:RelationEnd ExportGuid="475b8165-e464-4c80-93aa-2e6981bb3736">
+    <ZetboxBase:BParent>433662b1-887e-47a0-8a3d-f627d13231c0</ZetboxBase:BParent>
+    <ZetboxBase:ChangedOn>2013-07-05T10:18:20.2041926Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2013-07-05T10:18:20.2041926Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
+    <ZetboxBase:Multiplicity>1</ZetboxBase:Multiplicity>
+    <ZetboxBase:Navigator>550e7b3c-d762-425f-9ddf-5bf2241c9c68</ZetboxBase:Navigator>
+    <ZetboxBase:RoleName>Invoice</ZetboxBase:RoleName>
+    <ZetboxBase:Type>84c9fa60-87dd-4715-9c14-38302a7936fd</ZetboxBase:Type>
+  </ZetboxBase:RelationEnd>
+  <ZetboxBase:RelationEnd ExportGuid="bbaad7c9-7537-48b1-ae11-575158f69144">
+    <ZetboxBase:AParent>433662b1-887e-47a0-8a3d-f627d13231c0</ZetboxBase:AParent>
+    <ZetboxBase:ChangedOn>2013-07-05T10:18:20.2041926Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2013-07-05T10:18:20.2041926Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
+    <ZetboxBase:Multiplicity>1</ZetboxBase:Multiplicity>
+    <ZetboxBase:Navigator>bb7dcb9a-6f2c-471d-8124-4cb1c454a952</ZetboxBase:Navigator>
+    <ZetboxBase:RoleName>Reversal</ZetboxBase:RoleName>
+    <ZetboxBase:Type>84c9fa60-87dd-4715-9c14-38302a7936fd</ZetboxBase:Type>
   </ZetboxBase:RelationEnd>
   <ZetboxBase:RelationEnd ExportGuid="f155939d-7ccb-4d97-b867-79884cfba034">
     <ZetboxBase:AParent>b7450207-3897-46d9-bb8e-4cc94c926615</ZetboxBase:AParent>
@@ -12035,6 +12137,32 @@ public static void UpdateTotalCanExecReason(ReceiptTemplate obj, MethodReturnEve
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>UpdateTotal</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>5e556e9f-5769-4266-b485-e655e6da825b</ZetboxBase:ObjectClass>
+  </ZetboxBase:Method>
+  <ZetboxBase:Method ExportGuid="39b90f9e-8c06-4009-9ddf-c13cbeddfe8e">
+    <ZetboxBase:ChangedOn>2013-07-05T09:59:08.8821474Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void Cancel(SalesInvoice obj)
+{
+}
+
+[Invocation]
+public static void CancelCanExec(SalesInvoice obj, MethodReturnEventArgs&lt;bool&gt; e)
+{
+}
+
+[Invocation]
+public static void CancelCanExecReason(SalesInvoice obj, MethodReturnEventArgs&lt;string&gt; e)
+{
+}
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2013-07-05T09:59:08.8821474Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Description>Create a reversal invoice for this.</ZetboxBase:Description>
+    <GUI:Icon>f2db9015-0f03-41ef-9113-fb10a7b45d6c</GUI:Icon>
+    <ZetboxBase:InvokeOnServer>false</ZetboxBase:InvokeOnServer>
+    <GUI:IsDisplayable>true</GUI:IsDisplayable>
+    <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
+    <ZetboxBase:Name>Cancel</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>84c9fa60-87dd-4715-9c14-38302a7936fd</ZetboxBase:ObjectClass>
   </ZetboxBase:Method>
   <ZetboxBase:Method ExportGuid="215886d7-d9b9-46f8-9ff4-f9a098d819c5">
     <ZetboxBase:ChangedOn>2011-11-04T17:20:11.417101Z</ZetboxBase:ChangedOn>

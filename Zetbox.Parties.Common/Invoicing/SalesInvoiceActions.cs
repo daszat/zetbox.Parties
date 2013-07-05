@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Zetbox.API;
 using Zetbox.Basic.Parties;
+using Zetbox.Parties.Common.Invoicing;
 
 namespace Zetbox.Basic.Invoicing
 {
@@ -16,14 +17,14 @@ namespace Zetbox.Basic.Invoicing
             if (obj.InternalOrganization == null)
             {
                 e.IsValid = false;
-                e.Errors.Add("No Internal Organization was selected");
+                e.Errors.Add(SalesInvoiceResources.NoOrgSelected);
                 return;
             }
 
             if (obj.InternalOrganization.InvoiceGenerator == null)
             {
                 e.IsValid = false;
-                e.Errors.Add("Internal Organization has no invoce generator. Unable to create invoice id");
+                e.Errors.Add(SalesInvoiceResources.NoInvoiceGenerator);
                 return;
             }
         }
@@ -78,11 +79,11 @@ namespace Zetbox.Basic.Invoicing
         {
             if (obj.FinalizedOn.HasValue)
             {
-                e.Result = "Invoice is already finalized";
+                e.Result = SalesInvoiceResources.IsAlreadyFinalized;
             }
             else if (obj.Context.IsModified)
             {
-                e.Result = "Only saved and unmodified invoices can be finalized";
+                e.Result = SalesInvoiceResources.IsNotSaved;
             }
         }
 
@@ -198,6 +199,57 @@ namespace Zetbox.Basic.Invoicing
                     }
                 default:
                     break;
+            }
+        }
+
+        [Invocation]
+        public static void Cancel(SalesInvoice obj)
+        {
+            obj.Reversal = obj.Context.Create<SalesInvoice>();
+            foreach (var item in obj.Items)
+            {
+                var reversalItem = obj.Context.Create<SalesInvoiceItem>();
+                reversalItem.Description = item.Description;
+                reversalItem.Quantity = item.Quantity;
+                reversalItem.UnitPrice = -item.UnitPrice; // negate price!
+                reversalItem.VATType = item.VATType;
+
+                obj.Reversal.Items.Add(reversalItem);
+            }
+            obj.Reversal.Customer = obj.Customer;
+            obj.Reversal.Date = DateTime.Today;
+            obj.Reversal.Description = string.Format(SalesInvoiceResources.ReversalDescriptionFmt, obj.InvoiceID);
+            obj.Reversal.DueDate = DateTime.Today;
+            // obj.Reversal.FulfillmentDate = ...; // should be set to the date when the reversal was actually transferred, or to today if no money has to be transferred
+            obj.Reversal.InternalOrganization = obj.InternalOrganization;
+            obj.Reversal.Period = obj.Period;
+        }
+
+        [Invocation]
+        public static void CancelCanExec(SalesInvoice obj, MethodReturnEventArgs<bool> e)
+        {
+            e.Result = obj.FinalizedOn.HasValue && obj.Invoice == null && obj.Reversal == null;
+        }
+
+        [Invocation]
+        public static void CancelCanExecReason(SalesInvoice obj, MethodReturnEventArgs<string> e)
+        {
+            if (!obj.FinalizedOn.HasValue)
+            {
+                e.Result = SalesInvoiceResources.IsNotFinalized;
+                return;
+            }
+
+            if (obj.Invoice != null)
+            {
+                e.Result = SalesInvoiceResources.IsReversal;
+                return;
+            }
+
+            if (obj.Reversal != null)
+            {
+                e.Result = SalesInvoiceResources.IsAlreadyCanceled;
+                return;
             }
         }
     }
