@@ -64,12 +64,15 @@ namespace Zetbox.Basic.Invoicing
                 foreach (var party in quoteCube.DimParty)
                 {
                     var entry = quoteCube.Result[quoteCube.QrySalesQuotesMonth][quoteCube.DimIssueDate][party];
-                    result.Issued.Details.Customers.Add(new SalesQuotesCustomer()
+                    if (entry[quoteCube.SumTotal].DecimalValue != 0 && entry[quoteCube.SumTotalCorrected].DecimalValue != 0)
                     {
-                        Customer = party.Label,
-                        Total = entry[quoteCube.SumTotal].DecimalValue,
-                        TotalCorrected = entry[quoteCube.SumTotalCorrected].DecimalValue,
-                    });
+                        result.Issued.Details.Customers.Add(new SalesQuotesCustomer()
+                        {
+                            Customer = party.Label,
+                            Total = entry[quoteCube.SumTotal].DecimalValue,
+                            TotalCorrected = entry[quoteCube.SumTotalCorrected].DecimalValue,
+                        });
+                    }
                 }
 
                 // Delivery
@@ -91,12 +94,15 @@ namespace Zetbox.Basic.Invoicing
                 foreach (var party in itemCube.DimParty)
                 {
                     var entry = itemCube.Result[itemCube.QrySalesQuotesItemMonth][itemCube.DimDeliveryDate][party];
-                    result.Delivery.Details.Customers.Add(new SalesQuotesCustomer()
+                    if (entry[itemCube.SumTotal].DecimalValue != 0 && entry[itemCube.SumTotalCorrected].DecimalValue != 0)
                     {
-                        Customer = party.Label,
-                        Total = entry[itemCube.SumTotal].DecimalValue,
-                        TotalCorrected = entry[itemCube.SumTotalCorrected].DecimalValue,
-                    });
+                        result.Delivery.Details.Customers.Add(new SalesQuotesCustomer()
+                        {
+                            Customer = party.Label,
+                            Total = entry[itemCube.SumTotal].DecimalValue,
+                            TotalCorrected = entry[itemCube.SumTotalCorrected].DecimalValue,
+                        });
+                    }
                 }
 
                 e.Result = result;
@@ -149,12 +155,15 @@ namespace Zetbox.Basic.Invoicing
                 foreach (var party in cube.DimParty)
                 {
                     var entry = cube.Result[cube.QryInvoicesDate][cube.DimDate][party];
-                    result.Date.Details.Customers.Add(new SalesInvoiceReport.DtoDate.DtoDetails.InvoiceCustomer()
+                    if (entry[cube.SumTotal].DecimalValue != 0)
                     {
-                        Customer = party.Label,
-                        Total = entry[cube.SumTotal].DecimalValue,
-                        TotalNet = entry[cube.SumTotalNet].DecimalValue,
-                    });
+                        result.Date.Details.Customers.Add(new SalesInvoiceReport.DtoDate.DtoDetails.InvoiceCustomer()
+                        {
+                            Customer = party.Label,
+                            Total = entry[cube.SumTotal].DecimalValue,
+                            TotalNet = entry[cube.SumTotalNet].DecimalValue,
+                        });
+                    }
                 }
 
                 // Fulfillment
@@ -173,13 +182,16 @@ namespace Zetbox.Basic.Invoicing
                 foreach (var party in cube.DimParty)
                 {
                     var entry = cube.Result[cube.QryInvoicesFulfillmentDate][cube.DimFulfillmentDate][party];
-                    result.Fulfillment.Details.Customers.Add(new SalesInvoiceReport.DtoFulfillment.DtoDetails.FulfillmentCustomer()
+                    if (entry[cube.SumFulfillment].DecimalValue != 0)
                     {
-                        Customer = party.Label,
-                        AvgDuration = (int)entry[cube.AvgFulfillmentDuration].Average,
-                        Total = entry[cube.SumFulfillment].DecimalValue,
-                        TotalNet = entry[cube.SumFulfillmentNet].DecimalValue,
-                    });
+                        result.Fulfillment.Details.Customers.Add(new SalesInvoiceReport.DtoFulfillment.DtoDetails.FulfillmentCustomer()
+                        {
+                            Customer = party.Label,
+                            AvgDuration = (int)entry[cube.AvgFulfillmentDuration].Average,
+                            Total = entry[cube.SumFulfillment].DecimalValue,
+                            TotalNet = entry[cube.SumFulfillmentNet].DecimalValue,
+                        });
+                    }
                 }
                 e.Result = result;
             }
