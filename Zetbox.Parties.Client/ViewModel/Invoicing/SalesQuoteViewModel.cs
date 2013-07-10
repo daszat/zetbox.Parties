@@ -14,6 +14,8 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
     using Zetbox.App.GUI;
     using Zetbox.App.Extensions;
     using Zetbox.Client;
+    using Zetbox.Parties.Client.ViewModel.Invoicing.Utils;
+    using Zetbox.Basic.Parties;
 
     /// <summary>
     /// </summary>
@@ -30,11 +32,17 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
 
         public new SalesQuote Quote { get; private set; }
 
+        private BaseValueViewModel _customerParty;
         public override ViewModel Party
         {
             get
             {
-                return PropertyModelsByName["Customer"];
+                if (_customerParty == null)
+                {
+                    _customerParty = PartyRoleReferenceViewModelFactory.Create<SalesQuote, Customer>(ViewModelFactory, DataContext, FrozenContext, this, "Customer", Quote, i => i.Customer);
+
+                }
+                return _customerParty;
             }
         }
     }
