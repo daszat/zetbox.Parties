@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Zetbox.API;
 
-namespace Zetbox.Basic.Parties
+namespace Zetbox.Basic.Products
 {
     [Implementor]
     public static class ProductActions
