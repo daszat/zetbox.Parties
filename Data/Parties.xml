@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2013-07-05T12:18:20.2041926Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2013-07-10T09:33:04.3797781Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:Account ExportGuid="5ce18612-eac2-4384-916d-ebf488f5a5ea">
     <Accounting:ChangedOn>2012-11-19T12:37:34.0433906Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2012-10-12T08:16:49.8127899Z</Accounting:CreatedOn>
@@ -494,6 +494,70 @@
     <Invoicing:Customer>e9fab734-8b2b-4154-a256-ff74e9cf98bc</Invoicing:Customer>
     <Invoicing:IntOrg>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:IntOrg>
   </Invoicing:SalesInvoiceTemplate>
+  <Invoicing:SalesQuote ExportGuid="313ee299-aaa7-44ee-9583-097c87eca3fe">
+    <Invoicing:ChangedOn>2013-07-10T06:30:05.5206397Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2013-07-10T06:30:05.5206397Z</Invoicing:CreatedOn>
+    <Invoicing:Description>My first Quote</Invoicing:Description>
+    <Invoicing:IssueDate>2013-07-09T22:00:00Z</Invoicing:IssueDate>
+    <Invoicing:QuoteID>1</Invoicing:QuoteID>
+    <Invoicing:Total>0</Invoicing:Total>
+    <Invoicing:TotalNet>0</Invoicing:TotalNet>
+    <Invoicing:ValidFrom>2013-07-09T22:00:00Z</Invoicing:ValidFrom>
+    <Invoicing:ValidThru>2013-08-13T22:00:00Z</Invoicing:ValidThru>
+    <Invoicing:Chance>50.00</Invoicing:Chance>
+    <Invoicing:Customer>e9fab734-8b2b-4154-a256-ff74e9cf98bc</Invoicing:Customer>
+    <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
+  </Invoicing:SalesQuote>
+  <Invoicing:SalesQuote ExportGuid="51930eee-a45f-44ea-927e-2278611c8778">
+    <Invoicing:ChangedOn>2013-07-10T06:31:46.7414292Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2013-07-10T06:31:46.7414292Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Second</Invoicing:Description>
+    <Invoicing:IssueDate>2013-07-09T22:00:00Z</Invoicing:IssueDate>
+    <Invoicing:QuoteID>2</Invoicing:QuoteID>
+    <Invoicing:Total>0</Invoicing:Total>
+    <Invoicing:TotalNet>0</Invoicing:TotalNet>
+    <Invoicing:ValidFrom>2013-07-09T22:00:00Z</Invoicing:ValidFrom>
+    <Invoicing:ValidThru>2013-07-16T22:00:00Z</Invoicing:ValidThru>
+    <Invoicing:Chance>40.00</Invoicing:Chance>
+    <Invoicing:Customer>e9fab734-8b2b-4154-a256-ff74e9cf98bc</Invoicing:Customer>
+    <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
+  </Invoicing:SalesQuote>
+  <Invoicing:SalesQuote ExportGuid="7f6f28f6-b64a-4218-b9de-13c461b5f8d5">
+    <Invoicing:ChangedOn>2013-07-10T07:10:11.6652633Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2013-07-10T07:10:11.6652633Z</Invoicing:CreatedOn>
+    <Invoicing:IssueDate>2013-07-09T22:00:00Z</Invoicing:IssueDate>
+    <Invoicing:QuoteID>1</Invoicing:QuoteID>
+    <Invoicing:Total>0</Invoicing:Total>
+    <Invoicing:TotalNet>0</Invoicing:TotalNet>
+    <Invoicing:ValidFrom>2013-07-09T22:00:00Z</Invoicing:ValidFrom>
+    <Invoicing:ValidThru>2013-07-10T22:00:00Z</Invoicing:ValidThru>
+    <Invoicing:Customer>b22e274a-0d68-452b-ae28-47d3f8064be0</Invoicing:Customer>
+    <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
+  </Invoicing:SalesQuote>
+  <Invoicing:SalesQuoteItem ExportGuid="1efef298-2ff4-44f0-a134-87462b825f2e">
+    <Invoicing:Amount>12000.00</Invoicing:Amount>
+    <Invoicing:AmountNet>10000.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2013-07-10T07:01:59.4221086Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2013-07-10T06:31:23.7751156Z</Invoicing:CreatedOn>
+    <Invoicing:Description>test</Invoicing:Description>
+    <Invoicing:EstimatedDelivery>2013-06-28T22:00:00Z</Invoicing:EstimatedDelivery>
+    <Invoicing:Quantity>100.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>100.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:SalesQuote>313ee299-aaa7-44ee-9583-097c87eca3fe</Invoicing:SalesQuote>
+  </Invoicing:SalesQuoteItem>
+  <Invoicing:SalesQuoteItem ExportGuid="a625c35b-e54e-4470-b62a-f49078a09e83">
+    <Invoicing:Amount>60.00</Invoicing:Amount>
+    <Invoicing:AmountNet>50.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2013-07-10T06:32:04.658454Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2013-07-10T06:32:04.658454Z</Invoicing:CreatedOn>
+    <Invoicing:Description>test</Invoicing:Description>
+    <Invoicing:EstimatedDelivery>2013-07-27T22:00:00Z</Invoicing:EstimatedDelivery>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>50.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:SalesQuote>51930eee-a45f-44ea-927e-2278611c8778</Invoicing:SalesQuote>
+  </Invoicing:SalesQuoteItem>
   <Invoicing:VATType ExportGuid="cd217909-55a2-476a-a9e5-2f3ddd48e547">
     <Invoicing:ChangedOn>2012-10-10T09:20:38.746092Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T09:20:38.746092Z</Invoicing:CreatedOn>
@@ -501,10 +565,20 @@
     <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
     <Invoicing:Percentage>20.00</Invoicing:Percentage>
   </Invoicing:VATType>
+  <Parties:Customer ExportGuid="b22e274a-0d68-452b-ae28-47d3f8064be0">
+    <Parties:ChangedOn>2013-07-10T07:10:11.6652633Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2013-07-10T07:10:11.6652633Z</Parties:CreatedOn>
+    <Parties:Party>199b70f4-e397-4412-875d-0bfae4a61419</Parties:Party>
+  </Parties:Customer>
   <Parties:Customer ExportGuid="e9fab734-8b2b-4154-a256-ff74e9cf98bc">
     <Parties:ChangedOn>2012-10-10T09:20:38.746092Z</Parties:ChangedOn>
     <Parties:CreatedOn>2012-10-10T09:20:38.746092Z</Parties:CreatedOn>
     <Parties:Party>f6cfbc02-61f2-4d5d-8507-404bed32466a</Parties:Party>
+  </Parties:Customer>
+  <Parties:Customer ExportGuid="f986a775-83cc-4b25-9fe3-70f9cf6a2add">
+    <Parties:ChangedOn>2013-07-10T06:33:10.0901965Z</Parties:ChangedOn>
+    <Parties:CreatedOn>2013-07-10T06:33:10.0901965Z</Parties:CreatedOn>
+    <Parties:Party>933d258c-4a48-4a5c-ab46-655a70b8aa5f</Parties:Party>
   </Parties:Customer>
   <Parties:InternalOrganization ExportGuid="a58babd2-e47a-44a2-8d19-bb9a3cbdcf56">
     <Parties:ChangedOn>2012-10-10T09:20:38.746092Z</Parties:ChangedOn>
