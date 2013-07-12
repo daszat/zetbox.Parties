@@ -85,6 +85,7 @@ namespace Zetbox.Parties.Server.Cubes
         private IQueryable<SalesInvoiceCubeRecord> GetQuery(IZetboxContext ctx)
         {
             return ctx.GetQuery<SalesInvoice>()
+                .Where(i => i.FinalizedOn != null)
                 .ToList()
                 .Select(g => new SalesInvoiceCubeRecord()
                 {
