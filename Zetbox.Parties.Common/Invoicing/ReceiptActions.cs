@@ -45,19 +45,25 @@ namespace Zetbox.Basic.Invoicing
         [Invocation]
         public static void get_OpenAmount(Receipt obj, PropertyGetterEventArgs<decimal> e)
         {
-            e.Result = obj.GetOpenAmount();
+            e.Result = obj.Total - obj.PaymentAmount;
         }
 
         [Invocation]
-        public static void get_PaymentAmount(Receipt obj, PropertyGetterEventArgs<decimal> e)
+        public static void postSet_PaymentAmount(Receipt obj, PropertyPostSetterEventArgs<decimal> e)
         {
-            e.Result = obj.GetPaymentAmount();
+            UpdateCalculatedProperties(obj);
         }
 
         private static void UpdateCalculatedProperties(Receipt obj)
         {
             obj.Recalculate("OpenAmount");
-            obj.Recalculate("PaymentAmount");
+        }
+
+        [Invocation]
+        public static void isValid_FulfillmentDate(Receipt obj, PropertyIsValidEventArgs e)
+        {
+            e.IsValid = obj.FulfillmentDate.HasValue == false && (obj.Status == null || obj.Status.In(ReceiptStatus.Open, ReceiptStatus.Canceled, ReceiptStatus.WriteOff));
+            e.Error = e.IsValid ? string.Empty : "Current status requieres a Fulfillment date";
         }
     }
 
@@ -75,7 +81,7 @@ namespace Zetbox.Basic.Invoicing
             dest.Message = src.Message;
             dest.Period = src.Period;
         }
-        
+
         public static void MoveTransactions(Receipt src, Receipt dest)
         {
             var ctx = src.Context;
@@ -91,16 +97,6 @@ namespace Zetbox.Basic.Invoicing
 
     public static class ReceiptAmountCalculator
     {
-        public static decimal GetIncomeOpenAmount(Receipt obj)
-        {
-            return obj.Total - obj.Transactions.Sum(i => i.Amount);
-        }
-
-        public static decimal GetExpenseOpenAmount(Receipt obj)
-        {
-            return obj.Total - obj.Transactions.Sum(i => -i.Amount);
-        }
-
         public static decimal GetIncomePaymentAmount(Receipt obj)
         {
             return obj.Transactions.Sum(i => i.Amount);

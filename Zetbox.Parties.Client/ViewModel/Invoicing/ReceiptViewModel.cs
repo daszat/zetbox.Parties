@@ -37,7 +37,7 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
 
             switch (propName)
             {
-                case "FulfillmentDate":
+                case "Status":
                 case "DueDate":
                     OnHighlightChanged();
                     break;
@@ -69,10 +69,19 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
         {
             get
             {
-                if (Receipt.FulfillmentDate.HasValue) return Highlight.Deactivated;
-                if (Receipt.DueDate < DateTime.Today) return Highlight.Bad;
-                if (Receipt.DueDate.AddDays(-14) < DateTime.Today) return Highlight.Warning;
-                return base.Highlight;
+                switch (Receipt.Status)
+                {
+                    case ReceiptStatus.Canceled:
+                    case ReceiptStatus.WriteOff:
+                    case ReceiptStatus.Fulfilled:
+                        return Highlight.Deactivated;
+                    case ReceiptStatus.Partial:
+                        return Highlight.Warning;
+                    default:
+                        if (Receipt.DueDate < DateTime.Today) return Highlight.Bad;
+                        if (Receipt.DueDate.AddDays(-14) < DateTime.Today) return Highlight.Warning;
+                        return base.Highlight;
+                }
             }
         }
 
@@ -80,10 +89,19 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
         {
             get
             {
-                if (Receipt.FulfillmentDate.HasValue) return Highlight.Deactivated;
-                if (Receipt.DueDate < DateTime.Today) return Highlight.Bad;
-                if (Receipt.DueDate.AddDays(-14) < DateTime.Today) return Highlight.Warning;
-                return base.HighlightAsync;
+                switch (Receipt.Status)
+                {
+                    case ReceiptStatus.Canceled:
+                    case ReceiptStatus.WriteOff:
+                    case ReceiptStatus.Fulfilled:
+                        return Highlight.Deactivated;
+                    case ReceiptStatus.Partial:
+                        return Highlight.Warning;
+                    default:
+                        if (Receipt.DueDate < DateTime.Today) return Highlight.Bad;
+                        if (Receipt.DueDate.AddDays(-14) < DateTime.Today) return Highlight.Warning;
+                        return base.Highlight;
+                }
             }
         }
 

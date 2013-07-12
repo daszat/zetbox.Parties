@@ -11,12 +11,12 @@ namespace Zetbox.Basic.Invoicing
     public static class ReceiptActions
     {
         [Invocation]
-        public static void postSet_Transactions(Receipt obj)
+        public static void postSet_PaymentAmount(Receipt obj, PropertyPostSetterEventArgs<decimal> e)
         {
-            //if (obj.FulfillmentDate.HasValue == false && Math.Abs(obj.Transactions.Sum(i => i.Amount)) == obj.Total)
-            //{
-            //    obj.FulfillmentDate = obj.Transactions.Max(i => i.Date);
-            //}
+            if ((obj.Status == null || obj.Status == ReceiptStatus.Open || obj.Status == ReceiptStatus.Partial || obj.Status == ReceiptStatus.Fulfilled) && e.NewValue != 0)
+            {
+                obj.Status = e.NewValue == obj.Total ? ReceiptStatus.Fulfilled : ReceiptStatus.Partial;
+            }
         }
     }
 }

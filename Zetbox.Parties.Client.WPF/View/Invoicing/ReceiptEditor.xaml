@@ -62,10 +62,11 @@
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Message]}" />
                         <ctrls:LabeledView DataContext="{Binding InternalOrganization}" />
                         <ctrls:LabeledView DataContext="{Binding Party}" />
-                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
-                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[OpenAmount]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[PaymentAmount]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Status]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[OpenAmount]}" />
                     </StackPanel>
                     <ItemsControl DockPanel.Dock="Bottom"
                                   ItemsSource="{Binding ReceiptActions}"

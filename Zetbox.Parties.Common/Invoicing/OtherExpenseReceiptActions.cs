@@ -11,12 +11,6 @@ namespace Zetbox.Basic.Invoicing
     public static class OtherExpenseReceiptActions
     {
         [Invocation]
-        public static void GetOpenAmount(OtherExpenseReceipt obj, MethodReturnEventArgs<decimal> e)
-        {
-            e.Result = ReceiptAmountCalculator.GetExpenseOpenAmount(obj);
-        }
-
-        [Invocation]
         public static void GetPaymentAmount(OtherExpenseReceipt obj, MethodReturnEventArgs<decimal> e)
         {
             e.Result = ReceiptAmountCalculator.GetExpensePaymentAmount(obj);

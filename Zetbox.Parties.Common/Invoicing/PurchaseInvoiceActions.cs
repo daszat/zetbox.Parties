@@ -37,12 +37,6 @@ namespace Zetbox.Basic.Invoicing
         }
 
         [Invocation]
-        public static void GetOpenAmount(PurchaseInvoice obj, MethodReturnEventArgs<decimal> e)
-        {
-            e.Result = ReceiptAmountCalculator.GetExpenseOpenAmount(obj);
-        }
-
-        [Invocation]
         public static void GetPaymentAmount(PurchaseInvoice obj, MethodReturnEventArgs<decimal> e)
         {
             e.Result = ReceiptAmountCalculator.GetExpensePaymentAmount(obj);
