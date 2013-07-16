@@ -62,8 +62,20 @@ namespace Zetbox.Basic.Invoicing
         [Invocation]
         public static void isValid_FulfillmentDate(Receipt obj, PropertyIsValidEventArgs e)
         {
-            e.IsValid = obj.FulfillmentDate.HasValue == false && (obj.Status == null || obj.Status.In(ReceiptStatus.Open, ReceiptStatus.Canceled, ReceiptStatus.WriteOff));
-            e.Error = e.IsValid ? string.Empty : "Current status requieres a Fulfillment date";
+            if (obj.FulfillmentDate.HasValue && obj.Status.In(ReceiptStatus.Open, ReceiptStatus.Canceled))
+            {
+                e.IsValid = false;
+                e.Error = "Current status does not allow a fullfillment date";
+            }
+            else if (!obj.FulfillmentDate.HasValue && obj.Status.In(ReceiptStatus.Fulfilled, ReceiptStatus.Partial, ReceiptStatus.WriteOff))
+            {
+                e.IsValid = false;
+                e.Error = "Current status requieres a Fulfillment date";
+            }
+            else
+            {
+                e.IsValid = true;
+            }
         }
     }
 

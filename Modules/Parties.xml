@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-07-12T12:19:14.627447Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-07-16T10:52:08.4217464Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -12115,6 +12115,11 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <ZetboxBase:MaxLength>100</ZetboxBase:MaxLength>
     <ZetboxBase:MinLength>0</ZetboxBase:MinLength>
   </ZetboxBase:StringRangeConstraint>
+  <ZetboxBase:NotNullableConstraint ExportGuid="808ada07-a60f-4e5d-8b37-67dd521c1e39">
+    <ZetboxBase:ChangedOn>2013-07-16T08:52:08.4217464Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ConstrainedProperty>032cafad-d68c-4374-8ec7-d71a86988d2d</ZetboxBase:ConstrainedProperty>
+    <ZetboxBase:CreatedOn>2013-07-16T08:52:08.4217464Z</ZetboxBase:CreatedOn>
+  </ZetboxBase:NotNullableConstraint>
   <ZetboxBase:NotNullableConstraint ExportGuid="a5d37a14-8945-49ef-85f4-80e9f4aec2af">
     <ZetboxBase:ChangedOn>2011-08-05T16:31:04.781012Z</ZetboxBase:ChangedOn>
     <ZetboxBase:ConstrainedProperty>2c5e703a-3a1e-4bf5-a858-a27ac7c53e59</ZetboxBase:ConstrainedProperty>

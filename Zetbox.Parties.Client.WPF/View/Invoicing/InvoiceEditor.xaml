@@ -67,8 +67,8 @@
                         <ctrls:LabeledView DataContext="{Binding Party}" />
                         <ctrls:LabeledView DataContext="{Binding Issuer}"
                                            Visibility="{Binding DataContext.IssuerVisible, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=detailsPanel}" />
-                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[PaymentAmount]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[PaymentAmount]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Status]}" />
                     </StackPanel>
                     <ItemsControl DockPanel.Dock="Bottom"

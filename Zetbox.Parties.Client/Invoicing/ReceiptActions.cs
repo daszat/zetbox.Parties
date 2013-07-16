@@ -11,9 +11,18 @@ namespace Zetbox.Basic.Invoicing
     public static class ReceiptActions
     {
         [Invocation]
+        public static void postSet_FulfillmentDate(Receipt obj, PropertyPostSetterEventArgs<DateTime?> e)
+        {
+            if (e.NewValue.HasValue && obj.PaymentAmount == 0)
+            {
+                obj.PaymentAmount = obj.Total;
+            }
+        }
+
+        [Invocation]
         public static void postSet_PaymentAmount(Receipt obj, PropertyPostSetterEventArgs<decimal> e)
         {
-            if ((obj.Status == null || obj.Status == ReceiptStatus.Open || obj.Status == ReceiptStatus.Partial || obj.Status == ReceiptStatus.Fulfilled) && e.NewValue != 0)
+            if (e.NewValue != 0 && obj.Status.In(ReceiptStatus.Open, ReceiptStatus.Partial, ReceiptStatus.Fulfilled))
             {
                 obj.Status = e.NewValue == obj.Total ? ReceiptStatus.Fulfilled : ReceiptStatus.Partial;
             }
