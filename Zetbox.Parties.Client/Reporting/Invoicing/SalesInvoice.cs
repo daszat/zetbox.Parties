@@ -51,7 +51,7 @@ namespace Zetbox.Parties.Client.Reporting.Invoicing
 
         protected virtual string GetSubject()
         {
-            var fmt = invoice.Invoice == null ? SalesInvoiceResources.Subject : SalesInvoiceResources.SubjectReversal;
+            var fmt = invoice.CanceledInvoice == null ? SalesInvoiceResources.Subject : SalesInvoiceResources.SubjectReversal;
             return Format(string.Format(fmt, invoice.FinalizedOn.HasValue ? invoice.InvoiceID : "----/--"));
         }
 

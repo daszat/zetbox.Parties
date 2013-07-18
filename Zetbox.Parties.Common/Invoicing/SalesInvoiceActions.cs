@@ -197,9 +197,9 @@ namespace Zetbox.Basic.Invoicing
         }
 
         [Invocation]
-        public static void Cancel(SalesInvoice obj)
+        public static void Cancel(SalesInvoice obj, MethodReturnEventArgs<Zetbox.Basic.Invoicing.SalesInvoice> e)
         {
-            obj.Reversal = obj.Context.Create<SalesInvoice>();
+            var reversal = obj.Context.Create<SalesInvoice>();
             foreach (var item in obj.Items)
             {
                 var reversalItem = obj.Context.Create<SalesInvoiceItem>();
@@ -208,21 +208,27 @@ namespace Zetbox.Basic.Invoicing
                 reversalItem.UnitPrice = -item.UnitPrice; // negate price!
                 reversalItem.VATType = item.VATType;
 
-                obj.Reversal.Items.Add(reversalItem);
+                reversal.Items.Add(reversalItem);
             }
-            obj.Reversal.Customer = obj.Customer;
-            obj.Reversal.Date = DateTime.Today;
-            obj.Reversal.Description = string.Format(SalesInvoiceResources.ReversalDescriptionFmt, obj.InvoiceID);
-            obj.Reversal.DueDate = DateTime.Today;
-            // obj.Reversal.FulfillmentDate = ...; // should be set to the date when the reversal was actually transferred, or to today if no money has to be transferred
-            obj.Reversal.InternalOrganization = obj.InternalOrganization;
-            obj.Reversal.Period = obj.Period;
+            reversal.Customer = obj.Customer;
+            reversal.Date = DateTime.Today;
+            reversal.Description = string.Format(SalesInvoiceResources.ReversalDescriptionFmt, obj.InvoiceID);
+            reversal.DueDate = DateTime.Today;
+            // reversal.FulfillmentDate = ...; // should be set to the date when the reversal was actually transferred, or to today if no money has to be transferred
+            reversal.InternalOrganization = obj.InternalOrganization;
+            reversal.Period = obj.Period;
+
+            obj.Reversal = reversal;
+            obj.Status = ReceiptStatus.Canceled;
+            obj.FulfillmentDate = null; // Reset FulfillmentDate as the invoice is canceled
+
+            e.Result = reversal;
         }
 
         [Invocation]
         public static void CancelCanExec(SalesInvoice obj, MethodReturnEventArgs<bool> e)
         {
-            e.Result = obj.FinalizedOn.HasValue && obj.Invoice == null && obj.Reversal == null;
+            e.Result = obj.FinalizedOn.HasValue && obj.CanceledInvoice == null && obj.Reversal == null;
         }
 
         [Invocation]
@@ -234,7 +240,7 @@ namespace Zetbox.Basic.Invoicing
                 return;
             }
 
-            if (obj.Invoice != null)
+            if (obj.CanceledInvoice != null)
             {
                 e.Result = SalesInvoiceResources.IsReversal;
                 return;

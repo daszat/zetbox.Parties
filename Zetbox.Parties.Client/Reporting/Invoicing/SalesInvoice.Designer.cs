@@ -186,7 +186,7 @@ FormatMessage();
 #line 134 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("\r\n");
 #line 135 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
-if (invoice.Invoice != null) { // is reversal 
+if (invoice.CanceledInvoice == null) { // is not reversal 
 #line 136 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Invoicing\SalesInvoice.cst"
 this.WriteObjects("        \\paragraph [ Style = \"Heading1\" Format { SpaceBefore = \"1cm\" } ] {\r\n");
 this.WriteObjects("            ",  GetPaymentTitle() , "\r\n");

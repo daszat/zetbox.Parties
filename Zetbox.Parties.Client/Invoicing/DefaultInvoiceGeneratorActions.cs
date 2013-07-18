@@ -28,7 +28,7 @@ namespace Zetbox.Basic.Invoicing
                 Zetbox.Parties.Client.Reporting.Invoicing.SalesInvoice.Call(rpt, invoice);
                 using (var s = rpt.GetStream())
                 {
-                    var name = string.Format("{0} - Invoice {1}.pdf", invoice.Date.ToString("yyyy-MM-dd"), invoice.Description);
+                    var name = Helper.GetLegalFileName(string.Format("{0} - Invoice {1}.pdf", invoice.Date.ToString("yyyy-MM-dd"), invoice.Description));
                     var blobID = ctx.CreateBlob(s, name, "application/pdf");
                     var file = ctx.Create<StaticFile>();
                     file.Name = name;

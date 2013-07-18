@@ -132,7 +132,7 @@
 
         <% FormatMessage(); %>
 
-<% if (invoice.Invoice != null) { // is reversal %>
+<% if (invoice.CanceledInvoice == null) { // is not reversal %>
         \paragraph [ Style = "Heading1" Format { SpaceBefore = "1cm" } ] {
             <%= GetPaymentTitle() %>
         }
