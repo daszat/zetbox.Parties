@@ -23,7 +23,11 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
 
         protected override Func<IQueryable> InitializeQueryFactory()
         {
-            return () => DataContext.GetQuery<Receipt>().Where(r => r.FulfillmentDate == null || r.OpenAmount != 0 || r.Status == ReceiptStatus.Open || r.Status == ReceiptStatus.Partial);
+            var today = DateTime.Today;
+            return () => DataContext
+                .GetQuery<Receipt>()
+                .Where(r => r.Status == ReceiptStatus.Open || r.Status == ReceiptStatus.Partial)
+                .Where(r => r.Date <= today);
         }
     }
 }

@@ -37,5 +37,8 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
 
         public abstract BaseValueViewModel Issuer { get; }
         public abstract bool IssuerVisible { get; }
+
+        public virtual bool CanceledInvoiceVisible { get { return false; } }
+        public virtual bool ReversalVisible { get { return false; } }
     }
 }

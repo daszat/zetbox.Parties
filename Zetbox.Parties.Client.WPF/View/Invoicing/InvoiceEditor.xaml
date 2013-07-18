@@ -61,6 +61,12 @@
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[DueDate]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[InvoiceID]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Description]}" />
+
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[CanceledInvoice]}"
+                                           Visibility="{Binding DataContext.CanceledInvoiceVisible, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=detailsPanel}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Reversal]}"
+                                           Visibility="{Binding DataContext.ReversalVisible, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=detailsPanel}" />
+
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Period]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Message]}" />
                         <ctrls:LabeledView DataContext="{Binding InternalOrganization}" />

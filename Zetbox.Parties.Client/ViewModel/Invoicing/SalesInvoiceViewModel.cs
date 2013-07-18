@@ -31,6 +31,21 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             this.Invoice = obj;
         }
 
+        protected override void OnObjectPropertyChanged(string propName)
+        {
+            base.OnObjectPropertyChanged(propName);
+
+            switch (propName)
+            {
+                case "CanceledInvoice":
+                    OnPropertyChanged("CanceledInvoiceVisible");
+                    break;
+                case "Reversal":
+                    OnPropertyChanged("ReversalVisible");
+                    break;
+            }
+        }
+
         protected override void OnPropertyModelsByNameCreated()
         {
             base.OnPropertyModelsByNameCreated();
@@ -71,10 +86,25 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             get { return true; }
         }
 
-
         protected override IEnumerable<ViewModel> FetchReceiptActions()
         {
             return base.FetchReceiptActions().Concat(new[] { ActionViewModelsByName["CreateInvoiceDocument"], ActionViewModelsByName["FinalizeInvoice"] });
+        }
+
+        public override bool CanceledInvoiceVisible
+        {
+            get
+            {
+                return Invoice.CanceledInvoice != null;
+            }
+        }
+
+        public override bool ReversalVisible
+        {
+            get
+            {
+                return Invoice.Reversal != null;
+            }
         }
     }
 }
