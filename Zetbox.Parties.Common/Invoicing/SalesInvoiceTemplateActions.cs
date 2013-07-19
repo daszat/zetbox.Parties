@@ -18,7 +18,7 @@ namespace Zetbox.Basic.Invoicing
             result.Date = DateTime.Today;
             result.Description = obj.Description;
             // result.Document = obj.Document; Don't copy document on create
-            result.DueDate = obj.DueDate.GetNext(result.Date, result.Date);
+            result.DueDate = obj.DueDate.GetRelative(result.Date);
             result.InternalOrganization = obj.IntOrg;
             result.Message = obj.Message;
             result.Customer = obj.Customer;
