@@ -12,6 +12,7 @@
 	  <Module>Zetbox.Server.Wcf.WcfModule, Zetbox.Server.Wcf</Module>
       <Module>zetbox.Workflow.Server.ServerModule, zetbox.Workflow.Server</Module>
       <Module>Zetbox.Parties.Server.ServerModule, Zetbox.Parties.Server</Module>
+	  <Module>Zetbox.API.Server.Fulltext.Module, Zetbox.API.Server</Module>
     </Modules>
     <ClientFilesLocations />
   </Server>

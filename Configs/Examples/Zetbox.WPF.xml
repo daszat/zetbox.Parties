@@ -15,6 +15,7 @@
       <Module>zetbox.Workflow.Client.WPF.ClientWPFModule, zetbox.Workflow.Client.WPF</Module>
       <Module>Zetbox.Parties.Client.ClientModule, Zetbox.Parties.Client</Module>
       <Module>Zetbox.Parties.Client.WPF.ClientWPFModule, Zetbox.Parties.Client.WPF</Module>
+	  <Module>Zetbox.Client.DefaultFulltextSupport+Module, Zetbox.Client</Module>	  
     </Modules>
   </Client>
 </ZetboxConfig>
