@@ -128,29 +128,25 @@
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
     <Reference Include="Zetbox.API">
-      <HintPath>..\packages\zetboxBasic-Common.1.0.5652.1\lib\net40\Zetbox.API.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\packages\zetboxBasic-Common.1.0.5776.1\lib\net40\Zetbox.API.dll</HintPath>
     </Reference>
-    <Reference Include="Zetbox.API.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ccdf16e4dd7b6d78, processorArchitecture=MSIL">
-      <HintPath>..\packages\zetboxBasic-Client.1.0.5652.1\lib\net40\Zetbox.API.Client.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Zetbox.API.Client">
+      <HintPath>..\packages\zetboxBasic-Client.1.0.5776.1\lib\net40\Zetbox.API.Client.dll</HintPath>
     </Reference>
     <Reference Include="Zetbox.API.Common">
-      <HintPath>..\packages\zetboxBasic-Common.1.0.5652.1\lib\net40\Zetbox.API.Common.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\packages\zetboxBasic-Common.1.0.5776.1\lib\net40\Zetbox.API.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Zetbox.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ccdf16e4dd7b6d78, processorArchitecture=MSIL">
-      <HintPath>..\packages\zetboxBasic-Client.1.0.5652.1\lib\net40\Zetbox.Client.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Zetbox.Client">
+      <HintPath>..\packages\zetboxBasic-Client.1.0.5776.1\lib\net40\Zetbox.Client.dll</HintPath>
     </Reference>
-    <Reference Include="zetbox.Workflow.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\zetbox.Workflow-Client.1.0.160.1\lib\net40\zetbox.Workflow.Client.dll</HintPath>
+    <Reference Include="zetbox.Workflow.Client">
+      <HintPath>..\packages\zetbox.Workflow-Client.1.0.164.1\lib\net40\zetbox.Workflow.Client.dll</HintPath>
     </Reference>
-    <Reference Include="zetbox.Workflow.Client.WPF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\zetbox.Workflow-Client.1.0.160.1\lib\net40\zetbox.Workflow.Client.WPF.dll</HintPath>
+    <Reference Include="zetbox.Workflow.Client.WPF">
+      <HintPath>..\packages\zetbox.Workflow-Client.1.0.164.1\lib\net40\zetbox.Workflow.Client.WPF.dll</HintPath>
     </Reference>
-    <Reference Include="zetbox.Workflow.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\zetbox.Workflow-Common.1.0.160.1\lib\net40\zetbox.Workflow.Common.dll</HintPath>
+    <Reference Include="zetbox.Workflow.Common">
+      <HintPath>..\packages\zetbox.Workflow-Common.1.0.164.1\lib\net40\zetbox.Workflow.Common.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
