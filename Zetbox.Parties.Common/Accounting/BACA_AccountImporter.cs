@@ -29,7 +29,7 @@ namespace Zetbox.Parties.Common.Accounting
                     var line = file.ReadLine();
                     var columns = line.Split(';');
 
-                    var buchungsdatum = Convert.ToDateTime(columns[COL_CSV_BUCHUNGSDATUM].Replace('/', '.'));
+                    // not used: var buchungsdatum = Convert.ToDateTime(columns[COL_CSV_BUCHUNGSDATUM].Replace('/', '.'));
                     var valutadatum = Convert.ToDateTime(columns[COL_CSV_VALUTADATUM].Replace('/', '.'));
                     var bez = columns[COL_CSV_BEZ].Trim('"');
                     var notiz = columns[COL_CSV_INT_NOTIZ].Trim('"');
