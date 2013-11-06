@@ -480,7 +480,6 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         private bool LinkReceiptsTransaction(List<Receipt> receipts)
         {
             var trans = Transaction;
-            var party = trans.Party;
             bool didTransfered = false;
             // Zahlungen von alt->neu anrechnen; Rücküberweisungen neu->alt
             foreach (var receipt in (trans.OverPayment > 0 ? receipts.AsEnumerable() : receipts.AsEnumerable().Reverse()))

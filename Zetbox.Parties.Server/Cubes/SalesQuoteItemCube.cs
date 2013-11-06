@@ -20,13 +20,8 @@ namespace Zetbox.Parties.Server.Cubes
     [CLSCompliant(false)]
     public class SalesQuoteItemCube
     {
-        private readonly DateTime from, thru;
-
         public SalesQuoteItemCube(IZetboxContext ctx, DateTime from, DateTime thru)
         {
-            this.from = from;
-            this.thru = thru;
-
             DimDeliveryDate = new Dimension<DateTime, SalesQuoteItemCubeRecord>("Delivery date", g => g.Date.Date)
                 .BuildYearRange(from.Date, thru.Date)
                 .BuildMonths()
