@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>zetbox.Parties-Server</id>
-    <version>1.0.$REVNUM$.$DIRTY$</version>
+    <version>$version$</version>
     <title>zetbox.Parties server assemblies</title>
     <authors>dasz.at OG</authors>
     <owners>dasz.at OG</owners>
@@ -13,7 +13,7 @@
     <releaseNotes>First package.</releaseNotes>
     <copyright>Copyright © 2012 dasz.at OG</copyright>
     <dependencies>
-      <dependency id="zetbox.Parties-Common" version="[1.0.$REVNUM$.$DIRTY$]" />
+      <dependency id="zetbox.Parties-Common" version="[$version$]" />
 
       <dependency id="zetboxBasic-Server" version="[1.0.5355.1, 1.1.0)" />
       <dependency id="zetbox.Workflow-Server" version="[1.0.152.1, 1.1.0)" />

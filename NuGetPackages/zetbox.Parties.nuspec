@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>zetbox.Parties</id>
-    <version>1.0.$REVNUM$.$DIRTY$</version>
+    <version>$version$</version>
     <title>zetbox.Parties</title>
     <authors>dasz.at OG</authors>
     <owners>dasz.at OG</owners>

@@ -19,47 +19,26 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="zetbox.Parties.nuspec.in">
+    <Content Include="zetbox.Parties.nuspec">
       <SubType>Designer</SubType>
-    </None>
-    <NuSpec Include="zetbox.Parties.nuspec">
-      <DependentUpon>zetbox.Parties.nuspec.in</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </NuSpec>
-    <None Include="zetbox.Parties-Common.nuspec.in">
+    </Content>
+    <Content Include="zetbox.Parties-Common.nuspec">
       <SubType>Designer</SubType>
-    </None>
-    <NuSpec Include="zetbox.Parties-Common.nuspec">
-      <DependentUpon>zetbox.Parties-Common.nuspec.in</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </NuSpec>
-    <None Include="zetbox.Parties-Client.nuspec.in">
+    </Content>
+    <Content Include="zetbox.Parties-Client.nuspec">
       <SubType>Designer</SubType>
-    </None>
-    <NuSpec Include="zetbox.Parties-Client.nuspec">
-      <DependentUpon>zetbox.Parties-Client.nuspec.in</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </NuSpec>
-    <None Include="zetbox.Parties-Server.nuspec.in">
+    </Content>
+    <Content Include="zetbox.Parties-Server.nuspec">
       <SubType>Designer</SubType>
-    </None>
-    <NuSpec Include="zetbox.Parties-Server.nuspec">
-      <DependentUpon>zetbox.Parties-Server.nuspec.in</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </NuSpec>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\VersionInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Properties\VersionInfo.Designer.cs">
-      <DependentUpon>VersionInfo.cs</DependentUpon>
-    </Compile>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.zetbox.Parties.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Target Name="GitVersionTargets" Inputs="@(Targets)" Outputs="%(Identity).Dummy">
     <GitVersionFile TemplateFile="@(Targets).in" DestinationFile="@(Targets)" />
