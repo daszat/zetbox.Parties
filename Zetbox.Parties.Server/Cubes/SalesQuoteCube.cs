@@ -16,6 +16,8 @@ namespace Zetbox.Parties.Server.Cubes
         public decimal Chance { get; set; }
     }
 
+    //LinqCube is not CLSCompliant
+    [CLSCompliant(false)]
     public class SalesQuoteCube
     {
         private readonly DateTime from, thru;

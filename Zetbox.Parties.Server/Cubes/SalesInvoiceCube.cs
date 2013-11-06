@@ -19,6 +19,8 @@ namespace Zetbox.Parties.Server.Cubes
         public decimal Fulfillment { get; set; }
     }
 
+    //LinqCube is not CLSCompliant
+    [CLSCompliant(false)]
     public class SalesInvoiceCube
     {
         private readonly DateTime from, thru;

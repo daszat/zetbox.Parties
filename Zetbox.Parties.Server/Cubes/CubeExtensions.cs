@@ -8,6 +8,8 @@ using Zetbox.Basic.Parties;
 
 namespace Zetbox.Parties.Server.Cubes
 {
+    //LinqCube is not CLSCompliant
+    [CLSCompliant(false)]
     public static class CubeExtensions
     {
         public static List<DimensionEntry<string>> BuildCustomerEnum(this DimensionEntry<string> parent, IZetboxContext ctx)

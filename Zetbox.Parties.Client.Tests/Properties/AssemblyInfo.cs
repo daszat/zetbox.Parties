@@ -23,8 +23,3 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("0.0.0.0")]
 [assembly: AssemblyFileVersion("0.0.0.0")]
 [assembly: AssemblyInformationalVersion("0.0.0-zdev")]
-
-// The Common Language Specification (CLS) defines naming restrictions, data types,
-// and rules to which assemblies must conform if they are to be used across programming
-// languages. This assembly should be compatible even if it is probably not useful.
-[assembly: CLSCompliant(true)]

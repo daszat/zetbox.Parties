@@ -14,7 +14,7 @@ namespace Zetbox.Basic.Invoicing
     [Implementor]
     public class StatisticActionsActions
     {
-        public static Func<IZetboxServerContext> _srvCtxFactory;
+        private static Func<IZetboxServerContext> _srvCtxFactory;
 
         public StatisticActionsActions(Func<IZetboxServerContext> srvCtxFactory)
         {
