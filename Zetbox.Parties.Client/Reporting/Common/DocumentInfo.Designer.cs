@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Zetbox.Parties.Client.Reporting.Common
 {
-    [Arebis.CodeGeneration.TemplateInfo(@"P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\DocumentInfo.cst")]
+    [Arebis.CodeGeneration.TemplateInfo(@"V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\DocumentInfo.cst")]
     public partial class DocumentInfo : Zetbox.Parties.Client.Reporting.ReportTemplate
     {
 		protected string Subject;
@@ -29,13 +29,13 @@ namespace Zetbox.Parties.Client.Reporting.Common
 
         public override void Generate()
         {
-#line 10 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\DocumentInfo.cst"
-this.WriteObjects("Info\r\n");
-this.WriteObjects("{\r\n");
-this.WriteObjects("	Title = \"",  Subject , "\"\r\n");
-this.WriteObjects("	Subject = \"",  Subject , "\"\r\n");
-this.WriteObjects("	Author = \"",  Author , "\"\r\n");
-this.WriteObjects("}\r\n");
+#line 10 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\DocumentInfo.cst"
+this.WriteObjects("Info\n");
+this.WriteObjects("{\n");
+this.WriteObjects("	Title = \"",  Subject , "\"\n");
+this.WriteObjects("	Subject = \"",  Subject , "\"\n");
+this.WriteObjects("	Author = \"",  Author , "\"\n");
+this.WriteObjects("}\n");
 
         }
 
