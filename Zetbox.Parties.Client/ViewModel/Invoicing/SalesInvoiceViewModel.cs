@@ -14,6 +14,9 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
     using Zetbox.App.GUI;
     using Zetbox.App.Extensions;
     using Zetbox.Client;
+    using Zetbox.App.Base;
+    using Zetbox.Basic.Parties;
+    using Zetbox.Parties.Client.ViewModel.Invoicing.Utils;
 
     /// <summary>
     /// </summary>
@@ -28,23 +31,52 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
             this.Invoice = obj;
         }
 
+        protected override void OnObjectPropertyChanged(string propName)
+        {
+            base.OnObjectPropertyChanged(propName);
+
+            switch (propName)
+            {
+                case "CanceledInvoice":
+                    OnPropertyChanged("CanceledInvoiceVisible");
+                    break;
+                case "Reversal":
+                    OnPropertyChanged("ReversalVisible");
+                    break;
+            }
+        }
+
         protected override void OnPropertyModelsByNameCreated()
         {
             base.OnPropertyModelsByNameCreated();
             PropertyModelsByName["InvoiceID"].IsReadOnly = true;
         }
 
-        public new SalesInvoice Invoice { get; private set; }
-
-        public override ViewModel Party
+        public override string Name
         {
             get
             {
-                return PropertyModelsByName["Customer"];
+                return "Sales invoice: " + base.Name;
             }
         }
 
-        public override ViewModel Issuer
+        public new SalesInvoice Invoice { get; private set; }
+
+        private BaseValueViewModel _customerParty;
+        public override BaseValueViewModel Party
+        {
+            get
+            {
+                if (_customerParty == null)
+                {
+                    _customerParty = PartyRoleReferenceViewModelFactory.Create<SalesInvoice, Customer>(ViewModelFactory, DataContext, FrozenContext, this, "Customer", Invoice, i => i.Customer);
+
+                }
+                return _customerParty;
+            }
+        }
+
+        public override BaseValueViewModel Issuer
         {
             get { return PropertyModelsByName["Issuer"]; }
         }
@@ -52,6 +84,27 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
         public override bool IssuerVisible
         {
             get { return true; }
+        }
+
+        protected override IEnumerable<ViewModel> FetchReceiptActions()
+        {
+            return base.FetchReceiptActions().Concat(new[] { ActionViewModelsByName["CreateInvoiceDocument"], ActionViewModelsByName["FinalizeInvoice"] });
+        }
+
+        public override bool CanceledInvoiceVisible
+        {
+            get
+            {
+                return Invoice.CanceledInvoice != null;
+            }
+        }
+
+        public override bool ReversalVisible
+        {
+            get
+            {
+                return Invoice.Reversal != null;
+            }
         }
     }
 }

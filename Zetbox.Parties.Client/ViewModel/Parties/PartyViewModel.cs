@@ -4,9 +4,12 @@ namespace Zetbox.Client.Presentables.Parties
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Zetbox.Client.Presentables;
     using Zetbox.API;
+    using Zetbox.App.Extensions;
+    using Zetbox.Basic.Accounting;
     using Zetbox.Basic.Parties;
+    using Zetbox.Client.Presentables;
+    using Zetbox.Client.Presentables.ZetboxBase;
 
     /// <summary>
     /// No viewmodel decriptor - Party is abstract
@@ -32,10 +35,22 @@ namespace Zetbox.Client.Presentables.Parties
             foreach (var role in Party.PartyRole)
             {
                 var vMdl = ViewModelFactory.CreateViewModel<DataObjectViewModel.Factory>().Invoke(DataContext, this, role);
-                var lblMdl = ViewModelFactory.CreateViewModel<LabeledViewContainerViewModel.Factory>().Invoke(DataContext, this, "Role", "", vMdl);
-                var propGrpMdl = ViewModelFactory.CreateViewModel<SinglePropertyGroupViewModel.Factory>().Invoke(DataContext, this, vMdl.GetInterfaceType().Type.Name, new ViewModel[] { lblMdl });
+                var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, vMdl.Name, new ViewModel[] { vMdl });
                 groups.Add(propGrpMdl);
             }
+
+            var lst = ViewModelFactory.CreateViewModel<InstanceListViewModel.Factory>().Invoke(DataContext, this,
+                typeof(Transaction).GetObjectClass(FrozenContext),
+                () => DataContext.GetQuery<Transaction>().Where(i => i.Party == this.Party));
+            lst.AllowAddNew = false;
+            lst.AllowDelete = false;
+            //lst.IsEditable = false;
+            lst.ViewMethod = App.GUI.InstanceListViewMethod.Details;
+            lst.RequestedKind = Zetbox.NamedObjects.Gui.ControlKinds.Zetbox_App_GUI_InstanceGridKind.Find(FrozenContext);
+            lst.SetInitialSort("Date");
+
+            var grp = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, "Transactions", new[] { lst });
+            groups.Add(grp);
 
             return groups;
         }

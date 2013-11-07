@@ -9,7 +9,11 @@ namespace Zetbox.Parties.Client.WPF
     using Zetbox.API;
     using Zetbox.API.Client;
     using Zetbox.Client;
+    using System.ComponentModel;
+    using Zetbox.API.Configuration;
 
+    [Feature(NotOnFallback = true)]
+    [Description("Parties WPF module")]
     public class ClientWPFModule : Module
     {
         protected override void Load(ContainerBuilder moduleBuilder)

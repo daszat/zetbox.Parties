@@ -22,12 +22,14 @@ namespace Zetbox.Basic.Accounting
             if (obj.Receipt != null)
             {
                 obj.Receipt.Recalculate("OpenAmount");
-                obj.Receipt.Recalculate("PaymentAmount");
+                obj.Receipt.PaymentAmount = obj.Receipt.GetPaymentAmount();
             }
             if (obj.Transaction != null)
             {
                 obj.Transaction.Recalculate("ChargedAmount");
                 obj.Transaction.Recalculate("OverPayment");
+                obj.Transaction.Recalculate("AmountNet");
+                obj.Transaction.Recalculate("VAT");
             }
 
             // Workaround - remove from lists
@@ -41,12 +43,14 @@ namespace Zetbox.Basic.Accounting
             if (obj.Receipt != null)
             {
                 obj.Receipt.Recalculate("OpenAmount");
-                obj.Receipt.Recalculate("PaymentAmount");
+                obj.Receipt.PaymentAmount = obj.Receipt.GetPaymentAmount();
             }
             if (obj.Transaction != null)
             {
                 obj.Transaction.Recalculate("ChargedAmount");
                 obj.Transaction.Recalculate("OverPayment");
+                obj.Transaction.Recalculate("AmountNet");
+                obj.Transaction.Recalculate("VAT");
             }
         }
 
@@ -56,12 +60,12 @@ namespace Zetbox.Basic.Accounting
             if (e.OldValue != null)
             {
                 e.OldValue.Recalculate("OpenAmount");
-                e.OldValue.Recalculate("PaymentAmount");
+                e.OldValue.PaymentAmount = e.OldValue.GetPaymentAmount();
             }
             if (e.NewValue != null)
             {
                 e.NewValue.Recalculate("OpenAmount");
-                e.NewValue.Recalculate("PaymentAmount");
+                e.NewValue.PaymentAmount = e.NewValue.GetPaymentAmount();
             }
         }
 
@@ -77,6 +81,8 @@ namespace Zetbox.Basic.Accounting
             {
                 e.NewValue.Recalculate("ChargedAmount");
                 e.NewValue.Recalculate("OverPayment");
+                e.NewValue.Recalculate("AmountNet");
+                e.NewValue.Recalculate("VAT");
             }
         }
     }

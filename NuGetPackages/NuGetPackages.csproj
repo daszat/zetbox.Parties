@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9ABBE6BE-0F08-4ED6-A1AB-B3882849CDD0}</ProjectGuid>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="zetbox.Parties.nuspec">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="zetbox.Parties-Common.nuspec">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="zetbox.Parties-Client.nuspec">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="zetbox.Parties-Server.nuspec">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.zetbox.Parties.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Target Name="GitVersionTargets" Inputs="@(Targets)" Outputs="%(Identity).Dummy">
+    <GitVersionFile TemplateFile="@(Targets).in" DestinationFile="@(Targets)" />
+  </Target>
+  <Target Name="GitVersionNuSpec" Inputs="@(NuSpec)" Outputs="%(Identity).Dummy">
+    <GitVersionFile TemplateFile="@(NuSpec).in" DestinationFile="@(NuSpec)" />
+  </Target>
+  <Target Name="ContentCopy">
+    <Copy SourceFiles="@(Content)" DestinationFolder="$(OutputPath)" />
+    <Copy SourceFiles="@(NuSpec)" DestinationFolder="$(OutputPath)" />
+    <Copy SourceFiles="@(Targets)" DestinationFolder="$(OutputPath)" />
+  </Target>
+  <Target Name="Build" DependsOnTargets="GitVersionTargets;GitVersionNuSpec;ContentCopy">
+  </Target>
+  <Target Name="Package" Inputs="@(NuSpec)" Outputs="%(Identity).Dummy" DependsOnTargets="Build">
+    <Exec WorkingDirectory="$(OutputPath)" Command="..\$(NuGetCommand) pack @(NuSpec) -prop Configuration=$(Configuration)" />
+  </Target>
+  <Target Name="Rebuild" DependsOnTargets="Clean;Build">
+  </Target>
+  <Target Name="Clean">
+  </Target>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <Import Project="..\packages\MSBuildVersioning.1.0.37.0\lib\net40\MsBuildVersioning.targets" />
+  <Target Name="BeforeBuild">
+    <GitVersionFile TemplateFile="Properties\VersionInfo.cs" DestinationFile="Properties\VersionInfo.Designer.cs" />
+  </Target>
+</Project>

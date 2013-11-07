@@ -9,6 +9,7 @@ namespace at.dasz.DocumentManagement
     using Zetbox.App.Base;
     using Zetbox.Basic.Invoicing;
     using Zetbox.Client.Presentables;
+    using Zetbox.Basic.Parties;
 
     [Implementor]
     public class ImportedFileActions
@@ -29,6 +30,7 @@ namespace at.dasz.DocumentManagement
                 {
                     var invoice = (PurchaseInvoice)sel.First().Object;
                     invoice.Document = obj.MakeStaticFile();
+                    invoice.Document.AttachedTo.SetObject(invoice);
                     e.Result = invoice;
                 }
             }, null);
@@ -45,6 +47,7 @@ namespace at.dasz.DocumentManagement
                 {
                     var receipt = (OtherExpenseReceipt)sel.First().Object;
                     receipt.Document = obj.MakeStaticFile();
+                    receipt.Document.AttachedTo.SetObject(receipt);
                     e.Result = receipt;
                 }
             }, null);
@@ -61,7 +64,26 @@ namespace at.dasz.DocumentManagement
                 {
                     var quote = (PurchaseQuote)sel.First().Object;
                     quote.Document = obj.MakeDocument();
+                    quote.Document.AttachedTo.SetObject(quote);
                     e.Result = quote;
+                }
+            }, null);
+            _factory.ShowDialog(dlg);
+        }
+
+        [Invocation]
+        public static void AddToParty(ImportedFile obj, MethodReturnEventArgs<at.dasz.DocumentManagement.File> e)
+        {
+            var ctx = obj.Context;
+            var dlg = _factory.CreateViewModel<DataObjectSelectionTaskViewModel.Factory>().Invoke(ctx, null, typeof(Party).GetObjectClass(obj.ReadOnlyContext), null, (sel) =>
+            {
+                if (sel != null)
+                {
+                    var party = (Party)sel.First().Object;
+                    var file = obj.MakeStaticFile();
+                    file.AttachedTo.SetObject(party);
+                    party.Files.Add(file);
+                    e.Result = file;
                 }
             }, null);
             _factory.ShowDialog(dlg);

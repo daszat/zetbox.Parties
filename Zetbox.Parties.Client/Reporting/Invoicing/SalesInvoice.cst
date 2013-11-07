@@ -63,7 +63,7 @@
             <%= GetPeriod() %>
         }
 
-        \table [ Style = "Compact" Borders { Width = 0.25 } ] {
+        \table [ Style = "Compact" Borders { Width = 0.25 Color = 0xFFAAAAAA } ] {
             \columns {
                 \column [ Width = "6cm" ]
                 \column [ Width = "2cm" Format { Alignment = Right } ]
@@ -132,6 +132,7 @@
 
         <% FormatMessage(); %>
 
+<% if (invoice.CanceledInvoice == null) { // is not reversal %>
         \paragraph [ Style = "Heading1" Format { SpaceBefore = "1cm" } ] {
             <%= GetPaymentTitle() %>
         }
@@ -139,6 +140,7 @@
             <%= GetPaymentIntroduction() %>
         }
         <% FormatBankAccount(); %>
+<% } %>
 
         \paragraph [ Format { SpaceBefore = "1cm" } ] {
             <%= GetGreetingsLine() %>

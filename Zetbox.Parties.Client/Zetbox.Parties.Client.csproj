@@ -10,43 +10,115 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Zetbox.Parties.Client</RootNamespace>
     <AssemblyName>Zetbox.Parties.Client</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin\Debug\Client\App.Zetbox.Parties\</OutputPath>
+    <OutputPath>..\bin\Debug\Client\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\bin\Debug\Client\Zetbox.Parties.Client.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\bin\Release\Client\App.Zetbox.Parties\</OutputPath>
+    <OutputPath>..\bin\Release\Client\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Linux.Debug|AnyCPU'">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\bin\Debug\Client\App.Zetbox.Parties\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;MONO</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\bin\Release\Client\Zetbox.Parties.Client.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Arebis.CodeGeneration">
-      <HintPath>..\packages\Arebis.CodeGenerator.1.2.1.0\lib\net35\Arebis.CodeGeneration.dll</HintPath>
+    <Reference Include="Arebis.CodeGeneration, Version=1.3.0.0, Culture=neutral, PublicKeyToken=1012dfebee6c8abd, processorArchitecture=MSIL">
+      <HintPath>..\packages\Arebis.CodeGenerator.1.3.0.0\lib\net40\Arebis.CodeGeneration.dll</HintPath>
     </Reference>
-    <Reference Include="Arebis.CodeGenerator">
-      <HintPath>..\packages\Arebis.CodeGenerator.1.2.1.0\lib\net35\Arebis.CodeGenerator.dll</HintPath>
+    <Reference Include="Arebis.CodeGenerator, Version=1.3.0.0, Culture=neutral, PublicKeyToken=1012dfebee6c8abd, processorArchitecture=MSIL">
+      <HintPath>..\packages\Arebis.CodeGenerator.1.3.0.0\lib\net40\Arebis.CodeGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.2.6.3.862\lib\NET40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphSharp, Version=1.0.2.0, Culture=neutral, PublicKeyToken=f9c24778325a6b82, processorArchitecture=MSIL">
+      <HintPath>..\packages\GraphSharp.1.1.0.0\lib\net40\GraphSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphSharp.Controls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=f9c24778325a6b82, processorArchitecture=MSIL">
+      <HintPath>..\packages\GraphSharp.1.1.0.0\lib\net40\GraphSharp.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Analyzers">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Analyzers.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Core">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.FastVectorHighlighter">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.FastVectorHighlighter.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Highlighter">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Highlighter.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Memory">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Queries">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Queries.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Regex">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Regex.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.SimpleFacetedSearch">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.SimpleFacetedSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Snowball">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Snowball.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.SpellChecker">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.SpellChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.DocumentObjectModel">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI-dasz.1.32.3886.0\lib\net35\MigraDoc.DocumentObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI-dasz.1.32.3886.0\lib\net35\MigraDoc.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI-dasz.1.32.3886.0\lib\net35\MigraDoc.RtfRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI-dasz.1.32.3886.0\lib\net35\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI-dasz.1.32.3886.0\lib\net35\PdfSharp.Charting.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -56,6 +128,27 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
+    <Reference Include="Zetbox.API">
+      <HintPath>..\packages\zetboxBasic-Common.1.0.5801\lib\net40\Zetbox.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Zetbox.API.Client">
+      <HintPath>..\packages\zetboxBasic-Client.1.0.5801\lib\net40\Zetbox.API.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Zetbox.API.Common">
+      <HintPath>..\packages\zetboxBasic-Common.1.0.5801\lib\net40\Zetbox.API.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Zetbox.Client">
+      <HintPath>..\packages\zetboxBasic-Client.1.0.5801\lib\net40\Zetbox.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Zetbox.Workflow.Client">
+      <HintPath>..\packages\zetbox.Workflow-Client.1.1.1\lib\net40\Zetbox.Workflow.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Zetbox.Workflow.Client.WPF">
+      <HintPath>..\packages\zetbox.Workflow-Client.1.1.1\lib\net40\Zetbox.Workflow.Client.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Zetbox.Workflow.Common">
+      <HintPath>..\packages\zetbox.Workflow-Common.1.1.1\lib\net40\Zetbox.Workflow.Common.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Accounting\AccountActions.cs" />
@@ -63,6 +156,7 @@
     <Compile Include="Accounting\TransactionActions.cs" />
     <Compile Include="ClientModule.cs" />
     <Compile Include="DocumentManagement\ImportedFileActions.cs" />
+    <Compile Include="Invoicing\InvoiceItemTemplateActions.cs" />
     <Compile Include="Invoicing\DefaultInvoiceGeneratorActions.cs" />
     <Compile Include="Invoicing\InvoiceItemActions.cs" />
     <Compile Include="Invoicing\QuoteItemActions.cs" />
@@ -122,6 +216,13 @@
     <Compile Include="ViewModel\Accounting\AccountViewModel.cs" />
     <Compile Include="ViewModel\Accounting\LinkReceiptTransactionViewModel.cs" />
     <Compile Include="ViewModel\Accounting\TransactionViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\OpenReceiptsNavigationSearchViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\SalesInvoiceTemplateViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\InvoiceTemplateViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\PurchaseInvoiceTemplateViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\OtherIncomeReceiptTemplateViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\OtherExpenseReceiptTemplateViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\ReceiptTemplateViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\InvoiceItemViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\InvoiceViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\OtherExpenseReceiptViewModel.cs" />
@@ -137,6 +238,7 @@
     <Compile Include="ViewModel\Invoicing\SalesInvoiceItemViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\SalesInvoiceViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\SalesQuoteViewModel.cs" />
+    <Compile Include="ViewModel\Invoicing\Utils\PartyRoleReferenceViewModelFactory.cs" />
     <Compile Include="ViewModel\Parties\OrganizationViewModel.cs" />
     <Compile Include="ViewModel\Parties\PartyViewModel.cs" />
     <Compile Include="ViewModel\Parties\PersonViewModel.cs" />
@@ -155,7 +257,10 @@
     <EmbeddedResource Include="Reporting\Common\BankAccountResources.de.resx" />
     <EmbeddedResource Include="Reporting\Common\BankAccountResources.resx" />
     <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.de.resx" />
-    <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.resx" />
+    <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SalesInvoiceResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reporting\Parties\" />
@@ -164,7 +269,12 @@
     <ProjectReference Include="..\Zetbox.Parties.Common\Zetbox.Parties.Common.csproj">
       <Project>{927FD8BF-5FE0-4D07-B89E-926E7F694623}</Project>
       <Name>Zetbox.Parties.Common</Name>
+      <Private>False</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.zetbox.txt" />
+    <Content Include="README.zetbox.Workflow.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Arebis Generation Tools\ArebisGenTask.targets" />

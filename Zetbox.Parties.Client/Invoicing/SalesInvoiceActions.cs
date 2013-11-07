@@ -9,17 +9,8 @@ using Zetbox.Parties.Client.Reporting;
 namespace Zetbox.Basic.Invoicing
 {
     [Implementor]
-    public class SalesInvoiceActions
+    public static class SalesInvoiceActions
     {
-        private static IViewModelFactory _factory;
-        private static Func<ReportingHost> _rptFactory;
-
-        public SalesInvoiceActions(IViewModelFactory factory, Func<ReportingHost> rptFactory)
-        {
-            _factory = factory;
-            _rptFactory = rptFactory;
-        }
-
         [Invocation]
         public static void CreateInvoiceDocument(SalesInvoice obj)
         {

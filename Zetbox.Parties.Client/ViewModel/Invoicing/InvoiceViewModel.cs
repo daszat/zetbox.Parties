@@ -30,12 +30,15 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
 
         public Invoice Invoice { get; private set; }
 
-        public override ViewModel InternalOrganization
+        public override BaseValueViewModel InternalOrganization
         {
             get { return PropertyModelsByName["InternalOrganization"]; }
         }
 
-        public abstract ViewModel Issuer { get; }
+        public abstract BaseValueViewModel Issuer { get; }
         public abstract bool IssuerVisible { get; }
+
+        public virtual bool CanceledInvoiceVisible { get { return false; } }
+        public virtual bool ReversalVisible { get { return false; } }
     }
 }

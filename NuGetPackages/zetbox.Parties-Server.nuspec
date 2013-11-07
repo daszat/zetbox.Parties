@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>zetbox.Parties-Server</id>
+    <version>$version$</version>
+    <title>zetbox.Parties server assemblies</title>
+    <authors>dasz.at OG</authors>
+    <owners>dasz.at OG</owners>
+    <licenseUrl>http://www.gnu.org/licenses/lgpl.html</licenseUrl>
+    <projectUrl>http://zetbox.at/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Server assemblies for zetbox.Parties.</description>
+    <releaseNotes>First package.</releaseNotes>
+    <copyright>Copyright © 2012 dasz.at OG</copyright>
+    <dependencies>
+      <dependency id="zetbox.Parties-Common" version="[$version$]" />
+
+      <dependency id="zetboxBasic-Server" version="[1.0.5801,2)" />
+      <dependency id="zetbox.Workflow-Server" version="[1.1.1,2)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Server\Zetbox.Parties.Server.dll" target="lib\net40" />
+    <file src="Server\Zetbox.Parties.Server.pdb" target="lib\net40" />
+    <file src="Server\Zetbox.Parties.Server.xml" target="lib\net40" />
+  </files>
+</package>

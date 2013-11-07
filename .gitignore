@@ -5,7 +5,7 @@
 *.csproj.user
 bin
 obj
-/packages/zetbox*
-/packages/Arebis.CodeGenerator.*
-/packages/LinqCube.*
-/packages/NUnit.*
+
+# Only commit repositories.config. The rest of /packages is only a local cache
+!/packages/repositories.config
+/packages/*

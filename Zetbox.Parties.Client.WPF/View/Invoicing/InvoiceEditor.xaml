@@ -4,69 +4,98 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:ctrls="clr-namespace:Zetbox.Client.WPF.CustomControls;assembly=Zetbox.Client.WPF.Toolkit"
-             mc:Ignorable="d"
-             x:Name="invoiceEditor"
-             d:DesignHeight="300" d:DesignWidth="300">
-  <Grid>
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="*" />
-      <ColumnDefinition Width="*" />
-    </Grid.ColumnDefinitions>
-    <TabControl Grid.Column="1">
-      <TabItem Header="Document">
-        <DockPanel>
-          <ctrls:LabeledView DockPanel.Dock="Top"
-                             DataContext="{Binding PropertyModelsByName[Document]}" />
-          <ContentPresenter Content="{Binding PropertyModelsByName[Document].Value}"
-                            ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
+             xmlns:client="clr-namespace:Zetbox.Client.Presentables;assembly=Zetbox.Client"
+             x:Name="invoiceEditor">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top"
+                   Margin="{StaticResource AreaGroup1Margin}">
+            <Image DockPanel.Dock="Left"
+                   Source="{Binding Icon, Converter={StaticResource ImageConverter}}"
+                   Width="{StaticResource BigControlHeight}"
+                   Height="{StaticResource BigControlHeight}" />
+            <TextBlock Text="{Binding Name}"
+                       Style="{StaticResource zbTitle}"
+                       Margin="10 0 0 0"
+                       HorizontalAlignment="Left" />
         </DockPanel>
-      </TabItem>
-      <TabItem Header="Transactions">
-        <StackPanel>
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[OpenAmount]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[PaymentAmount]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
-          <ContentPresenter Content="{Binding PropertyModelsByName[Transactions]}"
-                            ContentTemplateSelector="{StaticResource defaultTemplateSelector}"/>
-        </StackPanel>
-      </TabItem>
-    </TabControl>
-    <ScrollViewer Grid.Column="0">
-      <DockPanel x:Name="detailsPanel">
-        <StackPanel DockPanel.Dock="Top">
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Date]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[DueDate]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[InvoiceID]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Description]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Period]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Message]}" />
-          <ctrls:LabeledView DataContext="{Binding InternalOrganization}" />
-          <ctrls:LabeledView DataContext="{Binding Party}" />
-          <ctrls:LabeledView DataContext="{Binding Issuer}"
-                             Visibility="{Binding DataContext.IssuerVisible, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=detailsPanel}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
-        </StackPanel>
-        <ItemsControl DockPanel.Dock="Bottom"
-                      ItemsSource="{Binding Actions}"
-                      ItemTemplateSelector="{StaticResource defaultTemplateSelector}">
-          <ItemsControl.ItemsPanel>
-            <ItemsPanelTemplate>
-              <UniformGrid IsItemsHost="True"
-                           Rows="1"/>
-            </ItemsPanelTemplate>
-          </ItemsControl.ItemsPanel>
-        </ItemsControl>
-        <StackPanel DockPanel.Dock="Bottom">
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[OpenAmount]}" />
-          <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[PaymentAmount]}" />
-        </StackPanel>
-        <ContentPresenter Content="{Binding PropertyModelsByName[Items]}"
-                          ContentTemplateSelector="{StaticResource defaultTemplateSelector}" />
-      </DockPanel>
-    </ScrollViewer>
-  </Grid>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ctrls:WorkaroundToolBar ItemsSource="{Binding Actions}">
+                <ctrls:WorkaroundToolBar.Resources>
+                    <DataTemplate DataType="{x:Type client:ActionViewModel}">
+                        <ctrls:CommandButton CommandViewModel="{Binding}"
+                                             Style="{StaticResource ImageToolbarButton}" />
+                    </DataTemplate>
+                </ctrls:WorkaroundToolBar.Resources>
+            </ctrls:WorkaroundToolBar>
+        </ToolBarTray>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TabControl Grid.Column="1">
+                <TabItem Header="Document">
+                    <DockPanel>
+                        <ctrls:LabeledView DockPanel.Dock="Top"
+                                           DataContext="{Binding PropertyModelsByName[Document]}" />
+                        <ContentPresenter Content="{Binding PropertyModelsByName[Document].Value}"
+                                          ContentTemplateSelector="{StaticResource defaultTemplateSelector}" />
+                    </DockPanel>
+                </TabItem>
+                <TabItem Header="Transactions">
+                    <StackPanel>
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[OpenAmount]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[PaymentAmount]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
+                        <ContentPresenter Content="{Binding PropertyModelsByName[Transactions]}"
+                                          ContentTemplateSelector="{StaticResource defaultTemplateSelector}" />
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+            <ScrollViewer Grid.Column="0">
+                <DockPanel x:Name="detailsPanel">
+                    <StackPanel DockPanel.Dock="Top">
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Date]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[DueDate]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[InvoiceID]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Description]}" />
+
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[CanceledInvoice]}"
+                                           Visibility="{Binding DataContext.CanceledInvoiceVisible, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=detailsPanel}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Reversal]}"
+                                           Visibility="{Binding DataContext.ReversalVisible, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=detailsPanel}" />
+
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Period]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Message]}" />
+                        <ctrls:LabeledView DataContext="{Binding InternalOrganization}" />
+                        <ctrls:LabeledView DataContext="{Binding Party}" />
+                        <ctrls:LabeledView DataContext="{Binding Issuer}"
+                                           Visibility="{Binding DataContext.IssuerVisible, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=detailsPanel}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[PaymentAmount]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Status]}" />
+                    </StackPanel>
+                    <ItemsControl DockPanel.Dock="Bottom"
+                                  ItemsSource="{Binding ReceiptActions}"
+                                  ItemTemplateSelector="{StaticResource defaultTemplateSelector}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid IsItemsHost="True"
+                                             Rows="1" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </ItemsControl>
+                    <StackPanel DockPanel.Dock="Bottom">
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[Total]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[TotalNet]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[OpenAmount]}" />
+                    </StackPanel>
+                    <ContentPresenter Content="{Binding PropertyModelsByName[Items]}"
+                                      ContentTemplateSelector="{StaticResource defaultTemplateSelector}" />
+                </DockPanel>
+            </ScrollViewer>
+        </Grid>
+    </DockPanel>
 </UserControl>

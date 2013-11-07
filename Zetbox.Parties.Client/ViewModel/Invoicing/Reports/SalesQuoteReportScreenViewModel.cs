@@ -23,7 +23,11 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing.Reports
 
         protected override object LoadStatistic(DateTime from, DateTime until)
         {
-            var stat = DataContext.GetQuery<StatisticActions>().Single();
+            var stat = DataContext.GetQuery<StatisticActions>().SingleOrDefault();
+            if (stat == null)
+            {
+                stat = DataContext.Create<StatisticActions>();
+            }
             return stat.GetSalesQuoteReport(from, until);
         }
     }

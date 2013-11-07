@@ -16,15 +16,12 @@ namespace Zetbox.Parties.Server.Cubes
         public decimal Chance { get; set; }
     }
 
+    //LinqCube is not CLSCompliant
+    [CLSCompliant(false)]
     public class SalesQuoteCube
     {
-        private readonly DateTime from, thru;
-
         public SalesQuoteCube(IZetboxContext ctx, DateTime from, DateTime thru)
         {
-            this.from = from;
-            this.thru = thru;
-
             DimIssueDate = new Dimension<DateTime, SalesQuoteCubeRecord>("IssueDate", g => g.Date.Date)
                 .BuildYearRange(from.Date, thru.Date)
                 .BuildMonths()
