@@ -9,7 +9,7 @@
     <Modules>
       <Module>Zetbox.Server.ServerModule, Zetbox.Server</Module>
       <Module>Zetbox.DalProvider.Ef.EfProvider, Zetbox.DalProvider.Ef</Module>
-      <Module>zetbox.Workflow.Server.ServerModule, zetbox.Workflow.Server</Module>
+      <Module>Zetbox.Workflow.Server.ServerModule, Zetbox.Workflow.Server</Module>
       <Module>Zetbox.Parties.Server.ServerModule, Zetbox.Parties.Server</Module>
     </Modules>
     <ClientFilesLocations>

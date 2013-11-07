@@ -12,7 +12,7 @@
     <Modules>
       <Module>Zetbox.API.Client.HttpClientModule, Zetbox.API.Client</Module>
       <Module>Zetbox.Client.ClientModule, Zetbox.Client</Module>
-      <Module>zetbox.Workflow.Client.ClientModule, zetbox.Workflow.Client</Module>
+      <Module>Zetbox.Workflow.Client.ClientModule, Zetbox.Workflow.Client</Module>
       <Module>Zetbox.Parties.Client.ClientModule, Zetbox.Parties.Client</Module>
     </Modules>
   </Client>
