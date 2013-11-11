@@ -15,16 +15,18 @@ namespace at.dasz.DocumentManagement
     public class ImportedFileActions
     {
         private static IViewModelFactory _factory;
-        public ImportedFileActions(IViewModelFactory factory)
+        private static IFrozenContext _frozenCtx;
+        public ImportedFileActions(IViewModelFactory factory, IFrozenContext frozenCtx)
         {
             _factory = factory;
+            _frozenCtx = frozenCtx;
         }
 
         [Invocation]
         public static void MakeInvoice(ImportedFile obj, MethodReturnEventArgs<PurchaseInvoice> e)
         {
             var ctx = obj.Context;
-            var dlg = _factory.CreateViewModel<DataObjectSelectionTaskViewModel.Factory>().Invoke(ctx, null, typeof(PurchaseInvoice).GetObjectClass(obj.ReadOnlyContext), null, (sel) =>
+            var dlg = _factory.CreateViewModel<DataObjectSelectionTaskViewModel.Factory>().Invoke(ctx, null, typeof(PurchaseInvoice).GetObjectClass(_frozenCtx), null, (sel) =>
             {
                 if (sel != null)
                 {
@@ -41,7 +43,7 @@ namespace at.dasz.DocumentManagement
         public static void MakeOtherExpense(ImportedFile obj, MethodReturnEventArgs<OtherExpenseReceipt> e)
         {
             var ctx = obj.Context;
-            var dlg = _factory.CreateViewModel<DataObjectSelectionTaskViewModel.Factory>().Invoke(ctx, null, typeof(OtherExpenseReceipt).GetObjectClass(obj.ReadOnlyContext), null, (sel) =>
+            var dlg = _factory.CreateViewModel<DataObjectSelectionTaskViewModel.Factory>().Invoke(ctx, null, typeof(OtherExpenseReceipt).GetObjectClass(_frozenCtx), null, (sel) =>
             {
                 if (sel != null)
                 {
@@ -58,7 +60,7 @@ namespace at.dasz.DocumentManagement
         public static void MakeQuote(ImportedFile obj, MethodReturnEventArgs<PurchaseQuote> e)
         {
             var ctx = obj.Context;
-            var dlg = _factory.CreateViewModel<DataObjectSelectionTaskViewModel.Factory>().Invoke(ctx, null, typeof(PurchaseQuote).GetObjectClass(obj.ReadOnlyContext), null, (sel) =>
+            var dlg = _factory.CreateViewModel<DataObjectSelectionTaskViewModel.Factory>().Invoke(ctx, null, typeof(PurchaseQuote).GetObjectClass(_frozenCtx), null, (sel) =>
             {
                 if (sel != null)
                 {
@@ -75,7 +77,7 @@ namespace at.dasz.DocumentManagement
         public static void AddToParty(ImportedFile obj, MethodReturnEventArgs<at.dasz.DocumentManagement.File> e)
         {
             var ctx = obj.Context;
-            var dlg = _factory.CreateViewModel<DataObjectSelectionTaskViewModel.Factory>().Invoke(ctx, null, typeof(Party).GetObjectClass(obj.ReadOnlyContext), null, (sel) =>
+            var dlg = _factory.CreateViewModel<DataObjectSelectionTaskViewModel.Factory>().Invoke(ctx, null, typeof(Party).GetObjectClass(_frozenCtx), null, (sel) =>
             {
                 if (sel != null)
                 {
