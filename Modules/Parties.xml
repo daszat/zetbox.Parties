@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-07-24T12:18:44.1427954Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-10-29T14:35:31.35084Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -3180,7 +3180,7 @@ public static void LinkReceiptsCanExecReason(Transaction obj, MethodReturnEventA
     <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2011-12-09T16:14:08.577104Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void Transfer(Transaction obj)
+public static void Transfer(Transaction obj, MethodReturnEventArgs&lt;Zetbox.Basic.Accounting.Transaction&gt; e, Zetbox.Basic.Accounting.Account account)
 {
 }
 
@@ -12560,7 +12560,7 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
   <ZetboxBase:Method ExportGuid="a64b480f-4380-41b3-8628-59cc0e614eb5">
     <ZetboxBase:ChangedOn>2012-05-09T11:02:50.4178512Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void CreateDocument(AbstractInvoiceGenerator obj)
+public static void CreateDocument(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;at.dasz.DocumentManagement.StaticFile&gt; e, Zetbox.Basic.Invoicing.SalesInvoice invoice)
 {
 }
 
@@ -12583,7 +12583,7 @@ public static void CreateDocumentCanExecReason(AbstractInvoiceGenerator obj, Met
   <ZetboxBase:Method ExportGuid="a3d8960a-77d5-4c1d-9081-c19f097fa0d8">
     <ZetboxBase:ChangedOn>2012-05-09T11:01:18.3845872Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void GetNextInvoiceID(AbstractInvoiceGenerator obj)
+public static void GetNextInvoiceID(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 
@@ -12607,7 +12607,7 @@ public static void GetNextInvoiceIDCanExecReason(AbstractInvoiceGenerator obj, M
     <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2012-11-14T16:42:17.5478637Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void MakeInvoice(ImportedFile obj)
+public static void MakeInvoice(ImportedFile obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.PurchaseInvoice&gt; e)
 {
 }
 
@@ -12632,7 +12632,7 @@ public static void MakeInvoiceCanExecReason(ImportedFile obj, MethodReturnEventA
     <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2012-11-14T16:42:17.5478637Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void MakeOtherExpense(ImportedFile obj)
+public static void MakeOtherExpense(ImportedFile obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.OtherExpenseReceipt&gt; e)
 {
 }
 
@@ -12657,7 +12657,7 @@ public static void MakeOtherExpenseCanExecReason(ImportedFile obj, MethodReturnE
     <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2012-11-14T16:42:17.5478637Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void MakeQuote(ImportedFile obj)
+public static void MakeQuote(ImportedFile obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.PurchaseQuote&gt; e)
 {
 }
 
@@ -12682,7 +12682,7 @@ public static void MakeQuoteCanExecReason(ImportedFile obj, MethodReturnEventArg
     <ZetboxBase:CategoryTags>Mistakes</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2013-07-12T10:49:19.5496827Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void ChangeTypeTo(Receipt obj)
+public static void ChangeTypeTo(Receipt obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.Receipt&gt; e, Zetbox.Basic.Invoicing.ReceiptType newType)
 {
 }
 
@@ -12708,7 +12708,7 @@ public static void ChangeTypeToCanExecReason(Receipt obj, MethodReturnEventArgs&
   <ZetboxBase:Method ExportGuid="ac7180a0-ce46-4d93-99f9-6783d980ee96">
     <ZetboxBase:ChangedOn>2013-07-12T10:49:19.5496827Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void CreateItem(Receipt obj)
+public static void CreateItem(Receipt obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.InvoiceItem&gt; e, decimal quantity, decimal amount, string description, bool taxable)
 {
 }
 
@@ -12734,7 +12734,7 @@ public static void CreateItemCanExecReason(Receipt obj, MethodReturnEventArgs&lt
     <ZetboxBase:CategoryTags>Reuse</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2012-10-10T08:51:31.67732Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void CreateTemplate(Receipt obj)
+public static void CreateTemplate(Receipt obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.ReceiptTemplate&gt; e)
 {
 }
 
@@ -12761,7 +12761,7 @@ public static void CreateTemplateCanExecReason(Receipt obj, MethodReturnEventArg
     <ZetboxBase:CategoryTags>Reuse</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2012-10-10T08:51:31.67732Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void Duplicate(Receipt obj)
+public static void Duplicate(Receipt obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.Receipt&gt; e)
 {
 }
 
@@ -12786,7 +12786,7 @@ public static void DuplicateCanExecReason(Receipt obj, MethodReturnEventArgs&lt;
   <ZetboxBase:Method ExportGuid="bc09fb13-b1fc-404f-9816-60043234316b">
     <ZetboxBase:ChangedOn>2013-07-12T10:48:38.8203531Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void GetPaymentAmount(Receipt obj)
+public static void GetPaymentAmount(Receipt obj, MethodReturnEventArgs&lt;decimal&gt; e)
 {
 }
 
@@ -12836,7 +12836,7 @@ public static void UpdateTotalCanExecReason(Receipt obj, MethodReturnEventArgs&l
     <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2012-09-28T07:29:31.5539283Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void CreateReceipt(ReceiptTemplate obj)
+public static void CreateReceipt(ReceiptTemplate obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.Receipt&gt; e)
 {
 }
 
@@ -12862,7 +12862,7 @@ public static void CreateReceiptCanExecReason(ReceiptTemplate obj, MethodReturnE
     <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2012-10-16T10:16:58.3909736Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void StartWorkflow(ReceiptTemplate obj)
+public static void StartWorkflow(ReceiptTemplate obj, MethodReturnEventArgs&lt;Zetbox.Basic.Workflow.WFInstance&gt; e, Zetbox.Basic.Workflow.WFDefinition workflow)
 {
 }
 
@@ -12910,7 +12910,7 @@ public static void UpdateTotalCanExecReason(ReceiptTemplate obj, MethodReturnEve
   <ZetboxBase:Method ExportGuid="39b90f9e-8c06-4009-9ddf-c13cbeddfe8e">
     <ZetboxBase:ChangedOn>2013-07-05T09:59:08.8821474Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void Cancel(SalesInvoice obj)
+public static void Cancel(SalesInvoice obj, MethodReturnEventArgs&lt;Zetbox.Basic.Invoicing.SalesInvoice&gt; e)
 {
 }
 
@@ -12985,7 +12985,7 @@ public static void FinalizeInvoiceCanExecReason(SalesInvoice obj, MethodReturnEv
   <ZetboxBase:Method ExportGuid="1ab2f81b-022a-4048-aae3-8a28fe9c3d17">
     <ZetboxBase:ChangedOn>2011-12-30T13:48:38.917057Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void GetName(StatisticActions obj)
+public static void GetName(StatisticActions obj, MethodReturnEventArgs&lt;string&gt; e)
 {
 }
 
@@ -13008,7 +13008,7 @@ public static void GetNameCanExecReason(StatisticActions obj, MethodReturnEventA
   <ZetboxBase:Method ExportGuid="7abd5601-ac20-4d5a-b1fa-a975a98adb4d">
     <ZetboxBase:ChangedOn>2011-10-21T16:12:24.850524Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void GetPurchaseInvoiceReport(StatisticActions obj)
+public static void GetPurchaseInvoiceReport(StatisticActions obj, MethodReturnEventArgs&lt;System.Object&gt; e, DateTime from, DateTime until)
 {
 }
 
@@ -13032,7 +13032,7 @@ public static void GetPurchaseInvoiceReportCanExecReason(StatisticActions obj, M
   <ZetboxBase:Method ExportGuid="b3052100-5477-4a15-869a-2561d0bb9bc4">
     <ZetboxBase:ChangedOn>2012-05-14T17:08:03.3119705Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void GetPurchaseQuoteReport(StatisticActions obj)
+public static void GetPurchaseQuoteReport(StatisticActions obj, MethodReturnEventArgs&lt;System.Object&gt; e, DateTime from, DateTime until)
 {
 }
 
@@ -13056,7 +13056,7 @@ public static void GetPurchaseQuoteReportCanExecReason(StatisticActions obj, Met
   <ZetboxBase:Method ExportGuid="4acfbb53-bd2a-4639-8b5d-d55b853e1513">
     <ZetboxBase:ChangedOn>2011-10-21T16:10:29.073524Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void GetSalesInvoiceReport(StatisticActions obj)
+public static void GetSalesInvoiceReport(StatisticActions obj, MethodReturnEventArgs&lt;System.Object&gt; e, DateTime from, DateTime until)
 {
 }
 
@@ -13080,7 +13080,7 @@ public static void GetSalesInvoiceReportCanExecReason(StatisticActions obj, Meth
   <ZetboxBase:Method ExportGuid="1b794b9f-a9a3-4dc7-af30-02fce7db8091">
     <ZetboxBase:ChangedOn>2012-05-14T17:08:03.3119705Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void GetSalesQuoteReport(StatisticActions obj)
+public static void GetSalesQuoteReport(StatisticActions obj, MethodReturnEventArgs&lt;System.Object&gt; e, DateTime from, DateTime until)
 {
 }
 
@@ -18603,7 +18603,7 @@ public static void AddToPartyCanExecReason(ImportedFile obj, MethodReturnEventAr
   <ZetboxBase:Method ExportGuid="984d4a39-2b05-46ae-8d28-49d303a08253">
     <ZetboxBase:ChangedOn>2011-08-05T16:31:13.108286Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void AddPartyRole(Party obj)
+public static void AddPartyRole(Party obj, MethodReturnEventArgs&lt;Zetbox.Basic.Parties.PartyRole&gt; e)
 {
 }
 

@@ -164,19 +164,19 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Zetbox.API">
-      <HintPath>..\packages\zetboxBasic-Common.1.0.5801\lib\net40\Zetbox.API.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Common.1.1.0\lib\net40\Zetbox.API.dll</HintPath>
     </Reference>
     <Reference Include="Zetbox.API.Client">
-      <HintPath>..\packages\zetboxBasic-Client.1.0.5801\lib\net40\Zetbox.API.Client.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Client.1.1.0\lib\net40\Zetbox.API.Client.dll</HintPath>
     </Reference>
     <Reference Include="Zetbox.API.Common">
-      <HintPath>..\packages\zetboxBasic-Common.1.0.5801\lib\net40\Zetbox.API.Common.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Common.1.1.0\lib\net40\Zetbox.API.Common.dll</HintPath>
     </Reference>
     <Reference Include="Zetbox.Client">
-      <HintPath>..\packages\zetboxBasic-Client.1.0.5801\lib\net40\Zetbox.Client.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Client.1.1.0\lib\net40\Zetbox.Client.dll</HintPath>
     </Reference>
     <Reference Include="Zetbox.Client.ASPNET.Toolkit">
-      <HintPath>..\packages\zetboxBasic-ClientASPNET.1.0.5801\lib\net40\Zetbox.Client.ASPNET.Toolkit.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-ClientASPNET.1.1.0\lib\net40\Zetbox.Client.ASPNET.Toolkit.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -277,7 +277,9 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
