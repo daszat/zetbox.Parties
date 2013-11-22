@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Zetbox.Parties.Client.Reporting.Common
 {
-    [Arebis.CodeGeneration.TemplateInfo(@"V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\PageSetup.cst")]
+    [Arebis.CodeGeneration.TemplateInfo(@"P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\PageSetup.cst")]
     public partial class PageSetup : Zetbox.Parties.Client.Reporting.ReportTemplate
     {
 		protected string Orientation;
@@ -27,15 +27,15 @@ namespace Zetbox.Parties.Client.Reporting.Common
 
         public override void Generate()
         {
-#line 9 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\PageSetup.cst"
-this.WriteObjects("\n");
-this.WriteObjects("PageSetup\n");
-this.WriteObjects("{\n");
-this.WriteObjects("	Orientation = ",  Orientation , "\n");
-this.WriteObjects("	PageFormat = A4\n");
-this.WriteObjects("	TopMargin = 40\n");
-this.WriteObjects("	StartingNumber = 1\n");
-this.WriteObjects("}\n");
+#line 9 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\PageSetup.cst"
+this.WriteObjects("\r\n");
+this.WriteObjects("PageSetup\r\n");
+this.WriteObjects("{\r\n");
+this.WriteObjects("	Orientation = ",  Orientation , "\r\n");
+this.WriteObjects("	PageFormat = A4\r\n");
+this.WriteObjects("	TopMargin = 40\r\n");
+this.WriteObjects("	StartingNumber = 1\r\n");
+this.WriteObjects("}\r\n");
 
         }
 
