@@ -193,6 +193,12 @@
     <Compile Include="View\Invoicing\SalesQuoteEditor.xaml.cs">
       <DependentUpon>SalesQuoteEditor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Parties\PartyRoleTabbedEditor.xaml.cs">
+      <DependentUpon>PartyRoleTabbedEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Parties\PartyRoleEditor.xaml.cs">
+      <DependentUpon>PartyRoleEditor.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Include="View\Accounting\LinkReceiptTransactionDialog.xaml">
@@ -222,6 +228,14 @@
     <Page Include="View\Invoicing\SalesQuoteEditor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Parties\PartyRoleTabbedEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Parties\PartyRoleEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

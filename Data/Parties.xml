@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2013-07-24T12:18:44.1427954Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2013-11-22T10:54:36.2657194Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:Account ExportGuid="5ce18612-eac2-4384-916d-ebf488f5a5ea">
     <Accounting:ChangedOn>2012-11-19T12:37:34.0433906Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2012-10-12T08:16:49.8127899Z</Accounting:CreatedOn>
@@ -165,8 +165,8 @@
     <Invoicing:Description>SVA</Invoicing:Description>
     <Invoicing:DueDate>2012-10-25T22:00:00Z</Invoicing:DueDate>
     <Invoicing:FulfillmentDate>2013-07-15T22:00:00Z</Invoicing:FulfillmentDate>
-    <Accounting:OpenAmount>2000.00</Accounting:OpenAmount>
-    <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
+    <Accounting:OpenAmount>0</Accounting:OpenAmount>
+    <Accounting:PaymentAmount>2000.00</Accounting:PaymentAmount>
     <Invoicing:Period>Q2/2012</Invoicing:Period>
     <Invoicing:Status>2</Invoicing:Status>
     <Invoicing:Total>2000.00</Invoicing:Total>
@@ -377,7 +377,6 @@
     <Invoicing:CreatedOn>2013-07-18T08:05:26.3158396Z</Invoicing:CreatedOn>
     <Invoicing:Date>2013-07-17T22:00:00Z</Invoicing:Date>
     <Invoicing:Description>Storno der Rechnung 18.07.2013 09:42:07</Invoicing:Description>
-    <Invoicing:Document>4df25d69-192c-40f6-9e31-b30cf1621cec</Invoicing:Document>
     <Invoicing:DueDate>2013-07-17T22:00:00Z</Invoicing:DueDate>
     <Invoicing:FulfillmentDate>2013-07-17T22:00:00Z</Invoicing:FulfillmentDate>
     <Accounting:OpenAmount>0</Accounting:OpenAmount>
@@ -582,8 +581,8 @@
     <Invoicing:Description>My first Quote</Invoicing:Description>
     <Invoicing:IssueDate>2013-07-09T22:00:00Z</Invoicing:IssueDate>
     <Invoicing:QuoteID>1</Invoicing:QuoteID>
-    <Invoicing:Total>0</Invoicing:Total>
-    <Invoicing:TotalNet>0</Invoicing:TotalNet>
+    <Invoicing:Total>12000.00</Invoicing:Total>
+    <Invoicing:TotalNet>10000.00</Invoicing:TotalNet>
     <Invoicing:ValidFrom>2013-07-09T22:00:00Z</Invoicing:ValidFrom>
     <Invoicing:ValidThru>2013-08-13T22:00:00Z</Invoicing:ValidThru>
     <Invoicing:Chance>50.00</Invoicing:Chance>
@@ -596,8 +595,8 @@
     <Invoicing:Description>Second</Invoicing:Description>
     <Invoicing:IssueDate>2013-07-09T22:00:00Z</Invoicing:IssueDate>
     <Invoicing:QuoteID>2</Invoicing:QuoteID>
-    <Invoicing:Total>0</Invoicing:Total>
-    <Invoicing:TotalNet>0</Invoicing:TotalNet>
+    <Invoicing:Total>60.00</Invoicing:Total>
+    <Invoicing:TotalNet>50.00</Invoicing:TotalNet>
     <Invoicing:ValidFrom>2013-07-09T22:00:00Z</Invoicing:ValidFrom>
     <Invoicing:ValidThru>2013-07-16T22:00:00Z</Invoicing:ValidThru>
     <Invoicing:Chance>40.00</Invoicing:Chance>

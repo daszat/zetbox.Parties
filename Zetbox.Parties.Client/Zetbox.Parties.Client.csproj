@@ -239,6 +239,7 @@
     <Compile Include="ViewModel\Invoicing\SalesInvoiceViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\SalesQuoteViewModel.cs" />
     <Compile Include="ViewModel\Invoicing\Utils\PartyRoleReferenceViewModelFactory.cs" />
+    <Compile Include="ViewModel\Parties\PartyRoleViewModel.cs" />
     <Compile Include="ViewModel\Parties\OrganizationViewModel.cs" />
     <Compile Include="ViewModel\Parties\PartyViewModel.cs" />
     <Compile Include="ViewModel\Parties\PersonViewModel.cs" />

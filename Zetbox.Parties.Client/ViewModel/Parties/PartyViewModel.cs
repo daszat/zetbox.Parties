@@ -14,7 +14,7 @@ namespace Zetbox.Client.Presentables.Parties
     /// <summary>
     /// No viewmodel decriptor - Party is abstract
     /// </summary>
-    public class PartyViewModel : DataObjectViewModel
+    public abstract class PartyViewModel : DataObjectViewModel
     {
         public new delegate PartyViewModel Factory(IZetboxContext dataCtx, ViewModel parent,
             IDataObject obj);
@@ -34,8 +34,9 @@ namespace Zetbox.Client.Presentables.Parties
 
             foreach (var role in Party.PartyRole)
             {
-                var vMdl = ViewModelFactory.CreateViewModel<DataObjectViewModel.Factory>().Invoke(DataContext, this, role);
-                var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, vMdl.Name, new ViewModel[] { vMdl });
+                var vMdl = DataObjectViewModel.Fetch(ViewModelFactory, DataContext, this, role);
+                var roleCls = role.GetObjectClass(FrozenContext);
+                var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, roleCls.Name, new ViewModel[] { vMdl });
                 groups.Add(propGrpMdl);
             }
 
