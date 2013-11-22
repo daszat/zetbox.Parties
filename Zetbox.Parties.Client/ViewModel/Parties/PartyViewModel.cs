@@ -10,6 +10,7 @@ namespace Zetbox.Client.Presentables.Parties
     using Zetbox.Basic.Parties;
     using Zetbox.Client.Presentables;
     using Zetbox.Client.Presentables.ZetboxBase;
+    using Zetbox.API.Common;
 
     /// <summary>
     /// No viewmodel decriptor - Party is abstract
@@ -36,7 +37,11 @@ namespace Zetbox.Client.Presentables.Parties
             {
                 var vMdl = DataObjectViewModel.Fetch(ViewModelFactory, DataContext, this, role);
                 var roleCls = role.GetObjectClass(FrozenContext);
-                var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, roleCls.Name, new ViewModel[] { vMdl });
+                var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(
+                    DataContext, 
+                    this,
+                    Assets.GetString(roleCls.Module, ZetboxAssetKeys.DataTypes, ZetboxAssetKeys.ConstructNameKey(roleCls), roleCls.Name), 
+                    new ViewModel[] { vMdl });
                 groups.Add(propGrpMdl);
             }
 

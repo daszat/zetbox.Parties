@@ -18,6 +18,13 @@ cd bin\Debug
 Zetbox.Cli.exe %config% -fallback -generate -updatedeployedschema -repairschema
 IF ERRORLEVEL 1 GOTO FAIL
 
+Zetbox.Cli.exe %configs% -generate-resources=Parties;Invoicing;Accounting;Products
+IF ERRORLEVEL 1 GOTO FAIL
+
+rem *********** Assets ***********
+xcopy /s /y ..\CodeGen\Assets\*.* ..\..\Zetbox.Parties.Assets
+
+
 rem publish schema data for parties project
 Zetbox.Cli.exe %config% -publish ..\..\Modules\Parties.xml -ownermodules Parties;Invoicing;Accounting;Products
 IF ERRORLEVEL 1 GOTO FAIL

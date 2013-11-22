@@ -211,6 +211,12 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zetbox.Parties.Assets\Zetbox.Parties.Assets.csproj">
+      <Project>{41558FF6-2586-4B41-8C9D-15D752F03950}</Project>
+      <Name>Zetbox.Parties.Assets</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.  -->

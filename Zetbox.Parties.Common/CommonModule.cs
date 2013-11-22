@@ -23,6 +23,8 @@ namespace Zetbox.Parties.Common
             moduleBuilder
                .RegisterType<Invoicing.Workflow.Action>()
                .SingleInstance();
+
+            moduleBuilder.RegisterModule<Zetbox.Parties.Assets.AssetsModule>();
         }
     }
 }
