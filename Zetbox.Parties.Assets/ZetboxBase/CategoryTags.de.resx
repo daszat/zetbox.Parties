@@ -135,4 +135,16 @@
 	<data name="Transactions" xml:space="preserve">
 		<value>Transaktionen</value>
 	</data>
+	<data name="Changed" xml:space="preserve">
+		<value>Geändert</value>
+	</data>
+	<data name="Export" xml:space="preserve">
+		<value>Export</value>
+	</data>
+	<data name="Hidden" xml:space="preserve">
+		<value>Versteckt</value>
+	</data>
+	<data name="Items" xml:space="preserve">
+		<value>Details</value>
+	</data>
 </root>

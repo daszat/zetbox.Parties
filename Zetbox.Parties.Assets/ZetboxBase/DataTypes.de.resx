@@ -127,16 +127,16 @@
 		<value>Rechnung</value>
 	</data>
 	<data name="Zetbox.Basic.Invoicing.InvoiceItem" xml:space="preserve">
-		<value>Rechnungszeile</value>
+		<value>Rechnungsposition</value>
 	</data>
 	<data name="Zetbox.Basic.Invoicing.OtherExpenseReceipt" xml:space="preserve">
-		<value>Ausgabenbeleg</value>
+		<value>Sonstige Aufwendungen</value>
 	</data>
 	<data name="Zetbox.Basic.Invoicing.OtherIncomeReceipt" xml:space="preserve">
-		<value>Einnahmenbeleg</value>
+		<value>Sonstige Einnahmen</value>
 	</data>
 	<data name="Zetbox.Basic.Invoicing.PurchaseInvoice" xml:space="preserve">
-		<value>Ausgangsrechnung</value>
+		<value>Eingangsrechnung</value>
 	</data>
 	<data name="Zetbox.Basic.Invoicing.Quote" xml:space="preserve">
 		<value>Angebot</value>
@@ -155,5 +155,278 @@
 	</data>
 	<data name="Zetbox.Basic.Accounting.Transaction" xml:space="preserve">
 		<value>Transaktion</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.AbstractInvoiceGenerator" xml:space="preserve">
+		<value>AbstractInvoiceGenerator</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.AbstractInvoiceGenerator_description" xml:space="preserve">
+		<value>Abstrakte Basisklasse für einen Rechnungsbeleg Generator</value>
+	</data>
+	<data name="Zetbox.Basic.Accounting.Account_description" xml:space="preserve">
+		<value>Konto-Objekt</value>
+	</data>
+	<data name="Zetbox.Basic.Accounting.AccountImporterDescriptor" xml:space="preserve">
+		<value>AccountImporterDescriptor</value>
+	</data>
+	<data name="Zetbox.Basic.Accounting.AccountImporterDescriptor_description" xml:space="preserve">
+		<value>Descriptor für ein Konto Importeur</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Address" xml:space="preserve">
+		<value>Adresse</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Association" xml:space="preserve">
+		<value>Verein</value>
+	</data>
+	<data name="Zetbox.Basic.Accounting.Balance_description" xml:space="preserve">
+		<value>Nachverfolgung der Bilanz von Ihrem Steuerberater</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.BankAccount" xml:space="preserve">
+		<value>Bankkonto</value>
+	</data>
+	<data name="Zetbox.Basic.Products.BillingPeriod" xml:space="preserve">
+		<value>Rechnungsperiode</value>
+	</data>
+	<data name="Zetbox.Basic.Products.BillingPeriod_description" xml:space="preserve">
+		<value>Der Zeitraum, in dem ein Produkt wird in Rechnung gestellt.</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Competitor" xml:space="preserve">
+		<value>Wettbewerber</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Contact" xml:space="preserve">
+		<value>Kontakt</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Contractor" xml:space="preserve">
+		<value>Auftragnehmer</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Customer" xml:space="preserve">
+		<value>Kunde</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.CustomerRelationship" xml:space="preserve">
+		<value>Kundenbeziehung</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.DefaultInvoiceGenerator" xml:space="preserve">
+		<value>DefaultInvoiceGenerator</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.DefaultInvoiceGenerator_description" xml:space="preserve">
+		<value>Rechnung Generator für Rechnungen mit einer jährlichen Laufnummer</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Department" xml:space="preserve">
+		<value>Abteilung</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.DistributionChannel" xml:space="preserve">
+		<value>Vertriebskanal</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Division" xml:space="preserve">
+		<value>Division</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Employee" xml:space="preserve">
+		<value>Mitarbeiter</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Employment" xml:space="preserve">
+		<value>Beschäftigung</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.FamilyMember" xml:space="preserve">
+		<value>Familienmitglied</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Gender" xml:space="preserve">
+		<value>Geschlecht</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.HouseHold" xml:space="preserve">
+		<value>Haushalt</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.InternalOrganization" xml:space="preserve">
+		<value>Interne Organisation</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.Invoice_description" xml:space="preserve">
+		<value>Abstrakte Klasse für Rechnungen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.InvoiceItem_description" xml:space="preserve">
+		<value>Abstrakte Basisklasse für Rechnungspositionen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.InvoiceItemTemplate" xml:space="preserve">
+		<value>InvoiceItemTemplate</value>
+	</data>
+	<data name="Zetbox.Basic.Products.OrderItem" xml:space="preserve">
+		<value>Bestellungsdetail</value>
+	</data>
+	<data name="Zetbox.Basic.Products.OrderItem_description" xml:space="preserve">
+		<value>Die Details der Bestellung. Dies verbindet die Kunden an das Produkt bestellt und kann verwendet werden, um Details aus dem Produkt zu überschreiben.</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Organization" xml:space="preserve">
+		<value>Organisation</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Organization_description" xml:space="preserve">
+		<value>Organisation</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.OrganizationRole" xml:space="preserve">
+		<value>OrganizationRole</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.OrganizationRollup" xml:space="preserve">
+		<value>OrganizationRollup</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.OrganizationUnit" xml:space="preserve">
+		<value>Organisationseinheit</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.OtherExpenseReceipt_description" xml:space="preserve">
+		<value>Beleg für sonstige Aufwendungen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate" xml:space="preserve">
+		<value>OtherExpenseReceiptTemplate</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.OtherIncomeReceipt_description" xml:space="preserve">
+		<value>Beleg für sonstige Einnahmen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate" xml:space="preserve">
+		<value>OtherIncomeReceiptTemplate</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.OtherOrganizationUnit" xml:space="preserve">
+		<value>OtherOrganizationUnit</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.ParentOrganization" xml:space="preserve">
+		<value>ParentOrganization</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Partner" xml:space="preserve">
+		<value>Partner</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Party" xml:space="preserve">
+		<value>Personen und Organisationen</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Party_description" xml:space="preserve">
+		<value>Abstrakte Basisklasse für Personen und Organisationen</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.PartyRelationship" xml:space="preserve">
+		<value>Beziehung</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.PartyRole" xml:space="preserve">
+		<value>Rolle</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.PartyRole_description" xml:space="preserve">
+		<value>Die Rolle von einer Personen oder Organisationen</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Person" xml:space="preserve">
+		<value>Person</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Person_description" xml:space="preserve">
+		<value>Person</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.PersonRole" xml:space="preserve">
+		<value>Personenrolle</value>
+	</data>
+	<data name="Zetbox.Basic.Products.Product" xml:space="preserve">
+		<value>Produkt</value>
+	</data>
+	<data name="Zetbox.Basic.Products.Product_description" xml:space="preserve">
+		<value>Definiert die grundlegenden Eigenschaften der Produkte</value>
+	</data>
+	<data name="Zetbox.Basic.Products.ProductDetail" xml:space="preserve">
+		<value>Produktdetails</value>
+	</data>
+	<data name="Zetbox.Basic.Products.ProductDetail_description" xml:space="preserve">
+		<value>Die konkreten Details eines Produkts, wie es für eine bestimmte Zeitbereich angeboten</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.PurchaseInvoice_description" xml:space="preserve">
+		<value>Eingangsrechnung</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.PurchaseInvoiceItem" xml:space="preserve">
+		<value>PurchaseInvoiceItem</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.PurchaseInvoiceItem_description" xml:space="preserve">
+		<value>Ein Kauf Rechnungsposition. Können, um ein Inventar-Gegenstände gekauft angeschlossen werden.</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate" xml:space="preserve">
+		<value>PurchaseInvoiceItemTemplate</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate" xml:space="preserve">
+		<value>PurchaseInvoiceTemplate</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.PurchaseQuote" xml:space="preserve">
+		<value>Kauf-Angebote</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.PurchaseQuote_description" xml:space="preserve">
+		<value>Eine eingehende Kauf-Angebot</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.PurchaseQuoteItem" xml:space="preserve">
+		<value>Kauf-Angebotdetail</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.PurchaseQuoteItem_description" xml:space="preserve">
+		<value>Detail zu einem Kauf-Angebote</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.Quote_description" xml:space="preserve">
+		<value>Abstrakte Basisklasse für Angebote</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.QuoteItem_description" xml:space="preserve">
+		<value>Abstrakte Basis Klasse für Angebotszeilen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.Receipt_description" xml:space="preserve">
+		<value>Abstrakte Klasse für alle Arten von Belegen</value>
+	</data>
+	<data name="Zetbox.Basic.Accounting.Receipt_Transaction" xml:space="preserve">
+		<value>Receipt_Transaction</value>
+	</data>
+	<data name="Zetbox.Basic.Accounting.Receipt_Transaction_description" xml:space="preserve">
+		<value>Beziehung zwischen Belegen und Transaktionen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.ReceiptTemplate" xml:space="preserve">
+		<value>Rechnungsvorlage</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.ReceiptTemplate_description" xml:space="preserve">
+		<value>Abstrakte Klasse für alle Arten von Rechnungsvorlagen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.ReceiptType" xml:space="preserve">
+		<value>Rechnungsart</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.ReceiptType_description" xml:space="preserve">
+		<value>Art einer Rechnung</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.RegulatoryAgency" xml:space="preserve">
+		<value>RegulatoryAgency</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.SalesInvoice_description" xml:space="preserve">
+		<value>Ausgangsrechnung</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.SalesInvoiceItem" xml:space="preserve">
+		<value>Ausgangsrechnungszeile</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.SalesInvoiceItem_description" xml:space="preserve">
+		<value>Ein Verkaufsrechnungspositionen. Kann zu einem Verkaufsprodukt verbunden werden</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate" xml:space="preserve">
+		<value>SalesInvoiceItemTemplate</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.SalesInvoiceTemplate" xml:space="preserve">
+		<value>SalesInvoiceTemplate</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.SalesQuote" xml:space="preserve">
+		<value>Verkaufs-Angebot</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.SalesQuote_description" xml:space="preserve">
+		<value>Eine Verkaufs-Angebot</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.SalesQuoteItem" xml:space="preserve">
+		<value>Verkaufs-Angebotszeile</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.SalesQuoteItem_description" xml:space="preserve">
+		<value>Eine Verkaufs-Angebotzeile</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.StatisticActions" xml:space="preserve">
+		<value>StatisticActions</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.StatisticActions_description" xml:space="preserve">
+		<value>Singelton zu statistischen Aktionen</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Subsidiary" xml:space="preserve">
+		<value>Tochtergesellschaft</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Supplier" xml:space="preserve">
+		<value>Lieferant</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.SupplierRelationship" xml:space="preserve">
+		<value>Lieferantenbeziehung</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.VATType" xml:space="preserve">
+		<value>UST</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.VATType_description" xml:space="preserve">
+		<value>Art der Umsatzsteuer</value>
 	</data>
 </root>

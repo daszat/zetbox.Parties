@@ -117,4 +117,19 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="City_label" xml:space="preserve">
+		<value>Stadt</value>
+	</data>
+	<data name="Country_label" xml:space="preserve">
+		<value>Land</value>
+	</data>
+	<data name="Line1_label" xml:space="preserve">
+		<value>Zeile 1</value>
+	</data>
+	<data name="Line2_label" xml:space="preserve">
+		<value>Zeile 2</value>
+	</data>
+	<data name="ZIPCode_label" xml:space="preserve">
+		<value>PLZ</value>
+	</data>
 </root>

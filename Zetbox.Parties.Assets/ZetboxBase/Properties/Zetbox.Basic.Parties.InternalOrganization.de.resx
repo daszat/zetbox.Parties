@@ -117,4 +117,31 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="BalanceSheet_label" xml:space="preserve">
+		<value>Bilanz</value>
+	</data>
+	<data name="CustomerRelationship_label" xml:space="preserve">
+		<value>Kundenbeziehungen</value>
+	</data>
+	<data name="Employments_label" xml:space="preserve">
+		<value>Angestellte</value>
+	</data>
+	<data name="InvoiceGenerator_label" xml:space="preserve">
+		<value>Rechnungsgenerator</value>
+	</data>
+	<data name="OtherExpenses_label" xml:space="preserve">
+		<value>Sonstige Aufwendungen</value>
+	</data>
+	<data name="OtherIncomes_label" xml:space="preserve">
+		<value>Andere Einkommen</value>
+	</data>
+	<data name="PurchaseInvoices_label" xml:space="preserve">
+		<value>Eingangsrechnungen</value>
+	</data>
+	<data name="SalesInvoices_label" xml:space="preserve">
+		<value>Verkaufsrechnungen</value>
+	</data>
+	<data name="SupplierRelationships_label" xml:space="preserve">
+		<value>Lieferantenbeziehungen</value>
+	</data>
 </root>

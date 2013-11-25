@@ -117,4 +117,16 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="Customer_label" xml:space="preserve">
+		<value>Kunde</value>
+	</data>
+	<data name="IntOrg_label" xml:space="preserve">
+		<value>Interne Organisation</value>
+	</data>
+	<data name="Issuer_label" xml:space="preserve">
+		<value>Aussteller</value>
+	</data>
+	<data name="Items_label" xml:space="preserve">
+		<value>Artikel</value>
+	</data>
 </root>

@@ -117,4 +117,10 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="IntOrg_label" xml:space="preserve">
+		<value>Interne Organisation</value>
+	</data>
+	<data name="Party_label" xml:space="preserve">
+		<value>Person oder Organisation</value>
+	</data>
 </root>

@@ -117,4 +117,46 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="Absolute_label" xml:space="preserve">
+		<value>Absolute</value>
+	</data>
+	<data name="ChangedBy_label" xml:space="preserve">
+		<value>ChangedBy</value>
+	</data>
+	<data name="ChangedBy_description" xml:space="preserve">
+		<value>Identität, die dieses Objekt geändert</value>
+	</data>
+	<data name="ChangedOn_label" xml:space="preserve">
+		<value>ChangedOn</value>
+	</data>
+	<data name="ChangedOn_description" xml:space="preserve">
+		<value>Datum und Zeit, in der dieses Objekt wurde geändert</value>
+	</data>
+	<data name="CreatedBy_label" xml:space="preserve">
+		<value>CreatedBy</value>
+	</data>
+	<data name="CreatedBy_description" xml:space="preserve">
+		<value>Identität, die dieses Objekt erstellt</value>
+	</data>
+	<data name="CreatedOn_label" xml:space="preserve">
+		<value>CreatedOn</value>
+	</data>
+	<data name="CreatedOn_description" xml:space="preserve">
+		<value>Datum und Zeit, in der dieses Objekt erstellt wurde</value>
+	</data>
+	<data name="Description_label" xml:space="preserve">
+		<value>Beschreibung</value>
+	</data>
+	<data name="ExportGuid_label" xml:space="preserve">
+		<value>ExportGuid</value>
+	</data>
+	<data name="ExportGuid_description" xml:space="preserve">
+		<value>Export Guid</value>
+	</data>
+	<data name="Module_label" xml:space="preserve">
+		<value>Modul</value>
+	</data>
+	<data name="Percentage_label" xml:space="preserve">
+		<value>Prozentual</value>
+	</data>
 </root>

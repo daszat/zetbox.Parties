@@ -117,4 +117,19 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="AccountNumber_label" xml:space="preserve">
+		<value>Kontonummer</value>
+	</data>
+	<data name="BankCodeNumber_label" xml:space="preserve">
+		<value>Bankleitzahl</value>
+	</data>
+	<data name="BIC_label" xml:space="preserve">
+		<value>BIC</value>
+	</data>
+	<data name="IBAN_label" xml:space="preserve">
+		<value>IBAN</value>
+	</data>
+	<data name="Name_label" xml:space="preserve">
+		<value>Name</value>
+	</data>
 </root>

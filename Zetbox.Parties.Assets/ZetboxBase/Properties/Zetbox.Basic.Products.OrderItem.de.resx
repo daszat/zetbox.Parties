@@ -117,4 +117,64 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="BillingPeriod_label" xml:space="preserve">
+		<value>Abrechnungszeitraum</value>
+	</data>
+	<data name="BillingPeriod_description" xml:space="preserve">
+		<value>Setzen Sie diese Eigenschaft auf der zugrunde liegenden Produktdetails zu überschreiben.</value>
+	</data>
+	<data name="Customer_label" xml:space="preserve">
+		<value>Kunde</value>
+	</data>
+	<data name="Customer_description" xml:space="preserve">
+		<value>Der Kunde, der diesen Auftrag.</value>
+	</data>
+	<data name="DueDate_label" xml:space="preserve">
+		<value>Fälligkeit</value>
+	</data>
+	<data name="DueDate_description" xml:space="preserve">
+		<value>Wann ist dieser Artikel durch. Je nach Produkt kann das der Versand am sein, der Beginn des Dienstvertrags, oder ähnliche Dinge.</value>
+	</data>
+	<data name="Price_label" xml:space="preserve">
+		<value>Preis</value>
+	</data>
+	<data name="Price_description" xml:space="preserve">
+		<value>Setzen Sie diese Eigenschaft auf der zugrunde liegenden Produktdetails zu überschreiben.</value>
+	</data>
+	<data name="PriceNet_label" xml:space="preserve">
+		<value>Preis (netto)</value>
+	</data>
+	<data name="PriceNet_description" xml:space="preserve">
+		<value>Setzen Sie diese Eigenschaft auf der zugrunde liegenden Produktdetails zu überschreiben.</value>
+	</data>
+	<data name="Product_label" xml:space="preserve">
+		<value>Produkt</value>
+	</data>
+	<data name="Product_description" xml:space="preserve">
+		<value>Das bestellte Produkt</value>
+	</data>
+	<data name="Quantity_label" xml:space="preserve">
+		<value>Menge</value>
+	</data>
+	<data name="Quantity_description" xml:space="preserve">
+		<value>Setzen Sie diese Eigenschaft auf der zugrunde liegenden Produktdetails zu überschreiben.</value>
+	</data>
+	<data name="Unit_label" xml:space="preserve">
+		<value>Einheit</value>
+	</data>
+	<data name="Unit_description" xml:space="preserve">
+		<value>Setzen Sie diese Eigenschaft auf der zugrunde liegenden Produktdetails zu überschreiben.</value>
+	</data>
+	<data name="UnitPriceNet_label" xml:space="preserve">
+		<value>Einzelpreis (netto)</value>
+	</data>
+	<data name="UnitPriceNet_description" xml:space="preserve">
+		<value>Setzen Sie diese Eigenschaft auf der zugrunde liegenden Produktdetails zu überschreiben.</value>
+	</data>
+	<data name="VATType_label" xml:space="preserve">
+		<value>UST</value>
+	</data>
+	<data name="VATType_description" xml:space="preserve">
+		<value>Setzen Sie diese Eigenschaft auf der zugrunde liegenden Produktdetails zu überschreiben.</value>
+	</data>
 </root>

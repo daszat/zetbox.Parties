@@ -117,4 +117,61 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="GetName_label" xml:space="preserve">
+		<value>GetName</value>
+	</data>
+	<data name="GetName(name)_label" xml:space="preserve">
+		<value>Name</value>
+	</data>
+	<data name="GetName(name)_description" xml:space="preserve">
+		<value>der gesuchte Name</value>
+	</data>
+	<data name="GetPurchaseInvoiceReport_label" xml:space="preserve">
+		<value>GetPurchaseInvoiceReport</value>
+	</data>
+	<data name="GetPurchaseInvoiceReport(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="GetPurchaseInvoiceReport(from)_label" xml:space="preserve">
+		<value>von</value>
+	</data>
+	<data name="GetPurchaseInvoiceReport(until)_label" xml:space="preserve">
+		<value>bis</value>
+	</data>
+	<data name="GetPurchaseQuoteReport_label" xml:space="preserve">
+		<value>GetPurchaseQuoteReport</value>
+	</data>
+	<data name="GetPurchaseQuoteReport(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="GetPurchaseQuoteReport(from)_label" xml:space="preserve">
+		<value>von</value>
+	</data>
+	<data name="GetPurchaseQuoteReport(until)_label" xml:space="preserve">
+		<value>bis</value>
+	</data>
+	<data name="GetSalesInvoiceReport_label" xml:space="preserve">
+		<value>GetSalesInvoiceReport</value>
+	</data>
+	<data name="GetSalesInvoiceReport(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="GetSalesInvoiceReport(from)_label" xml:space="preserve">
+		<value>von</value>
+	</data>
+	<data name="GetSalesInvoiceReport(until)_label" xml:space="preserve">
+		<value>bis</value>
+	</data>
+	<data name="GetSalesQuoteReport_label" xml:space="preserve">
+		<value>GetSalesQuoteReport</value>
+	</data>
+	<data name="GetSalesQuoteReport(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="GetSalesQuoteReport(from)_label" xml:space="preserve">
+		<value>von</value>
+	</data>
+	<data name="GetSalesQuoteReport(until)_label" xml:space="preserve">
+		<value>bis</value>
+	</data>
 </root>

@@ -117,4 +117,61 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="Address_label" xml:space="preserve">
+		<value>Adresse</value>
+	</data>
+	<data name="BankAccount_label" xml:space="preserve">
+		<value>Bankkonto</value>
+	</data>
+	<data name="ChangedBy_label" xml:space="preserve">
+		<value>ChangedBy</value>
+	</data>
+	<data name="ChangedBy_description" xml:space="preserve">
+		<value>Identität, die dieses Objekt geändert</value>
+	</data>
+	<data name="ChangedOn_label" xml:space="preserve">
+		<value>ChangedOn</value>
+	</data>
+	<data name="ChangedOn_description" xml:space="preserve">
+		<value>Datum und Zeit, in der dieses Objekt wurde geändert</value>
+	</data>
+	<data name="Comment_label" xml:space="preserve">
+		<value>Kommentar</value>
+	</data>
+	<data name="CreatedBy_label" xml:space="preserve">
+		<value>CreatedBy</value>
+	</data>
+	<data name="CreatedBy_description" xml:space="preserve">
+		<value>Identität, die dieses Objekt erstellt</value>
+	</data>
+	<data name="CreatedOn_label" xml:space="preserve">
+		<value>CreatedOn</value>
+	</data>
+	<data name="CreatedOn_description" xml:space="preserve">
+		<value>Datum und Zeit, in der dieses Objekt erstellt wurde</value>
+	</data>
+	<data name="DeliveryAddresses_label" xml:space="preserve">
+		<value>Lieferadressen</value>
+	</data>
+	<data name="ExportGuid_label" xml:space="preserve">
+		<value>ExportGuid</value>
+	</data>
+	<data name="ExportGuid_description" xml:space="preserve">
+		<value>Export Guid</value>
+	</data>
+	<data name="Files_label" xml:space="preserve">
+		<value>Dateien</value>
+	</data>
+	<data name="InvoiceAddress_label" xml:space="preserve">
+		<value>Rechnungsadresse</value>
+	</data>
+	<data name="OtherExpenses_label" xml:space="preserve">
+		<value>Sonstige Aufwendungen</value>
+	</data>
+	<data name="OtherIncomes_label" xml:space="preserve">
+		<value>Andere Einkommen</value>
+	</data>
+	<data name="PartyRole_label" xml:space="preserve">
+		<value>Rolle</value>
+	</data>
 </root>

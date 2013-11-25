@@ -117,4 +117,67 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="ChangeTypeTo_label" xml:space="preserve">
+		<value>Typ verändern</value>
+	</data>
+	<data name="ChangeTypeTo_description" xml:space="preserve">
+		<value>Ändert den Typ des aktuellen Beleges</value>
+	</data>
+	<data name="ChangeTypeTo(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="ChangeTypeTo(newType)_label" xml:space="preserve">
+		<value>Neuer Typ</value>
+	</data>
+	<data name="ChangeTypeTo(newType)_description" xml:space="preserve">
+		<value>Die neue Art des Beleges</value>
+	</data>
+	<data name="CreateItem_label" xml:space="preserve">
+		<value>Artikel erstellen</value>
+	</data>
+	<data name="CreateItem(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="CreateItem(quantity)_label" xml:space="preserve">
+		<value>Menge</value>
+	</data>
+	<data name="CreateItem(amount)_label" xml:space="preserve">
+		<value>Menge</value>
+	</data>
+	<data name="CreateItem(description)_label" xml:space="preserve">
+		<value>Beschreibung</value>
+	</data>
+	<data name="CreateItem(taxable)_label" xml:space="preserve">
+		<value>steuerpflichtig</value>
+	</data>
+	<data name="CreateTemplate_label" xml:space="preserve">
+		<value>Vorlage erstellen</value>
+	</data>
+	<data name="CreateTemplate_description" xml:space="preserve">
+		<value>Erstellt eine neue Vorlage und kopiert fast alle Daten</value>
+	</data>
+	<data name="CreateTemplate(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="Duplicate_label" xml:space="preserve">
+		<value>Duplikat</value>
+	</data>
+	<data name="Duplicate_description" xml:space="preserve">
+		<value>Erstellt einen neuen Beleg</value>
+	</data>
+	<data name="Duplicate(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="GetPaymentAmount_label" xml:space="preserve">
+		<value>GetPaymentAmount</value>
+	</data>
+	<data name="GetPaymentAmount_description" xml:space="preserve">
+		<value>Abgeleitete Klassen müssen diese Methode implementieren, um den Zahlungsbetrag auf der Grundlage der verknüpfte Transaktionen berechnen</value>
+	</data>
+	<data name="GetPaymentAmount(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="UpdateTotal_label" xml:space="preserve">
+		<value>UpdateTotal</value>
+	</data>
 </root>

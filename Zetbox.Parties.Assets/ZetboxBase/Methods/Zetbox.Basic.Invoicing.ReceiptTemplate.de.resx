@@ -117,4 +117,31 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="CreateReceipt_label" xml:space="preserve">
+		<value>Neuen Beleg erstellen</value>
+	</data>
+	<data name="CreateReceipt(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="StartWorkflow_label" xml:space="preserve">
+		<value>Starten eines Workflows</value>
+	</data>
+	<data name="StartWorkflow_description" xml:space="preserve">
+		<value>Startet einen Workflow. zB. wiederkehrende Rechnungen erstellen</value>
+	</data>
+	<data name="StartWorkflow(workflow)_label" xml:space="preserve">
+		<value>Workflow</value>
+	</data>
+	<data name="StartWorkflow(workflow)_description" xml:space="preserve">
+		<value>Workflow-Definition</value>
+	</data>
+	<data name="StartWorkflow(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="StartWorkflow(retVal)_description" xml:space="preserve">
+		<value>Workflow-Instanz</value>
+	</data>
+	<data name="UpdateTotal_label" xml:space="preserve">
+		<value>UpdateTotal</value>
+	</data>
 </root>

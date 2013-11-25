@@ -117,4 +117,28 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="AvailableFrom_label" xml:space="preserve">
+		<value>Verfügbar ab</value>
+	</data>
+	<data name="AvailableFrom_description" xml:space="preserve">
+		<value>Der erste Tag, wo das Produkt verfügbar ist.</value>
+	</data>
+	<data name="AvailableUntil_label" xml:space="preserve">
+		<value>Gültig bis</value>
+	</data>
+	<data name="AvailableUntil_description" xml:space="preserve">
+		<value>Der letzte Tag dieser Artikel verfügbar ist.</value>
+	</data>
+	<data name="BillingPeriod_label" xml:space="preserve">
+		<value>Abrechnungszeitraum</value>
+	</data>
+	<data name="Details_label" xml:space="preserve">
+		<value>Details</value>
+	</data>
+	<data name="Name_label" xml:space="preserve">
+		<value>Name</value>
+	</data>
+	<data name="Name_description" xml:space="preserve">
+		<value>Der Name dieses Produkts</value>
+	</data>
 </root>

@@ -117,4 +117,79 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="ChangedBy_label" xml:space="preserve">
+		<value>ChangedBy</value>
+	</data>
+	<data name="ChangedBy_description" xml:space="preserve">
+		<value>Benutzer, der dieses Objekt geändert hat</value>
+	</data>
+	<data name="ChangedOn_label" xml:space="preserve">
+		<value>ChangedOn</value>
+	</data>
+	<data name="ChangedOn_description" xml:space="preserve">
+		<value>Datum und Zeit, in der dieses Objekt wurde geändert</value>
+	</data>
+	<data name="CreatedBy_label" xml:space="preserve">
+		<value>CreatedBy</value>
+	</data>
+	<data name="CreatedBy_description" xml:space="preserve">
+		<value>Identität, die dieses Objekt erstellt</value>
+	</data>
+	<data name="CreatedOn_label" xml:space="preserve">
+		<value>CreatedOn</value>
+	</data>
+	<data name="CreatedOn_description" xml:space="preserve">
+		<value>Datum und Zeit, in der dieses Objekt erstellt wurde</value>
+	</data>
+	<data name="Date_label" xml:space="preserve">
+		<value>Datum</value>
+	</data>
+	<data name="Description_label" xml:space="preserve">
+		<value>Beschreibung</value>
+	</data>
+	<data name="Document_label" xml:space="preserve">
+		<value>Dokument</value>
+	</data>
+	<data name="DueDate_label" xml:space="preserve">
+		<value>Fälligkeit</value>
+	</data>
+	<data name="ExportGuid_label" xml:space="preserve">
+		<value>ExportGuid</value>
+	</data>
+	<data name="ExportGuid_description" xml:space="preserve">
+		<value>Export Guid</value>
+	</data>
+	<data name="FulfillmentDate_label" xml:space="preserve">
+		<value>Erfüllungsdatum</value>
+	</data>
+	<data name="Message_label" xml:space="preserve">
+		<value>Nachricht</value>
+	</data>
+	<data name="OpenAmount_label" xml:space="preserve">
+		<value>Offener Betrag</value>
+	</data>
+	<data name="PaymentAmount_label" xml:space="preserve">
+		<value>Zahlungsbetrag</value>
+	</data>
+	<data name="Period_label" xml:space="preserve">
+		<value>Zeitraum</value>
+	</data>
+	<data name="Period_description" xml:space="preserve">
+		<value>optionaler Zeitraum von Dienstleistungen</value>
+	</data>
+	<data name="Status_label" xml:space="preserve">
+		<value>Status</value>
+	</data>
+	<data name="Total_label" xml:space="preserve">
+		<value>Gesamt</value>
+	</data>
+	<data name="TotalNet_label" xml:space="preserve">
+		<value>Gesamt (Netto)</value>
+	</data>
+	<data name="TotalNet_description" xml:space="preserve">
+		<value>Nettosumme, ohne Steuern</value>
+	</data>
+	<data name="Transactions_label" xml:space="preserve">
+		<value>Transaktionen</value>
+	</data>
 </root>

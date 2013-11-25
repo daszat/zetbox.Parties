@@ -15,489 +15,467 @@
   &lt;property name="#LayoutVersion" /&gt;
   &lt;property name="SortInfo"&gt;~Xtra#Base64AAEAAAD/////AQAAAAAAAAAMAgAAAF5EZXZFeHByZXNzLlh0cmFHcmlkLnYxMS4xLCBWZXJzaW9uPTExLjEuMTIuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhBQEAAAA4RGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mb0NvbGxlY3Rpb24EAAAACmdyb3VwQ291bnQFY2xvbmUPY2xvbmVHcm91cENvdW50E0NvbGxlY3Rpb25CYXNlK2xpc3QAAwADCLMBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tEZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuR3JpZENvbHVtblNvcnRJbmZvLCBEZXZFeHByZXNzLlh0cmFHcmlkLnYxMS4xLCBWZXJzaW9uPTExLjEuMTIuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhXV0IHFN5c3RlbS5Db2xsZWN0aW9ucy5BcnJheUxpc3QCAAAAAAAAAAkDAAAAAAAAAAkEAAAABAMAAACzAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbRGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mbywgRGV2RXhwcmVzcy5YdHJhR3JpZC52MTEuMSwgVmVyc2lvbj0xMS4xLjEyLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YV1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24EAAAwRGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mb1tdAgAAAAgICQUAAAAAAAAAAAAAAAQEAAAAHFN5c3RlbS5Db2xsZWN0aW9ucy5BcnJheUxpc3QDAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgUAAAgICQYAAAABAAAABAAAAAcFAAAAAAEAAAAAAAAABC5EZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuR3JpZENvbHVtblNvcnRJbmZvAgAAABAGAAAABAAAAAkHAAAADQMMCAAAABlEZXZFeHByZXNzLlh0cmFHcmlkLnYxMS4xBQcAAAAuRGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mbwIAAAAJU29ydE9yZGVyCkNvbHVtbk5hbWUAAQgIAAAAAQAAAAYJAAAAB2NvbE5hbWUL&lt;/property&gt;
 &lt;/XtraSerializer&gt;</globalSetting>
-    <globalSetting name="projectMruItems">&lt;?xml version='1.0' encoding='utf-8'?&gt;&lt;items&gt;&lt;item type="2" checksum="1698807208" /&gt;&lt;/items&gt;</globalSetting>
+    <globalSetting name="projectMruItems">&lt;?xml version='1.0' encoding='utf-8'?&gt;&lt;items&gt;&lt;item type="2" checksum="3458144004" /&gt;&lt;item type="2" checksum="657111596" /&gt;&lt;item type="2" checksum="302781414" /&gt;&lt;item type="2" checksum="2680633220" /&gt;&lt;item type="2" checksum="707418932" /&gt;&lt;item type="2" checksum="2345523020" /&gt;&lt;item type="2" checksum="1712661117" /&gt;&lt;item type="2" checksum="537589859" /&gt;&lt;item type="2" checksum="3183805922" /&gt;&lt;item type="2" checksum="2234275035" /&gt;&lt;item type="2" checksum="3539969604" /&gt;&lt;item type="2" checksum="1035590636" /&gt;&lt;item type="2" checksum="2137591892" /&gt;&lt;item type="2" checksum="1447181005" /&gt;&lt;item type="2" checksum="1475082292" /&gt;&lt;item type="2" checksum="2389776433" /&gt;&lt;/items&gt;</globalSetting>
     <globalSetting name="CreateNewFileForm.prefixTextBox.Text">####</globalSetting>
     <globalSetting name="CreateNewFileForm.prefixCheckBox.Checked">False</globalSetting>
     <globalSetting name="CreateNewFileForm.referenceLanguageComboBox.SelectedIndex">0</globalSetting>
     <globalSetting name="CreateNewFileForm.newLanguageComboBox.SelectedIndex">100</globalSetting>
     <globalSetting name="CreateNewFileForm.copyTextsCheckBox.Checked">False</globalSetting>
     <globalSetting name="CreateNewFileForm.automaticallyTranslateCheckBox.Checked">False</globalSetting>
+    <globalSetting name="Project-TranslationDelayMilliseconds">20</globalSetting>
+    <globalSetting name="Project-TranslationContinueOnErrors">True</globalSetting>
+    <globalSetting name="Project-TranslationEngineUniqueInternalName">9efb237c-ce92-450f-9ef1-850091762d63</globalSetting>
+    <globalSetting name="Project-TranslationWordsToProtect">{0}
+{1}
+{2}
+{3}
+{4}
+{5}
+{6}
+{7}
+{8}
+{9}
+{10}
+"{0}"
+"{1}"
+"{2}"
+"{3}"
+"{4}"
+"{5}"
+"{6}"
+"{7}"
+"{8}"
+"{9}"
+"{10}"
+'{0}'
+'{1}'
+'{2}'
+'{3}'
+'{4}'
+'{5}'
+'{6}'
+'{7}'
+'{8}'
+'{9}'
+'{10}'</globalSetting>
+    <globalSetting name="Project-TranslationWordsToRemove">
+    </globalSetting>
+    <globalSetting name="Project-TranslationAppIDs">9efb237c-ce92-450f-9ef1-850091762d63=&lt;&gt;=~~~~9efb237c-ce92-450f-9ef1-850091762d63-2=&lt;&gt;=</globalSetting>
+    <globalSetting name="autoTranslateForm.prefixTextBox.Text">####</globalSetting>
+    <globalSetting name="autoTranslateForm.prefixCheckBox.Checked">False</globalSetting>
+    <globalSetting name="autoTranslateForm.referenceLanguageComboBoxEdit.SelectedIndex">0</globalSetting>
+    <globalSetting name="autoTranslateForm.languagesToTranslateCheckListBox">0</globalSetting>
     <userSetting name="arthur@DASZ.FindText">
     </userSetting>
-    <userSetting name="arthur@DASZ.RecentFiles">P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Applications.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Applications.de.resx</userSetting>
+    <userSetting name="arthur@DASZ.RecentFiles">P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceipt.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceipt.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\at.dasz.DocumentManagement.ImportedFile.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\at.dasz.DocumentManagement.ImportedFile.de.resx###***###P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.resx;P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.de.resx</userSetting>
     <description>
     </description>
   </configuration>
   <fileGroups>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="23df8d9f-0a17-4081-ab2c-8b1bfac4212c">
       <file filePath="ZetboxBase\Applications.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Applications.resx" uniqueID="80b9649b-93dc-4d6b-ae24-2abb2f6aefdf" />
-      <file filePath="ZetboxBase\Applications.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Applications.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="ZetboxBase\Applications.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Applications.de.resx" uniqueID="815c40d0-84cb-493c-bcf2-6db90aa048b9" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="dd62a339-399e-4312-bf7e-ff97a09ce290">
       <file filePath="ZetboxBase\CategoryTags.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\CategoryTags.resx" uniqueID="cc52655e-7c62-4e28-a8a3-96a305397415" />
-      <file filePath="ZetboxBase\CategoryTags.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\CategoryTags.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="ZetboxBase\CategoryTags.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\CategoryTags.de.resx" uniqueID="d4aca754-9e3c-439d-800c-4a6f471481ff" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="554c8906-3fbc-40cb-b203-9bc135016b28">
       <file filePath="ZetboxBase\DataTypes.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\DataTypes.resx" uniqueID="fc581010-40f9-4a9e-bfa9-21d30b2ce97c" />
-      <file filePath="ZetboxBase\DataTypes.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\DataTypes.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="ZetboxBase\DataTypes.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\DataTypes.de.resx" uniqueID="857d8fc6-77e8-45d1-b5f7-479f92577c60" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="62b6bfcd-2463-4cbe-b56e-9b68d5f46a43">
       <file filePath="ZetboxBase\Modules.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Modules.resx" uniqueID="0c40e290-ea96-462f-b1af-1fe1c0a9923b" />
-      <file filePath="ZetboxBase\Modules.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Modules.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="ZetboxBase\Modules.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Modules.de.resx" uniqueID="cf3f9d30-77d7-4d7e-a1e9-d45def90715a" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="3b494dbb-87eb-4331-97d6-0fdcdc1422bc">
       <file filePath="ZetboxBase\Methods\Zetbox.Basic.Accounting.Account.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Accounting.Account.resx" uniqueID="31d9f6cf-efb0-471e-a8a8-8045aa8359bc" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Accounting.Account.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Accounting.Account.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Accounting.Account.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Accounting.Account.de-DE.resx" uniqueID="ff2cec7d-4966-4af0-a4f4-7ea7319387aa" />
+      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Accounting.Account.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Accounting.Account.de.resx" uniqueID="864a26a1-ecdd-46d7-8a18-dd89d3d1adeb" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="61a73dad-2451-4f23-b16a-dff4c128800a">
       <file filePath="ZetboxBase\Methods\Zetbox.Basic.Accounting.Transaction.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Accounting.Transaction.resx" uniqueID="f394a9be-02b6-445b-8339-1905abd23509" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Accounting.Transaction.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Accounting.Transaction.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Accounting.Transaction.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Accounting.Transaction.de-DE.resx" uniqueID="fd6155b1-4c42-499a-987b-167e760637f5" />
+      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Accounting.Transaction.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Accounting.Transaction.de.resx" uniqueID="aaab7b09-ea4e-4ef5-a168-14916a826243" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="d19bcac3-ede7-4b72-b956-2bfee923e5ba">
       <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.resx" uniqueID="3099a5b0-bebd-4c40-95a0-21cdd731c28c" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de-DE.resx" uniqueID="8e273cce-12a0-4824-9aa2-fc04ce3e3b7e" />
+      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de.resx" uniqueID="22d51003-24d1-4a91-8ab6-8e9a27aed6b5" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="29490ae1-30e2-4271-9141-ebd6f72bb685">
       <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.Receipt.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.Receipt.resx" uniqueID="e277625f-0e18-4b49-b6f5-aa62502ba3ec" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.Receipt.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.Receipt.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.Receipt.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.Receipt.de-DE.resx" uniqueID="6f0bd6b0-0507-4997-a014-d6e958186184" />
+      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.Receipt.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.Receipt.de.resx" uniqueID="6ec25bbd-d9b5-4045-89dc-4f817dda2ff2" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="cdba36c3-a76c-40c1-a6c1-21b04bdd03c3">
       <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptStatus.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptStatus.resx" uniqueID="9d8bdbaf-0d39-43c9-9f42-7e9b5bfc9f3f" />
-      <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptStatus.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptStatus.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptStatus.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptStatus.de-DE.resx" uniqueID="5ab23346-105d-4faf-95e1-e57a6c741faa" />
+      <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptStatus.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptStatus.de.resx" uniqueID="c80ffaa8-1359-4591-a552-ebc96874eff0" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="4bb3749c-7980-4e93-b2c0-e540de9c5fdb">
       <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.ReceiptTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.ReceiptTemplate.resx" uniqueID="cd6a276b-49e9-4996-9a5d-765114a78c4a" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.ReceiptTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.ReceiptTemplate.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.ReceiptTemplate.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.ReceiptTemplate.de-DE.resx" uniqueID="b40d9d62-f80f-4c3b-9355-efd13f1c3c53" />
+      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.ReceiptTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.ReceiptTemplate.de.resx" uniqueID="3450142f-0a15-49cd-8178-1a2257811540" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="9b72bed1-6a2f-4fa0-a6b5-fa56aafcc0af">
       <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptType.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptType.resx" uniqueID="500e931d-8598-4d0f-99f5-f43a017043e1" />
-      <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptType.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptType.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptType.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptType.de-DE.resx" uniqueID="61e06a99-29e5-46b5-b629-7acaffe61a5c" />
+      <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptType.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptType.de.resx" uniqueID="c73347c2-f942-4f1a-a311-d9d84271f0f7" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="ef9a4968-a01f-41ad-a039-06823b4b8bf6">
       <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.SalesInvoice.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.SalesInvoice.resx" uniqueID="c1891a7d-6797-4558-9256-538846789991" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.SalesInvoice.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.SalesInvoice.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.SalesInvoice.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.SalesInvoice.de-DE.resx" uniqueID="0ad74f80-2b5b-4d2d-8a6c-5a0e5f35fd05" />
+      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.SalesInvoice.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.SalesInvoice.de.resx" uniqueID="cbb3d072-bb28-40be-9f83-58d2ca1ceadf" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="5fe47745-610a-409f-b85b-096f781df7ca">
       <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.StatisticActions.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.StatisticActions.resx" uniqueID="4a14fde2-0d7c-4f2f-ba24-34c4b0898136" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.StatisticActions.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.StatisticActions.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.StatisticActions.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.StatisticActions.de-DE.resx" uniqueID="390d645c-56a7-4b5b-8c97-fc9812d6b41f" />
+      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Invoicing.StatisticActions.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Invoicing.StatisticActions.de.resx" uniqueID="8a17a04d-b3fb-4224-8ab6-1ad6264349e2" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="d68ccddb-df07-4b77-8cf4-cfec8ef76caf">
       <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Parties.Gender.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Parties.Gender.resx" uniqueID="64c2987f-272f-4c02-9cfd-cb019297cda3" />
-      <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Parties.Gender.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Parties.Gender.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Parties.Gender.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Parties.Gender.de-DE.resx" uniqueID="1e9f116e-cc9b-48cd-bb32-22fc94e15bff" />
+      <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Parties.Gender.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Parties.Gender.de.resx" uniqueID="7b7ab625-f5b7-49c6-a792-3b0c822f57a8" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="a0bf01c4-45f9-415f-ab7e-65d8c2a254a9">
       <file filePath="ZetboxBase\Methods\Zetbox.Basic.Parties.Party.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Parties.Party.resx" uniqueID="a7c9a52d-b81e-480b-b332-1a7777d62d0b" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Parties.Party.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Parties.Party.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Parties.Party.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Parties.Party.de-DE.resx" uniqueID="f2fd26f1-0338-4ccb-8155-0337a10b661f" />
+      <file filePath="ZetboxBase\Methods\Zetbox.Basic.Parties.Party.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\Zetbox.Basic.Parties.Party.de.resx" uniqueID="42cffd3e-47d4-4e10-a786-6d04b1cefb5f" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="0102bb56-7c85-4a60-af17-46ceb6fb9ff9">
       <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Products.BillingPeriod.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Products.BillingPeriod.resx" uniqueID="ff4ee42b-ad09-4c26-99cf-c0cb58d49477" />
-      <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Products.BillingPeriod.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Products.BillingPeriod.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Products.BillingPeriod.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Products.BillingPeriod.de-DE.resx" uniqueID="d0a4067e-bbfe-4d70-8070-66f85d96987f" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="9307b0a6-63ea-4a65-84fb-93a35d31b1fb">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Customer.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Customer.resx" uniqueID="b9082c88-dbe2-4314-ba33-7e23f4dd0376" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Customer.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Customer.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Customer.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Customer.de-DE.resx" uniqueID="35097198-7c26-46d8-bf31-bd6008b531e7" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="8e324671-dcbf-4821-8031-0eff3295c8e9">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.BankAccount.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.BankAccount.resx" uniqueID="6b97e202-d3c8-4b47-bf57-ad3794853565" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.BankAccount.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.BankAccount.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.BankAccount.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.BankAccount.de-DE.resx" uniqueID="5f1ccf64-c5cf-4d70-8421-2d7881b085a6" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="3f67580a-8cc0-4d58-9d7c-bffd84bcbe0b">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Address.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Address.resx" uniqueID="cddb7f7b-e907-4b75-944a-d9295aaadd9d" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Address.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Address.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Address.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Address.de-DE.resx" uniqueID="238ff496-da9f-427f-883c-95f43e2f910a" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="b6ea80f3-2c77-438c-aef0-73553d440419">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Employment.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Employment.resx" uniqueID="5b199927-6914-46bd-a188-7802da03e94b" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Employment.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Employment.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Employment.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Employment.de-DE.resx" uniqueID="9c4606c6-b538-4153-b194-3c06bd7a818b" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="e3049002-c107-43a6-b438-d4a47138eacb">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Employee.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Employee.resx" uniqueID="50228a44-92a8-47a2-8739-64b0678f8798" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Employee.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Employee.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Employee.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Employee.de-DE.resx" uniqueID="b33af2d6-a053-4452-acdb-640a3f82556a" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="8f6e6f6e-e644-40b9-b05a-f642d01483a7">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.CustomerRelationship.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.CustomerRelationship.resx" uniqueID="d019db48-2ff7-4223-ba08-3ecec4d077e3" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.CustomerRelationship.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.CustomerRelationship.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.CustomerRelationship.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.CustomerRelationship.de-DE.resx" uniqueID="db36c232-e6b5-4b1f-8c19-b77a4cf5bf6b" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="92b2bd00-798d-4442-9323-bed41668d2b3">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.VATType.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.VATType.resx" uniqueID="a4756e0b-26af-498d-b8cf-427d9b612b14" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.VATType.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.VATType.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.VATType.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.VATType.de-DE.resx" uniqueID="46729588-4676-47a1-8fd8-47a50f37d943" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="bac12619-0f67-4494-8b9f-74ab7f38d42d">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceTemplate.resx" uniqueID="3baae6d2-def6-43bf-9e52-8240c9ca3daf" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceTemplate.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceTemplate.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceTemplate.de-DE.resx" uniqueID="1053f75c-a51f-4993-a30b-4415d6574c56" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="b76a84fd-2cca-4a5a-b866-980aff6244f8">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate.resx" uniqueID="9f7bf349-7392-4a29-bfd1-45fbbf641953" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate.de-DE.resx" uniqueID="53e00ad4-873f-43ee-9070-a18ff14da46f" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="67ba1ec7-dc30-4827-9772-d7021eaf1d53">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItem.resx" uniqueID="1aacee10-26f3-4206-9e37-b2c46434494a" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItem.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItem.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItem.de-DE.resx" uniqueID="88328c7e-ea82-49f2-8cfe-bb51f37904f4" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="c2264da7-722f-45fd-b790-6d6ce30b4685">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.StatisticActions.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.StatisticActions.resx" uniqueID="fccc7e95-25e3-427a-baaa-477f5268bf6e" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.StatisticActions.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.StatisticActions.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.StatisticActions.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.StatisticActions.de-DE.resx" uniqueID="e1369b8f-81aa-4e0d-8608-61804e76980d" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="8fd32d85-d650-47d5-87bb-8fd82566909b">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuoteItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuoteItem.resx" uniqueID="f7f950ea-ad77-4534-a646-edc19186b112" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuoteItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuoteItem.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuoteItem.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuoteItem.de-DE.resx" uniqueID="18a8b690-f6d3-4a0c-ad15-0a5d784337ba" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="0480eb86-ebf7-4dc6-9e08-2ca4961824e8">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuote.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuote.resx" uniqueID="223c238e-f03c-44a7-8f04-306f7f60c39c" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuote.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuote.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuote.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuote.de-DE.resx" uniqueID="f004c218-f418-4830-9176-44195e957f2e" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="ef7d50f5-c9bd-4524-b5e7-7c7c1682695b">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.SupplierRelationship.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.SupplierRelationship.resx" uniqueID="517973e0-a2c9-421e-8b39-7150ce1e1fef" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.SupplierRelationship.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.SupplierRelationship.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.SupplierRelationship.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.SupplierRelationship.de-DE.resx" uniqueID="f69b2f80-c779-40aa-91e9-d8cf968808c8" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="d824c18f-bf1e-418d-8055-5128e17b18c2">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Supplier.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Supplier.resx" uniqueID="7a21877f-aaad-459a-942d-2e2d7e2fed55" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Supplier.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Supplier.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Supplier.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Supplier.de-DE.resx" uniqueID="59844173-a573-44b8-935a-5c5730b6dab1" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="11275b88-8604-4520-9a71-c90c532720f0">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Person.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Person.resx" uniqueID="7067ae95-45c7-487c-858a-6f6b5d314fef" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Person.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Person.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Person.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Person.de-DE.resx" uniqueID="8c89c1ac-3433-470f-9927-b9c7266d8a80" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="d164cd04-cb91-4c37-a7c0-6f37326bbb4f">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.ProductDetail.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.ProductDetail.resx" uniqueID="72023ec2-f055-4c35-8bfa-3c7e29a3e6dd" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.ProductDetail.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.ProductDetail.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.ProductDetail.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.ProductDetail.de-DE.resx" uniqueID="431fb122-1bf0-4001-afcc-3146fae3f816" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="5e0d3f10-4f89-4b0b-a725-d162cd1e14d3">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.Product.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.Product.resx" uniqueID="fb95b859-37a7-4c8d-a528-f542575d9408" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.Product.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.Product.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.Product.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.Product.de-DE.resx" uniqueID="54cd1874-7bdf-4e03-aa3b-f93d82a45567" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="32ea4c4e-dd61-48f5-a4b3-96cef84624eb">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.OrderItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.OrderItem.resx" uniqueID="b3de322e-e117-40f2-97bb-62dad1b877f8" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.OrderItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.OrderItem.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.OrderItem.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.OrderItem.de-DE.resx" uniqueID="5ad4190c-7aca-4969-ada5-618f244d0bcb" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="74f950d9-4b94-4c41-aedf-baa6f393797c">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRole.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRole.resx" uniqueID="341215b5-a342-427b-82c5-ffd09af2ce89" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRole.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRole.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRole.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRole.de-DE.resx" uniqueID="f06f459c-1a29-4664-8c8e-e214f721fa20" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="9e8f1ea7-b32b-443f-947a-c9a460f241af">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationRollup.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationRollup.resx" uniqueID="def5a749-0e6f-4983-bc07-0c5d49c22ba8" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationRollup.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationRollup.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationRollup.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationRollup.de-DE.resx" uniqueID="21603f9a-6c03-4753-855d-0106c666a40c" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="fa5f4f53-d067-485f-865e-6b4108c3d3f0">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Organization.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Organization.resx" uniqueID="0f6b3d12-7174-471a-9e12-7e04002d9d7c" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Organization.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Organization.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Organization.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Organization.de-DE.resx" uniqueID="4132008e-c2f1-4b2e-aca7-ee49474fc91f" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="0a37d80f-d4fc-46c5-9205-e8da40c32814">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.InternalOrganization.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.InternalOrganization.resx" uniqueID="8b0c46da-6b48-48b6-8ad4-023680d9c504" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.InternalOrganization.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.InternalOrganization.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.InternalOrganization.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.InternalOrganization.de-DE.resx" uniqueID="fa89e9bb-3830-4d18-9dd1-5b7e3562863c" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="a4c84f0d-d758-4788-ac45-3f193ffefe17">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRelationship.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRelationship.resx" uniqueID="3d2ff04b-a6cd-4149-b305-8990efb2d560" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRelationship.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRelationship.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRelationship.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRelationship.de-DE.resx" uniqueID="9a79de44-ee16-4342-a74a-6c8d47f5d40d" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="d7d727d1-50fa-42d3-9e77-38600922a47c">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Party.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Party.resx" uniqueID="e0e1c903-aed0-40e2-b774-ce9655509563" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Party.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Party.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Party.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Party.de-DE.resx" uniqueID="8b608c20-ac30-46cf-8a46-c753405ef3b7" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="82fb6ab6-2dad-4f8d-803c-e94b8d1c662a">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationUnit.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationUnit.resx" uniqueID="4a546565-65be-4f01-9b5e-8634a4e7a4f3" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationUnit.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationUnit.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationUnit.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationUnit.de-DE.resx" uniqueID="9e41b55a-8dd4-4b3a-a8c3-ddcaf017b7a8" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="40233077-9496-4493-9a4a-e3f79edc7a81">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.resx" uniqueID="87033739-493b-4ff8-be32-4be7531a7faa" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.de-DE.resx" uniqueID="89b32f6a-2cab-4737-9a78-bb33634c524b" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="f6cb3024-e5de-4cdc-b705-f5d0a5571aeb">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.resx" uniqueID="fb4e0c72-73f2-4d58-a64f-05bd4275ee4b" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.de-DE.resx" uniqueID="b53b2d6b-4a20-45c7-8b6a-06599566e75d" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="b6f7b083-153c-4246-b802-850fbd1c5c97">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.DefaultInvoiceGenerator.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.DefaultInvoiceGenerator.resx" uniqueID="43d7e64d-8ceb-4bd8-98db-b3ffe30d9096" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.DefaultInvoiceGenerator.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.DefaultInvoiceGenerator.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.DefaultInvoiceGenerator.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.DefaultInvoiceGenerator.de-DE.resx" uniqueID="8e13482b-c8ae-4570-9167-4aa63d0e9424" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="105d3560-f447-4636-bff7-cb4762699b71">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate.resx" uniqueID="e691e3e2-1982-4b83-84c1-4165c722184a" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate.de-DE.resx" uniqueID="9f34ca28-fc81-4fca-a9db-6b0576dced51" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="0a6251a4-2a22-409b-9781-e91e6070bb36">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceipt.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceipt.resx" uniqueID="425f03ca-eab0-4083-8fb3-c744a235d100" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceipt.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceipt.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceipt.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceipt.de-DE.resx" uniqueID="43cc1cec-c036-4d87-99d7-c377b1c44ed3" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="c8109375-c783-477c-8cec-721a8b4c4497">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItemTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItemTemplate.resx" uniqueID="5df1fcf2-8289-4233-adfa-3b1429f41ce5" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItemTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItemTemplate.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItemTemplate.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItemTemplate.de-DE.resx" uniqueID="5d1cd2ed-3651-46b0-8b75-a584160a022f" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="d62054f5-c148-4aa0-ab3a-a8151c178ae1">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.resx" uniqueID="7fdd8b33-ab5d-4686-af6f-7dfa07847992" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.de-DE.resx" uniqueID="7c431845-6b2f-45e8-b7b8-78a06cc8d7a5" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="2c10d894-3d7f-46cb-a316-b5ce9657548e">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.resx" uniqueID="c7c58c2d-96d7-487f-9012-e2af1e9b1171" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.de-DE.resx" uniqueID="0995d898-52a7-45ae-a207-1a1cb55be475" />
+      <file filePath="ZetboxBase\Enumerations\Zetbox.Basic.Products.BillingPeriod.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Enumerations\Zetbox.Basic.Products.BillingPeriod.de.resx" uniqueID="4fc9163b-a594-467b-ac54-90da559f055c" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="f125fd3c-e284-45fa-b355-61f396b8c0c5">
       <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.resx" uniqueID="396f7032-6b82-4610-8422-62a0f56488e7" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.de-DE.resx" uniqueID="233dc0b3-a21c-498f-b4d0-863d29310d64" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.de.resx" uniqueID="ef5fb226-d31d-4ca8-8761-a2b89aa3f6a6" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="f6483055-5e95-42f1-beb8-8d27e680533e">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.resx" uniqueID="f95f37a0-bee6-42f6-8762-6a7714da2154" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de-DE.resx" uniqueID="101a482e-e5d0-43f2-9f8e-d28ff7c4f56a" />
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="2c10d894-3d7f-46cb-a316-b5ce9657548e">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.resx" uniqueID="c7c58c2d-96d7-487f-9012-e2af1e9b1171" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.de.resx" uniqueID="b8670075-142d-4137-98ab-ab63eb147e15" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="b9fa9c07-3f9f-4a3f-b88a-83b3218a539d">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Transaction.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Transaction.resx" uniqueID="0a1207f5-cc73-4a2e-8c31-67c8155f884e" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Transaction.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Transaction.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Transaction.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Transaction.de-DE.resx" uniqueID="c3bc8e8c-fa83-4b65-b4b1-3395a4434b59" />
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="d62054f5-c148-4aa0-ab3a-a8151c178ae1">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.resx" uniqueID="7fdd8b33-ab5d-4686-af6f-7dfa07847992" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.de.resx" uniqueID="274dc352-90c3-4ba7-b7b8-053bbfc8974d" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="a9c32390-1968-44dc-976a-d5f65ca3af0f">
       <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Receipt_Transaction.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Receipt_Transaction.resx" uniqueID="a8c2b65f-6df9-4717-965c-6ad3349457cf" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Receipt_Transaction.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Receipt_Transaction.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Receipt_Transaction.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Receipt_Transaction.de-DE.resx" uniqueID="69c3d532-b0cf-4896-92b8-054f1e260c71" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Receipt_Transaction.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Receipt_Transaction.de.resx" uniqueID="39bdfd91-7114-4100-b268-79aeaa4a5655" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="b9fa9c07-3f9f-4a3f-b88a-83b3218a539d">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Transaction.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Transaction.resx" uniqueID="0a1207f5-cc73-4a2e-8c31-67c8155f884e" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Accounting.Transaction.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Accounting.Transaction.de.resx" uniqueID="6b02db50-4c29-4ac2-875f-ec2f28a8bf4a" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="f6483055-5e95-42f1-beb8-8d27e680533e">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.resx" uniqueID="f95f37a0-bee6-42f6-8762-6a7714da2154" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de.resx" uniqueID="63a1868c-c8fc-4590-bb97-800996527f61" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="b6f7b083-153c-4246-b802-850fbd1c5c97">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.DefaultInvoiceGenerator.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.DefaultInvoiceGenerator.de.resx" uniqueID="b0db77d9-c910-4891-8039-2b8ba1a0864b" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="f6cb3024-e5de-4cdc-b705-f5d0a5571aeb">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.resx" uniqueID="fb4e0c72-73f2-4d58-a64f-05bd4275ee4b" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.de.resx" uniqueID="5ca6d308-3566-47c4-af2f-9a95c193dd7e" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="40233077-9496-4493-9a4a-e3f79edc7a81">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.resx" uniqueID="87033739-493b-4ff8-be32-4be7531a7faa" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.de.resx" uniqueID="2d1ea024-588a-4834-b6c0-add7cb0faa19" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="c8109375-c783-477c-8cec-721a8b4c4497">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItemTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItemTemplate.resx" uniqueID="5df1fcf2-8289-4233-adfa-3b1429f41ce5" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItemTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItemTemplate.de.resx" uniqueID="f2042543-bbfa-47a9-bd71-e474dc259ccd" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="0a6251a4-2a22-409b-9781-e91e6070bb36">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceipt.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceipt.resx" uniqueID="425f03ca-eab0-4083-8fb3-c744a235d100" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceipt.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceipt.de.resx" uniqueID="bb905b1d-25b4-405a-9bb8-77a55c384112" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="105d3560-f447-4636-bff7-cb4762699b71">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate.resx" uniqueID="e691e3e2-1982-4b83-84c1-4165c722184a" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate.de.resx" uniqueID="735a6ed7-2ad2-4789-b69d-eecfb3f62703" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="ed592ffc-3af0-481a-8d74-af2dd7cc7c7f">
       <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceipt.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceipt.resx" uniqueID="45691ff2-99ac-4084-aec4-f333079e221a" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceipt.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceipt.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceipt.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceipt.de-DE.resx" uniqueID="7dec3502-7787-4555-8c8a-b5b3a606ddd8" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="c85a983e-7c6d-4fdc-964e-9cdc9e705adf">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.resx" uniqueID="a3878176-b4f0-4bd3-bb15-17964c245b72" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.de-DE.resx" uniqueID="e426363d-9e20-4c22-8b82-4e6fdbd8f322" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="dd59782e-1e51-4d04-ac86-5357234db15e">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.resx" uniqueID="4f27aeaf-c549-46ce-9c46-960634f96ddc" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.de-DE.resx" uniqueID="9ba37d82-a1e8-40fb-a7f6-63fb2afd5b5b" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="c4d14e83-53e5-420b-8b1b-f56f83d87cb1">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.resx" uniqueID="3229c2f7-1974-447b-b6dc-1b15eb9f1442" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.de-DE.resx" uniqueID="c36aa32f-a278-4cb7-8bde-9fc8b1b159ee" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="26e678c6-9862-4359-b5a6-f5d625ea3d86">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.resx" uniqueID="689f9b28-8494-4f72-9f25-c64649658cc4" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.de-DE.resx" uniqueID="5be2af31-b793-48f3-93e1-3614e574c6e6" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="103d7403-9e3b-4d3e-8f8b-f751d9343534">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.resx" uniqueID="a7493142-2545-4187-b540-bd986a26453d" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.de-DE.resx" uniqueID="fd305db5-48ee-4597-a30b-a5f81ed178a9" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="f0313de1-eba2-4766-ac0e-a629ddee4b0a">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.resx" uniqueID="6bb0aa4c-ccd0-4034-a430-2d372305b65c" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.de-DE.resx" uniqueID="36e32a21-bf81-4d45-81cc-b07edfc2cb3b" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="ec53bea5-9d66-4bd4-997f-8836a6a89b1c">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.resx" uniqueID="4d96b12f-c431-4fe0-bf95-d0efc5cc6045" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.de-DE.resx" uniqueID="1b32f939-93b8-4279-95b6-bc6f36b72aa5" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="d2cfc797-ec48-4eb9-93a7-10890691effd">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.resx" uniqueID="dc8932a4-9fc4-44c9-9a0b-39938db8b007" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.de-DE.resx" uniqueID="fac109a5-dc7c-4c6e-b540-e11a78a78a84" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceipt.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceipt.de.resx" uniqueID="c4a7270e-3ddb-4d89-9d2e-0462f9ab1ec4" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="1878e0ae-e762-4f67-a718-92544f499fea">
       <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate.resx" uniqueID="8c6f1a00-b7c8-4ff9-bf9a-ceb0dbe27ec5" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate.de-DE.resx" uniqueID="31b7af59-58dd-4be4-a645-6b3922cc7279" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate.de.resx" uniqueID="5f70dfb2-df1d-4c82-ac48-d546370e2a7e" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="86f9318a-bcce-4318-b478-642fbda6770e">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.resx" uniqueID="66fe1df3-a21a-4e75-bb47-50c3c0766da1" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.de-DE.resx" uniqueID="08961c56-0523-461f-af4e-d7afb6af4b98" />
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="d2cfc797-ec48-4eb9-93a7-10890691effd">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.resx" uniqueID="dc8932a4-9fc4-44c9-9a0b-39938db8b007" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.de.resx" uniqueID="d0e2f38f-6524-4d95-ace7-817e924ed8c8" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="9d7503c3-e900-4ec5-863b-0d0164f0abae">
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.resx" uniqueID="26387ff7-94cd-482d-8c38-e4466c62dbc6" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.de-DE.resx" uniqueID="1fba4a94-1405-4687-b48c-cd2497ea51db" />
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="ec53bea5-9d66-4bd4-997f-8836a6a89b1c">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.resx" uniqueID="4d96b12f-c431-4fe0-bf95-d0efc5cc6045" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.de.resx" uniqueID="238cdcf9-b37e-4553-9f05-9c8252bec3ef" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="645379e4-6f3e-4ced-8d08-1d5bd03159a9">
       <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate.resx" uniqueID="ffa50f19-3dd0-4bf2-bc55-68ed73742c48" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate.de-DE.resx" uniqueID="df0f5979-bd05-4826-a149-61a3ff1300c5" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate.de.resx" uniqueID="49728fc5-71b5-4978-a12f-98ff4ecfc3eb" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="9d7503c3-e900-4ec5-863b-0d0164f0abae">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.resx" uniqueID="26387ff7-94cd-482d-8c38-e4466c62dbc6" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.de.resx" uniqueID="78af763f-ba69-4077-9a7f-786623631983" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="86f9318a-bcce-4318-b478-642fbda6770e">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.resx" uniqueID="66fe1df3-a21a-4e75-bb47-50c3c0766da1" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.de.resx" uniqueID="b7736a3f-6612-428e-ac02-011d864e6f83" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="c4d14e83-53e5-420b-8b1b-f56f83d87cb1">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.resx" uniqueID="3229c2f7-1974-447b-b6dc-1b15eb9f1442" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.de.resx" uniqueID="94939e0c-ce0c-456b-9fee-a5eab0945911" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="dd59782e-1e51-4d04-ac86-5357234db15e">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.resx" uniqueID="4f27aeaf-c549-46ce-9c46-960634f96ddc" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.de.resx" uniqueID="2c7adaef-fe4c-4a73-b4b1-3e7598ac557d" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="c85a983e-7c6d-4fdc-964e-9cdc9e705adf">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.resx" uniqueID="a3878176-b4f0-4bd3-bb15-17964c245b72" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.de.resx" uniqueID="66b284b9-b2a8-44e3-82fc-cd6e1157505f" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="f0313de1-eba2-4766-ac0e-a629ddee4b0a">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.resx" uniqueID="6bb0aa4c-ccd0-4034-a430-2d372305b65c" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.de.resx" uniqueID="47278dfe-3eba-4811-85a6-01c5a45745e3" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="103d7403-9e3b-4d3e-8f8b-f751d9343534">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.resx" uniqueID="a7493142-2545-4187-b540-bd986a26453d" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.de.resx" uniqueID="0d772c97-1397-4820-83ae-e7edbae392d8" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="26e678c6-9862-4359-b5a6-f5d625ea3d86">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.resx" uniqueID="689f9b28-8494-4f72-9f25-c64649658cc4" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.de.resx" uniqueID="4c55e074-71d5-4aec-a511-0185e0939276" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="82fb6ab6-2dad-4f8d-803c-e94b8d1c662a">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationUnit.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationUnit.resx" uniqueID="4a546565-65be-4f01-9b5e-8634a4e7a4f3" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationUnit.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationUnit.de.resx" uniqueID="d3fe9d0e-028a-4d81-a188-527033b6046e" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="b76a84fd-2cca-4a5a-b866-980aff6244f8">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate.resx" uniqueID="9f7bf349-7392-4a29-bfd1-45fbbf641953" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate.de.resx" uniqueID="73c53e49-a660-4006-8bf0-6dcda3e07001" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="bac12619-0f67-4494-8b9f-74ab7f38d42d">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceTemplate.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceTemplate.resx" uniqueID="3baae6d2-def6-43bf-9e52-8240c9ca3daf" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceTemplate.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceTemplate.de.resx" uniqueID="330662a6-10d7-4cde-82b1-1880c814746b" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="92b2bd00-798d-4442-9323-bed41668d2b3">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.VATType.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.VATType.resx" uniqueID="a4756e0b-26af-498d-b8cf-427d9b612b14" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.VATType.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.VATType.de.resx" uniqueID="3d2afea7-52bc-409e-9903-0f2125e35297" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="8fd32d85-d650-47d5-87bb-8fd82566909b">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuoteItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuoteItem.resx" uniqueID="f7f950ea-ad77-4534-a646-edc19186b112" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuoteItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuoteItem.de.resx" uniqueID="e4b4e8dc-27d4-46b5-af05-20a1be0dcc7f" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="c2264da7-722f-45fd-b790-6d6ce30b4685">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.StatisticActions.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.StatisticActions.resx" uniqueID="fccc7e95-25e3-427a-baaa-477f5268bf6e" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.StatisticActions.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.StatisticActions.de.resx" uniqueID="fb594700-821d-4bb7-90c0-6c6b4b426430" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="67ba1ec7-dc30-4827-9772-d7021eaf1d53">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItem.resx" uniqueID="1aacee10-26f3-4206-9e37-b2c46434494a" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItem.de.resx" uniqueID="35c337c9-2a10-49fa-8a04-cebea98ec2a9" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="3f67580a-8cc0-4d58-9d7c-bffd84bcbe0b">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Address.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Address.resx" uniqueID="cddb7f7b-e907-4b75-944a-d9295aaadd9d" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Address.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Address.de.resx" uniqueID="87bff475-f7d2-423f-a3c2-e2e538ed3b19" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="8e324671-dcbf-4821-8031-0eff3295c8e9">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.BankAccount.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.BankAccount.resx" uniqueID="6b97e202-d3c8-4b47-bf57-ad3794853565" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.BankAccount.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.BankAccount.de.resx" uniqueID="7366e49b-3d5e-45cf-b98f-40421a21500d" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="9307b0a6-63ea-4a65-84fb-93a35d31b1fb">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Customer.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Customer.resx" uniqueID="b9082c88-dbe2-4314-ba33-7e23f4dd0376" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Customer.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Customer.de.resx" uniqueID="13fcd89e-8085-4c4a-832a-e1fb16aa6066" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="8f6e6f6e-e644-40b9-b05a-f642d01483a7">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.CustomerRelationship.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.CustomerRelationship.resx" uniqueID="d019db48-2ff7-4223-ba08-3ecec4d077e3" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.CustomerRelationship.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.CustomerRelationship.de.resx" uniqueID="74e0b12b-4549-42a2-b9e2-83e681117550" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="e3049002-c107-43a6-b438-d4a47138eacb">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Employee.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Employee.resx" uniqueID="50228a44-92a8-47a2-8739-64b0678f8798" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Employee.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Employee.de.resx" uniqueID="470a4790-34dd-4c12-ac85-1d8f1235277a" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="b6ea80f3-2c77-438c-aef0-73553d440419">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Employment.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Employment.resx" uniqueID="5b199927-6914-46bd-a188-7802da03e94b" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Employment.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Employment.de.resx" uniqueID="4ac81279-7998-4bf0-85e5-a51375a71f20" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="0480eb86-ebf7-4dc6-9e08-2ca4961824e8">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuote.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuote.resx" uniqueID="223c238e-f03c-44a7-8f04-306f7f60c39c" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuote.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuote.de.resx" uniqueID="71b2b3be-d040-4e96-a544-d67dddbe894f" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="fa5f4f53-d067-485f-865e-6b4108c3d3f0">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Organization.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Organization.resx" uniqueID="0f6b3d12-7174-471a-9e12-7e04002d9d7c" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Organization.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Organization.de.resx" uniqueID="a5fb0a9a-7650-42c4-be90-f1d9fa5bb716" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="9e8f1ea7-b32b-443f-947a-c9a460f241af">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationRollup.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationRollup.resx" uniqueID="def5a749-0e6f-4983-bc07-0c5d49c22ba8" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationRollup.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationRollup.de.resx" uniqueID="44c01d00-026b-4376-8421-e154336b2801" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="74f950d9-4b94-4c41-aedf-baa6f393797c">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRole.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRole.resx" uniqueID="341215b5-a342-427b-82c5-ffd09af2ce89" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRole.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRole.de.resx" uniqueID="b744d44f-2711-4dd4-bb1e-b13ac0297b23" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="d7d727d1-50fa-42d3-9e77-38600922a47c">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Party.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Party.resx" uniqueID="e0e1c903-aed0-40e2-b774-ce9655509563" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Party.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Party.de.resx" uniqueID="d4e66a58-2897-4806-9592-9d59f14bb438" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="a4c84f0d-d758-4788-ac45-3f193ffefe17">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRelationship.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRelationship.resx" uniqueID="3d2ff04b-a6cd-4149-b305-8990efb2d560" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRelationship.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRelationship.de.resx" uniqueID="5acca545-483e-44c1-937f-b77e5c5d846b" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="0a37d80f-d4fc-46c5-9205-e8da40c32814">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.InternalOrganization.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.InternalOrganization.resx" uniqueID="8b0c46da-6b48-48b6-8ad4-023680d9c504" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.InternalOrganization.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.InternalOrganization.de.resx" uniqueID="cd8de5d7-99da-4245-a2ef-93411b45afd8" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="11275b88-8604-4520-9a71-c90c532720f0">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Person.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Person.resx" uniqueID="7067ae95-45c7-487c-858a-6f6b5d314fef" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Person.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Person.de.resx" uniqueID="d0b9bae5-a6d7-4c9c-af5c-51bd3e3fa498" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="d824c18f-bf1e-418d-8055-5128e17b18c2">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Supplier.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Supplier.resx" uniqueID="7a21877f-aaad-459a-942d-2e2d7e2fed55" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.Supplier.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.Supplier.de.resx" uniqueID="4e1c9dfe-df60-431c-b425-3d629b9cc83e" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="ef7d50f5-c9bd-4524-b5e7-7c7c1682695b">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.SupplierRelationship.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.SupplierRelationship.resx" uniqueID="517973e0-a2c9-421e-8b39-7150ce1e1fef" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Parties.SupplierRelationship.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Parties.SupplierRelationship.de.resx" uniqueID="cfd191ca-1bcf-42c0-946e-da47a7af0e00" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="32ea4c4e-dd61-48f5-a4b3-96cef84624eb">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.OrderItem.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.OrderItem.resx" uniqueID="b3de322e-e117-40f2-97bb-62dad1b877f8" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.OrderItem.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.OrderItem.de.resx" uniqueID="e1e07be3-0508-4221-85fc-e0184124e748" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="5e0d3f10-4f89-4b0b-a725-d162cd1e14d3">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.Product.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.Product.resx" uniqueID="fb95b859-37a7-4c8d-a528-f542575d9408" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.Product.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.Product.de.resx" uniqueID="c84f8c31-1a26-47f6-821c-117a16366f8a" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="d164cd04-cb91-4c37-a7c0-6f37326bbb4f">
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.ProductDetail.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.ProductDetail.resx" uniqueID="72023ec2-f055-4c35-8bfa-3c7e29a3e6dd" />
+      <file filePath="ZetboxBase\Properties\Zetbox.Basic.Products.ProductDetail.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Properties\Zetbox.Basic.Products.ProductDetail.de.resx" uniqueID="e8f8183f-2533-4847-bd43-366941cbd8b1" />
       <remarks>
       </remarks>
     </fileGroup>
     <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="4d6b3d26-a1bf-4a27-a01d-27564fa768de">
       <file filePath="ZetboxBase\Methods\at.dasz.DocumentManagement.ImportedFile.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\at.dasz.DocumentManagement.ImportedFile.resx" uniqueID="6fc9e0e7-d03d-4eb9-a7e6-d08299a1d187" />
-      <file filePath="ZetboxBase\Methods\at.dasz.DocumentManagement.ImportedFile.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\at.dasz.DocumentManagement.ImportedFile.de.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
-      <file filePath="ZetboxBase\Methods\at.dasz.DocumentManagement.ImportedFile.de-DE.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\at.dasz.DocumentManagement.ImportedFile.de-DE.resx" uniqueID="5c239c05-5eeb-4a03-900e-de76c50b018a" />
+      <file filePath="ZetboxBase\Methods\at.dasz.DocumentManagement.ImportedFile.de.resx" absoluteFilePath="P:\zetbox.Parties\Zetbox.Parties.Assets\ZetboxBase\Methods\at.dasz.DocumentManagement.ImportedFile.de.resx" uniqueID="1a1a10ad-7343-4d1f-bc8b-34b0e586b248" />
       <remarks>
       </remarks>
     </fileGroup>

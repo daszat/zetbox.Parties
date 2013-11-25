@@ -117,4 +117,31 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="AddToParty_label" xml:space="preserve">
+		<value>Pers/Org anfügen</value>
+	</data>
+	<data name="AddToParty_description" xml:space="preserve">
+		<value>Fügt diese Datei auf einer Party</value>
+	</data>
+	<data name="AddToParty(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="MakeInvoice_label" xml:space="preserve">
+		<value>Kaufrechnung</value>
+	</data>
+	<data name="MakeInvoice(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="MakeOtherExpense_label" xml:space="preserve">
+		<value>Sonstige Ausgabe</value>
+	</data>
+	<data name="MakeOtherExpense(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
+	<data name="MakeQuote_label" xml:space="preserve">
+		<value>Kauf-Angebot</value>
+	</data>
+	<data name="MakeQuote(retVal)_label" xml:space="preserve">
+		<value>retVal</value>
+	</data>
 </root>

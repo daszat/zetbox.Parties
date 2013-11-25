@@ -117,4 +117,25 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="BirthDate_label" xml:space="preserve">
+		<value>Geburtsdatum</value>
+	</data>
+	<data name="FirstName_label" xml:space="preserve">
+		<value>Vorname</value>
+	</data>
+	<data name="Gender_label" xml:space="preserve">
+		<value>Geschlecht</value>
+	</data>
+	<data name="LastName_label" xml:space="preserve">
+		<value>Nachname</value>
+	</data>
+	<data name="MiddleName_label" xml:space="preserve">
+		<value>Zweiter Vorname</value>
+	</data>
+	<data name="PersonalTitle_label" xml:space="preserve">
+		<value>Titel</value>
+	</data>
+	<data name="Suffix_label" xml:space="preserve">
+		<value>Suffix</value>
+	</data>
 </root>

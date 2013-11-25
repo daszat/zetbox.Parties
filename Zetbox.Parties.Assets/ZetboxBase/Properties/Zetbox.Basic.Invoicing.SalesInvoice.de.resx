@@ -117,4 +117,31 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="CanceledInvoice_label" xml:space="preserve">
+		<value>Stornierte Rechnung</value>
+	</data>
+	<data name="CanceledInvoice_description" xml:space="preserve">
+		<value>Die Rechnung ist dies umgekehrt.</value>
+	</data>
+	<data name="Customer_label" xml:space="preserve">
+		<value>Kunde</value>
+	</data>
+	<data name="FinalizedOn_label" xml:space="preserve">
+		<value>Abgeschlossen auf</value>
+	</data>
+	<data name="InternalOrganization_label" xml:space="preserve">
+		<value>Interne Organisation</value>
+	</data>
+	<data name="Issuer_label" xml:space="preserve">
+		<value>Aussteller</value>
+	</data>
+	<data name="Items_label" xml:space="preserve">
+		<value>Artikel</value>
+	</data>
+	<data name="Reversal_label" xml:space="preserve">
+		<value>Umkehrung</value>
+	</data>
+	<data name="Reversal_description" xml:space="preserve">
+		<value>Die Umkehrung dieser Rechnung, wenn sie abgebrochen wurde.</value>
+	</data>
 </root>

@@ -117,4 +117,58 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="ChangedBy_label" xml:space="preserve">
+		<value>ChangedBy</value>
+	</data>
+	<data name="ChangedBy_description" xml:space="preserve">
+		<value>Identität, die dieses Objekt geändert</value>
+	</data>
+	<data name="ChangedOn_label" xml:space="preserve">
+		<value>ChangedOn</value>
+	</data>
+	<data name="ChangedOn_description" xml:space="preserve">
+		<value>Datum und Zeit, in der dieses Objekt wurde geändert</value>
+	</data>
+	<data name="CreatedBy_label" xml:space="preserve">
+		<value>CreatedBy</value>
+	</data>
+	<data name="CreatedBy_description" xml:space="preserve">
+		<value>Identität, die dieses Objekt erstellt</value>
+	</data>
+	<data name="CreatedOn_label" xml:space="preserve">
+		<value>CreatedOn</value>
+	</data>
+	<data name="CreatedOn_description" xml:space="preserve">
+		<value>Datum und Zeit, in der dieses Objekt erstellt wurde</value>
+	</data>
+	<data name="Description_label" xml:space="preserve">
+		<value>Beschreibung</value>
+	</data>
+	<data name="Document_label" xml:space="preserve">
+		<value>Dokument</value>
+	</data>
+	<data name="ExportGuid_label" xml:space="preserve">
+		<value>ExportGuid</value>
+	</data>
+	<data name="ExportGuid_description" xml:space="preserve">
+		<value>Export Guid</value>
+	</data>
+	<data name="IssueDate_label" xml:space="preserve">
+		<value>Erstellungsdatum</value>
+	</data>
+	<data name="QuoteID_label" xml:space="preserve">
+		<value>Angebots-Nummer</value>
+	</data>
+	<data name="Total_label" xml:space="preserve">
+		<value>Gesamt</value>
+	</data>
+	<data name="TotalNet_label" xml:space="preserve">
+		<value>Gesamt (Netto)</value>
+	</data>
+	<data name="ValidFrom_label" xml:space="preserve">
+		<value>Gültig ab</value>
+	</data>
+	<data name="ValidThru_label" xml:space="preserve">
+		<value>Gültig bis</value>
+	</data>
 </root>

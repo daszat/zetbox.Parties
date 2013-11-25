@@ -117,4 +117,28 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="Once_label" xml:space="preserve">
+		<value>Einmalig</value>
+	</data>
+	<data name="Once_description" xml:space="preserve">
+		<value>Zeigt eine einzigartige Abrechnung.</value>
+	</data>
+	<data name="Monthly_label" xml:space="preserve">
+		<value>Monatlich</value>
+	</data>
+	<data name="Monthly_description" xml:space="preserve">
+		<value>Zeigt an, monatliche Abrechnung</value>
+	</data>
+	<data name="Quaterly_label" xml:space="preserve">
+		<value>Quartals</value>
+	</data>
+	<data name="Quaterly_description" xml:space="preserve">
+		<value>Gibt Quartalsabrechnungs</value>
+	</data>
+	<data name="Yearly_label" xml:space="preserve">
+		<value>Jährlich</value>
+	</data>
+	<data name="Yearly_description" xml:space="preserve">
+		<value>Gibt Jahresabrechnungs</value>
+	</data>
 </root>
