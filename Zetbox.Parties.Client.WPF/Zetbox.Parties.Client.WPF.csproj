@@ -193,6 +193,12 @@
     <Compile Include="View\Invoicing\SalesQuoteEditor.xaml.cs">
       <DependentUpon>SalesQuoteEditor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Parties\AddressEditor.xaml.cs">
+      <DependentUpon>AddressEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Parties\BankAccountEditor.xaml.cs">
+      <DependentUpon>BankAccountEditor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Parties\PartyRoleTabbedEditor.xaml.cs">
       <DependentUpon>PartyRoleTabbedEditor.xaml</DependentUpon>
     </Compile>
@@ -228,6 +234,14 @@
     <Page Include="View\Invoicing\SalesQuoteEditor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Parties\AddressEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Parties\BankAccountEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Parties\PartyRoleTabbedEditor.xaml">
       <Generator>MSBuild:Compile</Generator>

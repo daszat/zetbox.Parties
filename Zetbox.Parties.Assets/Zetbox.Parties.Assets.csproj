@@ -185,6 +185,7 @@
     <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de.resx" />
     <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.resx" />
     <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.DefaultInvoiceGenerator.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.DefaultInvoiceGenerator.resx" />
     <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.de.resx" />
     <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.resx" />
     <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.de.resx" />
