@@ -6,7 +6,7 @@ using Zetbox.Basic.Parties;
 
 namespace Zetbox.Parties.Client.Reporting.Common
 {
-    [Arebis.CodeGeneration.TemplateInfo(@"V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst")]
+    [Arebis.CodeGeneration.TemplateInfo(@"P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst")]
     public partial class Address : Zetbox.Parties.Client.Reporting.ReportTemplate
     {
 		protected Zetbox.Basic.Parties.Party party;
@@ -30,44 +30,44 @@ namespace Zetbox.Parties.Client.Reporting.Common
 
         public override void Generate()
         {
-#line 11 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
-this.WriteObjects("\n");
-this.WriteObjects("",  FormatName(party) , "\n");
-this.WriteObjects("\\linebreak\n");
-#line 14 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 11 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+this.WriteObjects("\r\n");
+this.WriteObjects("",  FormatName(party) , "\r\n");
+this.WriteObjects("\\linebreak\r\n");
+#line 14 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 if(address != null) { 
-#line 15 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 15 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 this.WriteObjects("    ");
-#line 15 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 15 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 if(!string.IsNullOrEmpty(address.Line1)) { 
-#line 16 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
-this.WriteObjects("        \\linebreak\n");
-this.WriteObjects("        ",  Format(address.Line1) , "\n");
+#line 16 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+this.WriteObjects("        \\linebreak\r\n");
+this.WriteObjects("        ",  Format(address.Line1) , "\r\n");
 this.WriteObjects("    ");
-#line 18 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 18 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 } 
     if(!string.IsNullOrEmpty(address.Line2)) { 
-#line 20 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
-this.WriteObjects("        \\linebreak\n");
-this.WriteObjects("        ",  Format(address.Line2) , "\n");
+#line 20 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+this.WriteObjects("        \\linebreak\r\n");
+this.WriteObjects("        ",  Format(address.Line2) , "\r\n");
 this.WriteObjects("    ");
-#line 22 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 22 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 } 
     if(!string.IsNullOrEmpty(address.ZIPCode) || !string.IsNullOrEmpty(address.City)) { 
-#line 24 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
-this.WriteObjects("        \\linebreak\n");
-this.WriteObjects("        ",  Format(address.ZIPCode) , " ",  Format(address.City) , "\n");
+#line 24 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+this.WriteObjects("        \\linebreak\r\n");
+this.WriteObjects("        ",  Format(address.ZIPCode) , " ",  Format(address.City) , "\r\n");
 this.WriteObjects("    ");
-#line 26 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 26 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 } 
     if(!string.IsNullOrEmpty(address.Country)) { 
-#line 28 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
-this.WriteObjects("        \\linebreak\n");
-this.WriteObjects("        ",  Format(address.Country) , "\n");
+#line 28 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+this.WriteObjects("        \\linebreak\r\n");
+this.WriteObjects("        ",  Format(address.Country) , "\r\n");
 this.WriteObjects("    ");
-#line 30 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 30 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 } 
-#line 31 "V:\Jenkins\workspace\zetbox.Parties-develop-update-nuget\Zetbox.Parties.Client\Reporting\Common\Address.cst"
+#line 31 "P:\zetbox.Parties\Zetbox.Parties.Client\Reporting\Common\Address.cst"
 } 
 
         }

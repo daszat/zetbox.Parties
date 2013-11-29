@@ -1,0 +1,50 @@
+﻿<ctrls:PropertyEditor x:Class="Zetbox.Parties.Client.WPF.View.Parties.AddressEditor"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:ctrls="clr-namespace:Zetbox.Client.WPF.CustomControls;assembly=Zetbox.Client.WPF.Toolkit"
+                      xmlns:client="clr-namespace:Zetbox.Client.Presentables;assembly=Zetbox.Client"
+                      VerticalContentAlignment="Stretch">
+    <Grid Grid.IsSharedSizeScope="True">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        
+        <ctrls:LabeledView Grid.Row="0"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="3"
+                           LabelWidth="50"
+                           LabelMinWidth="50"
+                           DataContext="{Binding Value.PropertyModelsByName[Line1]}"
+                           x:Name="txtLine1" />
+        <ctrls:LabeledView Grid.Row="1"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="3"
+                           LabelWidth="50"
+                           LabelMinWidth="50"
+                           DataContext="{Binding Value.PropertyModelsByName[Line2]}" />
+
+        <ctrls:LabeledView Grid.Row="2"
+                           Grid.Column="0"
+                           LabelWidth="50"
+                           LabelMinWidth="50"
+                           DataContext="{Binding Value.PropertyModelsByName[ZIPCode]}" />
+        <ctrls:LabeledView Grid.Row="2"
+                           Grid.Column="1"
+                           LabelWidth="50"
+                           LabelMinWidth="50"
+                           DataContext="{Binding Value.PropertyModelsByName[City]}" />
+        <ctrls:LabeledView Grid.Row="2"
+                           Grid.Column="2"
+                           LabelWidth="50"
+                           LabelMinWidth="50"
+                           DataContext="{Binding Value.PropertyModelsByName[Country]}" />
+    </Grid>
+</ctrls:PropertyEditor>

@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41558FF6-2586-4B41-8C9D-15D752F03950}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zetbox.Parties.Assets</RootNamespace>
+    <AssemblyName>Zetbox.Parties.Assets</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\Common\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\Common\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Arebis.CodeGeneration">
+      <HintPath>..\packages\Arebis.CodeGenerator.1.3.0.0\lib\net40\Arebis.CodeGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="Arebis.CodeGenerator">
+      <HintPath>..\packages\Arebis.CodeGenerator.1.3.0.0\lib\net40\Arebis.CodeGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.2.6.3.862\lib\NET40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Configuration">
+      <HintPath>..\packages\Autofac.2.6.3.862\lib\NET40\Autofac.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Analyzers">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Analyzers.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Core">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.FastVectorHighlighter">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.FastVectorHighlighter.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Highlighter">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Highlighter.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Memory">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Queries">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Queries.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Regex">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Regex.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.SimpleFacetedSearch">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.SimpleFacetedSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Snowball">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.Snowball.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.SpellChecker">
+      <HintPath>..\packages\Lucene.Net.Contrib.3.0.3\lib\net40\Lucene.Net.Contrib.SpellChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.DocumentObjectModel">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI-dasz.1.32.3886.0\lib\net35\MigraDoc.DocumentObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI-dasz.1.32.3886.0\lib\net35\MigraDoc.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI-dasz.1.32.3886.0\lib\net35\MigraDoc.RtfRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI-dasz.1.32.3886.0\lib\net35\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting">
+      <HintPath>..\packages\PDFsharp-MigraDoc-GDI-dasz.1.32.3886.0\lib\net35\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zetbox.API, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ccdf16e4dd7b6d78, processorArchitecture=MSIL">
+      <HintPath>..\packages\zetboxBasic-Common.1.1.3\lib\net40\Zetbox.API.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Zetbox.API.Common, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ccdf16e4dd7b6d78, processorArchitecture=MSIL">
+      <HintPath>..\packages\zetboxBasic-Common.1.1.3\lib\net40\Zetbox.API.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetsModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ZetboxBase\Applications.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Applications.resx" />
+    <EmbeddedResource Include="ZetboxBase\CategoryTags.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\CategoryTags.resx" />
+    <EmbeddedResource Include="ZetboxBase\DataTypes.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\DataTypes.resx" />
+    <EmbeddedResource Include="ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptStatus.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptStatus.resx" />
+    <EmbeddedResource Include="ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptType.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Enumerations\Zetbox.Basic.Invoicing.ReceiptType.resx" />
+    <EmbeddedResource Include="ZetboxBase\Enumerations\Zetbox.Basic.Parties.Gender.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Enumerations\Zetbox.Basic.Parties.Gender.resx" />
+    <EmbeddedResource Include="ZetboxBase\Enumerations\Zetbox.Basic.Products.BillingPeriod.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Enumerations\Zetbox.Basic.Products.BillingPeriod.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\at.dasz.DocumentManagement.ImportedFile.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\at.dasz.DocumentManagement.ImportedFile.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Accounting.Account.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Accounting.Account.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Accounting.Transaction.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Accounting.Transaction.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Invoicing.Receipt.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Invoicing.Receipt.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Invoicing.ReceiptTemplate.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Invoicing.ReceiptTemplate.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Invoicing.SalesInvoice.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Invoicing.SalesInvoice.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Invoicing.StatisticActions.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Invoicing.StatisticActions.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Parties.Party.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Methods\Zetbox.Basic.Parties.Party.resx" />
+    <EmbeddedResource Include="ZetboxBase\Modules.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Modules.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.Receipt_Transaction.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.Receipt_Transaction.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.Transaction.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.Transaction.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.AbstractInvoiceGenerator.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.DefaultInvoiceGenerator.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.DefaultInvoiceGenerator.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Invoice.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItem.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItemTemplate.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.InvoiceItemTemplate.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceipt.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceipt.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceipt.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceipt.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoice.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItem.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuote.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.PurchaseQuoteItem.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Quote.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.QuoteItem.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.Receipt.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.ReceiptTemplate.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoice.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItem.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItem.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceTemplate.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesInvoiceTemplate.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuote.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuote.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuoteItem.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.SalesQuoteItem.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.StatisticActions.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.StatisticActions.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.VATType.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Invoicing.VATType.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Address.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Address.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.BankAccount.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.BankAccount.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Customer.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Customer.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.CustomerRelationship.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.CustomerRelationship.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Employee.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Employee.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Employment.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Employment.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.InternalOrganization.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.InternalOrganization.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Organization.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Organization.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationRollup.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationRollup.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationUnit.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.OrganizationUnit.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Party.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Party.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRelationship.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRelationship.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRole.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.PartyRole.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Person.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Person.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Supplier.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.Supplier.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.SupplierRelationship.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Parties.SupplierRelationship.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Products.OrderItem.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Products.OrderItem.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Products.Product.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Products.Product.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Products.ProductDetail.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Products.ProductDetail.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.zetbox.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

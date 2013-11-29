@@ -10,11 +10,12 @@ namespace Zetbox.Client.Presentables.Parties
     using Zetbox.Basic.Parties;
     using Zetbox.Client.Presentables;
     using Zetbox.Client.Presentables.ZetboxBase;
+    using Zetbox.API.Common;
 
     /// <summary>
     /// No viewmodel decriptor - Party is abstract
     /// </summary>
-    public class PartyViewModel : DataObjectViewModel
+    public abstract class PartyViewModel : DataObjectViewModel
     {
         public new delegate PartyViewModel Factory(IZetboxContext dataCtx, ViewModel parent,
             IDataObject obj);
@@ -34,8 +35,14 @@ namespace Zetbox.Client.Presentables.Parties
 
             foreach (var role in Party.PartyRole)
             {
-                var vMdl = ViewModelFactory.CreateViewModel<DataObjectViewModel.Factory>().Invoke(DataContext, this, role);
-                var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, vMdl.Name, new ViewModel[] { vMdl });
+                var vMdl = DataObjectViewModel.Fetch(ViewModelFactory, DataContext, this, role);
+                var roleCls = role.GetObjectClass(FrozenContext);
+                var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(
+                    DataContext, 
+                    this,
+                    "Roles",
+                    Assets.GetString(roleCls.Module, ZetboxAssetKeys.DataTypes, ZetboxAssetKeys.ConstructNameKey(roleCls), roleCls.Name), 
+                    new ViewModel[] { vMdl });
                 groups.Add(propGrpMdl);
             }
 
@@ -49,7 +56,7 @@ namespace Zetbox.Client.Presentables.Parties
             lst.RequestedKind = Zetbox.NamedObjects.Gui.ControlKinds.Zetbox_App_GUI_InstanceGridKind.Find(FrozenContext);
             lst.SetInitialSort("Date");
 
-            var grp = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, "Transactions", new[] { lst });
+            var grp = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, "Transactions", "Transactions", new[] { lst });
             groups.Add(grp);
 
             return groups;

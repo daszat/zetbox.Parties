@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-10-29T14:35:31.35084Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-11-25T15:27:22.5382872Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -1056,8 +1056,8 @@ public static void isValid_InternalOrganization(Balance obj, PropertyIsValidEven
     <ZetboxBase:RelationEnd>1397dc17-a277-4531-8c33-641084b2dd9f</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="7b5fbbcb-e9a9-45a5-a929-b15f3b9b315c">
-    <ZetboxBase:CategoryTags>BalanceSheet</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-12T10:15:40.1581801Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:54:36.2657194Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_BalanceSheet(InternalOrganization obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Accounting.Balance&gt;&gt; e)
 {
@@ -1086,7 +1086,7 @@ public static void isValid_BalanceSheet(InternalOrganization obj, PropertyIsVali
     <ZetboxBase:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</ZetboxBase:Module>
     <ZetboxBase:Name>BalanceSheet</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>54153a59-049b-45bf-944c-d45c4f8d26da</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>200</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>0</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>413285db-03b7-48fb-9658-571031fee4ec</ZetboxBase:RelationEnd>
@@ -5016,8 +5016,8 @@ public static void isValid_NumberSequence(AbstractInvoiceGenerator obj, Property
     <ZetboxBase:RelationEnd>64876b4c-51b7-42f8-b217-c121a286707a</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="930396f9-f45a-4ee8-9afc-15a0631170c0">
-    <ZetboxBase:CategoryTags>Sales_invoices</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T10:16:19.7855387Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_SalesInvoices(Customer obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Invoicing.SalesInvoice&gt;&gt; e)
 {
@@ -5126,8 +5126,8 @@ public static void isValid_LastCreationDate(DefaultInvoiceGenerator obj, Propert
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
   </ZetboxBase:DateTimeProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="1a8a2cb7-d4b4-459a-9d00-c3bb53ab35df">
-    <ZetboxBase:CategoryTags>Sales_invoices</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T10:18:03.3744636Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Receipts</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_InvoiceGenerator(InternalOrganization obj, PropertyGetterEventArgs&lt;Zetbox.Basic.Invoicing.AbstractInvoiceGenerator&gt; e)
 {
@@ -5156,14 +5156,14 @@ public static void isValid_InvoiceGenerator(InternalOrganization obj, PropertyIs
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>InvoiceGenerator</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>54153a59-049b-45bf-944c-d45c4f8d26da</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>100</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>902</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>4021ddd5-9090-4f65-a33a-a388fe56e533</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="c74f923b-921a-42ea-add4-0b0b10124889">
-    <ZetboxBase:CategoryTags>Other_expenses</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T10:18:13.5510457Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Receipts</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_OtherExpenses(InternalOrganization obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Invoicing.OtherExpenseReceipt&gt;&gt; e)
 {
@@ -5192,14 +5192,14 @@ public static void isValid_OtherExpenses(InternalOrganization obj, PropertyIsVal
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>OtherExpenses</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>54153a59-049b-45bf-944c-d45c4f8d26da</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>500</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>907</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>dc82359a-bf45-4cce-bffa-23f86c4b2d4e</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="b78373fc-056e-4cbc-b048-a835d0580093">
-    <ZetboxBase:CategoryTags>Other_incomes</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T10:18:32.5171305Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Receipts</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_OtherIncomes(InternalOrganization obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Invoicing.OtherIncomeReceipt&gt;&gt; e)
 {
@@ -5228,14 +5228,14 @@ public static void isValid_OtherIncomes(InternalOrganization obj, PropertyIsVali
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>OtherIncomes</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>54153a59-049b-45bf-944c-d45c4f8d26da</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>600</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>906</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>ccd0998b-40b7-4cd1-9f03-017cbd6a7483</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="ce0f3e3c-8a55-4e1c-b9f3-464f13e4f1ac">
-    <ZetboxBase:CategoryTags>PurchaseInvoices</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:30:00.7247765Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Receipts</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_PurchaseInvoices(InternalOrganization obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Invoicing.PurchaseInvoice&gt;&gt; e)
 {
@@ -5260,17 +5260,18 @@ public static void isValid_PurchaseInvoices(InternalOrganization obj, PropertyIs
 
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-07-27T00:50:01Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Label>Purchase invoices</ZetboxBase:Label>
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>PurchaseInvoices</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>54153a59-049b-45bf-944c-d45c4f8d26da</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>400</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>905</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>eb45015d-8326-4048-a3c5-fbf7d32e7282</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="3c520c5c-c44e-403d-8dcf-b5c83cfda1b4">
-    <ZetboxBase:CategoryTags>Sales_invoices</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T10:18:44.1427954Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Receipts</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_SalesInvoices(InternalOrganization obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Invoicing.SalesInvoice&gt;&gt; e)
 {
@@ -5299,7 +5300,7 @@ public static void isValid_SalesInvoices(InternalOrganization obj, PropertyIsVal
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>SalesInvoices</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>54153a59-049b-45bf-944c-d45c4f8d26da</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>300</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>904</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>a948aba8-a3c3-4cae-b962-0a17e547b663</ZetboxBase:RelationEnd>
@@ -6451,8 +6452,8 @@ public static void isValid_Party(OtherIncomeReceiptTemplate obj, PropertyIsValid
     <ZetboxBase:RelationEnd>d8ff5b60-b13b-4a8c-9cb8-686ca244ef2a</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="a7a77bd6-a4bf-49f9-94ea-cb82edff812c">
-    <ZetboxBase:CategoryTags>Other_expenses</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T10:18:32.5171305Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Attachments</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T08:27:43.6495748Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_OtherExpenses(Party obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Invoicing.OtherExpenseReceipt&gt;&gt; e)
 {
@@ -6481,14 +6482,14 @@ public static void isValid_OtherExpenses(Party obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>OtherExpenses</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>11</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>14</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>0526b7cd-e513-4321-b748-08679e7eaf92</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="b330ca69-163f-4025-b368-18987299c0e9">
-    <ZetboxBase:CategoryTags>Other_incomes</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T10:18:32.5171305Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Attachments</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T08:27:43.6495748Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_OtherIncomes(Party obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Invoicing.OtherIncomeReceipt&gt;&gt; e)
 {
@@ -6517,7 +6518,7 @@ public static void isValid_OtherIncomes(Party obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>73b3078c-d541-4015-b27e-7820408052e9</ZetboxBase:Module>
     <ZetboxBase:Name>OtherIncomes</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>10</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>13</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>533050d8-c93f-4761-a60d-dbefbd625fc8</ZetboxBase:RelationEnd>
@@ -9626,8 +9627,8 @@ public static void isValid_Module(StatisticActions obj, PropertyIsValidEventArgs
     <ZetboxBase:RelationEnd>d7e07e0e-52b7-469e-8fb0-f1626192158a</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="40168ac4-0ceb-409e-a1af-ed968911ce6d">
-    <ZetboxBase:CategoryTags>Purchase_invoices</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T10:16:19.7855387Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_PurchaseInvoices(Supplier obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Invoicing.PurchaseInvoice&gt;&gt; e)
 {
@@ -13893,6 +13894,7 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <ZetboxBase:CreatedOn>2012-05-10T11:17:08.455882Z</ZetboxBase:CreatedOn>
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Address</ZetboxBase:Name>
+    <GUI:RequestedKind>3a966d6f-84e1-452f-b7ae-f4d4a90f660a</GUI:RequestedKind>
     <GUI:ShowIconInLists>false</GUI:ShowIconInLists>
     <GUI:ShowIdInLists>false</GUI:ShowIdInLists>
     <GUI:ShowNameInLists>false</GUI:ShowNameInLists>
@@ -13938,7 +13940,7 @@ public static void ObjectIsValid(Association obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -13949,6 +13951,7 @@ public static void ObjectIsValid(Association obj, ObjectIsValidEventArgs e)
     <ZetboxBase:CreatedOn>2012-05-10T11:45:58.7068467Z</ZetboxBase:CreatedOn>
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>BankAccount</ZetboxBase:Name>
+    <GUI:RequestedKind>80d9d5ec-9e9a-479b-896b-559b1cbddf09</GUI:RequestedKind>
     <GUI:ShowIconInLists>false</GUI:ShowIconInLists>
     <GUI:ShowIdInLists>false</GUI:ShowIdInLists>
     <GUI:ShowNameInLists>false</GUI:ShowNameInLists>
@@ -13994,7 +13997,7 @@ public static void ObjectIsValid(Competitor obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -14041,7 +14044,7 @@ public static void ObjectIsValid(Contact obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -14088,7 +14091,7 @@ public static void ObjectIsValid(Contractor obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -14135,7 +14138,7 @@ public static void ObjectIsValid(Customer obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -14276,7 +14279,7 @@ public static void ObjectIsValid(DistributionChannel obj, ObjectIsValidEventArgs
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -14370,7 +14373,7 @@ public static void ObjectIsValid(Employee obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -14464,7 +14467,7 @@ public static void ObjectIsValid(FamilyMember obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -14521,7 +14524,7 @@ public static void ObjectIsValid(HouseHold obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -14533,6 +14536,7 @@ public static void ObjectIsValid(HouseHold obj, ObjectIsValidEventArgs e)
     <GUI:DefaultIcon>5ec2d5a8-ee02-4252-9ab3-9c031160be22</GUI:DefaultIcon>
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>InternalOrganization</ZetboxBase:Name>
+    <GUI:RequestedKind>791b0f1f-875b-4376-97de-5833974ddc43</GUI:RequestedKind>
     <GUI:ShowIconInLists>true</GUI:ShowIconInLists>
     <GUI:ShowIdInLists>false</GUI:ShowIdInLists>
     <GUI:ShowNameInLists>true</GUI:ShowNameInLists>
@@ -14568,7 +14572,7 @@ public static void ObjectIsValid(InternalOrganization obj, ObjectIsValidEventArg
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -14663,7 +14667,7 @@ public static void ObjectIsValid(OrganizationRole obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>true</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -14757,7 +14761,7 @@ public static void ObjectIsValid(OrganizationUnit obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>true</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -14898,7 +14902,7 @@ public static void ObjectIsValid(Partner obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -15038,7 +15042,7 @@ public static void ObjectIsValid(PartyRole obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>true</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -15133,7 +15137,7 @@ public static void ObjectIsValid(PersonRole obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>true</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -15180,7 +15184,7 @@ public static void ObjectIsValid(RegulatoryAgency obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -15274,7 +15278,7 @@ public static void ObjectIsValid(Supplier obj, ObjectIsValidEventArgs e)
 }
 
 </ZetboxBase:CodeTemplate>
-    <GUI:DefaultViewModelDescriptor>d8e95ac5-d46a-4dfa-a574-12ea299eadc4</GUI:DefaultViewModelDescriptor>
+    <GUI:DefaultViewModelDescriptor>417ec857-eede-410c-b789-6896cf2ac5d2</GUI:DefaultViewModelDescriptor>
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
     <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
@@ -15735,8 +15739,8 @@ public static void isValid_Name(BankAccount obj, PropertyIsValidEventArgs e)
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
   </ZetboxBase:StringProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="06bb0fd1-2162-4cca-904f-85efbd930a53">
-    <ZetboxBase:CategoryTags>Customer_relationship</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T10:16:19.7855387Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_CustomerRelationship(Customer obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Parties.CustomerRelationship&gt;&gt; e)
 {
@@ -16059,8 +16063,8 @@ public static void isValid_Salary(Employment obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Scale>2</ZetboxBase:Scale>
   </ZetboxBase:DecimalProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="adaec8bb-9896-4602-95cb-674027fcc37f">
-    <ZetboxBase:CategoryTags>CustomerRelationship</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.088285Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_CustomerRelationship(InternalOrganization obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Parties.CustomerRelationship&gt;&gt; e)
 {
@@ -16095,8 +16099,8 @@ public static void isValid_CustomerRelationship(InternalOrganization obj, Proper
     <ZetboxBase:RelationEnd>732d3ff0-7cb7-407e-ae6c-6e797f6c8cad</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="dd6bcf25-6103-42d5-a94e-9a7ed94d3a25">
-    <ZetboxBase:CategoryTags>Employments</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.088285Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:51:45.7209648Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Employments(InternalOrganization obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Parties.Employment&gt;&gt; e)
 {
@@ -16124,14 +16128,14 @@ public static void isValid_Employments(InternalOrganization obj, PropertyIsValid
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Employments</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>54153a59-049b-45bf-944c-d45c4f8d26da</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>900</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>1</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>987d5bb8-7f3d-4c56-a6db-530147f296fb</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="31baaa31-bf51-402e-8f29-36bd0ded2677">
-    <ZetboxBase:CategoryTags>Supplier_relationship</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T10:17:07.5532708Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_SupplierRelationships(InternalOrganization obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Parties.SupplierRelationship&gt;&gt; e)
 {
@@ -16156,6 +16160,7 @@ public static void isValid_SupplierRelationships(InternalOrganization obj, Prope
 
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2011-07-22T23:23:15Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Label>Supplier relationships</ZetboxBase:Label>
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>SupplierRelationships</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>54153a59-049b-45bf-944c-d45c4f8d26da</ZetboxBase:ObjectClass>
@@ -16345,8 +16350,8 @@ public static void isValid_Parent(OrganizationRollup obj, PropertyIsValidEventAr
     <ZetboxBase:RelationEnd>8ad7bfbc-8148-4e95-8da9-b720076f342d</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="1ec345d5-856e-4b9e-b1a0-ec3bda567121">
-    <ZetboxBase:CategoryTags />
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.088285Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_ChildRollups(OrganizationUnit obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Parties.OrganizationRollup&gt;&gt; e)
 {
@@ -16380,8 +16385,8 @@ public static void isValid_ChildRollups(OrganizationUnit obj, PropertyIsValidEve
     <ZetboxBase:RelationEnd>e8ab3484-b76a-4ba0-b017-b6b57116ebb4</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="5ab604af-4a27-46ce-b7d3-e47dc6162f00">
-    <ZetboxBase:CategoryTags />
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.088285Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_ParentRollups(OrganizationUnit obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Parties.OrganizationRollup&gt;&gt; e)
 {
@@ -16416,7 +16421,7 @@ public static void isValid_ParentRollups(OrganizationUnit obj, PropertyIsValidEv
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:CompoundObjectProperty ExportGuid="d6c6dc7f-a00e-482b-8cab-a3e7d0c0b1f2">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:18:24.3499461Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-11-25T14:14:41.4837573Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Address(Party obj, PropertyGetterEventArgs&lt;Zetbox.Basic.Parties.Address&gt; e)
 {
@@ -16445,6 +16450,7 @@ public static void isValid_Address(Party obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Name>Address</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</ZetboxBase:ObjectClass>
     <ZetboxBase:Properties_pos>3</ZetboxBase:Properties_pos>
+    <GUI:RequestedKind>3a966d6f-84e1-452f-b7ae-f4d4a90f660a</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>a63b9f47-18b7-463d-a06b-7b636de9553f</GUI:ValueModelDescriptor>
     <ZetboxBase:CompoundObjectDefinition>65cea6d5-76ee-4377-ad6a-05037aff48c8</ZetboxBase:CompoundObjectDefinition>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
@@ -16452,7 +16458,7 @@ public static void isValid_Address(Party obj, PropertyIsValidEventArgs e)
   </ZetboxBase:CompoundObjectProperty>
   <ZetboxBase:CompoundObjectProperty ExportGuid="df2191e1-4988-40cb-87ca-7ed99a3d7177">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:18:57.1588227Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-11-25T14:15:22.8871255Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_BankAccount(Party obj, PropertyGetterEventArgs&lt;Zetbox.Basic.Parties.BankAccount&gt; e)
 {
@@ -16481,7 +16487,8 @@ public static void isValid_BankAccount(Party obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>BankAccount</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>8</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>9</ZetboxBase:Properties_pos>
+    <GUI:RequestedKind>80d9d5ec-9e9a-479b-896b-559b1cbddf09</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>a63b9f47-18b7-463d-a06b-7b636de9553f</GUI:ValueModelDescriptor>
     <ZetboxBase:CompoundObjectDefinition>bbd2740b-138e-45b4-8668-4b9c352193a6</ZetboxBase:CompoundObjectDefinition>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
@@ -16563,7 +16570,7 @@ public static void isValid_ChangedOn(Party obj, PropertyIsValidEventArgs e)
   </ZetboxBase:DateTimeProperty>
   <ZetboxBase:StringProperty ExportGuid="969bcdd5-8f4d-43ed-97ea-f85770042f11">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:18:57.1588227Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-11-22T08:26:32.1154833Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Comment(Party obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -16591,7 +16598,7 @@ public static void isValid_Comment(Party obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Comment</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>9</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>11</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>a5e18586-d80f-49cf-8aa1-41d305eee289</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -16673,7 +16680,7 @@ public static void isValid_CreatedOn(Party obj, PropertyIsValidEventArgs e)
   </ZetboxBase:DateTimeProperty>
   <ZetboxBase:CompoundObjectProperty ExportGuid="59b52eef-82b4-4699-959e-e2ff106e2cbe">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-04-08T09:19:44.0657052Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-11-25T14:27:22.5382872Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_DeliveryAddresses(Party obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Parties.Address&gt;&gt; e)
 {
@@ -16747,8 +16754,8 @@ public static void isValid_ExportGuid(Party obj, PropertyIsValidEventArgs e)
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
   </ZetboxBase:GuidProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="b5660398-657b-469a-8fc8-e7ada6c25502">
-    <ZetboxBase:CategoryTags>Files</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T09:40:33.1337572Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Attachments</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T08:27:43.6495748Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Files(Party obj, PropertyGetterEventArgs&lt;ICollection&lt;at.dasz.DocumentManagement.File&gt;&gt; e)
 {
@@ -16776,14 +16783,14 @@ public static void isValid_Files(Party obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Files</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>0</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>12</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>3cc673e3-5f13-4bc6-97ad-ef4bb907d24a</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:CompoundObjectProperty ExportGuid="d991a56d-018b-47d9-ba6a-a8beb57b7b0a">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:18:24.3499461Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-11-25T14:14:41.4837573Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_InvoiceAddress(Party obj, PropertyGetterEventArgs&lt;Zetbox.Basic.Parties.Address&gt; e)
 {
@@ -16813,14 +16820,15 @@ public static void isValid_InvoiceAddress(Party obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Name>InvoiceAddress</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</ZetboxBase:ObjectClass>
     <ZetboxBase:Properties_pos>5</ZetboxBase:Properties_pos>
+    <GUI:RequestedKind>3a966d6f-84e1-452f-b7ae-f4d4a90f660a</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>a63b9f47-18b7-463d-a06b-7b636de9553f</GUI:ValueModelDescriptor>
     <ZetboxBase:CompoundObjectDefinition>65cea6d5-76ee-4377-ad6a-05037aff48c8</ZetboxBase:CompoundObjectDefinition>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
   </ZetboxBase:CompoundObjectProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="017a81e1-9538-4911-a33a-171325d16d40">
-    <ZetboxBase:CategoryTags>Roles</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.089285Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Hidden</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T08:26:32.1154833Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_PartyRole(Party obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Parties.PartyRole&gt;&gt; e)
 {
@@ -17300,8 +17308,8 @@ public static void isValid_ExportGuid(PartyRole obj, PropertyIsValidEventArgs e)
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
   </ZetboxBase:GuidProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="2dce91c8-8596-4833-b299-b6d3accacee4">
-    <ZetboxBase:CategoryTags>Summary, Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:48:40.8688451Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:51:45.7209648Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Party(PartyRole obj, PropertyGetterEventArgs&lt;Zetbox.Basic.Parties.Party&gt; e)
 {
@@ -17594,8 +17602,8 @@ public static void isValid_Suffix(Person obj, PropertyIsValidEventArgs e)
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
   </ZetboxBase:StringProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="8bb42e49-899c-4a8b-bbae-fcd4887dfa82">
-    <ZetboxBase:CategoryTags>Supplier_relation</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T10:16:19.7855387Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_SupplierRelation(Supplier obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Parties.SupplierRelationship&gt;&gt; e)
 {
@@ -18647,32 +18655,18 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <ZetboxBase:ObjectClass>a84638fa-40a4-4969-8ebd-d5b98ca0310d</ZetboxBase:ObjectClass>
   </ZetboxBase:ObjectReferenceParameter>
   <ZetboxBase:Assembly ExportGuid="e3dc0edf-60d6-4d72-ba5e-5b6df2689c78">
-    <ZetboxBase:ChangedOn>2011-10-20T21:07:36.949622Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-11-22T08:22:52.603928Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-10-20T21:04:35.307622Z</ZetboxBase:CreatedOn>
     <ZetboxBase:DeploymentRestrictions>1</ZetboxBase:DeploymentRestrictions>
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
-    <ZetboxBase:Name>Zetbox.Parties.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</ZetboxBase:Name>
+    <ZetboxBase:Name>Zetbox.Parties.Client</ZetboxBase:Name>
   </ZetboxBase:Assembly>
   <ZetboxBase:Assembly ExportGuid="d4e45693-19a5-4fd4-ad41-a4879e13240d">
-    <ZetboxBase:ChangedOn>2012-06-21T08:22:17.7371559Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-11-22T08:22:52.603928Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2012-06-21T08:22:17.7371559Z</ZetboxBase:CreatedOn>
     <ZetboxBase:DeploymentRestrictions>1</ZetboxBase:DeploymentRestrictions>
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
-    <ZetboxBase:Name>Zetbox.Parties.Client.WPF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</ZetboxBase:Name>
-  </ZetboxBase:Assembly>
-  <ZetboxBase:Assembly ExportGuid="8f3abcd4-341e-483f-a04c-aedd98ab9e9d">
-    <ZetboxBase:ChangedOn>2011-10-20T21:07:45.184622Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-10-20T21:04:55.792622Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:DeploymentRestrictions>0</ZetboxBase:DeploymentRestrictions>
-    <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
-    <ZetboxBase:Name>Zetbox.Parties.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</ZetboxBase:Name>
-  </ZetboxBase:Assembly>
-  <ZetboxBase:Assembly ExportGuid="8af47313-fd4f-43e1-a188-a947dcd5197e">
-    <ZetboxBase:ChangedOn>2011-10-20T21:07:45.184622Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-10-20T21:05:10.310622Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:DeploymentRestrictions>2</ZetboxBase:DeploymentRestrictions>
-    <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
-    <ZetboxBase:Name>Zetbox.Parties.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</ZetboxBase:Name>
+    <ZetboxBase:Name>Zetbox.Parties.Client.WPF</ZetboxBase:Name>
   </ZetboxBase:Assembly>
   <GUI:ViewModelDescriptor ExportGuid="f5ebd849-58e0-4b13-a564-7e243589c25d">
     <GUI:Deleted>false</GUI:Deleted>
@@ -18680,12 +18674,47 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
     <GUI:ViewModelTypeRef>Zetbox.Client.Presentables.Parties.OrganizationViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
+  <GUI:ViewModelDescriptor ExportGuid="417ec857-eede-410c-b789-6896cf2ac5d2">
+    <GUI:DefaultEditorKind>5aabbdd4-bd69-461d-afab-61eee85efde7</GUI:DefaultEditorKind>
+    <GUI:Deleted>false</GUI:Deleted>
+    <GUI:Description>ViewModel for editing a PartyRole</GUI:Description>
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:ViewModelTypeRef>Zetbox.Client.Presentables.Parties.PartyRoleViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
+  </GUI:ViewModelDescriptor>
   <GUI:ViewModelDescriptor ExportGuid="dad0f30a-a830-4a0c-a84f-22270d211753">
     <GUI:Deleted>false</GUI:Deleted>
     <GUI:Description>Specialized ViewModel for Persons</GUI:Description>
     <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
     <GUI:ViewModelTypeRef>Zetbox.Client.Presentables.Parties.PersonViewModel, Zetbox.Parties.Client</GUI:ViewModelTypeRef>
   </GUI:ViewModelDescriptor>
+  <GUI:ViewDescriptor ExportGuid="124587a3-d1dc-4514-b523-fe900240ce90">
+    <GUI:ControlKind>3a966d6f-84e1-452f-b7ae-f4d4a90f660a</GUI:ControlKind>
+    <GUI:ControlTypeRef>Zetbox.Parties.Client.WPF.View.Parties.AddressEditor, Zetbox.Parties.Client.WPF</GUI:ControlTypeRef>
+    <GUI:Deleted>false</GUI:Deleted>
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:Toolkit>0</GUI:Toolkit>
+  </GUI:ViewDescriptor>
+  <GUI:ViewDescriptor ExportGuid="bc6a133c-9047-45ed-8a8c-edb893ff7ff2">
+    <GUI:ControlKind>80d9d5ec-9e9a-479b-896b-559b1cbddf09</GUI:ControlKind>
+    <GUI:ControlTypeRef>Zetbox.Parties.Client.WPF.View.Parties.BankAccountEditor, Zetbox.Parties.Client.WPF</GUI:ControlTypeRef>
+    <GUI:Deleted>false</GUI:Deleted>
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:Toolkit>0</GUI:Toolkit>
+  </GUI:ViewDescriptor>
+  <GUI:ViewDescriptor ExportGuid="41008a51-1662-4682-b979-c99e284d95ad">
+    <GUI:ControlKind>5aabbdd4-bd69-461d-afab-61eee85efde7</GUI:ControlKind>
+    <GUI:ControlTypeRef>Zetbox.Parties.Client.WPF.View.Parties.PartyRoleEditor, Zetbox.Parties.Client.WPF</GUI:ControlTypeRef>
+    <GUI:Deleted>false</GUI:Deleted>
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:Toolkit>0</GUI:Toolkit>
+  </GUI:ViewDescriptor>
+  <GUI:ViewDescriptor ExportGuid="3bc2cd4a-95ce-449f-85d8-753af1b8e2f8">
+    <GUI:ControlKind>791b0f1f-875b-4376-97de-5833974ddc43</GUI:ControlKind>
+    <GUI:ControlTypeRef>Zetbox.Parties.Client.WPF.View.Parties.PartyRoleTabbedEditor, Zetbox.Parties.Client.WPF</GUI:ControlTypeRef>
+    <GUI:Deleted>false</GUI:Deleted>
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:Toolkit>0</GUI:Toolkit>
+  </GUI:ViewDescriptor>
   <GUI:NavigationSearchScreen ExportGuid="c0cc663c-ab2b-4cdd-b7ff-ce6069fabdc6">
     <GUI:ChangedOn>2012-10-16T10:20:04.6346262Z</GUI:ChangedOn>
     <GUI:CreatedOn>2012-10-16T10:18:58.0618184Z</GUI:CreatedOn>
@@ -18804,9 +18833,28 @@ public static void AddPartyRoleCanExecReason(Party obj, MethodReturnEventArgs&lt
     <GUI:Title>zetbox Parties</GUI:Title>
     <GUI:ViewModelDescriptor>ebc13c2a-0375-46e6-9fc2-a4ee5afc3568</GUI:ViewModelDescriptor>
   </GUI:NavigationScreen>
+  <GUI:ControlKind ExportGuid="3a966d6f-84e1-452f-b7ae-f4d4a90f660a">
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:Name>Zetbox.Basic.Parties.AddressEditor</GUI:Name>
+  </GUI:ControlKind>
+  <GUI:ControlKind ExportGuid="5aabbdd4-bd69-461d-afab-61eee85efde7">
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:Name>Zetbox.Basic.Parties.PartyRoleEditor</GUI:Name>
+    <GUI:Parent>06bf9adc-c5bc-4552-abdc-18a96c527962</GUI:Parent>
+  </GUI:ControlKind>
+  <GUI:ControlKind ExportGuid="791b0f1f-875b-4376-97de-5833974ddc43">
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:Name>Zetbox.Basic.Parties.PartyRoleTabbedEditor</GUI:Name>
+    <GUI:Parent>5aabbdd4-bd69-461d-afab-61eee85efde7</GUI:Parent>
+  </GUI:ControlKind>
+  <GUI:ControlKind ExportGuid="80d9d5ec-9e9a-479b-896b-559b1cbddf09">
+    <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
+    <GUI:Name>Zetbox.Basic.Parties.BankAccountEditor</GUI:Name>
+  </GUI:ControlKind>
   <GUI:Application ExportGuid="d80b20cf-8a8e-4300-83cd-129eb28f7d9b">
     <GUI:ChangedOn>2011-10-20T21:53:52.218622Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-10-20T21:53:52.218622Z</GUI:CreatedOn>
+    <GUI:Icon>8e37eb7b-f38d-4229-96c5-5a593fe8db56</GUI:Icon>
     <GUI:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</GUI:Module>
     <GUI:Name>Parties</GUI:Name>
     <GUI:RootScreen>702e6fde-6b9d-4286-8f04-f4d6076a488f</GUI:RootScreen>
@@ -19007,8 +19055,8 @@ public static void ObjectIsValid(ProductDetail obj, ObjectIsValidEventArgs e)
     <ZetboxBase:Value>3</ZetboxBase:Value>
   </ZetboxBase:EnumerationEntry>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="f3b8747a-d023-4c3f-9d69-233e16a60874">
-    <ZetboxBase:CategoryTags>Orders</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-03-20T16:02:31.0233358Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2013-11-22T09:50:44.3184528Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Orders(Customer obj, PropertyGetterEventArgs&lt;ICollection&lt;Zetbox.Basic.Products.OrderItem&gt;&gt; e)
 {
