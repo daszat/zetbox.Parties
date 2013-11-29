@@ -50,7 +50,7 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
                 t.Date = DateTime.Today;
             };
 
-            var grp = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, "Transactions", new[] { lst });
+            var grp = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, "Transactions", "Transactions", new[] { lst });
             result.Add(grp);
             return result;
         }

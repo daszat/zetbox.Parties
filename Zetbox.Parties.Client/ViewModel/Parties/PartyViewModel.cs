@@ -40,6 +40,7 @@ namespace Zetbox.Client.Presentables.Parties
                 var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(
                     DataContext, 
                     this,
+                    "Roles",
                     Assets.GetString(roleCls.Module, ZetboxAssetKeys.DataTypes, ZetboxAssetKeys.ConstructNameKey(roleCls), roleCls.Name), 
                     new ViewModel[] { vMdl });
                 groups.Add(propGrpMdl);
@@ -55,7 +56,7 @@ namespace Zetbox.Client.Presentables.Parties
             lst.RequestedKind = Zetbox.NamedObjects.Gui.ControlKinds.Zetbox_App_GUI_InstanceGridKind.Find(FrozenContext);
             lst.SetInitialSort("Date");
 
-            var grp = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, "Transactions", new[] { lst });
+            var grp = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(DataContext, this, "Transactions", "Transactions", new[] { lst });
             groups.Add(grp);
 
             return groups;
