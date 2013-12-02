@@ -19,6 +19,7 @@
   </metadata>
   <files>
     <file src="Common\zetbox.Parties.Common.dll" target="zetbox\Common" />
+    <file src="Common\zetbox.Parties.Assets.dll" target="zetbox\Common" />
     <file src="Client\zetbox.Parties.Client.dll" target="zetbox\Client" />
     <file src="Client\zetbox.Parties.Client.WPF.dll" target="zetbox\Client" />
     <file src="Server\zetbox.Parties.Server.dll" target="zetbox\Server" />

@@ -6,6 +6,4 @@
 bin
 obj
 
-# Only commit repositories.config. The rest of /packages is only a local cache
-!/packages/repositories.config
-/packages/*
+/packages
