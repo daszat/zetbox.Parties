@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+	<!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,254 +59,179 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="Zetbox.Basic.Accounting.Account Settings" xml:space="preserve">
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Zetbox.Basic.Accounting.Account Settings" xml:space="preserve">
     <value>Account Settings</value>
   </data>
-  <data name="Zetbox.Basic.Accounting.Account Settings_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Accounting.Accounting" xml:space="preserve">
+	<data name="Zetbox.Basic.Accounting.Accounting" xml:space="preserve">
     <value>Accounting</value>
   </data>
-  <data name="Zetbox.Basic.Accounting.Accounting_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Accounting.Accounts" xml:space="preserve">
+	<data name="Zetbox.Basic.Accounting.Accounts" xml:space="preserve">
     <value>Accounts</value>
   </data>
-  <data name="Zetbox.Basic.Accounting.Accounts_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Parties.Active workflows" xml:space="preserve">
+	<data name="Zetbox.Basic.Parties.Active workflows" xml:space="preserve">
     <value>Active workflows</value>
   </data>
-  <data name="Zetbox.Basic.Parties.Active workflows_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Parties.Definitions" xml:space="preserve">
+	<data name="Zetbox.Basic.Parties.Definitions" xml:space="preserve">
     <value>Definitions</value>
   </data>
-  <data name="Zetbox.Basic.Parties.Definitions_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Parties.Documents" xml:space="preserve">
+	<data name="Zetbox.Basic.Parties.Documents" xml:space="preserve">
     <value>Documents</value>
   </data>
-  <data name="Zetbox.Basic.Parties.Documents_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Parties.Documents" xml:space="preserve">
+	<data name="Zetbox.Basic.Parties.Documents" xml:space="preserve">
     <value>Documents</value>
   </data>
-  <data name="Zetbox.Basic.Parties.Documents_color" xml:space="preserve">
+	<data name="Zetbox.Basic.Parties.Documents_color" xml:space="preserve">
     <value />
   </data>
-  <data name="Zetbox.Basic.Parties.Imported files" xml:space="preserve">
+	<data name="Zetbox.Basic.Parties.Imported files" xml:space="preserve">
     <value>Imported files</value>
   </data>
-  <data name="Zetbox.Basic.Parties.Imported files_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.Invoice Generators" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Invoice Generators" xml:space="preserve">
     <value>Invoice Generators</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Invoice Generators_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.Invoices" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Invoices" xml:space="preserve">
     <value>Invoices</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Invoices_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.Open receipts" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Open receipts" xml:space="preserve">
     <value>Open receipts</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Open receipts_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Parties.Organizations" xml:space="preserve">
+	<data name="Zetbox.Basic.Parties.Organizations" xml:space="preserve">
     <value>Organizations</value>
   </data>
-  <data name="Zetbox.Basic.Parties.Organizations_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.Other expense receipts" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Other expense receipts" xml:space="preserve">
     <value>Other expense receipts</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Other expense receipts_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.Other income receipts" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Other income receipts" xml:space="preserve">
     <value>Other income receipts</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Other income receipts_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Parties.Parties" xml:space="preserve">
+	<data name="Zetbox.Basic.Parties.Parties" xml:space="preserve">
     <value>Parties</value>
   </data>
-  <data name="Zetbox.Basic.Parties.Parties_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Parties.People" xml:space="preserve">
+	<data name="Zetbox.Basic.Parties.People" xml:space="preserve">
     <value>People</value>
   </data>
-  <data name="Zetbox.Basic.Parties.People_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.Purchase" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Purchase" xml:space="preserve">
     <value>Purchase</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Purchase_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.Purchase" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Purchase" xml:space="preserve">
     <value>Purchase</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Purchase_color" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Purchase_color" xml:space="preserve">
     <value />
   </data>
-  <data name="Zetbox.Basic.Invoicing.Purchase" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Purchase" xml:space="preserve">
     <value>Purchase</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Purchase_color" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Purchase_color" xml:space="preserve">
     <value />
   </data>
-  <data name="Zetbox.Basic.Invoicing.Quotes" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Quotes" xml:space="preserve">
     <value>Quotes</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Quotes_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.Reports" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Reports" xml:space="preserve">
     <value>Reports</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Reports_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.Reports" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Reports" xml:space="preserve">
     <value>Reports</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Reports_color" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Reports_color" xml:space="preserve">
     <value />
   </data>
-  <data name="Zetbox.Basic.Accounting.Reports" xml:space="preserve">
+	<data name="Zetbox.Basic.Accounting.Reports" xml:space="preserve">
     <value>Reports</value>
   </data>
-  <data name="Zetbox.Basic.Accounting.Reports_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.Sales" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Sales" xml:space="preserve">
     <value>Sales</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Sales_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.Sales" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Sales" xml:space="preserve">
     <value>Sales</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Sales_color" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Sales_color" xml:space="preserve">
     <value />
   </data>
-  <data name="Zetbox.Basic.Invoicing.Sales" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Sales" xml:space="preserve">
     <value>Sales</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Sales_color" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Sales_color" xml:space="preserve">
     <value />
   </data>
-  <data name="Zetbox.Basic.Invoicing.Sales" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Sales" xml:space="preserve">
     <value>Sales</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Sales_color" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Sales_color" xml:space="preserve">
     <value />
   </data>
-  <data name="Zetbox.Basic.Parties.Settings" xml:space="preserve">
+	<data name="Zetbox.Basic.Parties.Settings" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="Zetbox.Basic.Parties.Settings_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.Templates" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.Templates" xml:space="preserve">
     <value>Templates</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.Templates_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Invoicing.VAT Types" xml:space="preserve">
+	<data name="Zetbox.Basic.Invoicing.VAT Types" xml:space="preserve">
     <value>VAT Types</value>
   </data>
-  <data name="Zetbox.Basic.Invoicing.VAT Types_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Parties.Workflow" xml:space="preserve">
+	<data name="Zetbox.Basic.Parties.Workflow" xml:space="preserve">
     <value>Workflow</value>
   </data>
-  <data name="Zetbox.Basic.Parties.Workflow_color" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Zetbox.Basic.Parties.zetbox Parties" xml:space="preserve">
+	<data name="Zetbox.Basic.Parties.zetbox Parties" xml:space="preserve">
     <value>zetbox Parties</value>
-  </data>
-  <data name="Zetbox.Basic.Parties.zetbox Parties_color" xml:space="preserve">
-    <value />
   </data>
 </root>

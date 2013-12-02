@@ -135,6 +135,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GUI\Applications.de.resx" />
+    <EmbeddedResource Include="GUI\Applications.resx" />
+    <EmbeddedResource Include="GUI\NavigationEntries.de.resx" />
+    <EmbeddedResource Include="GUI\NavigationEntries.resx" />
     <EmbeddedResource Include="ZetboxBase\Applications.de.resx" />
     <EmbeddedResource Include="ZetboxBase\Applications.resx" />
     <EmbeddedResource Include="ZetboxBase\CategoryTags.de.resx" />

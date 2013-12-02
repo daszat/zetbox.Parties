@@ -117,7 +117,97 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
-	<data name="Zetbox.Basic.Parties.Parties" xml:space="preserve">
-    <value>Parties</value>
+	<data name="Zetbox.Basic.Parties.Documents" xml:space="preserve">
+    <value>Dokumente</value>
   </data>
+	<data name="Zetbox.Basic.Invoicing.Purchase" xml:space="preserve">
+    <value>Einkauf</value>
+  </data>
+	<data name="Zetbox.Basic.Invoicing.Purchase" xml:space="preserve">
+    <value>Purchase</value>
+  </data>
+	<data name="Zetbox.Basic.Invoicing.Purchase_color" xml:space="preserve">
+    <value />
+  </data>
+	<data name="Zetbox.Basic.Invoicing.Reports" xml:space="preserve">
+    <value>Berichte</value>
+  </data>
+	<data name="Zetbox.Basic.Invoicing.Sales" xml:space="preserve">
+    <value>Verkauf</value>
+  </data>
+	<data name="Zetbox.Basic.Invoicing.Sales" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+	<data name="Zetbox.Basic.Invoicing.Sales_color" xml:space="preserve">
+    <value />
+  </data>
+	<data name="Zetbox.Basic.Invoicing.Sales" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+	<data name="Zetbox.Basic.Invoicing.Sales_color" xml:space="preserve">
+    <value />
+  </data>
+	<data name="Zetbox.Basic.Accounting.Account Settings" xml:space="preserve">
+		<value>Buchhaltung-Einstellungen</value>
+	</data>
+	<data name="Zetbox.Basic.Accounting.Accounting" xml:space="preserve">
+		<value>Buchhaltung</value>
+	</data>
+	<data name="Zetbox.Basic.Accounting.Accounts" xml:space="preserve">
+		<value>Konten</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Active workflows" xml:space="preserve">
+		<value>Aktive Workflows</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Definitions" xml:space="preserve">
+		<value>Definitionen</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Imported files" xml:space="preserve">
+		<value>Importierte Dateien</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.Invoice Generators" xml:space="preserve">
+		<value>Rechnungsgeneratoren</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.Invoices" xml:space="preserve">
+		<value>Rechnungen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.Open receipts" xml:space="preserve">
+		<value>Offene Rechnungen</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Organizations" xml:space="preserve">
+		<value>Organisationen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.Other expense receipts" xml:space="preserve">
+		<value>Sonstige Aufwendungen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.Other income receipts" xml:space="preserve">
+		<value>Sonstige Einnahmen</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Parties" xml:space="preserve">
+		<value>Personen &amp; Organisationen</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.People" xml:space="preserve">
+		<value>Personen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.Quotes" xml:space="preserve">
+		<value>Angebote</value>
+	</data>
+	<data name="Zetbox.Basic.Accounting.Reports" xml:space="preserve">
+		<value>Berichte</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Settings" xml:space="preserve">
+		<value>Einstellungen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.Templates" xml:space="preserve">
+		<value>Vorlagen</value>
+	</data>
+	<data name="Zetbox.Basic.Invoicing.VAT Types" xml:space="preserve">
+		<value>UST. Typen</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.Workflow" xml:space="preserve">
+		<value>Workflow</value>
+	</data>
+	<data name="Zetbox.Basic.Parties.zetbox Parties" xml:space="preserve">
+		<value>zetbox Personen &amp; Organisationen</value>
+	</data>
 </root>
