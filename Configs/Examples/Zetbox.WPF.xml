@@ -15,7 +15,8 @@
       <Module>Zetbox.Workflow.Client.WPF.ClientWPFModule, Zetbox.Workflow.Client.WPF</Module>
       <Module>Zetbox.Parties.Client.ClientModule, Zetbox.Parties.Client</Module>
       <Module>Zetbox.Parties.Client.WPF.ClientWPFModule, Zetbox.Parties.Client.WPF</Module>
-	  <Module>Zetbox.Client.DefaultFulltextSupport+Module, Zetbox.Client</Module>	  
+      <Module>Zetbox.Client.DefaultFulltextSupport+Module, Zetbox.Client</Module>
+      <Module>Zetbox.App.Projekte.DocumentManagement.FileImportService+Module, Zetbox.App.Projekte.Common</Module>
     </Modules>
   </Client>
 </ZetboxConfig>

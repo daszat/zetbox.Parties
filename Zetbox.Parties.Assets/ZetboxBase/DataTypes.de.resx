@@ -145,7 +145,7 @@
 		<value>Angebotszeile</value>
 	</data>
 	<data name="Zetbox.Basic.Invoicing.Receipt" xml:space="preserve">
-		<value>Rechnung</value>
+		<value>Beleg</value>
 	</data>
 	<data name="Zetbox.Basic.Invoicing.ReceiptStatus" xml:space="preserve">
 		<value>Rechnugnsstatus</value>
