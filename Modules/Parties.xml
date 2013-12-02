@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-11-25T15:27:22.5382872Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-12-02T15:15:17.5267482Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -3295,6 +3295,7 @@ public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&
     <GUI:ChangedOn>2011-11-22T20:38:06.903757Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-11-22T20:38:06.903757Z</GUI:CreatedOn>
     <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
+    <GUI:RefreshOnFilterChanged>false</GUI:RefreshOnFilterChanged>
     <GUI:Required>false</GUI:Required>
     <GUI:ViewModelDescriptor>47ea2958-1036-4fe2-afb5-84568651d817</GUI:ViewModelDescriptor>
     <GUI:Property>d97197ec-b74c-425d-a07d-d9a5783425dc</GUI:Property>
@@ -3303,6 +3304,7 @@ public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&
     <GUI:ChangedOn>2011-11-22T20:38:06.903757Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-11-22T20:38:06.903757Z</GUI:CreatedOn>
     <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
+    <GUI:RefreshOnFilterChanged>false</GUI:RefreshOnFilterChanged>
     <GUI:Required>false</GUI:Required>
     <GUI:ViewModelDescriptor>4ff2b6ec-a47f-431b-aa6d-d10b39f8d628</GUI:ViewModelDescriptor>
     <GUI:Property>ac269782-9289-47b4-9f1e-f395f2749b97</GUI:Property>
@@ -3311,6 +3313,7 @@ public static void TransferCanExecReason(Transaction obj, MethodReturnEventArgs&
     <GUI:ChangedOn>2011-11-22T20:56:05.042757Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-11-22T20:56:05.042757Z</GUI:CreatedOn>
     <GUI:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</GUI:Module>
+    <GUI:RefreshOnFilterChanged>false</GUI:RefreshOnFilterChanged>
     <GUI:Required>true</GUI:Required>
     <GUI:ViewModelDescriptor>e77b05ac-9908-4152-afed-f722410cde98</GUI:ViewModelDescriptor>
     <GUI:Property>97fde3c3-a2e7-4d46-b771-8fd42321cca0</GUI:Property>
@@ -8121,7 +8124,7 @@ public static void isValid_Description(Receipt obj, PropertyIsValidEventArgs e)
   </ZetboxBase:StringProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="e3c9dfcb-902b-4754-962d-d9b6fe2a3300">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-12T10:06:17.6700076Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-12-02T14:15:17.5267482Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Document(Receipt obj, PropertyGetterEventArgs&lt;at.dasz.DocumentManagement.StaticFile&gt; e)
 {
@@ -8150,7 +8153,7 @@ public static void isValid_Document(Receipt obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Name>Document</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>f5ccf2c8-4e53-4f25-98ae-2838dafbbd00</ZetboxBase:ObjectClass>
     <ZetboxBase:Properties_pos>17</ZetboxBase:Properties_pos>
-    <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
+    <GUI:ValueModelDescriptor>db5736ea-91ba-4d59-9b06-5cc86f7e0614</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>a15521e7-ee77-45a4-9dc8-275e583abfdc</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
@@ -13837,6 +13840,7 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:ChangedOn>2011-12-29T14:59:40.6602025Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-12-29T14:59:40.6602025Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:RefreshOnFilterChanged>false</GUI:RefreshOnFilterChanged>
     <GUI:Required>false</GUI:Required>
     <GUI:ViewModelDescriptor>4ff2b6ec-a47f-431b-aa6d-d10b39f8d628</GUI:ViewModelDescriptor>
     <GUI:Property>88fa1f14-66d6-4149-af9f-dd450b6d1c45</GUI:Property>
@@ -13845,6 +13849,7 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:ChangedOn>2011-12-29T14:59:40.6602025Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-12-29T14:59:40.6602025Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:RefreshOnFilterChanged>false</GUI:RefreshOnFilterChanged>
     <GUI:Required>false</GUI:Required>
     <GUI:ViewModelDescriptor>47ea2958-1036-4fe2-afb5-84568651d817</GUI:ViewModelDescriptor>
     <GUI:Property>0866709e-316d-4a21-9270-ab8488a1ecea</GUI:Property>
@@ -13853,6 +13858,7 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:ChangedOn>2011-12-29T15:00:51.7182668Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-12-29T15:00:51.7182668Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:RefreshOnFilterChanged>false</GUI:RefreshOnFilterChanged>
     <GUI:Required>false</GUI:Required>
     <GUI:ViewModelDescriptor>4ff2b6ec-a47f-431b-aa6d-d10b39f8d628</GUI:ViewModelDescriptor>
     <GUI:Property>e4e62165-13cb-4a68-928a-45bd7d7c5d00</GUI:Property>
@@ -13861,6 +13867,7 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:ChangedOn>2011-12-29T14:59:40.6602025Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-12-29T14:59:40.6602025Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:RefreshOnFilterChanged>false</GUI:RefreshOnFilterChanged>
     <GUI:Required>false</GUI:Required>
     <GUI:ViewModelDescriptor>47ea2958-1036-4fe2-afb5-84568651d817</GUI:ViewModelDescriptor>
     <GUI:Property>cc5b74d3-c83c-4e4d-800c-7151b0d4e8c8</GUI:Property>
@@ -13869,6 +13876,7 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:ChangedOn>2011-12-29T15:00:51.7182668Z</GUI:ChangedOn>
     <GUI:CreatedOn>2011-12-29T15:00:51.7182668Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:RefreshOnFilterChanged>false</GUI:RefreshOnFilterChanged>
     <GUI:Required>false</GUI:Required>
     <GUI:ViewModelDescriptor>47ea2958-1036-4fe2-afb5-84568651d817</GUI:ViewModelDescriptor>
     <GUI:Property>a22eff4a-b7c1-4fde-a714-d18d2a3cb2aa</GUI:Property>
@@ -13877,6 +13885,7 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <GUI:ChangedOn>2012-10-10T08:22:02.6511375Z</GUI:ChangedOn>
     <GUI:CreatedOn>2012-10-10T08:22:02.6511375Z</GUI:CreatedOn>
     <GUI:Module>73b3078c-d541-4015-b27e-7820408052e9</GUI:Module>
+    <GUI:RefreshOnFilterChanged>false</GUI:RefreshOnFilterChanged>
     <GUI:Required>false</GUI:Required>
     <GUI:ViewModelDescriptor>4ff2b6ec-a47f-431b-aa6d-d10b39f8d628</GUI:ViewModelDescriptor>
     <GUI:Property>76a1421e-e848-4ca3-a29a-c9064b83e4ec</GUI:Property>
