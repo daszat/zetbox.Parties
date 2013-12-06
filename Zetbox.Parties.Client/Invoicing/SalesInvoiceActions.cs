@@ -12,6 +12,16 @@ namespace Zetbox.Basic.Invoicing
     public static class SalesInvoiceActions
     {
         [Invocation]
+        public static void NotifyDeleting(SalesInvoice obj)
+        {
+            // Workaround - remove from lists
+            foreach (var item in obj.Items.ToList())
+            {
+                obj.Context.Delete(item);
+            }
+        }
+
+        [Invocation]
         public static void CreateInvoiceDocument(SalesInvoice obj)
         {
             if (obj.InternalOrganization != null && obj.InternalOrganization.InvoiceGenerator != null)
