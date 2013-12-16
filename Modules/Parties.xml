@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-12-02T15:15:17.5267482Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2013-12-06T11:58:03.236408Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -16180,7 +16180,7 @@ public static void isValid_SupplierRelationships(InternalOrganization obj, Prope
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:StringProperty ExportGuid="72aa3ee1-bd5a-4ab7-8052-0ff915c0003c">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:19:42.3024047Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-12-06T10:51:13.6697118Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_CompanyRegistrationNumber(Organization obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -16209,7 +16209,7 @@ public static void isValid_CompanyRegistrationNumber(Organization obj, PropertyI
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>CompanyRegistrationNumber</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>190be8fa-fc2a-4364-bdfe-7342b4c4f184</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>2</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>4</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -16217,7 +16217,7 @@ public static void isValid_CompanyRegistrationNumber(Organization obj, PropertyI
   </ZetboxBase:StringProperty>
   <ZetboxBase:StringProperty ExportGuid="bf50d2f8-d516-4e8b-9e56-dcbe35e3b7ba">
     <ZetboxBase:CategoryTags>Summary, Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:19:42.3024047Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-12-06T10:51:13.6697118Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Name(Organization obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -16245,7 +16245,7 @@ public static void isValid_Name(Organization obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Name</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>190be8fa-fc2a-4364-bdfe-7342b4c4f184</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>0</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>1</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -16253,7 +16253,7 @@ public static void isValid_Name(Organization obj, PropertyIsValidEventArgs e)
   </ZetboxBase:StringProperty>
   <ZetboxBase:StringProperty ExportGuid="a1e86e59-7368-4c70-9150-d39faa45a86a">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:19:42.3024047Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-12-06T10:51:13.6697118Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_TaxIDNumber(Organization obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -16282,7 +16282,7 @@ public static void isValid_TaxIDNumber(Organization obj, PropertyIsValidEventArg
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>TaxIDNumber</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>190be8fa-fc2a-4364-bdfe-7342b4c4f184</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>1</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>3</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -16430,7 +16430,7 @@ public static void isValid_ParentRollups(OrganizationUnit obj, PropertyIsValidEv
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:CompoundObjectProperty ExportGuid="d6c6dc7f-a00e-482b-8cab-a3e7d0c0b1f2">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-11-25T14:14:41.4837573Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-12-06T10:51:30.3716671Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Address(Party obj, PropertyGetterEventArgs&lt;Zetbox.Basic.Parties.Address&gt; e)
 {
@@ -16458,7 +16458,7 @@ public static void isValid_Address(Party obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Address</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>92ac7fdc-4f7b-4015-bcc2-6fdab7903869</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>3</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>0</ZetboxBase:Properties_pos>
     <GUI:RequestedKind>3a966d6f-84e1-452f-b7ae-f4d4a90f660a</GUI:RequestedKind>
     <GUI:ValueModelDescriptor>a63b9f47-18b7-463d-a06b-7b636de9553f</GUI:ValueModelDescriptor>
     <ZetboxBase:CompoundObjectDefinition>65cea6d5-76ee-4377-ad6a-05037aff48c8</ZetboxBase:CompoundObjectDefinition>
@@ -16764,7 +16764,7 @@ public static void isValid_ExportGuid(Party obj, PropertyIsValidEventArgs e)
   </ZetboxBase:GuidProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="b5660398-657b-469a-8fc8-e7ada6c25502">
     <ZetboxBase:CategoryTags>Attachments</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-11-22T08:27:43.6495748Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-12-06T10:51:30.3716671Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Files(Party obj, PropertyGetterEventArgs&lt;ICollection&lt;at.dasz.DocumentManagement.File&gt;&gt; e)
 {
@@ -17353,7 +17353,7 @@ public static void isValid_Party(PartyRole obj, PropertyIsValidEventArgs e)
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:DateTimeProperty ExportGuid="be63fb20-7c05-4c71-9c9b-69bd1cd7c383">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:19:29.159653Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-12-06T10:53:14.3566147Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_BirthDate(Person obj, PropertyGetterEventArgs&lt;DateTime?&gt; e)
 {
@@ -17382,7 +17382,7 @@ public static void isValid_BirthDate(Person obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>BirthDate</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>89636484-ab2d-48e2-b15e-33230b770785</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>6</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>11</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>fc74b434-3801-4e4a-ab67-e65a9e014005</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -17428,7 +17428,7 @@ public static void isValid_FirstName(Person obj, PropertyIsValidEventArgs e)
   </ZetboxBase:StringProperty>
   <ZetboxBase:EnumerationProperty ExportGuid="9bebe59f-b276-4ba8-a1f0-cd098f69abe9">
     <ZetboxBase:CategoryTags>Summary, Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:19:29.159653Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-12-06T10:53:14.3566147Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Gender(Person obj, PropertyGetterEventArgs&lt;Zetbox.Basic.Parties.Gender?&gt; e)
 {
@@ -17456,7 +17456,7 @@ public static void isValid_Gender(Person obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Gender</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>89636484-ab2d-48e2-b15e-33230b770785</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>5</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>9</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>a6ff986c-a485-4c4d-947c-e59d14112ec2</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -17465,7 +17465,7 @@ public static void isValid_Gender(Person obj, PropertyIsValidEventArgs e)
   </ZetboxBase:EnumerationProperty>
   <ZetboxBase:StringProperty ExportGuid="50605fdb-baad-4d4f-afe3-95e8a3aac984">
     <ZetboxBase:CategoryTags>Summary, Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:19:29.159653Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-12-06T10:53:14.3566147Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_LastName(Person obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -17494,7 +17494,7 @@ public static void isValid_LastName(Person obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>LastName</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>89636484-ab2d-48e2-b15e-33230b770785</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>2</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>3</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -17502,7 +17502,7 @@ public static void isValid_LastName(Person obj, PropertyIsValidEventArgs e)
   </ZetboxBase:StringProperty>
   <ZetboxBase:StringProperty ExportGuid="ed0f457e-8d5b-4c4f-afd3-d02ed0f45db7">
     <ZetboxBase:CategoryTags>Summary, Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:19:29.159653Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-12-06T10:53:14.3566147Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_MiddleName(Person obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -17531,7 +17531,7 @@ public static void isValid_MiddleName(Person obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>MiddleName</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>89636484-ab2d-48e2-b15e-33230b770785</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>3</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>5</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -17539,7 +17539,7 @@ public static void isValid_MiddleName(Person obj, PropertyIsValidEventArgs e)
   </ZetboxBase:StringProperty>
   <ZetboxBase:StringProperty ExportGuid="e470838b-90bd-49b9-8e4b-a629cef6430a">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:19:29.159653Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-12-06T10:53:14.3566147Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_PersonalTitle(Person obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -17576,7 +17576,7 @@ public static void isValid_PersonalTitle(Person obj, PropertyIsValidEventArgs e)
   </ZetboxBase:StringProperty>
   <ZetboxBase:StringProperty ExportGuid="34515cad-d070-4bf3-b235-dfa6e96695ae">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2012-10-10T14:19:29.159653Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2013-12-06T10:53:14.3566147Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Suffix(Person obj, PropertyGetterEventArgs&lt;string&gt; e)
 {
@@ -17604,7 +17604,7 @@ public static void isValid_Suffix(Person obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Suffix</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>89636484-ab2d-48e2-b15e-33230b770785</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>4</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>7</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>975eee82-e7e1-4a12-ab43-d2e3bc3766e4</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>

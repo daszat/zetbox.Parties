@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2013-12-02T15:15:17.5267482Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2013-12-06T11:53:14.3566147Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:Account ExportGuid="5ce18612-eac2-4384-916d-ebf488f5a5ea">
     <Accounting:ChangedOn>2012-11-19T12:37:34.0433906Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2012-10-12T08:16:49.8127899Z</Accounting:CreatedOn>
@@ -36,13 +36,6 @@
     <Accounting:CreatedOn>2012-10-12T08:17:32.545234Z</Accounting:CreatedOn>
     <Accounting:Receipt>60bc62ad-262d-4af4-bdc9-e31710a18bb5</Accounting:Receipt>
     <Accounting:Transaction>1d8726a2-3212-44c9-8a4a-b9b0968072ac</Accounting:Transaction>
-  </Accounting:Receipt_Transaction>
-  <Accounting:Receipt_Transaction ExportGuid="ac082759-f534-4cbe-b2e9-d177ef848b7f">
-    <Accounting:Amount>-501.00</Accounting:Amount>
-    <Accounting:ChangedOn>2012-11-20T08:43:53.9565192Z</Accounting:ChangedOn>
-    <Accounting:CreatedOn>2012-11-20T08:43:53.9565192Z</Accounting:CreatedOn>
-    <Accounting:Receipt>a0da6a04-c032-4b86-bf40-fd9bcf698416</Accounting:Receipt>
-    <Accounting:Transaction>b32735ec-0256-4f34-8a05-d332f2119376</Accounting:Transaction>
   </Accounting:Receipt_Transaction>
   <Accounting:Transaction ExportGuid="1d8726a2-3212-44c9-8a4a-b9b0968072ac">
     <Accounting:Account>5ce18612-eac2-4384-916d-ebf488f5a5ea</Accounting:Account>
@@ -99,15 +92,15 @@
   <Accounting:Transaction ExportGuid="b32735ec-0256-4f34-8a05-d332f2119376">
     <Accounting:Account>5ce18612-eac2-4384-916d-ebf488f5a5ea</Accounting:Account>
     <Accounting:Amount>-501.00</Accounting:Amount>
-    <Accounting:AmountNet>-417.50</Accounting:AmountNet>
+    <Accounting:AmountNet>-501.00</Accounting:AmountNet>
     <Accounting:ChangedOn>2012-11-19T12:37:34.0433906Z</Accounting:ChangedOn>
-    <Accounting:ChargedAmount>-501.00</Accounting:ChargedAmount>
+    <Accounting:ChargedAmount>0</Accounting:ChargedAmount>
     <Accounting:Comment>Miete</Accounting:Comment>
     <Accounting:CreatedOn>2012-11-19T12:37:34.0433906Z</Accounting:CreatedOn>
     <Accounting:Date>2012-11-18T23:00:00Z</Accounting:Date>
-    <Accounting:OverPayment>0</Accounting:OverPayment>
+    <Accounting:OverPayment>-501.00</Accounting:OverPayment>
     <Accounting:Party>933d258c-4a48-4a5c-ab46-655a70b8aa5f</Accounting:Party>
-    <Accounting:VAT>-83.50</Accounting:VAT>
+    <Accounting:VAT>0</Accounting:VAT>
   </Accounting:Transaction>
   <Accounting:Transaction ExportGuid="be0a47be-bc78-4415-b70c-cfd4d5c7723c">
     <Accounting:Account>5ce18612-eac2-4384-916d-ebf488f5a5ea</Accounting:Account>
@@ -245,19 +238,18 @@
     <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
     <Invoicing:Supplier>6d149258-029a-46c5-9853-59e86359fd7d</Invoicing:Supplier>
   </Invoicing:PurchaseInvoice>
-  <Invoicing:PurchaseInvoice ExportGuid="a0da6a04-c032-4b86-bf40-fd9bcf698416">
-    <Invoicing:ChangedOn>2012-11-20T08:43:53.9565192Z</Invoicing:ChangedOn>
-    <Invoicing:CreatedOn>2012-11-20T08:43:53.9565192Z</Invoicing:CreatedOn>
-    <Invoicing:Date>2012-11-18T23:00:00Z</Invoicing:Date>
+  <Invoicing:PurchaseInvoice ExportGuid="48a9a757-ce8a-40ba-bd04-6fd66cbaadd8">
+    <Invoicing:ChangedOn>2013-12-04T14:00:24.4814586Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2013-12-04T14:00:24.4814586Z</Invoicing:CreatedOn>
+    <Invoicing:Date>2013-12-03T23:00:00Z</Invoicing:Date>
     <Invoicing:Description>Miete</Invoicing:Description>
-    <Invoicing:DueDate>2012-11-18T23:00:00Z</Invoicing:DueDate>
-    <Invoicing:FulfillmentDate>2012-11-18T23:00:00Z</Invoicing:FulfillmentDate>
-    <Accounting:OpenAmount>0</Accounting:OpenAmount>
-    <Accounting:PaymentAmount>501.00</Accounting:PaymentAmount>
-    <Invoicing:Period>MM/20YY</Invoicing:Period>
-    <Invoicing:Status>2</Invoicing:Status>
-    <Invoicing:Total>501.00</Invoicing:Total>
-    <Invoicing:TotalNet>417.50</Invoicing:TotalNet>
+    <Invoicing:DueDate>2013-12-04T23:00:00Z</Invoicing:DueDate>
+    <Accounting:OpenAmount>600.00</Accounting:OpenAmount>
+    <Accounting:PaymentAmount>0</Accounting:PaymentAmount>
+    <Invoicing:Period>T E S T</Invoicing:Period>
+    <Invoicing:Status>1</Invoicing:Status>
+    <Invoicing:Total>600.00</Invoicing:Total>
+    <Invoicing:TotalNet>500.00</Invoicing:TotalNet>
     <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
     <Invoicing:Supplier>1bbc4bbd-0701-4dbd-a25e-e38de6d60ad8</Invoicing:Supplier>
   </Invoicing:PurchaseInvoice>
@@ -276,6 +268,18 @@
     <Invoicing:InternalOrganization>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:InternalOrganization>
     <Invoicing:Supplier>8d797cbd-0b03-49c7-98a8-59b199a91b36</Invoicing:Supplier>
   </Invoicing:PurchaseInvoice>
+  <Invoicing:PurchaseInvoiceItem ExportGuid="02ed9831-4146-415a-bd28-447a9528a490">
+    <Invoicing:Amount>600.00</Invoicing:Amount>
+    <Invoicing:AmountNet>500.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2013-12-04T14:00:24.4814586Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2013-12-04T14:00:24.4814586Z</Invoicing:CreatedOn>
+    <Invoicing:Description>Miete</Invoicing:Description>
+    <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>500.00</Invoicing:UnitPrice>
+    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
+    <Invoicing:PurchaseInvoice>48a9a757-ce8a-40ba-bd04-6fd66cbaadd8</Invoicing:PurchaseInvoice>
+    <Invoicing:Items_pos>0</Invoicing:Items_pos>
+  </Invoicing:PurchaseInvoiceItem>
   <Invoicing:PurchaseInvoiceItem ExportGuid="366e4aef-b815-4e15-b10c-ff64abdac8bb">
     <Invoicing:Amount>26.40</Invoicing:Amount>
     <Invoicing:AmountNet>22.00</Invoicing:AmountNet>
@@ -300,18 +304,6 @@
     <Invoicing:PurchaseInvoice>3ddd2c8a-56cb-43de-9bb1-60634f0e5466</Invoicing:PurchaseInvoice>
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
   </Invoicing:PurchaseInvoiceItem>
-  <Invoicing:PurchaseInvoiceItem ExportGuid="5bc23a37-248e-41b6-9123-29396190b75d">
-    <Invoicing:Amount>501.00</Invoicing:Amount>
-    <Invoicing:AmountNet>417.50</Invoicing:AmountNet>
-    <Invoicing:ChangedOn>2012-11-20T08:43:53.9565192Z</Invoicing:ChangedOn>
-    <Invoicing:CreatedOn>2012-11-20T08:43:53.9565192Z</Invoicing:CreatedOn>
-    <Invoicing:Description>Miete</Invoicing:Description>
-    <Invoicing:Quantity>1.00</Invoicing:Quantity>
-    <Invoicing:UnitPrice>417.50</Invoicing:UnitPrice>
-    <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
-    <Invoicing:PurchaseInvoice>a0da6a04-c032-4b86-bf40-fd9bcf698416</Invoicing:PurchaseInvoice>
-    <Invoicing:Items_pos>0</Invoicing:Items_pos>
-  </Invoicing:PurchaseInvoiceItem>
   <Invoicing:PurchaseInvoiceItemTemplate ExportGuid="27a29fbb-a3e7-493f-b703-ea8a5de62c0d">
     <Invoicing:Amount>24.00</Invoicing:Amount>
     <Invoicing:AmountNet>20.00</Invoicing:AmountNet>
@@ -325,24 +317,28 @@
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
   </Invoicing:PurchaseInvoiceItemTemplate>
   <Invoicing:PurchaseInvoiceItemTemplate ExportGuid="91ff36c7-f6a8-4170-bbf2-7d4d4484de58">
-    <Invoicing:Amount>0</Invoicing:Amount>
-    <Invoicing:AmountNet>0</Invoicing:AmountNet>
-    <Invoicing:ChangedOn>2012-11-19T12:47:16.0396789Z</Invoicing:ChangedOn>
+    <Invoicing:Amount>600.00</Invoicing:Amount>
+    <Invoicing:AmountNet>500.00</Invoicing:AmountNet>
+    <Invoicing:ChangedOn>2013-12-04T14:00:05.9523988Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-11-19T12:36:43.0874761Z</Invoicing:CreatedOn>
     <Invoicing:Description>Miete</Invoicing:Description>
     <Invoicing:Quantity>1.00</Invoicing:Quantity>
+    <Invoicing:UnitPrice>500.00</Invoicing:UnitPrice>
     <Invoicing:VATType>cd217909-55a2-476a-a9e5-2f3ddd48e547</Invoicing:VATType>
     <Invoicing:PITemplate>8bd4a195-72bf-4bfc-9f49-51270e357813</Invoicing:PITemplate>
     <Invoicing:Items_pos>0</Invoicing:Items_pos>
   </Invoicing:PurchaseInvoiceItemTemplate>
   <Invoicing:PurchaseInvoiceTemplate ExportGuid="8bd4a195-72bf-4bfc-9f49-51270e357813">
-    <Invoicing:ChangedOn>2012-11-19T12:36:43.0874761Z</Invoicing:ChangedOn>
+    <Invoicing:ChangedOn>2013-12-04T14:00:05.9523988Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-11-19T12:36:43.0874761Z</Invoicing:CreatedOn>
     <Invoicing:Description>Miete</Invoicing:Description>
-    <Invoicing:DueDate />
+    <Invoicing:DueDate>
+      <ByMonthDay xmlns="Zetbox.App.Base">5</ByMonthDay>
+      <Frequency xmlns="Zetbox.App.Base">2</Frequency>
+    </Invoicing:DueDate>
     <Invoicing:Period>MM/20YY</Invoicing:Period>
-    <Invoicing:Total>0</Invoicing:Total>
-    <Invoicing:TotalNet>0</Invoicing:TotalNet>
+    <Invoicing:Total>600.00</Invoicing:Total>
+    <Invoicing:TotalNet>500.00</Invoicing:TotalNet>
     <Invoicing:IntOrg>a58babd2-e47a-44a2-8d19-bb9a3cbdcf56</Invoicing:IntOrg>
     <Invoicing:Supplier>1bbc4bbd-0701-4dbd-a25e-e38de6d60ad8</Invoicing:Supplier>
   </Invoicing:PurchaseInvoiceTemplate>
@@ -394,6 +390,7 @@
     <Invoicing:CreatedOn>2012-10-10T11:44:47.9757997Z</Invoicing:CreatedOn>
     <Invoicing:Date>2012-10-09T22:00:00Z</Invoicing:Date>
     <Invoicing:Description>Wartungsvertrag</Invoicing:Description>
+    <Invoicing:Document>a5fc77b6-dfda-4282-b573-66e51e2a3e15</Invoicing:Document>
     <Invoicing:DueDate>2012-11-08T23:00:00Z</Invoicing:DueDate>
     <Accounting:OpenAmount>44.00</Accounting:OpenAmount>
     <Accounting:PaymentAmount>100.00</Accounting:PaymentAmount>
@@ -408,6 +405,7 @@
     <Invoicing:CreatedOn>2012-10-10T09:20:38.746092Z</Invoicing:CreatedOn>
     <Invoicing:Date>2012-10-09T22:00:00Z</Invoicing:Date>
     <Invoicing:Description>Wartungsvertrag</Invoicing:Description>
+    <Invoicing:Document>7a3b9877-c7c5-4a33-8352-1fa2c8628e0c</Invoicing:Document>
     <Invoicing:DueDate>2012-10-30T23:00:00Z</Invoicing:DueDate>
     <Invoicing:Message>Danke</Invoicing:Message>
     <Accounting:OpenAmount>70.00</Accounting:OpenAmount>
