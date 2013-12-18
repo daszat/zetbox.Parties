@@ -26,6 +26,7 @@
 
     <!-- DISCUSS: satellite assemblies should go to separate nupkg -->
     <file src="Common\**\zetbox.Parties.Common.resources.dll" target="zetbox\Common" />
+    <file src="Common\**\zetbox.Parties.Assets.resources.dll" target="zetbox\Common" />
     <file src="Client\**\zetbox.Parties.Client.resources.dll" target="zetbox\Client" />
     <file src="Client\**\zetbox.Parties.Client.WPF.resources.dll" target="zetbox\Client" />
     <file src="Server\**\zetbox.Parties.Server.resources.dll" target="zetbox\Server" />
