@@ -7,6 +7,9 @@ namespace Zetbox.Client.Presentables.Parties
     using Zetbox.Client.Presentables;
     using Zetbox.API;
     using Zetbox.Basic.Parties;
+    using Zetbox.Client.GUI;
+    using Zetbox.Client.Presentables.GUI;
+    using Zetbox.Parties.Client.ViewModel.Parties;
 
     [ViewModelDescriptor]
     public class OrganizationViewModel : PartyViewModel
@@ -18,6 +21,47 @@ namespace Zetbox.Client.Presentables.Parties
             Organization obj)
             : base(appCtx, dataCtx, parent, obj)
         {
+        }
+
+        public Organization Person { get { return (Organization)base.Object; } }
+
+        protected override PropertyGroupViewModel CreatePropertyGroup(string tag, string translatedTag, DataObjectViewModel.PropertyGroupCollection lst)
+        {
+            if (tag == "Main")
+            {
+                return UICreator.CustomPropertyGroup(tag, translatedTag, new[] 
+                {
+                    UICreator.StackPanel(new ViewModel[]
+                    {
+                        UICreator.GroupBox(PartiesResources.Person_MainGroupLabel, new []
+                        {
+                            UICreator.Grid(new [] {
+                                new GridPanelViewModel.Cell(0, 0, UICreator.StackPanel(new []
+                                {
+                                    PropertyModelsByName["Name"],
+                                    PropertyModelsByName["TaxIDNumber"],
+                                    PropertyModelsByName["CompanyRegistrationNumber"],
+                                })),
+                                new GridPanelViewModel.Cell(0, 1, PropertyModelsByName["Comment"]),
+                            }),
+                        }),
+                        UICreator.GroupBox(PartiesResources.AddressesGroupLabel, new []
+                        {
+                            PropertyModelsByName["Address"],
+                            PropertyModelsByName["InvoiceAddress"],
+                            PropertyModelsByName["DeliveryAddresses"],
+                        }),
+                        UICreator.GroupBox(PartiesResources.OtherGroupLabel, new []
+                        {
+                            PropertyModelsByName["BankAccount"],
+                        }),
+                    }),
+                });
+            }
+            else
+            {
+                return base.CreatePropertyGroup(tag, translatedTag, lst);
+            }
         }
     }
 }

@@ -40,7 +40,7 @@ namespace Zetbox.Client.Presentables.Parties
                 var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(
                     DataContext, 
                     this,
-                    "Roles",
+                    "Role_" + role.GetObjectClass(FrozenContext).Name,
                     Assets.GetString(roleCls.Module, ZetboxAssetKeys.DataTypes, ZetboxAssetKeys.ConstructNameKey(roleCls), roleCls.Name), 
                     new ViewModel[] { vMdl });
                 groups.Add(propGrpMdl);
