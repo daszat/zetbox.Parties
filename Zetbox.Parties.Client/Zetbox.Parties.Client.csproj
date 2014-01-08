@@ -129,28 +129,28 @@
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
     <Reference Include="Zetbox.API">
-      <HintPath>..\packages\zetboxBasic-Common.1.1.4\lib\net40\Zetbox.API.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Common.1.1.5\lib\net40\Zetbox.API.dll</HintPath>
     </Reference>
     <Reference Include="Zetbox.API.Client">
-      <HintPath>..\packages\zetboxBasic-Client.1.1.4\lib\net40\Zetbox.API.Client.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Client.1.1.5\lib\net40\Zetbox.API.Client.dll</HintPath>
     </Reference>
     <Reference Include="Zetbox.API.Common">
-      <HintPath>..\packages\zetboxBasic-Common.1.1.4\lib\net40\Zetbox.API.Common.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Common.1.1.5\lib\net40\Zetbox.API.Common.dll</HintPath>
     </Reference>
     <Reference Include="Zetbox.Assets">
-      <HintPath>..\packages\zetboxBasic-Common.1.1.4\lib\net40\Zetbox.Assets.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Common.1.1.5\lib\net40\Zetbox.Assets.dll</HintPath>
     </Reference>
     <Reference Include="Zetbox.Client">
-      <HintPath>..\packages\zetboxBasic-Client.1.1.4\lib\net40\Zetbox.Client.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Client.1.1.5\lib\net40\Zetbox.Client.dll</HintPath>
     </Reference>
     <Reference Include="Zetbox.Workflow.Client">
-      <HintPath>..\packages\zetbox.Workflow-Client.1.1.5\lib\net40\Zetbox.Workflow.Client.dll</HintPath>
+      <HintPath>..\packages\zetbox.Workflow-Client.1.1.6\lib\net40\Zetbox.Workflow.Client.dll</HintPath>
     </Reference>
     <Reference Include="Zetbox.Workflow.Client.WPF">
-      <HintPath>..\packages\zetbox.Workflow-Client.1.1.5\lib\net40\Zetbox.Workflow.Client.WPF.dll</HintPath>
+      <HintPath>..\packages\zetbox.Workflow-Client.1.1.6\lib\net40\Zetbox.Workflow.Client.WPF.dll</HintPath>
     </Reference>
     <Reference Include="Zetbox.Workflow.Common">
-      <HintPath>..\packages\zetbox.Workflow-Common.1.1.5\lib\net40\Zetbox.Workflow.Common.dll</HintPath>
+      <HintPath>..\packages\zetbox.Workflow-Common.1.1.6\lib\net40\Zetbox.Workflow.Common.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +166,7 @@
     <Compile Include="Invoicing\QuoteItemActions.cs" />
     <Compile Include="Invoicing\ReceiptActions.cs" />
     <Compile Include="Invoicing\SalesInvoiceActions.cs" />
+    <Compile Include="Parties\PartyActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reporting\Common\Address.Designer.cs">
       <AutoGen>True</AutoGen>

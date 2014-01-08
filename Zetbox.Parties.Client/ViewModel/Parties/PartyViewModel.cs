@@ -35,15 +35,7 @@ namespace Zetbox.Client.Presentables.Parties
 
             foreach (var role in Party.PartyRole)
             {
-                var vMdl = DataObjectViewModel.Fetch(ViewModelFactory, DataContext, this, role);
-                var roleCls = role.GetObjectClass(FrozenContext);
-                var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(
-                    DataContext, 
-                    this,
-                    "Role_" + role.GetObjectClass(FrozenContext).Name,
-                    Assets.GetString(roleCls.Module, ZetboxAssetKeys.DataTypes, ZetboxAssetKeys.ConstructNameKey(roleCls), roleCls.Name), 
-                    new ViewModel[] { vMdl });
-                groups.Add(propGrpMdl);
+                groups.Add(CreateRoleTab(role));
             }
 
             var lst = ViewModelFactory.CreateViewModel<InstanceListViewModel.Factory>().Invoke(DataContext, this,
@@ -60,6 +52,24 @@ namespace Zetbox.Client.Presentables.Parties
             groups.Add(grp);
 
             return groups;
+        }
+
+        protected PropertyGroupViewModel CreateRoleTab(PartyRole role)
+        {
+            var vMdl = DataObjectViewModel.Fetch(ViewModelFactory, DataContext, this, role);
+            var roleCls = role.GetObjectClass(FrozenContext);
+            var propGrpMdl = ViewModelFactory.CreateViewModel<CustomPropertyGroupViewModel.Factory>().Invoke(
+                DataContext,
+                this,
+                "Role_" + role.GetObjectClass(FrozenContext).Name,
+                Assets.GetString(roleCls.Module, ZetboxAssetKeys.DataTypes, ZetboxAssetKeys.ConstructNameKey(roleCls), roleCls.Name),
+                new ViewModel[] { vMdl });
+            return propGrpMdl;
+        }
+
+        public void UpdateRoleTabs(PartyRole newRole)
+        {
+            // I'm so sorry, but PropertyGroups is a reaonly collection
         }
     }
 }
