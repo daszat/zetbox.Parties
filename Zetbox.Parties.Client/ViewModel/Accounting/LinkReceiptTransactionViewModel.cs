@@ -10,7 +10,7 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
     using Zetbox.Basic.Accounting;
     using Zetbox.Basic.Invoicing;
     using Zetbox.Basic.Parties;
-    using at.dasz.DocumentManagement;
+    using doc = at.dasz.DocumentManagement;
     using Zetbox.App.Base;
     using System.IO;
 
@@ -566,15 +566,16 @@ namespace Zetbox.Parties.Client.ViewModel.Accounting
         #endregion
 
         #region Create document
-        private StaticFile CreateDocumentFromTransaction()
+        private doc.File CreateDocumentFromTransaction()
         {
-            if (Transaction.Documents.OfType<StaticFile>().Count() > 0)
+            if (Transaction.Documents.Count > 0)
             {
-                return Transaction.Documents.OfType<StaticFile>().First();
+                return Transaction.Documents.First();
             }
             else
             {
-                var document = DataContext.Create<StaticFile>();
+                var document = DataContext.Create<doc.File>();
+                document.IsFileReadonly = true;
                 document.Name = string.Format("Receipt {0}.txt", Transaction.Date.ToShortDateString());
                 var stream = new MemoryStream();
                 var sw = new StreamWriter(stream);

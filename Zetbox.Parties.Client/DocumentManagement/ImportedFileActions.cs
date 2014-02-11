@@ -31,7 +31,7 @@ namespace at.dasz.DocumentManagement
                 if (sel != null)
                 {
                     var invoice = (PurchaseInvoice)sel.First().Object;
-                    invoice.Document = obj.MakeStaticFile();
+                    invoice.Document = obj.MakeReadonlyFile();
                     invoice.Document.AttachedTo.SetObject(invoice);
                     e.Result = invoice;
                 }
@@ -48,7 +48,7 @@ namespace at.dasz.DocumentManagement
                 if (sel != null)
                 {
                     var receipt = (OtherExpenseReceipt)sel.First().Object;
-                    receipt.Document = obj.MakeStaticFile();
+                    receipt.Document = obj.MakeReadonlyFile();
                     receipt.Document.AttachedTo.SetObject(receipt);
                     e.Result = receipt;
                 }
@@ -65,7 +65,7 @@ namespace at.dasz.DocumentManagement
                 if (sel != null)
                 {
                     var quote = (PurchaseQuote)sel.First().Object;
-                    quote.Document = obj.MakeDocument();
+                    quote.Document = obj.MakeFile();
                     quote.Document.AttachedTo.SetObject(quote);
                     e.Result = quote;
                 }
@@ -82,7 +82,7 @@ namespace at.dasz.DocumentManagement
                 if (sel != null)
                 {
                     var party = (Party)sel.First().Object;
-                    var file = obj.MakeStaticFile();
+                    var file = obj.MakeFile();
                     file.AttachedTo.SetObject(party);
                     party.Files.Add(file);
                     e.Result = file;
