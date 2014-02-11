@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-02-11T09:31:14.980431Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-02-11T14:11:22.5289857Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -7174,19 +7174,19 @@ public static void isValid_Description(Quote obj, PropertyIsValidEventArgs e)
   </ZetboxBase:StringProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="8bf8c325-d89b-46ee-ae7e-ef9d964ecf39">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-10T07:16:42.0765936Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2014-02-11T13:11:22.5289857Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void get_Document(Quote obj, PropertyGetterEventArgs&lt;at.dasz.DocumentManagement.Document&gt; e)
+public static void get_Document(Quote obj, PropertyGetterEventArgs&lt;at.dasz.DocumentManagement.File&gt; e)
 {
 }
 
 [Invocation]
-public static void preSet_Document(Quote obj, PropertyPreSetterEventArgs&lt;at.dasz.DocumentManagement.Document&gt; e)
+public static void preSet_Document(Quote obj, PropertyPreSetterEventArgs&lt;at.dasz.DocumentManagement.File&gt; e)
 {
 }
 
 [Invocation]
-public static void postSet_Document(Quote obj, PropertyPostSetterEventArgs&lt;at.dasz.DocumentManagement.Document&gt; e)
+public static void postSet_Document(Quote obj, PropertyPostSetterEventArgs&lt;at.dasz.DocumentManagement.File&gt; e)
 {
 }
 
@@ -10647,6 +10647,24 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <ZetboxBase:RoleName>Customer</ZetboxBase:RoleName>
     <ZetboxBase:Type>0c15238f-c466-42e5-b256-e1d898091cda</ZetboxBase:Type>
   </ZetboxBase:RelationEnd>
+  <ZetboxBase:RelationEnd ExportGuid="9200c4b1-5c4b-45f9-bfa2-eae8c089aba5">
+    <ZetboxBase:BParent>9dec5bd3-d877-4890-b0d2-1f37a99c520b</ZetboxBase:BParent>
+    <ZetboxBase:ChangedOn>2012-09-28T07:11:11.1719901Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2012-09-28T07:11:11.1719901Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
+    <ZetboxBase:Multiplicity>1</ZetboxBase:Multiplicity>
+    <ZetboxBase:RoleName>Document</ZetboxBase:RoleName>
+    <ZetboxBase:Type>8043ccd8-6ff1-4b45-b04b-e0a0f19ce1b6</ZetboxBase:Type>
+  </ZetboxBase:RelationEnd>
+  <ZetboxBase:RelationEnd ExportGuid="946e9012-478b-4db0-a68f-165e82e326fa">
+    <ZetboxBase:BParent>86ea13d1-eae4-454f-92f1-48a81d686e20</ZetboxBase:BParent>
+    <ZetboxBase:ChangedOn>2011-10-21T15:57:20.598779Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2011-10-21T15:57:20.598779Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
+    <ZetboxBase:Multiplicity>1</ZetboxBase:Multiplicity>
+    <ZetboxBase:RoleName>Document</ZetboxBase:RoleName>
+    <ZetboxBase:Type>8043ccd8-6ff1-4b45-b04b-e0a0f19ce1b6</ZetboxBase:Type>
+  </ZetboxBase:RelationEnd>
   <ZetboxBase:RelationEnd ExportGuid="ffaff4da-24d8-4d10-9c95-f0c6bf3bab0c">
     <ZetboxBase:BParent>b4a89890-039b-442a-b57b-d9a4b1a3485c</ZetboxBase:BParent>
     <ZetboxBase:ChangedOn>2011-10-21T16:04:46.090324Z</ZetboxBase:ChangedOn>
@@ -10654,7 +10672,7 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:Multiplicity>1</ZetboxBase:Multiplicity>
     <ZetboxBase:RoleName>Document</ZetboxBase:RoleName>
-    <ZetboxBase:Type>3f496de2-bef4-4059-8c3e-c25db38bd3c2</ZetboxBase:Type>
+    <ZetboxBase:Type>8043ccd8-6ff1-4b45-b04b-e0a0f19ce1b6</ZetboxBase:Type>
   </ZetboxBase:RelationEnd>
   <ZetboxBase:RelationEnd ExportGuid="2d372e2f-3380-4057-bbab-6219bd4fc42d">
     <ZetboxBase:BParent>0f925e1f-79e9-4ea4-ab1c-d7437a9f8d07</ZetboxBase:BParent>
@@ -11526,24 +11544,6 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Multiplicity>2</ZetboxBase:Multiplicity>
     <ZetboxBase:RoleName>NumberSequence</ZetboxBase:RoleName>
     <ZetboxBase:Type>8745716a-a9e7-4b2f-b7e8-948b992aaafb</ZetboxBase:Type>
-  </ZetboxBase:RelationEnd>
-  <ZetboxBase:RelationEnd ExportGuid="9200c4b1-5c4b-45f9-bfa2-eae8c089aba5">
-    <ZetboxBase:BParent>9dec5bd3-d877-4890-b0d2-1f37a99c520b</ZetboxBase:BParent>
-    <ZetboxBase:ChangedOn>2012-09-28T07:11:11.1719901Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2012-09-28T07:11:11.1719901Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
-    <ZetboxBase:Multiplicity>1</ZetboxBase:Multiplicity>
-    <ZetboxBase:RoleName>Document</ZetboxBase:RoleName>
-    <ZetboxBase:Type>5aaabfe9-081d-445d-a543-53e0253feeb8</ZetboxBase:Type>
-  </ZetboxBase:RelationEnd>
-  <ZetboxBase:RelationEnd ExportGuid="946e9012-478b-4db0-a68f-165e82e326fa">
-    <ZetboxBase:BParent>86ea13d1-eae4-454f-92f1-48a81d686e20</ZetboxBase:BParent>
-    <ZetboxBase:ChangedOn>2011-10-21T15:57:20.598779Z</ZetboxBase:ChangedOn>
-    <ZetboxBase:CreatedOn>2011-10-21T15:57:20.598779Z</ZetboxBase:CreatedOn>
-    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
-    <ZetboxBase:Multiplicity>1</ZetboxBase:Multiplicity>
-    <ZetboxBase:RoleName>Document</ZetboxBase:RoleName>
-    <ZetboxBase:Type>5aaabfe9-081d-445d-a543-53e0253feeb8</ZetboxBase:Type>
   </ZetboxBase:RelationEnd>
   <ZetboxBase:RelationEnd ExportGuid="d7e07e0e-52b7-469e-8fb0-f1626192158a">
     <ZetboxBase:AParent>f9fc5628-2a7b-4e53-abd8-5690fea61c1a</ZetboxBase:AParent>
@@ -13158,7 +13158,7 @@ public static void GetSalesQuoteReportCanExecReason(StatisticActions obj, Method
     <ZetboxBase:Method>a64b480f-4380-41b3-8628-59cc0e614eb5</ZetboxBase:Method>
     <ZetboxBase:Parameter_pos>1</ZetboxBase:Parameter_pos>
     <ZetboxBase:Name>retVal</ZetboxBase:Name>
-    <ZetboxBase:ObjectClass>5aaabfe9-081d-445d-a543-53e0253feeb8</ZetboxBase:ObjectClass>
+    <ZetboxBase:ObjectClass>8043ccd8-6ff1-4b45-b04b-e0a0f19ce1b6</ZetboxBase:ObjectClass>
   </ZetboxBase:ObjectReferenceParameter>
   <ZetboxBase:StringParameter ExportGuid="a108939e-f76d-4354-9906-6499d0565364">
     <ZetboxBase:ChangedOn>2012-05-09T11:01:18.3845872Z</ZetboxBase:ChangedOn>

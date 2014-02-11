@@ -74,7 +74,8 @@ namespace Zetbox.Parties.Common.Accounting
 
                     foreach (var receipt in impTx.Receipts)
                     {
-                        var file = ctx.Create<StaticFile>();
+                        var file = ctx.Create<at.dasz.DocumentManagement.File>();
+                        file.IsFileReadonly = true;
                         file.Name = string.Format("Receipt {0}.txt", impTx.Date.ToShortDateString());
                         using(var stream = new MemoryStream())
                         using (var sw = new StreamWriter(stream))

@@ -20,7 +20,7 @@ namespace Zetbox.Basic.Invoicing
         }
 
         [Invocation]
-        public static void CreateDocument(DefaultInvoiceGenerator obj, MethodReturnEventArgs<StaticFile> e, SalesInvoice invoice)
+        public static void CreateDocument(DefaultInvoiceGenerator obj, MethodReturnEventArgs<File> e, SalesInvoice invoice)
         {
             using (var rpt = _rptFactory())
             {
@@ -30,7 +30,8 @@ namespace Zetbox.Basic.Invoicing
                 {
                     var name = Helper.GetLegalFileName(string.Format("{0} - Invoice {1}.pdf", invoice.Date.ToString("yyyy-MM-dd"), invoice.Description));
                     var blobID = ctx.CreateBlob(s, name, "application/pdf");
-                    var file = ctx.Create<StaticFile>();
+                    var file = ctx.Create<File>();
+                    file.IsFileReadonly = true;
                     file.Name = name;
                     file.Blob = ctx.Find<Blob>(blobID);
                     e.Result = file;
