@@ -13,10 +13,10 @@ namespace Zetbox.Parties.Client.ViewModel.Invoicing
     [ViewModelDescriptor]
     public class OpenReceiptsNavigationSearchViewModel : NavigationSearchScreenViewModel
     {
-        public new delegate OpenReceiptsNavigationSearchViewModel Factory(IZetboxContext dataCtx, ViewModel parent, NavigationScreen screen);
+        public new delegate OpenReceiptsNavigationSearchViewModel Factory(IZetboxContext dataCtx, ViewModel parent, NavigationSearchScreen screen);
 
         public OpenReceiptsNavigationSearchViewModel(IViewModelDependencies appCtx,
-            IZetboxContext dataCtx, ViewModel parent, NavigationScreen screen)
+            IZetboxContext dataCtx, ViewModel parent, NavigationSearchScreen screen)
             : base(appCtx, dataCtx, parent, screen)
         {
         }

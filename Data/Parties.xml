@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2013-12-06T11:53:14.3566147Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2014-02-11T09:31:14.980431Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:Account ExportGuid="5ce18612-eac2-4384-916d-ebf488f5a5ea">
     <Accounting:ChangedOn>2012-11-19T12:37:34.0433906Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2012-10-12T08:16:49.8127899Z</Accounting:CreatedOn>
@@ -390,7 +390,6 @@
     <Invoicing:CreatedOn>2012-10-10T11:44:47.9757997Z</Invoicing:CreatedOn>
     <Invoicing:Date>2012-10-09T22:00:00Z</Invoicing:Date>
     <Invoicing:Description>Wartungsvertrag</Invoicing:Description>
-    <Invoicing:Document>a5fc77b6-dfda-4282-b573-66e51e2a3e15</Invoicing:Document>
     <Invoicing:DueDate>2012-11-08T23:00:00Z</Invoicing:DueDate>
     <Accounting:OpenAmount>44.00</Accounting:OpenAmount>
     <Accounting:PaymentAmount>100.00</Accounting:PaymentAmount>
@@ -405,7 +404,6 @@
     <Invoicing:CreatedOn>2012-10-10T09:20:38.746092Z</Invoicing:CreatedOn>
     <Invoicing:Date>2012-10-09T22:00:00Z</Invoicing:Date>
     <Invoicing:Description>Wartungsvertrag</Invoicing:Description>
-    <Invoicing:Document>7a3b9877-c7c5-4a33-8352-1fa2c8628e0c</Invoicing:Document>
     <Invoicing:DueDate>2012-10-30T23:00:00Z</Invoicing:DueDate>
     <Invoicing:Message>Danke</Invoicing:Message>
     <Accounting:OpenAmount>70.00</Accounting:OpenAmount>
