@@ -134,8 +134,8 @@
     <Reference Include="Zetbox.Assets, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ccdf16e4dd7b6d78, processorArchitecture=MSIL">
       <HintPath>..\packages\zetboxBasic-Common.1.1.7\lib\net40\Zetbox.Assets.dll</HintPath>
     </Reference>
-    <Reference Include="Zetbox.Workflow.Common">
-      <HintPath>..\packages\zetbox.Workflow-Common.1.1.6\lib\net40\Zetbox.Workflow.Common.dll</HintPath>
+    <Reference Include="Zetbox.Workflow.Common, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\zetbox.Workflow-Common.1.1.7\lib\net40\Zetbox.Workflow.Common.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
