@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-02-11T14:11:22.5289857Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-02-12T09:38:27.624157Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -8158,17 +8158,17 @@ public static void isValid_Description(Receipt obj, PropertyIsValidEventArgs e)
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2013-12-02T14:15:17.5267482Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void get_Document(Receipt obj, PropertyGetterEventArgs&lt;at.dasz.DocumentManagement.StaticFile&gt; e)
+public static void get_Document(Receipt obj, PropertyGetterEventArgs&lt;at.dasz.DocumentManagement.File&gt; e)
 {
 }
 
 [Invocation]
-public static void preSet_Document(Receipt obj, PropertyPreSetterEventArgs&lt;at.dasz.DocumentManagement.StaticFile&gt; e)
+public static void preSet_Document(Receipt obj, PropertyPreSetterEventArgs&lt;at.dasz.DocumentManagement.File&gt; e)
 {
 }
 
 [Invocation]
-public static void postSet_Document(Receipt obj, PropertyPostSetterEventArgs&lt;at.dasz.DocumentManagement.StaticFile&gt; e)
+public static void postSet_Document(Receipt obj, PropertyPostSetterEventArgs&lt;at.dasz.DocumentManagement.File&gt; e)
 {
 }
 
@@ -8682,17 +8682,17 @@ public static void isValid_Description(ReceiptTemplate obj, PropertyIsValidEvent
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
     <ZetboxBase:ChangedOn>2012-09-28T07:11:20.5105242Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void get_Document(ReceiptTemplate obj, PropertyGetterEventArgs&lt;at.dasz.DocumentManagement.StaticFile&gt; e)
+public static void get_Document(ReceiptTemplate obj, PropertyGetterEventArgs&lt;at.dasz.DocumentManagement.File&gt; e)
 {
 }
 
 [Invocation]
-public static void preSet_Document(ReceiptTemplate obj, PropertyPreSetterEventArgs&lt;at.dasz.DocumentManagement.StaticFile&gt; e)
+public static void preSet_Document(ReceiptTemplate obj, PropertyPreSetterEventArgs&lt;at.dasz.DocumentManagement.File&gt; e)
 {
 }
 
 [Invocation]
-public static void postSet_Document(ReceiptTemplate obj, PropertyPostSetterEventArgs&lt;at.dasz.DocumentManagement.StaticFile&gt; e)
+public static void postSet_Document(ReceiptTemplate obj, PropertyPostSetterEventArgs&lt;at.dasz.DocumentManagement.File&gt; e)
 {
 }
 
@@ -12596,7 +12596,7 @@ public static void isValid_Percentage(VATType obj, PropertyIsValidEventArgs e)
   <ZetboxBase:Method ExportGuid="a64b480f-4380-41b3-8628-59cc0e614eb5">
     <ZetboxBase:ChangedOn>2012-05-09T11:02:50.4178512Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
-public static void CreateDocument(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;at.dasz.DocumentManagement.StaticFile&gt; e, Zetbox.Basic.Invoicing.SalesInvoice invoice)
+public static void CreateDocument(AbstractInvoiceGenerator obj, MethodReturnEventArgs&lt;at.dasz.DocumentManagement.File&gt; e, Zetbox.Basic.Invoicing.SalesInvoice invoice)
 {
 }
 
