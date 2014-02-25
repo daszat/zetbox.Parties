@@ -73,29 +73,29 @@ namespace Zetbox.Basic.Parties
             if(!obj.PartyRole.Any(r => r is Customer))
                 candidates.Add(_vmf.CreateViewModel<RoleSelectionViewModel.Factory>().Invoke(ctx, null, typeof(Customer).GetObjectClass(_frozenCtx)));
 
-            // all other
             ObjectClass clsPartyRole;
             if (obj is Person)
             {
                 clsPartyRole = (ObjectClass)typeof(PersonRole).GetObjectClass(_frozenCtx);
                 
                 if (!obj.PartyRole.Any(r => r is Employee))
-                    _vmf.CreateViewModel<RoleSelectionViewModel.Factory>().Invoke(ctx, null, typeof(Employee).GetObjectClass(_frozenCtx));
+                    candidates.Add(_vmf.CreateViewModel<RoleSelectionViewModel.Factory>().Invoke(ctx, null, typeof(Employee).GetObjectClass(_frozenCtx)));
             }
             else if (obj is Organization)
             {
-                clsPartyRole = (ObjectClass)typeof(PersonRole).GetObjectClass(_frozenCtx);
+                clsPartyRole = (ObjectClass)typeof(OrganizationRole).GetObjectClass(_frozenCtx);
 
                 if (!obj.PartyRole.Any(r => r is Supplier))
-                    _vmf.CreateViewModel<RoleSelectionViewModel.Factory>().Invoke(ctx, null, typeof(Supplier).GetObjectClass(_frozenCtx));
+                    candidates.Add(_vmf.CreateViewModel<RoleSelectionViewModel.Factory>().Invoke(ctx, null, typeof(Supplier).GetObjectClass(_frozenCtx)));
                 if (!obj.PartyRole.Any(r => r is InternalOrganization))
-                    _vmf.CreateViewModel<RoleSelectionViewModel.Factory>().Invoke(ctx, null, typeof(InternalOrganization).GetObjectClass(_frozenCtx));
+                    candidates.Add(_vmf.CreateViewModel<RoleSelectionViewModel.Factory>().Invoke(ctx, null, typeof(InternalOrganization).GetObjectClass(_frozenCtx)));
             }
             else
             {
                 throw new InvalidOperationException("Party is of an unknown type");
             }
 
+            // all other
             foreach (var roleCls in clsPartyRole
                                             .SubClasses
                                             .Except(candidates.Select(c => c.TargetPropClass))
