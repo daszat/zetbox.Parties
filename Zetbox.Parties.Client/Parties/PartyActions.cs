@@ -95,16 +95,16 @@ namespace Zetbox.Basic.Parties
                 throw new InvalidOperationException("Party is of an unknown type");
             }
 
+            List<ObjectClass> subClasses = new List<ObjectClass>();
+            clsPartyRole.CollectChildClasses(subClasses, includeAbstract: false);
             // all other
-            foreach (var roleCls in clsPartyRole
-                                            .SubClasses
-                                            .Except(candidates.Select(c => c.TargetPropClass))
-                                            .Except(obj.PartyRole.Select(c => c.GetObjectClass(_frozenCtx)))
-                                            .OrderBy(r => r.Name)
-                                            .ToList())
-                {
-                    candidates.Add(_vmf.CreateViewModel<RoleSelectionViewModel.Factory>().Invoke(ctx, null, roleCls));
-                }
+            foreach (var roleCls in subClasses.Except(candidates.Select(c => c.TargetPropClass))
+                                              .Except(obj.PartyRole.Select(c => c.GetObjectClass(_frozenCtx)))
+                                              .OrderBy(r => r.Name)
+                                              .ToList())
+            {
+                candidates.Add(_vmf.CreateViewModel<RoleSelectionViewModel.Factory>().Invoke(ctx, null, roleCls));
+            }
 
             var selectClass = _vmf
                 .CreateViewModel<SimpleSelectionTaskViewModel.Factory>()
