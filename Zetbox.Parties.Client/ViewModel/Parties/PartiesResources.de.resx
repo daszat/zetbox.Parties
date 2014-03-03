@@ -120,6 +120,9 @@
   <data name="AddressesGroupLabel" xml:space="preserve">
     <value>Adressen</value>
   </data>
+  <data name="ContactGroupLabel" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
   <data name="OtherGroupLabel" xml:space="preserve">
     <value>Sonstige Informationen</value>
   </data>
