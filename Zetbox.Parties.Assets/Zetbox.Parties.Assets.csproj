@@ -178,6 +178,8 @@
     <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.Account.resx" />
     <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.de.resx" />
     <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountImporterDescriptor.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountStatement.de.resx" />
+    <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.AccountStatement.resx" />
     <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.de.resx" />
     <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.Balance.resx" />
     <EmbeddedResource Include="ZetboxBase\Properties\Zetbox.Basic.Accounting.Receipt_Transaction.de.resx" />

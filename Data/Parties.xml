@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2014-02-11T14:11:22.5289857Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2014-03-18T18:23:29.2125306Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:Account ExportGuid="5ce18612-eac2-4384-916d-ebf488f5a5ea">
     <Accounting:ChangedOn>2012-11-19T12:37:34.0433906Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2012-10-12T08:16:49.8127899Z</Accounting:CreatedOn>
@@ -16,6 +16,27 @@
     <Accounting:Module>390a2bcd-b7c3-4bc3-a826-736debd43791</Accounting:Module>
     <Accounting:Name>BA-CA Importer</Accounting:Name>
   </Accounting:AccountImporterDescriptor>
+  <Accounting:AccountStatement ExportGuid="09bbde42-6120-40af-9d37-8267efdbf890">
+    <Accounting:Account>5ce18612-eac2-4384-916d-ebf488f5a5ea</Accounting:Account>
+    <Accounting:AuditJournal>
+      <CollectionEntry>
+        <Accounting:Value>
+          <Identity xmlns="Zetbox.App.Base">Arthur Zaczek</Identity>
+          <MessageFormat xmlns="Zetbox.App.Base">object created</MessageFormat>
+          <NewValue xmlns="Zetbox.App.Base" />
+          <OldValue xmlns="Zetbox.App.Base" />
+          <PropertyName xmlns="Zetbox.App.Base" />
+          <Timestamp xmlns="Zetbox.App.Base">2014-03-18T15:39:17.5141345Z</Timestamp>
+        </Accounting:Value>
+      </CollectionEntry>
+    </Accounting:AuditJournal>
+    <Accounting:Balance>1000.00</Accounting:Balance>
+    <Accounting:ChangedOn>2014-03-18T15:39:17.4690982Z</Accounting:ChangedOn>
+    <Accounting:CreatedOn>2014-03-18T15:39:17.4690982Z</Accounting:CreatedOn>
+    <Accounting:Date>2014-03-17T23:00:00Z</Accounting:Date>
+    <Accounting:Number>1/2014</Accounting:Number>
+    <Accounting:StartingBalance>500.00</Accounting:StartingBalance>
+  </Accounting:AccountStatement>
   <Accounting:Receipt_Transaction ExportGuid="279ff35c-bf24-4186-8666-a7459fba15f8">
     <Accounting:Amount>-2000.00</Accounting:Amount>
     <Accounting:ChangedOn>2013-07-16T09:40:16.7769508Z</Accounting:ChangedOn>

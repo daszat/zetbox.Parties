@@ -10,6 +10,7 @@ namespace at.dasz.DocumentManagement
     using Zetbox.Basic.Invoicing;
     using Zetbox.Client.Presentables;
     using Zetbox.Basic.Parties;
+    using Zetbox.Basic.Accounting;
 
     [Implementor]
     public class ImportedFileActions
@@ -89,6 +90,16 @@ namespace at.dasz.DocumentManagement
                 }
             }, null);
             _factory.ShowDialog(dlg);
+        }
+
+        [Invocation]
+        public static void MakeAccountStatement(ImportedFile obj, MethodReturnEventArgs<AccountStatement> e)
+        {
+            var ctx = obj.Context;
+            var stmt = ctx.Create<AccountStatement>();
+            stmt.File = obj.MakeReadonlyFile();
+            stmt.File.AttachedTo.SetObject(stmt);
+            e.Result = stmt;
         }
     }
 }

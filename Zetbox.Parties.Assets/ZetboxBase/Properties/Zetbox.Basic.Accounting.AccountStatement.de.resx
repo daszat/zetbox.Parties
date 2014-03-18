@@ -117,40 +117,52 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
-	<data name="AddToParty_label" xml:space="preserve">
-		<value>Pers/Org anfügen</value>
+	<data name="Account_label" xml:space="preserve">
+		<value>Konto</value>
 	</data>
-	<data name="AddToParty_description" xml:space="preserve">
-		<value>Fügt diese Datei auf einer Party</value>
+	<data name="Account_description" xml:space="preserve">
+		<value>Konto dieses Kontoauszuges</value>
 	</data>
-	<data name="AddToParty(retVal)_label" xml:space="preserve">
-		<value>retVal</value>
+	<data name="Balance_label" xml:space="preserve">
+		<value>Kontostand</value>
 	</data>
-	<data name="MakeInvoice_label" xml:space="preserve">
-		<value>Kaufrechnung</value>
+	<data name="Balance_description" xml:space="preserve">
+		<value>Aktueller Kontostand</value>
 	</data>
-	<data name="MakeInvoice(retVal)_label" xml:space="preserve">
-		<value>retVal</value>
+	<data name="Date_label" xml:space="preserve">
+		<value>Datum</value>
 	</data>
-	<data name="MakeOtherExpense_label" xml:space="preserve">
-		<value>Sonstige Ausgabe</value>
+	<data name="Date_description" xml:space="preserve">
+		<value>Datum des Kontoauszuges</value>
 	</data>
-	<data name="MakeOtherExpense(retVal)_label" xml:space="preserve">
-		<value>retVal</value>
+	<data name="File_label" xml:space="preserve">
+		<value>Datei</value>
 	</data>
-	<data name="MakeQuote_label" xml:space="preserve">
-		<value>Kauf-Angebot</value>
+	<data name="File_description" xml:space="preserve">
+		<value>Angehängte Datei</value>
 	</data>
-	<data name="MakeQuote(retVal)_label" xml:space="preserve">
-		<value>retVal</value>
+	<data name="Number_label" xml:space="preserve">
+		<value>Auszugsnummer</value>
 	</data>
-	<data name="MakeAccountStatement_label" xml:space="preserve">
-		<value>Kontoauszug</value>
+	<data name="Number_description" xml:space="preserve">
+		<value>Nummer des Kontoauszuges</value>
 	</data>
-	<data name="MakeAccountStatement_description" xml:space="preserve">
-		<value>Kontoauszug erzeugen</value>
+	<data name="Receipts_label" xml:space="preserve">
+		<value>Belege</value>
 	</data>
-	<data name="MakeAccountStatement(retVal)_label" xml:space="preserve">
-		<value>retVal</value>
+	<data name="Receipts_description" xml:space="preserve">
+		<value>Belege des Kontoauszuges</value>
+	</data>
+	<data name="StartingBalance_label" xml:space="preserve">
+		<value>Anfangs-Kontostand</value>
+	</data>
+	<data name="StartingBalance_description" xml:space="preserve">
+		<value>Anfangs-Kontostand</value>
+	</data>
+	<data name="Transactions_label" xml:space="preserve">
+		<value>Auszugszeilen</value>
+	</data>
+	<data name="Transactions_description" xml:space="preserve">
+		<value>Kontoauszug Zeilen</value>
 	</data>
 </root>

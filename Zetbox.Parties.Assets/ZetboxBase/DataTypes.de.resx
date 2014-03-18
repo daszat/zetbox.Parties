@@ -429,4 +429,10 @@
 	<data name="Zetbox.Basic.Invoicing.VATType_description" xml:space="preserve">
 		<value>Art der Umsatzsteuer</value>
 	</data>
+	<data name="Zetbox.Basic.Accounting.AccountStatement" xml:space="preserve">
+		<value>Kontoauszug</value>
+	</data>
+	<data name="Zetbox.Basic.Accounting.AccountStatement_description" xml:space="preserve">
+		<value>Kontoauszüge eines Kontos</value>
+	</data>
 </root>
