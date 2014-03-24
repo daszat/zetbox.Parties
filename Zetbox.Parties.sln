@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Bootstrapper", "Zetbox.Parties.Bootstrapper\Zetbox.Parties.Bootstrapper.csproj", "{1813BD9C-4FE8-4DD5-BD98-90FDF46A7A69}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Common", "Zetbox.Parties.Common\Zetbox.Parties.Common.csproj", "{927FD8BF-5FE0-4D07-B89E-926E7F694623}"
@@ -28,8 +30,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E9A64B
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetPackages", "NuGetPackages\NuGetPackages.csproj", "{9ABBE6BE-0F08-4ED6-A1AB-B3882849CDD0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.ASPNET", "Zetbox.Parties.ASPNET\Zetbox.Parties.ASPNET.csproj", "{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Assets", "Zetbox.Parties.Assets\Zetbox.Parties.Assets.csproj", "{41558FF6-2586-4B41-8C9D-15D752F03950}"
 EndProject
@@ -95,13 +95,6 @@ Global
 		{9ABBE6BE-0F08-4ED6-A1AB-B3882849CDD0}.Linux.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ABBE6BE-0F08-4ED6-A1AB-B3882849CDD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ABBE6BE-0F08-4ED6-A1AB-B3882849CDD0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Fallback|Any CPU.ActiveCfg = Release|Any CPU
-		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Linux.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Linux.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB2A1896-6A2C-4811-A64E-8A36EFDE061D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{41558FF6-2586-4B41-8C9D-15D752F03950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{41558FF6-2586-4B41-8C9D-15D752F03950}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41558FF6-2586-4B41-8C9D-15D752F03950}.Fallback|Any CPU.ActiveCfg = Release|Any CPU

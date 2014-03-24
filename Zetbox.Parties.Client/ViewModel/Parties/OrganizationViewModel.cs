@@ -45,6 +45,13 @@ namespace Zetbox.Client.Presentables.Parties
                                 new GridPanelViewModel.Cell(0, 1, PropertyModelsByName["Comment"]),
                             }),
                         }),
+                        UICreator.GroupBox(PartiesResources.ContactGroupLabel, new []
+                        {
+                            PropertyModelsByName["EMail"],
+                            PropertyModelsByName["Phone"],
+                            PropertyModelsByName["Mobile"],
+                            PropertyModelsByName["Fax"],
+                        }),
                         UICreator.GroupBox(PartiesResources.AddressesGroupLabel, new []
                         {
                             PropertyModelsByName["Address"],

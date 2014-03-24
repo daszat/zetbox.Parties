@@ -47,6 +47,7 @@
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[OpenAmount]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[PaymentAmount]}" />
                         <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[FulfillmentDate]}" />
+                        <ctrls:LabeledView DataContext="{Binding PropertyModelsByName[AccountStatement]}" />
                         <ContentPresenter Content="{Binding PropertyModelsByName[Transactions]}"
                                           ContentTemplateSelector="{StaticResource defaultTemplateSelector}" />
                     </StackPanel>

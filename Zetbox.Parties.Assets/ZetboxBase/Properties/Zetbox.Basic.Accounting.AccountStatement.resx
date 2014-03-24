@@ -117,40 +117,88 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
-	<data name="AddToParty_label" xml:space="preserve">
-		<value>Pers/Org anfügen</value>
-	</data>
-	<data name="AddToParty_description" xml:space="preserve">
-		<value>Fügt diese Datei auf einer Party</value>
-	</data>
-	<data name="AddToParty(retVal)_label" xml:space="preserve">
-		<value>retVal</value>
-	</data>
-	<data name="MakeInvoice_label" xml:space="preserve">
-		<value>Kaufrechnung</value>
-	</data>
-	<data name="MakeInvoice(retVal)_label" xml:space="preserve">
-		<value>retVal</value>
-	</data>
-	<data name="MakeOtherExpense_label" xml:space="preserve">
-		<value>Sonstige Ausgabe</value>
-	</data>
-	<data name="MakeOtherExpense(retVal)_label" xml:space="preserve">
-		<value>retVal</value>
-	</data>
-	<data name="MakeQuote_label" xml:space="preserve">
-		<value>Kauf-Angebot</value>
-	</data>
-	<data name="MakeQuote(retVal)_label" xml:space="preserve">
-		<value>retVal</value>
-	</data>
-	<data name="MakeAccountStatement_label" xml:space="preserve">
-		<value>Kontoauszug</value>
-	</data>
-	<data name="MakeAccountStatement_description" xml:space="preserve">
-		<value>Kontoauszug erzeugen</value>
-	</data>
-	<data name="MakeAccountStatement(retVal)_label" xml:space="preserve">
-		<value>retVal</value>
-	</data>
+	<data name="Account_label" xml:space="preserve">
+    <value>Account</value>
+  </data>
+	<data name="Account_description" xml:space="preserve">
+    <value>Account of this statement</value>
+  </data>
+	<data name="AuditJournal_label" xml:space="preserve">
+    <value>Änderungen</value>
+  </data>
+	<data name="AuditJournal_description" xml:space="preserve">
+    <value>Eine Liste der Änderungen an diesem Datensatz.</value>
+  </data>
+	<data name="Balance_label" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+	<data name="Balance_description" xml:space="preserve">
+    <value>Current account balance</value>
+  </data>
+	<data name="ChangedBy_label" xml:space="preserve">
+    <value>ChangedBy</value>
+  </data>
+	<data name="ChangedBy_description" xml:space="preserve">
+    <value>Identity which changed this object</value>
+  </data>
+	<data name="ChangedOn_label" xml:space="preserve">
+    <value>ChangedOn</value>
+  </data>
+	<data name="ChangedOn_description" xml:space="preserve">
+    <value>Date and time where this object was changed</value>
+  </data>
+	<data name="CreatedBy_label" xml:space="preserve">
+    <value>CreatedBy</value>
+  </data>
+	<data name="CreatedBy_description" xml:space="preserve">
+    <value>Identity which created this object</value>
+  </data>
+	<data name="CreatedOn_label" xml:space="preserve">
+    <value>CreatedOn</value>
+  </data>
+	<data name="CreatedOn_description" xml:space="preserve">
+    <value>Date and time where this object was created</value>
+  </data>
+	<data name="Date_label" xml:space="preserve">
+    <value>Date</value>
+  </data>
+	<data name="Date_description" xml:space="preserve">
+    <value>Date of the statement</value>
+  </data>
+	<data name="ExportGuid_label" xml:space="preserve">
+    <value>ExportGuid</value>
+  </data>
+	<data name="ExportGuid_description" xml:space="preserve">
+    <value>Export Guid</value>
+  </data>
+	<data name="File_label" xml:space="preserve">
+    <value>File</value>
+  </data>
+	<data name="File_description" xml:space="preserve">
+    <value>Attached file</value>
+  </data>
+	<data name="Number_label" xml:space="preserve">
+    <value>Number</value>
+  </data>
+	<data name="Number_description" xml:space="preserve">
+    <value>Statement number</value>
+  </data>
+	<data name="Receipts_label" xml:space="preserve">
+    <value>Receipts</value>
+  </data>
+	<data name="Receipts_description" xml:space="preserve">
+    <value>Receipts on Statement</value>
+  </data>
+	<data name="StartingBalance_label" xml:space="preserve">
+    <value>Starting balance</value>
+  </data>
+	<data name="StartingBalance_description" xml:space="preserve">
+    <value>The account balance at the begin of the statement</value>
+  </data>
+	<data name="Transactions_label" xml:space="preserve">
+    <value>Transactions</value>
+  </data>
+	<data name="Transactions_description" xml:space="preserve">
+    <value>Transactions of this statement</value>
+  </data>
 </root>

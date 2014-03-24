@@ -219,6 +219,12 @@
   <data name="Receipts_description" xml:space="preserve">
     <value />
   </data>
+  <data name="Statement_label" xml:space="preserve">
+    <value>Statement</value>
+  </data>
+  <data name="Statement_description" xml:space="preserve">
+    <value />
+  </data>
   <data name="Transfered_label" xml:space="preserve">
     <value>Transfered</value>
   </data>
