@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,380 +59,494 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="Zetbox.Basic.Invoicing.AbstractInvoiceGenerator" xml:space="preserve">
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Zetbox.Basic.Invoicing.AbstractInvoiceGenerator" xml:space="preserve">
     <value>AbstractInvoiceGenerator</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.AbstractInvoiceGenerator_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.AbstractInvoiceGenerator_description" xml:space="preserve">
     <value>Abstract base class for a invoice document generator</value>
   </data>
-	<data name="Zetbox.Basic.Accounting.Account" xml:space="preserve">
+  <data name="Zetbox.Basic.Accounting.Account" xml:space="preserve">
     <value>Account</value>
   </data>
-	<data name="Zetbox.Basic.Accounting.Account_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Accounting.Account_description" xml:space="preserve">
     <value>Account object</value>
   </data>
-	<data name="Zetbox.Basic.Accounting.AccountImporterDescriptor" xml:space="preserve">
+  <data name="Zetbox.Basic.Accounting.AccountImporterDescriptor" xml:space="preserve">
     <value>AccountImporterDescriptor</value>
   </data>
-	<data name="Zetbox.Basic.Accounting.AccountImporterDescriptor_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Accounting.AccountImporterDescriptor_description" xml:space="preserve">
     <value>Descriptor for an account importer</value>
   </data>
-	<data name="Zetbox.Basic.Accounting.AccountStatement" xml:space="preserve">
+  <data name="Zetbox.Basic.Accounting.AccountStatement" xml:space="preserve">
     <value>AccountStatement</value>
   </data>
-	<data name="Zetbox.Basic.Accounting.AccountStatement_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Accounting.AccountStatement_description" xml:space="preserve">
     <value>Account Statements of an Account</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Address" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Address" xml:space="preserve">
     <value>Address</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Association" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Address_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.Association" xml:space="preserve">
     <value>Association</value>
   </data>
-	<data name="Zetbox.Basic.Accounting.Balance" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Association_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Accounting.Balance" xml:space="preserve">
     <value>Balance</value>
   </data>
-	<data name="Zetbox.Basic.Accounting.Balance_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Accounting.Balance_description" xml:space="preserve">
     <value>Tracking the balance sheet of your accountant</value>
   </data>
-	<data name="Zetbox.Basic.Parties.BankAccount" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.BankAccount" xml:space="preserve">
     <value>BankAccount</value>
   </data>
-	<data name="Zetbox.Basic.Products.BillingPeriod" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.BankAccount_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Products.BillingPeriod" xml:space="preserve">
     <value>BillingPeriod</value>
   </data>
-	<data name="Zetbox.Basic.Products.BillingPeriod_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Products.BillingPeriod_description" xml:space="preserve">
     <value>The period in which a Product is billed.</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Competitor" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Competitor" xml:space="preserve">
     <value>Competitor</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Contact" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Competitor_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.Contact" xml:space="preserve">
     <value>Contact</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Contractor" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Contact_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.Contractor" xml:space="preserve">
     <value>Contractor</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Customer" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Contractor_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.Customer" xml:space="preserve">
     <value>Customer</value>
   </data>
-	<data name="Zetbox.Basic.Parties.CustomerRelationship" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Customer_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.CustomerRelationship" xml:space="preserve">
     <value>CustomerRelationship</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.DefaultInvoiceGenerator" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.CustomerRelationship_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Invoicing.DefaultInvoiceGenerator" xml:space="preserve">
     <value>DefaultInvoiceGenerator</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.DefaultInvoiceGenerator_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.DefaultInvoiceGenerator_description" xml:space="preserve">
     <value>Invoice Generoator for invoices with a yearly sequence number</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Department" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Department" xml:space="preserve">
     <value>Department</value>
   </data>
-	<data name="Zetbox.Basic.Parties.DistributionChannel" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Department_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.DistributionChannel" xml:space="preserve">
     <value>DistributionChannel</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Division" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.DistributionChannel_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.Division" xml:space="preserve">
     <value>Division</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Employee" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Division_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.Employee" xml:space="preserve">
     <value>Employee</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Employment" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Employee_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.Employment" xml:space="preserve">
     <value>Employment</value>
   </data>
-	<data name="Zetbox.Basic.Parties.FamilyMember" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Employment_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.FamilyMember" xml:space="preserve">
     <value>FamilyMember</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Gender" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.FamilyMember_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.Gender" xml:space="preserve">
     <value>Gender</value>
   </data>
-	<data name="Zetbox.Basic.Parties.HouseHold" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Gender_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.HouseHold" xml:space="preserve">
     <value>HouseHold</value>
   </data>
-	<data name="Zetbox.Basic.Parties.InternalOrganization" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.HouseHold_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.InternalOrganization" xml:space="preserve">
     <value>InternalOrganization</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.Invoice" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.InternalOrganization_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Invoicing.Invoice" xml:space="preserve">
     <value>Invoice</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.Invoice_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.Invoice_description" xml:space="preserve">
     <value>Abstract class for Invoices</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.InvoiceItem" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.InvoiceItem" xml:space="preserve">
     <value>InvoiceItem</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.InvoiceItem_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.InvoiceItem_description" xml:space="preserve">
     <value>Abstract base class for Invoice Items</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.InvoiceItemTemplate" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.InvoiceItemTemplate" xml:space="preserve">
     <value>InvoiceItemTemplate</value>
   </data>
-	<data name="Zetbox.Basic.Products.OrderItem" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.InvoiceItemTemplate_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Products.OrderItem" xml:space="preserve">
     <value>OrderItem</value>
   </data>
-	<data name="Zetbox.Basic.Products.OrderItem_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Products.OrderItem_description" xml:space="preserve">
     <value>The details of an order. This connects the Customer to the ordered Product and can be used to override details from the Product.</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Organization" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Organization" xml:space="preserve">
     <value>Organization</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Organization_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Organization_description" xml:space="preserve">
     <value>Organization</value>
   </data>
-	<data name="Zetbox.Basic.Parties.OrganizationRole" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.OrganizationRole" xml:space="preserve">
     <value>OrganizationRole</value>
   </data>
-	<data name="Zetbox.Basic.Parties.OrganizationRollup" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.OrganizationRole_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.OrganizationRollup" xml:space="preserve">
     <value>OrganizationRollup</value>
   </data>
-	<data name="Zetbox.Basic.Parties.OrganizationUnit" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.OrganizationRollup_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.OrganizationUnit" xml:space="preserve">
     <value>OrganizationUnit</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.OtherExpenseReceipt" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.OrganizationUnit_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Invoicing.OtherExpenseReceipt" xml:space="preserve">
     <value>OtherExpenseReceipt</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.OtherExpenseReceipt_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.OtherExpenseReceipt_description" xml:space="preserve">
     <value>Receipt for other expenses</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate" xml:space="preserve">
     <value>OtherExpenseReceiptTemplate</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.OtherIncomeReceipt" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.OtherExpenseReceiptTemplate_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Invoicing.OtherIncomeReceipt" xml:space="preserve">
     <value>OtherIncomeReceipt</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.OtherIncomeReceipt_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.OtherIncomeReceipt_description" xml:space="preserve">
     <value>Receipt for other incomes</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate" xml:space="preserve">
     <value>OtherIncomeReceiptTemplate</value>
   </data>
-	<data name="Zetbox.Basic.Parties.OtherOrganizationUnit" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.OtherIncomeReceiptTemplate_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.OtherOrganizationUnit" xml:space="preserve">
     <value>OtherOrganizationUnit</value>
   </data>
-	<data name="Zetbox.Basic.Parties.ParentOrganization" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.OtherOrganizationUnit_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.ParentOrganization" xml:space="preserve">
     <value>ParentOrganization</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Partner" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.ParentOrganization_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.Partner" xml:space="preserve">
     <value>Partner</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Party" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Partner_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.Party" xml:space="preserve">
     <value>Party</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Party_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Party_description" xml:space="preserve">
     <value>Abstract base class for People and Organizations</value>
   </data>
-	<data name="Zetbox.Basic.Parties.PartyRelationship" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.PartyRelationship" xml:space="preserve">
     <value>PartyRelationship</value>
   </data>
-	<data name="Zetbox.Basic.Parties.PartyRole" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.PartyRelationship_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.PartyRole" xml:space="preserve">
     <value>PartyRole</value>
   </data>
-	<data name="Zetbox.Basic.Parties.PartyRole_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.PartyRole_description" xml:space="preserve">
     <value>Role of a Party</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Person" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Person" xml:space="preserve">
     <value>Person</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Person_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Person_description" xml:space="preserve">
     <value>Person</value>
   </data>
-	<data name="Zetbox.Basic.Parties.PersonRole" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.PersonRole" xml:space="preserve">
     <value>PersonRole</value>
   </data>
-	<data name="Zetbox.Basic.Products.Product" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.PersonRole_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Products.Product" xml:space="preserve">
     <value>Product</value>
   </data>
-	<data name="Zetbox.Basic.Products.Product_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Products.Product_description" xml:space="preserve">
     <value>Defines the fundamental properties of products</value>
   </data>
-	<data name="Zetbox.Basic.Products.ProductDetail" xml:space="preserve">
+  <data name="Zetbox.Basic.Products.ProductDetail" xml:space="preserve">
     <value>ProductDetail</value>
   </data>
-	<data name="Zetbox.Basic.Products.ProductDetail_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Products.ProductDetail_description" xml:space="preserve">
     <value>The specific details of a Product as it was offered for a specified range of time</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.PurchaseInvoice" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.PurchaseInvoice" xml:space="preserve">
     <value>PurchaseInvoice</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.PurchaseInvoice_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.PurchaseInvoice_description" xml:space="preserve">
     <value>a Purchase Invoice</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.PurchaseInvoiceItem" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.PurchaseInvoiceItem" xml:space="preserve">
     <value>PurchaseInvoiceItem</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.PurchaseInvoiceItem_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.PurchaseInvoiceItem_description" xml:space="preserve">
     <value>A Purchase invoice item. Can be connected to a purchased inventory items.</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate" xml:space="preserve">
     <value>PurchaseInvoiceItemTemplate</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.PurchaseInvoiceItemTemplate_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate" xml:space="preserve">
     <value>PurchaseInvoiceTemplate</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.PurchaseQuote" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.PurchaseInvoiceTemplate_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Invoicing.PurchaseQuote" xml:space="preserve">
     <value>PurchaseQuote</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.PurchaseQuote_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.PurchaseQuote_description" xml:space="preserve">
     <value>An incomming purchase quote</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.PurchaseQuoteItem" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.PurchaseQuoteItem" xml:space="preserve">
     <value>PurchaseQuoteItem</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.PurchaseQuoteItem_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.PurchaseQuoteItem_description" xml:space="preserve">
     <value>An incomming purchase quote item</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.Quote" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.Quote" xml:space="preserve">
     <value>Quote</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.Quote_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.Quote_description" xml:space="preserve">
     <value>Abstract base class for Quotes</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.QuoteItem" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.QuoteItem" xml:space="preserve">
     <value>QuoteItem</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.QuoteItem_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.QuoteItem_description" xml:space="preserve">
     <value>Abstract base classe for quote items</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.Receipt" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.Receipt" xml:space="preserve">
     <value>Receipt</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.Receipt_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.Receipt_description" xml:space="preserve">
     <value>Abstract class for all kind of receipts</value>
   </data>
-	<data name="Zetbox.Basic.Accounting.Receipt_Transaction" xml:space="preserve">
+  <data name="Zetbox.Basic.Accounting.Receipt_Transaction" xml:space="preserve">
     <value>Receipt_Transaction</value>
   </data>
-	<data name="Zetbox.Basic.Accounting.Receipt_Transaction_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Accounting.Receipt_Transaction_description" xml:space="preserve">
     <value>Relationship between receipt and transaction</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.ReceiptStatus" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.ReceiptStatus" xml:space="preserve">
     <value>ReceiptStatus</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.ReceiptTemplate" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.ReceiptStatus_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Invoicing.ReceiptTemplate" xml:space="preserve">
     <value>ReceiptTemplate</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.ReceiptTemplate_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.ReceiptTemplate_description" xml:space="preserve">
     <value>Abstract class for all kind of receipts templates</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.ReceiptType" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.ReceiptType" xml:space="preserve">
     <value>ReceiptType</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.ReceiptType_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.ReceiptType_description" xml:space="preserve">
     <value>Type of an receipt</value>
   </data>
-	<data name="Zetbox.Basic.Parties.RegulatoryAgency" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.RegulatoryAgency" xml:space="preserve">
     <value>RegulatoryAgency</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.SalesInvoice" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.RegulatoryAgency_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Invoicing.SalesInvoice" xml:space="preserve">
     <value>SalesInvoice</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.SalesInvoice_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.SalesInvoice_description" xml:space="preserve">
     <value>A Salses Invoice</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.SalesInvoiceItem" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.SalesInvoiceItem" xml:space="preserve">
     <value>SalesInvoiceItem</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.SalesInvoiceItem_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.SalesInvoiceItem_description" xml:space="preserve">
     <value>A Sales invoice items. Can be connected to a sales product</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate" xml:space="preserve">
     <value>SalesInvoiceItemTemplate</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.SalesInvoiceTemplate" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.SalesInvoiceItemTemplate_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Invoicing.SalesInvoiceTemplate" xml:space="preserve">
     <value>SalesInvoiceTemplate</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.SalesQuote" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.SalesInvoiceTemplate_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Invoicing.SalesQuote" xml:space="preserve">
     <value>SalesQuote</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.SalesQuote_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.SalesQuote_description" xml:space="preserve">
     <value>An outgoing sales quote</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.SalesQuoteItem" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.SalesQuoteItem" xml:space="preserve">
     <value>SalesQuoteItem</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.SalesQuoteItem_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.SalesQuoteItem_description" xml:space="preserve">
     <value>An outgoing sales quote item</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.StatisticActions" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.StatisticActions" xml:space="preserve">
     <value>StatisticActions</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.StatisticActions_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.StatisticActions_description" xml:space="preserve">
     <value>Singelton for statistic actions</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Subsidiary" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Subsidiary" xml:space="preserve">
     <value>Subsidiary</value>
   </data>
-	<data name="Zetbox.Basic.Parties.Supplier" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Subsidiary_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.Supplier" xml:space="preserve">
     <value>Supplier</value>
   </data>
-	<data name="Zetbox.Basic.Parties.SupplierRelationship" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.Supplier_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Parties.SupplierRelationship" xml:space="preserve">
     <value>SupplierRelationship</value>
   </data>
-	<data name="Zetbox.Basic.Accounting.Transaction" xml:space="preserve">
+  <data name="Zetbox.Basic.Parties.SupplierRelationship_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Accounting.Transaction" xml:space="preserve">
     <value>Transaction</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.VATType" xml:space="preserve">
+  <data name="Zetbox.Basic.Accounting.Transaction_description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Zetbox.Basic.Invoicing.VATType" xml:space="preserve">
     <value>VATType</value>
   </data>
-	<data name="Zetbox.Basic.Invoicing.VATType_description" xml:space="preserve">
+  <data name="Zetbox.Basic.Invoicing.VATType_description" xml:space="preserve">
     <value>Type of Value added tax</value>
   </data>
 </root>
