@@ -26,7 +26,7 @@ xcopy /s /y ..\CodeGen\Assets\*.* ..\..\Zetbox.Parties.Assets
 
 
 rem publish schema data for parties project
-Zetbox.Cli.exe %config% -publish ..\..\Modules\Parties.xml -ownermodules Parties;Invoicing;Accounting;Products
+Zetbox.Cli.exe %config% -publish ..\..\Modules\Parties.xml -ownermodules Parties;Invoicing;Accounting;Products;HR
 IF ERRORLEVEL 1 GOTO FAIL
 
 
@@ -47,7 +47,7 @@ Zetbox.Cli.exe %config% -export ..\..\Data\Products.Data.xml -schemamodules Prod
 IF ERRORLEVEL 1 GOTO FAIL
 
 rem export test data
-Zetbox.Cli.exe %config% -export ..\..\Data\Parties.xml -schemamodules Parties;Invoicing;Accounting;Products
+Zetbox.Cli.exe %config% -export ..\..\Data\Parties.xml -schemamodules Parties;Invoicing;Accounting;Products;HR
 IF ERRORLEVEL 1 GOTO FAIL
 
 echo ********************************************************************************
