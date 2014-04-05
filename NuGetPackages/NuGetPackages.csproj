@@ -16,6 +16,7 @@
     <OutputPath>..\bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="build_local.ps1" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
