@@ -53,6 +53,7 @@
     <Copy SourceFiles="@(Targets)" DestinationFolder="$(OutputPath)" />
   </Target>
   <Target Name="Build" DependsOnTargets="GitVersionTargets;GitVersionNuSpec;ContentCopy">
+    <Exec Command='powershell -command  ".\build_local.ps1"' WorkingDirectory="$(OutputPath)"/>
   </Target>
   <Target Name="Package" Inputs="@(NuSpec)" Outputs="%(Identity).Dummy" DependsOnTargets="Build">
     <Exec WorkingDirectory="$(OutputPath)" Command="..\$(NuGetCommand) pack @(NuSpec) -prop Configuration=$(Configuration)" />
