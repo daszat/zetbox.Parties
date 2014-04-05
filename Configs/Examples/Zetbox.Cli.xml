@@ -3,7 +3,7 @@
   <ConfigName>Zetbox.Parties Server Cli Configuration</ConfigName>
   <Server StartServer="true">
     <ConnectionStrings>
-      <Database Name="Zetbox" Schema="MSSQL" Provider="System.Data.SqlClient">Data Source=.\SQLEXPRESS;Initial Catalog=Parties;Integrated Security=True;MultipleActiveResultSets=true;</Database>
+      <Database Name="Zetbox" Schema="POSTGRESQL" Provider="NHibernate.Dialect.PostgreSQL82Dialect">Server=localhost;Port=5432;Database=Parties;User Id=zetbox;Password=</Database>
     </ConnectionStrings>
     <DocumentStore>DocumentStore\Server\</DocumentStore>
     <CodeGenWorkingPath>..\CodeGenNext</CodeGenWorkingPath>
@@ -15,10 +15,10 @@
     <CodeGenArchivePath>..\Backup</CodeGenArchivePath>
     <Modules>
       <Module>Zetbox.Server.ServerModule, Zetbox.Server</Module>
-      <Module>Zetbox.DalProvider.Ef.EfProvider, Zetbox.DalProvider.Ef</Module>
+      <Module>Zetbox.DalProvider.NHibernate.NHibernateProvider, Zetbox.DalProvider.NHibernate</Module>
       <Module>Zetbox.Generator.GeneratorModule, Zetbox.Generator</Module>
       <Module>Zetbox.DalProvider.Memory.Generator.MemoryGeneratorProvider, Zetbox.DalProvider.Memory.Generator</Module>
-      <Module>Zetbox.DalProvider.Ef.Generator.EfGeneratorProvider, Zetbox.DalProvider.Ef.Generator</Module>
+      <Module>Zetbox.DalProvider.NHibernate.Generator.NHibernateGeneratorProvider, Zetbox.DalProvider.NHibernate.Generator</Module>
       <Module>Zetbox.DalProvider.Client.Generator.ClientGeneratorProvider, Zetbox.DalProvider.Client.Generator</Module>
       <Module>Zetbox.Workflow.Server.ServerModule, Zetbox.Workflow.Server</Module>
       <Module>Zetbox.Parties.Server.ServerModule, Zetbox.Parties.Server</Module>

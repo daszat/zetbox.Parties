@@ -9,7 +9,7 @@
   </Client>
   <Server StartServer="true">
     <ConnectionStrings>
-      <Database Name="Zetbox" Schema="MSSQL" Provider="System.Data.SqlClient">Data Source=.\SQLEXPRESS;Initial Catalog=Parties;Integrated Security=True;MultipleActiveResultSets=true;</Database>
+      <Database Name="Zetbox" Schema="POSTGRESQL" Provider="NHibernate.Dialect.PostgreSQL82Dialect">Server=localhost;Port=5432;Database=ZetboxHR;User Id=zetbox;Password=</Database>
     </ConnectionStrings>
     <DocumentStore>..\bin\Debug\DocumentStore\Server\</DocumentStore>
     <Modules>

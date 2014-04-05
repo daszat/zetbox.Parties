@@ -3,12 +3,12 @@
   <ConfigName>Zetbox.Parties Server Configuration</ConfigName>
   <Server StartServer="true">
     <ConnectionStrings>
-      <Database Name="Zetbox" Schema="MSSQL" Provider="System.Data.SqlClient">Data Source=.\SQLEXPRESS;Initial Catalog=Parties;Integrated Security=True;MultipleActiveResultSets=true;</Database>
+      <Database Name="Zetbox" Schema="POSTGRESQL" Provider="NHibernate.Dialect.PostgreSQL82Dialect">Server=localhost;Port=5432;Database=Parties;User Id=zetbox;Password=</Database>
     </ConnectionStrings>
     <DocumentStore>DocumentStore\Server\</DocumentStore>
     <Modules>
       <Module>Zetbox.Server.ServerModule, Zetbox.Server</Module>
-      <Module>Zetbox.DalProvider.Ef.EfProvider, Zetbox.DalProvider.Ef</Module>
+      <Module>Zetbox.DalProvider.NHibernate.NHibernateProvider, Zetbox.DalProvider.NHibernate</Module>
 	  <Module>Zetbox.Server.Wcf.WcfModule, Zetbox.Server.Wcf</Module>
       <Module>Zetbox.Workflow.Server.ServerModule, Zetbox.Workflow.Server</Module>
       <Module>Zetbox.Parties.Server.ServerModule, Zetbox.Parties.Server</Module>
