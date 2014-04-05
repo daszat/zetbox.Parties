@@ -135,4 +135,10 @@
   <data name="Salary_description" xml:space="preserve">
     <value>Demo property, should be a List</value>
   </data>
+  <data name="Schedule_label" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="Schedule_description" xml:space="preserve">
+    <value />
+  </data>
 </root>

@@ -135,4 +135,10 @@
   <data name="Employments_description" xml:space="preserve">
     <value />
   </data>
+  <data name="TimeSheet_label" xml:space="preserve">
+    <value>TimeSheet</value>
+  </data>
+  <data name="TimeSheet_description" xml:space="preserve">
+    <value />
+  </data>
 </root>

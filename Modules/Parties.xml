@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-04-05T10:21:00Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-04-05T14:20:46Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -17454,7 +17454,7 @@ public static void isValid_CV(Employee obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>CV</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>6a28d045-4a7f-4781-9815-a7cf3c6fa764</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>1</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>300</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>a5e18586-d80f-49cf-8aa1-41d305eee289</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -17491,7 +17491,7 @@ public static void isValid_Education(Employee obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Education</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>6a28d045-4a7f-4781-9815-a7cf3c6fa764</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>2</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>400</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>a5e18586-d80f-49cf-8aa1-41d305eee289</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -17527,14 +17527,14 @@ public static void isValid_Employments(Employee obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Employments</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>6a28d045-4a7f-4781-9815-a7cf3c6fa764</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>0</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>200</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>e07c3171-b1c2-4018-ba10-0e253f89f161</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="ed5287e4-3551-4071-b1f4-b01bebd3d8e6">
-    <ZetboxBase:CategoryTags />
-    <ZetboxBase:ChangedOn>2014-04-05T08:21:00.619445Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2014-04-05T12:20:20.573329Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_TimeSheet(Employee obj, PropertyGetterEventArgs&lt;Zetbox.App.Calendar.CalendarBook&gt; e)
 {
@@ -17562,7 +17562,7 @@ public static void isValid_TimeSheet(Employee obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>TimeSheet</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>6a28d045-4a7f-4781-9815-a7cf3c6fa764</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>0</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>100</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>3954316b-3d8f-4e50-aef2-d1701c7b0721</ZetboxBase:RelationEnd>
@@ -17639,7 +17639,7 @@ public static void isValid_InternalOrganization(Employment obj, PropertyIsValidE
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:DecimalProperty ExportGuid="540f90be-92f1-4c0e-8cfe-199a3767e282">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-07-24T10:16:19.785538Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2014-04-05T12:20:20.573329Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Salary(Employment obj, PropertyGetterEventArgs&lt;decimal?&gt; e)
 {
@@ -17668,7 +17668,7 @@ public static void isValid_Salary(Employment obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Salary</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>6e2c2ff5-ff61-455b-8ade-f7f17e42fc09</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>201</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>202</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>481d7a65-208c-4706-8d4d-64ea629a109c</GUI:ValueModelDescriptor>
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:IsCalculated>false</ZetboxBase:IsCalculated>
@@ -17677,8 +17677,8 @@ public static void isValid_Salary(Employment obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Scale>2</ZetboxBase:Scale>
   </ZetboxBase:DecimalProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="75b54bba-d85a-44e1-80e1-c129a611af2d">
-    <ZetboxBase:CategoryTags />
-    <ZetboxBase:ChangedOn>2014-04-05T08:17:06.705557Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Main, Summary</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2014-04-05T12:20:46.047113Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Schedule(Employment obj, PropertyGetterEventArgs&lt;Zetbox.App.Calendar.WorkSchedule&gt; e)
 {
@@ -17706,7 +17706,7 @@ public static void isValid_Schedule(Employment obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Schedule</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>6e2c2ff5-ff61-455b-8ade-f7f17e42fc09</ZetboxBase:ObjectClass>
-    <ZetboxBase:Properties_pos>0</ZetboxBase:Properties_pos>
+    <ZetboxBase:Properties_pos>201</ZetboxBase:Properties_pos>
     <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>4cd721e5-4aa4-4677-868e-54e728f89acd</ZetboxBase:RelationEnd>
