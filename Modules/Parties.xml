@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-04-06T10:52:31Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-04-06T12:38:13Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -18758,8 +18758,8 @@ public static void isValid_Phone(Party obj, PropertyIsValidEventArgs e)
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
   </ZetboxBase:StringProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="c90b3e6f-14b8-453e-be24-f25ecf11793a">
-    <ZetboxBase:CategoryTags>Changed</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.089285Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Hidden</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2014-04-06T10:38:13.300145Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_ChangedBy(PartyRelationship obj, PropertyGetterEventArgs&lt;Zetbox.App.Base.Identity&gt; e)
 {
@@ -18794,8 +18794,8 @@ public static void isValid_ChangedBy(PartyRelationship obj, PropertyIsValidEvent
     <ZetboxBase:RelationEnd>dc33b9f3-cc41-4675-aaf0-9dd22a005091</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:DateTimeProperty ExportGuid="e7114ae3-47d9-4d84-a62f-6d16829dd293">
-    <ZetboxBase:CategoryTags>Changed</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.089285Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Hidden</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2014-04-06T10:38:13.300145Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_ChangedOn(PartyRelationship obj, PropertyGetterEventArgs&lt;DateTime&gt; e)
 {
@@ -18832,8 +18832,8 @@ public static void isValid_ChangedOn(PartyRelationship obj, PropertyIsValidEvent
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
   </ZetboxBase:DateTimeProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="abb6872d-c447-4f62-8d61-01dd9c6b7a30">
-    <ZetboxBase:CategoryTags>Changed</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.089285Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Hidden</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2014-04-06T10:38:13.300145Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_CreatedBy(PartyRelationship obj, PropertyGetterEventArgs&lt;Zetbox.App.Base.Identity&gt; e)
 {
@@ -18868,8 +18868,8 @@ public static void isValid_CreatedBy(PartyRelationship obj, PropertyIsValidEvent
     <ZetboxBase:RelationEnd>9eb53294-39c6-493c-a9f6-82fab1fb9b16</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:DateTimeProperty ExportGuid="bc1bbc4b-f1e5-4f05-903e-3a3fff321344">
-    <ZetboxBase:CategoryTags>Changed</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.089285Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Hidden</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2014-04-06T10:38:13.300145Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_CreatedOn(PartyRelationship obj, PropertyGetterEventArgs&lt;DateTime&gt; e)
 {
@@ -18906,8 +18906,8 @@ public static void isValid_CreatedOn(PartyRelationship obj, PropertyIsValidEvent
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
   </ZetboxBase:DateTimeProperty>
   <ZetboxBase:GuidProperty ExportGuid="15f1e108-931e-47b5-9018-c8326fbd0b67">
-    <ZetboxBase:CategoryTags>Export</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.089285Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Hidden</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2014-04-06T10:38:13.300145Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_ExportGuid(PartyRelationship obj, PropertyGetterEventArgs&lt;Guid&gt; e)
 {
@@ -18944,8 +18944,8 @@ public static void isValid_ExportGuid(PartyRelationship obj, PropertyIsValidEven
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
   </ZetboxBase:GuidProperty>
   <ZetboxBase:DateTimeProperty ExportGuid="b1c2bd25-3a52-4f17-abc5-82a1aec6796f">
-    <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.089285Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Summary, Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2014-04-06T10:38:13.300145Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_From(PartyRelationship obj, PropertyGetterEventArgs&lt;DateTime&gt; e)
 {
@@ -18981,8 +18981,8 @@ public static void isValid_From(PartyRelationship obj, PropertyIsValidEventArgs 
     <ZetboxBase:DateTimeStyle>2</ZetboxBase:DateTimeStyle>
   </ZetboxBase:DateTimeProperty>
   <ZetboxBase:DateTimeProperty ExportGuid="c1bd3355-f9ff-4d40-b155-4f6f508d7a59">
-    <ZetboxBase:CategoryTags>Summary</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.089285Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CategoryTags>Summary, Main</ZetboxBase:CategoryTags>
+    <ZetboxBase:ChangedOn>2014-04-06T10:38:13.300145Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_Thru(PartyRelationship obj, PropertyGetterEventArgs&lt;DateTime?&gt; e)
 {
