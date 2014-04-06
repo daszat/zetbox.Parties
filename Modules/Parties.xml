@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-04-05T14:20:46Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-04-06T10:52:31Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -4671,6 +4671,41 @@ public static void isValid_Until(BusinessTrip obj, PropertyIsValidEventArgs e)
     <ZetboxBase:IsList>false</ZetboxBase:IsList>
     <ZetboxBase:DateTimeStyle>2</ZetboxBase:DateTimeStyle>
   </ZetboxBase:DateTimeProperty>
+  <ZetboxBase:ObjectReferenceProperty ExportGuid="36a369cd-be76-4057-83d3-9f1be5910080">
+    <ZetboxBase:CategoryTags />
+    <ZetboxBase:ChangedOn>2014-04-06T08:52:31.431375Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CodeTemplate>[Invocation]
+public static void get_Identity(Employee obj, PropertyGetterEventArgs&lt;Zetbox.App.Base.Identity&gt; e)
+{
+}
+
+[Invocation]
+public static void preSet_Identity(Employee obj, PropertyPreSetterEventArgs&lt;Zetbox.App.Base.Identity&gt; e)
+{
+}
+
+[Invocation]
+public static void postSet_Identity(Employee obj, PropertyPostSetterEventArgs&lt;Zetbox.App.Base.Identity&gt; e)
+{
+}
+
+[Invocation]
+public static void isValid_Identity(Employee obj, PropertyIsValidEventArgs e)
+{
+	e.IsValid = obj.Identity == ...;
+	e.Error = e.IsValid ? string.Empty : "&lt;Error&gt;";
+}
+
+</ZetboxBase:CodeTemplate>
+    <ZetboxBase:CreatedOn>2014-04-06T08:51:41.193408Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Module>17d43a3d-5a6b-465d-b1f4-6ad853445edb</ZetboxBase:Module>
+    <ZetboxBase:Name>Identity</ZetboxBase:Name>
+    <ZetboxBase:ObjectClass>6a28d045-4a7f-4781-9815-a7cf3c6fa764</ZetboxBase:ObjectClass>
+    <ZetboxBase:Properties_pos>0</ZetboxBase:Properties_pos>
+    <GUI:ValueModelDescriptor>83aae6fd-0fae-4348-b313-737a6e751027</GUI:ValueModelDescriptor>
+    <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
+    <ZetboxBase:RelationEnd>2b3a5ce6-1d69-4f79-a596-2211c85f9f69</ZetboxBase:RelationEnd>
+  </ZetboxBase:ObjectReferenceProperty>
   <ZetboxBase:Relation ExportGuid="5df0c362-983a-4734-8542-152ae23cb36e">
     <ZetboxBase:A>7e4bf2e5-cd4c-4b6e-9a9b-4b1abab42890</ZetboxBase:A>
     <ZetboxBase:B>326f6126-167f-41ab-a08e-77a47618507c</ZetboxBase:B>
@@ -4700,6 +4735,16 @@ public static void isValid_Until(BusinessTrip obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Module>17d43a3d-5a6b-465d-b1f4-6ad853445edb</ZetboxBase:Module>
     <ZetboxBase:Storage>1</ZetboxBase:Storage>
     <ZetboxBase:Verb>was</ZetboxBase:Verb>
+  </ZetboxBase:Relation>
+  <ZetboxBase:Relation ExportGuid="ce212669-e4fb-4a93-b80c-35d3dd128372">
+    <ZetboxBase:A>03e09d69-86cd-4739-9df3-65781436ef5f</ZetboxBase:A>
+    <ZetboxBase:B>2b3a5ce6-1d69-4f79-a596-2211c85f9f69</ZetboxBase:B>
+    <ZetboxBase:ChangedOn>2014-04-06T08:52:31.431375Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:Containment>0</ZetboxBase:Containment>
+    <ZetboxBase:CreatedOn>2014-04-06T08:51:41.193408Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:Module>17d43a3d-5a6b-465d-b1f4-6ad853445edb</ZetboxBase:Module>
+    <ZetboxBase:Storage>2</ZetboxBase:Storage>
+    <ZetboxBase:Verb>identifies</ZetboxBase:Verb>
   </ZetboxBase:Relation>
   <ZetboxBase:RelationEnd ExportGuid="543073d1-8447-4337-92b8-116f78aa1cf4">
     <ZetboxBase:AParent>5c0c6077-18e1-4e72-b429-1075fcadb8b2</ZetboxBase:AParent>
@@ -4731,6 +4776,16 @@ public static void isValid_Until(BusinessTrip obj, PropertyIsValidEventArgs e)
     <ZetboxBase:RoleName>Trip</ZetboxBase:RoleName>
     <ZetboxBase:Type>bba560b8-0802-467f-b155-f37370e10e77</ZetboxBase:Type>
   </ZetboxBase:RelationEnd>
+  <ZetboxBase:RelationEnd ExportGuid="2b3a5ce6-1d69-4f79-a596-2211c85f9f69">
+    <ZetboxBase:BParent>ce212669-e4fb-4a93-b80c-35d3dd128372</ZetboxBase:BParent>
+    <ZetboxBase:ChangedOn>2014-04-06T08:51:41.193408Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2014-04-06T08:51:41.193408Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
+    <ZetboxBase:Multiplicity>1</ZetboxBase:Multiplicity>
+    <ZetboxBase:Navigator>36a369cd-be76-4057-83d3-9f1be5910080</ZetboxBase:Navigator>
+    <ZetboxBase:RoleName>Employee</ZetboxBase:RoleName>
+    <ZetboxBase:Type>6a28d045-4a7f-4781-9815-a7cf3c6fa764</ZetboxBase:Type>
+  </ZetboxBase:RelationEnd>
   <ZetboxBase:RelationEnd ExportGuid="326f6126-167f-41ab-a08e-77a47618507c">
     <ZetboxBase:BParent>5df0c362-983a-4734-8542-152ae23cb36e</ZetboxBase:BParent>
     <ZetboxBase:ChangedOn>2014-04-04T11:49:31.175326Z</ZetboxBase:ChangedOn>
@@ -4756,6 +4811,15 @@ public static void isValid_Until(BusinessTrip obj, PropertyIsValidEventArgs e)
     <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
     <ZetboxBase:Multiplicity>1</ZetboxBase:Multiplicity>
     <ZetboxBase:RoleName>CreatedBy</ZetboxBase:RoleName>
+    <ZetboxBase:Type>31d8890a-67fc-4a78-9d35-9ff0b9e09b4c</ZetboxBase:Type>
+  </ZetboxBase:RelationEnd>
+  <ZetboxBase:RelationEnd ExportGuid="03e09d69-86cd-4739-9df3-65781436ef5f">
+    <ZetboxBase:AParent>ce212669-e4fb-4a93-b80c-35d3dd128372</ZetboxBase:AParent>
+    <ZetboxBase:ChangedOn>2014-04-06T08:51:41.193408Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:CreatedOn>2014-04-06T08:51:41.193408Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:HasPersistentOrder>false</ZetboxBase:HasPersistentOrder>
+    <ZetboxBase:Multiplicity>2</ZetboxBase:Multiplicity>
+    <ZetboxBase:RoleName>Identity</ZetboxBase:RoleName>
     <ZetboxBase:Type>31d8890a-67fc-4a78-9d35-9ff0b9e09b4c</ZetboxBase:Type>
   </ZetboxBase:RelationEnd>
   <ZetboxBase:ClientReadOnlyConstraint ExportGuid="ff663a93-8d11-4721-ae92-220d3027dd7e">
@@ -4808,6 +4872,11 @@ public static void isValid_Until(BusinessTrip obj, PropertyIsValidEventArgs e)
     <ZetboxBase:ConstrainedProperty>c1405a8e-a8bc-430c-b917-30444f02644d</ZetboxBase:ConstrainedProperty>
     <ZetboxBase:CreatedOn>2014-04-04T11:49:31.175326Z</ZetboxBase:CreatedOn>
   </ZetboxBase:NotNullableConstraint>
+  <ZetboxBase:NotNullableConstraint ExportGuid="3064d877-0df0-42ad-b376-bf921f2e0d16">
+    <ZetboxBase:ChangedOn>2014-04-06T08:51:41.193408Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ConstrainedProperty>36a369cd-be76-4057-83d3-9f1be5910080</ZetboxBase:ConstrainedProperty>
+    <ZetboxBase:CreatedOn>2014-04-06T08:51:41.193408Z</ZetboxBase:CreatedOn>
+  </ZetboxBase:NotNullableConstraint>
   <ZetboxBase:IndexConstraint ExportGuid="f49846a1-f276-400a-9349-c524b082eff3">
     <ZetboxBase:Constrained>bba560b8-0802-467f-b155-f37370e10e77</ZetboxBase:Constrained>
     <ZetboxBase:Reason>ExportGuid must be unique</ZetboxBase:Reason>
@@ -4832,6 +4901,28 @@ public static void isValid_Until(BusinessTrip obj, PropertyIsValidEventArgs e)
     <ZetboxBase:CreatedOn>2014-04-04T11:47:05.378326Z</ZetboxBase:CreatedOn>
     <ZetboxBase:Property>1c1cae43-7774-4f19-b8ab-d75aadd22743</ZetboxBase:Property>
   </ZetboxBase:NewGuidDefaultValue>
+  <GUI:NavigationScreen ExportGuid="b763d7c0-e4c4-4fb3-9bc0-b75fc2f5770e">
+    <GUI:ChangedOn>2014-04-05T13:39:52.674337Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2014-04-05T13:39:52.674337Z</GUI:CreatedOn>
+    <GUI:Module>17d43a3d-5a6b-465d-b1f4-6ad853445edb</GUI:Module>
+    <GUI:Title>Main</GUI:Title>
+  </GUI:NavigationScreen>
+  <GUI:NavigationAction ExportGuid="0c5f9fca-5dc6-4f6e-84aa-6e05d265f663">
+    <GUI:ChangedOn>2014-04-06T07:58:11.925904Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2014-04-06T07:58:11.925904Z</GUI:CreatedOn>
+    <GUI:Module>17d43a3d-5a6b-465d-b1f4-6ad853445edb</GUI:Module>
+    <GUI:Parent>b763d7c0-e4c4-4fb3-9bc0-b75fc2f5770e</GUI:Parent>
+    <GUI:Children_pos>0</GUI:Children_pos>
+    <GUI:Title>New Employee</GUI:Title>
+  </GUI:NavigationAction>
+  <GUI:Application ExportGuid="ad364801-8079-4385-8e90-a5a0f3087fe0">
+    <GUI:ChangedOn>2014-04-05T13:39:52.674337Z</GUI:ChangedOn>
+    <GUI:CreatedOn>2014-04-05T13:39:52.674337Z</GUI:CreatedOn>
+    <GUI:Icon>6a992747-2739-4d72-902d-38810394780f</GUI:Icon>
+    <GUI:Module>17d43a3d-5a6b-465d-b1f4-6ad853445edb</GUI:Module>
+    <GUI:Name>Human Resources</GUI:Name>
+    <GUI:RootScreen>b763d7c0-e4c4-4fb3-9bc0-b75fc2f5770e</GUI:RootScreen>
+  </GUI:Application>
   <ZetboxBase:Module ExportGuid="73b3078c-d541-4015-b27e-7820408052e9">
     <ZetboxBase:ChangedOn>2011-08-05T16:30:47.656235Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-07-26T23:22:37Z</ZetboxBase:CreatedOn>
