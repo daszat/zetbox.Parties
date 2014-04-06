@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-04-06T12:38:13Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-04-06T12:54:35Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -15989,11 +15989,12 @@ public static void ObjectIsValid(Division obj, ObjectIsValidEventArgs e)
     <ZetboxBase:TableName>Divisions</ZetboxBase:TableName>
   </ZetboxBase:ObjectClass>
   <ZetboxBase:ObjectClass ExportGuid="6a28d045-4a7f-4781-9815-a7cf3c6fa764">
-    <ZetboxBase:ChangedOn>2011-08-05T16:31:13.035282Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2014-04-06T10:54:35.390495Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-02-16T17:20:44Z</ZetboxBase:CreatedOn>
     <GUI:DefaultIcon>5ec2d5a8-ee02-4252-9ab3-9c031160be22</GUI:DefaultIcon>
     <ZetboxBase:Module>b2008daa-9f3a-4844-85c3-9049af70c0ff</ZetboxBase:Module>
     <ZetboxBase:Name>Employee</ZetboxBase:Name>
+    <GUI:RequestedKind>791b0f1f-875b-4376-97de-5833974ddc43</GUI:RequestedKind>
     <GUI:ShowIconInLists>false</GUI:ShowIconInLists>
     <GUI:ShowIdInLists>false</GUI:ShowIdInLists>
     <GUI:ShowNameInLists>false</GUI:ShowNameInLists>

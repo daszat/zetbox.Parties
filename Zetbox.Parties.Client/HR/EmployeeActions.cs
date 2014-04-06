@@ -29,12 +29,5 @@ namespace Zetbox.Basic.Parties
             obj.TimeSheet = obj.Context.Create<CalendarBook>();
             obj.Employments.Add(obj.Context.Create<Employment>());
         }
-
-        [Invocation]
-        public static void postSet_Identity(Employee obj, PropertyPostSetterEventArgs<Identity> e)
-        {
-            // keep the timesheet owned by the employee
-            obj.TimeSheet.Owner = e.NewValue;
-        }
     }
 }
