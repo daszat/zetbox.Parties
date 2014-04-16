@@ -12,7 +12,7 @@ namespace Zetbox.Basic.Invoicing
         [Invocation]
         public static void ToString(Zetbox.Basic.Invoicing.VATType obj, MethodReturnEventArgs<System.String> e)
         {
-            e.Result = obj.Description;
+            e.Result = obj.Description ?? String.Empty;
         }
     }
 }

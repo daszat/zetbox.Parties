@@ -12,7 +12,7 @@ namespace Zetbox.Basic.Accounting
         [Invocation]
         public static void ToString(AccountImporterDescriptor obj, MethodReturnEventArgs<System.String> e)
         {
-            e.Result = obj.Name;
+            e.Result = obj.Name ?? String.Empty;
         }
     }
 }

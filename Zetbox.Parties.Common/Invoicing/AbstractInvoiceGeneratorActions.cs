@@ -12,7 +12,7 @@ namespace Zetbox.Basic.Invoicing
         [Invocation]
         public static void ToString(AbstractInvoiceGenerator obj, MethodReturnEventArgs<string> e)
         {
-            e.Result = string.IsNullOrEmpty(obj.Name) ? "<no name>" : obj.Name;
+            e.Result = obj.Name.IfNullOrWhiteSpace("<no name>");
         }
     }
 }

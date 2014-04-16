@@ -12,7 +12,7 @@ namespace Zetbox.Basic.Parties
         [Invocation]
         public static void ToString(Zetbox.Basic.Parties.Organization obj, MethodReturnEventArgs<System.String> e)
         {
-            e.Result = obj.Name;
+            e.Result = obj.Name ?? String.Empty;
         }
     }
 }
