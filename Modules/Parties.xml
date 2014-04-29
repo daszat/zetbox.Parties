@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-04-29T09:57:36.2974579Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-04-29T10:24:49.2450777Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -20921,7 +20921,7 @@ public static void ObjectIsValid(Order obj, ObjectIsValidEventArgs e)
     <ZetboxBase:TableName>Orders</ZetboxBase:TableName>
   </ZetboxBase:ObjectClass>
   <ZetboxBase:ObjectClass ExportGuid="10c24016-1182-416f-af36-eef2ccbb663d">
-    <ZetboxBase:ChangedOn>2013-03-20T16:21:46.135203Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2014-04-29T08:22:17.2756872Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2013-03-20T15:58:15.042679Z</ZetboxBase:CreatedOn>
     <GUI:DefaultIcon>32dc1dd9-6f33-486a-a504-133f93ae02b9</GUI:DefaultIcon>
     <ZetboxBase:Description>The details of an order. This connects the Customer to the ordered Product and can be used to override details from the Product.</ZetboxBase:Description>
@@ -20965,7 +20965,7 @@ public static void ObjectIsValid(OrderDetail obj, ObjectIsValidEventArgs e)
     <ZetboxBase:IsAbstract>false</ZetboxBase:IsAbstract>
     <ZetboxBase:IsCreatedProgrammatically>false</ZetboxBase:IsCreatedProgrammatically>
     <ZetboxBase:IsFrozenObject>false</ZetboxBase:IsFrozenObject>
-    <GUI:IsSimpleObject>false</GUI:IsSimpleObject>
+    <GUI:IsSimpleObject>true</GUI:IsSimpleObject>
     <ZetboxBase:TableMapping>1</ZetboxBase:TableMapping>
     <ZetboxBase:TableName>OrderItems</ZetboxBase:TableName>
   </ZetboxBase:ObjectClass>
@@ -21574,7 +21574,7 @@ public static void isValid_OrderID(Order obj, PropertyIsValidEventArgs e)
   </ZetboxBase:StringProperty>
   <ZetboxBase:ObjectReferenceProperty ExportGuid="72f1718f-948b-4294-a905-397a8afa5d54">
     <ZetboxBase:CategoryTags>Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2014-04-29T07:33:13.0125065Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2014-04-29T08:24:49.2450777Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_OrderItems(Order obj, PropertyGetterEventArgs&lt;IList&lt;Zetbox.Basic.Products.OrderItem&gt;&gt; e)
 {
@@ -21604,7 +21604,7 @@ public static void isValid_OrderItems(Order obj, PropertyIsValidEventArgs e)
     <ZetboxBase:Name>OrderItems</ZetboxBase:Name>
     <ZetboxBase:ObjectClass>b47e9307-070a-4240-be2a-43acad6ffd1c</ZetboxBase:ObjectClass>
     <ZetboxBase:Properties_pos>4</ZetboxBase:Properties_pos>
-    <GUI:ValueModelDescriptor>67a49c49-b890-4d35-a8db-1f8e43bfc7df</GUI:ValueModelDescriptor>
+    <GUI:ValueModelDescriptor>9fce01fe-fd6d-4e21-8b55-08d5e38aea36</GUI:ValueModelDescriptor>
     <ZetboxBase:EagerLoading>false</ZetboxBase:EagerLoading>
     <ZetboxBase:RelationEnd>92fda11e-09dd-4391-9fac-057ff94316fc</ZetboxBase:RelationEnd>
   </ZetboxBase:ObjectReferenceProperty>
