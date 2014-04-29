@@ -117,106 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BillingPeriod_label" xml:space="preserve">
-    <value>Billing period</value>
+  <data name="Open_label" xml:space="preserve">
+    <value>Open</value>
   </data>
-  <data name="BillingPeriod_description" xml:space="preserve">
-    <value>Set this property to override the underlying product's details.</value>
-  </data>
-  <data name="ChangedBy_label" xml:space="preserve">
-    <value>ChangedBy</value>
-  </data>
-  <data name="ChangedBy_description" xml:space="preserve">
-    <value>Identity which changed this object</value>
-  </data>
-  <data name="ChangedOn_label" xml:space="preserve">
-    <value>ChangedOn</value>
-  </data>
-  <data name="ChangedOn_description" xml:space="preserve">
-    <value>Date and time where this object was changed</value>
-  </data>
-  <data name="CreatedBy_label" xml:space="preserve">
-    <value>CreatedBy</value>
-  </data>
-  <data name="CreatedBy_description" xml:space="preserve">
-    <value>Identity which created this object</value>
-  </data>
-  <data name="CreatedOn_label" xml:space="preserve">
-    <value>CreatedOn</value>
-  </data>
-  <data name="CreatedOn_description" xml:space="preserve">
-    <value>Date and time where this object was created</value>
-  </data>
-  <data name="DueDate_label" xml:space="preserve">
-    <value>Due date</value>
-  </data>
-  <data name="DueDate_description" xml:space="preserve">
-    <value>When is this item due. Depending on the product, this can be the estimated shipping date, the begin of the service contract, or similar things.</value>
-  </data>
-  <data name="ExportGuid_label" xml:space="preserve">
-    <value>ExportGuid</value>
-  </data>
-  <data name="ExportGuid_description" xml:space="preserve">
-    <value>Export Guid</value>
-  </data>
-  <data name="IsDeactivated_label" xml:space="preserve">
-    <value>Is deactivated</value>
-  </data>
-  <data name="IsDeactivated_description" xml:space="preserve">
-    <value>If true, the item will be hidden in any search</value>
-  </data>
-  <data name="Order_label" xml:space="preserve">
-    <value>Order</value>
-  </data>
-  <data name="Order_description" xml:space="preserve">
+  <data name="Open_description" xml:space="preserve">
     <value />
   </data>
-  <data name="Price_label" xml:space="preserve">
-    <value>Price</value>
+  <data name="InProgress_label" xml:space="preserve">
+    <value>Fulfillment in progress</value>
   </data>
-  <data name="Price_description" xml:space="preserve">
-    <value>Set this property to override the underlying product's details.</value>
+  <data name="InProgress_description" xml:space="preserve">
+    <value />
   </data>
-  <data name="PriceNet_label" xml:space="preserve">
-    <value>Price (net)</value>
+  <data name="Fulfilled_label" xml:space="preserve">
+    <value>Fulfilled</value>
   </data>
-  <data name="PriceNet_description" xml:space="preserve">
-    <value>Set this property to override the underlying product's details.</value>
+  <data name="Fulfilled_description" xml:space="preserve">
+    <value />
   </data>
-  <data name="Product_label" xml:space="preserve">
-    <value>Product</value>
+  <data name="Canceled_label" xml:space="preserve">
+    <value>Canceled</value>
   </data>
-  <data name="Product_description" xml:space="preserve">
-    <value>The ordered product</value>
-  </data>
-  <data name="ProductDetail_label" xml:space="preserve">
-    <value>Product detail</value>
-  </data>
-  <data name="ProductDetail_description" xml:space="preserve">
-    <value>Detail of the product</value>
-  </data>
-  <data name="Quantity_label" xml:space="preserve">
-    <value>Quantity</value>
-  </data>
-  <data name="Quantity_description" xml:space="preserve">
-    <value>Set this property to override the underlying product's details.</value>
-  </data>
-  <data name="Unit_label" xml:space="preserve">
-    <value>Unit</value>
-  </data>
-  <data name="Unit_description" xml:space="preserve">
-    <value>Set this property to override the underlying product's details.</value>
-  </data>
-  <data name="UnitPriceNet_label" xml:space="preserve">
-    <value>Unit price (net)</value>
-  </data>
-  <data name="UnitPriceNet_description" xml:space="preserve">
-    <value>Set this property to override the underlying product's details.</value>
-  </data>
-  <data name="VATType_label" xml:space="preserve">
-    <value>VAT</value>
-  </data>
-  <data name="VATType_description" xml:space="preserve">
-    <value>Set this property to override the underlying product's details.</value>
+  <data name="Canceled_description" xml:space="preserve">
+    <value />
   </data>
 </root>

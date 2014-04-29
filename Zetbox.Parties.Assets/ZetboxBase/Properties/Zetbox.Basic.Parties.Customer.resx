@@ -127,7 +127,7 @@
     <value>Orders</value>
   </data>
   <data name="Orders_description" xml:space="preserve">
-    <value>The orders made by this customer.</value>
+    <value />
   </data>
   <data name="SalesInvoices_label" xml:space="preserve">
     <value>SalesInvoices</value>

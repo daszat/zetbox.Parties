@@ -117,11 +117,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AuditJournal_label" xml:space="preserve">
+    <value>Änderungen</value>
+  </data>
+  <data name="AuditJournal_description" xml:space="preserve">
+    <value>Eine Liste der Änderungen an diesem Datensatz.</value>
+  </data>
+  <data name="ChangedBy_label" xml:space="preserve">
+    <value>ChangedBy</value>
+  </data>
+  <data name="ChangedBy_description" xml:space="preserve">
+    <value>Identity which changed this object</value>
+  </data>
+  <data name="ChangedOn_label" xml:space="preserve">
+    <value>ChangedOn</value>
+  </data>
+  <data name="ChangedOn_description" xml:space="preserve">
+    <value>Date and time where this object was changed</value>
+  </data>
+  <data name="CreatedBy_label" xml:space="preserve">
+    <value>CreatedBy</value>
+  </data>
+  <data name="CreatedBy_description" xml:space="preserve">
+    <value>Identity which created this object</value>
+  </data>
+  <data name="CreatedOn_label" xml:space="preserve">
+    <value>CreatedOn</value>
+  </data>
+  <data name="CreatedOn_description" xml:space="preserve">
+    <value>Date and time where this object was created</value>
+  </data>
+  <data name="ExportGuid_label" xml:space="preserve">
+    <value>ExportGuid</value>
+  </data>
+  <data name="ExportGuid_description" xml:space="preserve">
+    <value>Export Guid</value>
+  </data>
   <data name="From_label" xml:space="preserve">
     <value>From</value>
   </data>
   <data name="From_description" xml:space="preserve">
     <value>The day this details' validity period starts.</value>
+  </data>
+  <data name="IsDeactivated_label" xml:space="preserve">
+    <value>Is deactivated</value>
+  </data>
+  <data name="IsDeactivated_description" xml:space="preserve">
+    <value>If true, the item will be hidden in any search</value>
   </data>
   <data name="Price_label" xml:space="preserve">
     <value>Price</value>

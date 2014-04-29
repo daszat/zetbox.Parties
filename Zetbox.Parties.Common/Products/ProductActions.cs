@@ -10,7 +10,7 @@ namespace Zetbox.Basic.Products
     public static class ProductActions
     {
         [Invocation]
-        public static void ToString(Zetbox.Basic.Products.Product obj, MethodReturnEventArgs<System.String> e)
+        public static void ToString(Product obj, MethodReturnEventArgs<System.String> e)
         {
             var endMessage = string.Empty;
             if (obj.AvailableUntil.HasValue)
@@ -25,6 +25,22 @@ namespace Zetbox.Basic.Products
                 }
             }
             e.Result = string.Format("{0} ({1} since {2:d}{3})", obj.Name, obj.BillingPeriod, obj.AvailableFrom, endMessage);
+        }
+
+        [Invocation]
+        public static void ObjectIsValid(Product obj, ObjectIsValidEventArgs e)
+        {
+            
+        }
+
+        [Invocation]
+        public static void get_CurrentDetail(Product obj, PropertyGetterEventArgs<Zetbox.Basic.Products.ProductDetail> e)
+        {
+        }
+
+        [Invocation]
+        public static void postSet_IsDeactivated(Product obj, PropertyPostSetterEventArgs<bool> e)
+        {
         }
     }
 }

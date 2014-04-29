@@ -1,10 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Invoicing="Zetbox.Basic.Invoicing" date="2014-03-18T18:23:29.2125306Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Invoicing="Zetbox.Basic.Invoicing" date="2014-04-29T09:57:36.2974579Z" xmlns="http://dasz.at/Zetbox">
+  <Invoicing:VATType ExportGuid="63447af3-ca54-47eb-94cd-14768665c7d1">
+    <Invoicing:ChangedOn>2014-04-29T07:51:33.4135406Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2014-04-29T07:51:33.4135406Z</Invoicing:CreatedOn>
+    <Invoicing:Description>10 %</Invoicing:Description>
+    <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
+    <Invoicing:Percentage>10.00</Invoicing:Percentage>
+  </Invoicing:VATType>
   <Invoicing:VATType ExportGuid="cd217909-55a2-476a-a9e5-2f3ddd48e547">
     <Invoicing:ChangedOn>2012-10-10T09:20:38.746092Z</Invoicing:ChangedOn>
     <Invoicing:CreatedOn>2012-10-10T09:20:38.746092Z</Invoicing:CreatedOn>
     <Invoicing:Description>20 %</Invoicing:Description>
     <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
     <Invoicing:Percentage>20.00</Invoicing:Percentage>
+  </Invoicing:VATType>
+  <Invoicing:VATType ExportGuid="decf9371-9c6e-4b8c-8c13-158c8661d0ff">
+    <Invoicing:ChangedOn>2014-04-29T07:51:50.4425996Z</Invoicing:ChangedOn>
+    <Invoicing:CreatedOn>2014-04-29T07:51:50.4425996Z</Invoicing:CreatedOn>
+    <Invoicing:Description>No VAT</Invoicing:Description>
+    <Invoicing:Module>73b3078c-d541-4015-b27e-7820408052e9</Invoicing:Module>
   </Invoicing:VATType>
 </ZetboxPackaging>
