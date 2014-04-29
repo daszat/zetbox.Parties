@@ -12,7 +12,7 @@ namespace Zetbox.Basic.Products
         [Invocation]
         public static void ToString(Zetbox.Basic.Products.ProductDetail obj, MethodReturnEventArgs<System.String> e)
         {
-
+            e.Result = string.Format(">= {0}; {1} {2} - {3}/{4}", obj.From, obj.Quantity, obj.Unit, obj.PriceNet, obj.Price);
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-04-29T10:24:49.2450777Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:ZetboxBase="Zetbox.App.Base" xmlns:GUI="Zetbox.App.GUI" date="2014-04-29T11:05:41.9590628Z" xmlns="http://dasz.at/Zetbox">
   <ZetboxBase:Module ExportGuid="390a2bcd-b7c3-4bc3-a826-736debd43791">
     <ZetboxBase:ChangedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CreatedOn>2011-11-08T20:47:04.534407Z</ZetboxBase:CreatedOn>
@@ -23033,7 +23033,7 @@ public static void isValid_ExportGuid(ProductDetail obj, PropertyIsValidEventArg
   </ZetboxBase:GuidProperty>
   <ZetboxBase:DateTimeProperty ExportGuid="81fbcee0-1fce-4eb3-b6d9-ed18c5c7dcb1">
     <ZetboxBase:CategoryTags>Summary,Main</ZetboxBase:CategoryTags>
-    <ZetboxBase:ChangedOn>2013-04-02T11:33:39.655408Z</ZetboxBase:ChangedOn>
+    <ZetboxBase:ChangedOn>2014-04-29T09:05:41.9590628Z</ZetboxBase:ChangedOn>
     <ZetboxBase:CodeTemplate>[Invocation]
 public static void get_From(ProductDetail obj, PropertyGetterEventArgs&lt;DateTime&gt; e)
 {
@@ -23058,6 +23058,7 @@ public static void isValid_From(ProductDetail obj, PropertyIsValidEventArgs e)
 
 </ZetboxBase:CodeTemplate>
     <ZetboxBase:CreatedOn>2013-04-02T11:32:29.614405Z</ZetboxBase:CreatedOn>
+    <ZetboxBase:DefaultSortPriority>1</ZetboxBase:DefaultSortPriority>
     <ZetboxBase:Description>The day this details' validity period starts.</ZetboxBase:Description>
     <ZetboxBase:Label>From</ZetboxBase:Label>
     <ZetboxBase:Module>4f4c85a8-e759-4999-8288-99ce549dbbef</ZetboxBase:Module>
