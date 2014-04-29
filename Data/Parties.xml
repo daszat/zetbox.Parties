@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:HR="Zetbox.Basic.HR" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2014-04-29T11:05:41.9590628Z" xmlns="http://dasz.at/Zetbox">
+<ZetboxPackaging xmlns:Accounting="Zetbox.Basic.Accounting" xmlns:HR="Zetbox.Basic.HR" xmlns:Invoicing="Zetbox.Basic.Invoicing" xmlns:Parties="Zetbox.Basic.Parties" xmlns:Products="Zetbox.Basic.Products" date="2014-04-29T16:01:53.5601112Z" xmlns="http://dasz.at/Zetbox">
   <Accounting:Account ExportGuid="5ce18612-eac2-4384-916d-ebf488f5a5ea">
     <Accounting:ChangedOn>2012-11-19T12:37:34.04339Z</Accounting:ChangedOn>
     <Accounting:CreatedOn>2012-10-12T08:16:49.812789Z</Accounting:CreatedOn>
@@ -19,6 +19,16 @@
   <Accounting:AccountStatement ExportGuid="09bbde42-6120-40af-9d37-8267efdbf890">
     <Accounting:Account>5ce18612-eac2-4384-916d-ebf488f5a5ea</Accounting:Account>
     <Accounting:AuditJournal>
+      <CollectionEntry>
+        <Accounting:Value>
+          <Identity xmlns="Zetbox.App.Base">Arthur Zaczek</Identity>
+          <MessageFormat xmlns="Zetbox.App.Base">object created</MessageFormat>
+          <NewValue xmlns="Zetbox.App.Base" />
+          <OldValue xmlns="Zetbox.App.Base" />
+          <PropertyName xmlns="Zetbox.App.Base" />
+          <Timestamp xmlns="Zetbox.App.Base">2014-03-18T15:39:17.514134Z</Timestamp>
+        </Accounting:Value>
+      </CollectionEntry>
       <CollectionEntry>
         <Accounting:Value>
           <Identity xmlns="Zetbox.App.Base">Arthur Zaczek</Identity>
@@ -845,6 +855,16 @@
           <Timestamp xmlns="Zetbox.App.Base">2014-04-29T08:20:17.7194805Z</Timestamp>
         </Products:Value>
       </CollectionEntry>
+      <CollectionEntry>
+        <Products:Value>
+          <Identity xmlns="Zetbox.App.Base">Arthur Zaczek</Identity>
+          <MessageFormat xmlns="Zetbox.App.Base">object created</MessageFormat>
+          <NewValue xmlns="Zetbox.App.Base" />
+          <OldValue xmlns="Zetbox.App.Base" />
+          <PropertyName xmlns="Zetbox.App.Base" />
+          <Timestamp xmlns="Zetbox.App.Base">2014-04-29T08:20:17.7194805Z</Timestamp>
+        </Products:Value>
+      </CollectionEntry>
     </Products:AuditJournal>
     <Products:AvailableFrom>2014-04-28T22:00:00Z</Products:AvailableFrom>
     <Products:BillingPeriod>0</Products:BillingPeriod>
@@ -855,6 +875,16 @@
   </Products:Product>
   <Products:ProductDetail ExportGuid="0da30f0d-129e-4916-8ce5-356ecec75583">
     <Products:AuditJournal>
+      <CollectionEntry>
+        <Products:Value>
+          <Identity xmlns="Zetbox.App.Base">Arthur Zaczek</Identity>
+          <MessageFormat xmlns="Zetbox.App.Base">object created</MessageFormat>
+          <NewValue xmlns="Zetbox.App.Base" />
+          <OldValue xmlns="Zetbox.App.Base" />
+          <PropertyName xmlns="Zetbox.App.Base" />
+          <Timestamp xmlns="Zetbox.App.Base">2014-04-29T09:05:09.1571723Z</Timestamp>
+        </Products:Value>
+      </CollectionEntry>
       <CollectionEntry>
         <Products:Value>
           <Identity xmlns="Zetbox.App.Base">Arthur Zaczek</Identity>
@@ -880,6 +910,16 @@
   </Products:ProductDetail>
   <Products:ProductDetail ExportGuid="5c6db34f-187b-4018-86a8-1dfc6ceb05c8">
     <Products:AuditJournal>
+      <CollectionEntry>
+        <Products:Value>
+          <Identity xmlns="Zetbox.App.Base">Arthur Zaczek</Identity>
+          <MessageFormat xmlns="Zetbox.App.Base">object created</MessageFormat>
+          <NewValue xmlns="Zetbox.App.Base" />
+          <OldValue xmlns="Zetbox.App.Base" />
+          <PropertyName xmlns="Zetbox.App.Base" />
+          <Timestamp xmlns="Zetbox.App.Base">2014-04-29T08:20:17.7204812Z</Timestamp>
+        </Products:Value>
+      </CollectionEntry>
       <CollectionEntry>
         <Products:Value>
           <Identity xmlns="Zetbox.App.Base">Arthur Zaczek</Identity>

@@ -123,28 +123,30 @@
     <Reference Include="System.Xml" />
     <Reference Include="Zetbox.API, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ccdf16e4dd7b6d78, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\zetboxBasic-Common.1.1.9\lib\net40\Zetbox.API.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Common.1.1.11-pre0003\lib\net40\Zetbox.API.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Zetbox.API.Common, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ccdf16e4dd7b6d78, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\zetboxBasic-Common.1.1.9\lib\net40\Zetbox.API.Common.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Common.1.1.11-pre0003\lib\net40\Zetbox.API.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Zetbox.API.Server, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ccdf16e4dd7b6d78, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\zetboxBasic-Server.1.1.9\lib\net40\Zetbox.API.Server.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Server.1.1.11-pre0003\lib\net40\Zetbox.API.Server.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Zetbox.Assets, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ccdf16e4dd7b6d78, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\zetboxBasic-Common.1.1.9\lib\net40\Zetbox.Assets.dll</HintPath>
+      <HintPath>..\packages\zetboxBasic-Common.1.1.11-pre0003\lib\net40\Zetbox.Assets.dll</HintPath>
     </Reference>
-    <Reference Include="Zetbox.Workflow.Common">
-      <HintPath>..\packages\zetbox.Workflow-Common.1.1.8\lib\net40\Zetbox.Workflow.Common.dll</HintPath>
+    <Reference Include="Zetbox.Workflow.Common, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\zetbox.Workflow-Common.1.1.9-pre0002\lib\net40\Zetbox.Workflow.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Zetbox.Workflow.Server">
-      <HintPath>..\packages\zetbox.Workflow-Server.1.1.8\lib\net40\Zetbox.Workflow.Server.dll</HintPath>
+    <Reference Include="Zetbox.Workflow.Server, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\zetbox.Workflow-Server.1.1.9-pre0002\lib\net40\Zetbox.Workflow.Server.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

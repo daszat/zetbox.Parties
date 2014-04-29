@@ -1,5 +1,5 @@
 
-namespace Zetbox.Basic.Parties
+namespace Zetbox.Basic.HR
 {
     using System;
     using System.Collections.Generic;
@@ -12,11 +12,11 @@ namespace Zetbox.Basic.Parties
     public static class EmployeeActions
     {
         [Invocation]
-        public static void ToString(Zetbox.Basic.Parties.Employee obj, MethodReturnEventArgs<System.String> e)
+        public static void ToString(Employee obj, MethodReturnEventArgs<System.String> e)
         {
             // Base is good enough
-            // e.Result = string.Format("Employee of {0} from {1:d} thru {2:d}", obj.Party, obj.From, obj.Thru);
         }
+
         [Invocation]
         public static void postSet_Identity(Employee obj, PropertyPostSetterEventArgs<Identity> e)
         {

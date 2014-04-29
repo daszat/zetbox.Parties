@@ -1,6 +1,6 @@
 
 // TODO : rename namespace when moving employee
-namespace Zetbox.Basic.Parties
+namespace Zetbox.Basic.HR
 {
     using System;
     using System.Collections.Generic;

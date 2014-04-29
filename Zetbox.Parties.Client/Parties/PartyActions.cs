@@ -14,6 +14,7 @@ using Zetbox.Client.Presentables;
 using Zetbox.App.Base;
 using Zetbox.API.Common;
 using Zetbox.Client.Presentables.Parties;
+using Zetbox.Basic.HR;
 
 namespace Zetbox.Basic.Parties
 {

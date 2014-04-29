@@ -7,6 +7,7 @@ namespace Zetbox.Parties.Client.ViewModel.HR
     using Zetbox.API;
     using Zetbox.App.Base;
     using Zetbox.App.GUI;
+    using Zetbox.Basic.HR;
     using Zetbox.Basic.Parties;
     using Zetbox.Client.GUI;
     using Zetbox.Client.Presentables;
