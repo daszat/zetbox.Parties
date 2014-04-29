@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Bootstrapper", "Zetbox.Parties.Bootstrapper\Zetbox.Parties.Bootstrapper.csproj", "{1813BD9C-4FE8-4DD5-BD98-90FDF46A7A69}"
 EndProject
@@ -42,6 +42,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetPackages", "NuGetPacka
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.Parties.Assets", "Zetbox.Parties.Assets\Zetbox.Parties.Assets.csproj", "{41558FF6-2586-4B41-8C9D-15D752F03950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zetbox.HR.ASPNET", "Zetbox.HR.ASPNET\Zetbox.HR.ASPNET.csproj", "{6D8250D8-5419-4E2F-842D-8C3DB4E63A62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +115,14 @@ Global
 		{41558FF6-2586-4B41-8C9D-15D752F03950}.Linux.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41558FF6-2586-4B41-8C9D-15D752F03950}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41558FF6-2586-4B41-8C9D-15D752F03950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D8250D8-5419-4E2F-842D-8C3DB4E63A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D8250D8-5419-4E2F-842D-8C3DB4E63A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D8250D8-5419-4E2F-842D-8C3DB4E63A62}.Fallback|Any CPU.ActiveCfg = Release|Any CPU
+		{6D8250D8-5419-4E2F-842D-8C3DB4E63A62}.Fallback|Any CPU.Build.0 = Release|Any CPU
+		{6D8250D8-5419-4E2F-842D-8C3DB4E63A62}.Linux.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D8250D8-5419-4E2F-842D-8C3DB4E63A62}.Linux.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D8250D8-5419-4E2F-842D-8C3DB4E63A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D8250D8-5419-4E2F-842D-8C3DB4E63A62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
