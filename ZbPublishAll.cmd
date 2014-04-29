@@ -29,7 +29,6 @@ rem publish schema data for parties project
 Zetbox.Cli.exe %config% -publish ..\..\Modules\Parties.xml -ownermodules Parties;Invoicing;Accounting;Products;HR
 IF ERRORLEVEL 1 GOTO FAIL
 
-
 rem export Invoicing Module data
 Zetbox.Cli.exe %config% -export ..\..\Data\Invoicing.Data.xml -schemamodules Invoicing -ownermodules Invoicing
 IF ERRORLEVEL 1 GOTO FAIL
@@ -44,6 +43,10 @@ IF ERRORLEVEL 1 GOTO FAIL
 
 rem export Products Module data
 Zetbox.Cli.exe %config% -export ..\..\Data\Products.Data.xml -schemamodules Products -ownermodules Products
+IF ERRORLEVEL 1 GOTO FAIL
+
+rem export Invoicing Module data
+Zetbox.Cli.exe %config% -export ..\..\Data\HR.Data.xml -schemamodules Calendar -ownermodules HR
 IF ERRORLEVEL 1 GOTO FAIL
 
 rem export test data

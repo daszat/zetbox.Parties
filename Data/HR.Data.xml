@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ZetboxPackaging xmlns:Calendar="Zetbox.App.Calendar" date="2014-04-29T16:01:53Z" xmlns="http://dasz.at/Zetbox">
+  <Calendar:CommonWorkScheduleRule ExportGuid="d0386299-e3d2-4f07-88cd-ae109ab17a02">
+    <Calendar:ChangedOn>2014-04-29T18:30:35.620314Z</Calendar:ChangedOn>
+    <Calendar:CreatedOn>2014-04-29T18:30:35.620314Z</Calendar:CreatedOn>
+    <Calendar:IsWorkingDay>true</Calendar:IsWorkingDay>
+    <Calendar:Module>17d43a3d-5a6b-465d-b1f4-6ad853445edb</Calendar:Module>
+    <Calendar:Name>Default</Calendar:Name>
+    <Calendar:WorkingHours>8.00</Calendar:WorkingHours>
+    <Calendar:WorkSchedule>a2aaa5e8-283d-4fa1-9448-284b4daf2bb3</Calendar:WorkSchedule>
+  </Calendar:CommonWorkScheduleRule>
+  <Calendar:DayOfWeekWorkScheduleRule ExportGuid="1b84bd52-42a1-4634-bd61-f8960dc15b28">
+    <Calendar:ChangedOn>2014-04-29T18:30:35.620314Z</Calendar:ChangedOn>
+    <Calendar:CreatedOn>2014-04-29T18:30:35.620314Z</Calendar:CreatedOn>
+    <Calendar:IsWorkingDay>false</Calendar:IsWorkingDay>
+    <Calendar:Module>17d43a3d-5a6b-465d-b1f4-6ad853445edb</Calendar:Module>
+    <Calendar:Name>Samstag frei</Calendar:Name>
+    <Calendar:WorkingHours>0.00</Calendar:WorkingHours>
+    <Calendar:WorkSchedule>a2aaa5e8-283d-4fa1-9448-284b4daf2bb3</Calendar:WorkSchedule>
+    <Calendar:DayOfWeek>6</Calendar:DayOfWeek>
+  </Calendar:DayOfWeekWorkScheduleRule>
+  <Calendar:DayOfWeekWorkScheduleRule ExportGuid="418196ec-8439-447d-8447-24b84b464338">
+    <Calendar:ChangedOn>2014-04-29T18:30:35.620314Z</Calendar:ChangedOn>
+    <Calendar:CreatedOn>2014-04-29T18:30:35.620314Z</Calendar:CreatedOn>
+    <Calendar:IsWorkingDay>false</Calendar:IsWorkingDay>
+    <Calendar:Module>17d43a3d-5a6b-465d-b1f4-6ad853445edb</Calendar:Module>
+    <Calendar:Name>Sonntag frei</Calendar:Name>
+    <Calendar:WorkingHours>0.00</Calendar:WorkingHours>
+    <Calendar:WorkSchedule>a2aaa5e8-283d-4fa1-9448-284b4daf2bb3</Calendar:WorkSchedule>
+    <Calendar:DayOfWeek>0</Calendar:DayOfWeek>
+  </Calendar:DayOfWeekWorkScheduleRule>
+  <Calendar:EasterWorkScheduleRule ExportGuid="9cde1798-fe73-475e-9dad-a4beaddd8391">
+    <Calendar:ChangedOn>2014-04-29T18:30:35.620314Z</Calendar:ChangedOn>
+    <Calendar:CreatedOn>2014-04-29T18:30:35.620314Z</Calendar:CreatedOn>
+    <Calendar:IsWorkingDay>false</Calendar:IsWorkingDay>
+    <Calendar:Module>17d43a3d-5a6b-465d-b1f4-6ad853445edb</Calendar:Module>
+    <Calendar:Name>Ostermontag</Calendar:Name>
+    <Calendar:WorkingHours>0.00</Calendar:WorkingHours>
+    <Calendar:WorkSchedule>a2aaa5e8-283d-4fa1-9448-284b4daf2bb3</Calendar:WorkSchedule>
+    <Calendar:Offset>1</Calendar:Offset>
+  </Calendar:EasterWorkScheduleRule>
+  <Calendar:FixedYearlyWorkScheduleRule ExportGuid="4ebe16ab-3489-4fdf-86b6-cba781dc7d51">
+    <Calendar:ChangedOn>2014-04-29T18:30:35.620314Z</Calendar:ChangedOn>
+    <Calendar:CreatedOn>2014-04-29T18:30:35.620314Z</Calendar:CreatedOn>
+    <Calendar:IsWorkingDay>false</Calendar:IsWorkingDay>
+    <Calendar:Module>17d43a3d-5a6b-465d-b1f4-6ad853445edb</Calendar:Module>
+    <Calendar:Name>Neujahr</Calendar:Name>
+    <Calendar:WorkingHours>0.00</Calendar:WorkingHours>
+    <Calendar:WorkSchedule>a2aaa5e8-283d-4fa1-9448-284b4daf2bb3</Calendar:WorkSchedule>
+    <Calendar:Day>1</Calendar:Day>
+    <Calendar:Month>1</Calendar:Month>
+  </Calendar:FixedYearlyWorkScheduleRule>
+  <Calendar:WorkSchedule ExportGuid="a2aaa5e8-283d-4fa1-9448-284b4daf2bb3">
+    <Calendar:ChangedOn>2014-04-29T18:30:35.620314Z</Calendar:ChangedOn>
+    <Calendar:CreatedOn>2014-04-29T18:30:35.620314Z</Calendar:CreatedOn>
+    <Calendar:Module>17d43a3d-5a6b-465d-b1f4-6ad853445edb</Calendar:Module>
+    <Calendar:Name>Vollzeit</Calendar:Name>
+  </Calendar:WorkSchedule>
+</ZetboxPackaging>
