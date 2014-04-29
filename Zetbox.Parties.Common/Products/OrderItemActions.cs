@@ -25,20 +25,26 @@ namespace Zetbox.Basic.Products
         }
 
         [Invocation]
-        public static void postSet_Product(OrderItem obj, PropertyPostSetterEventArgs<Zetbox.Basic.Products.Product> e)
+        public static void postSet_Product(OrderItem obj, PropertyPostSetterEventArgs<Product> e)
         {
-            obj.ProductDetail = obj.Product != null ? obj.Product.CurrentDetail : null;
+            obj.ProductDetail = obj.Product.IfNotNull(p => p.CurrentDetail);
             UpdateOrder(obj);
         }
 
         [Invocation]
-        public static void postSet_PriceNet(OrderItem obj, PropertyPostSetterEventArgs<decimal> e)
+        public static void postSet_Quantity(OrderItem obj, PropertyPostSetterEventArgs<decimal?> e)
         {
             UpdateOrder(obj);
         }
 
         [Invocation]
-        public static void postSet_Price(OrderItem obj, PropertyPostSetterEventArgs<decimal> e)
+        public static void postSet_PriceNet(OrderItem obj, PropertyPostSetterEventArgs<decimal?> e)
+        {
+            UpdateOrder(obj);
+        }
+
+        [Invocation]
+        public static void postSet_Price(OrderItem obj, PropertyPostSetterEventArgs<decimal?> e)
         {
             UpdateOrder(obj);
         }
