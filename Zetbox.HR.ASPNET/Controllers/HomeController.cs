@@ -17,6 +17,34 @@ namespace Zetbox.HR.ASPNET.Controllers
 
         public ActionResult Index()
         {
+            //ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+
+            return View();
+        }
+
+        public ActionResult Zeiterfassung()
+        {
+            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+
+            return View();
+        }
+
+        public ActionResult Urlaube()
+        {
+            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+
+            return View();
+        }
+
+        public ActionResult Dienstreisen()
+        {
+            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+
+            return View();
+        }
+
+        public ActionResult Projekte()
+        {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
             return View();

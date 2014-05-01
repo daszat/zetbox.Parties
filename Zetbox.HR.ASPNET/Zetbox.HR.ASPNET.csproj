@@ -380,7 +380,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Global.asax.cs.txt" />
     <Content Include="README.zetbox.txt" />
@@ -457,6 +456,10 @@
     <Content Include="Views\Shared\EditorTemplates\NullableIntPropertyViewModel.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\ObjectReferenceViewModel.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\StringValueViewModel.cshtml" />
+    <Content Include="Views\Home\Projekte.cshtml" />
+    <Content Include="Views\Home\Zeiterfassung.cshtml" />
+    <Content Include="Views\Home\Urlaube.cshtml" />
+    <Content Include="Views\Home\Dienstreisen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
