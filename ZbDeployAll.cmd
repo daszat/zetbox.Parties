@@ -26,7 +26,7 @@ IF ERRORLEVEL 1 GOTO FAIL2
 
 cd bin\Debug
 
-Zetbox.Cli.exe %config% -import Data\Workflow.Data.xml -import ..\..\Data\Parties.xml -import ..\..\Data\Accounting.Data.xml -import ..\..\Data\Invoicing.Data.xml -import ..\..\Data\Invoicing.Workflow.xml -import ..\..\Data\Products.Data.xml
+Zetbox.Cli.exe %config% -import Data\Workflow.Data.xml -import ..\..\Data\Parties.xml -import ..\..\Data\Accounting.Data.xml -import ..\..\Data\Invoicing.Data.xml -import ..\..\Data\Invoicing.Workflow.xml -import ..\..\Data\Products.Data.xml -import ..\..\Data\HR.Data.xml
 IF ERRORLEVEL 1 GOTO FAIL
 
 
