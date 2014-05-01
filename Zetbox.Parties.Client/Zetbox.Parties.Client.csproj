@@ -230,6 +230,11 @@
     <Compile Include="ViewModel\Accounting\AccountViewModel.cs" />
     <Compile Include="ViewModel\Accounting\LinkReceiptTransactionViewModel.cs" />
     <Compile Include="ViewModel\Accounting\TransactionViewModel.cs" />
+    <Compile Include="ViewModel\HR\HRResources.de.Designer.cs">
+      <DependentUpon>HRResources.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="ViewModel\HR\HRResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -286,6 +291,10 @@
     <EmbeddedResource Include="Reporting\Invoicing\SalesInvoiceResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>SalesInvoiceResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel\HR\HRResources.de.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HRResources.de.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewModel\HR\HRResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

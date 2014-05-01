@@ -118,28 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="NewEmployeeCreateLabel" xml:space="preserve">
-    <value>Create</value>
+    <value>Anlegen</value>
   </data>
   <data name="NewEmployeeDialogTitle" xml:space="preserve">
-    <value>New Employee</value>
+    <value>Neue/r Angestellte/r</value>
   </data>
   <data name="NewEmployeeFirstNameLabel" xml:space="preserve">
-    <value>First Name</value>
+    <value>Vorname</value>
   </data>
   <data name="NewEmployeeLastNameLabel" xml:space="preserve">
-    <value>Last Name</value>
+    <value>Nachname</value>
   </data>
   <data name="NewEmployeeOrgUnitLabel" xml:space="preserve">
-    <value>Org. Unit</value>
+    <value>Abteilung</value>
   </data>
   <data name="NewEmployeeUsernameAlreadyAssignedMessageFormat" xml:space="preserve">
-    <value>The username "{0}" is already assigned to {1}.</value>
+    <value>Der Benutzername "{0}" ist bereits {1} zugewiesen.</value>
     <comment>0=username; 1=formatted employee name</comment>
   </data>
   <data name="NewEmployeeUsernameAlreadyAssignedTitle" xml:space="preserve">
-    <value>Username already assigned</value>
+    <value>Benutzername ist bereits zugewiesen</value>
   </data>
   <data name="NewEmployeeUsernameLabel" xml:space="preserve">
-    <value>Username</value>
+    <value>Benutzername</value>
   </data>
 </root>

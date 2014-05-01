@@ -6,6 +6,7 @@ namespace Zetbox.Parties.Client.ViewModel.HR
     using System.Text;
     using Zetbox.API;
     using Zetbox.App.Base;
+    using Zetbox.App.Calendar;
     using Zetbox.App.GUI;
     using Zetbox.Basic.HR;
     using Zetbox.Basic.Parties;
@@ -41,6 +42,7 @@ namespace Zetbox.Parties.Client.ViewModel.HR
         private const string EmpFirstNameKey = "emp_first_name";
         private const string EmpLastNameKey = "emp_last_name";
         private const string EmpUsernameKey = "emp_username";
+        private const string EmpOrgUnitKey = "emp_orgunit";
 
         public override void Execute()
         {
@@ -50,7 +52,8 @@ namespace Zetbox.Parties.Client.ViewModel.HR
             var newEmpDlg = ViewModelFactory.CreateDialog(ctx, HRResources.NewEmployeeDialogTitle)
                 .AddString(EmpFirstNameKey, HRResources.NewEmployeeFirstNameLabel, allowNullInput: false)
                 .AddString(EmpLastNameKey, HRResources.NewEmployeeLastNameLabel, allowNullInput: false)
-                .AddString(EmpUsernameKey, HRResources.NewEmployeeUsernameLabel, allowNullInput: false);
+                .AddString(EmpUsernameKey, HRResources.NewEmployeeUsernameLabel, allowNullInput: false)
+                .AddObjectReference(EmpOrgUnitKey, HRResources.NewEmployeeOrgUnitLabel, (ObjectClass)NamedObjects.Base.Classes.Zetbox.Basic.Parties.InternalOrganization.Find(ctx));
 
             newEmpDlg.AcceptLabel = HRResources.NewEmployeeCreateLabel;
 
@@ -59,13 +62,14 @@ namespace Zetbox.Parties.Client.ViewModel.HR
                 var firstName = (string)values[EmpFirstNameKey];
                 var lastName = (string)values[EmpLastNameKey];
                 var username = (string)values[EmpUsernameKey];
-                CreateEmployee(ctx, firstName, lastName, username);
+                var orgUnit = (InternalOrganization)values[EmpOrgUnitKey];
+                CreateEmployee(ctx, firstName, lastName, username, orgUnit);
 
             }, this);
 
         }
 
-        private void CreateEmployee(IZetboxContext ctx, string firstName, string lastName, string username)
+        private void CreateEmployee(IZetboxContext ctx, string firstName, string lastName, string username, InternalOrganization orgUnit)
         {
             var identity = ctx.GetQuery<Identity>().Where(id => id.UserName == username).SingleOrDefault();
             if (identity == null)
@@ -89,9 +93,16 @@ namespace Zetbox.Parties.Client.ViewModel.HR
             var employee = ctx.Create<Employee>();
             employee.Party = employeePerson;
             employee.Identity = identity;
+            employee.TimeSheet.Name = string.Format("TimeSheet for {0}", employeePerson);
+            var employment = employee.Employments.FirstOrDefault() ?? ctx.Create<Employment>();
+            employment.InternalOrganization = orgUnit;
+            // full time schedule
+            employment.Schedule = ctx.FindPersistenceObject<WorkSchedule>(new Guid("a2aaa5e8-283d-4fa1-9448-284b4daf2bb3"));
+            // set employee only after initializing the employment
+            employment.Employee = employee;
 
             var ws = ViewModelFactory.CreateViewModel<WorkspaceViewModel.Factory>().Invoke(ctx, null);
-            ws.ViewModelFactory.ShowModel(DataObjectViewModel.Fetch(ws.ViewModelFactory, ctx, ws, employee), activate: true);
+            ws.ViewModelFactory.ShowModel(DataObjectViewModel.Fetch(ws.ViewModelFactory, ctx, ws, employeePerson), activate: true);
             ws.Show = true;
             ViewModelFactory.ShowModel(ws, true);
         }

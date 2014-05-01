@@ -1,5 +1,4 @@
 
-// TODO : rename namespace when moving employee
 namespace Zetbox.Basic.HR
 {
     using System;
@@ -28,6 +27,12 @@ namespace Zetbox.Basic.HR
         {
             obj.TimeSheet = obj.Context.Create<CalendarBook>();
             obj.Employments.Add(obj.Context.Create<Employment>());
+        }
+
+        [Invocation]
+        public static void postSet_Party(Employee obj, PropertyPostSetterEventArgs<Party> e)
+        {
+            obj.TimeSheet.Name = string.Format("TimeSheet for {0}", obj.Party);
         }
     }
 }
