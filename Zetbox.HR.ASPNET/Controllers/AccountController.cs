@@ -14,7 +14,7 @@ using Zetbox.HR.ASPNET.Models;
 namespace Zetbox.HR.ASPNET.Controllers
 {
     [Authorize]
-    [InitializeSimpleMembership]
+    //[InitializeSimpleMembership]
     public class AccountController : Controller
     {
         //
