@@ -8,7 +8,7 @@ using System.Web.Security;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
-using Zetbox.HR.ASPNET.Filters;
+//using Zetbox.HR.ASPNET.Filters;
 using Zetbox.HR.ASPNET.Models;
 
 namespace Zetbox.HR.ASPNET.Controllers
